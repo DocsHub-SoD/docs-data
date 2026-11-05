@@ -1,6 +1,6 @@
 """
 Compiles the normalized JSON API data into:
-1. SQLite Database (api.db) for instant exact-match SQL queries.
+1. SQLite Database (api.db) with categories & tags for instant indexed queries.
 2. Lightweight JSON Knowledge Graph (api-graph.json) for fast zero-overhead traversal.
 """
 
@@ -8,10 +8,10 @@ import sqlite3
 import json
 from pathlib import Path
 
-# Paths relative to docs-data root
 REPO_ROOT = Path(__file__).resolve().parent.parent
 API_JSON_DIR = REPO_ROOT / "api"
 CATALOG_PATH = REPO_ROOT / "api-catalog.json"
+TAXONOMY_PATH = REPO_ROOT / "api-taxonomy.json"
 DB_PATH = REPO_ROOT / "api.db"
 GRAPH_PATH = REPO_ROOT / "api-graph.json"
 
@@ -28,6 +28,8 @@ def build_databases():
         uid TEXT PRIMARY KEY,
         name TEXT,
         kind TEXT,
+        category TEXT,
+        tag TEXT,
         namespace TEXT,
         summary TEXT,
         syntax TEXT
@@ -73,6 +75,7 @@ def build_databases():
     cur.execute("CREATE INDEX idx_hierarchy_child ON hierarchy(child_uid)")
     cur.execute("CREATE INDEX idx_hierarchy_parent ON hierarchy(parent_uid)")
     cur.execute("CREATE INDEX idx_params_type_uid ON parameters(param_type_uid)")
+    cur.execute("CREATE INDEX idx_types_category ON types(category)")
 
     graph = {
         "nodes": {},
@@ -80,6 +83,9 @@ def build_databases():
     }
 
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+    taxonomy = {}
+    if TAXONOMY_PATH.exists():
+        taxonomy = json.loads(TAXONOMY_PATH.read_text(encoding="utf-8"))
     
     for item in catalog:
         uid = item["uid"]
@@ -88,14 +94,17 @@ def build_databases():
             continue
 
         data = json.loads(json_file.read_text(encoding="utf-8"))
+        tax = taxonomy.get(uid, {"category": "Miscellaneous & Utility", "tag": "misc"})
 
         cur.execute("""
-        INSERT INTO types (uid, name, kind, namespace, summary, syntax)
-        VALUES (?, ?, ?, ?, ?, ?)
+        INSERT INTO types (uid, name, kind, category, tag, namespace, summary, syntax)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             data.get("uid"),
             data.get("name"),
             data.get("kind"),
+            tax.get("category"),
+            tax.get("tag"),
             data.get("namespace"),
             data.get("summary"),
             data.get("syntax")
@@ -104,6 +113,7 @@ def build_databases():
         graph["nodes"][uid] = {
             "name": data.get("name"),
             "kind": data.get("kind"),
+            "category": tax.get("category"),
             "summary": data.get("summary"),
             "methods": [m.get("name") for m in data.get("methods", [])],
             "extends": [i.get("uid") for i in data.get("inheritance", [])],

@@ -1,73 +1,60 @@
-# docs-data
+# Shape of Dreams Modding API Dataset & Knowledge Base
 
-Structured API data, SQLite database, and dependency graph for the game **Shape of Dreams**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Database](https://img.shields.io/badge/SQLite-api.db-blue.svg)](#sqlite-database-for-modders--ai-agents)
+[![Web Portal](https://img.shields.io/badge/Web-Live%20Docs-green.svg)](https://sod-docs.shshx-one.xyz/)
+[![Graph View](https://img.shields.io/badge/Graph-Interactive%20View-orange.svg)](https://sod-docs.shshx-one.xyz/graph)
 
-This repository serves as the central data source for the documentation site ([sod-docs.shshx-one.xyz](https://sod-docs.shshx-one.xyz/)) and provides tools to query game types directly without opening hundreds of files.
+The canonical data layer and relational knowledge base for the **Shape of Dreams** modding ecosystem. 
 
----
+This repository serves as the single source of truth for all 897 classes, structs, enums, interfaces, and methods in the game. It is designed to be consumed either via human-readable JSON files, an interactive Graph View, or directly by **AI Coding Agents** via a high-performance SQLite database.
 
-## What is in this repository?
-
-- **`api/`**: 897 JSON files, one per type (classes, structs, interfaces, enums). Each file contains member declarations, return types, parameters, inheritance links, and available XML summaries.
-- **`api.db`**: SQLite database generated from the JSON files. Includes indexes and foreign keys for quick querying.
-- **`api-graph.json`**: Graph containing inheritance links (`extends`, `implements`) and member lists for traversal.
-- **`LLM_GUIDE.md`**: Schema definition and query examples for AI coding assistants.
-- **`scripts/compile_db.py`**: Python script that builds `api.db` and `api-graph.json` from the `api/` directory.
+🌐 **Live Web Portal:** [https://sod-docs.shshx-one.xyz/](https://sod-docs.shshx-one.xyz/)  
+🕸️ **Interactive Graph View:** [https://sod-docs.shshx-one.xyz/graph](https://sod-docs.shshx-one.xyz/graph)
 
 ---
 
-## How to use this data
+## What is Inside?
 
-### 1. Reading raw JSON files
-You can inspect individual classes directly in the `api/` folder (e.g., `api/Global.AbilityInstance.json`). 
+- **`api/*.json`**: 897 strongly-typed JSON models documenting full class signatures, fields, properties, methods, parameter types, summaries, and inheritance trees.
+- **`api.db`**: An indexed SQLite database (~2.0 MB) enriched with domain categories (`category`, `tag`), foreign keys, and fast indexes.
+- **`api-graph.json`**: A lightweight knowledge graph (~544 KB) mapping all class dependencies, base classes, and interfaces.
+- **`api-taxonomy.json`**: Verified domain categorization across 9 architectural domains.
+- **`LLM_GUIDE.md`**: Dedicated system prompt and SQL cheat sheet for AI agents to query the database without blowing their context window.
+- **`scripts/compile_db.py`**: Automated compilation engine that builds `api.db` and `api-graph.json` upon PR merge.
 
-### 2. Using the SQLite database (`api.db`)
-Instead of reading through many files or grepping folders, you can query `api.db` with standard SQLite tools (or have an LLM assistant query it).
+---
 
-Examples:
+## Domain Taxonomy & Categorization
 
-Find methods related to casting abilities:
+The entire game assembly has been organized into 9 domains:
+- 🔴 **Combat & Abilities** (146 types): Spells, ability instances, triggers, cooldowns, projectiles.
+- 🟢 **Actors & Entities** (143 types): Monsters, heroes, boss logic, AI behaviors, actors.
+- 🔵 **Managers & Systems** (131 types): Singletons, audio, console, zones, cameras.
+- 🟠 **Data & Core Math** (140 types): Stats, enums, grid math, serialization.
+- 🟣 **Buffs & Statuses** (50 types): Debuffs, curses, stat modifiers, telegraphs.
+- 🟡 **Items & Economy** (49 types): Artifacts, shrines, drops, accessories.
+- 🌸 **User Interface** (69 types): Windows, buttons, HUD, cursor, gamepad hints.
+- 🔷 **Networking** (29 types): RPCs, Mirror syncing, lobbies, rooms.
+- 🔘 **Miscellaneous & Utility** (140 types): Engine helpers, reflection, caches.
+
+---
+
+## How to Query the SQLite Database (`api.db`)
+
+Filter directly by category or keyword:
 ```sql
+-- Find all Combat classes
+SELECT name, summary FROM types WHERE category = 'Combat & Abilities' AND kind = 'Class';
+
+-- Find methods dealing with Cast/Spells
 SELECT t.name, m.name, m.declaration 
 FROM members m 
 JOIN types t ON m.type_uid = t.uid 
 WHERE m.name LIKE '%Cast%' LIMIT 10;
 ```
 
-Find classes that inherit from `Actor`:
-```sql
-SELECT child_uid FROM hierarchy WHERE parent_uid = 'Global.Actor';
-```
-
-Find methods that take `Entity` as a parameter:
-```sql
-SELECT t.name, m.name, p.name 
-FROM parameters p 
-JOIN members m ON p.member_id = m.id 
-JOIN types t ON m.type_uid = t.uid 
-WHERE p.param_type_uid = 'Global.Entity';
-```
-
-### 3. Using with AI assistants (Cursor, Copilot, Cline, etc.)
-If you use an LLM assistant while modding, give it `LLM_GUIDE.md` and `api.db`. Tell it to run SQL queries against `api.db` to check method signatures and types before writing patches. This keeps the assistant from making up non-existent methods and saves context space.
-
 ---
-
-## Contributing
-
-Most classes currently only have raw C# signatures without descriptions because the game's official docs lacked them.
-
-If you know what a specific class, method, or parameter does, feel free to fill in the `summary` fields in `api/<TypeName>.json` and submit a Pull Request.
-
-When a PR is merged into `main`, a GitHub Actions workflow automatically runs `compile_db.py` to rebuild `api.db` and `api-graph.json`.
-
----
-
-## Related Repositories
-
-- [docs-site](https://github.com/DocsHub-SoD/docs-site) — The frontend website.
-- [sod-docs-resources](https://github.com/DocsHub-SoD/sod-docs-resources) — Scraper and generator scripts used to extract and compile this data.
 
 ## License
-
-MIT
+MIT License. Free for all community members, tool developers, and modders.
