@@ -1,0 +1,48 @@
+{
+  "uid": "Global.LoadedModInstance",
+  "name": "LoadedModInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LoadedModInstance",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "container",
+      "id": "Global_LoadedModInstance_container",
+      "declaration": "public GameObject container",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAlteringGameplay",
+      "id": "Global_LoadedModInstance_isAlteringGameplay",
+      "declaration": "public bool isAlteringGameplay",
+      "summary": "This must be set to true, if this mod is altering gameplay in any way. This will show mod icon in the lobby list to let the clients know prior to joining your game.This is automatically set to true if the mod contains any JSON overrides.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mod",
+      "id": "Global_LoadedModInstance_mod",
+      "declaration": "public ModItem mod",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "registeredCommands",
+      "id": "Global_LoadedModInstance_registeredCommands",
+      "declaration": "public List<string> registeredCommands",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

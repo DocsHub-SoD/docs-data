@@ -1,0 +1,351 @@
+{
+  "uid": "Global.EntityAbility",
+  "name": "EntityAbility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\npublic class EntityAbility : EntityComponent, ILogicUpdate, ICleanup",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    }
+  ],
+  "fields": [
+    {
+      "name": "abilityPreset",
+      "id": "Global_EntityAbility_abilityPreset",
+      "declaration": "public AssetRef<AbilityTrigger>[] abilityPreset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "AttackAbilityIndex",
+      "id": "Global_EntityAbility_AttackAbilityIndex",
+      "declaration": "public const int AttackAbilityIndex = 63",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackAbilityPreset",
+      "id": "Global_EntityAbility_attackAbilityPreset",
+      "declaration": "public AssetRef<AttackTrigger> attackAbilityPreset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnAbilityAdded",
+      "id": "Global_EntityAbility_ClientEvent_OnAbilityAdded",
+      "declaration": "public SafeAction<int, AbilityTrigger> ClientEvent_OnAbilityAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnAbilityRemoved",
+      "id": "Global_EntityAbility_ClientEvent_OnAbilityRemoved",
+      "declaration": "public SafeAction<int, AbilityTrigger> ClientEvent_OnAbilityRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "abilities",
+      "id": "Global_EntityAbility_abilities",
+      "declaration": "public IReadOnlyDictionary<int, AbilityTrigger> abilities { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackAbility",
+      "id": "Global_EntityAbility_attackAbility",
+      "declaration": "public AbilityTrigger attackAbility { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "originalAttackAbility",
+      "id": "Global_EntityAbility_originalAttackAbility",
+      "declaration": "public AttackTrigger originalAttackAbility { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overridenAttackAbility",
+      "id": "Global_EntityAbility_overridenAttackAbility",
+      "declaration": "public AbilityTrigger overridenAttackAbility { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddAbility(AbilityTrigger)",
+      "id": "Global_EntityAbility_AddAbility_AbilityTrigger_",
+      "declaration": "public void AddAbility(AbilityTrigger trigger)",
+      "summary": "Add an ability to this entity. It will be equipped on empty index between 0 and 127.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddAbility<T>()",
+      "id": "Global_EntityAbility_AddAbility__1",
+      "declaration": "public T AddAbility<T>() where T : AbilityTrigger",
+      "summary": "Add an ability to this entity. It will be equipped on empty index between 0 and 127.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_EntityAbility_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetAbility<T>()",
+      "id": "Global_EntityAbility_GetAbility__1",
+      "declaration": "public T GetAbility<T>() where T : AbilityTrigger",
+      "summary": "Get this entity's first ability of the given type. Can be null.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetNewAbilityLockHandle(bool)",
+      "id": "Global_EntityAbility_GetNewAbilityLockHandle_System_Boolean_",
+      "declaration": "public AbilityLockHandle GetNewAbilityLockHandle(bool shouldShowLockIcon = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "shouldShowLockIcon",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "IsAbilityCastLocked(int)",
+      "id": "Global_EntityAbility_IsAbilityCastLocked_System_Int32_",
+      "declaration": "public bool IsAbilityCastLocked(int index)",
+      "summary": "Is an ability locked by AbilityLockHandle? Available everywhere.",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAbilityEditLocked(int)",
+      "id": "Global_EntityAbility_IsAbilityEditLocked_System_Int32_",
+      "declaration": "public bool IsAbilityEditLocked(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAttackAbilityLocked(int)",
+      "id": "Global_EntityAbility_IsAttackAbilityLocked_System_Int32_",
+      "declaration": "public bool IsAttackAbilityLocked(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EntityAbility_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_EntityAbility_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_EntityAbility_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveAbility(int)",
+      "id": "Global_EntityAbility_RemoveAbility_System_Int32_",
+      "declaration": "public AbilityTrigger RemoveAbility(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityTrigger"
+    },
+    {
+      "name": "RemoveAttackAbility()",
+      "id": "Global_EntityAbility_RemoveAttackAbility",
+      "declaration": "public AbilityTrigger RemoveAttackAbility()",
+      "summary": "Remove previous attack ability from this entity.",
+      "parameters": [],
+      "returns": "AbilityTrigger"
+    },
+    {
+      "name": "SetAbility(int, AbilityTrigger)",
+      "id": "Global_EntityAbility_SetAbility_System_Int32_AbilityTrigger_",
+      "declaration": "public void SetAbility(int index, AbilityTrigger trigger)",
+      "summary": "Give this entity a new ability at the given index. Previously equipped ability will be unequipped.",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetAttackAbility(AttackTrigger)",
+      "id": "Global_EntityAbility_SetAttackAbility_AttackTrigger_",
+      "declaration": "public void SetAttackAbility(AttackTrigger trigger)",
+      "summary": "Give a new attack ability to this entity. Previous one will be unequipped.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AttackTrigger",
+          "type_uid": "Global.AttackTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldShowAbilityLockIcon(int)",
+      "id": "Global_EntityAbility_ShouldShowAbilityLockIcon_System_Int32_",
+      "declaration": "public bool ShouldShowAbilityLockIcon(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetAbility<T>(out T)",
+      "id": "Global_EntityAbility_TryGetAbility__1___0__",
+      "declaration": "public bool TryGetAbility<T>(out T trigger) where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

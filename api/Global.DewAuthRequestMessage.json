@@ -1,0 +1,48 @@
+{
+  "uid": "Global.DewAuthRequestMessage",
+  "name": "DewAuthRequestMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewAuthRequestMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "inviteCode",
+      "id": "Global_DewAuthRequestMessage_inviteCode",
+      "declaration": "public string inviteCode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileGuid",
+      "id": "Global_DewAuthRequestMessage_profileGuid",
+      "declaration": "public string profileGuid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileName",
+      "id": "Global_DewAuthRequestMessage_profileName",
+      "declaration": "public string profileName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "userId",
+      "id": "Global_DewAuthRequestMessage_userId",
+      "declaration": "public string userId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,80 @@
+{
+  "uid": "Global.GetFocusTargetSettings",
+  "name": "GetFocusTargetSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct GetFocusTargetSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "angleLimit",
+      "id": "Global_GetFocusTargetSettings_angleLimit",
+      "declaration": "public Vector2 angleLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cacheData",
+      "id": "Global_GetFocusTargetSettings_cacheData",
+      "declaration": "public GetFocusTargetCacheData cacheData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "condition",
+      "id": "Global_GetFocusTargetSettings_condition",
+      "declaration": "public Func<IGamepadFocusable, bool> condition",
+      "summary": "When condition is not null, focusable groups will be ignored.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customScoreFunc",
+      "id": "Global_GetFocusTargetSettings_customScoreFunc",
+      "declaration": "public Func<IGamepadFocusable, float> customScoreFunc",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "direction",
+      "id": "Global_GetFocusTargetSettings_direction",
+      "declaration": "public Vector3 direction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedDistLimit",
+      "id": "Global_GetFocusTargetSettings_normalizedDistLimit",
+      "declaration": "public Vector2 normalizedDistLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedPerpendicularDistLimit",
+      "id": "Global_GetFocusTargetSettings_normalizedPerpendicularDistLimit",
+      "declaration": "public Vector2 normalizedPerpendicularDistLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useCenterOfRect",
+      "id": "Global_GetFocusTargetSettings_useCenterOfRect",
+      "declaration": "public bool useCenterOfRect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

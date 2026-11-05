@@ -1,0 +1,37 @@
+{
+  "uid": "Global.GameLogicPackage",
+  "name": "GameLogicPackage",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameLogicPackage : ManagerBase<GameLogicPackage>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "GameLogicPackage",
+      "href": "Global.GameLogicPackage.html",
+      "uid": "Global.GameLogicPackage"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

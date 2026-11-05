@@ -1,0 +1,32 @@
+{
+  "uid": "Global.DewEffect.StopEffectMessage",
+  "name": "DewEffect.StopEffectMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewEffect.StopEffectMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "parent",
+      "id": "Global_DewEffect_StopEffectMessage_parent",
+      "declaration": "public NetworkIdentity parent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "path",
+      "id": "Global_DewEffect_StopEffectMessage_path",
+      "declaration": "public string path",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

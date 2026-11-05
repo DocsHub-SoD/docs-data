@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EventInfoAbilityInstance",
+  "name": "EventInfoAbilityInstance",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoAbilityInstance",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoAbilityInstance_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who invoked this event in an actor chain.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_EventInfoAbilityInstance_instance",
+      "declaration": "public AbilityInstance instance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

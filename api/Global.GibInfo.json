@@ -1,0 +1,40 @@
+{
+  "uid": "Global.GibInfo",
+  "name": "GibInfo",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct GibInfo",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "normalizedCurrentDamage",
+      "id": "Global_GibInfo_normalizedCurrentDamage",
+      "declaration": "public Vector3 normalizedCurrentDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "velocity",
+      "id": "Global_GibInfo_velocity",
+      "declaration": "public Vector3 velocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "yVelocity",
+      "id": "Global_GibInfo_yVelocity",
+      "declaration": "public float yVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

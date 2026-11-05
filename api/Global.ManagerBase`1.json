@@ -1,0 +1,244 @@
+{
+  "uid": "Global.ManagerBase`1",
+  "name": "ManagerBase<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-380)]\npublic class ManagerBase<T> : LogicBehaviour, ILogicUpdate where T : LogicBehaviour",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "AchievementManager",
+      "href": "Global.AchievementManager.html",
+      "uid": "Global.AchievementManager"
+    },
+    {
+      "name": "AudioManager",
+      "href": "Global.AudioManager.html",
+      "uid": "Global.AudioManager"
+    },
+    {
+      "name": "CameraManager",
+      "href": "Global.CameraManager.html",
+      "uid": "Global.CameraManager"
+    },
+    {
+      "name": "CastIndicatorManager",
+      "href": "Global.CastIndicatorManager.html",
+      "uid": "Global.CastIndicatorManager"
+    },
+    {
+      "name": "CollectablesManager",
+      "href": "Global.CollectablesManager.html",
+      "uid": "Global.CollectablesManager"
+    },
+    {
+      "name": "ControlManager",
+      "href": "Global.ControlManager.html",
+      "uid": "Global.ControlManager"
+    },
+    {
+      "name": "CursorManager",
+      "href": "Global.CursorManager.html",
+      "uid": "Global.CursorManager"
+    },
+    {
+      "name": "DewCamera",
+      "href": "Global.DewCamera.html",
+      "uid": "Global.DewCamera"
+    },
+    {
+      "name": "DewPhysicsManager",
+      "href": "Global.DewPhysicsManager.html",
+      "uid": "Global.DewPhysicsManager"
+    },
+    {
+      "name": "EditSkillManager",
+      "href": "Global.EditSkillManager.html",
+      "uid": "Global.EditSkillManager"
+    },
+    {
+      "name": "FeedbackManager",
+      "href": "Global.FeedbackManager.html",
+      "uid": "Global.FeedbackManager"
+    },
+    {
+      "name": "FloatingWindowManager",
+      "href": "Global.FloatingWindowManager.html",
+      "uid": "Global.FloatingWindowManager"
+    },
+    {
+      "name": "FPSManager",
+      "href": "Global.FPSManager.html",
+      "uid": "Global.FPSManager"
+    },
+    {
+      "name": "GameCursorManager",
+      "href": "Global.GameCursorManager.html",
+      "uid": "Global.GameCursorManager"
+    },
+    {
+      "name": "GameLogicPackage",
+      "href": "Global.GameLogicPackage.html",
+      "uid": "Global.GameLogicPackage"
+    },
+    {
+      "name": "GlobalLogicPackage",
+      "href": "Global.GlobalLogicPackage.html",
+      "uid": "Global.GlobalLogicPackage"
+    },
+    {
+      "name": "GlobalUIManager",
+      "href": "Global.GlobalUIManager.html",
+      "uid": "Global.GlobalUIManager"
+    },
+    {
+      "name": "InGameCrashReportManager",
+      "href": "Global.InGameCrashReportManager.html",
+      "uid": "Global.InGameCrashReportManager"
+    },
+    {
+      "name": "InGameReverieManager",
+      "href": "Global.InGameReverieManager.html",
+      "uid": "Global.InGameReverieManager"
+    },
+    {
+      "name": "InGameTutorialManager",
+      "href": "Global.InGameTutorialManager.html",
+      "uid": "Global.InGameTutorialManager"
+    },
+    {
+      "name": "InputManager",
+      "href": "Global.InputManager.html",
+      "uid": "Global.InputManager"
+    },
+    {
+      "name": "LobbyManager",
+      "href": "Global.LobbyManager.html",
+      "uid": "Global.LobbyManager"
+    },
+    {
+      "name": "LogicUpdateManager",
+      "href": "Global.LogicUpdateManager.html",
+      "uid": "Global.LogicUpdateManager"
+    },
+    {
+      "name": "MessageManager",
+      "href": "Global.MessageManager.html",
+      "uid": "Global.MessageManager"
+    },
+    {
+      "name": "MusicManager",
+      "href": "Global.MusicManager.html",
+      "uid": "Global.MusicManager"
+    },
+    {
+      "name": "NetworkLogicPackage",
+      "href": "Global.NetworkLogicPackage.html",
+      "uid": "Global.NetworkLogicPackage"
+    },
+    {
+      "name": "ObjectHighlightManager",
+      "href": "Global.ObjectHighlightManager.html",
+      "uid": "Global.ObjectHighlightManager"
+    },
+    {
+      "name": "ObjectiveArrowManager",
+      "href": "Global.ObjectiveArrowManager.html",
+      "uid": "Global.ObjectiveArrowManager"
+    },
+    {
+      "name": "PlayLobbyManager",
+      "href": "Global.PlayLobbyManager.html",
+      "uid": "Global.PlayLobbyManager"
+    },
+    {
+      "name": "ShaderManager",
+      "href": "Global.ShaderManager.html",
+      "uid": "Global.ShaderManager"
+    },
+    {
+      "name": "SpawnManager",
+      "href": "Global.SpawnManager.html",
+      "uid": "Global.SpawnManager"
+    },
+    {
+      "name": "StatisticsManager",
+      "href": "Global.StatisticsManager.html",
+      "uid": "Global.StatisticsManager"
+    },
+    {
+      "name": "TitleManager",
+      "href": "Global.TitleManager.html",
+      "uid": "Global.TitleManager"
+    },
+    {
+      "name": "TransitionManager",
+      "href": "Global.TransitionManager.html",
+      "uid": "Global.TransitionManager"
+    },
+    {
+      "name": "UIManager",
+      "href": "Global.UIManager.html",
+      "uid": "Global.UIManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_ManagerBase_1_instance",
+      "declaration": "public static T instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_ManagerBase_1_softInstance",
+      "declaration": "public static T softInstance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_ManagerBase_1_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_ManagerBase_1_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_ManagerBase_1_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

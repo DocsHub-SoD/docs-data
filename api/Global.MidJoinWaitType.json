@@ -1,0 +1,15 @@
+{
+  "uid": "Global.MidJoinWaitType",
+  "name": "MidJoinWaitType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum MidJoinWaitType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

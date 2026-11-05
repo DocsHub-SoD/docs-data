@@ -1,0 +1,32 @@
+{
+  "uid": "Global.JsonOverrideItem",
+  "name": "JsonOverrideItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class JsonOverrideItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "overrides",
+      "id": "Global_JsonOverrideItem_overrides",
+      "declaration": "public Dictionary<string, string> overrides",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_JsonOverrideItem_target",
+      "declaration": "public string target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

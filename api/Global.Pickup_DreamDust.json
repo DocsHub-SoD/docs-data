@@ -1,0 +1,141 @@
+{
+  "uid": "Global.Pickup_DreamDust",
+  "name": "Pickup_DreamDust",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Pickup_DreamDust : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "PickupInstance",
+      "href": "Global.PickupInstance.html",
+      "uid": "Global.PickupInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "amount",
+      "id": "Global_Pickup_DreamDust_amount",
+      "declaration": "[NonSerialized]\npublic int amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGivenByOtherPlayer",
+      "id": "Global_Pickup_DreamDust_isGivenByOtherPlayer",
+      "declaration": "[NonSerialized]\npublic bool isGivenByOtherPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onGiveDreamDust",
+      "id": "Global_Pickup_DreamDust_onGiveDreamDust",
+      "declaration": "public SafeAction<DewPlayer, int> onGiveDreamDust",
+      "summary": "Called on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_Pickup_DreamDust_target",
+      "declaration": "[NonSerialized]\npublic Hero target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Pickup_DreamDust_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanBeUsedBy(Hero)",
+      "id": "Global_Pickup_DreamDust_CanBeUsedBy_Hero_",
+      "declaration": "protected override bool CanBeUsedBy(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Pickup_DreamDust_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Pickup_DreamDust_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPickup(Hero)",
+      "id": "Global_Pickup_DreamDust_OnPickup_Hero_",
+      "declaration": "protected override void OnPickup(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

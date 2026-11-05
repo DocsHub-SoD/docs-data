@@ -1,0 +1,85 @@
+{
+  "uid": "Global.IInteractable",
+  "name": "IInteractable",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IInteractable",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_IInteractable_canInteractWithMouse",
+      "declaration": "bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_IInteractable_focusDistance",
+      "declaration": "float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_IInteractable_interactPivot",
+      "declaration": "Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_IInteractable_priority",
+      "declaration": "int priority { get; }",
+      "summary": "Lower values are prioritized",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_IInteractable_CanInteract_Entity_",
+      "declaration": "bool CanInteract(Entity entity)",
+      "summary": "Can this object be interacted by given entity? Checked everywhere, hence this should return consistent results regardless of caller.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnInteract(Entity, bool)",
+      "id": "Global_IInteractable_OnInteract_Entity_System_Boolean_",
+      "declaration": "void OnInteract(Entity entity, bool alt)",
+      "summary": "Called everywhere when an entity interacts with an interactable.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "alt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

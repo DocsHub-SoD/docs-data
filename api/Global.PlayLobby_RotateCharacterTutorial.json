@@ -1,0 +1,24 @@
+{
+  "uid": "Global.PlayLobby_RotateCharacterTutorial",
+  "name": "PlayLobby_RotateCharacterTutorial",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PlayLobby_RotateCharacterTutorial : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "lobbyCharacters",
+      "id": "Global_PlayLobby_RotateCharacterTutorial_lobbyCharacters",
+      "declaration": "public PlayLobby_Character[] lobbyCharacters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

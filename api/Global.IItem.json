@@ -1,0 +1,88 @@
+{
+  "uid": "Global.IItem",
+  "name": "IItem",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "handOwner",
+      "id": "Global_IItem_handOwner",
+      "declaration": "Hero handOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocked",
+      "id": "Global_IItem_isLocked",
+      "declaration": "bool isLocked { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_IItem_owner",
+      "declaration": "Entity owner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rarity",
+      "id": "Global_IItem_rarity",
+      "declaration": "Rarity rarity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipStartAnimation",
+      "id": "Global_IItem_skipStartAnimation",
+      "declaration": "bool skipStartAnimation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tempOwner",
+      "id": "Global_IItem_tempOwner",
+      "declaration": "DewPlayer tempOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldModel",
+      "id": "Global_IItem_worldModel",
+      "declaration": "ItemWorldModel worldModel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "IsLockedFor(DewPlayer)",
+      "id": "Global_IItem_IsLockedFor_DewPlayer_",
+      "declaration": "bool IsLockedFor(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

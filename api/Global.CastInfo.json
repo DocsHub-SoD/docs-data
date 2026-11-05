@@ -1,0 +1,104 @@
+{
+  "uid": "Global.CastInfo",
+  "name": "CastInfo",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct CastInfo",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "angle",
+      "id": "Global_CastInfo_angle",
+      "declaration": "public float angle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "animSelectValue",
+      "id": "Global_CastInfo_animSelectValue",
+      "declaration": "public float animSelectValue",
+      "summary": "This is populated on AbilityTrigger.OnCastStart.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "caster",
+      "id": "Global_CastInfo_caster",
+      "declaration": "public Entity caster",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "point",
+      "id": "Global_CastInfo_point",
+      "declaration": "public Vector3 point",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_CastInfo_target",
+      "declaration": "public Entity target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "forward",
+      "id": "Global_CastInfo_forward",
+      "declaration": "public Vector3 forward { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_CastInfo_rotation",
+      "declaration": "public Quaternion rotation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetAngle(Quaternion)",
+      "id": "Global_CastInfo_GetAngle_UnityEngine_Quaternion_",
+      "declaration": "public static float GetAngle(Quaternion rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAngle(Vector3)",
+      "id": "Global_CastInfo_GetAngle_UnityEngine_Vector3_",
+      "declaration": "public static float GetAngle(Vector3 forward)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "forward",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

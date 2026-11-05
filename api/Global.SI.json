@@ -1,0 +1,15 @@
+{
+  "uid": "Global.SI",
+  "name": "SI",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class SI",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

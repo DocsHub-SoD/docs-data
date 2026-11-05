@@ -1,0 +1,75 @@
+{
+  "uid": "Global.LRUCache`2",
+  "name": "LRUCache<TKey, TValue>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LRUCache<TKey, TValue>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "Count",
+      "id": "Global_LRUCache_2_Count",
+      "declaration": "public int Count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Clear()",
+      "id": "Global_LRUCache_2_Clear",
+      "declaration": "public void Clear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Set(TKey, TValue)",
+      "id": "Global_LRUCache_2_Set__0__1_",
+      "declaration": "public void Set(TKey key, TValue value)",
+      "summary": "Adds or updates a key/value pair. If added, it becomes the most recently used.\nIf the cache is at capacity, the least recently used item is removed.",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "TKey",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "TValue",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TryGet(TKey, out TValue)",
+      "id": "Global_LRUCache_2_TryGet__0__1__",
+      "declaration": "public bool TryGet(TKey key, out TValue value)",
+      "summary": "Tries to get a value from the cache. If found, it's marked as most recently used.",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "TKey",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "TValue",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

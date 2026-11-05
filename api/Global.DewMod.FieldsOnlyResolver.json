@@ -1,0 +1,37 @@
+{
+  "uid": "Global.DewMod.FieldsOnlyResolver",
+  "name": "DewMod.FieldsOnlyResolver",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewMod.FieldsOnlyResolver : DefaultContractResolver",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CreateProperty(MemberInfo, MemberSerialization)",
+      "id": "Global_DewMod_FieldsOnlyResolver_CreateProperty_System_Reflection_MemberInfo_Newtonsoft_Json_MemberSerialization_",
+      "declaration": "protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "member",
+          "type": "System.Reflection.MemberInfo",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "memberSerialization",
+          "type": "Newtonsoft.Json.MemberSerialization",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Newtonsoft.Json.Serialization.JsonProperty"
+    }
+  ],
+  "events": []
+}

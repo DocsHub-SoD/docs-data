@@ -1,0 +1,81 @@
+{
+  "uid": "Global.MonsterPool.SpawnRuleEntry",
+  "name": "MonsterPool.SpawnRuleEntry",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class MonsterPool.SpawnRuleEntry",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "chance",
+      "id": "Global_MonsterPool_SpawnRuleEntry_chance",
+      "declaration": "public float chance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conditions",
+      "id": "Global_MonsterPool_SpawnRuleEntry_conditions",
+      "declaration": "public List<MonsterSpawnCondition> conditions",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxCount",
+      "id": "Global_MonsterPool_SpawnRuleEntry_maxCount",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic int maxCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minCount",
+      "id": "Global_MonsterPool_SpawnRuleEntry_minCount",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic int minCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monster",
+      "id": "Global_MonsterPool_SpawnRuleEntry_monster",
+      "declaration": "[HideLabel]\npublic AssetRef<Monster> monster",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useAnd",
+      "id": "Global_MonsterPool_SpawnRuleEntry_useAnd",
+      "declaration": "[LabelText(\"All Conditions Must Match (AND)\")]\n[ToggleLeft]\n[ShowIf(\"@conditions != null && conditions.Count > 1\", true)]\npublic bool useAnd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_MonsterPool_SpawnRuleEntry_Clone",
+      "declaration": "public MonsterPool.SpawnRuleEntry Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "MonsterPool.SpawnRuleEntry"
+    },
+    {
+      "name": "EvaluateCondition()",
+      "id": "Global_MonsterPool_SpawnRuleEntry_EvaluateCondition",
+      "declaration": "public bool EvaluateCondition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

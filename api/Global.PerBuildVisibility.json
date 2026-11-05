@@ -1,0 +1,56 @@
+{
+  "uid": "Global.PerBuildVisibility",
+  "name": "PerBuildVisibility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PerBuildVisibility : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "demoLite",
+      "id": "Global_PerBuildVisibility_demoLite",
+      "declaration": "public bool demoLite",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "demoPrivate",
+      "id": "Global_PerBuildVisibility_demoPrivate",
+      "declaration": "public bool demoPrivate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "editor",
+      "id": "Global_PerBuildVisibility_editor",
+      "declaration": "[LabelText(\"Always Show In Editor\")]\npublic bool editor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "indev",
+      "id": "Global_PerBuildVisibility_indev",
+      "declaration": "[Title(\"Show In...\", null, TitleAlignments.Left, true, true)]\npublic bool indev",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "release",
+      "id": "Global_PerBuildVisibility_release",
+      "declaration": "public bool release",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

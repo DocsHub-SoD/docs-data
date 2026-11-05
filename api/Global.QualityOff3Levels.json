@@ -1,0 +1,15 @@
+{
+  "uid": "Global.QualityOff3Levels",
+  "name": "QualityOff3Levels",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum QualityOff3Levels",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,146 @@
+{
+  "uid": "Global.MeleeAttackInstance",
+  "name": "MeleeAttackInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MeleeAttackInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fxHitMain",
+      "id": "Global_MeleeAttackInstance_fxHitMain",
+      "declaration": "public GameObject fxHitMain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxHitSub",
+      "id": "Global_MeleeAttackInstance_fxHitSub",
+      "declaration": "public GameObject fxHitSub",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hitCount",
+      "id": "Global_MeleeAttackInstance_hitCount",
+      "declaration": "[NonSerialized]\npublic int hitCount",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCrit",
+      "id": "Global_MeleeAttackInstance_isCrit",
+      "declaration": "public bool isCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainTargetAttackEffect",
+      "id": "Global_MeleeAttackInstance_mainTargetAttackEffect",
+      "declaration": "public float mainTargetAttackEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainTargetDamage",
+      "id": "Global_MeleeAttackInstance_mainTargetDamage",
+      "declaration": "public float mainTargetDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "range",
+      "id": "Global_MeleeAttackInstance_range",
+      "declaration": "public DewCollider range",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleRangeWithTriggerRange",
+      "id": "Global_MeleeAttackInstance_scaleRangeWithTriggerRange",
+      "declaration": "public bool scaleRangeWithTriggerRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "subTargetAttackEffect",
+      "id": "Global_MeleeAttackInstance_subTargetAttackEffect",
+      "declaration": "public float subTargetAttackEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "subTargetDamage",
+      "id": "Global_MeleeAttackInstance_subTargetDamage",
+      "declaration": "public float subTargetDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "didHit",
+      "id": "Global_MeleeAttackInstance_didHit",
+      "declaration": "public bool didHit { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnCreate()",
+      "id": "Global_MeleeAttackInstance_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

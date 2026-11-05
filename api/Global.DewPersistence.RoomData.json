@@ -1,0 +1,40 @@
+{
+  "uid": "Global.DewPersistence.RoomData",
+  "name": "DewPersistence.RoomData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.RoomData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actors",
+      "id": "Global_DewPersistence_RoomData_actors",
+      "declaration": "public List<DewPersistence.RoomActorData> actors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistenceData",
+      "id": "Global_DewPersistence_RoomData_persistenceData",
+      "declaration": "public Dictionary<string, string> persistenceData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "savedObjects",
+      "id": "Global_DewPersistence_RoomData_savedObjects",
+      "declaration": "public List<DewPersistence.RoomSavedObjectData> savedObjects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,46 @@
+{
+  "uid": "Global.AbilityTargetValidatorWrapper",
+  "name": "AbilityTargetValidatorWrapper",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AbilityTargetValidatorWrapper : IEntityValidator",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEntityValidator",
+      "href": "Global.IEntityValidator.html",
+      "uid": "Global.IEntityValidator"
+    }
+  ],
+  "fields": [
+    {
+      "name": "self",
+      "id": "Global_AbilityTargetValidatorWrapper_self",
+      "declaration": "public Entity self",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Evaluate(Entity)",
+      "id": "Global_AbilityTargetValidatorWrapper_Evaluate_Entity_",
+      "declaration": "public bool Evaluate(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,72 @@
+{
+  "uid": "Global.IGamepadFocusableOverrideInput",
+  "name": "IGamepadFocusableOverrideInput",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IGamepadFocusableOverrideInput",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnGamepadBack()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadBack",
+      "declaration": "bool OnGamepadBack()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadConfirm()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadConfirm",
+      "declaration": "bool OnGamepadConfirm()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadDown()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadDpadDown",
+      "declaration": "bool OnGamepadDpadDown()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadLeft()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadDpadLeft",
+      "declaration": "bool OnGamepadDpadLeft()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadRight()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadDpadRight",
+      "declaration": "bool OnGamepadDpadRight()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadUp()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadDpadUp",
+      "declaration": "bool OnGamepadDpadUp()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadUpdate()",
+      "id": "Global_IGamepadFocusableOverrideInput_OnGamepadUpdate",
+      "declaration": "void OnGamepadUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

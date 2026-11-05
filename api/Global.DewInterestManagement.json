@@ -1,0 +1,79 @@
+{
+  "uid": "Global.DewInterestManagement",
+  "name": "DewInterestManagement",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewInterestManagement : InterestManagement",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnCheckObserver(NetworkIdentity, NetworkConnectionToClient)",
+      "id": "Global_DewInterestManagement_OnCheckObserver_Mirror_NetworkIdentity_Mirror_NetworkConnectionToClient_",
+      "declaration": "public override bool OnCheckObserver(NetworkIdentity identity, NetworkConnectionToClient newObserver)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "identity",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newObserver",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnRebuildObservers(NetworkIdentity, HashSet<NetworkConnectionToClient>)",
+      "id": "Global_DewInterestManagement_OnRebuildObservers_Mirror_NetworkIdentity_System_Collections_Generic_HashSet_Mirror_NetworkConnectionToClient__",
+      "declaration": "public override void OnRebuildObservers(NetworkIdentity identity, HashSet<NetworkConnectionToClient> newObservers)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "identity",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newObservers",
+          "type": "System.Collections.Generic.HashSet<T><Mirror.NetworkConnectionToClient>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetHostVisibility(NetworkIdentity, bool)",
+      "id": "Global_DewInterestManagement_SetHostVisibility_Mirror_NetworkIdentity_System_Boolean_",
+      "declaration": "public override void SetHostVisibility(NetworkIdentity identity, bool visible)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "identity",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "visible",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

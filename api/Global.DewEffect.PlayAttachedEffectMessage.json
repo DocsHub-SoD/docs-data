@@ -1,0 +1,72 @@
+{
+  "uid": "Global.DewEffect.PlayAttachedEffectMessage",
+  "name": "DewEffect.PlayAttachedEffectMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewEffect.PlayAttachedEffectMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entity",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNew",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_isNew",
+      "declaration": "public bool isNew",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isPositioned",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_isPositioned",
+      "declaration": "public bool isPositioned",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parent",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_parent",
+      "declaration": "public NetworkIdentity parent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "path",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_path",
+      "declaration": "public string path",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_position",
+      "declaration": "public Vector3 position",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_DewEffect_PlayAttachedEffectMessage_rotation",
+      "declaration": "public Quaternion rotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

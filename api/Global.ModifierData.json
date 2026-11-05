@@ -1,0 +1,48 @@
+{
+  "uid": "Global.ModifierData",
+  "name": "ModifierData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct ModifierData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "clientData",
+      "id": "Global_ModifierData_clientData",
+      "declaration": "public string clientData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id",
+      "id": "Global_ModifierData_id",
+      "declaration": "public int id",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isForceRevealed",
+      "id": "Global_ModifierData_isForceRevealed",
+      "declaration": "public bool isForceRevealed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_ModifierData_type",
+      "declaration": "public string type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

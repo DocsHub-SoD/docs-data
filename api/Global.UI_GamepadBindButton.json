@@ -1,0 +1,61 @@
+{
+  "uid": "Global.UI_GamepadBindButton",
+  "name": "UI_GamepadBindButton",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GamepadBindButton : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "buttonDisplayObject",
+      "id": "Global_UI_GamepadBindButton_buttonDisplayObject",
+      "declaration": "public GameObject buttonDisplayObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "buttonType",
+      "id": "Global_UI_GamepadBindButton_buttonType",
+      "declaration": "public UI_GamepadBindButton.ButtonType buttonType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreInteractableForObject",
+      "id": "Global_UI_GamepadBindButton_ignoreInteractableForObject",
+      "declaration": "public bool ignoreInteractableForObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_UI_GamepadBindButton_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

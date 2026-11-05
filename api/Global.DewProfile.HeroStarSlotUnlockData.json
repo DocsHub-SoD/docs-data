@@ -1,0 +1,85 @@
+{
+  "uid": "Global.DewProfile.HeroStarSlotUnlockData",
+  "name": "DewProfile.HeroStarSlotUnlockData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.HeroStarSlotUnlockData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "addedDestruction",
+      "id": "Global_DewProfile_HeroStarSlotUnlockData_addedDestruction",
+      "declaration": "public List<int> addedDestruction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedFlexible",
+      "id": "Global_DewProfile_HeroStarSlotUnlockData_addedFlexible",
+      "declaration": "public List<int> addedFlexible",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedImagination",
+      "id": "Global_DewProfile_HeroStarSlotUnlockData_addedImagination",
+      "declaration": "public List<int> addedImagination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedLife",
+      "id": "Global_DewProfile_HeroStarSlotUnlockData_addedLife",
+      "declaration": "public List<int> addedLife",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get(StarType)",
+      "id": "Global_DewProfile_HeroStarSlotUnlockData_Get_StarType_",
+      "declaration": "public List<int> Get(StarType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "StarType",
+          "type_uid": "Global.StarType",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><int>"
+    },
+    {
+      "name": "Set(StarType, List<int>)",
+      "id": "Global_DewProfile_HeroStarSlotUnlockData_Set_StarType_System_Collections_Generic_List_System_Int32__",
+      "declaration": "public void Set(StarType type, List<int> list)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "StarType",
+          "type_uid": "Global.StarType",
+          "description": ""
+        },
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.List<T><int>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

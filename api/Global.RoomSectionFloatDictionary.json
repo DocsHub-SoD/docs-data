@@ -1,0 +1,26 @@
+{
+  "uid": "Global.RoomSectionFloatDictionary",
+  "name": "RoomSectionFloatDictionary",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class RoomSectionFloatDictionary : UnitySerializedDictionary<RoomSection, float>",
+  "inheritance": [
+    {
+      "name": "RoomSection",
+      "href": "Global.RoomSection.html",
+      "uid": "Global.RoomSection"
+    },
+    {
+      "name": "RoomSection",
+      "href": "Global.RoomSection.html",
+      "uid": "Global.RoomSection"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

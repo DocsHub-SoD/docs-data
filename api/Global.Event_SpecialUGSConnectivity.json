@@ -1,0 +1,24 @@
+{
+  "uid": "Global.Event_SpecialUGSConnectivity",
+  "name": "Event_SpecialUGSConnectivity",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Event_SpecialUGSConnectivity : Event",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "c_success",
+      "id": "Global_Event_SpecialUGSConnectivity_c_success",
+      "declaration": "public bool c_success { set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

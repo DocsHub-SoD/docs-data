@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewHeroesTeleporter",
+  "name": "DewHeroesTeleporter",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewHeroesTeleporter : MonoBehaviour, IPlayerPathablePoint",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IPlayerPathablePoint",
+      "href": "Global.IPlayerPathablePoint.html",
+      "uid": "Global.IPlayerPathablePoint"
+    }
+  ],
+  "fields": [
+    {
+      "name": "destination",
+      "id": "Global_DewHeroesTeleporter_destination",
+      "declaration": "[InfoBox(\"Heroes will be teleported to the destination spread in local x-axis\", InfoMessageType.Info, null)]\npublic Transform destination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spacing",
+      "id": "Global_DewHeroesTeleporter_spacing",
+      "declaration": "public float spacing",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "pathablePosition",
+      "id": "Global_DewHeroesTeleporter_pathablePosition",
+      "declaration": "public Vector3 pathablePosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "TeleportAllHeroes()",
+      "id": "Global_DewHeroesTeleporter_TeleportAllHeroes",
+      "declaration": "public void TeleportAllHeroes()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

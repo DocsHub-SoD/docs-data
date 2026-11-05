@@ -1,0 +1,15 @@
+{
+  "uid": "Global.RoomEditorMaintenance",
+  "name": "RoomEditorMaintenance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class RoomEditorMaintenance : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

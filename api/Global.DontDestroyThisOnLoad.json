@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DontDestroyThisOnLoad",
+  "name": "DontDestroyThisOnLoad",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DontDestroyThisOnLoad : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

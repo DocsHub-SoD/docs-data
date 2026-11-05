@@ -1,0 +1,120 @@
+{
+  "uid": "Global.SyncableAssetRef",
+  "name": "SyncableAssetRef",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct SyncableAssetRef",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "guid",
+      "id": "Global_SyncableAssetRef_guid",
+      "declaration": "public string guid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActor",
+      "id": "Global_SyncableAssetRef_isActor",
+      "declaration": "public bool isActor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMonoBehaviour",
+      "id": "Global_SyncableAssetRef_isMonoBehaviour",
+      "declaration": "public bool isMonoBehaviour",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "typeAssemblyQualifiedName",
+      "id": "Global_SyncableAssetRef_typeAssemblyQualifiedName",
+      "declaration": "public string typeAssemblyQualifiedName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "typeName",
+      "id": "Global_SyncableAssetRef_typeName",
+      "declaration": "public string typeName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "asset",
+      "id": "Global_SyncableAssetRef_asset",
+      "declaration": "[JsonIgnore]\npublic Object asset { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightAsset",
+      "id": "Global_SyncableAssetRef_lightAsset",
+      "declaration": "[JsonIgnore]\npublic Object lightAsset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ClearCache()",
+      "id": "Global_SyncableAssetRef_ClearCache",
+      "declaration": "public void ClearCache()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Equals(SyncableAssetRef)",
+      "id": "Global_SyncableAssetRef_Equals_SyncableAssetRef_",
+      "declaration": "public bool Equals(SyncableAssetRef other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "SyncableAssetRef",
+          "type_uid": "Global.SyncableAssetRef",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_SyncableAssetRef_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_SyncableAssetRef_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

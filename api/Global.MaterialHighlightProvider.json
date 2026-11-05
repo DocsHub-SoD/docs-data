@@ -1,0 +1,90 @@
+{
+  "uid": "Global.MaterialHighlightProvider",
+  "name": "MaterialHighlightProvider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MaterialHighlightProvider : HighlightProvider, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "HighlightProvider",
+      "href": "Global.HighlightProvider.html",
+      "uid": "Global.HighlightProvider"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "clickValueMax",
+      "id": "Global_MaterialHighlightProvider_clickValueMax",
+      "declaration": "public float clickValueMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cursorValueMultiplier",
+      "id": "Global_MaterialHighlightProvider_cursorValueMultiplier",
+      "declaration": "public float cursorValueMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetMaterial",
+      "id": "Global_MaterialHighlightProvider_targetMaterial",
+      "declaration": "public Material targetMaterial",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetProperty",
+      "id": "Global_MaterialHighlightProvider_targetProperty",
+      "declaration": "public string targetProperty",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_MaterialHighlightProvider_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnClickTimeUpdated()",
+      "id": "Global_MaterialHighlightProvider_OnClickTimeUpdated",
+      "declaration": "protected override void OnClickTimeUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCursorStatusUpdated()",
+      "id": "Global_MaterialHighlightProvider_OnCursorStatusUpdated",
+      "declaration": "protected override void OnCursorStatusUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

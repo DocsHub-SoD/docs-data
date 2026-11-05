@@ -1,0 +1,81 @@
+{
+  "uid": "Global.Room_Trap_CyclicActivator",
+  "name": "Room_Trap_CyclicActivator",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_Trap_CyclicActivator : Room_Trap_ActivatorBase, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Room_Trap_ActivatorBase",
+      "href": "Global.Room_Trap_ActivatorBase.html",
+      "uid": "Global.Room_Trap_ActivatorBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activateTimes",
+      "id": "Global_Room_Trap_CyclicActivator_activateTimes",
+      "declaration": "public float[] activateTimes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cycleInterval",
+      "id": "Global_Room_Trap_CyclicActivator_cycleInterval",
+      "declaration": "public float cycleInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minDistanceFromPlayerToBeActive",
+      "id": "Global_Room_Trap_CyclicActivator_minDistanceFromPlayerToBeActive",
+      "declaration": "public float minDistanceFromPlayerToBeActive",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "timeScale",
+      "id": "Global_Room_Trap_CyclicActivator_timeScale",
+      "declaration": "public float timeScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_Room_Trap_CyclicActivator_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

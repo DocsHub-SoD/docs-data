@@ -1,0 +1,15 @@
+{
+  "uid": "Global.CurrencyType",
+  "name": "CurrencyType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum CurrencyType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

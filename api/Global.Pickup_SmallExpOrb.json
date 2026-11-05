@@ -1,0 +1,57 @@
+{
+  "uid": "Global.Pickup_SmallExpOrb",
+  "name": "Pickup_SmallExpOrb",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Pickup_SmallExpOrb : Pickup_BaseExpOrb, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "PickupInstance",
+      "href": "Global.PickupInstance.html",
+      "uid": "Global.PickupInstance"
+    },
+    {
+      "name": "Pickup_BaseExpOrb",
+      "href": "Global.Pickup_BaseExpOrb.html",
+      "uid": "Global.Pickup_BaseExpOrb"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

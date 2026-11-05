@@ -1,0 +1,156 @@
+{
+  "uid": "Global.Pickup_BaseGoldOrb",
+  "name": "Pickup_BaseGoldOrb",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Pickup_BaseGoldOrb : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "PickupInstance",
+      "href": "Global.PickupInstance.html",
+      "uid": "Global.PickupInstance"
+    },
+    {
+      "name": "Pickup_LargeGoldOrb",
+      "href": "Global.Pickup_LargeGoldOrb.html",
+      "uid": "Global.Pickup_LargeGoldOrb"
+    },
+    {
+      "name": "Pickup_MediumGoldOrb",
+      "href": "Global.Pickup_MediumGoldOrb.html",
+      "uid": "Global.Pickup_MediumGoldOrb"
+    },
+    {
+      "name": "Pickup_SmallGoldOrb",
+      "href": "Global.Pickup_SmallGoldOrb.html",
+      "uid": "Global.Pickup_SmallGoldOrb"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "amount",
+      "id": "Global_Pickup_BaseGoldOrb_amount",
+      "declaration": "[NonSerialized]\npublic int amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGivenByOtherPlayer",
+      "id": "Global_Pickup_BaseGoldOrb_isGivenByOtherPlayer",
+      "declaration": "[NonSerialized]\npublic bool isGivenByOtherPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isKillGold",
+      "id": "Global_Pickup_BaseGoldOrb_isKillGold",
+      "declaration": "[NonSerialized]\npublic bool isKillGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_Pickup_BaseGoldOrb_target",
+      "declaration": "[NonSerialized]\npublic Hero target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Pickup_BaseGoldOrb_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanBeUsedBy(Hero)",
+      "id": "Global_Pickup_BaseGoldOrb_CanBeUsedBy_Hero_",
+      "declaration": "protected override bool CanBeUsedBy(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Pickup_BaseGoldOrb_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Pickup_BaseGoldOrb_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPickup(Hero)",
+      "id": "Global_Pickup_BaseGoldOrb_OnPickup_Hero_",
+      "declaration": "protected override void OnPickup(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,205 @@
+{
+  "uid": "Global.CinematicCameraHelper",
+  "name": "CinematicCameraHelper",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(500)]\npublic class CinematicCameraHelper : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "castIndicatorObject",
+      "id": "Global_CinematicCameraHelper_castIndicatorObject",
+      "declaration": "public GameObject castIndicatorObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cinematicCameras",
+      "id": "Global_CinematicCameraHelper_cinematicCameras",
+      "declaration": "public GameObject[] cinematicCameras",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entireUICanvasGroup",
+      "id": "Global_CinematicCameraHelper_entireUICanvasGroup",
+      "declaration": "public CanvasGroup entireUICanvasGroup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamFastSpeed",
+      "id": "Global_CinematicCameraHelper_freeCamFastSpeed",
+      "declaration": "public float freeCamFastSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamIndex",
+      "id": "Global_CinematicCameraHelper_freeCamIndex",
+      "declaration": "public int freeCamIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamMouseSensitivity",
+      "id": "Global_CinematicCameraHelper_freeCamMouseSensitivity",
+      "declaration": "public float freeCamMouseSensitivity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamRotSmoothTime",
+      "id": "Global_CinematicCameraHelper_freeCamRotSmoothTime",
+      "declaration": "public float freeCamRotSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamSlowSpeed",
+      "id": "Global_CinematicCameraHelper_freeCamSlowSpeed",
+      "declaration": "public float freeCamSlowSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamSmoothTime",
+      "id": "Global_CinematicCameraHelper_freeCamSmoothTime",
+      "declaration": "public float freeCamSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamSpeed",
+      "id": "Global_CinematicCameraHelper_freeCamSpeed",
+      "declaration": "public float freeCamSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamTargetTransform",
+      "id": "Global_CinematicCameraHelper_freeCamTargetTransform",
+      "declaration": "public Transform freeCamTargetTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeCamTransform",
+      "id": "Global_CinematicCameraHelper_freeCamTransform",
+      "declaration": "public Transform freeCamTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "groupAllHeroes",
+      "id": "Global_CinematicCameraHelper_groupAllHeroes",
+      "declaration": "public CinemachineTargetGroup groupAllHeroes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "groupHeroesAndMonsters",
+      "id": "Global_CinematicCameraHelper_groupHeroesAndMonsters",
+      "declaration": "public CinemachineTargetGroup groupHeroesAndMonsters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "groupMyHero",
+      "id": "Global_CinematicCameraHelper_groupMyHero",
+      "declaration": "public CinemachineTargetGroup groupMyHero",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxTargets",
+      "id": "Global_CinematicCameraHelper_maxTargets",
+      "declaration": "public int maxTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "radius",
+      "id": "Global_CinematicCameraHelper_radius",
+      "declaration": "public float radius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "weightGainPerSecond",
+      "id": "Global_CinematicCameraHelper_weightGainPerSecond",
+      "declaration": "public float weightGainPerSecond",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isCinematicHelperEnabled",
+      "id": "Global_CinematicCameraHelper_isCinematicHelperEnabled",
+      "declaration": "public bool isCinematicHelperEnabled { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_CinematicCameraHelper_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_CinematicCameraHelper_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

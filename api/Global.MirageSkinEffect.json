@@ -1,0 +1,217 @@
+{
+  "uid": "Global.MirageSkinEffect",
+  "name": "MirageSkinEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MirageSkinEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IOtherPlayersTonedDownDisable",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "StatusEffect",
+      "href": "Global.StatusEffect.html",
+      "uid": "Global.StatusEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IOtherPlayersTonedDownDisable",
+      "href": "Global.IOtherPlayersTonedDownDisable.html",
+      "uid": "Global.IOtherPlayersTonedDownDisable"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowWhenChanneling",
+      "id": "Global_MirageSkinEffect_allowWhenChanneling",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\n[ShowIf(\"enableSpecialAttack\", true)]\npublic bool allowWhenChanneling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "breakStunDuration",
+      "id": "Global_MirageSkinEffect_breakStunDuration",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic float breakStunDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customAmount",
+      "id": "Global_MirageSkinEffect_customAmount",
+      "declaration": "[NonSerialized]\npublic float? customAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableSpecialAttack",
+      "id": "Global_MirageSkinEffect_enableSpecialAttack",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic bool enableSpecialAttack",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxBreak",
+      "id": "Global_MirageSkinEffect_fxBreak",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic GameObject fxBreak",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxDamage",
+      "id": "Global_MirageSkinEffect_fxDamage",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic GameObject fxDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxDamagedCooldown",
+      "id": "Global_MirageSkinEffect_fxDamagedCooldown",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic float fxDamagedCooldown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxDamageOverTime",
+      "id": "Global_MirageSkinEffect_fxDamageOverTime",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic GameObject fxDamageOverTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealthRatio",
+      "id": "Global_MirageSkinEffect_maxHealthRatio",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic float maxHealthRatio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextSpecialAttackTime",
+      "id": "Global_MirageSkinEffect_nextSpecialAttackTime",
+      "declaration": "[NonSerialized]\npublic float nextSpecialAttackTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shieldMaxHealthRatio",
+      "id": "Global_MirageSkinEffect_shieldMaxHealthRatio",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic float shieldMaxHealthRatio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "specialAttackInterval",
+      "id": "Global_MirageSkinEffect_specialAttackInterval",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\n[ShowIf(\"enableSpecialAttack\", true)]\npublic Vector2 specialAttackInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tier",
+      "id": "Global_MirageSkinEffect_tier",
+      "declaration": "[BoxGroup(\"Mirage Skin Settings\", true, false, 0)]\npublic int tier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_MirageSkinEffect_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_MirageSkinEffect_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDealDamage(EventInfoDamage)",
+      "id": "Global_MirageSkinEffect_OnDealDamage_EventInfoDamage_",
+      "declaration": "public virtual void OnDealDamage(EventInfoDamage obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "EventInfoDamage",
+          "type_uid": "Global.EventInfoDamage",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_MirageSkinEffect_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSpecialAttack()",
+      "id": "Global_MirageSkinEffect_OnSpecialAttack",
+      "declaration": "public virtual void OnSpecialAttack()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,49 @@
+{
+  "uid": "Global.BackHandler",
+  "name": "BackHandler",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class BackHandler",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "func",
+      "id": "Global_BackHandler_func",
+      "declaration": "public Func<bool> func",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_BackHandler_owner",
+      "declaration": "public MonoBehaviour owner",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_BackHandler_priority",
+      "declaration": "public int priority",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Remove()",
+      "id": "Global_BackHandler_Remove",
+      "declaration": "public void Remove()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

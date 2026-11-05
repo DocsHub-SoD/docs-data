@@ -1,0 +1,32 @@
+{
+  "uid": "Global.PingManager.PingPrefabBindings",
+  "name": "PingManager.PingPrefabBindings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct PingManager.PingPrefabBindings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ui",
+      "id": "Global_PingManager_PingPrefabBindings_ui",
+      "declaration": "public PingUIInstance ui",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "world",
+      "id": "Global_PingManager_PingPrefabBindings_world",
+      "declaration": "public PingInstance world",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

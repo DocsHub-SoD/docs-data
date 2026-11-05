@@ -1,0 +1,76 @@
+{
+  "uid": "Global.Rift_MockExit",
+  "name": "Rift_MockExit",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Rift_MockExit : Rift_RoomExit, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby, IBanRoomNodesNearbyMultiple",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Rift",
+      "href": "Global.Rift.html",
+      "uid": "Global.Rift"
+    },
+    {
+      "name": "Rift_RoomExit",
+      "href": "Global.Rift_RoomExit.html",
+      "uid": "Global.Rift_RoomExit"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    },
+    {
+      "name": "IBanRoomNodesNearbyMultiple",
+      "href": "Global.IBanRoomNodesNearbyMultiple.html",
+      "uid": "Global.IBanRoomNodesNearbyMultiple"
+    }
+  ],
+  "fields": [
+    {
+      "name": "onTravel",
+      "id": "Global_Rift_MockExit_onTravel",
+      "declaration": "public UnityEvent<int> onTravel",
+      "summary": "Called on interacting client.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

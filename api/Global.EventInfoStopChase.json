@@ -1,0 +1,24 @@
+{
+  "uid": "Global.EventInfoStopChase",
+  "name": "EventInfoStopChase",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoStopChase",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entity",
+      "id": "Global_EventInfoStopChase_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

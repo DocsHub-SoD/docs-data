@@ -1,0 +1,122 @@
+{
+  "uid": "Global.FxAttachToEntity",
+  "name": "FxAttachToEntity",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[LogicUpdatePriority(1000)]\npublic class FxAttachToEntity : LogicBehaviour, ILogicUpdate, IAttachableToEntity",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "IAttachableToEntity",
+      "href": "Global.IAttachableToEntity.html",
+      "uid": "Global.IAttachableToEntity"
+    }
+  ],
+  "fields": [
+    {
+      "name": "offset",
+      "id": "Global_FxAttachToEntity_offset",
+      "declaration": "public FxAttachToEntity.OffsetType offset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_FxAttachToEntity_position",
+      "declaration": "public FxAttachToEntity.PositionType position",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_FxAttachToEntity_rotation",
+      "declaration": "public FxAttachToEntity.RotationType rotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scale",
+      "id": "Global_FxAttachToEntity_scale",
+      "declaration": "public FxAttachToEntity.ScaleType scale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useFlatRotation",
+      "id": "Global_FxAttachToEntity_useFlatRotation",
+      "declaration": "[ToggleLeft]\n[HideIf(\"@rotation == RotationType.DoNothing\", true)]\npublic bool useFlatRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "targetEntity",
+      "id": "Global_FxAttachToEntity_targetEntity",
+      "declaration": "public Entity targetEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_FxAttachToEntity_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_FxAttachToEntity_OnAttachToEntity_Entity_",
+      "declaration": "public void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_FxAttachToEntity_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_FxAttachToEntity_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

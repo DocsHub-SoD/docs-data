@@ -1,0 +1,242 @@
+{
+  "uid": "Global.DewBinding",
+  "name": "DewBinding",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class DewBinding",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "canAssignGamepad",
+      "id": "Global_DewBinding_canAssignGamepad",
+      "declaration": "public bool canAssignGamepad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canAssignKeyboard",
+      "id": "Global_DewBinding_canAssignKeyboard",
+      "declaration": "public bool canAssignKeyboard",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canAssignMouse",
+      "id": "Global_DewBinding_canAssignMouse",
+      "declaration": "public bool canAssignMouse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gamepad",
+      "id": "Global_DewBinding_gamepad",
+      "declaration": "[Obsolete]\npublic GamepadButtonEx? gamepad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gamepadBinds",
+      "id": "Global_DewBinding_gamepadBinds",
+      "declaration": "public List<GamepadButtonEx> gamepadBinds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "keyboard",
+      "id": "Global_DewBinding_keyboard",
+      "declaration": "[Obsolete]\npublic Key keyboard",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "keyModifiers",
+      "id": "Global_DewBinding_keyModifiers",
+      "declaration": "[Obsolete]\npublic List<Key> keyModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MockBinding",
+      "id": "Global_DewBinding_MockBinding",
+      "declaration": "public static readonly DewBinding MockBinding",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mouse",
+      "id": "Global_DewBinding_mouse",
+      "declaration": "[Obsolete]\npublic MouseButton mouse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pcBinds",
+      "id": "Global_DewBinding_pcBinds",
+      "declaration": "public List<PCBind> pcBinds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewBinding_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    },
+    {
+      "name": "CloneWith(GamepadButtonEx)",
+      "id": "Global_DewBinding_CloneWith_GamepadButtonEx_",
+      "declaration": "public DewBinding CloneWith(GamepadButtonEx added)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "added",
+          "type": "GamepadButtonEx",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "CloneWith(MouseButton)",
+      "id": "Global_DewBinding_CloneWith_MouseButton_",
+      "declaration": "public DewBinding CloneWith(MouseButton added)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "added",
+          "type": "MouseButton",
+          "type_uid": "Global.MouseButton",
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "CloneWith(Key)",
+      "id": "Global_DewBinding_CloneWith_UnityEngine_InputSystem_Key_",
+      "declaration": "public DewBinding CloneWith(Key added)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "added",
+          "type": "UnityEngine.InputSystem.Key",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "GamepadOnly(params object[])",
+      "id": "Global_DewBinding_GamepadOnly_System_Object___",
+      "declaration": "public static DewBinding GamepadOnly(params object[] keys)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "keys",
+          "type": "object[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "GetBindingTypes()",
+      "id": "Global_DewBinding_GetBindingTypes",
+      "declaration": "public BindingType GetBindingTypes()",
+      "summary": "",
+      "parameters": [],
+      "returns": "BindingType"
+    },
+    {
+      "name": "HasAssignedForCurrentMode()",
+      "id": "Global_DewBinding_HasAssignedForCurrentMode",
+      "declaration": "public bool HasAssignedForCurrentMode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "HasGamepadAssigned()",
+      "id": "Global_DewBinding_HasGamepadAssigned",
+      "declaration": "public bool HasGamepadAssigned()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "HasPCAssigned()",
+      "id": "Global_DewBinding_HasPCAssigned",
+      "declaration": "public bool HasPCAssigned()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "KeyboardAndMouseOnly(params object[])",
+      "id": "Global_DewBinding_KeyboardAndMouseOnly_System_Object___",
+      "declaration": "public static DewBinding KeyboardAndMouseOnly(params object[] keys)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "keys",
+          "type": "object[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "KeyboardOnly(params object[])",
+      "id": "Global_DewBinding_KeyboardOnly_System_Object___",
+      "declaration": "public static DewBinding KeyboardOnly(params object[] keys)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "keys",
+          "type": "object[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "PCAndGamepad(params object[])",
+      "id": "Global_DewBinding_PCAndGamepad_System_Object___",
+      "declaration": "public static DewBinding PCAndGamepad(params object[] keys)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "keys",
+          "type": "object[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    }
+  ],
+  "events": []
+}

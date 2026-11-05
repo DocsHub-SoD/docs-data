@@ -1,0 +1,35 @@
+{
+  "uid": "Global.SpeedEffect",
+  "name": "SpeedEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SpeedEffect : BasicEffectWithStrength",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    },
+    {
+      "name": "BasicEffectWithStrength",
+      "href": "Global.BasicEffectWithStrength.html",
+      "uid": "Global.BasicEffectWithStrength"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_SpeedEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

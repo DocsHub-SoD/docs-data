@@ -1,0 +1,72 @@
+{
+  "uid": "Global.EventInfoAttackFired",
+  "name": "EventInfoAttackFired",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoAttackFired",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoAttackFired_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who invoked this event in an actor chain.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "everyFourAttackNormalizedProgress",
+      "id": "Global_EventInfoAttackFired_everyFourAttackNormalizedProgress",
+      "declaration": "public float everyFourAttackNormalizedProgress",
+      "summary": "Charge amount of every four attack effect, after firing this basic attack.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_EventInfoAttackFired_info",
+      "declaration": "public CastInfo info",
+      "summary": "Cast info of this attack. Note the attack might be directional cast thus have no target.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_EventInfoAttackFired_instance",
+      "declaration": "public AbilityInstance instance",
+      "summary": "The attack ability instance.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCrit",
+      "id": "Global_EventInfoAttackFired_isCrit",
+      "declaration": "public bool isCrit",
+      "summary": "Is fired attack critical hit?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNextAttackFourthAttack",
+      "id": "Global_EventInfoAttackFired_isNextAttackFourthAttack",
+      "declaration": "public bool isNextAttackFourthAttack",
+      "summary": "Is next attack going to be fourth attack?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isThisAttackFourthAttack",
+      "id": "Global_EventInfoAttackFired_isThisAttackFourthAttack",
+      "declaration": "public bool isThisAttackFourthAttack",
+      "summary": "Is this attack fourth attack?",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

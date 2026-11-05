@@ -1,0 +1,15 @@
+{
+  "uid": "Global.FxParticleSystem.ClearParticlesBehavior",
+  "name": "FxParticleSystem.ClearParticlesBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum FxParticleSystem.ClearParticlesBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

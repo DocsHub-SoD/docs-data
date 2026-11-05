@@ -1,0 +1,39 @@
+{
+  "uid": "Global.AttackCriticalEffect",
+  "name": "AttackCriticalEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AttackCriticalEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onUse",
+      "id": "Global_AttackCriticalEffect_onUse",
+      "declaration": "public Action onUse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_AttackCriticalEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

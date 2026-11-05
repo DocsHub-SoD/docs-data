@@ -1,0 +1,66 @@
+{
+  "uid": "Global.MonsterSpawnCondition",
+  "name": "MonsterSpawnCondition",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class MonsterSpawnCondition",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "conditionValueMax",
+      "id": "Global_MonsterSpawnCondition_conditionValueMax",
+      "declaration": "[LabelText(\"Max\")]\n[HorizontalGroup(\"C\", 0, 0, 0, 0)]\npublic float conditionValueMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conditionValueMin",
+      "id": "Global_MonsterSpawnCondition_conditionValueMin",
+      "declaration": "[LabelText(\"Min\")]\n[HorizontalGroup(\"C\", 0, 0, 0, 0)]\npublic float conditionValueMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_MonsterSpawnCondition_type",
+      "declaration": "[HideLabel]\npublic MonsterSpawnConditionType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "conditionValueMaxInt",
+      "id": "Global_MonsterSpawnCondition_conditionValueMaxInt",
+      "declaration": "public int conditionValueMaxInt { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conditionValueMinInt",
+      "id": "Global_MonsterSpawnCondition_conditionValueMinInt",
+      "declaration": "public int conditionValueMinInt { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "EvaluateCondition()",
+      "id": "Global_MonsterSpawnCondition_EvaluateCondition",
+      "declaration": "public bool EvaluateCondition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

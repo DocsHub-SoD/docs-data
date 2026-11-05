@@ -1,0 +1,56 @@
+{
+  "uid": "Global.FeedbackManager.EffectPool",
+  "name": "FeedbackManager.EffectPool",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\npublic class FeedbackManager.EffectPool",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "effect",
+      "id": "Global_FeedbackManager_EffectPool_effect",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic GameObject effect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfSources",
+      "id": "Global_FeedbackManager_EffectPool_numOfSources",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic int numOfSources",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Init(Transform)",
+      "id": "Global_FeedbackManager_EffectPool_Init_UnityEngine_Transform_",
+      "declaration": "public void Init(Transform parent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FeedbackManager_EffectPool_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

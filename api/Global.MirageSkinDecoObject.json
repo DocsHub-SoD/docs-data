@@ -1,0 +1,24 @@
+{
+  "uid": "Global.MirageSkinDecoObject",
+  "name": "MirageSkinDecoObject",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MirageSkinDecoObject : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "targetEffect",
+      "id": "Global_MirageSkinDecoObject_targetEffect",
+      "declaration": "public AssetRef<MirageSkinEffect> targetEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.PropSpawnRule",
+  "name": "PropSpawnRule",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"New Prop Spawn Rule\", menuName = \"Prop Spawn Rule\")]\npublic class PropSpawnRule : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entries",
+      "id": "Global_PropSpawnRule_entries",
+      "declaration": "[ListDrawerSettings(Expanded = true)]\npublic List<PropSpawnRule.PropEntry> entries",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,405 @@
+{
+  "uid": "Global.RoomMonsters",
+  "name": "RoomMonsters",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RoomComponentStartDependency(typeof(RoomModifiers))]\npublic class RoomMonsters : RoomComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "addedHunterChance",
+      "id": "Global_RoomMonsters_addedHunterChance",
+      "declaration": "public float addedHunterChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedMirageChance",
+      "id": "Global_RoomMonsters_addedMirageChance",
+      "declaration": "public float addedMirageChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "campDensity",
+      "id": "Global_RoomMonsters_campDensity",
+      "declaration": "[InfoBox(\"@Mathf.RoundToInt(campDensity * GetComponent<RoomMap>().mapData.area) + \\\" Camps\\\"\", InfoMessageType.Info, null)]\n[HideIf(\"disableEnvSpawn\", true)]\npublic float campDensity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "campPopulation",
+      "id": "Global_RoomMonsters_campPopulation",
+      "declaration": "[HideIf(\"disableEnvSpawn\", true)]\npublic Vector2 campPopulation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CampWanderRange",
+      "id": "Global_RoomMonsters_CampWanderRange",
+      "declaration": "public const float CampWanderRange = 6",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "clearRoomOnClearAllCombatAreas",
+      "id": "Global_RoomMonsters_clearRoomOnClearAllCombatAreas",
+      "declaration": "[ToggleLeft]\npublic bool clearRoomOnClearAllCombatAreas",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CombatAreaScoreRandomness",
+      "id": "Global_RoomMonsters_CombatAreaScoreRandomness",
+      "declaration": "public const float CombatAreaScoreRandomness = 0.3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultRule",
+      "id": "Global_RoomMonsters_defaultRule",
+      "declaration": "public MonsterSpawnRule defaultRule",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destroyedSceneIds",
+      "id": "Global_RoomMonsters_destroyedSceneIds",
+      "declaration": "[NonSerialized]\n[SaveVar(SaveVarFlags.Default)]\npublic List<ulong> destroyedSceneIds",
+      "summary": "Available on server. Ids of objects that were in the room but has been destroyed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableEnvSpawn",
+      "id": "Global_RoomMonsters_disableEnvSpawn",
+      "declaration": "[Space(16)]\npublic bool disableEnvSpawn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableMiniBossRewards",
+      "id": "Global_RoomMonsters_disableMiniBossRewards",
+      "declaration": "[NonSerialized]\npublic bool disableMiniBossRewards",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "envSpawnPoolOverride",
+      "id": "Global_RoomMonsters_envSpawnPoolOverride",
+      "declaration": "[HideIf(\"disableEnvSpawn\", true)]\npublic MonsterPool envSpawnPoolOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "insertedCombatAreas",
+      "id": "Global_RoomMonsters_insertedCombatAreas",
+      "declaration": "public int insertedCombatAreas",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPopulationMultiplier",
+      "id": "Global_RoomMonsters_maxPopulationMultiplier",
+      "declaration": "public float maxPopulationMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onAfterSpawn",
+      "id": "Global_RoomMonsters_onAfterSpawn",
+      "declaration": "public SafeAction<Entity> onAfterSpawn",
+      "summary": "Called on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onBeforeSpawn",
+      "id": "Global_RoomMonsters_onBeforeSpawn",
+      "declaration": "public SafeAction<Entity> onBeforeSpawn",
+      "summary": "Called on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ongoingSpawns",
+      "id": "Global_RoomMonsters_ongoingSpawns",
+      "declaration": "public Dictionary<SpawnMonsterSettings, Coroutine> ongoingSpawns",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onWelcomingSpawnEnd",
+      "id": "Global_RoomMonsters_onWelcomingSpawnEnd",
+      "declaration": "public SafeAction onWelcomingSpawnEnd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onWelcomingSpawnStart",
+      "id": "Global_RoomMonsters_onWelcomingSpawnStart",
+      "declaration": "public SafeAction onWelcomingSpawnStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OverpopulationStallDelayMax",
+      "id": "Global_RoomMonsters_OverpopulationStallDelayMax",
+      "declaration": "public const float OverpopulationStallDelayMax = 1.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OverpopulationStallDelayMin",
+      "id": "Global_RoomMonsters_OverpopulationStallDelayMin",
+      "declaration": "public const float OverpopulationStallDelayMin = 0.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpawnDelayMax",
+      "id": "Global_RoomMonsters_SpawnDelayMax",
+      "declaration": "public const float SpawnDelayMax = 0.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpawnDelayMin",
+      "id": "Global_RoomMonsters_SpawnDelayMin",
+      "declaration": "public const float SpawnDelayMin = 0.1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedPopMultiplier",
+      "id": "Global_RoomMonsters_spawnedPopMultiplier",
+      "declaration": "public float spawnedPopMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "didSetupCombatAreas",
+      "id": "Global_RoomMonsters_didSetupCombatAreas",
+      "declaration": "public bool didSetupCombatAreas { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDoingHunterWelcomingSpawn",
+      "id": "Global_RoomMonsters_isDoingHunterWelcomingSpawn",
+      "declaration": "public bool isDoingHunterWelcomingSpawn { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_RoomMonsters_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FinishAllOngoingSpawns()",
+      "id": "Global_RoomMonsters_FinishAllOngoingSpawns",
+      "declaration": "public void FinishAllOngoingSpawns()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStart()",
+      "id": "Global_RoomMonsters_OnRoomStart",
+      "declaration": "public override void OnRoomStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStartServer()",
+      "id": "Global_RoomMonsters_OnRoomStartServer",
+      "declaration": "public override void OnRoomStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStop()",
+      "id": "Global_RoomMonsters_OnRoomStop",
+      "declaration": "public override void OnRoomStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStopServer()",
+      "id": "Global_RoomMonsters_OnRoomStopServer",
+      "declaration": "public override void OnRoomStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OverrideMonsterType(Monster)",
+      "id": "Global_RoomMonsters_OverrideMonsterType_Monster_",
+      "declaration": "public void OverrideMonsterType(Monster m)",
+      "summary": "Make this room spawn a single type of monsters. This cannot be undone.",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "Monster",
+          "type_uid": "Global.Monster",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveAllCamps()",
+      "id": "Global_RoomMonsters_RemoveAllCamps",
+      "declaration": "public void RemoveAllCamps()",
+      "summary": "Remove all camps and any spawned entities.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SelectMiniBoss(out Entity, out MiniBossEffect, DewRandom)",
+      "id": "Global_RoomMonsters_SelectMiniBoss_Entity__MiniBossEffect__DewRandom_",
+      "declaration": "public void SelectMiniBoss(out Entity entity, out MiniBossEffect effect, DewRandom random)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "MiniBossEffect",
+          "type_uid": "Global.MiniBossEffect",
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpawnMiniBoss(SpawnMonsterSettings, Entity, StatusEffect)",
+      "id": "Global_RoomMonsters_SpawnMiniBoss_SpawnMonsterSettings_Entity_StatusEffect_",
+      "declaration": "public void SpawnMiniBoss(SpawnMonsterSettings settings, Entity ent = null, StatusEffect se = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "SpawnMonsterSettings",
+          "type_uid": "Global.SpawnMonsterSettings",
+          "description": ""
+        },
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "se",
+          "type": "StatusEffect",
+          "type_uid": "Global.StatusEffect",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpawnMonsters(SpawnMonsterSettings)",
+      "id": "Global_RoomMonsters_SpawnMonsters_SpawnMonsterSettings_",
+      "declaration": "public void SpawnMonsters(SpawnMonsterSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "SpawnMonsterSettings",
+          "type_uid": "Global.SpawnMonsterSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpawnMonstersAsync(SpawnMonsterSettings)",
+      "id": "Global_RoomMonsters_SpawnMonstersAsync_SpawnMonsterSettings_",
+      "declaration": "public UniTask SpawnMonstersAsync(SpawnMonsterSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "SpawnMonsterSettings",
+          "type_uid": "Global.SpawnMonsterSettings",
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    }
+  ],
+  "events": []
+}

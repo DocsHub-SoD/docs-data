@@ -1,0 +1,72 @@
+{
+  "uid": "Global.DewMessageSettings",
+  "name": "DewMessageSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewMessageSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "buttons",
+      "id": "Global_DewMessageSettings_buttons",
+      "declaration": "public DewMessageSettings.ButtonType buttons",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultButton",
+      "id": "Global_DewMessageSettings_defaultButton",
+      "declaration": "public DewMessageSettings.ButtonType defaultButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destructiveConfirm",
+      "id": "Global_DewMessageSettings_destructiveConfirm",
+      "declaration": "public bool destructiveConfirm",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onClose",
+      "id": "Global_DewMessageSettings_onClose",
+      "declaration": "public Action<DewMessageSettings.ButtonType> onClose",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_DewMessageSettings_owner",
+      "declaration": "public Object owner",
+      "summary": "If set, the message will disappear when owner is destroyed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawContent",
+      "id": "Global_DewMessageSettings_rawContent",
+      "declaration": "public string rawContent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "validator",
+      "id": "Global_DewMessageSettings_validator",
+      "declaration": "public Func<bool> validator",
+      "summary": "If this returns false, the message will be closed.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

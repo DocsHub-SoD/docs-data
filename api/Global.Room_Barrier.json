@@ -1,0 +1,134 @@
+{
+  "uid": "Global.Room_Barrier",
+  "name": "Room_Barrier",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_Barrier : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "canPassThroughOneWay",
+      "id": "Global_Room_Barrier_canPassThroughOneWay",
+      "declaration": "public bool canPassThroughOneWay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "closedEffect",
+      "id": "Global_Room_Barrier_closedEffect",
+      "declaration": "public GameObject closedEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "openEffect",
+      "id": "Global_Room_Barrier_openEffect",
+      "declaration": "public GameObject openEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "passThroughCollider",
+      "id": "Global_Room_Barrier_passThroughCollider",
+      "declaration": "[ShowIf(\"canPassThroughOneWay\", true)]\npublic DewCollider passThroughCollider",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isOpen",
+      "id": "Global_Room_Barrier_isOpen",
+      "declaration": "public bool isOpen { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_Room_Barrier_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Close()",
+      "id": "Global_Room_Barrier_Close",
+      "declaration": "public void Close()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_Room_Barrier_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_Room_Barrier_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Room_Barrier_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_Room_Barrier_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Open()",
+      "id": "Global_Room_Barrier_Open",
+      "declaration": "public void Open()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Toggle()",
+      "id": "Global_Room_Barrier_Toggle",
+      "declaration": "public void Toggle()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

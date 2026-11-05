@@ -1,0 +1,102 @@
+{
+  "uid": "Global.UI_GamepadTextInput_Key",
+  "name": "UI_GamepadTextInput_Key",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GamepadTextInput_Key : UI_GamepadFocusable, IGamepadFocusable, IGamepadFocusListener, IGamepadFocusableOverrideInput",
+  "inheritance": [
+    {
+      "name": "UI_GamepadFocusable",
+      "href": "Global.UI_GamepadFocusable.html",
+      "uid": "Global.UI_GamepadFocusable"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IGamepadFocusable",
+      "href": "Global.IGamepadFocusable.html",
+      "uid": "Global.IGamepadFocusable"
+    },
+    {
+      "name": "IGamepadFocusListener",
+      "href": "Global.IGamepadFocusListener.html",
+      "uid": "Global.IGamepadFocusListener"
+    },
+    {
+      "name": "IGamepadFocusableOverrideInput",
+      "href": "Global.IGamepadFocusableOverrideInput.html",
+      "uid": "Global.IGamepadFocusableOverrideInput"
+    }
+  ],
+  "fields": [
+    {
+      "name": "key",
+      "id": "Global_UI_GamepadTextInput_Key_key",
+      "declaration": "public string key",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "keyText",
+      "id": "Global_UI_GamepadTextInput_Key_keyText",
+      "declaration": "public TextMeshProUGUI keyText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnGamepadDpadDown()",
+      "id": "Global_UI_GamepadTextInput_Key_OnGamepadDpadDown",
+      "declaration": "public bool OnGamepadDpadDown()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadLeft()",
+      "id": "Global_UI_GamepadTextInput_Key_OnGamepadDpadLeft",
+      "declaration": "public bool OnGamepadDpadLeft()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadRight()",
+      "id": "Global_UI_GamepadTextInput_Key_OnGamepadDpadRight",
+      "declaration": "public bool OnGamepadDpadRight()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnGamepadDpadUp()",
+      "id": "Global_UI_GamepadTextInput_Key_OnGamepadDpadUp",
+      "declaration": "public bool OnGamepadDpadUp()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnPointerClick(PointerEventData)",
+      "id": "Global_UI_GamepadTextInput_Key_OnPointerClick_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerClick(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

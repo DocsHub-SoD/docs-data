@@ -1,0 +1,15 @@
+{
+  "uid": "Global.BuildType",
+  "name": "BuildType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum BuildType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

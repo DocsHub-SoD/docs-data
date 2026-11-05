@@ -1,0 +1,726 @@
+{
+  "uid": "Global.EditSkillManager",
+  "name": "EditSkillManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EditSkillManager : ManagerBase<EditSkillManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "EditSkillManager",
+      "href": "Global.EditSkillManager.html",
+      "uid": "Global.EditSkillManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "backButtonPriority",
+      "id": "Global_EditSkillManager_backButtonPriority",
+      "declaration": "public int backButtonPriority",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canRepeatConfirmHold",
+      "id": "Global_EditSkillManager_canRepeatConfirmHold",
+      "declaration": "[NonSerialized]\npublic bool canRepeatConfirmHold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "confirmHoldAudio",
+      "id": "Global_EditSkillManager_confirmHoldAudio",
+      "declaration": "public DewAudioSource confirmHoldAudio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "confirmHoldGem",
+      "id": "Global_EditSkillManager_confirmHoldGem",
+      "declaration": "[NonSerialized]\npublic GemLocation confirmHoldGem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "confirmHoldNormalizedAmount",
+      "id": "Global_EditSkillManager_confirmHoldNormalizedAmount",
+      "declaration": "[NonSerialized]\npublic float confirmHoldNormalizedAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "confirmHoldSkill",
+      "id": "Global_EditSkillManager_confirmHoldSkill",
+      "declaration": "[NonSerialized]\npublic HeroSkillLocation confirmHoldSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didClickWhileConfirmHolding",
+      "id": "Global_EditSkillManager_didClickWhileConfirmHolding",
+      "declaration": "[NonSerialized]\npublic bool didClickWhileConfirmHolding",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dropToGroundBlocker",
+      "id": "Global_EditSkillManager_dropToGroundBlocker",
+      "declaration": "public RectTransform dropToGroundBlocker",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isConfirmHoldingGem",
+      "id": "Global_EditSkillManager_isConfirmHoldingGem",
+      "declaration": "[NonSerialized]\npublic bool isConfirmHoldingGem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isConfirmHoldingSkill",
+      "id": "Global_EditSkillManager_isConfirmHoldingSkill",
+      "declaration": "[NonSerialized]\npublic bool isConfirmHoldingSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onDraggingObjectChanged",
+      "id": "Global_EditSkillManager_onDraggingObjectChanged",
+      "declaration": "public Action<Object> onDraggingObjectChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnGemSlotClientState",
+      "id": "Global_EditSkillManager_OnGemSlotClientState",
+      "declaration": "public Action<GemLocation, Gem> OnGemSlotClientState",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnGemVisibleClientState",
+      "id": "Global_EditSkillManager_OnGemVisibleClientState",
+      "declaration": "public Action<Gem, bool> OnGemVisibleClientState",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onModeChanged",
+      "id": "Global_EditSkillManager_onModeChanged",
+      "declaration": "public Action<EditSkillManager.ModeType> onModeChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSelectedSlotChanged",
+      "id": "Global_EditSkillManager_onSelectedSlotChanged",
+      "declaration": "public Action onSelectedSlotChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSkillSlotClientState",
+      "id": "Global_EditSkillManager_OnSkillSlotClientState",
+      "declaration": "public Action<HeroSkillLocation, SkillTrigger> OnSkillSlotClientState",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSkillVisibleClientState",
+      "id": "Global_EditSkillManager_OnSkillVisibleClientState",
+      "declaration": "public Action<SkillTrigger, bool> OnSkillVisibleClientState",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillButtons",
+      "id": "Global_EditSkillManager_skillButtons",
+      "declaration": "public GameObject skillButtons",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentModeSetFrameCount",
+      "id": "Global_EditSkillManager_currentModeSetFrameCount",
+      "declaration": "public int currentModeSetFrameCount { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentProvider",
+      "id": "Global_EditSkillManager_currentProvider",
+      "declaration": "public Actor currentProvider { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "draggingObject",
+      "id": "Global_EditSkillManager_draggingObject",
+      "declaration": "public Object draggingObject { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isConfirmHolding",
+      "id": "Global_EditSkillManager_isConfirmHolding",
+      "declaration": "public bool isConfirmHolding { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDragging",
+      "id": "Global_EditSkillManager_isDragging",
+      "declaration": "public bool isDragging { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSelectingGround",
+      "id": "Global_EditSkillManager_isSelectingGround",
+      "declaration": "public bool isSelectingGround { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastCurrentProviderSetUnscaledTime",
+      "id": "Global_EditSkillManager_lastCurrentProviderSetUnscaledTime",
+      "declaration": "public float lastCurrentProviderSetUnscaledTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastModeSetUnscaledTime",
+      "id": "Global_EditSkillManager_lastModeSetUnscaledTime",
+      "declaration": "public float lastModeSetUnscaledTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mode",
+      "id": "Global_EditSkillManager_mode",
+      "declaration": "public EditSkillManager.ModeType mode { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedGemSlot",
+      "id": "Global_EditSkillManager_selectedGemSlot",
+      "declaration": "public GemLocation? selectedGemSlot { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedSkillSlot",
+      "id": "Global_EditSkillManager_selectedSkillSlot",
+      "declaration": "public HeroSkillLocation? selectedSkillSlot { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldEndAfterAction",
+      "id": "Global_EditSkillManager_shouldEndAfterAction",
+      "declaration": "public bool shouldEndAfterAction { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ClearGamepadSelection()",
+      "id": "Global_EditSkillManager_ClearGamepadSelection",
+      "declaration": "public void ClearGamepadSelection()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoBack()",
+      "id": "Global_EditSkillManager_DoBack",
+      "declaration": "public bool DoBack()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "DoClickOnGemSlot(GemLocation)",
+      "id": "Global_EditSkillManager_DoClickOnGemSlot_GemLocation_",
+      "declaration": "public void DoClickOnGemSlot(GemLocation location)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "location",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoClickOnSkillButton(HeroSkillLocation)",
+      "id": "Global_EditSkillManager_DoClickOnSkillButton_HeroSkillLocation_",
+      "declaration": "public void DoClickOnSkillButton(HeroSkillLocation skillType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillType",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoConfirm()",
+      "id": "Global_EditSkillManager_DoConfirm",
+      "declaration": "public bool DoConfirm()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "DoDpadDown()",
+      "id": "Global_EditSkillManager_DoDpadDown",
+      "declaration": "public bool DoDpadDown()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "DoDpadLeft()",
+      "id": "Global_EditSkillManager_DoDpadLeft",
+      "declaration": "public bool DoDpadLeft()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "DoDpadRight()",
+      "id": "Global_EditSkillManager_DoDpadRight",
+      "declaration": "public bool DoDpadRight()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "DoDpadUp()",
+      "id": "Global_EditSkillManager_DoDpadUp",
+      "declaration": "public bool DoDpadUp()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "EndDrag(bool)",
+      "id": "Global_EditSkillManager_EndDrag_System_Boolean_",
+      "declaration": "public void EndDrag(bool isCancel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isCancel",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EndEdit()",
+      "id": "Global_EditSkillManager_EndEdit",
+      "declaration": "public void EndEdit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_EditSkillManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IsSlotHighlighted(GemLocation)",
+      "id": "Global_EditSkillManager_IsSlotHighlighted_GemLocation_",
+      "declaration": "public bool IsSlotHighlighted(GemLocation gemLoc)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gemLoc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSlotHighlighted(HeroSkillLocation)",
+      "id": "Global_EditSkillManager_IsSlotHighlighted_HeroSkillLocation_",
+      "declaration": "public bool IsSlotHighlighted(HeroSkillLocation skillLoc)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillLoc",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSlotSelectable(GemLocation)",
+      "id": "Global_EditSkillManager_IsSlotSelectable_GemLocation_",
+      "declaration": "public bool IsSlotSelectable(GemLocation gemLoc)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gemLoc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSlotSelectable(HeroSkillLocation)",
+      "id": "Global_EditSkillManager_IsSlotSelectable_HeroSkillLocation_",
+      "declaration": "public bool IsSlotSelectable(HeroSkillLocation skillLoc)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillLoc",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EditSkillManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "NotifyEndOfAction()",
+      "id": "Global_EditSkillManager_NotifyEndOfAction",
+      "declaration": "public void NotifyEndOfAction()",
+      "summary": "This will end edit if it is marked to end after action.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SelectAnyRelevantSlot()",
+      "id": "Global_EditSkillManager_SelectAnyRelevantSlot",
+      "declaration": "public void SelectAnyRelevantSlot()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SelectGround()",
+      "id": "Global_EditSkillManager_SelectGround",
+      "declaration": "public void SelectGround()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetClientState_MergeGemVictim(Gem)",
+      "id": "Global_EditSkillManager_SetClientState_MergeGemVictim_Gem_",
+      "declaration": "public void SetClientState_MergeGemVictim(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetClientState_SetGemSlot(GemLocation, Gem)",
+      "id": "Global_EditSkillManager_SetClientState_SetGemSlot_GemLocation_Gem_",
+      "declaration": "public void SetClientState_SetGemSlot(GemLocation loc, Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetClientState_SetSkillSlot(HeroSkillLocation, SkillTrigger)",
+      "id": "Global_EditSkillManager_SetClientState_SetSkillSlot_HeroSkillLocation_SkillTrigger_",
+      "declaration": "public void SetClientState_SetSkillSlot(HeroSkillLocation type, SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldUseHoldToConfirm(GemLocation)",
+      "id": "Global_EditSkillManager_ShouldUseHoldToConfirm_GemLocation_",
+      "declaration": "public bool ShouldUseHoldToConfirm(GemLocation gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ShouldUseHoldToConfirm(HeroSkillLocation)",
+      "id": "Global_EditSkillManager_ShouldUseHoldToConfirm_HeroSkillLocation_",
+      "declaration": "public bool ShouldUseHoldToConfirm(HeroSkillLocation skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "StartConfirmHold(GemLocation)",
+      "id": "Global_EditSkillManager_StartConfirmHold_GemLocation_",
+      "declaration": "public void StartConfirmHold(GemLocation gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartConfirmHold(HeroSkillLocation)",
+      "id": "Global_EditSkillManager_StartConfirmHold_HeroSkillLocation_",
+      "declaration": "public void StartConfirmHold(HeroSkillLocation skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartDrag(Object)",
+      "id": "Global_EditSkillManager_StartDrag_UnityEngine_Object_",
+      "declaration": "public void StartDrag(Object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartEditSkillShrine(EditSkillShrine)",
+      "id": "Global_EditSkillManager_StartEditSkillShrine_EditSkillShrine_",
+      "declaration": "public void StartEditSkillShrine(EditSkillShrine provider)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "provider",
+          "type": "EditSkillShrine",
+          "type_uid": "Global.EditSkillShrine",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartEquipGem(Gem)",
+      "id": "Global_EditSkillManager_StartEquipGem_Gem_",
+      "declaration": "public void StartEquipGem(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartEquipSkill(SkillTrigger)",
+      "id": "Global_EditSkillManager_StartEquipSkill_SkillTrigger_",
+      "declaration": "public void StartEquipSkill(SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartRegularEdit(bool)",
+      "id": "Global_EditSkillManager_StartRegularEdit_System_Boolean_",
+      "declaration": "public void StartRegularEdit(bool endAfterAction)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "endAfterAction",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartSell(PropEnt_Merchant_Base)",
+      "id": "Global_EditSkillManager_StartSell_PropEnt_Merchant_Base_",
+      "declaration": "public void StartSell(PropEnt_Merchant_Base merchant)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "merchant",
+          "type": "PropEnt_Merchant_Base",
+          "type_uid": "Global.PropEnt_Merchant_Base",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopConfirmHold(bool)",
+      "id": "Global_EditSkillManager_StopConfirmHold_System_Boolean_",
+      "declaration": "public void StopConfirmHold(bool showHelpIfNeeded = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "showHelpIfNeeded",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnselectGround()",
+      "id": "Global_EditSkillManager_UnselectGround",
+      "declaration": "public void UnselectGround()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

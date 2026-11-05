@@ -1,0 +1,374 @@
+{
+  "uid": "Global.DewGameContentSettings",
+  "name": "DewGameContentSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[CreateAssetMenu(fileName = \"New Game Content Settings\", menuName = \"Game Content Settings\")]\npublic class DewGameContentSettings : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "_availableAccessories",
+      "id": "Global_DewGameContentSettings__availableAccessories",
+      "declaration": "[InfoBox(\"All accessories will be included\", InfoMessageType.Info, \"@_availableAccessories.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableAccessories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableArtifacts",
+      "id": "Global_DewGameContentSettings__availableArtifacts",
+      "declaration": "[FormerlySerializedAs(\"availableArtifacts\")]\n[InfoBox(\"All artifacts will be included\", InfoMessageType.Info, \"@_availableArtifacts.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableArtifacts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableCurses",
+      "id": "Global_DewGameContentSettings__availableCurses",
+      "declaration": "[FormerlySerializedAs(\"availableCurses\")]\n[InfoBox(\"All curses will be included\", InfoMessageType.Info, \"@_availableCurses.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableCurses",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableEmotes",
+      "id": "Global_DewGameContentSettings__availableEmotes",
+      "declaration": "[InfoBox(\"All emotes will be included\", InfoMessageType.Info, \"@_availableEmotes.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableEmotes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableGameModifiers",
+      "id": "Global_DewGameContentSettings__availableGameModifiers",
+      "declaration": "[FormerlySerializedAs(\"availableGameModifiers\")]\n[InfoBox(\"All game modifiers will be included\", InfoMessageType.Info, \"@_availableGameModifiers.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableGameModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableGems",
+      "id": "Global_DewGameContentSettings__availableGems",
+      "declaration": "[FormerlySerializedAs(\"availableGems\")]\n[InfoBox(\"All gems will be included\", InfoMessageType.Info, \"@_availableGems.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableGems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableHeroes",
+      "id": "Global_DewGameContentSettings__availableHeroes",
+      "declaration": "[FormerlySerializedAs(\"availableHeroes\")]\n[InfoBox(\"All heroes will be included\", InfoMessageType.Info, \"@_availableHeroes.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableHeroes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableLucidDreams",
+      "id": "Global_DewGameContentSettings__availableLucidDreams",
+      "declaration": "[FormerlySerializedAs(\"availableLucidDreams\")]\n[InfoBox(\"All lucid dreams will be included\", InfoMessageType.Info, \"@_availableLucidDreams.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableLucidDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableNametags",
+      "id": "Global_DewGameContentSettings__availableNametags",
+      "declaration": "[InfoBox(\"All nametags will be included\", InfoMessageType.Info, \"@_availableNametags.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableNametags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableRoomModifiers",
+      "id": "Global_DewGameContentSettings__availableRoomModifiers",
+      "declaration": "[FormerlySerializedAs(\"availableRoomModifiers\")]\n[InfoBox(\"All room modifiers will be included\", InfoMessageType.Info, \"@_availableRoomModifiers.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableRoomModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableSkills",
+      "id": "Global_DewGameContentSettings__availableSkills",
+      "declaration": "[FormerlySerializedAs(\"availableSkills\")]\n[InfoBox(\"All skills will be included\", InfoMessageType.Info, \"@_availableSkills.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableSkills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableSkins",
+      "id": "Global_DewGameContentSettings__availableSkins",
+      "declaration": "[InfoBox(\"All emotes will be included\", InfoMessageType.Info, \"@_availableEmotes.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableSkins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableStars",
+      "id": "Global_DewGameContentSettings__availableStars",
+      "declaration": "[InfoBox(\"All stars will be included\", InfoMessageType.Info, \"@_availableStars.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableStars",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_availableTreasures",
+      "id": "Global_DewGameContentSettings__availableTreasures",
+      "declaration": "[InfoBox(\"All treasures will be included\", InfoMessageType.Info, \"@_availableTreasures.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _availableTreasures",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_excludedMonsters",
+      "id": "Global_DewGameContentSettings__excludedMonsters",
+      "declaration": "[SerializeField]\npublic string[] _excludedMonsters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_includedZones",
+      "id": "Global_DewGameContentSettings__includedZones",
+      "declaration": "[FormerlySerializedAs(\"includedZones\")]\n[InfoBox(\"All zones will be included\", InfoMessageType.Info, \"@_includedZones.Length == 0 && parent == null\")]\n[SerializeField]\npublic string[] _includedZones",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_zoneCountByTier",
+      "id": "Global_DewGameContentSettings__zoneCountByTier",
+      "declaration": "[FormerlySerializedAs(\"zoneCountByTier\")]\n[SerializeField]\npublic int[] _zoneCountByTier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableAccessories",
+      "id": "Global_DewGameContentSettings_availableAccessories",
+      "declaration": "[NonSerialized]\npublic List<string> availableAccessories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableArtifacts",
+      "id": "Global_DewGameContentSettings_availableArtifacts",
+      "declaration": "[NonSerialized]\npublic List<string> availableArtifacts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableCurses",
+      "id": "Global_DewGameContentSettings_availableCurses",
+      "declaration": "[NonSerialized]\npublic List<string> availableCurses",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableEmotes",
+      "id": "Global_DewGameContentSettings_availableEmotes",
+      "declaration": "[NonSerialized]\npublic List<string> availableEmotes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableGameModifiers",
+      "id": "Global_DewGameContentSettings_availableGameModifiers",
+      "declaration": "[NonSerialized]\npublic List<string> availableGameModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableGems",
+      "id": "Global_DewGameContentSettings_availableGems",
+      "declaration": "[NonSerialized]\npublic List<string> availableGems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableHeroes",
+      "id": "Global_DewGameContentSettings_availableHeroes",
+      "declaration": "[NonSerialized]\npublic List<string> availableHeroes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableLucidDreams",
+      "id": "Global_DewGameContentSettings_availableLucidDreams",
+      "declaration": "[NonSerialized]\npublic List<string> availableLucidDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableNametags",
+      "id": "Global_DewGameContentSettings_availableNametags",
+      "declaration": "[NonSerialized]\npublic List<string> availableNametags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableRoomModifiers",
+      "id": "Global_DewGameContentSettings_availableRoomModifiers",
+      "declaration": "[NonSerialized]\npublic List<string> availableRoomModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableSkills",
+      "id": "Global_DewGameContentSettings_availableSkills",
+      "declaration": "[NonSerialized]\npublic List<string> availableSkills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableSkins",
+      "id": "Global_DewGameContentSettings_availableSkins",
+      "declaration": "[NonSerialized]\npublic List<string> availableSkins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableStars",
+      "id": "Global_DewGameContentSettings_availableStars",
+      "declaration": "[NonSerialized]\npublic List<string> availableStars",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableTreasures",
+      "id": "Global_DewGameContentSettings_availableTreasures",
+      "declaration": "[NonSerialized]\npublic List<string> availableTreasures",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludedMonsters",
+      "id": "Global_DewGameContentSettings_excludedMonsters",
+      "declaration": "[NonSerialized]\npublic List<string> excludedMonsters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includeAllContents",
+      "id": "Global_DewGameContentSettings_includeAllContents",
+      "declaration": "public bool includeAllContents",
+      "summary": "Warning: Editor-only. Building standalone player with this is unsupported.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includedMonsters",
+      "id": "Global_DewGameContentSettings_includedMonsters",
+      "declaration": "[ReadOnly]\npublic string[] includedMonsters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includedRooms",
+      "id": "Global_DewGameContentSettings_includedRooms",
+      "declaration": "[InfoBox(\"Below fields are populated automatically\", InfoMessageType.Info, null)]\n[ReadOnly]\npublic string[] includedRooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includedZones",
+      "id": "Global_DewGameContentSettings_includedZones",
+      "declaration": "[NonSerialized]\npublic List<string> includedZones",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parent",
+      "id": "Global_DewGameContentSettings_parent",
+      "declaration": "public DewGameContentSettings parent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoneCountByTier",
+      "id": "Global_DewGameContentSettings_zoneCountByTier",
+      "declaration": "[NonSerialized]\npublic List<int> zoneCountByTier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FilterZones(string[])",
+      "id": "Global_DewGameContentSettings_FilterZones_System_String___",
+      "declaration": "public string[] FilterZones(string[] zones)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zones",
+          "type": "string[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string[]"
+    },
+    {
+      "name": "FilterZones(Zone[])",
+      "id": "Global_DewGameContentSettings_FilterZones_Zone___",
+      "declaration": "public Zone[] FilterZones(Zone[] zones)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zones",
+          "type": "Zone[]",
+          "type_uid": "Global.Zone",
+          "description": ""
+        }
+      ],
+      "returns": "Zone[]"
+    },
+    {
+      "name": "Init(bool)",
+      "id": "Global_DewGameContentSettings_Init_System_Boolean_",
+      "declaration": "public void Init(bool skipValidation = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skipValidation",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewGameContentSettings_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

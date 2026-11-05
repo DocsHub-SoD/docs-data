@@ -1,0 +1,30 @@
+{
+  "uid": "Global.SilenceEffect",
+  "name": "SilenceEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SilenceEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_SilenceEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

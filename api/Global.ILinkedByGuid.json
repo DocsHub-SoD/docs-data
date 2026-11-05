@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ILinkedByGuid",
+  "name": "ILinkedByGuid",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ILinkedByGuid",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "resourceId",
+      "id": "Global_ILinkedByGuid_resourceId",
+      "declaration": "string resourceId { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

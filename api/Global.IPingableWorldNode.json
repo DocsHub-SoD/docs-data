@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IPingableWorldNode",
+  "name": "IPingableWorldNode",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IPingableWorldNode",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "nodeIndex",
+      "id": "Global_IPingableWorldNode_nodeIndex",
+      "declaration": "int nodeIndex { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

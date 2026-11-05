@@ -1,0 +1,109 @@
+{
+  "uid": "Global.PerRarityData`1",
+  "name": "PerRarityData<T>",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct PerRarityData<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "character",
+      "id": "Global_PerRarityData_1_character",
+      "declaration": "public T character",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "common",
+      "id": "Global_PerRarityData_1_common",
+      "declaration": "public T common",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "epic",
+      "id": "Global_PerRarityData_1_epic",
+      "declaration": "public T epic",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "identity",
+      "id": "Global_PerRarityData_1_identity",
+      "declaration": "public T identity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "legendary",
+      "id": "Global_PerRarityData_1_legendary",
+      "declaration": "public T legendary",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rare",
+      "id": "Global_PerRarityData_1_rare",
+      "declaration": "public T rare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unique",
+      "id": "Global_PerRarityData_1_unique",
+      "declaration": "public T unique",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get(Rarity)",
+      "id": "Global_PerRarityData_1_Get_Rarity_",
+      "declaration": "public T Get(Rarity rarity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Set(Rarity, T)",
+      "id": "Global_PerRarityData_1_Set_Rarity__0_",
+      "declaration": "public void Set(Rarity rarity, T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

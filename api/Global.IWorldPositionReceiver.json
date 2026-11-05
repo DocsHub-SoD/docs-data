@@ -1,0 +1,31 @@
+{
+  "uid": "Global.IWorldPositionReceiver",
+  "name": "IWorldPositionReceiver",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IWorldPositionReceiver",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "SetWorldPosition(Vector3)",
+      "id": "Global_IWorldPositionReceiver_SetWorldPosition_UnityEngine_Vector3_",
+      "declaration": "void SetWorldPosition(Vector3 worldPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "worldPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

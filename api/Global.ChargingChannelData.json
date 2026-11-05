@@ -1,0 +1,272 @@
+{
+  "uid": "Global.ChargingChannelData",
+  "name": "ChargingChannelData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class ChargingChannelData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "angleSpeedLimit",
+      "id": "Global_ChargingChannelData_angleSpeedLimit",
+      "declaration": "[ShowIf(\"@castMethod.type == CastMethodType.Cone || castMethod.type == CastMethodType.Arrow\", true)]\npublic float angleSpeedLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canCancel",
+      "id": "Global_ChargingChannelData_canCancel",
+      "declaration": "[ToggleLeft]\npublic bool canCancel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cancelAnim",
+      "id": "Global_ChargingChannelData_cancelAnim",
+      "declaration": "public DewAnimationClip cancelAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cancelEffect",
+      "id": "Global_ChargingChannelData_cancelEffect",
+      "declaration": "public GameObject cancelEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canMove",
+      "id": "Global_ChargingChannelData_canMove",
+      "declaration": "[ToggleLeft]\npublic bool canMove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castAnim",
+      "id": "Global_ChargingChannelData_castAnim",
+      "declaration": "public DewAnimationClip castAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castDazeDuration",
+      "id": "Global_ChargingChannelData_castDazeDuration",
+      "declaration": "public float castDazeDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castEffect",
+      "id": "Global_ChargingChannelData_castEffect",
+      "declaration": "public GameObject castEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castMethod",
+      "id": "Global_ChargingChannelData_castMethod",
+      "declaration": "[HideLabel]\npublic CastMethodData castMethod",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castOnButtonRelease",
+      "id": "Global_ChargingChannelData_castOnButtonRelease",
+      "declaration": "[ToggleLeft]\npublic bool castOnButtonRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeAnim",
+      "id": "Global_ChargingChannelData_chargeAnim",
+      "declaration": "public DewAnimationClip chargeAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeEffect",
+      "id": "Global_ChargingChannelData_chargeEffect",
+      "declaration": "public GameObject chargeEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeFullAnim",
+      "id": "Global_ChargingChannelData_chargeFullAnim",
+      "declaration": "public DewAnimationClip chargeFullAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeFullDuration",
+      "id": "Global_ChargingChannelData_chargeFullDuration",
+      "declaration": "public float chargeFullDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeFullEffect",
+      "id": "Global_ChargingChannelData_chargeFullEffect",
+      "declaration": "public GameObject chargeFullEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completeAnim",
+      "id": "Global_ChargingChannelData_completeAnim",
+      "declaration": "public DewAnimationClip completeAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completeDazeDuration",
+      "id": "Global_ChargingChannelData_completeDazeDuration",
+      "declaration": "public float completeDazeDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completeDuration",
+      "id": "Global_ChargingChannelData_completeDuration",
+      "declaration": "public float completeDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completeEffect",
+      "id": "Global_ChargingChannelData_completeEffect",
+      "declaration": "public GameObject completeEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completeWhenCast",
+      "id": "Global_ChargingChannelData_completeWhenCast",
+      "declaration": "[ToggleLeft]\npublic bool completeWhenCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateForwardOverrideRoationTime",
+      "id": "Global_ChargingChannelData_rotateForwardOverrideRoationTime",
+      "declaration": "public float rotateForwardOverrideRoationTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateForwardWhenCast",
+      "id": "Global_ChargingChannelData_rotateForwardWhenCast",
+      "declaration": "[ToggleLeft]\npublic bool rotateForwardWhenCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateForwardWhenCharging",
+      "id": "Global_ChargingChannelData_rotateForwardWhenCharging",
+      "declaration": "[ToggleLeft]\npublic bool rotateForwardWhenCharging",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateForwardWhenComplete",
+      "id": "Global_ChargingChannelData_rotateForwardWhenComplete",
+      "declaration": "[ToggleLeft]\npublic bool rotateForwardWhenComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selfSlowAmount",
+      "id": "Global_ChargingChannelData_selfSlowAmount",
+      "declaration": "[ShowIf(\"canMove\", true)]\npublic float selfSlowAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selfValidator",
+      "id": "Global_ChargingChannelData_selfValidator",
+      "declaration": "[HideLabel]\npublic AbilitySelfValidator selfValidator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "setFillAmount",
+      "id": "Global_ChargingChannelData_setFillAmount",
+      "declaration": "[ToggleLeft]\npublic bool setFillAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showCastIndicator",
+      "id": "Global_ChargingChannelData_showCastIndicator",
+      "declaration": "[ToggleLeft]\npublic bool showCastIndicator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showOnScreenTimer",
+      "id": "Global_ChargingChannelData_showOnScreenTimer",
+      "declaration": "[ToggleLeft]\npublic bool showOnScreenTimer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetValidator",
+      "id": "Global_ChargingChannelData_targetValidator",
+      "declaration": "[HideLabel]\npublic AbilityTargetValidator targetValidator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get(Actor)",
+      "id": "Global_ChargingChannelData_Get_Actor_",
+      "declaration": "public ChargingChannel Get(Actor effectParent)",
+      "summary": "Create charging channel with clone of this data.You can modify the data in the created channel.",
+      "parameters": [
+        {
+          "name": "effectParent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,82 @@
+{
+  "uid": "Global.SafeAction`2",
+  "name": "SafeAction<T1, T2>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SafeAction<T1, T2>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Add(Action<T1, T2>)",
+      "id": "Global_SafeAction_2_Add_System_Action__0__1__",
+      "declaration": "public SafeAction<T1, T2> Add(Action<T1, T2> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T1, T2><T1, T2>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction<T1, T2>"
+    },
+    {
+      "name": "Contains(Action<T1, T2>)",
+      "id": "Global_SafeAction_2_Contains_System_Action__0__1__",
+      "declaration": "public bool Contains(Action<T1, T2> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T1, T2><T1, T2>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Invoke(T1, T2)",
+      "id": "Global_SafeAction_2_Invoke__0__1_",
+      "declaration": "public void Invoke(T1 a, T2 b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "T1",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "T2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Remove(Action<T1, T2>)",
+      "id": "Global_SafeAction_2_Remove_System_Action__0__1__",
+      "declaration": "public SafeAction<T1, T2> Remove(Action<T1, T2> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T1, T2><T1, T2>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction<T1, T2>"
+    }
+  ],
+  "events": []
+}

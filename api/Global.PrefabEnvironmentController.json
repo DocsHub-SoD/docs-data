@@ -1,0 +1,15 @@
+{
+  "uid": "Global.PrefabEnvironmentController",
+  "name": "PrefabEnvironmentController",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class PrefabEnvironmentController : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

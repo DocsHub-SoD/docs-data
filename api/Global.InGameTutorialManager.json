@@ -1,0 +1,222 @@
+{
+  "uid": "Global.InGameTutorialManager",
+  "name": "InGameTutorialManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InGameTutorialManager : ManagerBase<InGameTutorialManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "InGameTutorialManager",
+      "href": "Global.InGameTutorialManager.html",
+      "uid": "Global.InGameTutorialManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "arrowPrefab",
+      "id": "Global_InGameTutorialManager_arrowPrefab",
+      "declaration": "public TutorialArrow arrowPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isTutorialDisabled",
+      "id": "Global_InGameTutorialManager_isTutorialDisabled",
+      "declaration": "public bool isTutorialDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refEditKeyDisplay",
+      "id": "Global_InGameTutorialManager_refEditKeyDisplay",
+      "declaration": "public Transform refEditKeyDisplay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refGeneralSkills",
+      "id": "Global_InGameTutorialManager_refGeneralSkills",
+      "declaration": "public Transform refGeneralSkills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refHuntImminentProgress",
+      "id": "Global_InGameTutorialManager_refHuntImminentProgress",
+      "declaration": "public Transform refHuntImminentProgress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refHuntProgress",
+      "id": "Global_InGameTutorialManager_refHuntProgress",
+      "declaration": "public Transform refHuntProgress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillButtonE",
+      "id": "Global_InGameTutorialManager_refSkillButtonE",
+      "declaration": "public Transform refSkillButtonE",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillButtonMovement",
+      "id": "Global_InGameTutorialManager_refSkillButtonMovement",
+      "declaration": "public Transform refSkillButtonMovement",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillButtonQ",
+      "id": "Global_InGameTutorialManager_refSkillButtonQ",
+      "declaration": "public Transform refSkillButtonQ",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillButtonR",
+      "id": "Global_InGameTutorialManager_refSkillButtonR",
+      "declaration": "public Transform refSkillButtonR",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillButtonTrait",
+      "id": "Global_InGameTutorialManager_refSkillButtonTrait",
+      "declaration": "public Transform refSkillButtonTrait",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillButtonW",
+      "id": "Global_InGameTutorialManager_refSkillButtonW",
+      "declaration": "public Transform refSkillButtonW",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "refSkillNotification",
+      "id": "Global_InGameTutorialManager_refSkillNotification",
+      "declaration": "public Transform refSkillNotification",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uiParent",
+      "id": "Global_InGameTutorialManager_uiParent",
+      "declaration": "public Transform uiParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isTutorialActive",
+      "id": "Global_InGameTutorialManager_isTutorialActive",
+      "declaration": "public bool isTutorialActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CreateArrow()",
+      "id": "Global_InGameTutorialManager_CreateArrow",
+      "declaration": "public TutorialArrow CreateArrow()",
+      "summary": "",
+      "parameters": [],
+      "returns": "TutorialArrow"
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_InGameTutorialManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetRefSkill(HeroSkillLocation)",
+      "id": "Global_InGameTutorialManager_GetRefSkill_HeroSkillLocation_",
+      "declaration": "public Transform GetRefSkill(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Transform"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_InGameTutorialManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartTutorials()",
+      "id": "Global_InGameTutorialManager_StartTutorials",
+      "declaration": "public void StartTutorials()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopTutorials()",
+      "id": "Global_InGameTutorialManager_StopTutorials",
+      "declaration": "public void StopTutorials()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

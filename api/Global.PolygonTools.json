@@ -1,0 +1,103 @@
+{
+  "uid": "Global.PolygonTools",
+  "name": "PolygonTools",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class PolygonTools",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "_areas",
+      "id": "Global_PolygonTools__areas",
+      "declaration": "public static float[] _areas",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetArea(IReadOnlyList<Vector2>)",
+      "id": "Global_PolygonTools_GetArea_System_Collections_Generic_IReadOnlyList_UnityEngine_Vector2__",
+      "declaration": "public static float GetArea(IReadOnlyList<Vector2> vertices)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "vertices",
+          "type": "System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetRandomPositionInTriangle(Vector2[], DewRandom)",
+      "id": "Global_PolygonTools_GetRandomPositionInTriangle_UnityEngine_Vector2___DewRandom_",
+      "declaration": "public static Vector2 GetRandomPositionInTriangle(Vector2[] triVerts, DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "triVerts",
+          "type": "UnityEngine.Vector2[]",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "GetVerticesArray(IReadOnlyList<Vector2>, ref Vector2[])",
+      "id": "Global_PolygonTools_GetVerticesArray_System_Collections_Generic_IReadOnlyList_UnityEngine_Vector2__UnityEngine_Vector2____",
+      "declaration": "public static void GetVerticesArray(IReadOnlyList<Vector2> points, ref Vector2[] verts)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "points",
+          "type": "System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "verts",
+          "type": "UnityEngine.Vector2[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2>, ref Vector2[])",
+      "id": "Global_PolygonTools_PickRandomTriangleWeightedByArea_System_Collections_Generic_IReadOnlyList_UnityEngine_Vector2__UnityEngine_Vector2____",
+      "declaration": "public static int PickRandomTriangleWeightedByArea(IReadOnlyList<Vector2> vertices, ref Vector2[] triVerts)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "vertices",
+          "type": "System.Collections.Generic.IReadOnlyList<T><UnityEngine.Vector2>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "triVerts",
+          "type": "UnityEngine.Vector2[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

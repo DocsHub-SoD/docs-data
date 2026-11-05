@@ -1,0 +1,8075 @@
+[
+  {
+    "uid": "Global.AbilityInstance",
+    "name": "AbilityInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 29,
+    "fields_count": 12,
+    "properties_count": 7
+  },
+  {
+    "uid": "Global.AbilityInstance.WatchedCondition",
+    "name": "AbilityInstance.WatchedCondition",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.AbilityLockHandle",
+    "name": "AbilityLockHandle",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 17,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.AbilitySelfValidator",
+    "name": "AbilitySelfValidator",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AbilityTargetValidator",
+    "name": "AbilityTargetValidator",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AbilityTargetValidatorWrapper",
+    "name": "AbilityTargetValidatorWrapper",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AbilityTrigger.ChangedConfigHandle",
+    "name": "AbilityTrigger.ChangedConfigHandle",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 6
+  },
+  {
+    "uid": "Global.AbilityTrigger",
+    "name": "AbilityTrigger",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 61,
+    "fields_count": 14,
+    "properties_count": 15
+  },
+  {
+    "uid": "Global.AbilityTrigger.PredictionSettings",
+    "name": "AbilityTrigger.PredictionSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AbilityTrigger.PredictionSettings.ModelType",
+    "name": "AbilityTrigger.PredictionSettings.ModelType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Accessory.AttachOffset",
+    "name": "Accessory.AttachOffset",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Accessory",
+    "name": "Accessory",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AccType",
+    "name": "AccType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AchievementManager",
+    "name": "AchievementManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 5,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.AchPersistentVarAttribute",
+    "name": "AchPersistentVarAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AchUnlockOnComplete",
+    "name": "AchUnlockOnComplete",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ActionAttackMove",
+    "name": "ActionAttackMove",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ActionBase",
+    "name": "ActionBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ActionCast",
+    "name": "ActionCast",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ActionInteract",
+    "name": "ActionInteract",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Actor",
+    "name": "Actor",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 92,
+    "fields_count": 28,
+    "properties_count": 15
+  },
+  {
+    "uid": "Global.ActorCheck",
+    "name": "ActorCheck",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ActorManager",
+    "name": "ActorManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 16,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.AddedModifierData",
+    "name": "AddedModifierData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AffordType",
+    "name": "AffordType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AimAssistType",
+    "name": "AimAssistType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AllowMidJoinType",
+    "name": "AllowMidJoinType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AnalyticsEquipmentData",
+    "name": "AnalyticsEquipmentData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AnimationClipWithSpeed",
+    "name": "AnimationClipWithSpeed",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ArcTelegraphController",
+    "name": "ArcTelegraphController",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 8,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ArmorBoostEffect",
+    "name": "ArmorBoostEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ArmorReductionEffect",
+    "name": "ArmorReductionEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ArrayReturnHandle`1",
+    "name": "ArrayReturnHandle<T>",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ArrowFollowMode",
+    "name": "ArrowFollowMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Artifact",
+    "name": "Artifact",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 3,
+    "properties_count": 11
+  },
+  {
+    "uid": "Global.ArtifactWorldModel",
+    "name": "ArtifactWorldModel",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AssetRef`1",
+    "name": "AssetRef<T>",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.AttachToCamera",
+    "name": "AttachToCamera",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AttachToFace.CacheItem",
+    "name": "AttachToFace.CacheItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AttachToFace",
+    "name": "AttachToFace",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 9,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AttachToHero",
+    "name": "AttachToHero",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AttackCriticalEffect",
+    "name": "AttackCriticalEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.AttackEffectType",
+    "name": "AttackEffectType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AttackEmpowerEffect",
+    "name": "AttackEmpowerEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.AttackOverrideEffect",
+    "name": "AttackOverrideEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.AttackProjectile",
+    "name": "AttackProjectile",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AttackTrigger",
+    "name": "AttackTrigger",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 18,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AudioManager",
+    "name": "AudioManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 12,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.AudioSpaceType",
+    "name": "AudioSpaceType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AudioType",
+    "name": "AudioType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.AutoColumnGridLayout",
+    "name": "AutoColumnGridLayout",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.BackgroundAudioBehavior",
+    "name": "BackgroundAudioBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BackHandler",
+    "name": "BackHandler",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BaseStats",
+    "name": "BaseStats",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 16,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BasicEffect",
+    "name": "BasicEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.BasicEffectMask",
+    "name": "BasicEffectMask",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BasicEffectWithStrength",
+    "name": "BasicEffectWithStrength",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.BindingType",
+    "name": "BindingType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BlindEffect",
+    "name": "BlindEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.BoneOffset",
+    "name": "BoneOffset",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BonusStats",
+    "name": "BonusStats",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 32,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BossMonster",
+    "name": "BossMonster",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BoxPlacementMode",
+    "name": "BoxPlacementMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BoxTelegraphAnimType",
+    "name": "BoxTelegraphAnimType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BoxTelegraphController",
+    "name": "BoxTelegraphController",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 11,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.BudgetPressure",
+    "name": "BudgetPressure",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BuildFeatureTag",
+    "name": "BuildFeatureTag",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.BuildType",
+    "name": "BuildType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CameraManager",
+    "name": "CameraManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 19,
+    "fields_count": 33,
+    "properties_count": 6
+  },
+  {
+    "uid": "Global.CameraModifierBase",
+    "name": "CameraModifierBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CameraModifierOffset",
+    "name": "CameraModifierOffset",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CameraModifierZoom",
+    "name": "CameraModifierZoom",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CastConfirmType",
+    "name": "CastConfirmType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CastIndicatorManager",
+    "name": "CastIndicatorManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CastInfo",
+    "name": "CastInfo",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.CastMethodData",
+    "name": "CastMethodData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 7,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.CastMethodDataSerialization",
+    "name": "CastMethodDataSerialization",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CastMethodType",
+    "name": "CastMethodType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Cells2D`1",
+    "name": "Cells2D<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CenterMessageType",
+    "name": "CenterMessageType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Channel.BlockedAction",
+    "name": "Channel.BlockedAction",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Channel",
+    "name": "Channel",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 7,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ChannelData",
+    "name": "ChannelData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChaosReward",
+    "name": "ChaosReward",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChaosRewardType",
+    "name": "ChaosRewardType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CharacterModelDisplay",
+    "name": "CharacterModelDisplay",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChargingChannel",
+    "name": "ChargingChannel",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 1,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.ChargingChannelData",
+    "name": "ChargingChannelData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 30,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChatManager",
+    "name": "ChatManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 25,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChatManager.Message",
+    "name": "ChatManager.Message",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChatManager.MessageType",
+    "name": "ChatManager.MessageType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChoiceShrine",
+    "name": "ChoiceShrine",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ChoiceShrineItem",
+    "name": "ChoiceShrineItem",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CinematicCameraHelper",
+    "name": "CinematicCameraHelper",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 18,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ClearSectionEventData",
+    "name": "ClearSectionEventData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ClientEventManager",
+    "name": "ClientEventManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 15,
+    "fields_count": 30,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CollectablesManager",
+    "name": "CollectablesManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CollidableHit",
+    "name": "CollidableHit",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CollisionCheckSettings",
+    "name": "CollisionCheckSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ColorSmoothDamp",
+    "name": "ColorSmoothDamp",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CombatAreaActivateCondition",
+    "name": "CombatAreaActivateCondition",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CommandMarker",
+    "name": "CommandMarker",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ComponentCache`2",
+    "name": "ComponentCache<TKey, TValue>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ConfirmMemoryEditBehavior",
+    "name": "ConfirmMemoryEditBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ConsoleBindItem",
+    "name": "ConsoleBindItem",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ConsoleBindItemType",
+    "name": "ConsoleBindItemType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ConsoleManager.AutoExecKey",
+    "name": "ConsoleManager.AutoExecKey",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ConsoleManager.ExecutionContext",
+    "name": "ConsoleManager.ExecutionContext",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ConsoleManager",
+    "name": "ConsoleManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ControllerButtonType",
+    "name": "ControllerButtonType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ControlManager.ControlState",
+    "name": "ControlManager.ControlState",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ControlManager.ControlStateType",
+    "name": "ControlManager.ControlStateType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ControlManager",
+    "name": "ControlManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 40,
+    "fields_count": 76,
+    "properties_count": 13
+  },
+  {
+    "uid": "Global.ConversationManager",
+    "name": "ConversationManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ConversationVisibility",
+    "name": "ConversationVisibility",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CooldownReductionByRatioSettings",
+    "name": "CooldownReductionByRatioSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CooldownReductionSettings",
+    "name": "CooldownReductionSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Coroutiner",
+    "name": "Coroutiner",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CorruptedChaosRewardType",
+    "name": "CorruptedChaosRewardType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CosmeticPurchasePrerequisite",
+    "name": "CosmeticPurchasePrerequisite",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Cost",
+    "name": "Cost",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 12,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CounterBool",
+    "name": "CounterBool",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.CrippleEffect",
+    "name": "CrippleEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.CurrencyType",
+    "name": "CurrencyType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CurseStatusEffect",
+    "name": "CurseStatusEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 5,
+    "properties_count": 6
+  },
+  {
+    "uid": "Global.CursorManager",
+    "name": "CursorManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CustomAIBehaviors",
+    "name": "CustomAIBehaviors",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CustomAIUpdate",
+    "name": "CustomAIUpdate",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.CustomLogicBehavior",
+    "name": "CustomLogicBehavior",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DamageAttribute",
+    "name": "DamageAttribute",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DamageData",
+    "name": "DamageData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 25,
+    "fields_count": 2,
+    "properties_count": 15
+  },
+  {
+    "uid": "Global.DamageData.SourceType",
+    "name": "DamageData.SourceType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DamageInstance.DuplicateCheckType",
+    "name": "DamageInstance.DuplicateCheckType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DamageInstance",
+    "name": "DamageInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 30,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DamageInstance.OriginType",
+    "name": "DamageInstance.OriginType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DamageNumberVisibility",
+    "name": "DamageNumberVisibility",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Dash",
+    "name": "Dash",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DashAttackInstance",
+    "name": "DashAttackInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DashDirection",
+    "name": "DashDirection",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DataProcessor`1",
+    "name": "DataProcessor<T>",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DataProcessor`3",
+    "name": "DataProcessor<TData, TFrom, TTo>",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DataProcessorGroup`1",
+    "name": "DataProcessorGroup<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DataProcessorGroup`3",
+    "name": "DataProcessorGroup<TData, TFrom, TTo>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DeathInterruptEffect",
+    "name": "DeathInterruptEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DecorationSettings",
+    "name": "DecorationSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DescriptionTags",
+    "name": "DescriptionTags",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DestroyInEditor",
+    "name": "DestroyInEditor",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DestroyInPlayMode",
+    "name": "DestroyInPlayMode",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DevCanvas.DevCanvasState",
+    "name": "DevCanvas.DevCanvasState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DevCanvas",
+    "name": "DevCanvas",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DevGameManager",
+    "name": "DevGameManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Dew",
+    "name": "Dew",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 168,
+    "fields_count": 26,
+    "properties_count": 20
+  },
+  {
+    "uid": "Global.DewAchievementItem",
+    "name": "DewAchievementItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewAdvText",
+    "name": "DewAdvText",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 10,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAllHeroesPresentZone",
+    "name": "DewAllHeroesPresentZone",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewAnimationClip",
+    "name": "DewAnimationClip",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 5,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewAnimationClip.OverrideWalkBehavior",
+    "name": "DewAnimationClip.OverrideWalkBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAnimationEntry",
+    "name": "DewAnimationEntry",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAudioClip",
+    "name": "DewAudioClip",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 7,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewAudioRollOffType",
+    "name": "DewAudioRollOffType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAudioSettings_Platform",
+    "name": "DewAudioSettings_Platform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAudioSettings_User",
+    "name": "DewAudioSettings_User",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAudioSource",
+    "name": "DewAudioSource",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 16,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewAudioSourceSetup",
+    "name": "DewAudioSourceSetup",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAuthRequestMessage",
+    "name": "DewAuthRequestMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewAuthResponseMessage",
+    "name": "DewAuthResponseMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewBeamRenderer",
+    "name": "DewBeamRenderer",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewBinding",
+    "name": "DewBinding",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 12,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewBossRoomEntry",
+    "name": "DewBossRoomEntry",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewBuildProfile",
+    "name": "DewBuildProfile",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 24,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewBuildProfileGroup",
+    "name": "DewBuildProfileGroup",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewCamera",
+    "name": "DewCamera",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewCanvas",
+    "name": "DewCanvas",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewChildrenCullingGroup",
+    "name": "DewChildrenCullingGroup",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewCollider.ColliderShape",
+    "name": "DewCollider.ColliderShape",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewCollider",
+    "name": "DewCollider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 16,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewControlSettings_Platform",
+    "name": "DewControlSettings_Platform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewControlSettings_User",
+    "name": "DewControlSettings_User",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 84,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewControlSettings_User.PresetType",
+    "name": "DewControlSettings_User.PresetType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewConversationExecutionContext",
+    "name": "DewConversationExecutionContext",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewConversationSettings",
+    "name": "DewConversationSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.DewCutsceneDirector",
+    "name": "DewCutsceneDirector",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 11,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewDebug",
+    "name": "DewDebug",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewDifficultySettings",
+    "name": "DewDifficultySettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 29,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEase",
+    "name": "DewEase",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect.ApplySpeedMultiplierToEffectMessage",
+    "name": "DewEffect.ApplySpeedMultiplierToEffectMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect",
+    "name": "DewEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 28,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect.PlayAttachedEffectMessage",
+    "name": "DewEffect.PlayAttachedEffectMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect.PlayCastEffectMessage",
+    "name": "DewEffect.PlayCastEffectMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect.PlayEffectMessage",
+    "name": "DewEffect.PlayEffectMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect.PlayPositionedEffectMessage",
+    "name": "DewEffect.PlayPositionedEffectMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEffect.StopEffectMessage",
+    "name": "DewEffect.StopEffectMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewElementals",
+    "name": "DewElementals",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewEula",
+    "name": "DewEula",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewException",
+    "name": "DewException",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewExceptionType",
+    "name": "DewExceptionType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewExpressionException",
+    "name": "DewExpressionException",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameContentSettings",
+    "name": "DewGameContentSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 38,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameObserverWithProgress",
+    "name": "DewGameObserverWithProgress",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewGameplayExperienceSettings",
+    "name": "DewGameplayExperienceSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 59,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameplaySettings_Platform",
+    "name": "DewGameplaySettings_Platform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameplaySettings_User",
+    "name": "DewGameplaySettings_User",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 15,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameResult.GemData",
+    "name": "DewGameResult.GemData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameResult",
+    "name": "DewGameResult",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 9,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameResult.PlayerData",
+    "name": "DewGameResult.PlayerData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 35,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameResult.ResultType",
+    "name": "DewGameResult.ResultType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGameResult.SkillData",
+    "name": "DewGameResult.SkillData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGizmos",
+    "name": "DewGizmos",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGraphicsSettings",
+    "name": "DewGraphicsSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 15,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGUI.FieldBuilder",
+    "name": "DewGUI.FieldBuilder",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGUI.FieldBuilderCondition",
+    "name": "DewGUI.FieldBuilderCondition",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewGUI",
+    "name": "DewGUI",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 24,
+    "fields_count": 2,
+    "properties_count": 13
+  },
+  {
+    "uid": "Global.DewGUI.TryParseFunc`1",
+    "name": "DewGUI.TryParseFunc<T>",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewHeroesTeleporter",
+    "name": "DewHeroesTeleporter",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewInGameTutorialItem",
+    "name": "DewInGameTutorialItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 9,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.DewInput",
+    "name": "DewInput",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 27,
+    "fields_count": 3,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.DewInputTrigger",
+    "name": "DewInputTrigger",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.DewInterestManagement",
+    "name": "DewInterestManagement",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewLaunchOptions",
+    "name": "DewLaunchOptions",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewLobbyType",
+    "name": "DewLobbyType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewLocalization.DescriptionSettings",
+    "name": "DewLocalization.DescriptionSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewLocalization.EntityStats",
+    "name": "DewLocalization.EntityStats",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewLocalization",
+    "name": "DewLocalization",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 55,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.DewLocalizedText",
+    "name": "DewLocalizedText",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewMath",
+    "name": "DewMath",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewMessageSettings.ButtonType",
+    "name": "DewMessageSettings.ButtonType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewMessageSettings",
+    "name": "DewMessageSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewMod.FieldsOnlyResolver",
+    "name": "DewMod.FieldsOnlyResolver",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewMod",
+    "name": "DewMod",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 18,
+    "fields_count": 8,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.DewMusicItem",
+    "name": "DewMusicItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 6,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewNetworkAuthenticator",
+    "name": "DewNetworkAuthenticator",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewNetworkBehaviour",
+    "name": "DewNetworkBehaviour",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 34,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewNetworkManager.ChangeSceneMessage",
+    "name": "DewNetworkManager.ChangeSceneMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewNetworkManager",
+    "name": "DewNetworkManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 17,
+    "fields_count": 5,
+    "properties_count": 6
+  },
+  {
+    "uid": "Global.DewNetworkMode",
+    "name": "DewNetworkMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewNetworkStartSettings",
+    "name": "DewNetworkStartSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 9,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.AchievementsData",
+    "name": "DewPersistence.AchievementsData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.AssetConverter",
+    "name": "DewPersistence.AssetConverter",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.GameData",
+    "name": "DewPersistence.GameData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.GemData",
+    "name": "DewPersistence.GemData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.GeneralData",
+    "name": "DewPersistence.GeneralData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence",
+    "name": "DewPersistence",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 16,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.NetworkBehaviourConverter",
+    "name": "DewPersistence.NetworkBehaviourConverter",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.PlayerData",
+    "name": "DewPersistence.PlayerData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 11,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.RoomActorData",
+    "name": "DewPersistence.RoomActorData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.RoomData",
+    "name": "DewPersistence.RoomData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.RoomSavedObjectData",
+    "name": "DewPersistence.RoomSavedObjectData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.SkillData",
+    "name": "DewPersistence.SkillData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistence.StatusEffectData",
+    "name": "DewPersistence.StatusEffectData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPersistentGameObserver",
+    "name": "DewPersistentGameObserver",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 14,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewPhysics.EntitySweep",
+    "name": "DewPhysics.EntitySweep",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.DewPhysics",
+    "name": "DewPhysics",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 12,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPhysicsManager",
+    "name": "DewPhysicsManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPlatformSettings",
+    "name": "DewPlatformSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 11,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewPlayer",
+    "name": "DewPlayer",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 53,
+    "fields_count": 41,
+    "properties_count": 46
+  },
+  {
+    "uid": "Global.DewPool",
+    "name": "DewPool",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.AchievementData",
+    "name": "DewProfile.AchievementData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.ConcededGameData",
+    "name": "DewProfile.ConcededGameData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.CosmeticsData",
+    "name": "DewProfile.CosmeticsData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.DailyReverieData",
+    "name": "DewProfile.DailyReverieData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.HeroStarSlotUnlockData",
+    "name": "DewProfile.HeroStarSlotUnlockData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile",
+    "name": "DewProfile",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 31,
+    "fields_count": 57,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.PurchaseData",
+    "name": "DewProfile.PurchaseData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.ReverieDataBase",
+    "name": "DewProfile.ReverieDataBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.SpecialReverieData",
+    "name": "DewProfile.SpecialReverieData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.StarData",
+    "name": "DewProfile.StarData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfile.UnlockData",
+    "name": "DewProfile.UnlockData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewProfileContinue",
+    "name": "DewProfileContinue",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileItem",
+    "name": "DewProfileItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileState",
+    "name": "DewProfileState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileStats.HeroData",
+    "name": "DewProfileStats.HeroData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 41,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileStats",
+    "name": "DewProfileStats",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileStats.ItemData",
+    "name": "DewProfileStats.ItemData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileStats.MonsterData",
+    "name": "DewProfileStats.MonsterData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewProfileStats.ZoneData",
+    "name": "DewProfileStats.ZoneData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 9,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewQuest",
+    "name": "DewQuest",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 13,
+    "fields_count": 3,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.DewQuest.ReachNodeGoal",
+    "name": "DewQuest.ReachNodeGoal",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewRandom",
+    "name": "DewRandom",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 16,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewResourceLinkAttribute",
+    "name": "DewResourceLinkAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewResources",
+    "name": "DewResources",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 46,
+    "fields_count": 6,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.DewReverie",
+    "name": "DewReverie",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 9,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewReverieItem",
+    "name": "DewReverieItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 2,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.DewRoomMetadata",
+    "name": "DewRoomMetadata",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewSafety",
+    "name": "DewSafety",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewSave",
+    "name": "DewSave",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 29,
+    "fields_count": 8,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.DewSessionError",
+    "name": "DewSessionError",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewShadingProfile",
+    "name": "DewShadingProfile",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewSpecialReverieItem",
+    "name": "DewSpecialReverieItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DewSteam",
+    "name": "DewSteam",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.DewSubProfileState",
+    "name": "DewSubProfileState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DewSurfaceData",
+    "name": "DewSurfaceData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DictionaryReturnHandle`2",
+    "name": "DictionaryReturnHandle<TKey, TValue>",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.DisableOcclusionTransparency",
+    "name": "DisableOcclusionTransparency",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DispByDestination",
+    "name": "DispByDestination",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DispByTarget",
+    "name": "DispByTarget",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Displacement",
+    "name": "Displacement",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 9,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.DoCommandType",
+    "name": "DoCommandType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DontDestroyThisOnLoad",
+    "name": "DontDestroyThisOnLoad",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.DuplicateEffectBehavior",
+    "name": "DuplicateEffectBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EaseFunction",
+    "name": "EaseFunction",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EasingFunction",
+    "name": "EasingFunction",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 68,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EditSkillManager",
+    "name": "EditSkillManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 35,
+    "fields_count": 18,
+    "properties_count": 12
+  },
+  {
+    "uid": "Global.EditSkillManager.ModeType",
+    "name": "EditSkillManager.ModeType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EditSkillShrine",
+    "name": "EditSkillShrine",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 15,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EditSkillTargetInfo",
+    "name": "EditSkillTargetInfo",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EditSkillTargetType",
+    "name": "EditSkillTargetType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EffectAutoDestroy",
+    "name": "EffectAutoDestroy",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EffectBindEntityType",
+    "name": "EffectBindEntityType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EffectOwnerContext",
+    "name": "EffectOwnerContext",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EffectVisibility",
+    "name": "EffectVisibility",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ElementalStatusEffect",
+    "name": "ElementalStatusEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ElementalType",
+    "name": "ElementalType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Emote",
+    "name": "Emote",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EnterGroupBehavior",
+    "name": "EnterGroupBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Entity",
+    "name": "Entity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 28,
+    "fields_count": 24,
+    "properties_count": 22
+  },
+  {
+    "uid": "Global.Entity.StaggerSettings",
+    "name": "Entity.StaggerSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 17,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityAbility",
+    "name": "EntityAbility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 17,
+    "fields_count": 5,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.EntityAccPoint",
+    "name": "EntityAccPoint",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityAI",
+    "name": "EntityAI",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 17,
+    "fields_count": 24,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.EntityAIContext",
+    "name": "EntityAIContext",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.EntityAnimation.AbilityAnimationStatus",
+    "name": "EntityAnimation.AbilityAnimationStatus",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.EntityAnimation",
+    "name": "EntityAnimation",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.EntityAnimation.LocomotionType",
+    "name": "EntityAnimation.LocomotionType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityAnimation.ReplaceableAnimationType",
+    "name": "EntityAnimation.ReplaceableAnimationType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityCallbackTrigger",
+    "name": "EntityCallbackTrigger",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityCheck",
+    "name": "EntityCheck",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityColorModifier",
+    "name": "EntityColorModifier",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.EntityComponent",
+    "name": "EntityComponent",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.EntityControl.BlockableAction",
+    "name": "EntityControl.BlockableAction",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityControl.BlockStatus",
+    "name": "EntityControl.BlockStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityControl",
+    "name": "EntityControl",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 53,
+    "fields_count": 22,
+    "properties_count": 25
+  },
+  {
+    "uid": "Global.EntityFootsteps",
+    "name": "EntityFootsteps",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityGroundMarker",
+    "name": "EntityGroundMarker",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityHighlightProvider",
+    "name": "EntityHighlightProvider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityModel",
+    "name": "EntityModel",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 26,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.EntityModelCustomMapping",
+    "name": "EntityModelCustomMapping",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityRelation",
+    "name": "EntityRelation",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityShellModifier",
+    "name": "EntityShellModifier",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.EntitySound",
+    "name": "EntitySound",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 7,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.EntityStatus",
+    "name": "EntityStatus",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 28,
+    "fields_count": 10,
+    "properties_count": 66
+  },
+  {
+    "uid": "Global.EntityTransformModifier",
+    "name": "EntityTransformModifier",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.EntityTransformSync",
+    "name": "EntityTransformSync",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityVisual.EntityDeathBehavior",
+    "name": "EntityVisual.EntityDeathBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityVisual",
+    "name": "EntityVisual",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 53,
+    "fields_count": 31,
+    "properties_count": 13
+  },
+  {
+    "uid": "Global.EntityVisualPoint",
+    "name": "EntityVisualPoint",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EntityVisualPointType",
+    "name": "EntityVisualPointType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EnvParticle",
+    "name": "EnvParticle",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoAbilityInstance",
+    "name": "EventInfoAbilityInstance",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoApplyElemental",
+    "name": "EventInfoApplyElemental",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoAttackEffect",
+    "name": "EventInfoAttackEffect",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoAttackFired",
+    "name": "EventInfoAttackFired",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoAttackHit",
+    "name": "EventInfoAttackHit",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoAttackMissed",
+    "name": "EventInfoAttackMissed",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoCast",
+    "name": "EventInfoCast",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoDamage",
+    "name": "EventInfoDamage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoDamageNegatedByImmunity",
+    "name": "EventInfoDamageNegatedByImmunity",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoDamageNegatedByShield",
+    "name": "EventInfoDamageNegatedByShield",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoHeal",
+    "name": "EventInfoHeal",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoHeroLevelUp",
+    "name": "EventInfoHeroLevelUp",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoKill",
+    "name": "EventInfoKill",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoLoadRoom",
+    "name": "EventInfoLoadRoom",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoLoadZone",
+    "name": "EventInfoLoadZone",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoShield",
+    "name": "EventInfoShield",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoSkillAbilityInstance",
+    "name": "EventInfoSkillAbilityInstance",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoSkillUse",
+    "name": "EventInfoSkillUse",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoSpentMana",
+    "name": "EventInfoSpentMana",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoStartChase",
+    "name": "EventInfoStartChase",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoStartMove",
+    "name": "EventInfoStartMove",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoStatusEffect",
+    "name": "EventInfoStatusEffect",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoStopChase",
+    "name": "EventInfoStopChase",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoStopMove",
+    "name": "EventInfoStopMove",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoSummon",
+    "name": "EventInfoSummon",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.EventInfoTravelToNodeInterrupt",
+    "name": "EventInfoTravelToNodeInterrupt",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Event_SpecialEOSConnectivity",
+    "name": "Event_SpecialEOSConnectivity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Event_SpecialUGSConnectivity",
+    "name": "Event_SpecialUGSConnectivity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ExampleModConfig",
+    "name": "ExampleModConfig",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 19,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FailReason",
+    "name": "FailReason",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FakeMaxHealthEffect",
+    "name": "FakeMaxHealthEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FeedbackManager.EffectPool",
+    "name": "FeedbackManager.EffectPool",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FeedbackManager",
+    "name": "FeedbackManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 12,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FieldBuildResult",
+    "name": "FieldBuildResult",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FinalDamageData",
+    "name": "FinalDamageData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 10,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FinalHealData",
+    "name": "FinalHealData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FinalStats",
+    "name": "FinalStats",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 17,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FlatTupleListWrapper`1",
+    "name": "FlatTupleListWrapper<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.FlavourManager",
+    "name": "FlavourManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 20,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FlickerGameObject",
+    "name": "FlickerGameObject",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FloatCost",
+    "name": "FloatCost",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FloatingWindowManager",
+    "name": "FloatingWindowManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 3,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.FocusableBehavior",
+    "name": "FocusableBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FocusedLobbyCharacterEffect",
+    "name": "FocusedLobbyCharacterEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Formula",
+    "name": "Formula",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FPSManager",
+    "name": "FPSManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxAnimatorSetFloat",
+    "name": "FxAnimatorSetFloat",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxAnimatorSetTrigger",
+    "name": "FxAnimatorSetTrigger",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxAttachToEntity",
+    "name": "FxAttachToEntity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 5,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxAttachToEntity.OffsetType",
+    "name": "FxAttachToEntity.OffsetType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxAttachToEntity.PositionType",
+    "name": "FxAttachToEntity.PositionType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxAttachToEntity.RotationType",
+    "name": "FxAttachToEntity.RotationType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxAttachToEntity.ScaleType",
+    "name": "FxAttachToEntity.ScaleType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxCameraShake",
+    "name": "FxCameraShake",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 10,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxCastTelegraph",
+    "name": "FxCastTelegraph",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.FxCastTelegraph.OffsetType",
+    "name": "FxCastTelegraph.OffsetType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxCastTelegraph.PositionType",
+    "name": "FxCastTelegraph.PositionType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxCastTelegraph.RotationType",
+    "name": "FxCastTelegraph.RotationType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxChangeMaterial",
+    "name": "FxChangeMaterial",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxChangeMusic",
+    "name": "FxChangeMusic",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxDoFDynamicFocusDistance",
+    "name": "FxDoFDynamicFocusDistance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxEffect",
+    "name": "FxEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxEntityAnimation",
+    "name": "FxEntityAnimation",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxEntityColor",
+    "name": "FxEntityColor",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxEntityDisableRenderer",
+    "name": "FxEntityDisableRenderer",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxEntityModelTransform",
+    "name": "FxEntityModelTransform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxEntityShake",
+    "name": "FxEntityShake",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxEntityShell",
+    "name": "FxEntityShell",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxEntityTransform",
+    "name": "FxEntityTransform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxFeedbackEffect",
+    "name": "FxFeedbackEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxFindEntity",
+    "name": "FxFindEntity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxGameObject",
+    "name": "FxGameObject",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxGibs",
+    "name": "FxGibs",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxInterpolatedEffectBase",
+    "name": "FxInterpolatedEffectBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 5,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.FxMaterialProperty",
+    "name": "FxMaterialProperty",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxMaterialProperty.PropertyEntry",
+    "name": "FxMaterialProperty.PropertyEntry",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxMaterialProperty.PropertyType",
+    "name": "FxMaterialProperty.PropertyType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxMeshTrail",
+    "name": "FxMeshTrail",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxNetworkedEffect",
+    "name": "FxNetworkedEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxParticleSystem.ClearParticlesBehavior",
+    "name": "FxParticleSystem.ClearParticlesBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxParticleSystem",
+    "name": "FxParticleSystem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxPointLight",
+    "name": "FxPointLight",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxRandomTransform",
+    "name": "FxRandomTransform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 6,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxRepeatedEffect",
+    "name": "FxRepeatedEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxSelectiveQuality",
+    "name": "FxSelectiveQuality",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxSelectiveVisibility",
+    "name": "FxSelectiveVisibility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.FxSimulateParticleSystem",
+    "name": "FxSimulateParticleSystem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxStopTime",
+    "name": "FxStopTime",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.FxVolume",
+    "name": "FxVolume",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameCursorManager.CursorData",
+    "name": "GameCursorManager.CursorData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameCursorManager",
+    "name": "GameCursorManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameEffect",
+    "name": "GameEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.GameLogicPackage",
+    "name": "GameLogicPackage",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameManager",
+    "name": "GameManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 65,
+    "fields_count": 11,
+    "properties_count": 14
+  },
+  {
+    "uid": "Global.GameModifierBase",
+    "name": "GameModifierBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameMod_Limbo",
+    "name": "GameMod_Limbo",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 17,
+    "fields_count": 14,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameMod_MirageSkin",
+    "name": "GameMod_MirageSkin",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.GameMod_MirageSkin.MirageSkinChancePerPlayer",
+    "name": "GameMod_MirageSkin.MirageSkinChancePerPlayer",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GamepadButtonEx",
+    "name": "GamepadButtonEx",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GamepadNavigation",
+    "name": "GamepadNavigation",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GameResultManager",
+    "name": "GameResultManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.GameSettingsManager",
+    "name": "GameSettingsManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 18,
+    "fields_count": 16,
+    "properties_count": 11
+  },
+  {
+    "uid": "Global.GameState",
+    "name": "GameState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Gem",
+    "name": "Gem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 36,
+    "fields_count": 26,
+    "properties_count": 25
+  },
+  {
+    "uid": "Global.Gem.QualityType",
+    "name": "Gem.QualityType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GemLocation",
+    "name": "GemLocation",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GenericTransformSync",
+    "name": "GenericTransformSync",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GenericTransformSync.SyncMode",
+    "name": "GenericTransformSync.SyncMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GetFocusTargetCacheData",
+    "name": "GetFocusTargetCacheData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.GetFocusTargetSettings",
+    "name": "GetFocusTargetSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GetNodeIndexSettings",
+    "name": "GetNodeIndexSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GibInfo",
+    "name": "GibInfo",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GlobalLogicPackage",
+    "name": "GlobalLogicPackage",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.GlobalUIManager",
+    "name": "GlobalUIManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 26,
+    "fields_count": 26,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.GlobalUIManager.RectResult",
+    "name": "GlobalUIManager.RectResult",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HasteEffect",
+    "name": "HasteEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.HatredStrengthType",
+    "name": "HatredStrengthType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HealData",
+    "name": "HealData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 16,
+    "fields_count": 0,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.Hero.HeroClassType",
+    "name": "Hero.HeroClassType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Hero.HeroDifficulty",
+    "name": "Hero.HeroDifficulty",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Hero.HeroMainStatType",
+    "name": "Hero.HeroMainStatType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Hero",
+    "name": "Hero",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 19,
+    "fields_count": 26,
+    "properties_count": 9
+  },
+  {
+    "uid": "Global.HeroComponent",
+    "name": "HeroComponent",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.HeroConstellationSettings",
+    "name": "HeroConstellationSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HeroLoadoutData",
+    "name": "HeroLoadoutData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 9,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HeroSkill",
+    "name": "HeroSkill",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 36,
+    "fields_count": 17,
+    "properties_count": 14
+  },
+  {
+    "uid": "Global.HeroSkillLocation",
+    "name": "HeroSkillLocation",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HighlightProvider.CursorStatus",
+    "name": "HighlightProvider.CursorStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HighlightProvider",
+    "name": "HighlightProvider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global",
+    "name": "Namespace",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.HunterStatus",
+    "name": "HunterStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IActivatable",
+    "name": "IActivatable",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IActivatableTrap",
+    "name": "IActivatableTrap",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IAttachableToEntity",
+    "name": "IAttachableToEntity",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IBanCampsNearby",
+    "name": "IBanCampsNearby",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IBanRoomNodesNearby",
+    "name": "IBanRoomNodesNearby",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IBanRoomNodesNearbyMultiple",
+    "name": "IBanRoomNodesNearbyMultiple",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IBanRoomNodesOnTop",
+    "name": "IBanRoomNodesOnTop",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IBinaryEntityValidator",
+    "name": "IBinaryEntityValidator",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ICastMethodDataArrow",
+    "name": "ICastMethodDataArrow",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ICastMethodDataCone",
+    "name": "ICastMethodDataCone",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ICastMethodDataNone",
+    "name": "ICastMethodDataNone",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ICastMethodDataPoint",
+    "name": "ICastMethodDataPoint",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.ICastMethodDataTarget",
+    "name": "ICastMethodDataTarget",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ICinematicCameraHelperStateReceiver",
+    "name": "ICinematicCameraHelperStateReceiver",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ICleanup",
+    "name": "ICleanup",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ICollidableWithProjectile",
+    "name": "ICollidableWithProjectile",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IControlPresetWindow",
+    "name": "IControlPresetWindow",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ICustomDestroyRoutine",
+    "name": "ICustomDestroyRoutine",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ICustomInteractable",
+    "name": "ICustomInteractable",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.IDisableGamepadTargeting",
+    "name": "IDisableGamepadTargeting",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IDisableOcclusionTest",
+    "name": "IDisableOcclusionTest",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IEditSkillDropTargetGemSlot",
+    "name": "IEditSkillDropTargetGemSlot",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IEditSkillDropTargetSkillButton",
+    "name": "IEditSkillDropTargetSkillButton",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IEffectComponent",
+    "name": "IEffectComponent",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IEffectSetupComponent",
+    "name": "IEffectSetupComponent",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IEffectWithOwnerContext",
+    "name": "IEffectWithOwnerContext",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IEffectWithSpeed",
+    "name": "IEffectWithSpeed",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IEnableWandering",
+    "name": "IEnableWandering",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IEntityValidator",
+    "name": "IEntityValidator",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IExcludeFromPool",
+    "name": "IExcludeFromPool",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IForceHeroicHealthbar",
+    "name": "IForceHeroicHealthbar",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IGamepadFocusable",
+    "name": "IGamepadFocusable",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IGamepadFocusableOverrideInput",
+    "name": "IGamepadFocusableOverrideInput",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IGamepadFocusableOverrideTooltip",
+    "name": "IGamepadFocusableOverrideTooltip",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IGamepadFocusListener",
+    "name": "IGamepadFocusListener",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IGamepadNavigationHint",
+    "name": "IGamepadNavigationHint",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IGamepadPingProxyParent",
+    "name": "IGamepadPingProxyParent",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IHideHealthbar",
+    "name": "IHideHealthbar",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IImportantFogVolume",
+    "name": "IImportantFogVolume",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IInitializableSettings",
+    "name": "IInitializableSettings",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IInteractable",
+    "name": "IInteractable",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.IItem",
+    "name": "IItem",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 7
+  },
+  {
+    "uid": "Global.ILangaugeChangedCallback",
+    "name": "ILangaugeChangedCallback",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ILimboNotifyReceiver",
+    "name": "ILimboNotifyReceiver",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ILinkedByGuid",
+    "name": "ILinkedByGuid",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ILobbyCharacterModelOnFocus",
+    "name": "ILobbyCharacterModelOnFocus",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ILobbyCharacterModelSetup",
+    "name": "ILobbyCharacterModelSetup",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ILogicUpdate",
+    "name": "ILogicUpdate",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ImageComponent",
+    "name": "ImageComponent",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ImageComponentAnimated",
+    "name": "ImageComponentAnimated",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.IMenuView",
+    "name": "IMenuView",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IModManagerWindow",
+    "name": "IModManagerWindow",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IMonsterNoScaling",
+    "name": "IMonsterNoScaling",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ImportantFogVolume",
+    "name": "ImportantFogVolume",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InGameCrashReportManager.CustomParamKey",
+    "name": "InGameCrashReportManager.CustomParamKey",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InGameCrashReportManager",
+    "name": "InGameCrashReportManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.InGameReverieManager",
+    "name": "InGameReverieManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.InGameTutorialManager",
+    "name": "InGameTutorialManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 14,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.InGameUIManager",
+    "name": "InGameUIManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 15,
+    "fields_count": 13,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.INotPlayableOnTop",
+    "name": "INotPlayableOnTop",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InputManager",
+    "name": "InputManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 10,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InputMode",
+    "name": "InputMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InstantDamageInstance",
+    "name": "InstantDamageInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InteractableMeshHighlightProvider",
+    "name": "InteractableMeshHighlightProvider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InteractableStatus",
+    "name": "InteractableStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Intro_RenderSettings",
+    "name": "Intro_RenderSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Intro_SceneController",
+    "name": "Intro_SceneController",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Intro_SubtitleController",
+    "name": "Intro_SubtitleController",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.InvisibleEffect",
+    "name": "InvisibleEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.InvulnerableEffect",
+    "name": "InvulnerableEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IOtherPlayersTonedDownDisable",
+    "name": "IOtherPlayersTonedDownDisable",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IOtherPlayersTonedDownLimit",
+    "name": "IOtherPlayersTonedDownLimit",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IPingableChoiceItem",
+    "name": "IPingableChoiceItem",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.IPingableCustom",
+    "name": "IPingableCustom",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IPingableShopItem",
+    "name": "IPingableShopItem",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.IPingableUIElement",
+    "name": "IPingableUIElement",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IPingableWorldNode",
+    "name": "IPingableWorldNode",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IPlayerPathablePoint",
+    "name": "IPlayerPathablePoint",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IProp",
+    "name": "IProp",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.IRewardActor",
+    "name": "IRewardActor",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ISettingsChangedCallback",
+    "name": "ISettingsChangedCallback",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IShrineCustomAction",
+    "name": "IShrineCustomAction",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IShrineCustomName",
+    "name": "IShrineCustomName",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ISpawnableAsMiniBoss",
+    "name": "ISpawnableAsMiniBoss",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IToggleableTrap",
+    "name": "IToggleableTrap",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.IValidatableSettings",
+    "name": "IValidatableSettings",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.IWorldPositionReceiver",
+    "name": "IWorldPositionReceiver",
+    "kind": "Interface",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.JoystickClickAction",
+    "name": "JoystickClickAction",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.JsonOverrideItem",
+    "name": "JsonOverrideItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.KillTracker",
+    "name": "KillTracker",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Knockback",
+    "name": "Knockback",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.KnockUpStrength",
+    "name": "KnockUpStrength",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LastGamePlayReward",
+    "name": "LastGamePlayReward",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LayerMasks",
+    "name": "LayerMasks",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Layers",
+    "name": "Layers",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 16,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LeveledPropertyTools",
+    "name": "LeveledPropertyTools",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LevelScaling",
+    "name": "LevelScaling",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LimboDepthState",
+    "name": "LimboDepthState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LimboObject",
+    "name": "LimboObject",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ListReturnHandle`1",
+    "name": "ListReturnHandle<T>",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.LoadCallbackAttribute",
+    "name": "LoadCallbackAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LoadedModInstance",
+    "name": "LoadedModInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LoadingStatus",
+    "name": "LoadingStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LoadNodeSettings",
+    "name": "LoadNodeSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 12,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LoadoutStarItem",
+    "name": "LoadoutStarItem",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbyConnectionQuality",
+    "name": "LobbyConnectionQuality",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbyInstance",
+    "name": "LobbyInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 23,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbyInstanceSteam",
+    "name": "LobbyInstanceSteam",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbyManager",
+    "name": "LobbyManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 2,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.LobbyMessage",
+    "name": "LobbyMessage",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbyMessageType",
+    "name": "LobbyMessageType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbySearchResult",
+    "name": "LobbySearchResult",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LobbyServiceProvider",
+    "name": "LobbyServiceProvider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 12,
+    "fields_count": 0,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.LobbyServiceSteam",
+    "name": "LobbyServiceSteam",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 10,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.LobbyUIManager",
+    "name": "LobbyUIManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.LogicBehaviour",
+    "name": "LogicBehaviour",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.LogicUpdateManager",
+    "name": "LogicUpdateManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.LogicUpdatePriorityAttribute",
+    "name": "LogicUpdatePriorityAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LookAtCamera",
+    "name": "LookAtCamera",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LootManager",
+    "name": "LootManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 16,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.LRUCache`2",
+    "name": "LRUCache<TKey, TValue>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.LucidDream",
+    "name": "LucidDream",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.LucidDreamType",
+    "name": "LucidDreamType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ManagerBase`1",
+    "name": "ManagerBase<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.MapCellType",
+    "name": "MapCellType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MapData",
+    "name": "MapData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.MapFakeCamera",
+    "name": "MapFakeCamera",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MapItemVisibility",
+    "name": "MapItemVisibility",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MaterialHighlightProvider",
+    "name": "MaterialHighlightProvider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MeleeAttackInstance",
+    "name": "MeleeAttackInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 10,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.MerchandiseData",
+    "name": "MerchandiseData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MerchandiseType",
+    "name": "MerchandiseType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MeshHighlightProvider",
+    "name": "MeshHighlightProvider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.MessageManager",
+    "name": "MessageManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 9,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.MidJoinBanType",
+    "name": "MidJoinBanType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MidJoinWaitType",
+    "name": "MidJoinWaitType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MiniBossEffect",
+    "name": "MiniBossEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MirageSkinDecoObject",
+    "name": "MirageSkinDecoObject",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MirageSkinEffect",
+    "name": "MirageSkinEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 13,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MockAbilityInstance",
+    "name": "MockAbilityInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MockEntity",
+    "name": "MockEntity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModBehaviour.ConsoleCommandAttribute",
+    "name": "ModBehaviour.ConsoleCommandAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModBehaviour",
+    "name": "ModBehaviour",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 16,
+    "fields_count": 1,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.ModConfig.DescriptionAttribute",
+    "name": "ModConfig.DescriptionAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModConfig",
+    "name": "ModConfig",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModConfig.LabelTextAttribute",
+    "name": "ModConfig.LabelTextAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModifierData",
+    "name": "ModifierData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModifierServerData",
+    "name": "ModifierServerData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModifierSpawnType",
+    "name": "ModifierSpawnType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModItem",
+    "name": "ModItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 11,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModItemState",
+    "name": "ModItemState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModMetadata",
+    "name": "ModMetadata",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ModSourceType",
+    "name": "ModSourceType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Monster",
+    "name": "Monster",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 4,
+    "properties_count": 6
+  },
+  {
+    "uid": "Global.Monster.MonsterType",
+    "name": "Monster.MonsterType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MonsterPool",
+    "name": "MonsterPool",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MonsterPool.SpawnRuleEntry",
+    "name": "MonsterPool.SpawnRuleEntry",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MonsterSpawnCondition",
+    "name": "MonsterSpawnCondition",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.MonsterSpawnConditionType",
+    "name": "MonsterSpawnConditionType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MonsterSpawnRule",
+    "name": "MonsterSpawnRule",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 13,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Mon_DreamTeller",
+    "name": "Mon_DreamTeller",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 2,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.Mon_RedGiant",
+    "name": "Mon_RedGiant",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Mon_RedMan",
+    "name": "Mon_RedMan",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MouseButton",
+    "name": "MouseButton",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.MusicManager",
+    "name": "MusicManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Nametag",
+    "name": "Nametag",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.NetworkedManagerBase`1",
+    "name": "NetworkedManagerBase<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.NetworkedOnScreenTimerHandle",
+    "name": "NetworkedOnScreenTimerHandle",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.NetworkLogicPackage",
+    "name": "NetworkLogicPackage",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.NextGoalSettings",
+    "name": "NextGoalSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.NodeModifierVisibility",
+    "name": "NodeModifierVisibility",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ObjectHighlightManager",
+    "name": "ObjectHighlightManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ObjectHighlightManager.OutlineStyle",
+    "name": "ObjectHighlightManager.OutlineStyle",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ObjectiveArrowManager",
+    "name": "ObjectiveArrowManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ObjectPoolItem",
+    "name": "ObjectPoolItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.OnScreenTimerHandle",
+    "name": "OnScreenTimerHandle",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.OpenURLSettings",
+    "name": "OpenURLSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.OverpopulationBehavior",
+    "name": "OverpopulationBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PCBind",
+    "name": "PCBind",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerBuildVisibility",
+    "name": "PerBuildVisibility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerControlVisibility",
+    "name": "PerControlVisibility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerDeveloperModeVisibility",
+    "name": "PerDeveloperModeVisibility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerFeatureVisibility_Booth",
+    "name": "PerFeatureVisibility_Booth",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerLaunchOptionVisibility",
+    "name": "PerLaunchOptionVisibility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerLaunchOptionVisibility.LaunchOptions",
+    "name": "PerLaunchOptionVisibility.LaunchOptions",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerMonsterTypeData`1",
+    "name": "PerMonsterTypeData<T>",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerPlatformVisibility",
+    "name": "PerPlatformVisibility",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PerRarityData`1",
+    "name": "PerRarityData<T>",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PersistentStatBonusEffect",
+    "name": "PersistentStatBonusEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PickupInstance",
+    "name": "PickupInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 17,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PickupManager",
+    "name": "PickupManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 11,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_BaseExpOrb",
+    "name": "Pickup_BaseExpOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_BaseGoldOrb",
+    "name": "Pickup_BaseGoldOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Pickup_DreamDust",
+    "name": "Pickup_DreamDust",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Pickup_HealthOrb",
+    "name": "Pickup_HealthOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_LargeExpOrb",
+    "name": "Pickup_LargeExpOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_LargeGoldOrb",
+    "name": "Pickup_LargeGoldOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_ManaOrb",
+    "name": "Pickup_ManaOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_MediumExpOrb",
+    "name": "Pickup_MediumExpOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_MediumGoldOrb",
+    "name": "Pickup_MediumGoldOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_RegenOrb",
+    "name": "Pickup_RegenOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_SmallExpOrb",
+    "name": "Pickup_SmallExpOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Pickup_SmallGoldOrb",
+    "name": "Pickup_SmallGoldOrb",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PingInstance",
+    "name": "PingInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PingManager",
+    "name": "PingManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PingManager.Ping",
+    "name": "PingManager.Ping",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PingManager.PingPrefabBindings",
+    "name": "PingManager.PingPrefabBindings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PingManager.PingType",
+    "name": "PingManager.PingType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PingUIInstance",
+    "name": "PingUIInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlaceShrineSettings",
+    "name": "PlaceShrineSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlatformType",
+    "name": "PlatformType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayerStarItem",
+    "name": "PlayerStarItem",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayerState",
+    "name": "PlayerState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayGameManager",
+    "name": "PlayGameManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.PlayLobbyManager",
+    "name": "PlayLobbyManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 9,
+    "fields_count": 4,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.PlayLobby_Character",
+    "name": "PlayLobby_Character",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayLobby_CharacterCamera",
+    "name": "PlayLobby_CharacterCamera",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayLobby_Fireplace",
+    "name": "PlayLobby_Fireplace",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayLobby_RandomAppearance",
+    "name": "PlayLobby_RandomAppearance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayLobby_RotateCharacterTutorial",
+    "name": "PlayLobby_RotateCharacterTutorial",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PlayLobby_Tutorial",
+    "name": "PlayLobby_Tutorial",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 10,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PointsToTriangleVertices",
+    "name": "PointsToTriangleVertices",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.PolygonTools",
+    "name": "PolygonTools",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PrefabEnvironmentController",
+    "name": "PrefabEnvironmentController",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PreferredGameSettings",
+    "name": "PreferredGameSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 13,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PreloadInterface",
+    "name": "PreloadInterface",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Projectile.AddEffectTarget",
+    "name": "Projectile.AddEffectTarget",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Projectile.EntityHit",
+    "name": "Projectile.EntityHit",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Projectile",
+    "name": "Projectile",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 19,
+    "fields_count": 23,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.Projectile.ProjectileMode",
+    "name": "Projectile.ProjectileMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Projectile.RotationType",
+    "name": "Projectile.RotationType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Projectile.StartPositionType",
+    "name": "Projectile.StartPositionType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PropEntity",
+    "name": "PropEntity",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 3,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.PropEnt_Merchant_Backpack",
+    "name": "PropEnt_Merchant_Backpack",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PropEnt_Merchant_Base",
+    "name": "PropEnt_Merchant_Base",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 16,
+    "fields_count": 11,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.PropEnt_Merchant_Jonas",
+    "name": "PropEnt_Merchant_Jonas",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PropEnt_Merchant_Smoothie",
+    "name": "PropEnt_Merchant_Smoothie",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.PropEnt_Merchant_Unmanned",
+    "name": "PropEnt_Merchant_Unmanned",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PropEnt_Stone_DreamDust",
+    "name": "PropEnt_Stone_DreamDust",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.PropEnt_Stone_Gold",
+    "name": "PropEnt_Stone_Gold",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.PropEnt_Stone_Nightmare",
+    "name": "PropEnt_Stone_Nightmare",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.PropSpawnRule",
+    "name": "PropSpawnRule",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PropSpawnRule.PropEntry",
+    "name": "PropSpawnRule.PropEntry",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ProtectedEffect",
+    "name": "ProtectedEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ProxyCollider",
+    "name": "ProxyCollider",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.PunishmentInstance",
+    "name": "PunishmentInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Quality3Levels",
+    "name": "Quality3Levels",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Quality4Levels",
+    "name": "Quality4Levels",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.QualityOff3Levels",
+    "name": "QualityOff3Levels",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.QualityOff4Levels",
+    "name": "QualityOff4Levels",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.QuaternionUtil",
+    "name": "QuaternionUtil",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.QuestManager",
+    "name": "QuestManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 8,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.QuestProgressType",
+    "name": "QuestProgressType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.QuestState",
+    "name": "QuestState",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.QuestType",
+    "name": "QuestType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RandomGameObjectsGroup",
+    "name": "RandomGameObjectsGroup",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RandomPickupInstance",
+    "name": "RandomPickupInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Rarity",
+    "name": "Rarity",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ReactionChain",
+    "name": "ReactionChain",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ReactionChainComparer",
+    "name": "ReactionChainComparer",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ReduceOtherPlayerEffectsStrength",
+    "name": "ReduceOtherPlayerEffectsStrength",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RefValue`1",
+    "name": "RefValue<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ResourceLinkBy",
+    "name": "ResourceLinkBy",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ResourceLoadSettings",
+    "name": "ResourceLoadSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ResourceVariantProcessor",
+    "name": "ResourceVariantProcessor",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Rift",
+    "name": "Rift",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 9,
+    "properties_count": 7
+  },
+  {
+    "uid": "Global.Rift_MockExit",
+    "name": "Rift_MockExit",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Rift_RoomExit",
+    "name": "Rift_RoomExit",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Rift_Sidetrack",
+    "name": "Rift_Sidetrack",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 8,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.Room",
+    "name": "Room",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 20,
+    "fields_count": 14,
+    "properties_count": 16
+  },
+  {
+    "uid": "Global.RoomBakeProcessor",
+    "name": "RoomBakeProcessor",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomComponent",
+    "name": "RoomComponent",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 7,
+    "fields_count": 0,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.RoomComponentStartDependencyAttribute",
+    "name": "RoomComponentStartDependencyAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomEditorMaintenance",
+    "name": "RoomEditorMaintenance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomMap",
+    "name": "RoomMap",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.RoomModifierBase",
+    "name": "RoomModifierBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 24,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.RoomModifiers",
+    "name": "RoomModifiers",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomMonsters",
+    "name": "RoomMonsters",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 12,
+    "fields_count": 24,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.RoomMonsters.MonsterSpawnData",
+    "name": "RoomMonsters.MonsterSpawnData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomProps",
+    "name": "RoomProps",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomRewardFlowItemType",
+    "name": "RoomRewardFlowItemType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomRewards",
+    "name": "RoomRewards",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.RoomRifts",
+    "name": "RoomRifts",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomSavedObject",
+    "name": "RoomSavedObject",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.RoomSection",
+    "name": "RoomSection",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 9,
+    "properties_count": 7
+  },
+  {
+    "uid": "Global.RoomSectionComponent",
+    "name": "RoomSectionComponent",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.RoomSectionFloatDictionary",
+    "name": "RoomSectionFloatDictionary",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_Barrier",
+    "name": "Room_Barrier",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Room_BossArena",
+    "name": "Room_BossArena",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Room_HeroSpawnPos",
+    "name": "Room_HeroSpawnPos",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_NotPlayableOnTop",
+    "name": "Room_NotPlayableOnTop",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_PlayerPathablePoint",
+    "name": "Room_PlayerPathablePoint",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Room_RiftPos",
+    "name": "Room_RiftPos",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_Shortcut",
+    "name": "Room_Shortcut",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 6,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.Room_SurfaceOverride",
+    "name": "Room_SurfaceOverride",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_Trap_ActivatorBase",
+    "name": "Room_Trap_ActivatorBase",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_Trap_CyclicActivator",
+    "name": "Room_Trap_CyclicActivator",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_Trap_ProximityActivator",
+    "name": "Room_Trap_ProximityActivator",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Room_Trap_Toggleable",
+    "name": "Room_Trap_Toggleable",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 2,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.Room_Waypoint",
+    "name": "Room_Waypoint",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 3,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.RootEffect",
+    "name": "RootEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.RotateTransform",
+    "name": "RotateTransform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SafeAction`1",
+    "name": "SafeAction<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.SafeAction`2",
+    "name": "SafeAction<T1, T2>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SafeAction`3",
+    "name": "SafeAction<T1, T2, T3>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SafeAction`4",
+    "name": "SafeAction<T1, T2, T3, T4>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SafeAction",
+    "name": "SafeAction",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.SampleCastInfoContext.CastOnButtonType",
+    "name": "SampleCastInfoContext.CastOnButtonType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SampleCastInfoContext",
+    "name": "SampleCastInfoContext",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 12,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SampleCastInfoContextSerialization",
+    "name": "SampleCastInfoContextSerialization",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SaveActorAttribute",
+    "name": "SaveActorAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SaveVarAttribute",
+    "name": "SaveVarAttribute",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SaveVarFlags",
+    "name": "SaveVarFlags",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ScaleWithDifficultyMode",
+    "name": "ScaleWithDifficultyMode",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ScalingValue",
+    "name": "ScalingValue",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 10,
+    "fields_count": 12,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.SectionCombatAreaType",
+    "name": "SectionCombatAreaType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Section_Monsters",
+    "name": "Section_Monsters",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 9,
+    "properties_count": 6
+  },
+  {
+    "uid": "Global.Section_Props",
+    "name": "Section_Props",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SelectionDisplayType",
+    "name": "SelectionDisplayType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ServerActor",
+    "name": "ServerActor",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.ServiceStatus",
+    "name": "ServiceStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ShaderManager",
+    "name": "ShaderManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ShakeInstance",
+    "name": "ShakeInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ShieldEffect",
+    "name": "ShieldEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.ShownConversation",
+    "name": "ShownConversation",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Shrine",
+    "name": "Shrine",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 15,
+    "fields_count": 16,
+    "properties_count": 9
+  },
+  {
+    "uid": "Global.SI",
+    "name": "SI",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SI.WaitForCondition",
+    "name": "SI.WaitForCondition",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SI.WaitForNextLogicUpdate",
+    "name": "SI.WaitForNextLogicUpdate",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SI.WaitForSeconds",
+    "name": "SI.WaitForSeconds",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SilenceEffect",
+    "name": "SilenceEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.SingletonBehaviour`1",
+    "name": "SingletonBehaviour<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.SingletonDewNetworkBehaviour`1",
+    "name": "SingletonDewNetworkBehaviour<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.SkillBonus",
+    "name": "SkillBonus",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.SkillTrigger",
+    "name": "SkillTrigger",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 39,
+    "fields_count": 34,
+    "properties_count": 25
+  },
+  {
+    "uid": "Global.SkillType",
+    "name": "SkillType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SkillVisualOverrideItem",
+    "name": "SkillVisualOverrideItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 7,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Skin",
+    "name": "Skin",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 8,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.SkinRarity",
+    "name": "SkinRarity",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SlowEffect",
+    "name": "SlowEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.SpawnManager",
+    "name": "SpawnManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SpawnMonsterSettings",
+    "name": "SpawnMonsterSettings",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 16,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SpecialEntityRoomModifier",
+    "name": "SpecialEntityRoomModifier",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Special_RoomAnnouncer",
+    "name": "Special_RoomAnnouncer",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.SpeedEffect",
+    "name": "SpeedEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.StackedStatusEffect",
+    "name": "StackedStatusEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 7,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.StandardProjectile",
+    "name": "StandardProjectile",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 7,
+    "properties_count": 4
+  },
+  {
+    "uid": "Global.StarEffect",
+    "name": "StarEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 5,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.StarScalingValue",
+    "name": "StarScalingValue",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 15,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.StarScalingValue.StrengthScalingType",
+    "name": "StarScalingValue.StrengthScalingType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.StarType",
+    "name": "StarType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.StatBonus",
+    "name": "StatBonus",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 0,
+    "properties_count": 31
+  },
+  {
+    "uid": "Global.StatisticsManager",
+    "name": "StatisticsManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.StatusEffect.DoAbilityItem",
+    "name": "StatusEffect.DoAbilityItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.StatusEffect",
+    "name": "StatusEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 44,
+    "fields_count": 13,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.StunEffect",
+    "name": "StunEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Summon",
+    "name": "Summon",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 21,
+    "fields_count": 5,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.SyncableAssetRef",
+    "name": "SyncableAssetRef",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 5,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.SyncedNetworkBehaviour",
+    "name": "SyncedNetworkBehaviour",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Tags",
+    "name": "Tags",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.TeamRelation",
+    "name": "TeamRelation",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.TickDamageInstance",
+    "name": "TickDamageInstance",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 6,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.TimescaleManager",
+    "name": "TimescaleManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 3
+  },
+  {
+    "uid": "Global.TitleManager",
+    "name": "TitleManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 7,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.Title_LastGameCharacters",
+    "name": "Title_LastGameCharacters",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.TransitionManager",
+    "name": "TransitionManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 11,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.TransitionManager.StateType",
+    "name": "TransitionManager.StateType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Treasure",
+    "name": "Treasure",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 5,
+    "properties_count": 5
+  },
+  {
+    "uid": "Global.TriggerChannelData",
+    "name": "TriggerChannelData",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.TriggerConfig",
+    "name": "TriggerConfig",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 34,
+    "properties_count": 8
+  },
+  {
+    "uid": "Global.TriggerConfig.StatusEffectVictimType",
+    "name": "TriggerConfig.StatusEffectVictimType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UIManager",
+    "name": "UIManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 1,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.UI_BackButtonHandler",
+    "name": "UI_BackButtonHandler",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_BindingWindow",
+    "name": "UI_BindingWindow",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_BindingWindow_ClickReceiver",
+    "name": "UI_BindingWindow_ClickReceiver",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_BindItem",
+    "name": "UI_BindItem",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 6,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.UI_CursorEvents",
+    "name": "UI_CursorEvents",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_Dropdown",
+    "name": "UI_Dropdown",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 1,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.UI_EmoteWheel",
+    "name": "UI_EmoteWheel",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 8,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.UI_EmoteWheel_Item",
+    "name": "UI_EmoteWheel_Item",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GameInputPassThrough",
+    "name": "UI_GameInputPassThrough",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadBindButton.ButtonType",
+    "name": "UI_GamepadBindButton.ButtonType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadBindButton",
+    "name": "UI_GamepadBindButton",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 3,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadFocusable",
+    "name": "UI_GamepadFocusable",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 4,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.UI_GamepadFocusableGroup",
+    "name": "UI_GamepadFocusableGroup",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 3,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadInputField",
+    "name": "UI_GamepadInputField",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadNavigationHint",
+    "name": "UI_GamepadNavigationHint",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadNavigationHint.NavigationSettings",
+    "name": "UI_GamepadNavigationHint.NavigationSettings",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_GamepadTextInput",
+    "name": "UI_GamepadTextInput",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 11,
+    "fields_count": 14,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.UI_GamepadTextInput_Key",
+    "name": "UI_GamepadTextInput_Key",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 2,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_HoldToRapidClickButton",
+    "name": "UI_HoldToRapidClickButton",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 1,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_PointerEvents",
+    "name": "UI_PointerEvents",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_ShowAndHideObject",
+    "name": "UI_ShowAndHideObject",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 5,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.UI_StationaryEmote",
+    "name": "UI_StationaryEmote",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 1,
+    "fields_count": 4,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UI_Toggle",
+    "name": "UI_Toggle",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.UI_ToggleGroup",
+    "name": "UI_ToggleGroup",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 1,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.UI_Window",
+    "name": "UI_Window",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 2,
+    "properties_count": 2
+  },
+  {
+    "uid": "Global.UI_Window_DragArea",
+    "name": "UI_Window_DragArea",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UncollidableEffect",
+    "name": "UncollidableEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.UnlockStatus",
+    "name": "UnlockStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.UnstoppableEffect",
+    "name": "UnstoppableEffect",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.VariantDataContainer",
+    "name": "VariantDataContainer",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 4,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.VariantDef",
+    "name": "VariantDef",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 6,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.View",
+    "name": "View",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 10,
+    "fields_count": 13,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.View.ShowBehavior",
+    "name": "View.ShowBehavior",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.VoteType",
+    "name": "VoteType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WaitForEvent`1",
+    "name": "WaitForEvent<T>",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.WaitForEvent",
+    "name": "WaitForEvent",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.WaitForPromise",
+    "name": "WaitForPromise",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 1
+  },
+  {
+    "uid": "Global.WaitForPromise.ResolveRejectAction",
+    "name": "WaitForPromise.ResolveRejectAction",
+    "kind": "Delegate",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WildcardMatch",
+    "name": "WildcardMatch",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 2,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WobblyTransform",
+    "name": "WobblyTransform",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 6,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WorldDisplayStatus",
+    "name": "WorldDisplayStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WorldMessageSetting",
+    "name": "WorldMessageSetting",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 5,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WorldNodeData",
+    "name": "WorldNodeData",
+    "kind": "Struct",
+    "summary": "",
+    "methods_count": 8,
+    "fields_count": 8,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WorldNodeStatus",
+    "name": "WorldNodeStatus",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.WorldNodeType",
+    "name": "WorldNodeType",
+    "kind": "Enum",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 0,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.Zone",
+    "name": "Zone",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 0,
+    "fields_count": 17,
+    "properties_count": 0
+  },
+  {
+    "uid": "Global.ZoneManager",
+    "name": "ZoneManager",
+    "kind": "Class",
+    "summary": "",
+    "methods_count": 47,
+    "fields_count": 35,
+    "properties_count": 27
+  }
+]

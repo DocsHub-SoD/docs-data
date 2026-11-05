@@ -1,0 +1,58 @@
+{
+  "uid": "Global.SingletonDewNetworkBehaviour`1",
+  "name": "SingletonDewNetworkBehaviour<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SingletonDewNetworkBehaviour<T> : DewNetworkBehaviour, ILogicUpdate where T : MonoBehaviour",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Room",
+      "href": "Global.Room.html",
+      "uid": "Global.Room"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_SingletonDewNetworkBehaviour_1_instance",
+      "declaration": "public static T instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_SingletonDewNetworkBehaviour_1_softInstance",
+      "declaration": "public static T softInstance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_SingletonDewNetworkBehaviour_1_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

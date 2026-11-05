@@ -1,0 +1,215 @@
+{
+  "uid": "Global.LobbyInstance",
+  "name": "LobbyInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LobbyInstance",
+  "inheritance": [
+    {
+      "name": "LobbyInstanceSteam",
+      "href": "Global.LobbyInstanceSteam.html",
+      "uid": "Global.LobbyInstanceSteam"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "activeLucidDreams",
+      "id": "Global_LobbyInstance_activeLucidDreams",
+      "declaration": "public List<string> activeLucidDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowDejavu",
+      "id": "Global_LobbyInstance_allowDejavu",
+      "declaration": "public bool allowDejavu",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowJoin",
+      "id": "Global_LobbyInstance_allowJoin",
+      "declaration": "public bool allowJoin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowMidJoins",
+      "id": "Global_LobbyInstance_allowMidJoins",
+      "declaration": "public AllowMidJoinType allowMidJoins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bannedGameItems",
+      "id": "Global_LobbyInstance_bannedGameItems",
+      "declaration": "public List<string> bannedGameItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "connectionQuality",
+      "id": "Global_LobbyInstance_connectionQuality",
+      "declaration": "public LobbyConnectionQuality connectionQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentPlayers",
+      "id": "Global_LobbyInstance_currentPlayers",
+      "declaration": "public int currentPlayers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customData",
+      "id": "Global_LobbyInstance_customData",
+      "declaration": "public Dictionary<string, string> customData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficulty",
+      "id": "Global_LobbyInstance_difficulty",
+      "declaration": "public string difficulty",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameServerAddress",
+      "id": "Global_LobbyInstance_gameServerAddress",
+      "declaration": "public string gameServerAddress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameStartTimestamp",
+      "id": "Global_LobbyInstance_gameStartTimestamp",
+      "declaration": "public long gameStartTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasGameStarted",
+      "id": "Global_LobbyInstance_hasGameStarted",
+      "declaration": "public bool hasGameStarted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id",
+      "id": "Global_LobbyInstance_id",
+      "declaration": "public string id",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInviteOnly",
+      "id": "Global_LobbyInstance_isInviteOnly",
+      "declaration": "public bool isInviteOnly",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLobbyLeader",
+      "id": "Global_LobbyInstance_isLobbyLeader",
+      "declaration": "public bool isLobbyLeader",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isModded",
+      "id": "Global_LobbyInstance_isModded",
+      "declaration": "public bool isModded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyDescription",
+      "id": "Global_LobbyInstance_lobbyDescription",
+      "declaration": "public string lobbyDescription",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyName",
+      "id": "Global_LobbyInstance_lobbyName",
+      "declaration": "public string lobbyName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyTags",
+      "id": "Global_LobbyInstance_lobbyTags",
+      "declaration": "public List<string> lobbyTags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPlayers",
+      "id": "Global_LobbyInstance_maxPlayers",
+      "declaration": "public int maxPlayers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "savedPlayers",
+      "id": "Global_LobbyInstance_savedPlayers",
+      "declaration": "public List<string> savedPlayers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shortCode",
+      "id": "Global_LobbyInstance_shortCode",
+      "declaration": "public string shortCode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "version",
+      "id": "Global_LobbyInstance_version",
+      "declaration": "public string version",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ToString()",
+      "id": "Global_LobbyInstance_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

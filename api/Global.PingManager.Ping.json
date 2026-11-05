@@ -1,0 +1,65 @@
+{
+  "uid": "Global.PingManager.Ping",
+  "name": "PingManager.Ping",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct PingManager.Ping",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "itemIndex",
+      "id": "Global_PingManager_Ping_itemIndex",
+      "declaration": "public int itemIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_PingManager_Ping_position",
+      "declaration": "public Vector3 position",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sender",
+      "id": "Global_PingManager_Ping_sender",
+      "declaration": "public DewPlayer sender",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_PingManager_Ping_target",
+      "declaration": "public NetworkBehaviour target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_PingManager_Ping_type",
+      "declaration": "public PingManager.PingType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "IsValid()",
+      "id": "Global_PingManager_Ping_IsValid",
+      "declaration": "public bool IsValid()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

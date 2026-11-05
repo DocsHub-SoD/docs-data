@@ -1,0 +1,847 @@
+{
+  "uid": "Global.StatusEffect",
+  "name": "StatusEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class StatusEffect : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "CurseStatusEffect",
+      "href": "Global.CurseStatusEffect.html",
+      "uid": "Global.CurseStatusEffect"
+    },
+    {
+      "name": "MiniBossEffect",
+      "href": "Global.MiniBossEffect.html",
+      "uid": "Global.MiniBossEffect"
+    },
+    {
+      "name": "MirageSkinEffect",
+      "href": "Global.MirageSkinEffect.html",
+      "uid": "Global.MirageSkinEffect"
+    },
+    {
+      "name": "PersistentStatBonusEffect",
+      "href": "Global.PersistentStatBonusEffect.html",
+      "uid": "Global.PersistentStatBonusEffect"
+    },
+    {
+      "name": "StackedStatusEffect",
+      "href": "Global.StackedStatusEffect.html",
+      "uid": "Global.StackedStatusEffect"
+    },
+    {
+      "name": "StarEffect",
+      "href": "Global.StarEffect.html",
+      "uid": "Global.StarEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "addedMaterials",
+      "id": "Global_StatusEffect_addedMaterials",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\npublic Material[] addedMaterials",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bottomColor",
+      "id": "Global_StatusEffect_bottomColor",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ShowIf(\"_showIcon\", true)]\npublic Color bottomColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endEffectVictim",
+      "id": "Global_StatusEffect_endEffectVictim",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[LabelText(\"End Effect\")]\npublic GameObject endEffectVictim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HarmfulEffects",
+      "id": "Global_StatusEffect_HarmfulEffects",
+      "declaration": "public const BasicEffectMask HarmfulEffects = Slow | Cripple | Root | Silence | Stun | Blind | ArmorReduction | HealReduction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hideOnWorldHealthBar",
+      "id": "Global_StatusEffect_hideOnWorldHealthBar",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ShowIf(\"_showIcon\", true)]\n[ToggleLeft]\npublic bool hideOnWorldHealthBar",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_StatusEffect_icon",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ShowIf(\"_showIcon\", true)]\npublic Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "iconOrder",
+      "id": "Global_StatusEffect_iconOrder",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ShowIf(\"_showIcon\", true)]\npublic int iconOrder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isBeneficialBuff",
+      "id": "Global_StatusEffect_isBeneficialBuff",
+      "declaration": "[FormerlySerializedAs(\"isBeneficial\")]\n[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool isBeneficialBuff",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCleansable",
+      "id": "Global_StatusEffect_isCleansable",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool isCleansable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isKilledByCrowdControlImmunity",
+      "id": "Global_StatusEffect_isKilledByCrowdControlImmunity",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool isKilledByCrowdControlImmunity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleDurationByTenacity",
+      "id": "Global_StatusEffect_scaleDurationByTenacity",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool scaleDurationByTenacity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startEffectVictim",
+      "id": "Global_StatusEffect_startEffectVictim",
+      "declaration": "[Title(\"Effects On Victim\", null, TitleAlignments.Left, true, true)]\n[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[LabelText(\"Start Effect\")]\npublic GameObject startEffectVictim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "topColor",
+      "id": "Global_StatusEffect_topColor",
+      "declaration": "[BoxGroup(\"StatusEffect Settings\", true, false, 0)]\n[ShowIf(\"_showIcon\", true)]\npublic Color topColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "basicEffects",
+      "id": "Global_StatusEffect_basicEffects",
+      "declaration": "public IReadOnlyList<BasicEffect> basicEffects { get; }",
+      "summary": "List of BasicEffects this status effect is applying to the victim entity. Only available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_StatusEffect_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxDuration",
+      "id": "Global_StatusEffect_maxDuration",
+      "declaration": "public float? maxDuration { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedDuration",
+      "id": "Global_StatusEffect_normalizedDuration",
+      "declaration": "public float? normalizedDuration { get; }",
+      "summary": "Normalized remaining duration. Starts on 1.0f and ends on 0.0f.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numberDisplay",
+      "id": "Global_StatusEffect_numberDisplay",
+      "declaration": "public int? numberDisplay { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "remainingDuration",
+      "id": "Global_StatusEffect_remainingDuration",
+      "declaration": "public float? remainingDuration { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showIcon",
+      "id": "Global_StatusEffect_showIcon",
+      "declaration": "public bool showIcon { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_StatusEffect_victim",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Entity victim { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_StatusEffect_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoAbility(Func<AbilityTrigger, bool>, Func<AbilityTrigger, Action>)",
+      "id": "Global_StatusEffect_DoAbility_System_Func_AbilityTrigger_System_Boolean__System_Func_AbilityTrigger_System_Action__",
+      "declaration": "public SafeAction DoAbility(Func<AbilityTrigger, bool> condition, Func<AbilityTrigger, Action> callback)",
+      "summary": "Do custom action on all matching ability and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.",
+      "parameters": [
+        {
+          "name": "condition",
+          "type": "System.Func<T, TResult><AbilityTrigger,bool>",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "callback",
+          "type": "System.Func<T, TResult><AbilityTrigger,System.Action>",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "DoArmorBoost(float)",
+      "id": "Global_StatusEffect_DoArmorBoost_System_Single_",
+      "declaration": "public ArmorBoostEffect DoArmorBoost(float strength)",
+      "summary": "ArmorBoost reduces all taken damage.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "ArmorBoostEffect"
+    },
+    {
+      "name": "DoArmorReduction(float)",
+      "id": "Global_StatusEffect_DoArmorReduction_System_Single_",
+      "declaration": "public ArmorReductionEffect DoArmorReduction(float strength)",
+      "summary": "ArmorReduction increases all taken damage.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "ArmorReductionEffect"
+    },
+    {
+      "name": "DoAttackCritical(Action)",
+      "id": "Global_StatusEffect_DoAttackCritical_System_Action_",
+      "declaration": "public AttackCriticalEffect DoAttackCritical(Action onUse)",
+      "summary": "AttackCritical makes the entity's attacks to always do a critical hit.",
+      "parameters": [
+        {
+          "name": "onUse",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AttackCriticalEffect"
+    },
+    {
+      "name": "DoAttackEmpower(Action<EventInfoAttackEffect, int>, int, Action)",
+      "id": "Global_StatusEffect_DoAttackEmpower_System_Action_EventInfoAttackEffect_System_Int32__System_Int32_System_Action_",
+      "declaration": "public AttackEmpowerEffect DoAttackEmpower(Action<EventInfoAttackEffect, int> onAttackEffect, int maxTriggerCount = 2147483647, Action onDepleted = null)",
+      "summary": "Note this will lock the status effect until basic attack instance is destroyed.",
+      "parameters": [
+        {
+          "name": "onAttackEffect",
+          "type": "System.Action<T1, T2><EventInfoAttackEffect,int>",
+          "type_uid": "Global.EventInfoAttackEffect",
+          "description": ""
+        },
+        {
+          "name": "maxTriggerCount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onDepleted",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AttackEmpowerEffect"
+    },
+    {
+      "name": "DoAttackOverride(AbilityTrigger, Action)",
+      "id": "Global_StatusEffect_DoAttackOverride_AbilityTrigger_System_Action_",
+      "declaration": "public AttackOverrideEffect DoAttackOverride(AbilityTrigger trigger, Action onUse)",
+      "summary": "AttackOverride replaces the entity's attack AbilityTrigger with something else.This version uses an existing ability trigger.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "onUse",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AttackOverrideEffect"
+    },
+    {
+      "name": "DoAttackOverride<T>(Action)",
+      "id": "Global_StatusEffect_DoAttackOverride__1_System_Action_",
+      "declaration": "public AttackOverrideEffect DoAttackOverride<T>(Action onUse) where T : AbilityTrigger",
+      "summary": "AttackOverride replaces the entity's attack AbilityTrigger with something else.This version creates a new ability trigger of the given type and automatically disposes after use.",
+      "parameters": [
+        {
+          "name": "onUse",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AttackOverrideEffect"
+    },
+    {
+      "name": "DoBasicEffect(BasicEffect)",
+      "id": "Global_StatusEffect_DoBasicEffect_BasicEffect_",
+      "declaration": "public void DoBasicEffect(BasicEffect eff)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eff",
+          "type": "BasicEffect",
+          "type_uid": "Global.BasicEffect",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoBlind()",
+      "id": "Global_StatusEffect_DoBlind",
+      "declaration": "public BlindEffect DoBlind()",
+      "summary": "Blind makes the entity miss its attacks.",
+      "parameters": [],
+      "returns": "BlindEffect"
+    },
+    {
+      "name": "DoCripple(float)",
+      "id": "Global_StatusEffect_DoCripple_System_Single_",
+      "declaration": "public CrippleEffect DoCripple(float strength)",
+      "summary": "Cripple reduces the entity's attack speed.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "CrippleEffect"
+    },
+    {
+      "name": "DoDeathInterrupt(Action<EventInfoKill>, int)",
+      "id": "Global_StatusEffect_DoDeathInterrupt_System_Action_EventInfoKill__System_Int32_",
+      "declaration": "public DeathInterruptEffect DoDeathInterrupt(Action<EventInfoKill> onInterrupt, int priority)",
+      "summary": "Death Interrupt fires before entity's imminent death.DeathInterrupts with lower priority will be fired/checked earlier.Healing entity by any amount in an interrupt will prevent entity's death.If an interrupt prevents the death, other interrupts will not be fired.Note that interrupts can be ignored byEntity.KillNoInterrupt()",
+      "parameters": [
+        {
+          "name": "onInterrupt",
+          "type": "System.Action<T><EventInfoKill>",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        },
+        {
+          "name": "priority",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DeathInterruptEffect"
+    },
+    {
+      "name": "DoFakeMaxHealthEffect(float)",
+      "id": "Global_StatusEffect_DoFakeMaxHealthEffect_System_Single_",
+      "declaration": "public FakeMaxHealthEffect DoFakeMaxHealthEffect(float amount)",
+      "summary": "FakeMaxHealth increases shown max health only in health bars.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "FakeMaxHealthEffect"
+    },
+    {
+      "name": "DoHaste(float)",
+      "id": "Global_StatusEffect_DoHaste_System_Single_",
+      "declaration": "public HasteEffect DoHaste(float strength)",
+      "summary": "Haste increases the entity's attack speed.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "HasteEffect"
+    },
+    {
+      "name": "DoInvisible()",
+      "id": "Global_StatusEffect_DoInvisible",
+      "declaration": "public InvisibleEffect DoInvisible()",
+      "summary": "Invisible makes the entity untargetable by targeted abilities and undetectable to enemies. Note this doesn't change the entity's graphical visibility.",
+      "parameters": [],
+      "returns": "InvisibleEffect"
+    },
+    {
+      "name": "DoInvulnerable(Action<EventInfoDamageNegatedByImmunity>)",
+      "id": "Global_StatusEffect_DoInvulnerable_System_Action_EventInfoDamageNegatedByImmunity__",
+      "declaration": "public InvulnerableEffect DoInvulnerable(Action<EventInfoDamageNegatedByImmunity> onDamageNegated = null)",
+      "summary": "Invulnerable makes the entity immune to damage and crowd controls.",
+      "parameters": [
+        {
+          "name": "onDamageNegated",
+          "type": "System.Action<T><EventInfoDamageNegatedByImmunity>",
+          "type_uid": "Global.EventInfoDamageNegatedByImmunity",
+          "description": ""
+        }
+      ],
+      "returns": "InvulnerableEffect"
+    },
+    {
+      "name": "DoProtected(Action<EventInfoDamageNegatedByImmunity>)",
+      "id": "Global_StatusEffect_DoProtected_System_Action_EventInfoDamageNegatedByImmunity__",
+      "declaration": "public ProtectedEffect DoProtected(Action<EventInfoDamageNegatedByImmunity> onDamageNegated)",
+      "summary": "Protected makes the entity immune to damage.",
+      "parameters": [
+        {
+          "name": "onDamageNegated",
+          "type": "System.Action<T><EventInfoDamageNegatedByImmunity>",
+          "type_uid": "Global.EventInfoDamageNegatedByImmunity",
+          "description": ""
+        }
+      ],
+      "returns": "ProtectedEffect"
+    },
+    {
+      "name": "DoRoot()",
+      "id": "Global_StatusEffect_DoRoot",
+      "declaration": "public RootEffect DoRoot()",
+      "summary": "Root impairs the entity's movement/movement ability.",
+      "parameters": [],
+      "returns": "RootEffect"
+    },
+    {
+      "name": "DoShield(float, Action<EventInfoDamageNegatedByShield>)",
+      "id": "Global_StatusEffect_DoShield_System_Single_System_Action_EventInfoDamageNegatedByShield__",
+      "declaration": "public ShieldEffect DoShield(float amount, Action<EventInfoDamageNegatedByShield> onDamageNegated = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onDamageNegated",
+          "type": "System.Action<T><EventInfoDamageNegatedByShield>",
+          "type_uid": "Global.EventInfoDamageNegatedByShield",
+          "description": ""
+        }
+      ],
+      "returns": "ShieldEffect"
+    },
+    {
+      "name": "DoSilence()",
+      "id": "Global_StatusEffect_DoSilence",
+      "declaration": "public SilenceEffect DoSilence()",
+      "summary": "Silence prevents the entity from using abilities.",
+      "parameters": [],
+      "returns": "SilenceEffect"
+    },
+    {
+      "name": "DoSkill<T>(Action<T>)",
+      "id": "Global_StatusEffect_DoSkill__1_System_Action___0__",
+      "declaration": "public SafeAction DoSkill<T>(Action<T> callback) where T : SkillTrigger",
+      "summary": "Do custom action on all matching skill. You can invoke the returned action to immediately call cleanup functions to stop the effect.",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "DoSkill<T>(Func<T, Action>)",
+      "id": "Global_StatusEffect_DoSkill__1_System_Func___0_System_Action__",
+      "declaration": "public SafeAction DoSkill<T>(Func<T, Action> callback) where T : SkillTrigger",
+      "summary": "Do custom action on all matching skill and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Func<T, TResult><T,System.Action>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "DoSlow(float)",
+      "id": "Global_StatusEffect_DoSlow_System_Single_",
+      "declaration": "public SlowEffect DoSlow(float strength)",
+      "summary": "Slow reduces the entity's movement speed.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SlowEffect"
+    },
+    {
+      "name": "DoSpeed(float)",
+      "id": "Global_StatusEffect_DoSpeed_System_Single_",
+      "declaration": "public SpeedEffect DoSpeed(float strength)",
+      "summary": "Speed increases the entity's movement speed.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SpeedEffect"
+    },
+    {
+      "name": "DoStatBonus()",
+      "id": "Global_StatusEffect_DoStatBonus",
+      "declaration": "public StatBonus DoStatBonus()",
+      "summary": "Do a stat bonus to victim that expires on destruction of this status effect.",
+      "parameters": [],
+      "returns": "StatBonus"
+    },
+    {
+      "name": "DoStatBonus(StatBonus)",
+      "id": "Global_StatusEffect_DoStatBonus_StatBonus_",
+      "declaration": "public StatBonus DoStatBonus(StatBonus bonus)",
+      "summary": "Do a stat bonus to victim that expires on destruction of this status effect.",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "StatBonus",
+          "type_uid": "Global.StatBonus",
+          "description": ""
+        }
+      ],
+      "returns": "StatBonus"
+    },
+    {
+      "name": "DoStun()",
+      "id": "Global_StatusEffect_DoStun",
+      "declaration": "public StunEffect DoStun()",
+      "summary": "Stun prevents the entity from moving/using abilities/attacking.",
+      "parameters": [],
+      "returns": "StunEffect"
+    },
+    {
+      "name": "DoUncollidable()",
+      "id": "Global_StatusEffect_DoUncollidable",
+      "declaration": "public UncollidableEffect DoUncollidable()",
+      "summary": "Uncollidable makes the entity uncollidable by non-targeted projectiles and abilities.",
+      "parameters": [],
+      "returns": "UncollidableEffect"
+    },
+    {
+      "name": "DoUnstoppable()",
+      "id": "Global_StatusEffect_DoUnstoppable",
+      "declaration": "public UnstoppableEffect DoUnstoppable()",
+      "summary": "Unstoppable makes the entity immune to crowd controls.",
+      "parameters": [],
+      "returns": "UnstoppableEffect"
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_StatusEffect_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetActorReadableName()",
+      "id": "Global_StatusEffect_GetActorReadableName",
+      "declaration": "public override string GetActorReadableName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetCustomTooltipDescription()",
+      "id": "Global_StatusEffect_GetCustomTooltipDescription",
+      "declaration": "public virtual string GetCustomTooltipDescription()",
+      "summary": "Called on the local client hovering over the status effect icon.",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetCustomTooltipName()",
+      "id": "Global_StatusEffect_GetCustomTooltipName",
+      "declaration": "public virtual string GetCustomTooltipName()",
+      "summary": "Called on the local client hovering over the status effect icon.",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "HideOnScreenTimer()",
+      "id": "Global_StatusEffect_HideOnScreenTimer",
+      "declaration": "public void HideOnScreenTimer()",
+      "summary": "Hide this status effect's timer on the screen of the victim. Has no effect on non-player victim",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_StatusEffect_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_StatusEffect_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_StatusEffect_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ResetTimer()",
+      "id": "Global_StatusEffect_ResetTimer",
+      "declaration": "public void ResetTimer()",
+      "summary": "Reset a timer set bySetTimerto its initial duration.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetTimer(float, float)",
+      "id": "Global_StatusEffect_SetTimer_System_Single_System_Single_",
+      "declaration": "public void SetTimer(float maxDuration, float duration)",
+      "summary": "Set a timer that kills this status effect on expiration. The timer will update fillAmount automatically.",
+      "parameters": [
+        {
+          "name": "maxDuration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetTimer(float)",
+      "id": "Global_StatusEffect_SetTimer_System_Single_",
+      "declaration": "public void SetTimer(float duration)",
+      "summary": "Set a timer that kills this status effect on expiration. The timer will update fillAmount automatically.",
+      "parameters": [
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowOnScreenTimer(string, Color, bool)",
+      "id": "Global_StatusEffect_ShowOnScreenTimer_System_String_UnityEngine_Color_System_Boolean_",
+      "declaration": "public void ShowOnScreenTimer(string customNameKey = null, Color color = default, bool invertValue = false)",
+      "summary": "Show this status effect's timer on the screen of the victim. Has no effect on non-player victim",
+      "parameters": [
+        {
+          "name": "customNameKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "invertValue",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopAllBasicEffects()",
+      "id": "Global_StatusEffect_StopAllBasicEffects",
+      "declaration": "protected void StopAllBasicEffects()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopBasicEffect(BasicEffect)",
+      "id": "Global_StatusEffect_StopBasicEffect_BasicEffect_",
+      "declaration": "protected void StopBasicEffect(BasicEffect eff)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eff",
+          "type": "BasicEffect",
+          "type_uid": "Global.BasicEffect",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopTimer()",
+      "id": "Global_StatusEffect_StopTimer",
+      "declaration": "public void StopTimer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

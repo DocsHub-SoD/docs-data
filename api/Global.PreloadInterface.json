@@ -1,0 +1,96 @@
+{
+  "uid": "Global.PreloadInterface",
+  "name": "PreloadInterface",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PreloadInterface",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AddAssetRef<T>(AssetRef<T>)",
+      "id": "Global_PreloadInterface_AddAssetRef__1_AssetRef___0__",
+      "declaration": "public void AddAssetRef<T>(AssetRef<T> assetRef) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "assetRef",
+          "type": "AssetRef<T>",
+          "type_uid": "Global.AssetRef-1",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddFromMonsterPool(MonsterPool)",
+      "id": "Global_PreloadInterface_AddFromMonsterPool_MonsterPool_",
+      "declaration": "public void AddFromMonsterPool(MonsterPool pool)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pool",
+          "type": "MonsterPool",
+          "type_uid": "Global.MonsterPool",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddGuid(string)",
+      "id": "Global_PreloadInterface_AddGuid_System_String_",
+      "declaration": "public void AddGuid(string guid)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddType(string, bool)",
+      "id": "Global_PreloadInterface_AddType_System_String_System_Boolean_",
+      "declaration": "public void AddType(string type, bool includeDependencies = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "includeDependencies",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "KeepEverything()",
+      "id": "Global_PreloadInterface_KeepEverything",
+      "declaration": "public void KeepEverything()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,144 @@
+{
+  "uid": "Global.BaseStats",
+  "name": "BaseStats",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct BaseStats",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "abilityHaste",
+      "id": "Global_BaseStats_abilityHaste",
+      "declaration": "public float abilityHaste",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPower",
+      "id": "Global_BaseStats_abilityPower",
+      "declaration": "public float abilityPower",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armor",
+      "id": "Global_BaseStats_armor",
+      "declaration": "public float armor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamage",
+      "id": "Global_BaseStats_attackDamage",
+      "declaration": "public float attackDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "coldEffectAmp",
+      "id": "Global_BaseStats_coldEffectAmp",
+      "declaration": "public float coldEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmp",
+      "id": "Global_BaseStats_critAmp",
+      "declaration": "public float critAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChance",
+      "id": "Global_BaseStats_critChance",
+      "declaration": "public float critChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "darkEffectAmp",
+      "id": "Global_BaseStats_darkEffectAmp",
+      "declaration": "public float darkEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_BaseStats_Default",
+      "declaration": "public static readonly BaseStats Default",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireEffectAmp",
+      "id": "Global_BaseStats_fireEffectAmp",
+      "declaration": "public float fireEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegen",
+      "id": "Global_BaseStats_healthRegen",
+      "declaration": "public float healthRegen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightEffectAmp",
+      "id": "Global_BaseStats_lightEffectAmp",
+      "declaration": "public float lightEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegen",
+      "id": "Global_BaseStats_manaRegen",
+      "declaration": "public float manaRegen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealth",
+      "id": "Global_BaseStats_maxHealth",
+      "declaration": "public float maxHealth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxMana",
+      "id": "Global_BaseStats_maxMana",
+      "declaration": "public float maxMana",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacity",
+      "id": "Global_BaseStats_tenacity",
+      "declaration": "public float tenacity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

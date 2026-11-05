@@ -1,0 +1,35 @@
+{
+  "uid": "Global.DewProfile.SpecialReverieData",
+  "name": "DewProfile.SpecialReverieData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.SpecialReverieData : DewProfile.ReverieDataBase",
+  "inheritance": [
+    {
+      "name": "DewProfile",
+      "href": "Global.DewProfile.html",
+      "uid": "Global.DewProfile"
+    },
+    {
+      "name": "ReverieDataBase",
+      "href": "Global.DewProfile.ReverieDataBase.html",
+      "uid": "Global.DewProfile.ReverieDataBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "timeLimitTimestamp",
+      "id": "Global_DewProfile_SpecialReverieData_timeLimitTimestamp",
+      "declaration": "public long timeLimitTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

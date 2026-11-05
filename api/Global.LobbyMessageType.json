@@ -1,0 +1,15 @@
+{
+  "uid": "Global.LobbyMessageType",
+  "name": "LobbyMessageType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum LobbyMessageType : byte",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

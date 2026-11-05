@@ -1,0 +1,31 @@
+{
+  "uid": "Global.EntityFootsteps",
+  "name": "EntityFootsteps",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityFootsteps : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "DoFootstep(AnimationEvent)",
+      "id": "Global_EntityFootsteps_DoFootstep_UnityEngine_AnimationEvent_",
+      "declaration": "public void DoFootstep(AnimationEvent e)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "UnityEngine.AnimationEvent",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

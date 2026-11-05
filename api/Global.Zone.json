@@ -1,0 +1,152 @@
+{
+  "uid": "Global.Zone",
+  "name": "Zone",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Name)]\npublic class Zone : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "bossRooms",
+      "id": "Global_Zone_bossRooms",
+      "declaration": "[FoldoutGroup(\"Automatically Baked Data\", 0)]\npublic List<string> bossRooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "combatRooms",
+      "id": "Global_Zone_combatRooms",
+      "declaration": "[FoldoutGroup(\"Automatically Baked Data\", 0)]\npublic List<string> combatRooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultMonsters",
+      "id": "Global_Zone_defaultMonsters",
+      "declaration": "public MonsterSpawnRule defaultMonsters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultMusicRef",
+      "id": "Global_Zone_defaultMusicRef",
+      "declaration": "[Header(\"Settings\")]\n[InfoBox(\"This music will be played on non-boss rooms.\", InfoMessageType.Info, null)]\npublic AssetRef<DewMusicItem> defaultMusicRef",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultProps",
+      "id": "Global_Zone_defaultProps",
+      "declaration": "[InfoBox(\"This prop rule will be applied on combat rooms.\", InfoMessageType.Info, null)]\npublic PropSpawnRule defaultProps",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableRoomModifiers",
+      "id": "Global_Zone_disableRoomModifiers",
+      "declaration": "[Header(\"World Generation\")]\npublic bool disableRoomModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "eventRooms",
+      "id": "Global_Zone_eventRooms",
+      "declaration": "[FoldoutGroup(\"Automatically Baked Data\", 0)]\npublic List<string> eventRooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainColor",
+      "id": "Global_Zone_mainColor",
+      "declaration": "public Color mainColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfEvents",
+      "id": "Global_Zone_numOfEvents",
+      "declaration": "[HideIf(\"useSpecialGeneration\", true)]\npublic Vector2Int numOfEvents",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfMerchants",
+      "id": "Global_Zone_numOfMerchants",
+      "declaration": "[HideIf(\"useSpecialGeneration\", true)]\npublic Vector2Int numOfMerchants",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfNodes",
+      "id": "Global_Zone_numOfNodes",
+      "declaration": "[HideIf(\"useSpecialGeneration\", true)]\npublic Vector2Int numOfNodes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rooms",
+      "id": "Global_Zone_rooms",
+      "declaration": "[FoldoutGroup(\"Automatically Baked Data\", 0)]\npublic List<string> rooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shopRooms",
+      "id": "Global_Zone_shopRooms",
+      "declaration": "[FoldoutGroup(\"Automatically Baked Data\", 0)]\npublic List<string> shopRooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "specialNodes",
+      "id": "Global_Zone_specialNodes",
+      "declaration": "[ShowIf(\"useSpecialGeneration\", true)]\npublic int specialNodes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startRooms",
+      "id": "Global_Zone_startRooms",
+      "declaration": "[FoldoutGroup(\"Automatically Baked Data\", 0)]\npublic List<string> startRooms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useSpecialGeneration",
+      "id": "Global_Zone_useSpecialGeneration",
+      "declaration": "public bool useSpecialGeneration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoneTier",
+      "id": "Global_Zone_zoneTier",
+      "declaration": "public int zoneTier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

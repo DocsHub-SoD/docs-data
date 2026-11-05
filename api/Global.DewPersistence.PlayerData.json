@@ -1,0 +1,104 @@
+{
+  "uid": "Global.DewPersistence.PlayerData",
+  "name": "DewPersistence.PlayerData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.PlayerData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "gems",
+      "id": "Global_DewPersistence_PlayerData_gems",
+      "declaration": "public List<DewPersistence.GemData> gems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroPersistenceData",
+      "id": "Global_DewPersistence_PlayerData_heroPersistenceData",
+      "declaration": "public Dictionary<string, string> heroPersistenceData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroPrevNetId",
+      "id": "Global_DewPersistence_PlayerData_heroPrevNetId",
+      "declaration": "public uint heroPrevNetId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroType",
+      "id": "Global_DewPersistence_PlayerData_heroType",
+      "declaration": "public string heroType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isHeroKnockedOut",
+      "id": "Global_DewPersistence_PlayerData_isHeroKnockedOut",
+      "declaration": "public bool isHeroKnockedOut",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerGuid",
+      "id": "Global_DewPersistence_PlayerData_playerGuid",
+      "declaration": "public string playerGuid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerName",
+      "id": "Global_DewPersistence_PlayerData_playerName",
+      "declaration": "public string playerName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerPersistenceData",
+      "id": "Global_DewPersistence_PlayerData_playerPersistenceData",
+      "declaration": "public Dictionary<string, string> playerPersistenceData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerPrevNetId",
+      "id": "Global_DewPersistence_PlayerData_playerPrevNetId",
+      "declaration": "public uint playerPrevNetId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skills",
+      "id": "Global_DewPersistence_PlayerData_skills",
+      "declaration": "public List<DewPersistence.SkillData> skills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statusEffects",
+      "id": "Global_DewPersistence_PlayerData_statusEffects",
+      "declaration": "public List<DewPersistence.GeneralData> statusEffects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.Tags",
+  "name": "Tags",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class Tags",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "GameCanvas",
+      "id": "Global_Tags_GameCanvas",
+      "declaration": "public const string GameCanvas = \"GameCanvas\"",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PortraitCamera",
+      "id": "Global_Tags_PortraitCamera",
+      "declaration": "public const string PortraitCamera = \"PortraitCamera\"",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

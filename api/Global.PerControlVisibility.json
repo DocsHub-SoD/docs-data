@@ -1,0 +1,32 @@
+{
+  "uid": "Global.PerControlVisibility",
+  "name": "PerControlVisibility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PerControlVisibility : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "gamepad",
+      "id": "Global_PerControlVisibility_gamepad",
+      "declaration": "public bool gamepad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "keyboardAndMouse",
+      "id": "Global_PerControlVisibility_keyboardAndMouse",
+      "declaration": "[Title(\"Show On...\", null, TitleAlignments.Left, true, true)]\npublic bool keyboardAndMouse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

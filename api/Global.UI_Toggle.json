@@ -1,0 +1,81 @@
+{
+  "uid": "Global.UI_Toggle",
+  "name": "UI_Toggle",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_Toggle : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "doNotToggleOnClick",
+      "id": "Global_UI_Toggle_doNotToggleOnClick",
+      "declaration": "public bool doNotToggleOnClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "index",
+      "id": "Global_UI_Toggle_index",
+      "declaration": "public int index",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "offObject",
+      "id": "Global_UI_Toggle_offObject",
+      "declaration": "public GameObject offObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onClick",
+      "id": "Global_UI_Toggle_onClick",
+      "declaration": "public UnityEvent onClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onIsCheckedChanged",
+      "id": "Global_UI_Toggle_onIsCheckedChanged",
+      "declaration": "public UnityEvent<bool> onIsCheckedChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onObject",
+      "id": "Global_UI_Toggle_onObject",
+      "declaration": "public GameObject onObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "interactable",
+      "id": "Global_UI_Toggle_interactable",
+      "declaration": "public bool interactable { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isChecked",
+      "id": "Global_UI_Toggle_isChecked",
+      "declaration": "public bool isChecked { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

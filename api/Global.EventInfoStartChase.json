@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EventInfoStartChase",
+  "name": "EventInfoStartChase",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoStartChase",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entity",
+      "id": "Global_EventInfoStartChase_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_EventInfoStartChase_target",
+      "declaration": "public Entity target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

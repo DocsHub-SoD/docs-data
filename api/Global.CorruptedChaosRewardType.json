@@ -1,0 +1,15 @@
+{
+  "uid": "Global.CorruptedChaosRewardType",
+  "name": "CorruptedChaosRewardType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum CorruptedChaosRewardType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

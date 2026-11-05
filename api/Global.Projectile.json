@@ -1,0 +1,484 @@
+{
+  "uid": "Global.Projectile",
+  "name": "Projectile",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class Projectile : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "StandardProjectile",
+      "href": "Global.StandardProjectile.html",
+      "uid": "Global.StandardProjectile"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "_estimatedVelocity",
+      "id": "Global_Projectile__estimatedVelocity",
+      "declaration": "protected Vector3 _estimatedVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canCollideMidFlight",
+      "id": "Global_Projectile_canCollideMidFlight",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[LabelText(\"Can Collide With Entity Mid-Flight\")]\n[ToggleLeft]\npublic bool canCollideMidFlight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "collisionRadius",
+      "id": "Global_Projectile_collisionRadius",
+      "declaration": "[Title(\"Collisions\", null, TitleAlignments.Left, true, true)]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float collisionRadius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "collisionTargets",
+      "id": "Global_Projectile_collisionTargets",
+      "declaration": "[ShowIf(\"canCollideMidFlight\", true)]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic AbilityTargetValidator collisionTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customEndHeight",
+      "id": "Global_Projectile_customEndHeight",
+      "declaration": "[ShowIf(\"@mode != Projectile.ProjectileMode.Target && !endsWithSameHeight\", true)]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float customEndHeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destroyOnComplete",
+      "id": "Global_Projectile_destroyOnComplete",
+      "declaration": "[FormerlySerializedAs(\"killOnComplete\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic bool destroyOnComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissipateOnTerrain",
+      "id": "Global_Projectile_dissipateOnTerrain",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool dissipateOnTerrain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectOnComplete",
+      "id": "Global_Projectile_effectOnComplete",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[LabelText(\"Complete\")]\npublic GameObject effectOnComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectOnDissipate",
+      "id": "Global_Projectile_effectOnDissipate",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[LabelText(\"Dissipate\")]\npublic GameObject effectOnDissipate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectOnEntity",
+      "id": "Global_Projectile_effectOnEntity",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[LabelText(\"Entity\")]\npublic GameObject effectOnEntity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectOnFly",
+      "id": "Global_Projectile_effectOnFly",
+      "declaration": "[Title(\"Effects\", null, TitleAlignments.Left, true, true)]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[LabelText(\"Fly\")]\npublic GameObject effectOnFly",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endDistance",
+      "id": "Global_Projectile_endDistance",
+      "declaration": "[ShowIf(\"@mode == Projectile.ProjectileMode.Direction\", true)]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float endDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endsWithSameHeight",
+      "id": "Global_Projectile_endsWithSameHeight",
+      "declaration": "[ShowIf(\"@mode != Projectile.ProjectileMode.Target\", true)]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic bool endsWithSameHeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "horizontalOffsetOverTrajectory",
+      "id": "Global_Projectile_horizontalOffsetOverTrajectory",
+      "declaration": "[LabelText(\"Horizontal Offset\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic AnimationCurve horizontalOffsetOverTrajectory",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killOnDissipate",
+      "id": "Global_Projectile_killOnDissipate",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic bool killOnDissipate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mode",
+      "id": "Global_Projectile_mode",
+      "declaration": "[Title(\"Flight\", null, TitleAlignments.Left, true, true)]\n[EnumToggleButtons]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic Projectile.ProjectileMode mode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntity",
+      "id": "Global_Projectile_onEntity",
+      "declaration": "public SafeAction<Projectile.EntityHit> onEntity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotationType",
+      "id": "Global_Projectile_rotationType",
+      "declaration": "[LabelText(\"Rotation\")]\n[EnumToggleButtons]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic Projectile.RotationType rotationType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleHorizontalOffsetOnLength",
+      "id": "Global_Projectile_scaleHorizontalOffsetOnLength",
+      "declaration": "[LabelText(\"Scale On Trajectory Length\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic bool scaleHorizontalOffsetOnLength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleVerticalOffsetOnLength",
+      "id": "Global_Projectile_scaleVerticalOffsetOnLength",
+      "declaration": "[LabelText(\"Scale On Trajectory Length\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic bool scaleVerticalOffsetOnLength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "start",
+      "id": "Global_Projectile_start",
+      "declaration": "[EnumToggleButtons]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic Projectile.StartPositionType start",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startInFrontDistance",
+      "id": "Global_Projectile_startInFrontDistance",
+      "declaration": "[LabelText(\"Front Distance\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float startInFrontDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "verticalOffsetOverTrajectory",
+      "id": "Global_Projectile_verticalOffsetOverTrajectory",
+      "declaration": "[LabelText(\"Vertical Offset\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic AnimationCurve verticalOffsetOverTrajectory",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isCompleted",
+      "id": "Global_Projectile_isCompleted",
+      "declaration": "public bool isCompleted { get; }",
+      "summary": "Did this projectile complete its course?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isFlying",
+      "id": "Global_Projectile_isFlying",
+      "declaration": "public bool isFlying { get; }",
+      "summary": "Is this projectile still flying over its course?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetEntity",
+      "id": "Global_Projectile_targetEntity",
+      "declaration": "protected Entity targetEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetPosition",
+      "id": "Global_Projectile_targetPosition",
+      "declaration": "protected Vector3 targetPosition { get; set; }",
+      "summary": "It is recommended to edit this only in OnPrepare.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddEffect(AddEffectTarget, GameObject)",
+      "id": "Global_Projectile_AddEffect_Projectile_AddEffectTarget_UnityEngine_GameObject_",
+      "declaration": "public void AddEffect(Projectile.AddEffectTarget target, GameObject eff)",
+      "summary": "Locally add an effect.Given effect will be instantiated and set/added to this projectile.",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Projectile.AddEffectTarget",
+          "type_uid": "Global.Projectile",
+          "description": ""
+        },
+        {
+          "name": "eff",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CalculateOffsetOverTrajectoryInWorldSpace(float, Quaternion)",
+      "id": "Global_Projectile_CalculateOffsetOverTrajectoryInWorldSpace_System_Single_UnityEngine_Quaternion_",
+      "declaration": "protected Vector3 CalculateOffsetOverTrajectoryInWorldSpace(float normalizedPosition, Quaternion rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "normalizedPosition",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "CheckForCompletion()",
+      "id": "Global_Projectile_CheckForCompletion",
+      "declaration": "protected virtual bool CheckForCompletion()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Dissipate()",
+      "id": "Global_Projectile_Dissipate",
+      "declaration": "public void Dissipate()",
+      "summary": "Dissipate this projectile.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_Projectile_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetTargetWorldPosition()",
+      "id": "Global_Projectile_GetTargetWorldPosition",
+      "declaration": "protected virtual Vector3 GetTargetWorldPosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_Projectile_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnComplete()",
+      "id": "Global_Projectile_OnComplete",
+      "declaration": "protected virtual void OnComplete()",
+      "summary": "Called on server when this Projectile fully completes its path without being despawned by itself/dissipated.Default behaviour instantiates a neweffectOnCompleteeffect using the position and rotation of this projectile on every clients, and stopseffectOnFlyeffect.It will also kill this projectile ifkillOnCompleteis set.Note: On targeted projectiles, normallyOnEntitywill be fired beforeOnComplete. It might fire differently if for example the projectile is detached or the target became an invalid target.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Projectile_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Projectile_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_Projectile_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDissipate()",
+      "id": "Global_Projectile_OnDissipate",
+      "declaration": "protected virtual void OnDissipate()",
+      "summary": "Called on server when this Projectile is dissipated by an outer source. e.g. Projectile Absorbing WallDefault behaviour instantiates a neweffectOnDissipateeffect using the position and rotation of this projectile on every clients",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEntity(EntityHit)",
+      "id": "Global_Projectile_OnEntity_Projectile_EntityHit_",
+      "declaration": "protected virtual void OnEntity(Projectile.EntityHit hit)",
+      "summary": "Called on server when this Projectile in server detects a collision with an Entity.Default behaviour instantiates a neweffectOnEntityeffect at the hit point with the rotation of this projectile attached to the entity on every clients.",
+      "parameters": [
+        {
+          "name": "hit",
+          "type": "Projectile.EntityHit",
+          "type_uid": "Global.Projectile",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_Projectile_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Projectile_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PositionSolver(float)",
+      "id": "Global_Projectile_PositionSolver_System_Single_",
+      "declaration": "protected abstract Vector3 PositionSolver(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "RotationSolver(float)",
+      "id": "Global_Projectile_RotationSolver_System_Single_",
+      "declaration": "protected virtual Quaternion RotationSolver(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "SetCustomStartPosition(Vector3)",
+      "id": "Global_Projectile_SetCustomStartPosition_UnityEngine_Vector3_",
+      "declaration": "public void SetCustomStartPosition(Vector3 pos)",
+      "summary": "Set custom start position for projectiles with 'Custom' start position mode. Call this in OnPrepare.",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopFlying()",
+      "id": "Global_Projectile_StopFlying",
+      "declaration": "protected void StopFlying()",
+      "summary": "Stop this projectile and itseffectOnFlyeffect. This will also make this projectile instantly stop checking collisions. Note that this does not callOnCompletenorOnDissipate.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

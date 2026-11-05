@@ -1,0 +1,15 @@
+{
+  "uid": "Global.AudioSpaceType",
+  "name": "AudioSpaceType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum AudioSpaceType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

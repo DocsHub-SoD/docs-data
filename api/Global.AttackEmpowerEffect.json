@@ -1,0 +1,55 @@
+{
+  "uid": "Global.AttackEmpowerEffect",
+  "name": "AttackEmpowerEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AttackEmpowerEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "maxTriggerCount",
+      "id": "Global_AttackEmpowerEffect_maxTriggerCount",
+      "declaration": "public int maxTriggerCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onAttackEffect",
+      "id": "Global_AttackEmpowerEffect_onAttackEffect",
+      "declaration": "public Action<EventInfoAttackEffect, int> onAttackEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onDepleted",
+      "id": "Global_AttackEmpowerEffect_onDepleted",
+      "declaration": "public Action onDepleted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_AttackEmpowerEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

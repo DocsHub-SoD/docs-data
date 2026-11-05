@@ -1,0 +1,268 @@
+{
+  "uid": "Global.ModBehaviour",
+  "name": "ModBehaviour",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ModBehaviour : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "instance",
+      "id": "Global_ModBehaviour_instance",
+      "declaration": "[NonSerialized]\npublic LoadedModInstance instance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "harmony",
+      "id": "Global_ModBehaviour_harmony",
+      "declaration": "public Harmony harmony { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mod",
+      "id": "Global_ModBehaviour_mod",
+      "declaration": "public ModItem mod { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modConfigFields",
+      "id": "Global_ModBehaviour_modConfigFields",
+      "declaration": "public FieldInfo[] modConfigFields { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CallOnManager<T>(Action, Action)",
+      "id": "Global_ModBehaviour_CallOnManager__1_System_Action_System_Action_",
+      "declaration": "public void CallOnManager<T>(Action onEnable, Action onDisable = null) where T : ManagerBase<T>",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "onEnable",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onDisable",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CallOnNetworkedManager<T>(Action, Action)",
+      "id": "Global_ModBehaviour_CallOnNetworkedManager__1_System_Action_System_Action_",
+      "declaration": "public void CallOnNetworkedManager<T>(Action onStartClient, Action onStopClient = null) where T : NetworkedManagerBase<T>",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "onStartClient",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onStopClient",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetConsoleSelectedEntity()",
+      "id": "Global_ModBehaviour_GetConsoleSelectedEntity",
+      "declaration": "protected static Entity GetConsoleSelectedEntity()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetModConfigFilePath(FieldInfo)",
+      "id": "Global_ModBehaviour_GetModConfigFilePath_System_Reflection_FieldInfo_",
+      "declaration": "public virtual string GetModConfigFilePath(FieldInfo modConfigInfo)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "modConfigInfo",
+          "type": "System.Reflection.FieldInfo",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "LoadConfigsToDisk()",
+      "id": "Global_ModBehaviour_LoadConfigsToDisk",
+      "declaration": "public virtual void LoadConfigsToDisk()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MakeSureClientNonServer()",
+      "id": "Global_ModBehaviour_MakeSureClientNonServer",
+      "declaration": "protected static bool MakeSureClientNonServer()",
+      "summary": "Returns false and logs to console if user is not a non-server client.Meant to be used in custom console commands.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "MakeSureInGame()",
+      "id": "Global_ModBehaviour_MakeSureInGame",
+      "declaration": "protected static bool MakeSureInGame()",
+      "summary": "Returns false and logs to console if not in a game.Meant to be used in custom console commands.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "MakeSureNetworked()",
+      "id": "Global_ModBehaviour_MakeSureNetworked",
+      "declaration": "protected static bool MakeSureNetworked()",
+      "summary": "Returns false and logs to console if not in a networking context.Meant to be used in custom console commands.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "MakeSureNotInGame()",
+      "id": "Global_ModBehaviour_MakeSureNotInGame",
+      "declaration": "protected static bool MakeSureNotInGame()",
+      "summary": "Returns false and logs to console if in a game.Meant to be used in custom console commands.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "MakeSureServer()",
+      "id": "Global_ModBehaviour_MakeSureServer",
+      "declaration": "protected static bool MakeSureServer()",
+      "summary": "Returns false and logs to console if user is not a server.Meant to be used in custom console commands.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnConfigChanged()",
+      "id": "Global_ModBehaviour_OnConfigChanged",
+      "declaration": "public virtual void OnConfigChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PrintNoEntitySelected()",
+      "id": "Global_ModBehaviour_PrintNoEntitySelected",
+      "declaration": "protected static void PrintNoEntitySelected()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RegisterConsoleCommand(MethodInfo, string, string)",
+      "id": "Global_ModBehaviour_RegisterConsoleCommand_System_Reflection_MethodInfo_System_String_System_String_",
+      "declaration": "public void RegisterConsoleCommand(MethodInfo m, string customName = null, string description = null)",
+      "summary": "Register a command by method info. The method can be either static or not.Command with same name and signature will get a number appended.The command will be automatically unregistered on mod unload.",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "System.Reflection.MethodInfo",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "customName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RegisterConsoleCommand(string, string, string)",
+      "id": "Global_ModBehaviour_RegisterConsoleCommand_System_String_System_String_System_String_",
+      "declaration": "public void RegisterConsoleCommand(string methodName, string customName = null, string description = null)",
+      "summary": "Register a command by method name. The method can be either static or not.Command with same name and signature will get a number appended.The command will be automatically unregistered on mod unload.",
+      "parameters": [
+        {
+          "name": "methodName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "customName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SaveConfigsToDisk()",
+      "id": "Global_ModBehaviour_SaveConfigsToDisk",
+      "declaration": "public virtual void SaveConfigsToDisk()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TryGetConsoleSelectedEntity(out Entity)",
+      "id": "Global_ModBehaviour_TryGetConsoleSelectedEntity_Entity__",
+      "declaration": "protected static bool TryGetConsoleSelectedEntity(out Entity ent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

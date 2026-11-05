@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewEffect.PlayCastEffectMessage",
+  "name": "DewEffect.PlayCastEffectMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewEffect.PlayCastEffectMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "duration",
+      "id": "Global_DewEffect_PlayCastEffectMessage_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_DewEffect_PlayCastEffectMessage_info",
+      "declaration": "public CastInfo info",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "method",
+      "id": "Global_DewEffect_PlayCastEffectMessage_method",
+      "declaration": "public CastMethodType method",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parent",
+      "id": "Global_DewEffect_PlayCastEffectMessage_parent",
+      "declaration": "public NetworkIdentity parent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "path",
+      "id": "Global_DewEffect_PlayCastEffectMessage_path",
+      "declaration": "public string path",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

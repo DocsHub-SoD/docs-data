@@ -1,0 +1,37 @@
+{
+  "uid": "Global.DewPhysicsManager",
+  "name": "DewPhysicsManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPhysicsManager : ManagerBase<DewPhysicsManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "DewPhysicsManager",
+      "href": "Global.DewPhysicsManager.html",
+      "uid": "Global.DewPhysicsManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

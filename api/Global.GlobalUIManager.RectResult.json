@@ -1,0 +1,32 @@
+{
+  "uid": "Global.GlobalUIManager.RectResult",
+  "name": "GlobalUIManager.RectResult",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct GlobalUIManager.RectResult",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "distance",
+      "id": "Global_GlobalUIManager_RectResult_distance",
+      "declaration": "public float distance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rect",
+      "id": "Global_GlobalUIManager_RectResult_rect",
+      "declaration": "public Rect rect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

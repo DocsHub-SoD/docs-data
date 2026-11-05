@@ -1,0 +1,73 @@
+{
+  "uid": "Global.DewSurfaceData",
+  "name": "DewSurfaceData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewSurfaceData : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "banDecorations",
+      "id": "Global_DewSurfaceData_banDecorations",
+      "declaration": "public bool banDecorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeLesserMonster",
+      "id": "Global_DewSurfaceData_excludeLesserMonster",
+      "declaration": "[ShowIf(\"fxPeriodicEffect\", true)]\npublic bool excludeLesserMonster",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxHeroFootstep",
+      "id": "Global_DewSurfaceData_fxHeroFootstep",
+      "declaration": "public GameObject fxHeroFootstep",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPeriodicEffect",
+      "id": "Global_DewSurfaceData_fxPeriodicEffect",
+      "declaration": "public GameObject fxPeriodicEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onlyWhenWalking",
+      "id": "Global_DewSurfaceData_onlyWhenWalking",
+      "declaration": "[ShowIf(\"fxPeriodicEffect\", true)]\npublic bool onlyWhenWalking",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "periodicEffectInterval",
+      "id": "Global_DewSurfaceData_periodicEffectInterval",
+      "declaration": "[ShowIf(\"fxPeriodicEffect\", true)]\npublic Vector2 periodicEffectInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "defaultSurface",
+      "id": "Global_DewSurfaceData_defaultSurface",
+      "declaration": "public static DewSurfaceData defaultSurface { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

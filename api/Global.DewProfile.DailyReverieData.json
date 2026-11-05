@@ -1,0 +1,43 @@
+{
+  "uid": "Global.DewProfile.DailyReverieData",
+  "name": "DewProfile.DailyReverieData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.DailyReverieData : DewProfile.ReverieDataBase",
+  "inheritance": [
+    {
+      "name": "DewProfile",
+      "href": "Global.DewProfile.html",
+      "uid": "Global.DewProfile"
+    },
+    {
+      "name": "ReverieDataBase",
+      "href": "Global.DewProfile.ReverieDataBase.html",
+      "uid": "Global.DewProfile.ReverieDataBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "nextRefillTimestamp",
+      "id": "Global_DewProfile_DailyReverieData_nextRefillTimestamp",
+      "declaration": "public long nextRefillTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wasNeverFilled",
+      "id": "Global_DewProfile_DailyReverieData_wasNeverFilled",
+      "declaration": "public bool wasNeverFilled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

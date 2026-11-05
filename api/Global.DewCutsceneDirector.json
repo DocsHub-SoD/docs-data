@@ -1,0 +1,174 @@
+{
+  "uid": "Global.DewCutsceneDirector",
+  "name": "DewCutsceneDirector",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\n[RequireComponent(typeof(PlayableDirector))]\npublic class DewCutsceneDirector : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "cutsceneStartDelay",
+      "id": "Global_DewCutsceneDirector_cutsceneStartDelay",
+      "declaration": "public float cutsceneStartDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableAi",
+      "id": "Global_DewCutsceneDirector_disableAi",
+      "declaration": "public bool disableAi",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableEndTransition",
+      "id": "Global_DewCutsceneDirector_disableEndTransition",
+      "declaration": "public bool disableEndTransition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableStartTransition",
+      "id": "Global_DewCutsceneDirector_disableStartTransition",
+      "declaration": "public bool disableStartTransition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableSkip",
+      "id": "Global_DewCutsceneDirector_enableSkip",
+      "declaration": "public bool enableSkip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endBeforeTimelineStops",
+      "id": "Global_DewCutsceneDirector_endBeforeTimelineStops",
+      "declaration": "public bool endBeforeTimelineStops",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFinish",
+      "id": "Global_DewCutsceneDirector_onFinish",
+      "declaration": "public Action onFinish",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFinishAfterFadeIn",
+      "id": "Global_DewCutsceneDirector_onFinishAfterFadeIn",
+      "declaration": "public Action onFinishAfterFadeIn",
+      "summary": "Called everywhere when this cutscene stops playing.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPlay",
+      "id": "Global_DewCutsceneDirector_onPlay",
+      "declaration": "public Action onPlay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reenableAiDelay",
+      "id": "Global_DewCutsceneDirector_reenableAiDelay",
+      "declaration": "[ShowIf(\"disableAi\", true)]\npublic float reenableAiDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stopAllPlayers",
+      "id": "Global_DewCutsceneDirector_stopAllPlayers",
+      "declaration": "public bool stopAllPlayers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_DewCutsceneDirector_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_DewCutsceneDirector_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdSkip()",
+      "id": "Global_DewCutsceneDirector_CmdSkip",
+      "declaration": "public void CmdSkip()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_DewCutsceneDirector_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_DewCutsceneDirector_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_DewCutsceneDirector_Play",
+      "declaration": "[Button]\npublic void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PlayNetworked()",
+      "id": "Global_DewCutsceneDirector_PlayNetworked",
+      "declaration": "public void PlayNetworked()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

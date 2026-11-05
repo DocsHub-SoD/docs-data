@@ -1,0 +1,288 @@
+{
+  "uid": "Global.DewRandom",
+  "name": "DewRandom",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewRandom",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "initialSeed",
+      "id": "Global_DewRandom_initialSeed",
+      "declaration": "public uint initialSeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_DewRandom_instance",
+      "declaration": "public static DewRandom instance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "s0",
+      "id": "Global_DewRandom_s0",
+      "declaration": "public uint s0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "s1",
+      "id": "Global_DewRandom_s1",
+      "declaration": "public uint s1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "s2",
+      "id": "Global_DewRandom_s2",
+      "declaration": "public uint s2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "s3",
+      "id": "Global_DewRandom_s3",
+      "declaration": "public uint s3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ColorHSV(float, float, float, float, float, float, float, float)",
+      "id": "Global_DewRandom_ColorHSV_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public Color ColorHSV(float hueMin = 0, float hueMax = 1, float satMin = 0, float satMax = 1, float valMin = 0, float valMax = 1, float alphaMin = 1, float alphaMax = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hueMin",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "hueMax",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "satMin",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "satMax",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "valMin",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "valMax",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alphaMin",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alphaMax",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetRandomSeed()",
+      "id": "Global_DewRandom_GetRandomSeed",
+      "declaration": "public static uint GetRandomSeed()",
+      "summary": "",
+      "parameters": [],
+      "returns": "uint"
+    },
+    {
+      "name": "InsideUnitCircle()",
+      "id": "Global_DewRandom_InsideUnitCircle",
+      "declaration": "public Vector2 InsideUnitCircle()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "InsideUnitSphere()",
+      "id": "Global_DewRandom_InsideUnitSphere",
+      "declaration": "public Vector3 InsideUnitSphere()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "NextDouble()",
+      "id": "Global_DewRandom_NextDouble",
+      "declaration": "public double NextDouble()",
+      "summary": "",
+      "parameters": [],
+      "returns": "double"
+    },
+    {
+      "name": "NextFloat()",
+      "id": "Global_DewRandom_NextFloat",
+      "declaration": "public float NextFloat()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "NextFloat(float, float)",
+      "id": "Global_DewRandom_NextFloat_System_Single_System_Single_",
+      "declaration": "public float NextFloat(float min, float max)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "min",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "max",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "NextUInt32()",
+      "id": "Global_DewRandom_NextUInt32",
+      "declaration": "public uint NextUInt32()",
+      "summary": "",
+      "parameters": [],
+      "returns": "uint"
+    },
+    {
+      "name": "OnUnitSphere()",
+      "id": "Global_DewRandom_OnUnitSphere",
+      "declaration": "public Vector3 OnUnitSphere()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "Range(int, int)",
+      "id": "Global_DewRandom_Range_System_Int32_System_Int32_",
+      "declaration": "public int Range(int minInclusive, int maxExclusive)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "minInclusive",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxExclusive",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "Range(float, float)",
+      "id": "Global_DewRandom_Range_System_Single_System_Single_",
+      "declaration": "public float Range(float min, float max)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "min",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "max",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Rotation()",
+      "id": "Global_DewRandom_Rotation",
+      "declaration": "public Quaternion Rotation()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "RotationUniform()",
+      "id": "Global_DewRandom_RotationUniform",
+      "declaration": "public Quaternion RotationUniform()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "SetSeed(uint)",
+      "id": "Global_DewRandom_SetSeed_System_UInt32_",
+      "declaration": "public void SetSeed(uint seed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_DewRandom_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "Value()",
+      "id": "Global_DewRandom_Value",
+      "declaration": "public float Value()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

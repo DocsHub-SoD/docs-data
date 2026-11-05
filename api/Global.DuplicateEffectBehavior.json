@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DuplicateEffectBehavior",
+  "name": "DuplicateEffectBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DuplicateEffectBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

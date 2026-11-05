@@ -1,0 +1,32 @@
+{
+  "uid": "Global.ModBehaviour.ConsoleCommandAttribute",
+  "name": "ModBehaviour.ConsoleCommandAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Method, Inherited = false, AllowMultiple = true)]\npublic class ModBehaviour.ConsoleCommandAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "CustomName",
+      "id": "Global_ModBehaviour_ConsoleCommandAttribute_CustomName",
+      "declaration": "public readonly string CustomName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Description",
+      "id": "Global_ModBehaviour_ConsoleCommandAttribute_Description",
+      "declaration": "public readonly string Description",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

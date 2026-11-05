@@ -1,0 +1,85 @@
+{
+  "uid": "Global.SafeAction`1",
+  "name": "SafeAction<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SafeAction<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "Count",
+      "id": "Global_SafeAction_1_Count",
+      "declaration": "public int Count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Add(Action<T>)",
+      "id": "Global_SafeAction_1_Add_System_Action__0__",
+      "declaration": "public SafeAction<T> Add(Action<T> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction<T>"
+    },
+    {
+      "name": "Contains(Action<T>)",
+      "id": "Global_SafeAction_1_Contains_System_Action__0__",
+      "declaration": "public bool Contains(Action<T> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Invoke(T)",
+      "id": "Global_SafeAction_1_Invoke__0_",
+      "declaration": "public void Invoke(T arg)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "arg",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Remove(Action<T>)",
+      "id": "Global_SafeAction_1_Remove_System_Action__0__",
+      "declaration": "public SafeAction<T> Remove(Action<T> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction<T>"
+    }
+  ],
+  "events": []
+}

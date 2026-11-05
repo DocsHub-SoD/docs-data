@@ -1,0 +1,48 @@
+{
+  "uid": "Global.PropSpawnRule.PropEntry",
+  "name": "PropSpawnRule.PropEntry",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class PropSpawnRule.PropEntry",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "chance",
+      "id": "Global_PropSpawnRule_PropEntry_chance",
+      "declaration": "public float chance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "count",
+      "id": "Global_PropSpawnRule_PropEntry_count",
+      "declaration": "public Vector2Int count",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "prop",
+      "id": "Global_PropSpawnRule_PropEntry_prop",
+      "declaration": "public AssetRef<GameObject> prop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "roomIndexRange",
+      "id": "Global_PropSpawnRule_PropEntry_roomIndexRange",
+      "declaration": "public Vector2Int roomIndexRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

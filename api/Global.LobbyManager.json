@@ -1,0 +1,111 @@
+{
+  "uid": "Global.LobbyManager",
+  "name": "LobbyManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LobbyManager : ManagerBase<LobbyManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "LobbyManager",
+      "href": "Global.LobbyManager.html",
+      "uid": "Global.LobbyManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "onCurrentLobbyChanged",
+      "id": "Global_LobbyManager_onCurrentLobbyChanged",
+      "declaration": "public Action onCurrentLobbyChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onLobbyListUpdated",
+      "id": "Global_LobbyManager_onLobbyListUpdated",
+      "declaration": "public Action onLobbyListUpdated",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isLobbyLeader",
+      "id": "Global_LobbyManager_isLobbyLeader",
+      "declaration": "public bool isLobbyLeader { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "service",
+      "id": "Global_LobbyManager_service",
+      "declaration": "public LobbyServiceProvider service { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_LobbyManager_shouldRegisterUpdates",
+      "declaration": "public override bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetDefaultLobbyName()",
+      "id": "Global_LobbyManager_GetDefaultLobbyName",
+      "declaration": "public static string GetDefaultLobbyName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "SwitchService()",
+      "id": "Global_LobbyManager_SwitchService",
+      "declaration": "public void SwitchService()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SwitchService(LobbyServiceProvider)",
+      "id": "Global_LobbyManager_SwitchService_LobbyServiceProvider_",
+      "declaration": "public void SwitchService(LobbyServiceProvider newProvider)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newProvider",
+          "type": "LobbyServiceProvider",
+          "type_uid": "Global.LobbyServiceProvider",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,26 @@
+{
+  "uid": "Global.DewPersistence.StatusEffectData",
+  "name": "DewPersistence.StatusEffectData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.StatusEffectData : DewPersistence.GeneralData",
+  "inheritance": [
+    {
+      "name": "DewPersistence",
+      "href": "Global.DewPersistence.html",
+      "uid": "Global.DewPersistence"
+    },
+    {
+      "name": "GeneralData",
+      "href": "Global.DewPersistence.GeneralData.html",
+      "uid": "Global.DewPersistence.GeneralData"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

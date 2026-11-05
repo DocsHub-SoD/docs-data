@@ -1,0 +1,124 @@
+{
+  "uid": "Global.BasicEffect",
+  "name": "BasicEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class BasicEffect",
+  "inheritance": [
+    {
+      "name": "AttackCriticalEffect",
+      "href": "Global.AttackCriticalEffect.html",
+      "uid": "Global.AttackCriticalEffect"
+    },
+    {
+      "name": "AttackEmpowerEffect",
+      "href": "Global.AttackEmpowerEffect.html",
+      "uid": "Global.AttackEmpowerEffect"
+    },
+    {
+      "name": "AttackOverrideEffect",
+      "href": "Global.AttackOverrideEffect.html",
+      "uid": "Global.AttackOverrideEffect"
+    },
+    {
+      "name": "BasicEffectWithStrength",
+      "href": "Global.BasicEffectWithStrength.html",
+      "uid": "Global.BasicEffectWithStrength"
+    },
+    {
+      "name": "BlindEffect",
+      "href": "Global.BlindEffect.html",
+      "uid": "Global.BlindEffect"
+    },
+    {
+      "name": "DeathInterruptEffect",
+      "href": "Global.DeathInterruptEffect.html",
+      "uid": "Global.DeathInterruptEffect"
+    },
+    {
+      "name": "InvisibleEffect",
+      "href": "Global.InvisibleEffect.html",
+      "uid": "Global.InvisibleEffect"
+    },
+    {
+      "name": "InvulnerableEffect",
+      "href": "Global.InvulnerableEffect.html",
+      "uid": "Global.InvulnerableEffect"
+    },
+    {
+      "name": "ProtectedEffect",
+      "href": "Global.ProtectedEffect.html",
+      "uid": "Global.ProtectedEffect"
+    },
+    {
+      "name": "RootEffect",
+      "href": "Global.RootEffect.html",
+      "uid": "Global.RootEffect"
+    },
+    {
+      "name": "ShieldEffect",
+      "href": "Global.ShieldEffect.html",
+      "uid": "Global.ShieldEffect"
+    },
+    {
+      "name": "SilenceEffect",
+      "href": "Global.SilenceEffect.html",
+      "uid": "Global.SilenceEffect"
+    },
+    {
+      "name": "StunEffect",
+      "href": "Global.StunEffect.html",
+      "uid": "Global.StunEffect"
+    },
+    {
+      "name": "UncollidableEffect",
+      "href": "Global.UncollidableEffect.html",
+      "uid": "Global.UncollidableEffect"
+    },
+    {
+      "name": "UnstoppableEffect",
+      "href": "Global.UnstoppableEffect.html",
+      "uid": "Global.UnstoppableEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isAlive",
+      "id": "Global_BasicEffect_isAlive",
+      "declaration": "public bool isAlive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mask",
+      "id": "Global_BasicEffect_mask",
+      "declaration": "public abstract BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parent",
+      "id": "Global_BasicEffect_parent",
+      "declaration": "public StatusEffect parent { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_BasicEffect_victim",
+      "declaration": "public Entity victim { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.SampleCastInfoContext.CastOnButtonType",
+  "name": "SampleCastInfoContext.CastOnButtonType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum SampleCastInfoContext.CastOnButtonType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

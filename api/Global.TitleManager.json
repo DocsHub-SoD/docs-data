@@ -1,0 +1,218 @@
+{
+  "uid": "Global.TitleManager",
+  "name": "TitleManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class TitleManager : ManagerBase<TitleManager>, ILogicUpdate, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "TitleManager",
+      "href": "Global.TitleManager.html",
+      "uid": "Global.TitleManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "didConvertSave",
+      "id": "Global_TitleManager_didConvertSave",
+      "declaration": "[NonSerialized]\npublic bool didConvertSave",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didNotPlayTutorialObject",
+      "id": "Global_TitleManager_didNotPlayTutorialObject",
+      "declaration": "public GameObject didNotPlayTutorialObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didPlayTutorialObject",
+      "id": "Global_TitleManager_didPlayTutorialObject",
+      "declaration": "public GameObject didPlayTutorialObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "langSelectionView",
+      "id": "Global_TitleManager_langSelectionView",
+      "declaration": "public View langSelectionView",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onShowLangSelectionView",
+      "id": "Global_TitleManager_onShowLangSelectionView",
+      "declaration": "public UnityEvent onShowLangSelectionView",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "riftParticleSystem",
+      "id": "Global_TitleManager_riftParticleSystem",
+      "declaration": "public ParticleSystem riftParticleSystem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "splashView",
+      "id": "Global_TitleManager_splashView",
+      "declaration": "public View splashView",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "needTutorial",
+      "id": "Global_TitleManager_needTutorial",
+      "declaration": "public bool needTutorial { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CheckTutorial(Action)",
+      "id": "Global_TitleManager_CheckTutorial_System_Action_",
+      "declaration": "public void CheckTutorial(Action callback)",
+      "summary": "Execute the callback if user has played tutorial.If not, ask if the user wants to skip the tutorial.",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EnterCollectables()",
+      "id": "Global_TitleManager_EnterCollectables",
+      "declaration": "public void EnterCollectables()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnterContinueDreaming()",
+      "id": "Global_TitleManager_EnterContinueDreaming",
+      "declaration": "public void EnterContinueDreaming()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnterSingleplayerLimbo()",
+      "id": "Global_TitleManager_EnterSingleplayerLimbo",
+      "declaration": "public void EnterSingleplayerLimbo()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnterSingleplayerShapeOfDreams()",
+      "id": "Global_TitleManager_EnterSingleplayerShapeOfDreams",
+      "declaration": "public void EnterSingleplayerShapeOfDreams()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnterTutorial()",
+      "id": "Global_TitleManager_EnterTutorial",
+      "declaration": "public void EnterTutorial()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ExitToDesktop()",
+      "id": "Global_TitleManager_ExitToDesktop",
+      "declaration": "public void ExitToDesktop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "JoinLobby(string)",
+      "id": "Global_TitleManager_JoinLobby_System_String_",
+      "declaration": "public void JoinLobby(string lobbyId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobbyId",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_TitleManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_TitleManager_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShowMods()",
+      "id": "Global_TitleManager_ShowMods",
+      "declaration": "public void ShowMods()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

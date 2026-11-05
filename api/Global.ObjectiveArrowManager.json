@@ -1,0 +1,63 @@
+{
+  "uid": "Global.ObjectiveArrowManager",
+  "name": "ObjectiveArrowManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(3000)]\npublic class ObjectiveArrowManager : ManagerBase<ObjectiveArrowManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "ObjectiveArrowManager",
+      "href": "Global.ObjectiveArrowManager.html",
+      "uid": "Global.ObjectiveArrowManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "arrowPivot",
+      "id": "Global_ObjectiveArrowManager_arrowPivot",
+      "declaration": "public GameObject arrowPivot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "objectivePosition",
+      "id": "Global_ObjectiveArrowManager_objectivePosition",
+      "declaration": "public Vector3? objectivePosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_ObjectiveArrowManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

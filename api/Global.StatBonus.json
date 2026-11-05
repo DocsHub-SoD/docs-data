@@ -1,0 +1,303 @@
+{
+  "uid": "Global.StatBonus",
+  "name": "StatBonus",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class StatBonus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "abilityHasteFlat",
+      "id": "Global_StatBonus_abilityHasteFlat",
+      "declaration": "public float abilityHasteFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityHastePercentage",
+      "id": "Global_StatBonus_abilityHastePercentage",
+      "declaration": "public float abilityHastePercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPowerFlat",
+      "id": "Global_StatBonus_abilityPowerFlat",
+      "declaration": "public float abilityPowerFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPowerPercentage",
+      "id": "Global_StatBonus_abilityPowerPercentage",
+      "declaration": "public float abilityPowerPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armorFlat",
+      "id": "Global_StatBonus_armorFlat",
+      "declaration": "public float armorFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armorPercentage",
+      "id": "Global_StatBonus_armorPercentage",
+      "declaration": "public float armorPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamageFlat",
+      "id": "Global_StatBonus_attackDamageFlat",
+      "declaration": "public float attackDamageFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamagePercentage",
+      "id": "Global_StatBonus_attackDamagePercentage",
+      "declaration": "public float attackDamagePercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackRangeFlat",
+      "id": "Global_StatBonus_attackRangeFlat",
+      "declaration": "public float attackRangeFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackRangePercentage",
+      "id": "Global_StatBonus_attackRangePercentage",
+      "declaration": "public float attackRangePercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackSpeedPercentage",
+      "id": "Global_StatBonus_attackSpeedPercentage",
+      "declaration": "public float attackSpeedPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "coldEffectAmpFlat",
+      "id": "Global_StatBonus_coldEffectAmpFlat",
+      "declaration": "public float coldEffectAmpFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmpFlat",
+      "id": "Global_StatBonus_critAmpFlat",
+      "declaration": "public float critAmpFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmpPercentage",
+      "id": "Global_StatBonus_critAmpPercentage",
+      "declaration": "public float critAmpPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChanceFlat",
+      "id": "Global_StatBonus_critChanceFlat",
+      "declaration": "public float critChanceFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChancePercentage",
+      "id": "Global_StatBonus_critChancePercentage",
+      "declaration": "public float critChancePercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "darkEffectAmpFlat",
+      "id": "Global_StatBonus_darkEffectAmpFlat",
+      "declaration": "public float darkEffectAmpFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "everyFourAttackStartIndexFlat",
+      "id": "Global_StatBonus_everyFourAttackStartIndexFlat",
+      "declaration": "public int everyFourAttackStartIndexFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireEffectAmpFlat",
+      "id": "Global_StatBonus_fireEffectAmpFlat",
+      "declaration": "public float fireEffectAmpFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegenFlat",
+      "id": "Global_StatBonus_healthRegenFlat",
+      "declaration": "public float healthRegenFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegenPercentage",
+      "id": "Global_StatBonus_healthRegenPercentage",
+      "declaration": "public float healthRegenPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightEffectAmpFlat",
+      "id": "Global_StatBonus_lightEffectAmpFlat",
+      "declaration": "public float lightEffectAmpFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegenFlat",
+      "id": "Global_StatBonus_manaRegenFlat",
+      "declaration": "public float manaRegenFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegenPercentage",
+      "id": "Global_StatBonus_manaRegenPercentage",
+      "declaration": "public float manaRegenPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealthFlat",
+      "id": "Global_StatBonus_maxHealthFlat",
+      "declaration": "public float maxHealthFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealthPercentage",
+      "id": "Global_StatBonus_maxHealthPercentage",
+      "declaration": "public float maxHealthPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxManaFlat",
+      "id": "Global_StatBonus_maxManaFlat",
+      "declaration": "public float maxManaFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxManaPercentage",
+      "id": "Global_StatBonus_maxManaPercentage",
+      "declaration": "public float maxManaPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "movementSpeedPercentage",
+      "id": "Global_StatBonus_movementSpeedPercentage",
+      "declaration": "public float movementSpeedPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacityFlat",
+      "id": "Global_StatBonus_tenacityFlat",
+      "declaration": "public float tenacityFlat { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacityPercentage",
+      "id": "Global_StatBonus_tenacityPercentage",
+      "declaration": "public float tenacityPercentage { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Add(StatBonus)",
+      "id": "Global_StatBonus_Add_StatBonus_",
+      "declaration": "public void Add(StatBonus bonus)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "StatBonus",
+          "type_uid": "Global.StatBonus",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Clone()",
+      "id": "Global_StatBonus_Clone",
+      "declaration": "public StatBonus Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "StatBonus"
+    },
+    {
+      "name": "Multiply(float)",
+      "id": "Global_StatBonus_Multiply_System_Single_",
+      "declaration": "public void Multiply(float multiplier)",
+      "summary": "Multiplies all stat bonuses by the given multiplier. Useful for scaling bonuses based on level, rarity, or other factors.",
+      "parameters": [
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": "The value to multiply all stat bonuses by"
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

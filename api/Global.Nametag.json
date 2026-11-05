@@ -1,0 +1,151 @@
+{
+  "uid": "Global.Nametag",
+  "name": "Nametag",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Name)]\n[RequireComponent(typeof(LayoutElement))]\npublic class Nametag : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "category",
+      "id": "Global_Nametag_category",
+      "declaration": "public string category",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "condition",
+      "id": "Global_Nametag_condition",
+      "declaration": "[HideIf(\"generatedFromServer\", true)]\npublic CosmeticPurchasePrerequisite condition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conditionType",
+      "id": "Global_Nametag_conditionType",
+      "declaration": "[ShowIf(\"@condition == CosmeticPurchasePrerequisite.NightmareKillCount || condition == CosmeticPurchasePrerequisite.ReachZone\", true)]\n[LabelText(\"Type\")]\npublic string conditionType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conditionValue",
+      "id": "Global_Nametag_conditionValue",
+      "declaration": "[ShowIf(\"@condition == CosmeticPurchasePrerequisite.NightmareKillCount || condition == CosmeticPurchasePrerequisite.ReachZone || condition == CosmeticPurchasePrerequisite.NightmarePureWhiteDream || condition == CosmeticPurchasePrerequisite.LimboMaxDepth\", true)]\n[LabelText(\"Required Amount\")]\npublic int conditionValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customOrder",
+      "id": "Global_Nametag_customOrder",
+      "declaration": "public float customOrder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "generatedFromServer",
+      "id": "Global_Nametag_generatedFromServer",
+      "declaration": "public bool generatedFromServer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "iconNormalizedOffsetY",
+      "id": "Global_Nametag_iconNormalizedOffsetY",
+      "declaration": "[Space(20)]\npublic float iconNormalizedOffsetY",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "iconWidthOffset",
+      "id": "Global_Nametag_iconWidthOffset",
+      "declaration": "public float iconWidthOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nametagHorizontalMargin",
+      "id": "Global_Nametag_nametagHorizontalMargin",
+      "declaration": "public Vector2 nametagHorizontalMargin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "price",
+      "id": "Global_Nametag_price",
+      "declaration": "public int price",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CheckPrerequisites(out bool, out int, out int, out string)",
+      "id": "Global_Nametag_CheckPrerequisites_System_Boolean__System_Int32__System_Int32__System_String__",
+      "declaration": "public void CheckPrerequisites(out bool canPurchase, out int currentProgress, out int maxProgress, out string conditionText)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "canPurchase",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "currentProgress",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxProgress",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "conditionText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Setup(RectTransform, bool)",
+      "id": "Global_Nametag_Setup_UnityEngine_RectTransform_System_Boolean_",
+      "declaration": "public void Setup(RectTransform target, bool isIcon)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "UnityEngine.RectTransform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isIcon",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

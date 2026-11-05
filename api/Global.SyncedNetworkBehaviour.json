@@ -1,0 +1,77 @@
+{
+  "uid": "Global.SyncedNetworkBehaviour",
+  "name": "SyncedNetworkBehaviour",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct SyncedNetworkBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "componentIndex",
+      "id": "Global_SyncedNetworkBehaviour_componentIndex",
+      "declaration": "public byte componentIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "netId",
+      "id": "Global_SyncedNetworkBehaviour_netId",
+      "declaration": "public uint netId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Equals(SyncedNetworkBehaviour)",
+      "id": "Global_SyncedNetworkBehaviour_Equals_SyncedNetworkBehaviour_",
+      "declaration": "public bool Equals(SyncedNetworkBehaviour other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "SyncedNetworkBehaviour",
+          "type_uid": "Global.SyncedNetworkBehaviour",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(uint, int)",
+      "id": "Global_SyncedNetworkBehaviour_Equals_System_UInt32_System_Int32_",
+      "declaration": "public bool Equals(uint netId, int componentIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "netId",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "componentIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_SyncedNetworkBehaviour_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

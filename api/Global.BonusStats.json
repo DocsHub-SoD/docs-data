@@ -1,0 +1,311 @@
+{
+  "uid": "Global.BonusStats",
+  "name": "BonusStats",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct BonusStats",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "abilityHasteFlat",
+      "id": "Global_BonusStats_abilityHasteFlat",
+      "declaration": "public float abilityHasteFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityHastePercentage",
+      "id": "Global_BonusStats_abilityHastePercentage",
+      "declaration": "public float abilityHastePercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPowerFlat",
+      "id": "Global_BonusStats_abilityPowerFlat",
+      "declaration": "public float abilityPowerFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPowerPercentage",
+      "id": "Global_BonusStats_abilityPowerPercentage",
+      "declaration": "public float abilityPowerPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armorFlat",
+      "id": "Global_BonusStats_armorFlat",
+      "declaration": "public float armorFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armorPercentage",
+      "id": "Global_BonusStats_armorPercentage",
+      "declaration": "[FormerlySerializedAs(\"armorPercetnage\")]\npublic float armorPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamageFlat",
+      "id": "Global_BonusStats_attackDamageFlat",
+      "declaration": "public float attackDamageFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamagePercentage",
+      "id": "Global_BonusStats_attackDamagePercentage",
+      "declaration": "public float attackDamagePercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackRangeFlat",
+      "id": "Global_BonusStats_attackRangeFlat",
+      "declaration": "public float attackRangeFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackRangePercentage",
+      "id": "Global_BonusStats_attackRangePercentage",
+      "declaration": "public float attackRangePercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackSpeedPercentage",
+      "id": "Global_BonusStats_attackSpeedPercentage",
+      "declaration": "public float attackSpeedPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "coldEffectAmpFlat",
+      "id": "Global_BonusStats_coldEffectAmpFlat",
+      "declaration": "public float coldEffectAmpFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmpFlat",
+      "id": "Global_BonusStats_critAmpFlat",
+      "declaration": "public float critAmpFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmpPercentage",
+      "id": "Global_BonusStats_critAmpPercentage",
+      "declaration": "public float critAmpPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChanceFlat",
+      "id": "Global_BonusStats_critChanceFlat",
+      "declaration": "public float critChanceFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChancePercentage",
+      "id": "Global_BonusStats_critChancePercentage",
+      "declaration": "public float critChancePercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "darkEffectAmpFlat",
+      "id": "Global_BonusStats_darkEffectAmpFlat",
+      "declaration": "public float darkEffectAmpFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_BonusStats_Default",
+      "declaration": "public static readonly BonusStats Default",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "everyFourAttackStartIndexFlat",
+      "id": "Global_BonusStats_everyFourAttackStartIndexFlat",
+      "declaration": "public int everyFourAttackStartIndexFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireEffectAmpFlat",
+      "id": "Global_BonusStats_fireEffectAmpFlat",
+      "declaration": "public float fireEffectAmpFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegenFlat",
+      "id": "Global_BonusStats_healthRegenFlat",
+      "declaration": "public float healthRegenFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegenPercentage",
+      "id": "Global_BonusStats_healthRegenPercentage",
+      "declaration": "public float healthRegenPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightEffectAmpFlat",
+      "id": "Global_BonusStats_lightEffectAmpFlat",
+      "declaration": "public float lightEffectAmpFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegenFlat",
+      "id": "Global_BonusStats_manaRegenFlat",
+      "declaration": "public float manaRegenFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegenPercentage",
+      "id": "Global_BonusStats_manaRegenPercentage",
+      "declaration": "public float manaRegenPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealthFlat",
+      "id": "Global_BonusStats_maxHealthFlat",
+      "declaration": "public float maxHealthFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealthPercentage",
+      "id": "Global_BonusStats_maxHealthPercentage",
+      "declaration": "public float maxHealthPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxManaFlat",
+      "id": "Global_BonusStats_maxManaFlat",
+      "declaration": "public float maxManaFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxManaPercentage",
+      "id": "Global_BonusStats_maxManaPercentage",
+      "declaration": "public float maxManaPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "movementSpeedPercentage",
+      "id": "Global_BonusStats_movementSpeedPercentage",
+      "declaration": "public float movementSpeedPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacityFlat",
+      "id": "Global_BonusStats_tenacityFlat",
+      "declaration": "public float tenacityFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacityPercentage",
+      "id": "Global_BonusStats_tenacityPercentage",
+      "declaration": "public float tenacityPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Equals(BonusStats)",
+      "id": "Global_BonusStats_Equals_BonusStats_",
+      "declaration": "public bool Equals(BonusStats other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "BonusStats",
+          "type_uid": "Global.BonusStats",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_BonusStats_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_BonusStats_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

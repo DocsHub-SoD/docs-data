@@ -1,0 +1,187 @@
+{
+  "uid": "Global.WorldNodeData",
+  "name": "WorldNodeData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct WorldNodeData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "modifiers",
+      "id": "Global_WorldNodeData_modifiers",
+      "declaration": "public List<ModifierData> modifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_WorldNodeData_position",
+      "declaration": "public Vector2 position",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "room",
+      "id": "Global_WorldNodeData_room",
+      "declaration": "public string room",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "roomOverride",
+      "id": "Global_WorldNodeData_roomOverride",
+      "declaration": "public string roomOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "roomRotIndex",
+      "id": "Global_WorldNodeData_roomRotIndex",
+      "declaration": "public int roomRotIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "roomRotValue",
+      "id": "Global_WorldNodeData_roomRotValue",
+      "declaration": "public float roomRotValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "status",
+      "id": "Global_WorldNodeData_status",
+      "declaration": "public WorldNodeStatus status",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_WorldNodeData_type",
+      "declaration": "public WorldNodeType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FindModifierIndex(string)",
+      "id": "Global_WorldNodeData_FindModifierIndex_System_String_",
+      "declaration": "public int FindModifierIndex(string modName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "modName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "FindModifierIndex<T>()",
+      "id": "Global_WorldNodeData_FindModifierIndex__1",
+      "declaration": "public int FindModifierIndex<T>() where T : RoomModifierBase",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "HasMainModifier()",
+      "id": "Global_WorldNodeData_HasMainModifier",
+      "declaration": "public bool HasMainModifier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "HasModifier(int)",
+      "id": "Global_WorldNodeData_HasModifier_System_Int32_",
+      "declaration": "public bool HasModifier(int id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HasModifier(string)",
+      "id": "Global_WorldNodeData_HasModifier_System_String_",
+      "declaration": "public bool HasModifier(string modName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "modName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HasModifier<T>()",
+      "id": "Global_WorldNodeData_HasModifier__1",
+      "declaration": "public bool HasModifier<T>() where T : RoomModifierBase",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsModifierVisible(int)",
+      "id": "Global_WorldNodeData_IsModifierVisible_System_Int32_",
+      "declaration": "public bool IsModifierVisible(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSidetrackNode()",
+      "id": "Global_WorldNodeData_IsSidetrackNode",
+      "declaration": "public bool IsSidetrackNode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

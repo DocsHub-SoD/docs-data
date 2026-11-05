@@ -1,0 +1,315 @@
+{
+  "uid": "Global.DewNetworkManager",
+  "name": "DewNetworkManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewNetworkManager : NetworkManager",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ClientEvent_OnDewNetworkBehaviourStart",
+      "id": "Global_DewNetworkManager_ClientEvent_OnDewNetworkBehaviourStart",
+      "declaration": "public SafeAction<DewNetworkBehaviour> ClientEvent_OnDewNetworkBehaviourStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDewNetworkBehaviourStop",
+      "id": "Global_DewNetworkManager_ClientEvent_OnDewNetworkBehaviourStop",
+      "declaration": "public SafeAction<DewNetworkBehaviour> ClientEvent_OnDewNetworkBehaviourStop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnLoadingStatusChanged",
+      "id": "Global_DewNetworkManager_ClientEvent_OnLoadingStatusChanged",
+      "declaration": "public SafeAction<bool> ClientEvent_OnLoadingStatusChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSessionEnd",
+      "id": "Global_DewNetworkManager_ClientEvent_OnSessionEnd",
+      "declaration": "public SafeAction ClientEvent_OnSessionEnd",
+      "summary": "Called when current session is terminated, regardless of cause. (Kick, concluded game, restart, etc.)",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startSettings",
+      "id": "Global_DewNetworkManager_startSettings",
+      "declaration": "public static DewNetworkStartSettings startSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "didRegisterError",
+      "id": "Global_DewNetworkManager_didRegisterError",
+      "declaration": "public bool didRegisterError { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasSessionEnded",
+      "id": "Global_DewNetworkManager_hasSessionEnded",
+      "declaration": "public bool hasSessionEnded { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_DewNetworkManager_instance",
+      "declaration": "public static DewNetworkManager instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isBeingKicked",
+      "id": "Global_DewNetworkManager_isBeingKicked",
+      "declaration": "public bool isBeingKicked { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isEndingSession",
+      "id": "Global_DewNetworkManager_isEndingSession",
+      "declaration": "public bool isEndingSession { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_DewNetworkManager_softInstance",
+      "declaration": "public static DewNetworkManager softInstance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_DewNetworkManager_Awake",
+      "declaration": "public override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EndSession()",
+      "id": "Global_DewNetworkManager_EndSession",
+      "declaration": "public void EndSession()",
+      "summary": "End this session. When called on server this ends everyone's game completely. When on client, it locally exits out of the game.You can use this to exit out of game/lobby or whatever scenario where network is involved.When ending a game on server, it is recommended to register game results beforehand.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoadSceneAsync(string, List<DewPlayer>, Action)",
+      "id": "Global_DewNetworkManager_LoadSceneAsync_System_String_System_Collections_Generic_List_DewPlayer__System_Action_",
+      "declaration": "public IEnumerator LoadSceneAsync(string sceneName, List<DewPlayer> players = null, Action onBeforeSpawnObjects = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sceneName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "players",
+          "type": "System.Collections.Generic.List<T><DewPlayer>",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "onBeforeSpawnObjects",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "OnClientConnect()",
+      "id": "Global_DewNetworkManager_OnClientConnect",
+      "declaration": "public override void OnClientConnect()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnClientDisconnect()",
+      "id": "Global_DewNetworkManager_OnClientDisconnect",
+      "declaration": "public override void OnClientDisconnect()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_DewNetworkManager_OnDestroy",
+      "declaration": "public override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnServerAddPlayer(NetworkConnectionToClient)",
+      "id": "Global_DewNetworkManager_OnServerAddPlayer_Mirror_NetworkConnectionToClient_",
+      "declaration": "public override void OnServerAddPlayer(NetworkConnectionToClient conn)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "conn",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnServerConnect(NetworkConnectionToClient)",
+      "id": "Global_DewNetworkManager_OnServerConnect_Mirror_NetworkConnectionToClient_",
+      "declaration": "public override void OnServerConnect(NetworkConnectionToClient conn)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "conn",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnServerDisconnect(NetworkConnectionToClient)",
+      "id": "Global_DewNetworkManager_OnServerDisconnect_Mirror_NetworkConnectionToClient_",
+      "declaration": "public override void OnServerDisconnect(NetworkConnectionToClient conn)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "conn",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_DewNetworkManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartHost()",
+      "id": "Global_DewNetworkManager_OnStartHost",
+      "declaration": "public override void OnStartHost()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RestartSession()",
+      "id": "Global_DewNetworkManager_RestartSession",
+      "declaration": "public void RestartSession()",
+      "summary": "Restart this session. This can only be called on server.All players in the session will restart the game and be placed in the same lobby they were in.All game related states are started from scratch and only lobbies are reused.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetLoadingStatus(bool, List<DewPlayer>)",
+      "id": "Global_DewNetworkManager_SetLoadingStatus_System_Boolean_System_Collections_Generic_List_DewPlayer__",
+      "declaration": "public void SetLoadingStatus(bool isLoading, List<DewPlayer> players = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isLoading",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "players",
+          "type": "System.Collections.Generic.List<T><DewPlayer>",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetWhiteLoadingStatus(bool, List<DewPlayer>)",
+      "id": "Global_DewNetworkManager_SetWhiteLoadingStatus_System_Boolean_System_Collections_Generic_List_DewPlayer__",
+      "declaration": "public void SetWhiteLoadingStatus(bool isLoading, List<DewPlayer> players = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isLoading",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "players",
+          "type": "System.Collections.Generic.List<T><DewPlayer>",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpawnPlayerObject(NetworkConnectionToClient)",
+      "id": "Global_DewNetworkManager_SpawnPlayerObject_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void SpawnPlayerObject(NetworkConnectionToClient conn)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "conn",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_DewNetworkManager_Start",
+      "declaration": "public override void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartSession()",
+      "id": "Global_DewNetworkManager_StartSession",
+      "declaration": "protected virtual UniTaskVoid StartSession()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTaskVoid"
+    }
+  ],
+  "events": []
+}

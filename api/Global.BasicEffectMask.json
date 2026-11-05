@@ -1,0 +1,15 @@
+{
+  "uid": "Global.BasicEffectMask",
+  "name": "BasicEffectMask",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum BasicEffectMask : uint",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,235 @@
+{
+  "uid": "Global.Cost",
+  "name": "Cost",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct Cost",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "dreamDust",
+      "id": "Global_Cost_dreamDust",
+      "declaration": "public int dreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gold",
+      "id": "Global_Cost_gold",
+      "declaration": "public int gold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthPercentage",
+      "id": "Global_Cost_healthPercentage",
+      "declaration": "public int healthPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "platinumCoin",
+      "id": "Global_Cost_platinumCoin",
+      "declaration": "public int platinumCoin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardust",
+      "id": "Global_Cost_stardust",
+      "declaration": "public int stardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CanAfford(DewPlayer, int)",
+      "id": "Global_Cost_CanAfford_DewPlayer_System_Int32_",
+      "declaration": "public AffordType CanAfford(DewPlayer player, int playerStardust = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "playerStardust",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AffordType"
+    },
+    {
+      "name": "CanAfford(Entity, int)",
+      "id": "Global_Cost_CanAfford_Entity_System_Int32_",
+      "declaration": "public AffordType CanAfford(Entity entity, int playerStardust = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "playerStardust",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AffordType"
+    },
+    {
+      "name": "DreamDust(int)",
+      "id": "Global_Cost_DreamDust_System_Int32_",
+      "declaration": "public static Cost DreamDust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "Equals(Cost)",
+      "id": "Global_Cost_Equals_Cost_",
+      "declaration": "public bool Equals(Cost other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "Cost",
+          "type_uid": "Global.Cost",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_Cost_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_Cost_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "Gold(int)",
+      "id": "Global_Cost_Gold_System_Int32_",
+      "declaration": "public static Cost Gold(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "HealthPercentage(int)",
+      "id": "Global_Cost_HealthPercentage_System_Int32_",
+      "declaration": "public static Cost HealthPercentage(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "MultiplyGold(float)",
+      "id": "Global_Cost_MultiplyGold_System_Single_",
+      "declaration": "public Cost MultiplyGold(float scalar)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "scalar",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "Platinum(int)",
+      "id": "Global_Cost_Platinum_System_Int32_",
+      "declaration": "public static Cost Platinum(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "Stardust(int)",
+      "id": "Global_Cost_Stardust_System_Int32_",
+      "declaration": "public static Cost Stardust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_Cost_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

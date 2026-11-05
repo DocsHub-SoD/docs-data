@@ -1,0 +1,97 @@
+{
+  "uid": "Global.EntityAnimation.AbilityAnimationStatus",
+  "name": "EntityAnimation.AbilityAnimationStatus",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EntityAnimation.AbilityAnimationStatus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "currentClip",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_currentClip",
+      "declaration": "public DewAnimationClip currentClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "easeFunction",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_easeFunction",
+      "declaration": "public EaseFunction easeFunction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elapsedTime",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_elapsedTime",
+      "declaration": "public float elapsedTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isPlaying",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_isPlaying",
+      "declaration": "public bool isPlaying",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideWalkNormalizedDuration",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_overrideWalkNormalizedDuration",
+      "declaration": "public float overrideWalkNormalizedDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawClipDuration",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_rawClipDuration",
+      "declaration": "public float rawClipDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trimRange",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_trimRange",
+      "declaration": "public Vector2 trimRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "normalizedTime",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_normalizedTime",
+      "declaration": "public float normalizedTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedTimeParameter",
+      "id": "Global_EntityAnimation_AbilityAnimationStatus_normalizedTimeParameter",
+      "declaration": "public float normalizedTimeParameter { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

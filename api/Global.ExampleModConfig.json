@@ -1,0 +1,174 @@
+{
+  "uid": "Global.ExampleModConfig",
+  "name": "ExampleModConfig",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ExampleModConfig : ModConfig",
+  "inheritance": [
+    {
+      "name": "ModConfig",
+      "href": "Global.ModConfig.html",
+      "uid": "Global.ModConfig"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "byteTest",
+      "id": "Global_ExampleModConfig_byteTest",
+      "declaration": "public byte byteTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customLabelTest",
+      "id": "Global_ExampleModConfig_customLabelTest",
+      "declaration": "[ModConfig.LabelText(\"CUSTOM LABEL WOOHOO!\")]\npublic bool customLabelTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enumTest",
+      "id": "Global_ExampleModConfig_enumTest",
+      "declaration": "public Quality4Levels enumTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enumTest2",
+      "id": "Global_ExampleModConfig_enumTest2",
+      "declaration": "public Quality4Levels enumTest2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "floatTest",
+      "id": "Global_ExampleModConfig_floatTest",
+      "declaration": "public float floatTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "intTest",
+      "id": "Global_ExampleModConfig_intTest",
+      "declaration": "public int intTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nullStringTest",
+      "id": "Global_ExampleModConfig_nullStringTest",
+      "declaration": "public string nullStringTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "quaternionTest",
+      "id": "Global_ExampleModConfig_quaternionTest",
+      "declaration": "public Quaternion quaternionTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stringTest",
+      "id": "Global_ExampleModConfig_stringTest",
+      "declaration": "public string stringTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "toggle1",
+      "id": "Global_ExampleModConfig_toggle1",
+      "declaration": "public bool toggle1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "toggle2",
+      "id": "Global_ExampleModConfig_toggle2",
+      "declaration": "public bool toggle2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uintTest",
+      "id": "Global_ExampleModConfig_uintTest",
+      "declaration": "public uint uintTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ulongTest",
+      "id": "Global_ExampleModConfig_ulongTest",
+      "declaration": "public ulong ulongTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ushortTest",
+      "id": "Global_ExampleModConfig_ushortTest",
+      "declaration": "public ushort ushortTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vector2IntTest",
+      "id": "Global_ExampleModConfig_vector2IntTest",
+      "declaration": "public Vector2Int vector2IntTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vector2Test",
+      "id": "Global_ExampleModConfig_vector2Test",
+      "declaration": "public Vector2 vector2Test",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vector3IntTest",
+      "id": "Global_ExampleModConfig_vector3IntTest",
+      "declaration": "public Vector3Int vector3IntTest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vector3Test",
+      "id": "Global_ExampleModConfig_vector3Test",
+      "declaration": "public Vector3 vector3Test",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vector4Test",
+      "id": "Global_ExampleModConfig_vector4Test",
+      "declaration": "public Vector4 vector4Test",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

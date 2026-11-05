@@ -1,0 +1,152 @@
+{
+  "uid": "Global.NetworkedManagerBase`1",
+  "name": "NetworkedManagerBase<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-300)]\npublic class NetworkedManagerBase<T> : DewNetworkBehaviour, ILogicUpdate where T : DewNetworkBehaviour",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "ActorManager",
+      "href": "Global.ActorManager.html",
+      "uid": "Global.ActorManager"
+    },
+    {
+      "name": "ChatManager",
+      "href": "Global.ChatManager.html",
+      "uid": "Global.ChatManager"
+    },
+    {
+      "name": "ClientEventManager",
+      "href": "Global.ClientEventManager.html",
+      "uid": "Global.ClientEventManager"
+    },
+    {
+      "name": "ConsoleManager",
+      "href": "Global.ConsoleManager.html",
+      "uid": "Global.ConsoleManager"
+    },
+    {
+      "name": "ConversationManager",
+      "href": "Global.ConversationManager.html",
+      "uid": "Global.ConversationManager"
+    },
+    {
+      "name": "FlavourManager",
+      "href": "Global.FlavourManager.html",
+      "uid": "Global.FlavourManager"
+    },
+    {
+      "name": "GameManager",
+      "href": "Global.GameManager.html",
+      "uid": "Global.GameManager"
+    },
+    {
+      "name": "GameResultManager",
+      "href": "Global.GameResultManager.html",
+      "uid": "Global.GameResultManager"
+    },
+    {
+      "name": "GameSettingsManager",
+      "href": "Global.GameSettingsManager.html",
+      "uid": "Global.GameSettingsManager"
+    },
+    {
+      "name": "LootManager",
+      "href": "Global.LootManager.html",
+      "uid": "Global.LootManager"
+    },
+    {
+      "name": "PickupManager",
+      "href": "Global.PickupManager.html",
+      "uid": "Global.PickupManager"
+    },
+    {
+      "name": "PingManager",
+      "href": "Global.PingManager.html",
+      "uid": "Global.PingManager"
+    },
+    {
+      "name": "QuestManager",
+      "href": "Global.QuestManager.html",
+      "uid": "Global.QuestManager"
+    },
+    {
+      "name": "TimescaleManager",
+      "href": "Global.TimescaleManager.html",
+      "uid": "Global.TimescaleManager"
+    },
+    {
+      "name": "ZoneManager",
+      "href": "Global.ZoneManager.html",
+      "uid": "Global.ZoneManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_NetworkedManagerBase_1_instance",
+      "declaration": "public static T instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_NetworkedManagerBase_1_softInstance",
+      "declaration": "public static T softInstance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_NetworkedManagerBase_1_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_NetworkedManagerBase_1_OnEnable",
+      "declaration": "protected virtual void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_NetworkedManagerBase_1_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopClient()",
+      "id": "Global_NetworkedManagerBase_1_OnStopClient",
+      "declaration": "public override void OnStopClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

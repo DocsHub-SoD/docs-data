@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IOtherPlayersTonedDownLimit",
+  "name": "IOtherPlayersTonedDownLimit",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IOtherPlayersTonedDownLimit",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "maxReduction",
+      "id": "Global_IOtherPlayersTonedDownLimit_maxReduction",
+      "declaration": "ReduceOtherPlayerEffectsStrength maxReduction { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

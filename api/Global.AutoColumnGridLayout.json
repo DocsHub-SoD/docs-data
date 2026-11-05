@@ -1,0 +1,81 @@
+{
+  "uid": "Global.AutoColumnGridLayout",
+  "name": "AutoColumnGridLayout",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AddComponentMenu(\"Layout/Auto Column Grid Layout\")]\n[ExecuteAlways]\npublic class AutoColumnGridLayout : GridLayoutGroup",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "AutoAdjustColumns",
+      "id": "Global_AutoColumnGridLayout_AutoAdjustColumns",
+      "declaration": "public bool AutoAdjustColumns { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MaxColumns",
+      "id": "Global_AutoColumnGridLayout_MaxColumns",
+      "declaration": "public int MaxColumns { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MinColumns",
+      "id": "Global_AutoColumnGridLayout_MinColumns",
+      "declaration": "public int MinColumns { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnDidApplyAnimationProperties()",
+      "id": "Global_AutoColumnGridLayout_OnDidApplyAnimationProperties",
+      "declaration": "protected override void OnDidApplyAnimationProperties()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_AutoColumnGridLayout_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRectTransformDimensionsChange()",
+      "id": "Global_AutoColumnGridLayout_OnRectTransformDimensionsChange",
+      "declaration": "protected override void OnRectTransformDimensionsChange()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnTransformParentChanged()",
+      "id": "Global_AutoColumnGridLayout_OnTransformParentChanged",
+      "declaration": "protected override void OnTransformParentChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateColumnCount()",
+      "id": "Global_AutoColumnGridLayout_UpdateColumnCount",
+      "declaration": "public void UpdateColumnCount()",
+      "summary": "Updates the column count based on the available parent width and cell size.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

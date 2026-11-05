@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewGUI.FieldBuilderCondition",
+  "name": "DewGUI.FieldBuilderCondition",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate bool DewGUI.FieldBuilderCondition(Type type, FieldInfo info)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

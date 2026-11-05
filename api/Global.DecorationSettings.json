@@ -1,0 +1,80 @@
+{
+  "uid": "Global.DecorationSettings",
+  "name": "DecorationSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class DecorationSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "decoDensity",
+      "id": "Global_DecorationSettings_decoDensity",
+      "declaration": "public float decoDensity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decoPositionRandomMag",
+      "id": "Global_DecorationSettings_decoPositionRandomMag",
+      "declaration": "public float decoPositionRandomMag",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decorations",
+      "id": "Global_DecorationSettings_decorations",
+      "declaration": "public GameObject[] decorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decoRotationMax",
+      "id": "Global_DecorationSettings_decoRotationMax",
+      "declaration": "public Vector3 decoRotationMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decoRotationMin",
+      "id": "Global_DecorationSettings_decoRotationMin",
+      "declaration": "public Vector3 decoRotationMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decoScaleMax",
+      "id": "Global_DecorationSettings_decoScaleMax",
+      "declaration": "public Vector3 decoScaleMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decoScaleMin",
+      "id": "Global_DecorationSettings_decoScaleMin",
+      "declaration": "public Vector3 decoScaleMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uniformScale",
+      "id": "Global_DecorationSettings_uniformScale",
+      "declaration": "public bool uniformScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

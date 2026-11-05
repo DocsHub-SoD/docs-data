@@ -1,0 +1,173 @@
+{
+  "uid": "Global.Mon_DreamTeller",
+  "name": "Mon_DreamTeller",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Mon_DreamTeller : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IForceHeroicHealthbar",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "Monster",
+      "href": "Global.Monster.html",
+      "uid": "Global.Monster"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IForceHeroicHealthbar",
+      "href": "Global.IForceHeroicHealthbar.html",
+      "uid": "Global.IForceHeroicHealthbar"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fxExplode",
+      "id": "Global_Mon_DreamTeller_fxExplode",
+      "declaration": "public GameObject fxExplode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showStoryDelay",
+      "id": "Global_Mon_DreamTeller_showStoryDelay",
+      "declaration": "public float showStoryDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_Mon_DreamTeller_canInteractWithMouse",
+      "declaration": "public bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultOwner",
+      "id": "Global_Mon_DreamTeller_defaultOwner",
+      "declaration": "protected override DewPlayer defaultOwner { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_Mon_DreamTeller_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_Mon_DreamTeller_interactPivot",
+      "declaration": "public Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_Mon_DreamTeller_priority",
+      "declaration": "public int priority { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_Mon_DreamTeller_CanInteract_Entity_",
+      "declaration": "public bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Mon_DreamTeller_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteract(Entity, bool)",
+      "id": "Global_Mon_DreamTeller_OnInteract_Entity_System_Boolean_",
+      "declaration": "public void OnInteract(Entity entity, bool alt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "alt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Mon_DreamTeller_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

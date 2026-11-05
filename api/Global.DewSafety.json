@@ -1,0 +1,46 @@
+{
+  "uid": "Global.DewSafety",
+  "name": "DewSafety",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewSafety",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FilterProfanity(string)",
+      "id": "Global_DewSafety_FilterProfanity_System_String_",
+      "declaration": "public static string FilterProfanity(string text)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "FilterProfanityIfEnabled(string)",
+      "id": "Global_DewSafety_FilterProfanityIfEnabled_System_String_",
+      "declaration": "public static string FilterProfanityIfEnabled(string text)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

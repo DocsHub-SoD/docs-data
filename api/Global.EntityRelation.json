@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EntityRelation",
+  "name": "EntityRelation",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum EntityRelation : byte",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

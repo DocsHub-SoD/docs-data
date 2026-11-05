@@ -1,0 +1,69 @@
+{
+  "uid": "Global.CollectablesManager",
+  "name": "CollectablesManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CollectablesManager : ManagerBase<CollectablesManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "CollectablesManager",
+      "href": "Global.CollectablesManager.html",
+      "uid": "Global.CollectablesManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GoBack()",
+      "id": "Global_CollectablesManager_GoBack",
+      "declaration": "public void GoBack()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShowUnlockEverythingMessage()",
+      "id": "Global_CollectablesManager_ShowUnlockEverythingMessage",
+      "declaration": "public void ShowUnlockEverythingMessage()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TransitionToScene(string)",
+      "id": "Global_CollectablesManager_TransitionToScene_System_String_",
+      "declaration": "public void TransitionToScene(string sceneName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sceneName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

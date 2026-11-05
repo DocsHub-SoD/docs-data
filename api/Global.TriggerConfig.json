@@ -1,0 +1,428 @@
+{
+  "uid": "Global.TriggerConfig",
+  "name": "TriggerConfig",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class TriggerConfig",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "alwaysCastImmediately",
+      "id": "Global_TriggerConfig_alwaysCastImmediately",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool alwaysCastImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "appliedStatusEffectRef",
+      "id": "Global_TriggerConfig_appliedStatusEffectRef",
+      "declaration": "[HideIf(\"isActive\", true)]\npublic StatusEffect appliedStatusEffectRef",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canConsumeCastBonus",
+      "id": "Global_TriggerConfig_canConsumeCastBonus",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool canConsumeCastBonus",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canReceiveCooldownReduction",
+      "id": "Global_TriggerConfig_canReceiveCooldownReduction",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[LabelText(\"Can Receive Cooldown Reduction\")]\npublic bool canReceiveCooldownReduction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castByMoveDirectionByDefault",
+      "id": "Global_TriggerConfig_castByMoveDirectionByDefault",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool castByMoveDirectionByDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castByMoveDirectionGamepad",
+      "id": "Global_TriggerConfig_castByMoveDirectionGamepad",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool castByMoveDirectionGamepad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castMethod",
+      "id": "Global_TriggerConfig_castMethod",
+      "declaration": "[ShowIf(\"isActive\", true)]\n[HideLabel]\n[BoxGroup(\"B\", false, false, 0)]\npublic CastMethodData castMethod",
+      "summary": "You must callAbilityTrigger.SyncCastMethodChangesafter modifying this on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castVoice",
+      "id": "Global_TriggerConfig_castVoice",
+      "declaration": "[ShowIf(\"isActive\", true)]\npublic DewAudioClip castVoice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "channel",
+      "id": "Global_TriggerConfig_channel",
+      "declaration": "[HideLabel]\n[ShowIf(\"isActive\", true)]\npublic TriggerChannelData channel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destroyExistingEffect",
+      "id": "Global_TriggerConfig_destroyExistingEffect",
+      "declaration": "[ShowIf(\"@(spawnedInstance is StatusEffect)\", true)]\npublic bool destroyExistingEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectOnCast",
+      "id": "Global_TriggerConfig_effectOnCast",
+      "declaration": "[ShowIf(\"isActive\", true)]\n[LabelText(\"Channel Effect\")]\npublic GameObject effectOnCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endAnim",
+      "id": "Global_TriggerConfig_endAnim",
+      "declaration": "[ShowIf(\"isActive\", true)]\npublic DewAnimationClip endAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "faceForward",
+      "id": "Global_TriggerConfig_faceForward",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[LabelText(\"Face Forward When Cast\")]\n[HideIf(\"@castMethod.type == CastMethodType.None || !isActive\", true)]\npublic bool faceForward",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreAbilityLock",
+      "id": "Global_TriggerConfig_ignoreAbilityLock",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool ignoreAbilityLock",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreAimDirectionGamepad",
+      "id": "Global_TriggerConfig_ignoreAimDirectionGamepad",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool ignoreAimDirectionGamepad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreBlock",
+      "id": "Global_TriggerConfig_ignoreBlock",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[LabelText(\"Ignore Channel Block\")]\n[HideIf(\"@!isActive\", true)]\npublic bool ignoreBlock",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActive",
+      "id": "Global_TriggerConfig_isActive",
+      "declaration": "[VerticalGroup(\"HorizontalC/VerticalA\", 0)]\npublic bool isActive",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lockCastUntilKilled",
+      "id": "Global_TriggerConfig_lockCastUntilKilled",
+      "declaration": "[ToggleLeft]\npublic bool lockCastUntilKilled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lockCooldownUntilKilled",
+      "id": "Global_TriggerConfig_lockCooldownUntilKilled",
+      "declaration": "[ToggleLeft]\npublic bool lockCooldownUntilKilled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "moveTowardsCastDirection",
+      "id": "Global_TriggerConfig_moveTowardsCastDirection",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[ShowIf(\"isActive\", true)]\npublic bool moveTowardsCastDirection",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideRotation",
+      "id": "Global_TriggerConfig_overrideRotation",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[ShowIf(\"@isActive && faceForward\", true)]\npublic bool overrideRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideRotationDuration",
+      "id": "Global_TriggerConfig_overrideRotationDuration",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[LabelText(\"Duration\")]\n[ShowIf(\"@overrideRotation && isActive\", true)]\npublic float overrideRotationDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "postDelay",
+      "id": "Global_TriggerConfig_postDelay",
+      "declaration": "[ShowIf(\"isActive\", true)]\npublic float postDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "postponeBasicCommand",
+      "id": "Global_TriggerConfig_postponeBasicCommand",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[LabelText(\"Continue Basic Command Afterwards\")]\n[ShowIf(\"isActive\", true)]\npublic bool postponeBasicCommand",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "predictionSettings",
+      "id": "Global_TriggerConfig_predictionSettings",
+      "declaration": "[ShowIf(\"isActive\", true)]\npublic AbilityTrigger.PredictionSettings predictionSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selfValidator",
+      "id": "Global_TriggerConfig_selfValidator",
+      "declaration": "[HideLabel]\n[BoxGroup(\"A\", false, false, 0)]\n[ShowIf(\"isActive\", true)]\npublic AbilitySelfValidator selfValidator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "setFillAmount",
+      "id": "Global_TriggerConfig_setFillAmount",
+      "declaration": "[ShowIf(\"IsStatusEffectNonTargeted\", true)]\npublic bool setFillAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedInstanceRef",
+      "id": "Global_TriggerConfig_spawnedInstanceRef",
+      "declaration": "[InfoBox(\"StatusEffect will be applied to the caster.\", \"IsStatusEffectNonTargeted\")]\n[ShowIf(\"isActive\", true)]\npublic AssetRef<AbilityInstance> spawnedInstanceRef",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startAnim",
+      "id": "Global_TriggerConfig_startAnim",
+      "declaration": "[FormerlySerializedAs(\"animation\")]\n[ShowIf(\"isActive\", true)]\npublic DewAnimationClip startAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startCharges",
+      "id": "Global_TriggerConfig_startCharges",
+      "declaration": "[HorizontalGroup(\"HorizontalB\", 0, 0, 0, 0)]\n[LabelText(\"Start\")]\n[LabelWidth(55)]\n[SerializeField]\n[JsonProperty]\npublic int startCharges",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetValidator",
+      "id": "Global_TriggerConfig_targetValidator",
+      "declaration": "[ShowIf(\"isActive\", true)]\n[HideLabel]\npublic AbilityTargetValidator targetValidator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "triggerIcon",
+      "id": "Global_TriggerConfig_triggerIcon",
+      "declaration": "[PreviewField(ObjectFieldAlignment.Left, Height = 40)]\n[HideLabel]\n[HorizontalGroup(\"HorizontalC\", 40, 0, 0, 0)]\npublic Sprite triggerIcon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unstoppableWhileCasting",
+      "id": "Global_TriggerConfig_unstoppableWhileCasting",
+      "declaration": "[BoxGroup(\"A\", false, false, 0)]\n[ToggleLeft]\n[HideIf(\"@!isActive\", true)]\npublic bool unstoppableWhileCasting",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_TriggerConfig_victim",
+      "declaration": "[ShowIf(\"@(spawnedInstance is StatusEffect) && (castMethod.type == CastMethodType.Target)\", true)]\npublic TriggerConfig.StatusEffectVictimType victim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "addedCharges",
+      "id": "Global_TriggerConfig_addedCharges",
+      "declaration": "public int addedCharges { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "appliedStatusEffect",
+      "id": "Global_TriggerConfig_appliedStatusEffect",
+      "declaration": "public StatusEffect appliedStatusEffect { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownTime",
+      "id": "Global_TriggerConfig_cooldownTime",
+      "declaration": "public float cooldownTime { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectiveRange",
+      "id": "Global_TriggerConfig_effectiveRange",
+      "declaration": "public float effectiveRange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaCost",
+      "id": "Global_TriggerConfig_manaCost",
+      "declaration": "public float manaCost { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxCharges",
+      "id": "Global_TriggerConfig_maxCharges",
+      "declaration": "public int maxCharges { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minimumDelay",
+      "id": "Global_TriggerConfig_minimumDelay",
+      "declaration": "public float minimumDelay { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedInstance",
+      "id": "Global_TriggerConfig_spawnedInstance",
+      "declaration": "public AbilityInstance spawnedInstance { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CheckRange(CastInfo)",
+      "id": "Global_TriggerConfig_CheckRange_CastInfo_",
+      "declaration": "public bool CheckRange(CastInfo info)",
+      "summary": "Returns true if provided info can be casted immediately.Returns false if provided info needs further movement to get in range.You may call this regardless of cast method type,But note that CastMethodType.Point will always return true if isClamping is true.",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CheckRange(Entity, Entity)",
+      "id": "Global_TriggerConfig_CheckRange_Entity_Entity_",
+      "declaration": "public bool CheckRange(Entity caster, Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "caster",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetMoveToCastDestination(CastInfo)",
+      "id": "Global_TriggerConfig_GetMoveToCastDestination_CastInfo_",
+      "declaration": "public Vector3 GetMoveToCastDestination(CastInfo info)",
+      "summary": "Get move-to-cast destination.",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetMoveToCastRequiredDistance(CastInfo)",
+      "id": "Global_TriggerConfig_GetMoveToCastRequiredDistance_CastInfo_",
+      "declaration": "public float GetMoveToCastRequiredDistance(CastInfo info)",
+      "summary": "Get move-to-cast required distance on XZ plane (agent position).",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "IsStatusEffectNonTargeted()",
+      "id": "Global_TriggerConfig_IsStatusEffectNonTargeted",
+      "declaration": "public bool IsStatusEffectNonTargeted()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

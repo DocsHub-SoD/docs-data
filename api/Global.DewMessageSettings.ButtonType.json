@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewMessageSettings.ButtonType",
+  "name": "DewMessageSettings.ButtonType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum DewMessageSettings.ButtonType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

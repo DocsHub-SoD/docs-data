@@ -1,0 +1,48 @@
+{
+  "uid": "Global.OnScreenTimerHandle",
+  "name": "OnScreenTimerHandle",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class OnScreenTimerHandle",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "color",
+      "id": "Global_OnScreenTimerHandle_color",
+      "declaration": "public Color color",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fillAmountGetter",
+      "id": "Global_OnScreenTimerHandle_fillAmountGetter",
+      "declaration": "public Func<float> fillAmountGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawText",
+      "id": "Global_OnScreenTimerHandle_rawText",
+      "declaration": "public string rawText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawTextGetter",
+      "id": "Global_OnScreenTimerHandle_rawTextGetter",
+      "declaration": "public Func<string> rawTextGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

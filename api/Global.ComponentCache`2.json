@@ -1,0 +1,45 @@
+{
+  "uid": "Global.ComponentCache`2",
+  "name": "ComponentCache<TKey, TValue>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ComponentCache<TKey, TValue> where TKey : Object where TValue : class",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clear()",
+      "id": "Global_ComponentCache_2_Clear",
+      "declaration": "public void Clear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetOrAdd(TKey, Func<TValue>)",
+      "id": "Global_ComponentCache_2_GetOrAdd__0_System_Func__1__",
+      "declaration": "public TValue GetOrAdd(TKey key, Func<TValue> valueFactory)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "TKey",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "valueFactory",
+          "type": "System.Func<TResult><TValue>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "TValue"
+    }
+  ],
+  "events": []
+}

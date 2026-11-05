@@ -1,0 +1,41 @@
+{
+  "uid": "Global.DewEula",
+  "name": "DewEula",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewEula",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "CurrentEulaSetKey",
+      "id": "Global_DewEula_CurrentEulaSetKey",
+      "declaration": "public const string CurrentEulaSetKey = \"EULA20251210\"",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "needsToAgree",
+      "id": "Global_DewEula_needsToAgree",
+      "declaration": "public static bool needsToAgree",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AgreeEula()",
+      "id": "Global_DewEula_AgreeEula",
+      "declaration": "public static UniTask AgreeEula()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    }
+  ],
+  "events": []
+}

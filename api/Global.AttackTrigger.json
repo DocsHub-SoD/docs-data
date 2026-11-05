@@ -1,0 +1,360 @@
+{
+  "uid": "Global.AttackTrigger",
+  "name": "AttackTrigger",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AttackTrigger : AbilityTrigger, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityTrigger",
+      "href": "Global.AbilityTrigger.html",
+      "uid": "Global.AbilityTrigger"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowNonTargetedCast",
+      "id": "Global_AttackTrigger_allowNonTargetedCast",
+      "declaration": "public bool allowNonTargetedCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "factor",
+      "id": "Global_AttackTrigger_factor",
+      "declaration": "public ScalingValue factor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_AttackTrigger_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CallAttackCompleteBeforePrepareRoutines(EventInfoCast)",
+      "id": "Global_AttackTrigger_CallAttackCompleteBeforePrepareRoutines_EventInfoCast_",
+      "declaration": "public void CallAttackCompleteBeforePrepareRoutines(EventInfoCast cast)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "cast",
+          "type": "EventInfoCast",
+          "type_uid": "Global.EventInfoCast",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CallAttackCompleteRoutines(AbilityInstance, int, CastInfo)",
+      "id": "Global_AttackTrigger_CallAttackCompleteRoutines_AbilityInstance_System_Int32_CastInfo_",
+      "declaration": "public void CallAttackCompleteRoutines(AbilityInstance newInstance, int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newInstance",
+          "type": "AbilityInstance",
+          "type_uid": "Global.AbilityInstance",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetAnimationSpeed()",
+      "id": "Global_AttackTrigger_GetAnimationSpeed",
+      "declaration": "public override float GetAnimationSpeed()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetChannelDurationMultiplier()",
+      "id": "Global_AttackTrigger_GetChannelDurationMultiplier",
+      "declaration": "public override float GetChannelDurationMultiplier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetCooldownTimeMultiplier(int)",
+      "id": "Global_AttackTrigger_GetCooldownTimeMultiplier_System_Int32_",
+      "declaration": "public override float GetCooldownTimeMultiplier(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetPostDelayDurationMultiplier()",
+      "id": "Global_AttackTrigger_GetPostDelayDurationMultiplier",
+      "declaration": "public override float GetPostDelayDurationMultiplier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "OnCastCancelSetCooldownTime(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnCastCancelSetCooldownTime_System_Int32_CastInfo_",
+      "declaration": "protected override void OnCastCancelSetCooldownTime(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastComplete(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnCastComplete_System_Int32_CastInfo_",
+      "declaration": "public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "AbilityInstance"
+    },
+    {
+      "name": "OnCastCompleteBeforePrepare(EventInfoCast)",
+      "id": "Global_AttackTrigger_OnCastCompleteBeforePrepare_EventInfoCast_",
+      "declaration": "public override void OnCastCompleteBeforePrepare(EventInfoCast cast)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "cast",
+          "type": "EventInfoCast",
+          "type_uid": "Global.EventInfoCast",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSetCharge(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnCastCompleteSetCharge_System_Int32_CastInfo_",
+      "declaration": "public override void OnCastCompleteSetCharge(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSetCooldownTime(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnCastCompleteSetCooldownTime_System_Int32_CastInfo_",
+      "declaration": "public override void OnCastCompleteSetCooldownTime(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSetMinimumDelay(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnCastCompleteSetMinimumDelay_System_Int32_CastInfo_",
+      "declaration": "public override void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastStart(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnCastStart_System_Int32_CastInfo_",
+      "declaration": "public override void OnCastStart(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRotateForward(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnRotateForward_System_Int32_CastInfo_",
+      "declaration": "protected override void OnRotateForward(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartChannel(int, CastInfo)",
+      "id": "Global_AttackTrigger_OnStartChannel_System_Int32_CastInfo_",
+      "declaration": "protected override void OnStartChannel(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ProcessRange(float)",
+      "id": "Global_AttackTrigger_ProcessRange_System_Single_",
+      "declaration": "public override float ProcessRange(float original)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "original",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "UpdateConfigIndexForCrit()",
+      "id": "Global_AttackTrigger_UpdateConfigIndexForCrit",
+      "declaration": "public void UpdateConfigIndexForCrit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

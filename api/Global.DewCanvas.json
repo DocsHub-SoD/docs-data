@@ -1,0 +1,57 @@
+{
+  "uid": "Global.DewCanvas",
+  "name": "DewCanvas",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(400)]\npublic class DewCanvas : LogicBehaviour, ILogicUpdate, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_DewCanvas_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_DewCanvas_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_DewCanvas_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

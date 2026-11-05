@@ -1,0 +1,56 @@
+{
+  "uid": "Global.EntityGroundMarker",
+  "name": "EntityGroundMarker",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityGroundMarker : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "allyObject",
+      "id": "Global_EntityGroundMarker_allyObject",
+      "declaration": "public GameObject allyObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemyObject",
+      "id": "Global_EntityGroundMarker_enemyObject",
+      "declaration": "public GameObject enemyObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "neutralObject",
+      "id": "Global_EntityGroundMarker_neutralObject",
+      "declaration": "public GameObject neutralObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "offset",
+      "id": "Global_EntityGroundMarker_offset",
+      "declaration": "public Vector3 offset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ownObject",
+      "id": "Global_EntityGroundMarker_ownObject",
+      "declaration": "public GameObject ownObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

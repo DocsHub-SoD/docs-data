@@ -1,0 +1,110 @@
+{
+  "uid": "Global.LogicUpdateManager",
+  "name": "LogicUpdateManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LogicUpdateManager : ManagerBase<LogicUpdateManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "LogicUpdateManager",
+      "href": "Global.LogicUpdateManager.html",
+      "uid": "Global.LogicUpdateManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "DefaultExecutionPriority",
+      "id": "Global_LogicUpdateManager_DefaultExecutionPriority",
+      "declaration": "public const int DefaultExecutionPriority = 0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "logicDeltaTime",
+      "id": "Global_LogicUpdateManager_logicDeltaTime",
+      "declaration": "public static float logicDeltaTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MinLogicUpdateInterval",
+      "id": "Global_LogicUpdateManager_MinLogicUpdateInterval",
+      "declaration": "public const float MinLogicUpdateInterval = 0.033333335",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_LogicUpdateManager_shouldRegisterUpdates",
+      "declaration": "public override bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_LogicUpdateManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Register(ILogicUpdate)",
+      "id": "Global_LogicUpdateManager_Register_ILogicUpdate_",
+      "declaration": "public static void Register(ILogicUpdate lobj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobj",
+          "type": "ILogicUpdate",
+          "type_uid": "Global.ILogicUpdate",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Unregister(ILogicUpdate)",
+      "id": "Global_LogicUpdateManager_Unregister_ILogicUpdate_",
+      "declaration": "public static void Unregister(ILogicUpdate lobj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobj",
+          "type": "ILogicUpdate",
+          "type_uid": "Global.ILogicUpdate",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

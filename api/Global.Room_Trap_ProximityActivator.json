@@ -1,0 +1,89 @@
+{
+  "uid": "Global.Room_Trap_ProximityActivator",
+  "name": "Room_Trap_ProximityActivator",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_Trap_ProximityActivator : Room_Trap_ActivatorBase, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Room_Trap_ActivatorBase",
+      "href": "Global.Room_Trap_ActivatorBase.html",
+      "uid": "Global.Room_Trap_ActivatorBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activationCooldown",
+      "id": "Global_Room_Trap_ProximityActivator_activationCooldown",
+      "declaration": "public float activationCooldown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActivatedByHeroes",
+      "id": "Global_Room_Trap_ProximityActivator_isActivatedByHeroes",
+      "declaration": "public bool isActivatedByHeroes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActivatedByMonster",
+      "id": "Global_Room_Trap_ProximityActivator_isActivatedByMonster",
+      "declaration": "public bool isActivatedByMonster",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "range",
+      "id": "Global_Room_Trap_ProximityActivator_range",
+      "declaration": "public DewCollider range",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_Room_Trap_ProximityActivator_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_Room_Trap_ProximityActivator_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

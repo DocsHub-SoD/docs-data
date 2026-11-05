@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EntityVisual.EntityDeathBehavior",
+  "name": "EntityVisual.EntityDeathBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum EntityVisual.EntityDeathBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

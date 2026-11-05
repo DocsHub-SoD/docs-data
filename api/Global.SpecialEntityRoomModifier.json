@@ -1,0 +1,125 @@
+{
+  "uid": "Global.SpecialEntityRoomModifier",
+  "name": "SpecialEntityRoomModifier",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class SpecialEntityRoomModifier : RoomModifierBase, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "RoomModifierBase",
+      "href": "Global.RoomModifierBase.html",
+      "uid": "Global.RoomModifierBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "dontSpawnIfHunted",
+      "id": "Global_SpecialEntityRoomModifier_dontSpawnIfHunted",
+      "declaration": "public bool dontSpawnIfHunted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedDreamDust",
+      "id": "Global_SpecialEntityRoomModifier_spawnedDreamDust",
+      "declaration": "public Vector2Int spawnedDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedGold",
+      "id": "Global_SpecialEntityRoomModifier_spawnedGold",
+      "declaration": "public Vector2Int spawnedGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedStardust",
+      "id": "Global_SpecialEntityRoomModifier_spawnedStardust",
+      "declaration": "public Vector2Int spawnedStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetEntityType()",
+      "id": "Global_SpecialEntityRoomModifier_GetEntityType",
+      "declaration": "protected abstract Type GetEntityType()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Type"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_SpecialEntityRoomModifier_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_SpecialEntityRoomModifier_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpawnNpc(Vector3)",
+      "id": "Global_SpecialEntityRoomModifier_SpawnNpc_UnityEngine_Vector3_",
+      "declaration": "protected virtual Entity SpawnNpc(Vector3 pos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    }
+  ],
+  "events": []
+}

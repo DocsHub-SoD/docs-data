@@ -1,0 +1,470 @@
+{
+  "uid": "Global.DewSave",
+  "name": "DewSave",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewSave",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "items",
+      "id": "Global_DewSave_items",
+      "declaration": "public static DewItemsData items",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSaveEnded",
+      "id": "Global_DewSave_onSaveEnded",
+      "declaration": "public static SafeAction onSaveEnded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSaveStarted",
+      "id": "Global_DewSave_onSaveStarted",
+      "declaration": "public static SafeAction onSaveStarted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSettingsChanged",
+      "id": "Global_DewSave_onSettingsChanged",
+      "declaration": "public static SafeAction onSettingsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "platformSettings",
+      "id": "Global_DewSave_platformSettings",
+      "declaration": "public static DewPlatformSettings platformSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileContinue",
+      "id": "Global_DewSave_profileContinue",
+      "declaration": "public static DewProfileContinue profileContinue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileMain",
+      "id": "Global_DewSave_profileMain",
+      "declaration": "public static DewProfile profileMain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileStats",
+      "id": "Global_DewSave_profileStats",
+      "declaration": "public static DewProfileStats profileStats",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "profileContinuePath",
+      "id": "Global_DewSave_profileContinuePath",
+      "declaration": "public static string profileContinuePath { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileMainPath",
+      "id": "Global_DewSave_profileMainPath",
+      "declaration": "public static string profileMainPath { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileStatsPath",
+      "id": "Global_DewSave_profileStatsPath",
+      "declaration": "public static string profileStatsPath { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SavePrefix",
+      "id": "Global_DewSave_SavePrefix",
+      "declaration": "public static string SavePrefix { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddMissingServerGeneratedItemsToProfile(DewProfile)",
+      "id": "Global_DewSave_AddMissingServerGeneratedItemsToProfile_DewProfile_",
+      "declaration": "public static void AddMissingServerGeneratedItemsToProfile(DewProfile p)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "p",
+          "type": "DewProfile",
+          "type_uid": "Global.DewProfile",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddServerGeneratedItem(DecryptedItemData)",
+      "id": "Global_DewSave_AddServerGeneratedItem_DecryptedItemData_",
+      "declaration": "public static void AddServerGeneratedItem(DecryptedItemData item)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "DecryptedItemData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyCultureSettings()",
+      "id": "Global_DewSave_ApplyCultureSettings",
+      "declaration": "public static void ApplyCultureSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ApplySettings()",
+      "id": "Global_DewSave_ApplySettings",
+      "declaration": "[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]\npublic static void ApplySettings()",
+      "summary": "Apply current profile settings / platform settings to the game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearItemsFromItemStorage()",
+      "id": "Global_DewSave_ClearItemsFromItemStorage",
+      "declaration": "public static void ClearItemsFromItemStorage()",
+      "summary": "Clear all items from item-storage",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ConsumeGameResult(DewGameResult, ref LastGamePlayReward)",
+      "id": "Global_DewSave_ConsumeGameResult_DewGameResult_LastGamePlayReward__",
+      "declaration": "public static void ConsumeGameResult(DewGameResult result, ref LastGamePlayReward rewardSummary)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "result",
+          "type": "DewGameResult",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        },
+        {
+          "name": "rewardSummary",
+          "type": "LastGamePlayReward",
+          "type_uid": "Global.LastGamePlayReward",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ConvertProfile(string)",
+      "id": "Global_DewSave_ConvertProfile_System_String_",
+      "declaration": "public static void ConvertProfile(string path)",
+      "summary": "Create a new converted profile of different edition to make it compatible with current version.Previous profile will be deleted.",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CreateProfile(string)",
+      "id": "Global_DewSave_CreateProfile_System_String_",
+      "declaration": "public static void CreateProfile(string name)",
+      "summary": "Create and use new profile.",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CreateSubProfilesIfNonExistent(string)",
+      "id": "Global_DewSave_CreateSubProfilesIfNonExistent_System_String_",
+      "declaration": "public static void CreateSubProfilesIfNonExistent(string mainPath)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "mainPath",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CreateZipWithJsonFiles(string, string)",
+      "id": "Global_DewSave_CreateZipWithJsonFiles_System_String_System_String_",
+      "declaration": "public static void CreateZipWithJsonFiles(string sourceDirectory, string zipFilePath)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sourceDirectory",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "zipFilePath",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DeleteProfile(string)",
+      "id": "Global_DewSave_DeleteProfile_System_String_",
+      "declaration": "public static void DeleteProfile(string path)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Exists(string)",
+      "id": "Global_DewSave_Exists_System_String_",
+      "declaration": "public static bool Exists(string path)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetNormalProfiles()",
+      "id": "Global_DewSave_GetNormalProfiles",
+      "declaration": "public static List<DewProfileItem> GetNormalProfiles()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.List<T><DewProfileItem>"
+    },
+    {
+      "name": "GetPlatformSettingsFileName()",
+      "id": "Global_DewSave_GetPlatformSettingsFileName",
+      "declaration": "public static string GetPlatformSettingsFileName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetProfileMainFileName(string)",
+      "id": "Global_DewSave_GetProfileMainFileName_System_String_",
+      "declaration": "public static string GetProfileMainFileName(string guid)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetProfiles()",
+      "id": "Global_DewSave_GetProfiles",
+      "declaration": "public static List<DewProfileItem> GetProfiles()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.List<T><DewProfileItem>"
+    },
+    {
+      "name": "LoadPlatformSettings()",
+      "id": "Global_DewSave_LoadPlatformSettings",
+      "declaration": "public static bool LoadPlatformSettings()",
+      "summary": "Loads platform settings. Returns true iif the operation succeeds.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LoadProfile()",
+      "id": "Global_DewSave_LoadProfile",
+      "declaration": "public static bool LoadProfile()",
+      "summary": "Load saved user profile of appropriate index. Can load transient profile. Returns true if succeeds.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LoadProfile(string)",
+      "id": "Global_DewSave_LoadProfile_System_String_",
+      "declaration": "public static bool LoadProfile(string path)",
+      "summary": "Loads saved user profile. Returns true if succeeds.",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ResetPlatformSettings()",
+      "id": "Global_DewSave_ResetPlatformSettings",
+      "declaration": "public static void ResetPlatformSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SaveItems()",
+      "id": "Global_DewSave_SaveItems",
+      "declaration": "public static void SaveItems()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SavePlatformSettings()",
+      "id": "Global_DewSave_SavePlatformSettings",
+      "declaration": "public static void SavePlatformSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SaveProfileAll(bool)",
+      "id": "Global_DewSave_SaveProfileAll_System_Boolean_",
+      "declaration": "public static void SaveProfileAll(bool immediate = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "immediate",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SaveProfileContinue(bool)",
+      "id": "Global_DewSave_SaveProfileContinue_System_Boolean_",
+      "declaration": "public static void SaveProfileContinue(bool immediate = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "immediate",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SaveProfileMain(bool)",
+      "id": "Global_DewSave_SaveProfileMain_System_Boolean_",
+      "declaration": "public static void SaveProfileMain(bool immediate = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "immediate",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SaveProfileStats(bool)",
+      "id": "Global_DewSave_SaveProfileStats_System_Boolean_",
+      "declaration": "public static void SaveProfileStats(bool immediate = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "immediate",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShadowQuality(QualityOff4Levels)",
+      "id": "Global_DewSave_SetShadowQuality_QualityOff4Levels_",
+      "declaration": "public static void SetShadowQuality(QualityOff4Levels q)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "q",
+          "type": "QualityOff4Levels",
+          "type_uid": "Global.QualityOff4Levels",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowSaveLoadErrorAndExit()",
+      "id": "Global_DewSave_ShowSaveLoadErrorAndExit",
+      "declaration": "public static void ShowSaveLoadErrorAndExit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncAchievements()",
+      "id": "Global_DewSave_SyncAchievements",
+      "declaration": "public static void SyncAchievements()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

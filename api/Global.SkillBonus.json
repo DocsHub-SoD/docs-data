@@ -1,0 +1,74 @@
+{
+  "uid": "Global.SkillBonus",
+  "name": "SkillBonus",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class SkillBonus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ignoreReceiveCooldownReductionFlag",
+      "id": "Global_SkillBonus_ignoreReceiveCooldownReductionFlag",
+      "declaration": "public bool ignoreReceiveCooldownReductionFlag",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "addedCharge",
+      "id": "Global_SkillBonus_addedCharge",
+      "declaration": "public int addedCharge { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownMultiplier",
+      "id": "Global_SkillBonus_cooldownMultiplier",
+      "declaration": "public float cooldownMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownOffset",
+      "id": "Global_SkillBonus_cooldownOffset",
+      "declaration": "public float cooldownOffset { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parent",
+      "id": "Global_SkillBonus_parent",
+      "declaration": "public SkillTrigger parent { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_SkillBonus_Clone",
+      "declaration": "public SkillBonus Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "SkillBonus"
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_SkillBonus_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

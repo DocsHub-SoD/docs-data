@@ -1,0 +1,31 @@
+{
+  "uid": "Global.ICollidableWithProjectile",
+  "name": "ICollidableWithProjectile",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICollidableWithProjectile",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnProjectileCollision(CollidableHit)",
+      "id": "Global_ICollidableWithProjectile_OnProjectileCollision_CollidableHit_",
+      "declaration": "void OnProjectileCollision(CollidableHit hit)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hit",
+          "type": "CollidableHit",
+          "type_uid": "Global.CollidableHit",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

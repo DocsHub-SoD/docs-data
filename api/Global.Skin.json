@@ -1,0 +1,120 @@
+{
+  "uid": "Global.Skin",
+  "name": "Skin",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Name)]\npublic class Skin : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "category",
+      "id": "Global_Skin_category",
+      "declaration": "public string category",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "generatedFromServer",
+      "id": "Global_Skin_generatedFromServer",
+      "declaration": "public bool generatedFromServer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewFovOffset",
+      "id": "Global_Skin_previewFovOffset",
+      "declaration": "[LabelText(\"Field Of View Offset\")]\npublic float previewFovOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewImage",
+      "id": "Global_Skin_previewImage",
+      "declaration": "[Title(\"Preview\", null, TitleAlignments.Left, true, true)]\n[PreviewField(60)]\npublic Sprite previewImage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewRotationOffset",
+      "id": "Global_Skin_previewRotationOffset",
+      "declaration": "[LabelText(\"Rotation Offset\")]\npublic Vector3 previewRotationOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rarity",
+      "id": "Global_Skin_rarity",
+      "declaration": "public SkinRarity rarity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "requiredLevel",
+      "id": "Global_Skin_requiredLevel",
+      "declaration": "public int requiredLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillVisuals",
+      "id": "Global_Skin_skillVisuals",
+      "declaration": "public SkillVisualOverrideItem[] skillVisuals",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "stardustPrice",
+      "id": "Global_Skin_stardustPrice",
+      "declaration": "public int stardustPrice { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetDefaultSkin(string)",
+      "id": "Global_Skin_GetDefaultSkin_System_String_",
+      "declaration": "public static string GetDefaultSkin(string heroType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "IsValidFor(string)",
+      "id": "Global_Skin_IsValidFor_System_String_",
+      "declaration": "public bool IsValidFor(string heroType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

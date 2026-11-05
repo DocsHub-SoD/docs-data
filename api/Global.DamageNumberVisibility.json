@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DamageNumberVisibility",
+  "name": "DamageNumberVisibility",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DamageNumberVisibility",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

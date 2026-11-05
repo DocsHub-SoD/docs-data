@@ -1,0 +1,32 @@
+{
+  "uid": "Global.ModifierServerData",
+  "name": "ModifierServerData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ModifierServerData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "didCreateInstance",
+      "id": "Global_ModifierServerData_didCreateInstance",
+      "declaration": "public bool didCreateInstance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistentData",
+      "id": "Global_ModifierServerData_persistentData",
+      "declaration": "public Dictionary<string, string> persistentData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

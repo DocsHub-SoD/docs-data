@@ -1,0 +1,217 @@
+{
+  "uid": "Global.ConversationManager",
+  "name": "ConversationManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ConversationManager : NetworkedManagerBase<ConversationManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "ConversationManager",
+      "href": "Global.ConversationManager.html",
+      "uid": "Global.ConversationManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnConversationLineRequestedCompletion",
+      "id": "Global_ConversationManager_ClientEvent_OnConversationLineRequestedCompletion",
+      "declaration": "public SafeAction<uint> ClientEvent_OnConversationLineRequestedCompletion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnConversationShowLineAndRequestUserInput",
+      "id": "Global_ConversationManager_ClientEvent_OnConversationShowLineAndRequestUserInput",
+      "declaration": "public SafeAction<uint, ShownConversation> ClientEvent_OnConversationShowLineAndRequestUserInput",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnStartConversation",
+      "id": "Global_ConversationManager_ClientEvent_OnStartConversation",
+      "declaration": "public SafeAction<uint> ClientEvent_OnStartConversation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnStopConversation",
+      "id": "Global_ConversationManager_ClientEvent_OnStopConversation",
+      "declaration": "public SafeAction<uint> ClientEvent_OnStopConversation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "convSettings",
+      "id": "Global_ConversationManager_convSettings",
+      "declaration": "public readonly Dictionary<uint, DewConversationSettings> convSettings",
+      "summary": "Currently ongoing conversations. Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "hasOngoingLocalConversation",
+      "id": "Global_ConversationManager_hasOngoingLocalConversation",
+      "declaration": "public bool hasOngoingLocalConversation { get; }",
+      "summary": "Does local has ongoing conversation with advance authority?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ongoingLocalConversation",
+      "id": "Global_ConversationManager_ongoingLocalConversation",
+      "declaration": "public DewConversationSettings ongoingLocalConversation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CmdDoUserInputOnConversation(uint, int, int, NetworkConnectionToClient)",
+      "id": "Global_ConversationManager_CmdDoUserInputOnConversation_System_UInt32_System_Int32_System_Int32_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdDoUserInputOnConversation(uint id, int lineIndexFrom, int userInput, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "lineIndexFrom",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "userInput",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdRequestLineCompletion(uint, int, NetworkConnectionToClient)",
+      "id": "Global_ConversationManager_CmdRequestLineCompletion_System_UInt32_System_Int32_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdRequestLineCompletion(uint id, int lineIndex, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "lineIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_ConversationManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_ConversationManager_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartConversation(DewConversationSettings)",
+      "id": "Global_ConversationManager_StartConversation_DewConversationSettings_",
+      "declaration": "public uint StartConversation(DewConversationSettings s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "DewConversationSettings",
+          "type_uid": "Global.DewConversationSettings",
+          "description": ""
+        }
+      ],
+      "returns": "uint"
+    },
+    {
+      "name": "StartConversationRoutine(DewConversationSettings)",
+      "id": "Global_ConversationManager_StartConversationRoutine_DewConversationSettings_",
+      "declaration": "public IEnumerator StartConversationRoutine(DewConversationSettings s)",
+      "summary": "A coroutine that ends when the conversation ends.",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "DewConversationSettings",
+          "type_uid": "Global.DewConversationSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "StopConversation(uint)",
+      "id": "Global_ConversationManager_StopConversation_System_UInt32_",
+      "declaration": "public void StopConversation(uint id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

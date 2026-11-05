@@ -1,0 +1,40 @@
+{
+  "uid": "Global.AnimationClipWithSpeed",
+  "name": "AnimationClipWithSpeed",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\npublic struct AnimationClipWithSpeed",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "clip",
+      "id": "Global_AnimationClipWithSpeed_clip",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\npublic AnimationClip clip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_AnimationClipWithSpeed_Default",
+      "declaration": "public static AnimationClipWithSpeed Default",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "speed",
+      "id": "Global_AnimationClipWithSpeed_speed",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\npublic float speed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

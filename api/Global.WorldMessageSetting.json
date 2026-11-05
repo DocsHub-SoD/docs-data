@@ -1,0 +1,56 @@
+{
+  "uid": "Global.WorldMessageSetting",
+  "name": "WorldMessageSetting",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class WorldMessageSetting",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "color",
+      "id": "Global_WorldMessageSetting_color",
+      "declaration": "public Color color",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "popOffset",
+      "id": "Global_WorldMessageSetting_popOffset",
+      "declaration": "public Vector2? popOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawText",
+      "id": "Global_WorldMessageSetting_rawText",
+      "declaration": "public string rawText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldPos",
+      "id": "Global_WorldMessageSetting_worldPos",
+      "declaration": "public Vector3 worldPos",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldPosGetter",
+      "id": "Global_WorldMessageSetting_worldPosGetter",
+      "declaration": "[NonSerialized]\npublic Func<Vector3> worldPosGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

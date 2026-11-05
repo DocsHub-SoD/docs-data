@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewGUI.FieldBuilder",
+  "name": "DewGUI.FieldBuilder",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate FieldBuildResult DewGUI.FieldBuilder(Type type, FieldInfo info, Transform parent)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

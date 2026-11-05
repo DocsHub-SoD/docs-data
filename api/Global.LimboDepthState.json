@@ -1,0 +1,15 @@
+{
+  "uid": "Global.LimboDepthState",
+  "name": "LimboDepthState",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum LimboDepthState",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

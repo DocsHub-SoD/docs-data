@@ -1,0 +1,72 @@
+{
+  "uid": "Global.DewProfileStats.ItemData",
+  "name": "DewProfileStats.ItemData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileStats.ItemData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "buyCount",
+      "id": "Global_DewProfileStats_ItemData_buyCount",
+      "declaration": "public long buyCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleCount",
+      "id": "Global_DewProfileStats_ItemData_dismantleCount",
+      "declaration": "public long dismantleCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loses",
+      "id": "Global_DewProfileStats_ItemData_loses",
+      "declaration": "public long loses",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playCount",
+      "id": "Global_DewProfileStats_ItemData_playCount",
+      "declaration": "public long playCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sellCount",
+      "id": "Global_DewProfileStats_ItemData_sellCount",
+      "declaration": "public long sellCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "upgradeCount",
+      "id": "Global_DewProfileStats_ItemData_upgradeCount",
+      "declaration": "public long upgradeCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wins",
+      "id": "Global_DewProfileStats_ItemData_wins",
+      "declaration": "public long wins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

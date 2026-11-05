@@ -1,0 +1,195 @@
+{
+  "uid": "Global.StandardProjectile",
+  "name": "StandardProjectile",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class StandardProjectile : Projectile, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "Projectile",
+      "href": "Global.Projectile.html",
+      "uid": "Global.Projectile"
+    },
+    {
+      "name": "AttackProjectile",
+      "href": "Global.AttackProjectile.html",
+      "uid": "Global.AttackProjectile"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "_acceleration",
+      "id": "Global_StandardProjectile__acceleration",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float _acceleration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_initialSpeed",
+      "id": "Global_StandardProjectile__initialSpeed",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float _initialSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_targetSpeed",
+      "id": "Global_StandardProjectile__targetSpeed",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic float _targetSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableRandomCurve",
+      "id": "Global_StandardProjectile_enableRandomCurve",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[Title(\"Random Curve\", null, TitleAlignments.Left, true, true)]\npublic bool enableRandomCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ensurePositiveY",
+      "id": "Global_StandardProjectile_ensurePositiveY",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[ShowIf(\"enableRandomCurve\", true)]\npublic bool ensurePositiveY",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "randomCurveMagnitude",
+      "id": "Global_StandardProjectile_randomCurveMagnitude",
+      "declaration": "[BoxGroup(\"Projectile Settings\", true, false, 0)]\n[LabelText(\"Random Magnitude\")]\n[ShowIf(\"enableRandomCurve\", true)]\npublic float randomCurveMagnitude",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "use3DVelocity",
+      "id": "Global_StandardProjectile_use3DVelocity",
+      "declaration": "[Title(\"Standard Projectile\", null, TitleAlignments.Left, true, true)]\n[LabelText(\"Use 3D Velocity\")]\n[BoxGroup(\"Projectile Settings\", true, false, 0)]\npublic bool use3DVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "acceleration",
+      "id": "Global_StandardProjectile_acceleration",
+      "declaration": "public float acceleration { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "initialSpeed",
+      "id": "Global_StandardProjectile_initialSpeed",
+      "declaration": "public float initialSpeed { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedPosition",
+      "id": "Global_StandardProjectile_normalizedPosition",
+      "declaration": "public float normalizedPosition { get; }",
+      "summary": "Represents progress of this projectile's trajectory. This value starts from 0 to 1 and never decreases.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetSpeed",
+      "id": "Global_StandardProjectile_targetSpeed",
+      "declaration": "public float targetSpeed { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveFrameUpdate()",
+      "id": "Global_StandardProjectile_ActiveFrameUpdate",
+      "declaration": "protected override void ActiveFrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CheckForCompletion()",
+      "id": "Global_StandardProjectile_CheckForCompletion",
+      "declaration": "protected override bool CheckForCompletion()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_StandardProjectile_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_StandardProjectile_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PositionSolver(float)",
+      "id": "Global_StandardProjectile_PositionSolver_System_Single_",
+      "declaration": "protected override Vector3 PositionSolver(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    }
+  ],
+  "events": []
+}

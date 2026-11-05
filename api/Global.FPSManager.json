@@ -1,0 +1,84 @@
+{
+  "uid": "Global.FPSManager",
+  "name": "FPSManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FPSManager : ManagerBase<FPSManager>, ILogicUpdate, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "FPSManager",
+      "href": "Global.FPSManager.html",
+      "uid": "Global.FPSManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_FPSManager_shouldRegisterUpdates",
+      "declaration": "public override bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnDisable()",
+      "id": "Global_FPSManager_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_FPSManager_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_FPSManager_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateFPSLimit()",
+      "id": "Global_FPSManager_UpdateFPSLimit",
+      "declaration": "public void UpdateFPSLimit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

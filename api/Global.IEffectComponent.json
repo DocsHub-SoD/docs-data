@@ -1,0 +1,41 @@
+{
+  "uid": "Global.IEffectComponent",
+  "name": "IEffectComponent",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEffectComponent",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_IEffectComponent_isPlaying",
+      "declaration": "bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_IEffectComponent_Play",
+      "declaration": "void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_IEffectComponent_Stop",
+      "declaration": "void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

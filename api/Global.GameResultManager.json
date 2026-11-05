@@ -1,0 +1,126 @@
+{
+  "uid": "Global.GameResultManager",
+  "name": "GameResultManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameResultManager : NetworkedManagerBase<GameResultManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "GameResultManager",
+      "href": "Global.GameResultManager.html",
+      "uid": "Global.GameResultManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnGameConcluded",
+      "id": "Global_GameResultManager_ClientEvent_OnGameConcluded",
+      "declaration": "public SafeAction<DewGameResult> ClientEvent_OnGameConcluded",
+      "summary": "Called everywhere when server wraps up the game and results are sent to clients.This is not used for conceded (exited out) games.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "current",
+      "id": "Global_GameResultManager_current",
+      "declaration": "public DewGameResult current",
+      "summary": "Currently registered game result. The server gives this out to clients periodically, and when the game concludes.Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onUpdateGameResult",
+      "id": "Global_GameResultManager_onUpdateGameResult",
+      "declaration": "public SafeAction<DewGameResult> onUpdateGameResult",
+      "summary": "Called on server when updating game result mid-game or when the game has concluded.You can use this to modify stats or add custom ones to the result, before it gets sent to clients.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "tracked",
+      "id": "Global_GameResultManager_tracked",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic DewGameResult tracked { get; }",
+      "summary": "Only available on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnStartClient()",
+      "id": "Global_GameResultManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_GameResultManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartTrackingPlayer(DewPlayer)",
+      "id": "Global_GameResultManager_StartTrackingPlayer_DewPlayer_",
+      "declaration": "public void StartTrackingPlayer(DewPlayer p)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "p",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UpdateAndSendMidGameResultToClients()",
+      "id": "Global_GameResultManager_UpdateAndSendMidGameResultToClients",
+      "declaration": "public void UpdateAndSendMidGameResultToClients()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WrapUp(ResultType)",
+      "id": "Global_GameResultManager_WrapUp_DewGameResult_ResultType_",
+      "declaration": "public void WrapUp(DewGameResult.ResultType type)",
+      "summary": "Ends tracking and shows statistics to everyone.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DewGameResult.ResultType",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.INotPlayableOnTop",
+  "name": "INotPlayableOnTop",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface INotPlayableOnTop",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,132 @@
+{
+  "uid": "Global.CustomLogicBehavior",
+  "name": "CustomLogicBehavior",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CustomLogicBehavior : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "onDestroy",
+      "id": "Global_CustomLogicBehavior_onDestroy",
+      "declaration": "public Action onDestroy",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onDisable",
+      "id": "Global_CustomLogicBehavior_onDisable",
+      "declaration": "public Action onDisable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEnable",
+      "id": "Global_CustomLogicBehavior_onEnable",
+      "declaration": "public Action onEnable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFrameUpdate",
+      "id": "Global_CustomLogicBehavior_onFrameUpdate",
+      "declaration": "public Action onFrameUpdate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onLogicUpdate",
+      "id": "Global_CustomLogicBehavior_onLogicUpdate",
+      "declaration": "public Action onLogicUpdate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onStart",
+      "id": "Global_CustomLogicBehavior_onStart",
+      "declaration": "public Action onStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_CustomLogicBehavior_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_CustomLogicBehavior_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_CustomLogicBehavior_OnDestroy",
+      "declaration": "protected virtual void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_CustomLogicBehavior_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_CustomLogicBehavior_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_CustomLogicBehavior_Start",
+      "declaration": "protected virtual void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

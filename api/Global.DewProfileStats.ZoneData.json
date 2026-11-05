@@ -1,0 +1,88 @@
+{
+  "uid": "Global.DewProfileStats.ZoneData",
+  "name": "DewProfileStats.ZoneData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileStats.ZoneData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "deaths",
+      "id": "Global_DewProfileStats_ZoneData_deaths",
+      "declaration": "public long deaths",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroicBossKills",
+      "id": "Global_DewProfileStats_ZoneData_heroicBossKills",
+      "declaration": "public long heroicBossKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterKills",
+      "id": "Global_DewProfileStats_ZoneData_hunterKills",
+      "declaration": "public long hunterKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "kills",
+      "id": "Global_DewProfileStats_ZoneData_kills",
+      "declaration": "public long kills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossKills",
+      "id": "Global_DewProfileStats_ZoneData_miniBossKills",
+      "declaration": "public long miniBossKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playTimeMinutes",
+      "id": "Global_DewProfileStats_ZoneData_playTimeMinutes",
+      "declaration": "public double playTimeMinutes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visited",
+      "id": "Global_DewProfileStats_ZoneData_visited",
+      "declaration": "public long visited",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedHunterLocations",
+      "id": "Global_DewProfileStats_ZoneData_visitedHunterLocations",
+      "declaration": "public long visitedHunterLocations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedLocations",
+      "id": "Global_DewProfileStats_ZoneData_visitedLocations",
+      "declaration": "public long visitedLocations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

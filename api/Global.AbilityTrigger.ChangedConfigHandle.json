@@ -1,0 +1,73 @@
+{
+  "uid": "Global.AbilityTrigger.ChangedConfigHandle",
+  "name": "AbilityTrigger.ChangedConfigHandle",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AbilityTrigger.ChangedConfigHandle",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "configIndex",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_configIndex",
+      "declaration": "public int configIndex { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_duration",
+      "declaration": "public float duration { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActive",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_isActive",
+      "declaration": "public bool isActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previousConfigIndex",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_previousConfigIndex",
+      "declaration": "public int previousConfigIndex { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "remainingTime",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_remainingTime",
+      "declaration": "public float remainingTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "setFillAmount",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_setFillAmount",
+      "declaration": "public bool setFillAmount { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Stop()",
+      "id": "Global_AbilityTrigger_ChangedConfigHandle_Stop",
+      "declaration": "public void Stop()",
+      "summary": "Stop this config change. This will not call onExpire!",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

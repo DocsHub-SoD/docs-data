@@ -1,0 +1,306 @@
+{
+  "uid": "Global.RoomSection",
+  "name": "RoomSection",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(RoomSavedObject))]\n[RequireComponent(typeof(Section_Monsters))]\n[RequireComponent(typeof(Section_Props))]\npublic class RoomSection : LogicBehaviour, ILogicUpdate, IPlayerPathablePoint",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "IPlayerPathablePoint",
+      "href": "Global.IPlayerPathablePoint.html",
+      "uid": "Global.IPlayerPathablePoint"
+    }
+  ],
+  "fields": [
+    {
+      "name": "BanSpotsDistance",
+      "id": "Global_RoomSection_BanSpotsDistance",
+      "declaration": "public const float BanSpotsDistance = 3.25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "clearRoomOnEnterFirstTime",
+      "id": "Global_RoomSection_clearRoomOnEnterFirstTime",
+      "declaration": "[ToggleLeft]\npublic bool clearRoomOnEnterFirstTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEnterFirstTime",
+      "id": "Global_RoomSection_onEnterFirstTime",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent onEnterFirstTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntitiesChanged",
+      "id": "Global_RoomSection_onEntitiesChanged",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent onEntitiesChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntityEnter",
+      "id": "Global_RoomSection_onEntityEnter",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent<Entity> onEntityEnter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntityExit",
+      "id": "Global_RoomSection_onEntityExit",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent<Entity> onEntityExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEveryonePresent",
+      "id": "Global_RoomSection_onEveryonePresent",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent onEveryonePresent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vectors",
+      "id": "Global_RoomSection_vectors",
+      "declaration": "public Vector2[] vectors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "waitForAggroedEnemiesToDie",
+      "id": "Global_RoomSection_waitForAggroedEnemiesToDie",
+      "declaration": "[ToggleLeft]\n[ShowIf(\"clearRoomOnEnterFirstTime\", true)]\npublic bool waitForAggroedEnemiesToDie",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "area",
+      "id": "Global_RoomSection_area",
+      "declaration": "public float area { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entities",
+      "id": "Global_RoomSection_entities",
+      "declaration": "public IReadOnlyList<Entity> entities { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsters",
+      "id": "Global_RoomSection_monsters",
+      "declaration": "public Section_Monsters monsters { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nodes",
+      "id": "Global_RoomSection_nodes",
+      "declaration": "public IReadOnlyList<Vector3> nodes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfHeroes",
+      "id": "Global_RoomSection_numOfHeroes",
+      "declaration": "public int numOfHeroes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pathablePivot",
+      "id": "Global_RoomSection_pathablePivot",
+      "declaration": "public Vector3 pathablePivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "props",
+      "id": "Global_RoomSection_props",
+      "declaration": "public Section_Props props { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetAnyRandomNode()",
+      "id": "Global_RoomSection_GetAnyRandomNode",
+      "declaration": "public Vector3 GetAnyRandomNode()",
+      "summary": "Get any random node.",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetGoodWanderPosition(Vector3)",
+      "id": "Global_RoomSection_GetGoodWanderPosition_UnityEngine_Vector3_",
+      "declaration": "public Vector3 GetGoodWanderPosition(Vector3 from)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "from",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetNavDistanceTo(RoomSection)",
+      "id": "Global_RoomSection_GetNavDistanceTo_RoomSection_",
+      "declaration": "public float GetNavDistanceTo(RoomSection sec)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sec",
+          "type": "RoomSection",
+          "type_uid": "Global.RoomSection",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetRandomLocalPosition(DewRandom)",
+      "id": "Global_RoomSection_GetRandomLocalPosition_DewRandom_",
+      "declaration": "public Vector3 GetRandomLocalPosition(DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetRandomWorldPosition(DewRandom)",
+      "id": "Global_RoomSection_GetRandomWorldPosition_DewRandom_",
+      "declaration": "public Vector3 GetRandomWorldPosition(DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_RoomSection_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_RoomSection_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_RoomSection_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OverlapPoint(Vector2)",
+      "id": "Global_RoomSection_OverlapPoint_UnityEngine_Vector2_",
+      "declaration": "public bool OverlapPoint(Vector2 point)",
+      "summary": "Available only on runtime.",
+      "parameters": [
+        {
+          "name": "point",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ResetUsedNodeIndices()",
+      "id": "Global_RoomSection_ResetUsedNodeIndices",
+      "declaration": "public void ResetUsedNodeIndices()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TryGetGoodNodePosition(out Vector3, DewRandom)",
+      "id": "Global_RoomSection_TryGetGoodNodePosition_UnityEngine_Vector3__DewRandom_",
+      "declaration": "public bool TryGetGoodNodePosition(out Vector3 position, DewRandom random = null)",
+      "summary": "Try to pick a node that hasn't been used that's not too close to previously used node.Returns false if suboptimal position is returned.",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

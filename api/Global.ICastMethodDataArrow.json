@@ -1,0 +1,32 @@
+{
+  "uid": "Global.ICastMethodDataArrow",
+  "name": "ICastMethodDataArrow",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICastMethodDataArrow",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "length",
+      "id": "Global_ICastMethodDataArrow_length",
+      "declaration": "float length { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "width",
+      "id": "Global_ICastMethodDataArrow_width",
+      "declaration": "float width { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

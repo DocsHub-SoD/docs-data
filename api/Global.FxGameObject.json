@@ -1,0 +1,73 @@
+{
+  "uid": "Global.FxGameObject",
+  "name": "FxGameObject",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DisallowMultipleComponent]\npublic class FxGameObject : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableWhenStopped",
+      "id": "Global_FxGameObject_disableWhenStopped",
+      "declaration": "public bool disableWhenStopped",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnInit()",
+      "id": "Global_FxGameObject_OnInit",
+      "declaration": "protected override void OnInit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FxGameObject_Play",
+      "declaration": "public override void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxGameObject_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

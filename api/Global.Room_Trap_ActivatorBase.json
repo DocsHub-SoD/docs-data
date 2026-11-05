@@ -1,0 +1,79 @@
+{
+  "uid": "Global.Room_Trap_ActivatorBase",
+  "name": "Room_Trap_ActivatorBase",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class Room_Trap_ActivatorBase : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Room_Trap_CyclicActivator",
+      "href": "Global.Room_Trap_CyclicActivator.html",
+      "uid": "Global.Room_Trap_CyclicActivator"
+    },
+    {
+      "name": "Room_Trap_ProximityActivator",
+      "href": "Global.Room_Trap_ProximityActivator.html",
+      "uid": "Global.Room_Trap_ProximityActivator"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activatedObjects",
+      "id": "Global_Room_Trap_ActivatorBase_activatedObjects",
+      "declaration": "public GameObject[] activatedObjects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "durationOfToggledTraps",
+      "id": "Global_Room_Trap_ActivatorBase_durationOfToggledTraps",
+      "declaration": "[HideIf(\"toggleTraps\", true)]\npublic float durationOfToggledTraps",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxActivateEffect",
+      "id": "Global_Room_Trap_ActivatorBase_fxActivateEffect",
+      "declaration": "public GameObject fxActivateEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "toggleTraps",
+      "id": "Global_Room_Trap_ActivatorBase_toggleTraps",
+      "declaration": "public bool toggleTraps",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Activate()",
+      "id": "Global_Room_Trap_ActivatorBase_Activate",
+      "declaration": "public void Activate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

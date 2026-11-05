@@ -1,0 +1,40 @@
+{
+  "uid": "Global.DewProfile.PurchaseData",
+  "name": "DewProfile.PurchaseData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.PurchaseData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "item",
+      "id": "Global_DewProfile_PurchaseData_item",
+      "declaration": "public string item",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardust",
+      "id": "Global_DewProfile_PurchaseData_stardust",
+      "declaration": "public int stardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "timestamp",
+      "id": "Global_DewProfile_PurchaseData_timestamp",
+      "declaration": "public long timestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

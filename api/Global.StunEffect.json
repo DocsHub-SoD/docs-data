@@ -1,0 +1,30 @@
+{
+  "uid": "Global.StunEffect",
+  "name": "StunEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class StunEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_StunEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

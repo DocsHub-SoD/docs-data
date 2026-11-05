@@ -1,0 +1,210 @@
+{
+  "uid": "Global.View",
+  "name": "View",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\n[RequireComponent(typeof(CanvasGroup))]\n[RequireComponent(typeof(Canvas))]\npublic class View : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "blockRaycastWhenShown",
+      "id": "Global_View_blockRaycastWhenShown",
+      "declaration": "[ToggleLeft]\npublic bool blockRaycastWhenShown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableGameObjectWhenHidden",
+      "id": "Global_View_disableGameObjectWhenHidden",
+      "declaration": "[ToggleLeft]\npublic bool disableGameObjectWhenHidden",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disablesInGamePlayingInput",
+      "id": "Global_View_disablesInGamePlayingInput",
+      "declaration": "[ToggleLeft]\npublic bool disablesInGamePlayingInput",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fadeTime",
+      "id": "Global_View_fadeTime",
+      "declaration": "public float fadeTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hideEffect",
+      "id": "Global_View_hideEffect",
+      "declaration": "public GameObject hideEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreOn",
+      "id": "Global_View_ignoreOn",
+      "declaration": "[ShowIf(\"@showBehavior == View.ShowBehavior.UseState\", true)]\npublic List<string> ignoreOn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instances",
+      "id": "Global_View_instances",
+      "declaration": "public static List<View> instances",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactableWhenShown",
+      "id": "Global_View_interactableWhenShown",
+      "declaration": "[ToggleLeft]\npublic bool interactableWhenShown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onHide",
+      "id": "Global_View_onHide",
+      "declaration": "public UnityEvent onHide",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onShow",
+      "id": "Global_View_onShow",
+      "declaration": "public UnityEvent onShow",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showBehavior",
+      "id": "Global_View_showBehavior",
+      "declaration": "public View.ShowBehavior showBehavior",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showEffect",
+      "id": "Global_View_showEffect",
+      "declaration": "public GameObject showEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showOn",
+      "id": "Global_View_showOn",
+      "declaration": "[ShowIf(\"@showBehavior == View.ShowBehavior.UseState\", true)]\npublic List<string> showOn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isShowing",
+      "id": "Global_View_isShowing",
+      "declaration": "public bool isShowing { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_View_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Hide()",
+      "id": "Global_View_Hide",
+      "declaration": "public void Hide()",
+      "summary": "Hide this view. ShowBehaviour must be set to Manually.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_View_OnDestroy",
+      "declaration": "protected virtual void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_View_OnDisable",
+      "declaration": "protected virtual void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_View_OnEnable",
+      "declaration": "protected virtual void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHide()",
+      "id": "Global_View_OnHide",
+      "declaration": "protected virtual void OnHide()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnShow()",
+      "id": "Global_View_OnShow",
+      "declaration": "protected virtual void OnShow()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Show()",
+      "id": "Global_View_Show",
+      "declaration": "public void Show()",
+      "summary": "Show this view. ShowBehaviour must be set to Manually.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_View_Start",
+      "declaration": "protected virtual void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Update()",
+      "id": "Global_View_Update",
+      "declaration": "protected virtual void Update()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

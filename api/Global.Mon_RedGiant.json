@@ -1,0 +1,123 @@
+{
+  "uid": "Global.Mon_RedGiant",
+  "name": "Mon_RedGiant",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Mon_RedGiant : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "Monster",
+      "href": "Global.Monster.html",
+      "uid": "Global.Monster"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "deathEffects",
+      "id": "Global_Mon_RedGiant_deathEffects",
+      "declaration": "public GameObject deathEffects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dpsText",
+      "id": "Global_Mon_RedGiant_dpsText",
+      "declaration": "public TextMeshPro dpsText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_Mon_RedGiant_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AIUpdate(ref EntityAIContext)",
+      "id": "Global_Mon_RedGiant_AIUpdate_EntityAIContext__",
+      "declaration": "protected override void AIUpdate(ref EntityAIContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EntityAIContext",
+          "type_uid": "Global.EntityAIContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDeath(EventInfoKill)",
+      "id": "Global_Mon_RedGiant_OnDeath_EventInfoKill_",
+      "declaration": "protected override void OnDeath(EventInfoKill info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoKill",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Mon_RedGiant_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

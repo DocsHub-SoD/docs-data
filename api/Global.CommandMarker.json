@@ -1,0 +1,39 @@
+{
+  "uid": "Global.CommandMarker",
+  "name": "CommandMarker",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CommandMarker : EffectAutoDestroy",
+  "inheritance": [
+    {
+      "name": "EffectAutoDestroy",
+      "href": "Global.EffectAutoDestroy.html",
+      "uid": "Global.EffectAutoDestroy"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "followTransform",
+      "id": "Global_CommandMarker_followTransform",
+      "declaration": "public Transform followTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Update()",
+      "id": "Global_CommandMarker_Update",
+      "declaration": "protected override void Update()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

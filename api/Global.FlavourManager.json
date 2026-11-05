@@ -1,0 +1,236 @@
+{
+  "uid": "Global.FlavourManager",
+  "name": "FlavourManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FlavourManager : NetworkedManagerBase<FlavourManager>, ILogicUpdate, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "FlavourManager",
+      "href": "Global.FlavourManager.html",
+      "uid": "Global.FlavourManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "chanceByRatio",
+      "id": "Global_FlavourManager_chanceByRatio",
+      "declaration": "public AnimationCurve chanceByRatio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageRatioRange",
+      "id": "Global_FlavourManager_damageRatioRange",
+      "declaration": "public Vector2 damageRatioRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "deviateAngle",
+      "id": "Global_FlavourManager_deviateAngle",
+      "declaration": "public float deviateAngle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableOnLesser",
+      "id": "Global_FlavourManager_disableOnLesser",
+      "declaration": "public bool disableOnLesser",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "everyoneVicinityRadius",
+      "id": "Global_FlavourManager_everyoneVicinityRadius",
+      "declaration": "public float everyoneVicinityRadius",
+      "summary": "Everyone needs to be in this range to the monster for hit stop to occur.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hitStopDealDamage",
+      "id": "Global_FlavourManager_hitStopDealDamage",
+      "declaration": "[Title(\"Damage Hit Time Stop\", null, TitleAlignments.Left, true, true)]\npublic GameObject hitStopDealDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hitTimeStopCooldownTime",
+      "id": "Global_FlavourManager_hitTimeStopCooldownTime",
+      "declaration": "public float hitTimeStopCooldownTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreAssists",
+      "id": "Global_FlavourManager_ignoreAssists",
+      "declaration": "[Title(\"Kill Feedback\", null, TitleAlignments.Left, true, true)]\npublic bool ignoreAssists",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killFeedback",
+      "id": "Global_FlavourManager_killFeedback",
+      "declaration": "public GameObject killFeedback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killFeedbackBoss",
+      "id": "Global_FlavourManager_killFeedbackBoss",
+      "declaration": "public GameObject killFeedbackBoss",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killFeedbackLesser",
+      "id": "Global_FlavourManager_killFeedbackLesser",
+      "declaration": "public GameObject killFeedbackLesser",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killFeedbackMiniBoss",
+      "id": "Global_FlavourManager_killFeedbackMiniBoss",
+      "declaration": "public GameObject killFeedbackMiniBoss",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killingBlowDamageMultiplier",
+      "id": "Global_FlavourManager_killingBlowDamageMultiplier",
+      "declaration": "public float killingBlowDamageMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minDamageAmount",
+      "id": "Global_FlavourManager_minDamageAmount",
+      "declaration": "public float minDamageAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onStunDurationMultiplier",
+      "id": "Global_FlavourManager_onStunDurationMultiplier",
+      "declaration": "public float onStunDurationMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "screenKillEffects",
+      "id": "Global_FlavourManager_screenKillEffects",
+      "declaration": "public FxVolume[] screenKillEffects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shakeDamageRatioRange",
+      "id": "Global_FlavourManager_shakeDamageRatioRange",
+      "declaration": "[Title(\"Damage Shake\", null, TitleAlignments.Left, true, true)]\npublic Vector2 shakeDamageRatioRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shakeDuration",
+      "id": "Global_FlavourManager_shakeDuration",
+      "declaration": "public AnimationCurve shakeDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shakeIntensity",
+      "id": "Global_FlavourManager_shakeIntensity",
+      "declaration": "public AnimationCurve shakeIntensity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shakeInterval",
+      "id": "Global_FlavourManager_shakeInterval",
+      "declaration": "public float shakeInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_FlavourManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_FlavourManager_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_FlavourManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_FlavourManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

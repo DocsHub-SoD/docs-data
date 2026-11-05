@@ -1,0 +1,24 @@
+{
+  "uid": "Global.EventInfoStopMove",
+  "name": "EventInfoStopMove",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoStopMove",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entity",
+      "id": "Global_EventInfoStopMove_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

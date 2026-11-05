@@ -1,0 +1,32 @@
+{
+  "uid": "Global.FxSelectiveQuality",
+  "name": "FxSelectiveQuality",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxSelectiveQuality : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "includeChildren",
+      "id": "Global_FxSelectiveQuality_includeChildren",
+      "declaration": "public bool includeChildren",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "requiredQuality",
+      "id": "Global_FxSelectiveQuality_requiredQuality",
+      "declaration": "public Quality3Levels requiredQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

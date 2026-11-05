@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IHideHealthbar",
+  "name": "IHideHealthbar",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IHideHealthbar",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

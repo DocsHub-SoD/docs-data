@@ -1,0 +1,24 @@
+{
+  "uid": "Global.PlayLobby_RandomAppearance",
+  "name": "PlayLobby_RandomAppearance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PlayLobby_RandomAppearance : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "appearChance",
+      "id": "Global_PlayLobby_RandomAppearance_appearChance",
+      "declaration": "public float appearChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,40 @@
+{
+  "uid": "Global.OpenURLSettings",
+  "name": "OpenURLSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class OpenURLSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "allowSteamOverlay",
+      "id": "Global_OpenURLSettings_allowSteamOverlay",
+      "declaration": "public bool allowSteamOverlay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSteamOverlayModal",
+      "id": "Global_OpenURLSettings_isSteamOverlayModal",
+      "declaration": "public bool isSteamOverlayModal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showConfirmation",
+      "id": "Global_OpenURLSettings_showConfirmation",
+      "declaration": "public bool showConfirmation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

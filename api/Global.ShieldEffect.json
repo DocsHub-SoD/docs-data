@@ -1,0 +1,83 @@
+{
+  "uid": "Global.ShieldEffect",
+  "name": "ShieldEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ShieldEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onAmountModified",
+      "id": "Global_ShieldEffect_onAmountModified",
+      "declaration": "public Action<float, float> onAmountModified",
+      "summary": "Called when the amount of this shield is modified by any means. In code, by damage, etc.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onDamageNegated",
+      "id": "Global_ShieldEffect_onDamageNegated",
+      "declaration": "public SafeAction<EventInfoDamageNegatedByShield> onDamageNegated",
+      "summary": "Called when this shield negates a damage. Partially or completely.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "amount",
+      "id": "Global_ShieldEffect_amount",
+      "declaration": "public float amount { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mask",
+      "id": "Global_ShieldEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddAmount(float, float, bool)",
+      "id": "Global_ShieldEffect_AddAmount_System_Single_System_Single_System_Boolean_",
+      "declaration": "public void AddAmount(float originalAmount, float totalMax = Infinity, bool processTotalMax = true)",
+      "summary": "This will process, add the amount to the effect, and invoke relevant effects.",
+      "parameters": [
+        {
+          "name": "originalAmount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "totalMax",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "processTotalMax",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

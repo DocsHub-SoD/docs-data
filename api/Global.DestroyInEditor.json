@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DestroyInEditor",
+  "name": "DestroyInEditor",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class DestroyInEditor : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

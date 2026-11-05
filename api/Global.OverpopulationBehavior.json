@@ -1,0 +1,15 @@
+{
+  "uid": "Global.OverpopulationBehavior",
+  "name": "OverpopulationBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum OverpopulationBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.IPingableChoiceItem",
+  "name": "IPingableChoiceItem",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IPingableChoiceItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "choiceIndex",
+      "id": "Global_IPingableChoiceItem_choiceIndex",
+      "declaration": "int choiceIndex { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shrine",
+      "id": "Global_IPingableChoiceItem_shrine",
+      "declaration": "Object shrine { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

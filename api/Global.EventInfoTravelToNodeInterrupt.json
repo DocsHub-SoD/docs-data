@@ -1,0 +1,40 @@
+{
+  "uid": "Global.EventInfoTravelToNodeInterrupt",
+  "name": "EventInfoTravelToNodeInterrupt",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoTravelToNodeInterrupt",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "from",
+      "id": "Global_EventInfoTravelToNodeInterrupt_from",
+      "declaration": "public int from",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "newZone",
+      "id": "Global_EventInfoTravelToNodeInterrupt_newZone",
+      "declaration": "public Zone newZone",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "to",
+      "id": "Global_EventInfoTravelToNodeInterrupt_to",
+      "declaration": "public int to",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

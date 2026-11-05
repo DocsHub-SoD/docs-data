@@ -1,0 +1,110 @@
+{
+  "uid": "Global.FxRepeatedEffect",
+  "name": "FxRepeatedEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(500)]\npublic class FxRepeatedEffect : LogicBehaviour, ILogicUpdate, IEffectComponent, IAttachableToEntity",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IAttachableToEntity",
+      "href": "Global.IAttachableToEntity.html",
+      "uid": "Global.IAttachableToEntity"
+    }
+  ],
+  "fields": [
+    {
+      "name": "interval",
+      "id": "Global_FxRepeatedEffect_interval",
+      "declaration": "public float interval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playNew",
+      "id": "Global_FxRepeatedEffect_playNew",
+      "declaration": "public bool playNew",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxRepeatedEffect_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_FxRepeatedEffect_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_FxRepeatedEffect_OnAttachToEntity_Entity_",
+      "declaration": "public void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FxRepeatedEffect_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxRepeatedEffect_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.GenericTransformSync.SyncMode",
+  "name": "GenericTransformSync.SyncMode",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum GenericTransformSync.SyncMode",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,73 @@
+{
+  "uid": "Global.RoomRifts",
+  "name": "RoomRifts",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RoomRifts : RoomComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "openedSidetrackRifts",
+      "id": "Global_RoomRifts_openedSidetrackRifts",
+      "declaration": "public List<string> openedSidetrackRifts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CreateSidetrackRift(Rift_Sidetrack)",
+      "id": "Global_RoomRifts_CreateSidetrackRift_Rift_Sidetrack_",
+      "declaration": "public void CreateSidetrackRift(Rift_Sidetrack prefab)",
+      "summary": "Create a sidetrack rift on adequate position. This can fail if there's no position to spawn the new rift.",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "Rift_Sidetrack",
+          "type_uid": "Global.Rift_Sidetrack",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStartServer()",
+      "id": "Global_RoomRifts_OnRoomStartServer",
+      "declaration": "public override void OnRoomStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OpenRifts()",
+      "id": "Global_RoomRifts_OpenRifts",
+      "declaration": "public void OpenRifts()",
+      "summary": "Open room exit rift.Can also spawn sidetrack rifts if combat node.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

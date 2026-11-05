@@ -1,0 +1,370 @@
+{
+  "uid": "Global.ScalingValue",
+  "name": "ScalingValue",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct ScalingValue",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "addedHpFactor",
+      "id": "Global_ScalingValue_addedHpFactor",
+      "declaration": "public float addedHpFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "adFactor",
+      "id": "Global_ScalingValue_adFactor",
+      "declaration": "public float adFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "apFactor",
+      "id": "Global_ScalingValue_apFactor",
+      "declaration": "public float apFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armorFactor",
+      "id": "Global_ScalingValue_armorFactor",
+      "declaration": "public float armorFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "baseValue",
+      "id": "Global_ScalingValue_baseValue",
+      "declaration": "public float baseValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critPercentageFactor",
+      "id": "Global_ScalingValue_critPercentageFactor",
+      "declaration": "public float critPercentageFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GemDefaultPerLevelMultiplier",
+      "id": "Global_ScalingValue_GemDefaultPerLevelMultiplier",
+      "declaration": "public const float GemDefaultPerLevelMultiplier = 1.01",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "leveling",
+      "id": "Global_ScalingValue_leveling",
+      "declaration": "public LevelScaling leveling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "levelOverride",
+      "id": "Global_ScalingValue_levelOverride",
+      "declaration": "public static int? levelOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lvlFactor",
+      "id": "Global_ScalingValue_lvlFactor",
+      "declaration": "public float lvlFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scalingMultiplier",
+      "id": "Global_ScalingValue_scalingMultiplier",
+      "declaration": "public float scalingMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SkillDefaultPerLevelMultiplier",
+      "id": "Global_ScalingValue_SkillDefaultPerLevelMultiplier",
+      "declaration": "public const float SkillDefaultPerLevelMultiplier = 1.25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "valueString",
+      "id": "Global_ScalingValue_valueString",
+      "declaration": "[JsonProperty]\npublic string valueString { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "EditorParse(string, ref float, ref float, ref float, ref float, ref float, ref float, ref float)",
+      "id": "Global_ScalingValue_EditorParse_System_String_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__",
+      "declaration": "public static void EditorParse(string input, ref float baseVal, ref float ad, ref float ap, ref float lvl, ref float arm, ref float ahp, ref float critp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "baseVal",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ad",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ap",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "lvl",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "arm",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ahp",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "critp",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EditorToString(float, float, float, float, float, float, float)",
+      "id": "Global_ScalingValue_EditorToString_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public static string EditorToString(float baseVal, float ad, float ap, float lvl, float arm, float ahp, float critp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "baseVal",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ad",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ap",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "lvl",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "arm",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ahp",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "critp",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetAddedScalingMultiplierPerLevel()",
+      "id": "Global_ScalingValue_GetAddedScalingMultiplierPerLevel",
+      "declaration": "public float GetAddedScalingMultiplierPerLevel()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetScalingMultiplier(int)",
+      "id": "Global_ScalingValue_GetScalingMultiplier_System_Int32_",
+      "declaration": "public float GetScalingMultiplier(int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetValue(int, Entity)",
+      "id": "Global_ScalingValue_GetValue_System_Int32_Entity_",
+      "declaration": "public float GetValue(int level, Entity self)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetValue(int, float, float, float, float, float)",
+      "id": "Global_ScalingValue_GetValue_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public float GetValue(int level, float attackDamage, float abilityPower, float armor, float addedHp, float critChance)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attackDamage",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "abilityPower",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "armor",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "addedHp",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "critChance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Lerp(ScalingValue, ScalingValue, float)",
+      "id": "Global_ScalingValue_Lerp_ScalingValue_ScalingValue_System_Single_",
+      "declaration": "public static ScalingValue Lerp(ScalingValue a, ScalingValue b, float t)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "t",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "ScalingValue"
+    },
+    {
+      "name": "OnAfterDeserialize()",
+      "id": "Global_ScalingValue_OnAfterDeserialize",
+      "declaration": "public void OnAfterDeserialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnBeforeSerialize()",
+      "id": "Global_ScalingValue_OnBeforeSerialize",
+      "declaration": "public void OnBeforeSerialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_ScalingValue_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

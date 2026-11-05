@@ -1,0 +1,15 @@
+{
+  "uid": "Global.FxAttachToEntity.PositionType",
+  "name": "FxAttachToEntity.PositionType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum FxAttachToEntity.PositionType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

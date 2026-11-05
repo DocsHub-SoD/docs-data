@@ -1,0 +1,94 @@
+{
+  "uid": "Global.DewMath",
+  "name": "DewMath",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewMath",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Lerp(Vector2, float)",
+      "id": "Global_DewMath_Lerp_UnityEngine_Vector2_System_Single_",
+      "declaration": "public static float Lerp(this Vector2 vec, float t)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "vec",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "t",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "MultiplyPercentageBonuses(float, float)",
+      "id": "Global_DewMath_MultiplyPercentageBonuses_System_Single_System_Single_",
+      "declaration": "public static float MultiplyPercentageBonuses(float a, float b)",
+      "summary": "Multiply percentage bonuses.This(50, 50) = 125. (1.5 * 1.5 = 2.25)This(100, 100) = 300. (2 * 2 = 4)This(-50, 50) = -25. (0.5 * 1.5 = 0.75)",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "RandomRange(Vector2)",
+      "id": "Global_DewMath_RandomRange_UnityEngine_Vector2_",
+      "declaration": "public static float RandomRange(this Vector2 vec)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "vec",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "RandomRoundToInt(float, DewRandom)",
+      "id": "Global_DewMath_RandomRoundToInt_System_Single_DewRandom_",
+      "declaration": "public static int RandomRoundToInt(float value, DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

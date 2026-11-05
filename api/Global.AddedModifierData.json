@@ -1,0 +1,48 @@
+{
+  "uid": "Global.AddedModifierData",
+  "name": "AddedModifierData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AddedModifierData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "clientData",
+      "id": "Global_AddedModifierData_clientData",
+      "declaration": "public string clientData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isForceRevealed",
+      "id": "Global_AddedModifierData_isForceRevealed",
+      "declaration": "public bool isForceRevealed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "revertOnStepEnd",
+      "id": "Global_AddedModifierData_revertOnStepEnd",
+      "declaration": "public bool revertOnStepEnd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_AddedModifierData_type",
+      "declaration": "public string type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

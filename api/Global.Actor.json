@@ -1,0 +1,2239 @@
+{
+  "uid": "Global.Actor",
+  "name": "Actor",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[SelectionBase]\n[DewResourceLink(ResourceLinkBy.Type)]\npublic class Actor : DewNetworkBehaviour, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "AbilityTrigger",
+      "href": "Global.AbilityTrigger.html",
+      "uid": "Global.AbilityTrigger"
+    },
+    {
+      "name": "Artifact",
+      "href": "Global.Artifact.html",
+      "uid": "Global.Artifact"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "GameEffect",
+      "href": "Global.GameEffect.html",
+      "uid": "Global.GameEffect"
+    },
+    {
+      "name": "Gem",
+      "href": "Global.Gem.html",
+      "uid": "Global.Gem"
+    },
+    {
+      "name": "Rift",
+      "href": "Global.Rift.html",
+      "uid": "Global.Rift"
+    },
+    {
+      "name": "Room_Trap_Toggleable",
+      "href": "Global.Room_Trap_Toggleable.html",
+      "uid": "Global.Room_Trap_Toggleable"
+    },
+    {
+      "name": "RoomModifierBase",
+      "href": "Global.RoomModifierBase.html",
+      "uid": "Global.RoomModifierBase"
+    },
+    {
+      "name": "ServerActor",
+      "href": "Global.ServerActor.html",
+      "uid": "Global.ServerActor"
+    },
+    {
+      "name": "Shrine",
+      "href": "Global.Shrine.html",
+      "uid": "Global.Shrine"
+    },
+    {
+      "name": "Treasure",
+      "href": "Global.Treasure.html",
+      "uid": "Global.Treasure"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ActorEvent_OnAbilityInstanceBeforePrepare",
+      "id": "Global_Actor_ActorEvent_OnAbilityInstanceBeforePrepare",
+      "declaration": "public SafeAction<EventInfoAbilityInstance> ActorEvent_OnAbilityInstanceBeforePrepare",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnAbilityInstanceCreated",
+      "id": "Global_Actor_ActorEvent_OnAbilityInstanceCreated",
+      "declaration": "public SafeAction<EventInfoAbilityInstance> ActorEvent_OnAbilityInstanceCreated",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnApplyElemental",
+      "id": "Global_Actor_ActorEvent_OnApplyElemental",
+      "declaration": "public SafeAction<EventInfoApplyElemental> ActorEvent_OnApplyElemental",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnAttackEffectTriggered",
+      "id": "Global_Actor_ActorEvent_OnAttackEffectTriggered",
+      "declaration": "public SafeAction<EventInfoAttackEffect> ActorEvent_OnAttackEffectTriggered",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnAttackHit",
+      "id": "Global_Actor_ActorEvent_OnAttackHit",
+      "declaration": "public SafeAction<EventInfoAttackHit> ActorEvent_OnAttackHit",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnDealDamage",
+      "id": "Global_Actor_ActorEvent_OnDealDamage",
+      "declaration": "public SafeAction<EventInfoDamage> ActorEvent_OnDealDamage",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnDoHeal",
+      "id": "Global_Actor_ActorEvent_OnDoHeal",
+      "declaration": "public SafeAction<EventInfoHeal> ActorEvent_OnDoHeal",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnDoManaHeal",
+      "id": "Global_Actor_ActorEvent_OnDoManaHeal",
+      "declaration": "public SafeAction<EventInfoHeal> ActorEvent_OnDoManaHeal",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnGiveShield",
+      "id": "Global_Actor_ActorEvent_OnGiveShield",
+      "declaration": "public SafeAction<EventInfoShield> ActorEvent_OnGiveShield",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnKill",
+      "id": "Global_Actor_ActorEvent_OnKill",
+      "declaration": "public SafeAction<EventInfoKill> ActorEvent_OnKill",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnSpawnSummon",
+      "id": "Global_Actor_ActorEvent_OnSpawnSummon",
+      "declaration": "public SafeAction<EventInfoSummon> ActorEvent_OnSpawnSummon",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActorEvent_OnSpendMana",
+      "id": "Global_Actor_ActorEvent_OnSpendMana",
+      "declaration": "public SafeAction<EventInfoSpentMana> ActorEvent_OnSpendMana",
+      "summary": "Note that ActorEvents can also be from its descendants.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "children",
+      "id": "Global_Actor_children",
+      "declaration": "public readonly List<Actor> children",
+      "summary": "Alive, non-destroyed children actors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "childrenInNetwork",
+      "id": "Global_Actor_childrenInNetwork",
+      "declaration": "public readonly List<Actor> childrenInNetwork",
+      "summary": "Children that are alive, or not yet despawned from the network.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientActorEvent_OnCreate",
+      "id": "Global_Actor_ClientActorEvent_OnCreate",
+      "declaration": "public SafeAction<Actor> ClientActorEvent_OnCreate",
+      "summary": "Called everywhere when an actor is created including child actors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientActorEvent_OnDestroyed",
+      "id": "Global_Actor_ClientActorEvent_OnDestroyed",
+      "declaration": "public SafeAction<Actor> ClientActorEvent_OnDestroyed",
+      "summary": "Called everywhere when this actor is destroyed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnPersistentSyncedDataChanged",
+      "id": "Global_Actor_ClientEvent_OnPersistentSyncedDataChanged",
+      "declaration": "public SafeAction<string> ClientEvent_OnPersistentSyncedDataChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtCooldownReductionByRatioProcessor",
+      "id": "Global_Actor_dealtCooldownReductionByRatioProcessor",
+      "declaration": "public DataProcessorGroup<CooldownReductionByRatioSettings, Actor, AbilityTrigger> dealtCooldownReductionByRatioProcessor",
+      "summary": "Processor for dealt cooldown reductions by ratio. This is only valid on server.All cooldown reductions done by this actor will be processed by this and every ancestor's preprocessors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtCooldownReductionProcessor",
+      "id": "Global_Actor_dealtCooldownReductionProcessor",
+      "declaration": "public DataProcessorGroup<CooldownReductionSettings, Actor, AbilityTrigger> dealtCooldownReductionProcessor",
+      "summary": "Processor for dealt cooldown reductions of fixed amount. This is only valid on server.All cooldown reductions done by this actor will be processed by this and every ancestor's preprocessors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtDamageProcessor",
+      "id": "Global_Actor_dealtDamageProcessor",
+      "declaration": "public DataProcessorGroup<DamageData, Actor, Entity> dealtDamageProcessor",
+      "summary": "Processor for all dealt damages (Except pure damage). This is only valid on server.All damages from this actor will be processed by this and every ancestors' preprocessors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtHealProcessor",
+      "id": "Global_Actor_dealtHealProcessor",
+      "declaration": "public DataProcessorGroup<HealData, Actor, Entity> dealtHealProcessor",
+      "summary": "Processor for dealt heals. This is only valid on server.All heals from this actor will be processed by this and every ancestors' preprocessors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtManaHealProcessor",
+      "id": "Global_Actor_dealtManaHealProcessor",
+      "declaration": "public DataProcessorGroup<HealData, Actor, Entity> dealtManaHealProcessor",
+      "summary": "Processor for dealt mana heals. This is only valid on server.All mana heals from this actor will be processed by this and every ancestors' preprocessors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtShieldProcessor",
+      "id": "Global_Actor_dealtShieldProcessor",
+      "declaration": "public DataProcessorGroup<HealData, Actor, Entity> dealtShieldProcessor",
+      "summary": "Processor for received shields. This is only valid on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "KilledByUnstoppableEffects",
+      "id": "Global_Actor_KilledByUnstoppableEffects",
+      "declaration": "public static Type[] KilledByUnstoppableEffects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistentData",
+      "id": "Global_Actor_persistentData",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly Dictionary<string, string> persistentData",
+      "summary": "Available on server. Generic persistent data storage that will be saved and loaded with this actor.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistentSyncedData",
+      "id": "Global_Actor_persistentSyncedData",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncDictionary<string, string> persistentSyncedData",
+      "summary": "Available everywhere, and can only be set on server. Generic persistent synced data storage that will be saved and loaded with this actor, and be synced across the network.Use this to store states in the network context. (think: synced variables)",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ScaleDurationByTenacityEffects",
+      "id": "Global_Actor_ScaleDurationByTenacityEffects",
+      "declaration": "public static Type[] ScaleDurationByTenacityEffects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedChildVarDefProcessor",
+      "id": "Global_Actor_spawnedChildVarDefProcessor",
+      "declaration": "public DataProcessorGroup<VariantDef, Actor, Type> spawnedChildVarDefProcessor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "ancestors",
+      "id": "Global_Actor_ancestors",
+      "declaration": "public IEnumerable<Actor> ancestors { get; }",
+      "summary": "Enumerable ancestors of this actor. Ordering is the same as the actor tree order, first element being the direct parent.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chainTempName",
+      "id": "Global_Actor_chainTempName",
+      "declaration": "public ReactionChain chainTempName { get; }",
+      "summary": "Reaction chain of this actor. Available only on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "creationTime",
+      "id": "Global_Actor_creationTime",
+      "declaration": "public float creationTime { get; }",
+      "summary": "Time of this actor's creation byTime.time.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "firstEntity",
+      "id": "Global_Actor_firstEntity",
+      "declaration": "public Entity firstEntity { get; }",
+      "summary": "The first entity in this actor's ancestor tree.This property can be used to e.g. find the caster of an ability instance.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "firstTrigger",
+      "id": "Global_Actor_firstTrigger",
+      "declaration": "public AbilityTrigger firstTrigger { get; }",
+      "summary": "The first ability trigger in this actor's ancestor tree.This property can be used to e.g. find the ability instance's trigger.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActive",
+      "id": "Global_Actor_isActive",
+      "declaration": "public bool isActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyed",
+      "id": "Global_Actor_isDestroyed",
+      "declaration": "public bool isDestroyed { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Actor_isDestroyedOnRoomChange",
+      "declaration": "public virtual bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyLocked",
+      "id": "Global_Actor_isDestroyLocked",
+      "declaration": "public bool isDestroyLocked { get; }",
+      "summary": "Is someone preventing this actor from being destroyed? Available only on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNewInstance",
+      "id": "Global_Actor_isNewInstance",
+      "declaration": "public bool isNewInstance { get; }",
+      "summary": "Is it this actor created in this session of the game, or has been loaded from save?e.g. This will be false if this actor is part of a loaded game, or from previously visited node.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parentActor",
+      "id": "Global_Actor_parentActor",
+      "declaration": "public Actor parentActor { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parentActorNetId",
+      "id": "Global_Actor_parentActorNetId",
+      "declaration": "public uint parentActorNetId { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistentNetId",
+      "id": "Global_Actor_persistentNetId",
+      "declaration": "public uint persistentNetId { get; }",
+      "summary": "Mirror setsnetIdto 0 on despawn. This property will tell you its former netId even after being despawned.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_Actor_position",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Vector3 position { get; set; }",
+      "summary": "Position of this actor. Same astransform.position.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_Actor_rotation",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Quaternion rotation { get; set; }",
+      "summary": "Rotation of this actor. Same astransform.rotation.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveFrameUpdate()",
+      "id": "Global_Actor_ActiveFrameUpdate",
+      "declaration": "protected virtual void ActiveFrameUpdate()",
+      "summary": "Called everywhere every frame while this actor is active.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_Actor_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected virtual void ActiveLogicUpdate(float dt)",
+      "summary": "Called everywhere every logic tick while this actor is active.",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddData<T>(T)",
+      "id": "Global_Actor_AddData__1___0_",
+      "declaration": "public void AddData<T>(T data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyCooldownReduction(AbilityTrigger, CooldownReductionSettings)",
+      "id": "Global_Actor_ApplyCooldownReduction_AbilityTrigger_CooldownReductionSettings_",
+      "declaration": "public void ApplyCooldownReduction(AbilityTrigger trigger, CooldownReductionSettings settings)",
+      "summary": "Apply cooldown reduction to all configs that can receive cooldown reduction.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CooldownReductionSettings",
+          "type_uid": "Global.CooldownReductionSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyCooldownReduction(AbilityTrigger, float, bool, bool)",
+      "id": "Global_Actor_ApplyCooldownReduction_AbilityTrigger_System_Single_System_Boolean_System_Boolean_",
+      "declaration": "public void ApplyCooldownReduction(AbilityTrigger trigger, float amount, bool scaled = true, bool ignoreCanReceiveCooldown = false)",
+      "summary": "Apply cooldown reduction to all configs that can receive cooldown reduction.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scaled",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreCanReceiveCooldown",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyCooldownReductionByRatio(AbilityTrigger, CooldownReductionByRatioSettings)",
+      "id": "Global_Actor_ApplyCooldownReductionByRatio_AbilityTrigger_CooldownReductionByRatioSettings_",
+      "declaration": "public void ApplyCooldownReductionByRatio(AbilityTrigger trigger, CooldownReductionByRatioSettings settings)",
+      "summary": "Apply cooldown reduction to all configs that can receive cooldown reduction by ratio of max cooldown.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CooldownReductionByRatioSettings",
+          "type_uid": "Global.CooldownReductionByRatioSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyCooldownReductionByRatio(AbilityTrigger, float, bool)",
+      "id": "Global_Actor_ApplyCooldownReductionByRatio_AbilityTrigger_System_Single_System_Boolean_",
+      "declaration": "public void ApplyCooldownReductionByRatio(AbilityTrigger trigger, float ratio, bool ignoreCanReceiveCooldown = false)",
+      "summary": "Apply cooldown reduction to all configs that can receive cooldown reduction by ratio of max cooldown.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "ratio",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreCanReceiveCooldown",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyElemental(ElementalType, Entity, int)",
+      "id": "Global_Actor_ApplyElemental_ElementalType_Entity_System_Int32_",
+      "declaration": "public ElementalStatusEffect ApplyElemental(ElementalType type, Entity to, int appliedStacks = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "ElementalType",
+          "type_uid": "Global.ElementalType",
+          "description": ""
+        },
+        {
+          "name": "to",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "appliedStacks",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "ElementalStatusEffect"
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_Actor_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearExcludeFromRoomSave()",
+      "id": "Global_Actor_ClearExcludeFromRoomSave",
+      "declaration": "public void ClearExcludeFromRoomSave()",
+      "summary": "Clear flag that excludes this actor from room save.Note this won't make non-saving by default actors to be saved.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CreateAbilityInstance(Type, Vector3, Quaternion?, CastInfo, Action<AbilityInstance>)",
+      "id": "Global_Actor_CreateAbilityInstance_System_Type_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__CastInfo_System_Action_AbilityInstance__",
+      "declaration": "public AbilityInstance CreateAbilityInstance(Type type, Vector3 position, Quaternion? rotation, CastInfo info, Action<AbilityInstance> beforePrepare = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><AbilityInstance>",
+          "type_uid": "Global.AbilityInstance",
+          "description": ""
+        }
+      ],
+      "returns": "AbilityInstance"
+    },
+    {
+      "name": "CreateAbilityInstance<T>(T, Vector3, Quaternion?, CastInfo, Action<T>)",
+      "id": "Global_Actor_CreateAbilityInstance__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__CastInfo_System_Action___0__",
+      "declaration": "public T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateAbilityInstance<T>(Vector3, Quaternion?, CastInfo, Action<T>)",
+      "id": "Global_Actor_CreateAbilityInstance__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__CastInfo_System_Action___0__",
+      "declaration": "public T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateActor<T>(T, Vector3, Quaternion?, Action<T>)",
+      "id": "Global_Actor_CreateActor__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__System_Action___0__",
+      "declaration": "public T CreateActor<T>(T prefab, Vector3 pos, Quaternion? rot, Action<T> beforePrepare = null) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateActor<T>(Vector3, Quaternion?, Action<T>)",
+      "id": "Global_Actor_CreateActor__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__System_Action___0__",
+      "declaration": "public T CreateActor<T>(Vector3 pos, Quaternion? rot, Action<T> beforePrepare = null) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateBasicEffect(Entity, BasicEffect, float, string, DuplicateEffectBehavior)",
+      "id": "Global_Actor_CreateBasicEffect_Entity_BasicEffect_System_Single_System_String_DuplicateEffectBehavior_",
+      "declaration": "public Se_GenericEffectContainer CreateBasicEffect(Entity victim, BasicEffect eff, float duration, string id = null, DuplicateEffectBehavior onDuplicate = DuplicateEffectBehavior.ReplacePrevious)",
+      "summary": "Create a generic container status effect for applying basic effect to an entity.Give an id of null to prevent this behavior.The created status effect will be cleansable and killed by unstoppable if it contains a harmful effect.",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "eff",
+          "type": "BasicEffect",
+          "type_uid": "Global.BasicEffect",
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onDuplicate",
+          "type": "DuplicateEffectBehavior",
+          "type_uid": "Global.DuplicateEffectBehavior",
+          "description": ""
+        }
+      ],
+      "returns": "Se_GenericEffectContainer"
+    },
+    {
+      "name": "CreateDamage(SourceType, float, float)",
+      "id": "Global_Actor_CreateDamage_DamageData_SourceType_System_Single_System_Single_",
+      "declaration": "public DamageData CreateDamage(DamageData.SourceType type, float amount, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DamageData.SourceType",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "CreateStatusEffect(Type, Entity, CastInfo, Action<StatusEffect>)",
+      "id": "Global_Actor_CreateStatusEffect_System_Type_Entity_CastInfo_System_Action_StatusEffect__",
+      "declaration": "public StatusEffect CreateStatusEffect(Type type, Entity victim, CastInfo info, Action<StatusEffect> beforePrepare = null)",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><StatusEffect>",
+          "type_uid": "Global.StatusEffect",
+          "description": ""
+        }
+      ],
+      "returns": "StatusEffect"
+    },
+    {
+      "name": "CreateStatusEffect<T>(T, Entity, CastInfo, Action<T>)",
+      "id": "Global_Actor_CreateStatusEffect__1___0_Entity_CastInfo_System_Action___0__",
+      "declaration": "public T CreateStatusEffect<T>(T prefab, Entity victim, CastInfo info, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateStatusEffect<T>(Entity, CastInfo, Action<T>)",
+      "id": "Global_Actor_CreateStatusEffect__1_Entity_CastInfo_System_Action___0__",
+      "declaration": "public T CreateStatusEffect<T>(Entity victim, CastInfo info, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CustomDestroyRoutine()",
+      "id": "Global_Actor_CustomDestroyRoutine",
+      "declaration": "public void CustomDestroyRoutine()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_ClearClientMessageHandlers()",
+      "id": "Global_Actor_CustomRpc_ClearClientMessageHandlers",
+      "declaration": "public void CustomRpc_ClearClientMessageHandlers()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_ClearServerMessageHandlers()",
+      "id": "Global_Actor_CustomRpc_ClearServerMessageHandlers",
+      "declaration": "public void CustomRpc_ClearServerMessageHandlers()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_RegisterClientMessageHandler<T>(Action<T>)",
+      "id": "Global_Actor_CustomRpc_RegisterClientMessageHandler__1_System_Action___0__",
+      "declaration": "public void CustomRpc_RegisterClientMessageHandler<T>(Action<T> handler)",
+      "summary": "Register a client RPC handler. (server to clients) Registering multiple handlers for same type will result in all handlers passed being called.",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_RegisterServerMessageHandler<T>(Action<T>)",
+      "id": "Global_Actor_CustomRpc_RegisterServerMessageHandler__1_System_Action___0__",
+      "declaration": "public void CustomRpc_RegisterServerMessageHandler<T>(Action<T> handler)",
+      "summary": "Register a server RPC handler. (client to server) Registering multiple handlers for same type will result in all handlers passed being called.",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_RegisterServerMessageHandler<T>(string, Action<T, DewPlayer>)",
+      "id": "Global_Actor_CustomRpc_RegisterServerMessageHandler__1_System_String_System_Action___0_DewPlayer__",
+      "declaration": "public void CustomRpc_RegisterServerMessageHandler<T>(string type, Action<T, DewPlayer> handler)",
+      "summary": "Register a server RPC handler. (client to server) Registering multiple handlers for same type will result in all handlers passed being called.This variant allows you to receive the caller client as a parameter.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "handler",
+          "type": "System.Action<T1, T2><T,DewPlayer>",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_SendMessageToAllClients<T>(T)",
+      "id": "Global_Actor_CustomRpc_SendMessageToAllClients__1___0_",
+      "declaration": "public void CustomRpc_SendMessageToAllClients<T>(T msg)",
+      "summary": "Make a remote procedure call: Server => All Clients",
+      "parameters": [
+        {
+          "name": "msg",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_SendMessageToClient<T>(DewPlayer, T)",
+      "id": "Global_Actor_CustomRpc_SendMessageToClient__1_DewPlayer___0_",
+      "declaration": "public void CustomRpc_SendMessageToClient<T>(DewPlayer target, T msg)",
+      "summary": "Make a remote procedure call: Server => Specific Client",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "msg",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_SendMessageToServer<T>(T)",
+      "id": "Global_Actor_CustomRpc_SendMessageToServer__1___0_",
+      "declaration": "public void CustomRpc_SendMessageToServer<T>(T msg)",
+      "summary": "Make a remote procedure call: Client => ServerHosts can also make use of this RPC.",
+      "parameters": [
+        {
+          "name": "msg",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_UnregisterClientMessageHandler<T>()",
+      "id": "Global_Actor_CustomRpc_UnregisterClientMessageHandler__1",
+      "declaration": "public void CustomRpc_UnregisterClientMessageHandler<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_UnregisterClientMessageHandler<T>(Action<T>)",
+      "id": "Global_Actor_CustomRpc_UnregisterClientMessageHandler__1_System_Action___0__",
+      "declaration": "public void CustomRpc_UnregisterClientMessageHandler<T>(Action<T> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_UnregisterServerMessageHandler<T>()",
+      "id": "Global_Actor_CustomRpc_UnregisterServerMessageHandler__1",
+      "declaration": "public void CustomRpc_UnregisterServerMessageHandler<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer>)",
+      "id": "Global_Actor_CustomRpc_UnregisterServerMessageHandler__1_System_Action___0_DewPlayer__",
+      "declaration": "public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T, DewPlayer> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T1, T2><T,DewPlayer>",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CustomRpc_UnregisterServerMessageHandler<T>(Action<T>)",
+      "id": "Global_Actor_CustomRpc_UnregisterServerMessageHandler__1_System_Action___0__",
+      "declaration": "public void CustomRpc_UnregisterServerMessageHandler<T>(Action<T> handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DealDamage(DamageData, Entity, ReactionChain)",
+      "id": "Global_Actor_DealDamage_DamageData_Entity_ReactionChain_",
+      "declaration": "public void DealDamage(DamageData damage, Entity target, ReactionChain chain = default)",
+      "summary": "Deal custom damage to the target entity.",
+      "parameters": [
+        {
+          "name": "damage",
+          "type": "DamageData",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DefaultDamage(float, float)",
+      "id": "Global_Actor_DefaultDamage_System_Single_System_Single_",
+      "declaration": "public DamageData DefaultDamage(float amount, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "Destroy()",
+      "id": "Global_Actor_Destroy",
+      "declaration": "public void Destroy()",
+      "summary": "Destroy this actor.It will do its own cleanups on server and then despawn.This is irreversible.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DestroyIfActive()",
+      "id": "Global_Actor_DestroyIfActive",
+      "declaration": "public void DestroyIfActive()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoBasicAttackHit(Entity, bool, bool, float, float)",
+      "id": "Global_Actor_DoBasicAttackHit_Entity_System_Boolean_System_Boolean_System_Single_System_Single_",
+      "declaration": "public void DoBasicAttackHit(Entity target, bool isCriticalHit, bool isMain, float damage, float attackEffect)",
+      "summary": "Make the parent entity do basic attack and deal damage to the target entity.By design this should be only used by basic attacks.This triggers Attack Effects if the hit was successful.",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "isCriticalHit",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isMain",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "damage",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attackEffect",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoHeal(HealData, Entity, ReactionChain)",
+      "id": "Global_Actor_DoHeal_HealData_Entity_ReactionChain_",
+      "declaration": "public void DoHeal(HealData heal, Entity target, ReactionChain chain = default)",
+      "summary": "Heal an entity by some amount.",
+      "parameters": [
+        {
+          "name": "heal",
+          "type": "HealData",
+          "type_uid": "Global.HealData",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoManaHeal(HealData, Entity, ReactionChain)",
+      "id": "Global_Actor_DoManaHeal_HealData_Entity_ReactionChain_",
+      "declaration": "public void DoManaHeal(HealData heal, Entity target, ReactionChain chain = default)",
+      "summary": "Grant an entity some mana.",
+      "parameters": [
+        {
+          "name": "heal",
+          "type": "HealData",
+          "type_uid": "Global.HealData",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ExcludeFromRoomSave()",
+      "id": "Global_Actor_ExcludeFromRoomSave",
+      "declaration": "public void ExcludeFromRoomSave()",
+      "summary": "Mark this actor as excluded from room save.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FindData<T>(Predicate<T>)",
+      "id": "Global_Actor_FindData__1_System_Predicate___0__",
+      "declaration": "public T FindData<T>(Predicate<T> predicate)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "predicate",
+          "type": "System.Predicate<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "FindFirstAncestorOfType<T>()",
+      "id": "Global_Actor_FindFirstAncestorOfType__1",
+      "declaration": "public T FindFirstAncestorOfType<T>() where T : Actor",
+      "summary": "Find first actor that matches the given type in this actor's ancestor tree.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "FindFirstOfType<T>()",
+      "id": "Global_Actor_FindFirstOfType__1",
+      "declaration": "public T FindFirstOfType<T>() where T : Actor",
+      "summary": "Find first actor that matches the given type in this actor's ancestor tree including itself.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_Actor_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetActorReadableName()",
+      "id": "Global_Actor_GetActorReadableName",
+      "declaration": "public virtual string GetActorReadableName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetData<T>()",
+      "id": "Global_Actor_GetData__1",
+      "declaration": "public T GetData<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetNetworkAuthorityConnection()",
+      "id": "Global_Actor_GetNetworkAuthorityConnection",
+      "declaration": "protected virtual NetworkConnectionToClient GetNetworkAuthorityConnection()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Mirror.NetworkConnectionToClient"
+    },
+    {
+      "name": "GetOriginalName()",
+      "id": "Global_Actor_GetOriginalName",
+      "declaration": "public string GetOriginalName()",
+      "summary": "Get the original name of this actor, excluding (Clone) or variant suffixes.Useful when trying to figure out id of name-linked resources.",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GiveShield(Entity, float, float, bool, ReactionChain)",
+      "id": "Global_Actor_GiveShield_Entity_System_Single_System_Single_System_Boolean_ReactionChain_",
+      "declaration": "public Se_GenericShield_OneShot GiveShield(Entity victim, float amount, float duration, bool isDecay = false, ReactionChain chain = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isDecay",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": "Se_GenericShield_OneShot"
+    },
+    {
+      "name": "HasData<T>()",
+      "id": "Global_Actor_HasData__1",
+      "declaration": "public bool HasData<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Heal(float)",
+      "id": "Global_Actor_Heal_System_Single_",
+      "declaration": "public HealData Heal(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "HideOnScreenTimerLocally(OnScreenTimerHandle)",
+      "id": "Global_Actor_HideOnScreenTimerLocally_OnScreenTimerHandle_",
+      "declaration": "public void HideOnScreenTimerLocally(OnScreenTimerHandle handle)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "OnScreenTimerHandle",
+          "type_uid": "Global.OnScreenTimerHandle",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "IsDescendantOf(Actor)",
+      "id": "Global_Actor_IsDescendantOf_Actor_",
+      "declaration": "public bool IsDescendantOf(Actor actor)",
+      "summary": "Is this actor a descendant of the given actor?Is the given actor this actor's ancestor (parent/grand-parent/grand-grand-parent...)?",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsDescendantOf<T>()",
+      "id": "Global_Actor_IsDescendantOf__1",
+      "declaration": "public bool IsDescendantOf<T>() where T : Actor",
+      "summary": "Is this actor a descendant of the given actor?Is the given actor this actor's ancestor (parent/grand-parent/grand-grand-parent...)?",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsExcludedFromRoomSave()",
+      "id": "Global_Actor_IsExcludedFromRoomSave",
+      "declaration": "public bool IsExcludedFromRoomSave()",
+      "summary": "Is this actor marked as excluded from room saves?",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LockDestroy()",
+      "id": "Global_Actor_LockDestroy",
+      "declaration": "public void LockDestroy()",
+      "summary": "Prevent this actor from being destroyed. You MUST call UnlockDestroy() after LockDestroy() call.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_Actor_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MagicDamage(float, float)",
+      "id": "Global_Actor_MagicDamage_System_Single_System_Single_",
+      "declaration": "public DamageData MagicDamage(float amount, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Actor_OnCreate",
+      "declaration": "protected virtual void OnCreate()",
+      "summary": "Called everywhere when this actor is created.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate_ActorData()",
+      "id": "Global_Actor_OnCreate_ActorData",
+      "declaration": "public void OnCreate_ActorData()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Actor_OnDestroyActor",
+      "declaration": "protected virtual void OnDestroyActor()",
+      "summary": "Called everywhere when this actor is being destroyed.\nThis is different from similarly-named Unity event OnDestroy, as it is called before GameObject itself gets destroyed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_Actor_OnDisable",
+      "declaration": "protected virtual void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_Actor_OnEnable",
+      "declaration": "protected virtual void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_Actor_OnPrepare",
+      "declaration": "protected virtual void OnPrepare()",
+      "summary": "Called on server right before actor is spawned.\nConfigure this actor's initial state here.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_Actor_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_Actor_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Actor_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopClient()",
+      "id": "Global_Actor_OnStopClient",
+      "declaration": "public override void OnStopClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_Actor_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PhysicalDamage(float, float)",
+      "id": "Global_Actor_PhysicalDamage_System_Single_System_Single_",
+      "declaration": "public DamageData PhysicalDamage(float amount, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ProcessShieldAmount(float, Entity)",
+      "id": "Global_Actor_ProcessShieldAmount_System_Single_Entity_",
+      "declaration": "public float ProcessShieldAmount(float amount, Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "ProcessSpawnedChildVarDefProcessor(ref VariantDef, Type)",
+      "id": "Global_Actor_ProcessSpawnedChildVarDefProcessor_VariantDef__System_Type_",
+      "declaration": "public void ProcessSpawnedChildVarDefProcessor(ref VariantDef data, Type childType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "VariantDef",
+          "type_uid": "Global.VariantDef",
+          "description": ""
+        },
+        {
+          "name": "childType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PureDamage(float, float)",
+      "id": "Global_Actor_PureDamage_System_Single_System_Single_",
+      "declaration": "public DamageData PureDamage(float amount, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "RefundMana(float, Entity)",
+      "id": "Global_Actor_RefundMana_System_Single_Entity_",
+      "declaration": "public void RefundMana(float amount, Entity target)",
+      "summary": "Refund a certain amount of mana to an entity.This will not be processed, will not proc any callbacks nor display a mana heal number text.This shouldn't be used anywhere other than for canceled channels.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveData(object)",
+      "id": "Global_Actor_RemoveData_System_Object_",
+      "declaration": "public bool RemoveData(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "RemoveData<T>()",
+      "id": "Global_Actor_RemoveData__1",
+      "declaration": "public bool RemoveData<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ResetCooldown(AbilityTrigger, bool)",
+      "id": "Global_Actor_ResetCooldown_AbilityTrigger_System_Boolean_",
+      "declaration": "public void ResetCooldown(AbilityTrigger trigger, bool ignoreCanReceiveCooldown = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "ignoreCanReceiveCooldown",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Actor_ShouldBeSavedWithRoom",
+      "declaration": "public virtual bool ShouldBeSavedWithRoom()",
+      "summary": "Should this actor be saved and loaded back in when revisiting nodes?This is checked on server on all active actors when changing rooms.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ShowOnScreenTimerLocally(OnScreenTimerHandle)",
+      "id": "Global_Actor_ShowOnScreenTimerLocally_OnScreenTimerHandle_",
+      "declaration": "public OnScreenTimerHandle ShowOnScreenTimerLocally(OnScreenTimerHandle handle)",
+      "summary": "Show an on-screen timer with custom fill amount to local player.Null rawText will be automatically populated.",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "OnScreenTimerHandle",
+          "type_uid": "Global.OnScreenTimerHandle",
+          "description": ""
+        }
+      ],
+      "returns": "OnScreenTimerHandle"
+    },
+    {
+      "name": "SpawnEntity<T>(T, Vector3, Quaternion?, DewPlayer, int, Action<T>)",
+      "id": "Global_Actor_SpawnEntity__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__DewPlayer_System_Int32_System_Action___0__",
+      "declaration": "public T SpawnEntity<T>(T entity, Vector3 pos, Quaternion? rot, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SpawnEntity<T>(Vector3, Quaternion?, DewPlayer, int, Action<T>)",
+      "id": "Global_Actor_SpawnEntity__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__DewPlayer_System_Int32_System_Action___0__",
+      "declaration": "public T SpawnEntity<T>(Vector3 pos, Quaternion? rot, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SpawnSummon<T>(Vector3, Quaternion?, Action<T>)",
+      "id": "Global_Actor_SpawnSummon__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__System_Action___0__",
+      "declaration": "public T SpawnSummon<T>(Vector3 position, Quaternion? rotation, Action<T> beforePrepare = null) where T : Summon",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SpendMana(float, Entity)",
+      "id": "Global_Actor_SpendMana_System_Single_Entity_",
+      "declaration": "public void SpendMana(float amount, Entity target)",
+      "summary": "Spend mana of the entity.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Teleport(Entity, Vector3)",
+      "id": "Global_Actor_Teleport_Entity_UnityEngine_Vector3_",
+      "declaration": "public void Teleport(Entity entity, Vector3 position)",
+      "summary": "Teleport an entity to the targeted position.You should only feed in a valid position by usingDew.GetValidAgentPosition()beforehand.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_Actor_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "TrackKills(float, Action<EventInfoKill>)",
+      "id": "Global_Actor_TrackKills_System_Single_System_Action_EventInfoKill__",
+      "declaration": "public KillTracker TrackKills(float gracePeriod, Action<EventInfoKill> callback)",
+      "summary": "Report any kills with contribution of this actor's damage with given grace period.You must Stop() the tracker to properly dispose it.",
+      "parameters": [
+        {
+          "name": "gracePeriod",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "callback",
+          "type": "System.Action<T><EventInfoKill>",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": "KillTracker"
+    },
+    {
+      "name": "TriggerAttackEffects(Entity, float, AttackEffectType, ReactionChain)",
+      "id": "Global_Actor_TriggerAttackEffects_Entity_System_Single_AttackEffectType_ReactionChain_",
+      "declaration": "public void TriggerAttackEffects(Entity target, float strength, AttackEffectType type, ReactionChain chain = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "AttackEffectType",
+          "type_uid": "Global.AttackEffectType",
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TryFindData<T>(Predicate<T>, out T)",
+      "id": "Global_Actor_TryFindData__1_System_Predicate___0____0__",
+      "declaration": "public bool TryFindData<T>(Predicate<T> predicate, out T result)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "predicate",
+          "type": "System.Predicate<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "result",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetData<T>(out T)",
+      "id": "Global_Actor_TryGetData__1___0__",
+      "declaration": "public bool TryGetData<T>(out T data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UnlockDestroy()",
+      "id": "Global_Actor_UnlockDestroy",
+      "declaration": "public void UnlockDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

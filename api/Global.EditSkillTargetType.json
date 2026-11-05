@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EditSkillTargetType",
+  "name": "EditSkillTargetType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum EditSkillTargetType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

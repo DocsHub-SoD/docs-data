@@ -1,0 +1,85 @@
+{
+  "uid": "Global.PlayLobby_Fireplace",
+  "name": "PlayLobby_Fireplace",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(2000)]\npublic class PlayLobby_Fireplace : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "intensityDeviation",
+      "id": "Global_PlayLobby_Fireplace_intensityDeviation",
+      "declaration": "public float intensityDeviation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "intensityNewTargetTime",
+      "id": "Global_PlayLobby_Fireplace_intensityNewTargetTime",
+      "declaration": "public float intensityNewTargetTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "intensitySmoothTime",
+      "id": "Global_PlayLobby_Fireplace_intensitySmoothTime",
+      "declaration": "public float intensitySmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionDeviation",
+      "id": "Global_PlayLobby_Fireplace_positionDeviation",
+      "declaration": "public float positionDeviation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionNewTargetTime",
+      "id": "Global_PlayLobby_Fireplace_positionNewTargetTime",
+      "declaration": "public float positionNewTargetTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionSmoothTime",
+      "id": "Global_PlayLobby_Fireplace_positionSmoothTime",
+      "declaration": "public float positionSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_PlayLobby_Fireplace_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

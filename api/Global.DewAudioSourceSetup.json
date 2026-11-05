@@ -1,0 +1,40 @@
+{
+  "uid": "Global.DewAudioSourceSetup",
+  "name": "DewAudioSourceSetup",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewAudioSourceSetup : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "rolloff",
+      "id": "Global_DewAudioSourceSetup_rolloff",
+      "declaration": "public DewAudioRollOffType rolloff",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "space",
+      "id": "Global_DewAudioSourceSetup_space",
+      "declaration": "public AudioSpaceType space",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_DewAudioSourceSetup_type",
+      "declaration": "[InfoBox(\"Warning: Dynamic setup type selected. The type requires setup every time it plays, and it is not for the intended use-case of DewAudioSourceSetup component.\", InfoMessageType.Warning, \"_isDynamic\")]\n[InfoBox(\"This component requires AudioSource\", InfoMessageType.Error, \"_hasNoAudioSource\")]\npublic AudioType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.MonsterSpawnConditionType",
+  "name": "MonsterSpawnConditionType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum MonsterSpawnConditionType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

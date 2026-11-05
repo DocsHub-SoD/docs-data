@@ -1,0 +1,56 @@
+{
+  "uid": "Global.EventInfoLoadRoom",
+  "name": "EventInfoLoadRoom",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoLoadRoom",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "fromIndex",
+      "id": "Global_EventInfoLoadRoom_fromIndex",
+      "declaration": "public int fromIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLoadingFromSave",
+      "id": "Global_EventInfoLoadRoom_isLoadingFromSave",
+      "declaration": "public bool isLoadingFromSave",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSidetrackTransition",
+      "id": "Global_EventInfoLoadRoom_isSidetrackTransition",
+      "declaration": "public bool isSidetrackTransition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isTraveling",
+      "id": "Global_EventInfoLoadRoom_isTraveling",
+      "declaration": "public bool isTraveling",
+      "summary": "Is this load result of traveling through a rift? (including the start of the game)This is true if:We just started the gameWe moved through the rift to visit a new / previously visited locationWe are loading from save, which were done in the middle of traveling.This is false if:We are loading from save, which were done after clearing the room.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "toIndex",
+      "id": "Global_EventInfoLoadRoom_toIndex",
+      "declaration": "public int toIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

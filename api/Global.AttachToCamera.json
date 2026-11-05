@@ -1,0 +1,32 @@
+{
+  "uid": "Global.AttachToCamera",
+  "name": "AttachToCamera",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class AttachToCamera : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "preserveLocalPosition",
+      "id": "Global_AttachToCamera_preserveLocalPosition",
+      "declaration": "[ToggleLeft]\npublic bool preserveLocalPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "preserveLocalRotation",
+      "id": "Global_AttachToCamera_preserveLocalRotation",
+      "declaration": "[ToggleLeft]\npublic bool preserveLocalRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

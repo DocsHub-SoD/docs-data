@@ -1,0 +1,906 @@
+{
+  "uid": "Global.DewProfile",
+  "name": "DewProfile",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "accessories",
+      "id": "Global_DewProfile_accessories",
+      "declaration": "public Dictionary<string, DewProfile.CosmeticsData> accessories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "achievements",
+      "id": "Global_DewProfile_achievements",
+      "declaration": "public Dictionary<string, DewProfile.AchievementData> achievements",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "artifacts",
+      "id": "Global_DewProfile_artifacts",
+      "declaration": "public Dictionary<string, DewProfile.UnlockData> artifacts",
+      "summary": "Contains all artifacts in the game, including the ones that are excluded from the pool.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "audio",
+      "id": "Global_DewProfile_audio",
+      "declaration": "public DewAudioSettings_User audio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completedReveries",
+      "id": "Global_DewProfile_completedReveries",
+      "declaration": "public int completedReveries",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "controls",
+      "id": "Global_DewProfile_controls",
+      "declaration": "public DewControlSettings_User controls",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "creationDate",
+      "id": "Global_DewProfile_creationDate",
+      "declaration": "public long creationDate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CurrentSaveVersion",
+      "id": "Global_DewProfile_CurrentSaveVersion",
+      "declaration": "public const int CurrentSaveVersion = 9",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dejavuCostReductionPeriodTimestamp",
+      "id": "Global_DewProfile_dejavuCostReductionPeriodTimestamp",
+      "declaration": "public Dictionary<string, long> dejavuCostReductionPeriodTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didMeetDreamTeller",
+      "id": "Global_DewProfile_didMeetDreamTeller",
+      "declaration": "public bool didMeetDreamTeller",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didPlayTutorial",
+      "id": "Global_DewProfile_didPlayTutorial",
+      "declaration": "public bool didPlayTutorial",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didReadConstellationNotice",
+      "id": "Global_DewProfile_didReadConstellationNotice",
+      "declaration": "public bool didReadConstellationNotice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didReadLoopNotice",
+      "id": "Global_DewProfile_didReadLoopNotice",
+      "declaration": "public bool didReadLoopNotice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didReadPrivateDemoNotice",
+      "id": "Global_DewProfile_didReadPrivateDemoNotice",
+      "declaration": "public bool didReadPrivateDemoNotice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didRewardMastery",
+      "id": "Global_DewProfile_didRewardMastery",
+      "declaration": "public bool didRewardMastery",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doneTutorials",
+      "id": "Global_DewProfile_doneTutorials",
+      "declaration": "public List<string> doneTutorials",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "emotes",
+      "id": "Global_DewProfile_emotes",
+      "declaration": "public Dictionary<string, DewProfile.CosmeticsData> emotes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "equippedEmotes",
+      "id": "Global_DewProfile_equippedEmotes",
+      "declaration": "public List<string> equippedEmotes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "experienceFlags",
+      "id": "Global_DewProfile_experienceFlags",
+      "declaration": "public List<string> experienceFlags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "favoriteGameResults",
+      "id": "Global_DewProfile_favoriteGameResults",
+      "declaration": "public List<DewGameResult> favoriteGameResults",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeVersionPlayTimeMinutes",
+      "id": "Global_DewProfile_freeVersionPlayTimeMinutes",
+      "declaration": "public long freeVersionPlayTimeMinutes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameplay",
+      "id": "Global_DewProfile_gameplay",
+      "declaration": "public DewGameplaySettings_User gameplay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gems",
+      "id": "Global_DewProfile_gems",
+      "declaration": "public Dictionary<string, DewProfile.UnlockData> gems",
+      "summary": "Contains all gems in the game, including the ones that are excluded from the pool.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "guid",
+      "id": "Global_DewProfile_guid",
+      "declaration": "public string guid",
+      "summary": "This will never change, unless this profile is from a different Steam account.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroEquippedAccs",
+      "id": "Global_DewProfile_heroEquippedAccs",
+      "declaration": "public Dictionary<string, List<string>> heroEquippedAccs",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroes",
+      "id": "Global_DewProfile_heroes",
+      "declaration": "public Dictionary<string, DewProfile.UnlockData> heroes",
+      "summary": "Contains all heroes in the game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroLoadouts",
+      "id": "Global_DewProfile_heroLoadouts",
+      "declaration": "public Dictionary<string, List<HeroLoadoutData>> heroLoadouts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroSelectedSkins",
+      "id": "Global_DewProfile_heroSelectedSkins",
+      "declaration": "public Dictionary<string, string> heroSelectedSkins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroUnlockedStarSlots",
+      "id": "Global_DewProfile_heroUnlockedStarSlots",
+      "declaration": "public Dictionary<string, DewProfile.HeroStarSlotUnlockData> heroUnlockedStarSlots",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "language",
+      "id": "Global_DewProfile_language",
+      "declaration": "public string language",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastGameResults",
+      "id": "Global_DewProfile_lastGameResults",
+      "declaration": "public List<DewGameResult> lastGameResults",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastReverieTypes",
+      "id": "Global_DewProfile_lastReverieTypes",
+      "declaration": "public List<string> lastReverieTypes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastSteamId",
+      "id": "Global_DewProfile_lastSteamId",
+      "declaration": "public string lastSteamId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastUnrewardedGameResult",
+      "id": "Global_DewProfile_lastUnrewardedGameResult",
+      "declaration": "public DewGameResult lastUnrewardedGameResult",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastUpsert",
+      "id": "Global_DewProfile_lastUpsert",
+      "declaration": "public long lastUpsert",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lucidDreams",
+      "id": "Global_DewProfile_lucidDreams",
+      "declaration": "public Dictionary<string, DewProfile.UnlockData> lucidDreams",
+      "summary": "Contains all lucid dreams in the game, including the ones that are excluded from the pool.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxObliterationSlots",
+      "id": "Global_DewProfile_maxObliterationSlots",
+      "declaration": "public int maxObliterationSlots",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "name",
+      "id": "Global_DewProfile_name",
+      "declaration": "public string name",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nametags",
+      "id": "Global_DewProfile_nametags",
+      "declaration": "public Dictionary<string, DewProfile.CosmeticsData> nametags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "newStars",
+      "id": "Global_DewProfile_newStars",
+      "declaration": "public Dictionary<string, DewProfile.StarData> newStars",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextRerollReplenishTimestamp",
+      "id": "Global_DewProfile_nextRerollReplenishTimestamp",
+      "declaration": "public long nextRerollReplenishTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "preferredGameSettings",
+      "id": "Global_DewProfile_preferredGameSettings",
+      "declaration": "public Dictionary<string, PreferredGameSettings> preferredGameSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "preferredNametag",
+      "id": "Global_DewProfile_preferredNametag",
+      "declaration": "public string preferredNametag",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "receivedLevelUpRewards",
+      "id": "Global_DewProfile_receivedLevelUpRewards",
+      "declaration": "public Dictionary<string, int> receivedLevelUpRewards",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "recentlyConcededGames",
+      "id": "Global_DewProfile_recentlyConcededGames",
+      "declaration": "public List<DewProfile.ConcededGameData> recentlyConcededGames",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "remainingRerolls",
+      "id": "Global_DewProfile_remainingRerolls",
+      "declaration": "public int remainingRerolls",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reverieSlots",
+      "id": "Global_DewProfile_reverieSlots",
+      "declaration": "public List<DewProfile.DailyReverieData> reverieSlots",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "saveVersion",
+      "id": "Global_DewProfile_saveVersion",
+      "declaration": "public int saveVersion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "seenGuides",
+      "id": "Global_DewProfile_seenGuides",
+      "declaration": "public List<string> seenGuides",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skills",
+      "id": "Global_DewProfile_skills",
+      "declaration": "public Dictionary<string, DewProfile.UnlockData> skills",
+      "summary": "Contains all skills in the game, including the ones that are character only or excluded from the pool.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skins",
+      "id": "Global_DewProfile_skins",
+      "declaration": "public Dictionary<string, DewProfile.CosmeticsData> skins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "specialReverie",
+      "id": "Global_DewProfile_specialReverie",
+      "declaration": "public DewProfile.SpecialReverieData specialReverie",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spentStardust",
+      "id": "Global_DewProfile_spentStardust",
+      "declaration": "public int spentStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardust",
+      "id": "Global_DewProfile_stardust",
+      "declaration": "public int stardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardustPurchases",
+      "id": "Global_DewProfile_stardustPurchases",
+      "declaration": "public List<DewProfile.PurchaseData> stardustPurchases",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stars",
+      "id": "Global_DewProfile_stars",
+      "declaration": "public Dictionary<string, DewProfile.StarData> stars",
+      "summary": "This is obsolete in non-demo builds.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalPlayTimeMinutes",
+      "id": "Global_DewProfile_totalPlayTimeMinutes",
+      "declaration": "public long totalPlayTimeMinutes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "DiscoverArtifact(string)",
+      "id": "Global_DewProfile_DiscoverArtifact_System_String_",
+      "declaration": "public void DiscoverArtifact(string g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DiscoverGem(string)",
+      "id": "Global_DewProfile_DiscoverGem_System_String_",
+      "declaration": "public bool DiscoverGem(string g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "DiscoverSkill(string)",
+      "id": "Global_DewProfile_DiscoverSkill_System_String_",
+      "declaration": "public bool DiscoverSkill(string s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetLockedGemCount()",
+      "id": "Global_DewProfile_GetLockedGemCount",
+      "declaration": "public int GetLockedGemCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetLockedLucidDreamsCount()",
+      "id": "Global_DewProfile_GetLockedLucidDreamsCount",
+      "declaration": "public int GetLockedLucidDreamsCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetLockedSkillCount()",
+      "id": "Global_DewProfile_GetLockedSkillCount",
+      "declaration": "public int GetLockedSkillCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetPreferredGameSettings(string)",
+      "id": "Global_DewProfile_GetPreferredGameSettings_System_String_",
+      "declaration": "public PreferredGameSettings GetPreferredGameSettings(string key = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "PreferredGameSettings"
+    },
+    {
+      "name": "GetUnlockedGemCount()",
+      "id": "Global_DewProfile_GetUnlockedGemCount",
+      "declaration": "public int GetUnlockedGemCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetUnlockedLucidDreamsCount()",
+      "id": "Global_DewProfile_GetUnlockedLucidDreamsCount",
+      "declaration": "public int GetUnlockedLucidDreamsCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetUnlockedSkillCount()",
+      "id": "Global_DewProfile_GetUnlockedSkillCount",
+      "declaration": "public int GetUnlockedSkillCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewProfile_Initialize",
+      "declaration": "public void Initialize()",
+      "summary": "This is called on new profiles.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LockAccessory(string)",
+      "id": "Global_DewProfile_LockAccessory_System_String_",
+      "declaration": "public void LockAccessory(string accName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "accName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockEmote(string)",
+      "id": "Global_DewProfile_LockEmote_System_String_",
+      "declaration": "public void LockEmote(string emoteName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "emoteName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockGem(string)",
+      "id": "Global_DewProfile_LockGem_System_String_",
+      "declaration": "public void LockGem(string g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockHero(string)",
+      "id": "Global_DewProfile_LockHero_System_String_",
+      "declaration": "public void LockHero(string s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockLucidDream(string)",
+      "id": "Global_DewProfile_LockLucidDream_System_String_",
+      "declaration": "public void LockLucidDream(string l)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "l",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockNametag(string)",
+      "id": "Global_DewProfile_LockNametag_System_String_",
+      "declaration": "public void LockNametag(string ntName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ntName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockSkill(string)",
+      "id": "Global_DewProfile_LockSkill_System_String_",
+      "declaration": "public void LockSkill(string s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LockSkin(string)",
+      "id": "Global_DewProfile_LockSkin_System_String_",
+      "declaration": "public void LockSkin(string ntName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ntName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RefundPurchase(Func<PurchaseData, bool>)",
+      "id": "Global_DewProfile_RefundPurchase_System_Func_DewProfile_PurchaseData_System_Boolean__",
+      "declaration": "public int RefundPurchase(Func<DewProfile.PurchaseData, bool> condition)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "condition",
+          "type": "System.Func<T, TResult><DewProfile.PurchaseData,bool>",
+          "type_uid": "Global.DewProfile",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "UnlockAccessory(string, string)",
+      "id": "Global_DewProfile_UnlockAccessory_System_String_System_String_",
+      "declaration": "public void UnlockAccessory(string accName, string ownershipKey)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "accName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ownershipKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockEmote(string, string)",
+      "id": "Global_DewProfile_UnlockEmote_System_String_System_String_",
+      "declaration": "public void UnlockEmote(string emoteName, string ownershipKey)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "emoteName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ownershipKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockGem(string)",
+      "id": "Global_DewProfile_UnlockGem_System_String_",
+      "declaration": "public void UnlockGem(string g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockHero(string)",
+      "id": "Global_DewProfile_UnlockHero_System_String_",
+      "declaration": "public void UnlockHero(string s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockLucidDream(string)",
+      "id": "Global_DewProfile_UnlockLucidDream_System_String_",
+      "declaration": "public void UnlockLucidDream(string l)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "l",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockNametag(string, string)",
+      "id": "Global_DewProfile_UnlockNametag_System_String_System_String_",
+      "declaration": "public void UnlockNametag(string ntName, string ownershipKey)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ntName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ownershipKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockServerGeneratedItem(DecryptedItemData)",
+      "id": "Global_DewProfile_UnlockServerGeneratedItem_DecryptedItemData_",
+      "declaration": "public void UnlockServerGeneratedItem(DecryptedItemData item)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "DecryptedItemData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockSkill(string)",
+      "id": "Global_DewProfile_UnlockSkill_System_String_",
+      "declaration": "public void UnlockSkill(string s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockSkin(string, string)",
+      "id": "Global_DewProfile_UnlockSkin_System_String_System_String_",
+      "declaration": "public void UnlockSkin(string ntName, string ownershipKey)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ntName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ownershipKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewProfile_Validate",
+      "declaration": "public void Validate()",
+      "summary": "Must be called at least once before using this profile. Does error checking and validation.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValidateProfileName(string)",
+      "id": "Global_DewProfile_ValidateProfileName_System_String_",
+      "declaration": "public static bool ValidateProfileName(string name)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

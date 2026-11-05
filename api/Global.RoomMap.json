@@ -1,0 +1,128 @@
+{
+  "uid": "Global.RoomMap",
+  "name": "RoomMap",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RoomMap : RoomComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "density",
+      "id": "Global_RoomMap_density",
+      "declaration": "public float density",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mapData",
+      "id": "Global_RoomMap_mapData",
+      "declaration": "[HideInInspector]\npublic MapData mapData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mapTexture",
+      "id": "Global_RoomMap_mapTexture",
+      "declaration": "public Texture2D mapTexture",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "fowTexture",
+      "id": "Global_RoomMap_fowTexture",
+      "declaration": "public Texture2D fowTexture { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_RoomMap_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "IsWorldPosVisible(Vector3)",
+      "id": "Global_RoomMap_IsWorldPosVisible_UnityEngine_Vector3_",
+      "declaration": "public bool IsWorldPosVisible(Vector3 worldPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "worldPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsWorldPosVisited(Vector3)",
+      "id": "Global_RoomMap_IsWorldPosVisited_UnityEngine_Vector3_",
+      "declaration": "public bool IsWorldPosVisited(Vector3 worldPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "worldPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_RoomMap_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStart()",
+      "id": "Global_RoomMap_OnRoomStart",
+      "declaration": "public override void OnRoomStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

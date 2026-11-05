@@ -1,0 +1,72 @@
+{
+  "uid": "Global.LayerMasks",
+  "name": "LayerMasks",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class LayerMasks",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "CollidableWithProjectile",
+      "id": "Global_LayerMasks_CollidableWithProjectile",
+      "declaration": "public static readonly int CollidableWithProjectile",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_LayerMasks_Default",
+      "declaration": "public static readonly int Default",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Entity",
+      "id": "Global_LayerMasks_Entity",
+      "declaration": "public static readonly int Entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Everything",
+      "id": "Global_LayerMasks_Everything",
+      "declaration": "public static readonly int Everything",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ground",
+      "id": "Global_LayerMasks_Ground",
+      "declaration": "public static readonly int Ground",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IncludeInNavigation",
+      "id": "Global_LayerMasks_IncludeInNavigation",
+      "declaration": "public static readonly int IncludeInNavigation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Interactable",
+      "id": "Global_LayerMasks_Interactable",
+      "declaration": "public static readonly int Interactable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

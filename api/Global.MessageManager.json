@@ -1,0 +1,172 @@
+{
+  "uid": "Global.MessageManager",
+  "name": "MessageManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MessageManager : ManagerBase<MessageManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "MessageManager",
+      "href": "Global.MessageManager.html",
+      "uid": "Global.MessageManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "buttons",
+      "id": "Global_MessageManager_buttons",
+      "declaration": "public List<GameObject> buttons",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canvasGroup",
+      "id": "Global_MessageManager_canvasGroup",
+      "declaration": "public CanvasGroup canvasGroup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "contentText",
+      "id": "Global_MessageManager_contentText",
+      "declaration": "public TextMeshProUGUI contentText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isShowingMessage",
+      "id": "Global_MessageManager_isShowingMessage",
+      "declaration": "public bool isShowingMessage { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CloseMessage(ButtonType)",
+      "id": "Global_MessageManager_CloseMessage_DewMessageSettings_ButtonType_",
+      "declaration": "public void CloseMessage(DewMessageSettings.ButtonType button)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "button",
+          "type": "DewMessageSettings.ButtonType",
+          "type_uid": "Global.DewMessageSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CloseMessageCancel()",
+      "id": "Global_MessageManager_CloseMessageCancel",
+      "declaration": "public void CloseMessageCancel()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CloseMessageNo()",
+      "id": "Global_MessageManager_CloseMessageNo",
+      "declaration": "public void CloseMessageNo()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CloseMessageOk()",
+      "id": "Global_MessageManager_CloseMessageOk",
+      "declaration": "public void CloseMessageOk()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CloseMessageYes()",
+      "id": "Global_MessageManager_CloseMessageYes",
+      "declaration": "public void CloseMessageYes()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_MessageManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_MessageManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowMessage(DewMessageSettings)",
+      "id": "Global_MessageManager_ShowMessage_DewMessageSettings_",
+      "declaration": "public void ShowMessage(DewMessageSettings msg)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "msg",
+          "type": "DewMessageSettings",
+          "type_uid": "Global.DewMessageSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowMessageLocalized(string)",
+      "id": "Global_MessageManager_ShowMessageLocalized_System_String_",
+      "declaration": "public void ShowMessageLocalized(string id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

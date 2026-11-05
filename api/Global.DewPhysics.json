@@ -1,0 +1,460 @@
+{
+  "uid": "Global.DewPhysics",
+  "name": "DewPhysics",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewPhysics",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_OverlapCircleAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_CollisionCheckSettings_",
+      "declaration": "public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "center",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_OverlapCircleAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_IBinaryEntityValidator_Entity_CollisionCheckSettings_",
+      "declaration": "public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "center",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, IEntityValidator, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_OverlapCircleAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_IEntityValidator_CollisionCheckSettings_",
+      "declaration": "public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, IEntityValidator validator, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "center",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "OverlapCircleAllEntities(out ListReturnHandle<Entity>, Vector3, float, Func<Entity, bool>, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_OverlapCircleAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_System_Func_Entity_System_Boolean__CollisionCheckSettings_",
+      "declaration": "public static List<Entity> OverlapCircleAllEntities(out ListReturnHandle<Entity> handle, Vector3 center, float radius, Func<Entity, bool> validator, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "center",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><Entity,bool>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_SphereCastAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_UnityEngine_Vector3_System_Single_CollisionCheckSettings_",
+      "declaration": "public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "origin",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, IBinaryEntityValidator, Entity, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_SphereCastAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_UnityEngine_Vector3_System_Single_IBinaryEntityValidator_Entity_CollisionCheckSettings_",
+      "declaration": "public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "origin",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, IEntityValidator, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_SphereCastAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_UnityEngine_Vector3_System_Single_IEntityValidator_CollisionCheckSettings_",
+      "declaration": "public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, IEntityValidator validator, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "origin",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "SphereCastAllEntities(out ListReturnHandle<Entity>, Vector3, float, Vector3, float, Func<Entity, bool>, CollisionCheckSettings)",
+      "id": "Global_DewPhysics_SphereCastAllEntities_ListReturnHandle_Entity___UnityEngine_Vector3_System_Single_UnityEngine_Vector3_System_Single_System_Func_Entity_System_Boolean__CollisionCheckSettings_",
+      "declaration": "public static List<Entity> SphereCastAllEntities(out ListReturnHandle<Entity> handle, Vector3 origin, float radius, Vector3 direction, float maxDistance, Func<Entity, bool> validator, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "origin",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><Entity,bool>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "TryGetCollidableWithProjectile(Collider2D, out ICollidableWithProjectile)",
+      "id": "Global_DewPhysics_TryGetCollidableWithProjectile_UnityEngine_Collider2D_ICollidableWithProjectile__",
+      "declaration": "public static bool TryGetCollidableWithProjectile(Collider2D collider, out ICollidableWithProjectile collidable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "collider",
+          "type": "UnityEngine.Collider2D",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "collidable",
+          "type": "ICollidableWithProjectile",
+          "type_uid": "Global.ICollidableWithProjectile",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetEntity(Collider2D, out Entity)",
+      "id": "Global_DewPhysics_TryGetEntity_UnityEngine_Collider2D_Entity__",
+      "declaration": "public static bool TryGetEntity(Collider2D collider, out Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "collider",
+          "type": "UnityEngine.Collider2D",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetInteractable(Collider2D, out IInteractable)",
+      "id": "Global_DewPhysics_TryGetInteractable_UnityEngine_Collider2D_IInteractable__",
+      "declaration": "public static bool TryGetInteractable(Collider2D collider, out IInteractable interactable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "collider",
+          "type": "UnityEngine.Collider2D",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "interactable",
+          "type": "IInteractable",
+          "type_uid": "Global.IInteractable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetProxy(Collider2D, out ProxyCollider)",
+      "id": "Global_DewPhysics_TryGetProxy_UnityEngine_Collider2D_ProxyCollider__",
+      "declaration": "public static bool TryGetProxy(Collider2D collider, out ProxyCollider proxy)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "collider",
+          "type": "UnityEngine.Collider2D",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "proxy",
+          "type": "ProxyCollider",
+          "type_uid": "Global.ProxyCollider",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

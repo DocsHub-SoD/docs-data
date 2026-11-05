@@ -1,0 +1,62 @@
+{
+  "uid": "Global.DewAllHeroesPresentZone",
+  "name": "DewAllHeroesPresentZone",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(DewCollider))]\npublic class DewAllHeroesPresentZone : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "onActivate",
+      "id": "Global_DewAllHeroesPresentZone_onActivate",
+      "declaration": "public UnityEvent onActivate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "once",
+      "id": "Global_DewAllHeroesPresentZone_once",
+      "declaration": "public bool once",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentMembers",
+      "id": "Global_DewAllHeroesPresentZone_currentMembers",
+      "declaration": "public IReadOnlyList<Hero> currentMembers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_DewAllHeroesPresentZone_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

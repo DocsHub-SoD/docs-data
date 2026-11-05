@@ -1,0 +1,1041 @@
+{
+  "uid": "Global.EntityStatus",
+  "name": "EntityStatus",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\npublic class EntityStatus : EntityComponent, ILogicUpdate, ICleanup",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    }
+  ],
+  "fields": [
+    {
+      "name": "baseStats",
+      "id": "Global_EntityStatus_baseStats",
+      "declaration": "[BoxGroup(\"Stat Settings\", true, false, 0)]\npublic BaseStats baseStats",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bonusStats",
+      "id": "Global_EntityStatus_bonusStats",
+      "declaration": "[BoxGroup(\"Stat Settings\", true, false, 0)]\n[NonSerialized]\n[ShowInInspector]\n[ReadOnly]\n[HideIn(PrefabKind.PrefabInstance|PrefabKind.PrefabAsset)]\npublic BonusStats bonusStats",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnOnFinalStatsUpdated",
+      "id": "Global_EntityStatus_ClientEvent_OnOnFinalStatsUpdated",
+      "declaration": "public SafeAction ClientEvent_OnOnFinalStatsUpdated",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "finalStats",
+      "id": "Global_EntityStatus_finalStats",
+      "declaration": "public FinalStats finalStats",
+      "summary": "Base stats + scaling stats + bonus stats + basic effect stats",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "finalStatsProcessors",
+      "id": "Global_EntityStatus_finalStatsProcessors",
+      "declaration": "public DataProcessorGroup<FinalStats> finalStatsProcessors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaTypeKey",
+      "id": "Global_EntityStatus_manaTypeKey",
+      "declaration": "public string manaTypeKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MaximumArmorValue",
+      "id": "Global_EntityStatus_MaximumArmorValue",
+      "declaration": "public const float MaximumArmorValue = 100000",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MinimumArmorValue",
+      "id": "Global_EntityStatus_MinimumArmorValue",
+      "declaration": "public const float MinimumArmorValue = -300",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scalingStats",
+      "id": "Global_EntityStatus_scalingStats",
+      "declaration": "[BoxGroup(\"Stat Settings\", true, false, 0)]\npublic BonusStats scalingStats",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statusEffects",
+      "id": "Global_EntityStatus_statusEffects",
+      "declaration": "public readonly List<StatusEffect> statusEffects",
+      "summary": "List of status effects this entity has.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "abilityHaste",
+      "id": "Global_EntityStatus_abilityHaste",
+      "declaration": "public float abilityHaste { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPower",
+      "id": "Global_EntityStatus_abilityPower",
+      "declaration": "public float abilityPower { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armor",
+      "id": "Global_EntityStatus_armor",
+      "declaration": "public float armor { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamage",
+      "id": "Global_EntityStatus_attackDamage",
+      "declaration": "public float attackDamage { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackSpeedMultiplier",
+      "id": "Global_EntityStatus_attackSpeedMultiplier",
+      "declaration": "public float attackSpeedMultiplier { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "basicEffectMask",
+      "id": "Global_EntityStatus_basicEffectMask",
+      "declaration": "public BasicEffectMask basicEffectMask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "coldEffectAmp",
+      "id": "Global_EntityStatus_coldEffectAmp",
+      "declaration": "public float coldEffectAmp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmp",
+      "id": "Global_EntityStatus_critAmp",
+      "declaration": "public float critAmp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChance",
+      "id": "Global_EntityStatus_critChance",
+      "declaration": "public float critChance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentHealth",
+      "id": "Global_EntityStatus_currentHealth",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]\npublic float currentHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMana",
+      "id": "Global_EntityStatus_currentMana",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]\npublic float currentMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentShield",
+      "id": "Global_EntityStatus_currentShield",
+      "declaration": "public float currentShield { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "darkEffectAmp",
+      "id": "Global_EntityStatus_darkEffectAmp",
+      "declaration": "public float darkEffectAmp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "darkStack",
+      "id": "Global_EntityStatus_darkStack",
+      "declaration": "public int darkStack { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireEffectAmp",
+      "id": "Global_EntityStatus_fireEffectAmp",
+      "declaration": "public float fireEffectAmp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireStack",
+      "id": "Global_EntityStatus_fireStack",
+      "declaration": "public int fireStack { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasArmorBoost",
+      "id": "Global_EntityStatus_hasArmorBoost",
+      "declaration": "public bool hasArmorBoost { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasArmorReduction",
+      "id": "Global_EntityStatus_hasArmorReduction",
+      "declaration": "public bool hasArmorReduction { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasAttackCritical",
+      "id": "Global_EntityStatus_hasAttackCritical",
+      "declaration": "public bool hasAttackCritical { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasAttackOverride",
+      "id": "Global_EntityStatus_hasAttackOverride",
+      "declaration": "public bool hasAttackOverride { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasBlind",
+      "id": "Global_EntityStatus_hasBlind",
+      "declaration": "public bool hasBlind { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasCold",
+      "id": "Global_EntityStatus_hasCold",
+      "declaration": "public bool hasCold { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasCripple",
+      "id": "Global_EntityStatus_hasCripple",
+      "declaration": "public bool hasCripple { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasCrowdControlImmunity",
+      "id": "Global_EntityStatus_hasCrowdControlImmunity",
+      "declaration": "public bool hasCrowdControlImmunity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasDamageImmunity",
+      "id": "Global_EntityStatus_hasDamageImmunity",
+      "declaration": "public bool hasDamageImmunity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasDeathInterrupt",
+      "id": "Global_EntityStatus_hasDeathInterrupt",
+      "declaration": "public bool hasDeathInterrupt { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasHaste",
+      "id": "Global_EntityStatus_hasHaste",
+      "declaration": "public bool hasHaste { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasImmobility",
+      "id": "Global_EntityStatus_hasImmobility",
+      "declaration": "public bool hasImmobility { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasInvisible",
+      "id": "Global_EntityStatus_hasInvisible",
+      "declaration": "public bool hasInvisible { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasInvulnerable",
+      "id": "Global_EntityStatus_hasInvulnerable",
+      "declaration": "public bool hasInvulnerable { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasMirageSkin",
+      "id": "Global_EntityStatus_hasMirageSkin",
+      "declaration": "public bool hasMirageSkin { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasProtected",
+      "id": "Global_EntityStatus_hasProtected",
+      "declaration": "public bool hasProtected { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasRoot",
+      "id": "Global_EntityStatus_hasRoot",
+      "declaration": "public bool hasRoot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasSilence",
+      "id": "Global_EntityStatus_hasSilence",
+      "declaration": "public bool hasSilence { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasSlow",
+      "id": "Global_EntityStatus_hasSlow",
+      "declaration": "public bool hasSlow { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasSpeed",
+      "id": "Global_EntityStatus_hasSpeed",
+      "declaration": "public bool hasSpeed { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasStun",
+      "id": "Global_EntityStatus_hasStun",
+      "declaration": "public bool hasStun { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasUncollidable",
+      "id": "Global_EntityStatus_hasUncollidable",
+      "declaration": "public bool hasUncollidable { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasUnstoppable",
+      "id": "Global_EntityStatus_hasUnstoppable",
+      "declaration": "public bool hasUnstoppable { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegen",
+      "id": "Global_EntityStatus_healthRegen",
+      "declaration": "public float healthRegen { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAlive",
+      "id": "Global_EntityStatus_isAlive",
+      "declaration": "public bool isAlive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDead",
+      "id": "Global_EntityStatus_isDead",
+      "declaration": "public bool isDead { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isHealthHidden",
+      "id": "Global_EntityStatus_isHealthHidden",
+      "declaration": "public bool isHealthHidden { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInConversation",
+      "id": "Global_EntityStatus_isInConversation",
+      "declaration": "public bool isInConversation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSectionTriggeringDisabled",
+      "id": "Global_EntityStatus_isSectionTriggeringDisabled",
+      "declaration": "public CounterBool isSectionTriggeringDisabled { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "level",
+      "id": "Global_EntityStatus_level",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int level { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightEffectAmp",
+      "id": "Global_EntityStatus_lightEffectAmp",
+      "declaration": "public float lightEffectAmp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightStack",
+      "id": "Global_EntityStatus_lightStack",
+      "declaration": "public int lightStack { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegen",
+      "id": "Global_EntityStatus_manaRegen",
+      "declaration": "public float manaRegen { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealth",
+      "id": "Global_EntityStatus_maxHealth",
+      "declaration": "public float maxHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxMana",
+      "id": "Global_EntityStatus_maxMana",
+      "declaration": "public float maxMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mirageSkinInitAmount",
+      "id": "Global_EntityStatus_mirageSkinInitAmount",
+      "declaration": "public float mirageSkinInitAmount { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "missingHealth",
+      "id": "Global_EntityStatus_missingHealth",
+      "declaration": "public float missingHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "missingMana",
+      "id": "Global_EntityStatus_missingMana",
+      "declaration": "public float missingMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "movementSpeedMultiplier",
+      "id": "Global_EntityStatus_movementSpeedMultiplier",
+      "declaration": "public float movementSpeedMultiplier { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedHealth",
+      "id": "Global_EntityStatus_normalizedHealth",
+      "declaration": "public float normalizedHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedMana",
+      "id": "Global_EntityStatus_normalizedMana",
+      "declaration": "public float normalizedMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overridenAttack",
+      "id": "Global_EntityStatus_overridenAttack",
+      "declaration": "public AbilityTrigger overridenAttack { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "specialFill",
+      "id": "Global_EntityStatus_specialFill",
+      "declaration": "public Vector2 specialFill { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacity",
+      "id": "Global_EntityStatus_tenacity",
+      "declaration": "public float tenacity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalArmorFromStatusEffects",
+      "id": "Global_EntityStatus_totalArmorFromStatusEffects",
+      "declaration": "public float totalArmorFromStatusEffects { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalCripple",
+      "id": "Global_EntityStatus_totalCripple",
+      "declaration": "public float totalCripple { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalFakeMaxHealth",
+      "id": "Global_EntityStatus_totalFakeMaxHealth",
+      "declaration": "public float totalFakeMaxHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalHaste",
+      "id": "Global_EntityStatus_totalHaste",
+      "declaration": "public float totalHaste { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalSlow",
+      "id": "Global_EntityStatus_totalSlow",
+      "declaration": "public float totalSlow { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalSpeed",
+      "id": "Global_EntityStatus_totalSpeed",
+      "declaration": "public float totalSpeed { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddStatBonus(StatBonus)",
+      "id": "Global_EntityStatus_AddStatBonus_StatBonus_",
+      "declaration": "public StatBonus AddStatBonus(StatBonus bonus)",
+      "summary": "Add the given bonus stats to this entity.",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "StatBonus",
+          "type_uid": "Global.StatBonus",
+          "description": ""
+        }
+      ],
+      "returns": "StatBonus"
+    },
+    {
+      "name": "CalculateTotalBonusStat(float, float, float)",
+      "id": "Global_EntityStatus_CalculateTotalBonusStat_System_Single_System_Single_System_Single_",
+      "declaration": "public float CalculateTotalBonusStat(float current, float bonusFlat, float bonusPercentage)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "current",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "bonusFlat",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "bonusPercentage",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "DisableSectionTriggering()",
+      "id": "Global_EntityStatus_DisableSectionTriggering",
+      "declaration": "public void DisableSectionTriggering()",
+      "summary": "This entity will not trigger section colliders. Note EnableSectionTriggering() must be done after calling this function.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnableSectionTriggering()",
+      "id": "Global_EntityStatus_EnableSectionTriggering",
+      "declaration": "public void EnableSectionTriggering()",
+      "summary": "This entity will trigger section colliders. Note this has to be done AFTER calling DisableSectionTriggering().",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FindStatusEffect(Type, Func<StatusEffect, bool>)",
+      "id": "Global_EntityStatus_FindStatusEffect_System_Type_System_Func_StatusEffect_System_Boolean__",
+      "declaration": "public StatusEffect FindStatusEffect(Type type, Func<StatusEffect, bool> predicate)",
+      "summary": "Find a status effect of given type with predicate.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "predicate",
+          "type": "System.Func<T, TResult><StatusEffect,bool>",
+          "type_uid": "Global.StatusEffect",
+          "description": ""
+        }
+      ],
+      "returns": "StatusEffect"
+    },
+    {
+      "name": "FindStatusEffect<T>(Func<T, bool>)",
+      "id": "Global_EntityStatus_FindStatusEffect__1_System_Func___0_System_Boolean__",
+      "declaration": "public T FindStatusEffect<T>(Func<T, bool> predicate) where T : StatusEffect",
+      "summary": "Find a status effect of given type with predicate.",
+      "parameters": [
+        {
+          "name": "predicate",
+          "type": "System.Func<T, TResult><T,bool>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetBonusAbilityPower()",
+      "id": "Global_EntityStatus_GetBonusAbilityPower",
+      "declaration": "public float GetBonusAbilityPower()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetBonusArmor()",
+      "id": "Global_EntityStatus_GetBonusArmor",
+      "declaration": "public float GetBonusArmor()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetBonusAttackDamage()",
+      "id": "Global_EntityStatus_GetBonusAttackDamage",
+      "declaration": "public float GetBonusAttackDamage()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetBonusHealth()",
+      "id": "Global_EntityStatus_GetBonusHealth",
+      "declaration": "public float GetBonusHealth()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetElementalAmp(ElementalType)",
+      "id": "Global_EntityStatus_GetElementalAmp_ElementalType_",
+      "declaration": "public float GetElementalAmp(ElementalType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "ElementalType",
+          "type_uid": "Global.ElementalType",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetElementalStack(ElementalType)",
+      "id": "Global_EntityStatus_GetElementalStack_ElementalType_",
+      "declaration": "public int GetElementalStack(ElementalType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "ElementalType",
+          "type_uid": "Global.ElementalType",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetStatusEffect(Type)",
+      "id": "Global_EntityStatus_GetStatusEffect_System_Type_",
+      "declaration": "public StatusEffect GetStatusEffect(Type type)",
+      "summary": "Get a status effect of given type.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "StatusEffect"
+    },
+    {
+      "name": "GetStatusEffect<T>()",
+      "id": "Global_EntityStatus_GetStatusEffect__1",
+      "declaration": "public T GetStatusEffect<T>() where T : StatusEffect",
+      "summary": "Get a status effect of given type.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetStatusEffects(Type)",
+      "id": "Global_EntityStatus_GetStatusEffects_System_Type_",
+      "declaration": "public IEnumerable<StatusEffect> GetStatusEffects(Type type)",
+      "summary": "Enumerate all status effects of given type.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><StatusEffect>"
+    },
+    {
+      "name": "GetStatusEffects<T>()",
+      "id": "Global_EntityStatus_GetStatusEffects__1",
+      "declaration": "public IEnumerable<T> GetStatusEffects<T>() where T : StatusEffect",
+      "summary": "Enumerate all status effects of given type.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><T>"
+    },
+    {
+      "name": "HasElemental(ElementalType)",
+      "id": "Global_EntityStatus_HasElemental_ElementalType_",
+      "declaration": "public bool HasElemental(ElementalType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "ElementalType",
+          "type_uid": "Global.ElementalType",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HasStatusEffect(Type)",
+      "id": "Global_EntityStatus_HasStatusEffect_System_Type_",
+      "declaration": "public bool HasStatusEffect(Type statusEffectType)",
+      "summary": "Does this entity has a status effect of a certain type?",
+      "parameters": [
+        {
+          "name": "statusEffectType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HasStatusEffect<T>()",
+      "id": "Global_EntityStatus_HasStatusEffect__1",
+      "declaration": "public bool HasStatusEffect<T>() where T : StatusEffect",
+      "summary": "Does this entity has a status effect of a certain type?",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HideHealth()",
+      "id": "Global_EntityStatus_HideHealth",
+      "declaration": "public void HideHealth()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EntityStatus_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveStatBonus(StatBonus)",
+      "id": "Global_EntityStatus_RemoveStatBonus_StatBonus_",
+      "declaration": "public void RemoveStatBonus(StatBonus bonus)",
+      "summary": "Remove the given bonus stats from this entity. Throws if the provided bonus did not exist on this entity.",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "StatBonus",
+          "type_uid": "Global.StatBonus",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetHealth(float)",
+      "id": "Global_EntityStatus_SetHealth_System_Single_",
+      "declaration": "public void SetHealth(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetMana(float)",
+      "id": "Global_EntityStatus_SetMana_System_Single_",
+      "declaration": "public void SetMana(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowHealth()",
+      "id": "Global_EntityStatus_ShowHealth",
+      "declaration": "public void ShowHealth()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TryGetStatusEffect(Type, out StatusEffect)",
+      "id": "Global_EntityStatus_TryGetStatusEffect_System_Type_StatusEffect__",
+      "declaration": "public bool TryGetStatusEffect(Type type, out StatusEffect effect)",
+      "summary": "Try to get an existing status effect instance on this entity.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "StatusEffect",
+          "type_uid": "Global.StatusEffect",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetStatusEffect<T>(out T)",
+      "id": "Global_EntityStatus_TryGetStatusEffect__1___0__",
+      "declaration": "public bool TryGetStatusEffect<T>(out T effect) where T : StatusEffect",
+      "summary": "Try to get an existing status effect instance on this entity.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UpdateStats()",
+      "id": "Global_EntityStatus_UpdateStats",
+      "declaration": "public void UpdateStats()",
+      "summary": "Recalculate entity stats + stat processors + basic effects + bonus stats immediately.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

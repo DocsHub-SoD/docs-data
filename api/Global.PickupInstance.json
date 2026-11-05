@@ -1,0 +1,297 @@
+{
+  "uid": "Global.PickupInstance",
+  "name": "PickupInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PickupInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "Pickup_BaseExpOrb",
+      "href": "Global.Pickup_BaseExpOrb.html",
+      "uid": "Global.Pickup_BaseExpOrb"
+    },
+    {
+      "name": "Pickup_BaseGoldOrb",
+      "href": "Global.Pickup_BaseGoldOrb.html",
+      "uid": "Global.Pickup_BaseGoldOrb"
+    },
+    {
+      "name": "Pickup_DreamDust",
+      "href": "Global.Pickup_DreamDust.html",
+      "uid": "Global.Pickup_DreamDust"
+    },
+    {
+      "name": "Pickup_HealthOrb",
+      "href": "Global.Pickup_HealthOrb.html",
+      "uid": "Global.Pickup_HealthOrb"
+    },
+    {
+      "name": "Pickup_ManaOrb",
+      "href": "Global.Pickup_ManaOrb.html",
+      "uid": "Global.Pickup_ManaOrb"
+    },
+    {
+      "name": "Pickup_RegenOrb",
+      "href": "Global.Pickup_RegenOrb.html",
+      "uid": "Global.Pickup_RegenOrb"
+    },
+    {
+      "name": "RandomPickupInstance",
+      "href": "Global.RandomPickupInstance.html",
+      "uid": "Global.RandomPickupInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "attractionRange",
+      "id": "Global_PickupInstance_attractionRange",
+      "declaration": "public float attractionRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableTimeoutMagnet",
+      "id": "Global_PickupInstance_enableTimeoutMagnet",
+      "declaration": "[Header(\"Timeout-Magnet\")]\npublic bool enableTimeoutMagnet",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "expirationTime",
+      "id": "Global_PickupInstance_expirationTime",
+      "declaration": "public float expirationTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fixDirectionMaxSpeedRad",
+      "id": "Global_PickupInstance_fixDirectionMaxSpeedRad",
+      "declaration": "[Header(\"Velocity\")]\npublic float fixDirectionMaxSpeedRad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainEffect",
+      "id": "Global_PickupInstance_mainEffect",
+      "declaration": "[Header(\"Effects\")]\npublic GameObject mainEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxInitialVelocity",
+      "id": "Global_PickupInstance_maxInitialVelocity",
+      "declaration": "public float maxInitialVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxVelocity",
+      "id": "Global_PickupInstance_maxVelocity",
+      "declaration": "public float maxVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pickupDelay",
+      "id": "Global_PickupInstance_pickupDelay",
+      "declaration": "[Header(\"Behavior\")]\npublic float pickupDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pickupEffect",
+      "id": "Global_PickupInstance_pickupEffect",
+      "declaration": "public GameObject pickupEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pickupEffectOnHero",
+      "id": "Global_PickupInstance_pickupEffectOnHero",
+      "declaration": "public GameObject pickupEffectOnHero",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pickupRange",
+      "id": "Global_PickupInstance_pickupRange",
+      "declaration": "public float pickupRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "timeoutMagnetTime",
+      "id": "Global_PickupInstance_timeoutMagnetTime",
+      "declaration": "public float timeoutMagnetTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "variationStrength",
+      "id": "Global_PickupInstance_variationStrength",
+      "declaration": "public float variationStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "velocityAccelerationMax",
+      "id": "Global_PickupInstance_velocityAccelerationMax",
+      "declaration": "public float velocityAccelerationMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "velocityAccelerationMin",
+      "id": "Global_PickupInstance_velocityAccelerationMin",
+      "declaration": "public float velocityAccelerationMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "velocityDeceleration",
+      "id": "Global_PickupInstance_velocityDeceleration",
+      "declaration": "public float velocityDeceleration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "yPosFromGround",
+      "id": "Global_PickupInstance_yPosFromGround",
+      "declaration": "public float yPosFromGround",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ActiveFrameUpdate()",
+      "id": "Global_PickupInstance_ActiveFrameUpdate",
+      "declaration": "protected override void ActiveFrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_PickupInstance_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CanBeUsedBy(Hero)",
+      "id": "Global_PickupInstance_CanBeUsedBy_Hero_",
+      "declaration": "protected virtual bool CanBeUsedBy(Hero hero)",
+      "summary": "Checked on server.",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_PickupInstance_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_PickupInstance_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPickup(Hero)",
+      "id": "Global_PickupInstance_OnPickup_Hero_",
+      "declaration": "protected virtual void OnPickup(Hero hero)",
+      "summary": "Called on server when this pickup instance is picked up. After this function call the instance is immediately destroyed.",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_PickupInstance_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

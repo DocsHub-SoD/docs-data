@@ -1,0 +1,80 @@
+{
+  "uid": "Global.DewGameResult.GemData",
+  "name": "DewGameResult.GemData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewGameResult.GemData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "capturedTooltipFields",
+      "id": "Global_DewGameResult_GemData_capturedTooltipFields",
+      "declaration": "public Dictionary<string, string> capturedTooltipFields",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "location",
+      "id": "Global_DewGameResult_GemData_location",
+      "declaration": "public GemLocation location",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "name",
+      "id": "Global_DewGameResult_GemData_name",
+      "declaration": "public string name",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "netId",
+      "id": "Global_DewGameResult_GemData_netId",
+      "declaration": "public uint netId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "quality",
+      "id": "Global_DewGameResult_GemData_quality",
+      "declaration": "public int quality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CaptureTooltipFields(Gem)",
+      "id": "Global_DewGameResult_GemData_CaptureTooltipFields_Gem_",
+      "declaration": "public void CaptureTooltipFields(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetGem()",
+      "id": "Global_DewGameResult_GemData_GetGem",
+      "declaration": "public Gem GetGem()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Gem"
+    }
+  ],
+  "events": []
+}

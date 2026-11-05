@@ -1,0 +1,189 @@
+{
+  "uid": "Global.AbilityLockHandle",
+  "name": "AbilityLockHandle",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AbilityLockHandle",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "shouldShowLockEffect",
+      "id": "Global_AbilityLockHandle_shouldShowLockEffect",
+      "declaration": "public bool shouldShowLockEffect { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "LockAbilityCast(int)",
+      "id": "Global_AbilityLockHandle_LockAbilityCast_System_Int32_",
+      "declaration": "public AbilityLockHandle LockAbilityCast(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockAbilityEdit(int)",
+      "id": "Global_AbilityLockHandle_LockAbilityEdit_System_Int32_",
+      "declaration": "public AbilityLockHandle LockAbilityEdit(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockAllAbilitiesCast()",
+      "id": "Global_AbilityLockHandle_LockAllAbilitiesCast",
+      "declaration": "public AbilityLockHandle LockAllAbilitiesCast()",
+      "summary": "This includes attack ability and movement ability.",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockAllActiveMainSkillsCast()",
+      "id": "Global_AbilityLockHandle_LockAllActiveMainSkillsCast",
+      "declaration": "public AbilityLockHandle LockAllActiveMainSkillsCast()",
+      "summary": "Locks Q, W, E, R",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockAllMainSkillsCast()",
+      "id": "Global_AbilityLockHandle_LockAllMainSkillsCast",
+      "declaration": "public AbilityLockHandle LockAllMainSkillsCast()",
+      "summary": "Locks Q, W, E, R, Trait",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockAllMainSkillsEdit()",
+      "id": "Global_AbilityLockHandle_LockAllMainSkillsEdit",
+      "declaration": "public AbilityLockHandle LockAllMainSkillsEdit()",
+      "summary": "Locks Q, W, E, R, Trait",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockAttackAbilityCast()",
+      "id": "Global_AbilityLockHandle_LockAttackAbilityCast",
+      "declaration": "public AbilityLockHandle LockAttackAbilityCast()",
+      "summary": "",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "LockMovementSkillCast()",
+      "id": "Global_AbilityLockHandle_LockMovementSkillCast",
+      "declaration": "public AbilityLockHandle LockMovementSkillCast()",
+      "summary": "",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_AbilityLockHandle_Stop",
+      "declaration": "public AbilityLockHandle Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAbilityCast(int)",
+      "id": "Global_AbilityLockHandle_UnlockAbilityCast_System_Int32_",
+      "declaration": "public AbilityLockHandle UnlockAbilityCast(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAbilityEdit(int)",
+      "id": "Global_AbilityLockHandle_UnlockAbilityEdit_System_Int32_",
+      "declaration": "public AbilityLockHandle UnlockAbilityEdit(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAllAbilitiesCast()",
+      "id": "Global_AbilityLockHandle_UnlockAllAbilitiesCast",
+      "declaration": "public AbilityLockHandle UnlockAllAbilitiesCast()",
+      "summary": "This includes attack ability and movement ability.",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAllActiveMainSkillsCast()",
+      "id": "Global_AbilityLockHandle_UnlockAllActiveMainSkillsCast",
+      "declaration": "public AbilityLockHandle UnlockAllActiveMainSkillsCast()",
+      "summary": "Unlocks Q, W, E, R",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAllMainSkillsCast()",
+      "id": "Global_AbilityLockHandle_UnlockAllMainSkillsCast",
+      "declaration": "public AbilityLockHandle UnlockAllMainSkillsCast()",
+      "summary": "Unlocks Q, W, E, R, Trait",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAllMainSkillsEdit()",
+      "id": "Global_AbilityLockHandle_UnlockAllMainSkillsEdit",
+      "declaration": "public AbilityLockHandle UnlockAllMainSkillsEdit()",
+      "summary": "Unlocks Q, W, E, R, Trait",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockAttackAbilityCast()",
+      "id": "Global_AbilityLockHandle_UnlockAttackAbilityCast",
+      "declaration": "public AbilityLockHandle UnlockAttackAbilityCast()",
+      "summary": "",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    },
+    {
+      "name": "UnlockMovementSkillCast()",
+      "id": "Global_AbilityLockHandle_UnlockMovementSkillCast",
+      "declaration": "public AbilityLockHandle UnlockMovementSkillCast()",
+      "summary": "",
+      "parameters": [],
+      "returns": "AbilityLockHandle"
+    }
+  ],
+  "events": []
+}

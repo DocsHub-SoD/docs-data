@@ -1,0 +1,113 @@
+{
+  "uid": "Global.FxGibs",
+  "name": "FxGibs",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxGibs : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    }
+  ],
+  "fields": [
+    {
+      "name": "angularSpeed",
+      "id": "Global_FxGibs_angularSpeed",
+      "declaration": "public float angularSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_FxGibs_info",
+      "declaration": "[HideInInspector]\npublic GibInfo? info",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxImpulse",
+      "id": "Global_FxGibs_maxImpulse",
+      "declaration": "public float maxImpulse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minImpulse",
+      "id": "Global_FxGibs_minImpulse",
+      "declaration": "public float minImpulse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "randomImpulse",
+      "id": "Global_FxGibs_randomImpulse",
+      "declaration": "public float randomImpulse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnInit()",
+      "id": "Global_FxGibs_OnInit",
+      "declaration": "protected override void OnInit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FxGibs_Play",
+      "declaration": "public override void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxGibs_Stop",
+      "declaration": "public override void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxGibs_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

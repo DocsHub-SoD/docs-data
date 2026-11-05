@@ -1,0 +1,117 @@
+{
+  "uid": "Global.FxMeshTrail",
+  "name": "FxMeshTrail",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxMeshTrail : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    },
+    {
+      "name": "IAttachableToEntity",
+      "href": "Global.IAttachableToEntity.html",
+      "uid": "Global.IAttachableToEntity"
+    }
+  ],
+  "fields": [
+    {
+      "name": "localVelocity",
+      "id": "Global_FxMeshTrail_localVelocity",
+      "declaration": "public Vector3 localVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "meshTrailMaterial",
+      "id": "Global_FxMeshTrail_meshTrailMaterial",
+      "declaration": "public Material meshTrailMaterial",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trailCount",
+      "id": "Global_FxMeshTrail_trailCount",
+      "declaration": "public int trailCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trailGradient",
+      "id": "Global_FxMeshTrail_trailGradient",
+      "declaration": "public Gradient trailGradient",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trailInterval",
+      "id": "Global_FxMeshTrail_trailInterval",
+      "declaration": "public float trailInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldVelocity",
+      "id": "Global_FxMeshTrail_worldVelocity",
+      "declaration": "public Vector3 worldVelocity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_FxMeshTrail_OnAttachToEntity_Entity_",
+      "declaration": "public void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxMeshTrail_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

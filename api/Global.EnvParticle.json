@@ -1,0 +1,24 @@
+{
+  "uid": "Global.EnvParticle",
+  "name": "EnvParticle",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EnvParticle : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "instances",
+      "id": "Global_EnvParticle_instances",
+      "declaration": "public static List<EnvParticle> instances",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

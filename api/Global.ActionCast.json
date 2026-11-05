@@ -1,0 +1,103 @@
+{
+  "uid": "Global.ActionCast",
+  "name": "ActionCast",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ActionCast : ActionBase",
+  "inheritance": [
+    {
+      "name": "ActionBase",
+      "href": "Global.ActionBase.html",
+      "uid": "Global.ActionBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "configIndex",
+      "id": "Global_ActionCast_configIndex",
+      "declaration": "public int configIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_ActionCast_info",
+      "declaration": "public CastInfo info",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isPredictedOnCast",
+      "id": "Global_ActionCast_isPredictedOnCast",
+      "declaration": "public bool isPredictedOnCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "predictTarget",
+      "id": "Global_ActionCast_predictTarget",
+      "declaration": "public Entity predictTarget",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipRangeCheck",
+      "id": "Global_ActionCast_skipRangeCheck",
+      "declaration": "public bool skipRangeCheck",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trigger",
+      "id": "Global_ActionCast_trigger",
+      "declaration": "public AbilityTrigger trigger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetMoveDestination()",
+      "id": "Global_ActionCast_GetMoveDestination",
+      "declaration": "public override Vector3? GetMoveDestination()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3?"
+    },
+    {
+      "name": "GetMoveDestinationRequiredDistance()",
+      "id": "Global_ActionCast_GetMoveDestinationRequiredDistance",
+      "declaration": "public override float GetMoveDestinationRequiredDistance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "Tick()",
+      "id": "Global_ActionCast_Tick",
+      "declaration": "public override bool Tick()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_ActionCast_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

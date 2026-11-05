@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EaseFunction",
+  "name": "EaseFunction",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate float EaseFunction(float s, float e, float v)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

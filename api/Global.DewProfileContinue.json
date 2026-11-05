@@ -1,0 +1,41 @@
+{
+  "uid": "Global.DewProfileContinue",
+  "name": "DewProfileContinue",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileContinue",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "achContinueData",
+      "id": "Global_DewProfileContinue_achContinueData",
+      "declaration": "public List<DewPersistence.AchievementsData> achContinueData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "continueData",
+      "id": "Global_DewProfileContinue_continueData",
+      "declaration": "public string continueData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Validate()",
+      "id": "Global_DewProfileContinue_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

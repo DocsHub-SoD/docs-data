@@ -1,0 +1,190 @@
+{
+  "uid": "Global.LobbyServiceProvider",
+  "name": "LobbyServiceProvider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class LobbyServiceProvider : MonoBehaviour",
+  "inheritance": [
+    {
+      "name": "LobbyServiceSteam",
+      "href": "Global.LobbyServiceSteam.html",
+      "uid": "Global.LobbyServiceSteam"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "currentLobby",
+      "id": "Global_LobbyServiceProvider_currentLobby",
+      "declaration": "public abstract LobbyInstance currentLobby { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "foundLobbies",
+      "id": "Global_LobbyServiceProvider_foundLobbies",
+      "declaration": "public LobbySearchResult foundLobbies { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRefreshingLobby",
+      "id": "Global_LobbyServiceProvider_isRefreshingLobby",
+      "declaration": "public bool isRefreshingLobby { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CreateLobby()",
+      "id": "Global_LobbyServiceProvider_CreateLobby",
+      "declaration": "public abstract UniTask CreateLobby()",
+      "summary": "Create a new lobby. You can use this to either create a new lobby or replace old faulty/deleted lobby mid-session.",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "GenerateRandomShortCode()",
+      "id": "Global_LobbyServiceProvider_GenerateRandomShortCode",
+      "declaration": "public string GenerateRandomShortCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetGameServerAddress()",
+      "id": "Global_LobbyServiceProvider_GetGameServerAddress",
+      "declaration": "public abstract string GetGameServerAddress()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetLobbies(Action<LobbySearchResult>, object)",
+      "id": "Global_LobbyServiceProvider_GetLobbies_System_Action_LobbySearchResult__System_Object_",
+      "declaration": "public abstract UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object continuationToken = null)",
+      "summary": "Get list of lobbies we can join.",
+      "parameters": [
+        {
+          "name": "onUpdated",
+          "type": "System.Action<T><LobbySearchResult>",
+          "type_uid": "Global.LobbySearchResult",
+          "description": ""
+        },
+        {
+          "name": "continuationToken",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "HandleUserLeavingGame(string)",
+      "id": "Global_LobbyServiceProvider_HandleUserLeavingGame_System_String_",
+      "declaration": "public abstract UniTask HandleUserLeavingGame(string id)",
+      "summary": "Handle user leaving the game server. The user must be removed from the lobby if possible.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "InvokeOnCurrentLobbyChanged()",
+      "id": "Global_LobbyServiceProvider_InvokeOnCurrentLobbyChanged",
+      "declaration": "protected void InvokeOnCurrentLobbyChanged()",
+      "summary": "You must call this when currentLobby's value changes or its property(s) changes.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "JoinGameOfCurrentLobby()",
+      "id": "Global_LobbyServiceProvider_JoinGameOfCurrentLobby",
+      "declaration": "public virtual UniTask JoinGameOfCurrentLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "JoinLobby(object)",
+      "id": "Global_LobbyServiceProvider_JoinLobby_System_Object_",
+      "declaration": "public abstract UniTask JoinLobby(object lobby)",
+      "summary": "Join a lobby. If you want to join the game of the lobby, you need to call respective function as well.",
+      "parameters": [
+        {
+          "name": "lobby",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "LeaveLobby()",
+      "id": "Global_LobbyServiceProvider_LeaveLobby",
+      "declaration": "public abstract UniTask LeaveLobby()",
+      "summary": "Leave current lobby. This can be called anytime even when you are not in a lobby, to make sure you don't have any leftover lobbies.",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "RefreshLobbies(object)",
+      "id": "Global_LobbyServiceProvider_RefreshLobbies_System_Object_",
+      "declaration": "public UniTaskVoid RefreshLobbies(object continuationToken = null)",
+      "summary": "Refresh foundLobbies result.",
+      "parameters": [
+        {
+          "name": "continuationToken",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTaskVoid"
+    },
+    {
+      "name": "SetBasicAttributes()",
+      "id": "Global_LobbyServiceProvider_SetBasicAttributes",
+      "declaration": "public UniTask SetBasicAttributes()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "SetLobbyAttribute(string, object)",
+      "id": "Global_LobbyServiceProvider_SetLobbyAttribute_System_String_System_Object_",
+      "declaration": "public abstract UniTask SetLobbyAttribute(string key, object value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    }
+  ],
+  "events": []
+}

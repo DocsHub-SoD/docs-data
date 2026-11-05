@@ -1,0 +1,237 @@
+{
+  "uid": "Global.StackedStatusEffect",
+  "name": "StackedStatusEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class StackedStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "StatusEffect",
+      "href": "Global.StatusEffect.html",
+      "uid": "Global.StatusEffect"
+    },
+    {
+      "name": "ElementalStatusEffect",
+      "href": "Global.ElementalStatusEffect.html",
+      "uid": "Global.ElementalStatusEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "autoDecay",
+      "id": "Global_StackedStatusEffect_autoDecay",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\n[ToggleGroup(\"Stack Settings/autoDecay\", \"Auto Decay\")]\npublic bool autoDecay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decayAllAtOnce",
+      "id": "Global_StackedStatusEffect_decayAllAtOnce",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\n[ToggleGroup(\"Stack Settings/autoDecay\", \"Auto Decay\")]\n[ToggleLeft]\npublic bool decayAllAtOnce",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decayCount",
+      "id": "Global_StackedStatusEffect_decayCount",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\n[HideIf(\"decayAllAtOnce\", true)]\n[ToggleGroup(\"Stack Settings/autoDecay\", \"Auto Decay\")]\npublic int decayCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decayTime",
+      "id": "Global_StackedStatusEffect_decayTime",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\n[ToggleGroup(\"Stack Settings/autoDecay\", \"Auto Decay\")]\npublic float decayTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killOnZeroStack",
+      "id": "Global_StackedStatusEffect_killOnZeroStack",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\npublic bool killOnZeroStack",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxStack",
+      "id": "Global_StackedStatusEffect_maxStack",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\npublic int maxStack",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "resetTimerOnStackChange",
+      "id": "Global_StackedStatusEffect_resetTimerOnStackChange",
+      "declaration": "[BoxGroup(\"Stack Settings\", true, false, 0)]\n[ToggleGroup(\"Stack Settings/autoDecay\", \"Auto Decay\")]\n[ToggleLeft]\npublic bool resetTimerOnStackChange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "remainingDecayTime",
+      "id": "Global_StackedStatusEffect_remainingDecayTime",
+      "declaration": "public float remainingDecayTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stack",
+      "id": "Global_StackedStatusEffect_stack",
+      "declaration": "public int stack { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_StackedStatusEffect_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddStack(int)",
+      "id": "Global_StackedStatusEffect_AddStack_System_Int32_",
+      "declaration": "public void AddStack(int value = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_StackedStatusEffect_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_StackedStatusEffect_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStackChange(int, int)",
+      "id": "Global_StackedStatusEffect_OnStackChange_System_Int32_System_Int32_",
+      "declaration": "protected virtual void OnStackChange(int oldStack, int newStack)",
+      "summary": "Called everywhere when stack count changes.",
+      "parameters": [
+        {
+          "name": "oldStack",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newStack",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveStack(int)",
+      "id": "Global_StackedStatusEffect_RemoveStack_System_Int32_",
+      "declaration": "public void RemoveStack(int value = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ResetDecayTimer()",
+      "id": "Global_StackedStatusEffect_ResetDecayTimer",
+      "declaration": "public void ResetDecayTimer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetStack(int)",
+      "id": "Global_StackedStatusEffect_SetStack_System_Int32_",
+      "declaration": "public void SetStack(int stack)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "stack",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

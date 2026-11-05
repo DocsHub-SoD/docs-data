@@ -1,0 +1,15 @@
+{
+  "uid": "Global.AchPersistentVarAttribute",
+  "name": "AchPersistentVarAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Field)]\npublic class AchPersistentVarAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

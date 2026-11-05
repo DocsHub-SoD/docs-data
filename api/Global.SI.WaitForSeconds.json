@@ -1,0 +1,15 @@
+{
+  "uid": "Global.SI.WaitForSeconds",
+  "name": "SI.WaitForSeconds",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct SI.WaitForSeconds",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

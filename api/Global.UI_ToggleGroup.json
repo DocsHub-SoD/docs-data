@@ -1,0 +1,33 @@
+{
+  "uid": "Global.UI_ToggleGroup",
+  "name": "UI_ToggleGroup",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_ToggleGroup : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onCurrentIndexChanged",
+      "id": "Global_UI_ToggleGroup_onCurrentIndexChanged",
+      "declaration": "public UnityEvent<int> onCurrentIndexChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentIndex",
+      "id": "Global_UI_ToggleGroup_currentIndex",
+      "declaration": "public int currentIndex { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

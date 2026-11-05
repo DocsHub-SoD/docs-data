@@ -1,0 +1,15 @@
+{
+  "uid": "Global.ConsoleManager.AutoExecKey",
+  "name": "ConsoleManager.AutoExecKey",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum ConsoleManager.AutoExecKey",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

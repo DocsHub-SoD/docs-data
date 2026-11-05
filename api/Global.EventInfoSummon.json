@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EventInfoSummon",
+  "name": "EventInfoSummon",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoSummon",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoSummon_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who invoked this event in an actor chain.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "summon",
+      "id": "Global_EventInfoSummon_summon",
+      "declaration": "public Summon summon",
+      "summary": "Summoned entity.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

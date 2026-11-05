@@ -1,0 +1,100 @@
+{
+  "uid": "Global.FxEntityModelTransform",
+  "name": "FxEntityModelTransform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxEntityModelTransform : MonoBehaviour, IEffectComponent, IAttachableToEntity",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IAttachableToEntity",
+      "href": "Global.IAttachableToEntity.html",
+      "uid": "Global.IAttachableToEntity"
+    }
+  ],
+  "fields": [
+    {
+      "name": "duration",
+      "id": "Global_FxEntityModelTransform_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "from",
+      "id": "Global_FxEntityModelTransform_from",
+      "declaration": "public Transform from",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedLerpCurve",
+      "id": "Global_FxEntityModelTransform_normalizedLerpCurve",
+      "declaration": "public AnimationCurve normalizedLerpCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "to",
+      "id": "Global_FxEntityModelTransform_to",
+      "declaration": "public Transform to",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxEntityModelTransform_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_FxEntityModelTransform_OnAttachToEntity_Entity_",
+      "declaration": "public void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FxEntityModelTransform_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxEntityModelTransform_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

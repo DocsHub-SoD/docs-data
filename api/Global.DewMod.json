@@ -1,0 +1,332 @@
+{
+  "uid": "Global.DewMod",
+  "name": "DewMod",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewMod",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "allJsonOverrideItemsLocal",
+      "id": "Global_DewMod_allJsonOverrideItemsLocal",
+      "declaration": "public static List<JsonOverrideItem> allJsonOverrideItemsLocal",
+      "summary": "All JSON override items from local mods.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allMods",
+      "id": "Global_DewMod_allMods",
+      "declaration": "public static List<ModItem> allMods",
+      "summary": "All mods that are either subscribed by the user or in mods directory. Contains both enabled and disabled mods.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentJsonOverrideProcessorsFromServer",
+      "id": "Global_DewMod_currentJsonOverrideProcessorsFromServer",
+      "declaration": "public static Dictionary<string, SafeAction<GameObject>> currentJsonOverrideProcessorsFromServer",
+      "summary": "GUID to processor map of current JSON overrides, received from the server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentJsonOverrideProcessorsLocal",
+      "id": "Global_DewMod_currentJsonOverrideProcessorsLocal",
+      "declaration": "public static Dictionary<string, SafeAction<GameObject>> currentJsonOverrideProcessorsLocal",
+      "summary": "GUID to processor map of current JSON overrides, from this machine. This will not be applied when playing co-op as a client.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "jsonOverrideTargets",
+      "id": "Global_DewMod_jsonOverrideTargets",
+      "declaration": "public static Dictionary<string, Dictionary<string, string>> jsonOverrideTargets",
+      "summary": "Original values of JSON override targets. This acts as a whitelist for overrides.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadedInstances",
+      "id": "Global_DewMod_loadedInstances",
+      "declaration": "public static List<LoadedModInstance> loadedInstances",
+      "summary": "Currently alive mod instances.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onModLoadEnded",
+      "id": "Global_DewMod_onModLoadEnded",
+      "declaration": "public static SafeAction onModLoadEnded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onModLoadStarted",
+      "id": "Global_DewMod_onModLoadStarted",
+      "declaration": "public static SafeAction onModLoadStarted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isAutoReloadEnabled",
+      "id": "Global_DewMod_isAutoReloadEnabled",
+      "declaration": "public static bool isAutoReloadEnabled { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGameplayAltered",
+      "id": "Global_DewMod_isGameplayAltered",
+      "declaration": "public static bool isGameplayAltered { get; }",
+      "summary": "Has the game's gameplay been modified by mods? When this is true, a mod icon will be shown on your lobby when you host a game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLoadingMod",
+      "id": "Global_DewMod_isLoadingMod",
+      "declaration": "public static bool isLoadingMod { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "BuildJsonOverrideOriginal(string)",
+      "id": "Global_DewMod_BuildJsonOverrideOriginal_System_String_",
+      "declaration": "public static void BuildJsonOverrideOriginal(string typeName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "BuildJsonOverrideOriginalsFull()",
+      "id": "Global_DewMod_BuildJsonOverrideOriginalsFull",
+      "declaration": "public static void BuildJsonOverrideOriginalsFull()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CreateItem()",
+      "id": "Global_DewMod_CreateItem",
+      "declaration": "public static UniTask<CreateItemResult_t> CreateItem()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask<T><CreateItemResult_t>"
+    },
+    {
+      "name": "DeleteItem(PublishedFileId_t)",
+      "id": "Global_DewMod_DeleteItem_Steamworks_PublishedFileId_t_",
+      "declaration": "public static UniTask<DeleteItemResult_t> DeleteItem(PublishedFileId_t id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Steamworks.PublishedFileId_t",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask<T><DeleteItemResult_t>"
+    },
+    {
+      "name": "DisableAutoReload()",
+      "id": "Global_DewMod_DisableAutoReload",
+      "declaration": "public static void DisableAutoReload()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnableAutoReload()",
+      "id": "Global_DewMod_EnableAutoReload",
+      "declaration": "public static void EnableAutoReload()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EndRegisterJsonOverride()",
+      "id": "Global_DewMod_EndRegisterJsonOverride",
+      "declaration": "public static void EndRegisterJsonOverride()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetAllLocalModDirectories()",
+      "id": "Global_DewMod_GetAllLocalModDirectories",
+      "declaration": "public static List<string> GetAllLocalModDirectories()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.List<T><string>"
+    },
+    {
+      "name": "GetSortedModsList(List<ModItem>)",
+      "id": "Global_DewMod_GetSortedModsList_System_Collections_Generic_List_ModItem__",
+      "declaration": "public static List<ModItem> GetSortedModsList(List<ModItem> list)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.List<T><ModItem>",
+          "type_uid": "Global.ModItem",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><ModItem>"
+    },
+    {
+      "name": "Load(string)",
+      "id": "Global_DewMod_Load_System_String_",
+      "declaration": "public static void Load(string id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OpenConfigWindow(LoadedModInstance)",
+      "id": "Global_DewMod_OpenConfigWindow_LoadedModInstance_",
+      "declaration": "public static void OpenConfigWindow(LoadedModInstance mod)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "mod",
+          "type": "LoadedModInstance",
+          "type_uid": "Global.LoadedModInstance",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Refresh()",
+      "id": "Global_DewMod_Refresh",
+      "declaration": "public static void Refresh()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RegisterJsonOverride(JsonOverrideItem, bool)",
+      "id": "Global_DewMod_RegisterJsonOverride_JsonOverrideItem_System_Boolean_",
+      "declaration": "public static void RegisterJsonOverride(JsonOverrideItem item, bool isFromServer = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "JsonOverrideItem",
+          "type_uid": "Global.JsonOverrideItem",
+          "description": ""
+        },
+        {
+          "name": "isFromServer",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RegisterJsonOverride(string)",
+      "id": "Global_DewMod_RegisterJsonOverride_System_String_",
+      "declaration": "public static void RegisterJsonOverride(string path)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RegisterJsonOverridesInDirectory(string)",
+      "id": "Global_DewMod_RegisterJsonOverridesInDirectory_System_String_",
+      "declaration": "public static void RegisterJsonOverridesInDirectory(string dir)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dir",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ReloadFromActiveMods()",
+      "id": "Global_DewMod_ReloadFromActiveMods",
+      "declaration": "public static void ReloadFromActiveMods()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartRegisterJsonOverride(bool)",
+      "id": "Global_DewMod_StartRegisterJsonOverride_System_Boolean_",
+      "declaration": "public static void StartRegisterJsonOverride(bool willRegisterAcrossMultipleFrames = false)",
+      "summary": "You must call this before registering any overrides.",
+      "parameters": [
+        {
+          "name": "willRegisterAcrossMultipleFrames",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UpdateItem(PublishedFileId_t, ModItem)",
+      "id": "Global_DewMod_UpdateItem_Steamworks_PublishedFileId_t_ModItem_",
+      "declaration": "public static UniTask<SubmitItemUpdateResult_t> UpdateItem(PublishedFileId_t id, ModItem item)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Steamworks.PublishedFileId_t",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "item",
+          "type": "ModItem",
+          "type_uid": "Global.ModItem",
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask<T><SubmitItemUpdateResult_t>"
+    }
+  ],
+  "events": []
+}

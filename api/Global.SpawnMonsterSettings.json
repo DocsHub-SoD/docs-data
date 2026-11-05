@@ -1,0 +1,153 @@
+{
+  "uid": "Global.SpawnMonsterSettings",
+  "name": "SpawnMonsterSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SpawnMonsterSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "afterSpawn",
+      "id": "Global_SpawnMonsterSettings_afterSpawn",
+      "declaration": "public Action<Entity> afterSpawn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "beforeSpawn",
+      "id": "Global_SpawnMonsterSettings_beforeSpawn",
+      "declaration": "public Action<Entity> beforeSpawn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "earlyFinishCondition",
+      "id": "Global_SpawnMonsterSettings_earlyFinishCondition",
+      "declaration": "public Func<bool> earlyFinishCondition",
+      "summary": "This condition is checked before every spawn.When this evaluates to true, the spawn will be finished early.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hero",
+      "id": "Global_SpawnMonsterSettings_hero",
+      "declaration": "public Hero hero",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreCoopPopMultiplier",
+      "id": "Global_SpawnMonsterSettings_ignoreCoopPopMultiplier",
+      "declaration": "public bool ignoreCoopPopMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreTurnPopMultiplier",
+      "id": "Global_SpawnMonsterSettings_ignoreTurnPopMultiplier",
+      "declaration": "public bool ignoreTurnPopMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "initDelayFlat",
+      "id": "Global_SpawnMonsterSettings_initDelayFlat",
+      "declaration": "public float initDelayFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "initDelayMultiplier",
+      "id": "Global_SpawnMonsterSettings_initDelayMultiplier",
+      "declaration": "public float initDelayMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterSpawnData",
+      "id": "Global_SpawnMonsterSettings_monsterSpawnData",
+      "declaration": "public RoomMonsters.MonsterSpawnData monsterSpawnData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFinish",
+      "id": "Global_SpawnMonsterSettings_onFinish",
+      "declaration": "public Action onFinish",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "random",
+      "id": "Global_SpawnMonsterSettings_random",
+      "declaration": "public DewRandom random",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rule",
+      "id": "Global_SpawnMonsterSettings_rule",
+      "declaration": "public MonsterSpawnRule rule",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "section",
+      "id": "Global_SpawnMonsterSettings_section",
+      "declaration": "public RoomSection section",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnPopulationMultiplier",
+      "id": "Global_SpawnMonsterSettings_spawnPopulationMultiplier",
+      "declaration": "public float spawnPopulationMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnPosGetter",
+      "id": "Global_SpawnMonsterSettings_spawnPosGetter",
+      "declaration": "public Func<Vector3> spawnPosGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnRotGetter",
+      "id": "Global_SpawnMonsterSettings_spawnRotGetter",
+      "declaration": "public Func<Quaternion> spawnRotGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_SpawnMonsterSettings_Clone",
+      "declaration": "public SpawnMonsterSettings Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "SpawnMonsterSettings"
+    }
+  ],
+  "events": []
+}

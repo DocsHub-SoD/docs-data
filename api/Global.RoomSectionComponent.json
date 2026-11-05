@@ -1,0 +1,55 @@
+{
+  "uid": "Global.RoomSectionComponent",
+  "name": "RoomSectionComponent",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(200)]\n[RequireComponent(typeof(RoomSection))]\npublic class RoomSectionComponent : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "Section_Monsters",
+      "href": "Global.Section_Monsters.html",
+      "uid": "Global.Section_Monsters"
+    },
+    {
+      "name": "Section_Props",
+      "href": "Global.Section_Props.html",
+      "uid": "Global.Section_Props"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "section",
+      "id": "Global_RoomSectionComponent_section",
+      "declaration": "public RoomSection section { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_RoomSectionComponent_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

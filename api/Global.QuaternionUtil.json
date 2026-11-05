@@ -1,0 +1,118 @@
+{
+  "uid": "Global.QuaternionUtil",
+  "name": "QuaternionUtil",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class QuaternionUtil",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AngVelToDeriv(Quaternion, Vector3)",
+      "id": "Global_QuaternionUtil_AngVelToDeriv_UnityEngine_Quaternion_UnityEngine_Vector3_",
+      "declaration": "public static Quaternion AngVelToDeriv(Quaternion Current, Vector3 AngVel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "Current",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "AngVel",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "DerivToAngVel(Quaternion, Quaternion)",
+      "id": "Global_QuaternionUtil_DerivToAngVel_UnityEngine_Quaternion_UnityEngine_Quaternion_",
+      "declaration": "public static Vector3 DerivToAngVel(Quaternion Current, Quaternion Deriv)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "Current",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "Deriv",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "IntegrateRotation(Quaternion, Vector3, float)",
+      "id": "Global_QuaternionUtil_IntegrateRotation_UnityEngine_Quaternion_UnityEngine_Vector3_System_Single_",
+      "declaration": "public static Quaternion IntegrateRotation(Quaternion Rotation, Vector3 AngularVelocity, float DeltaTime)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "Rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "AngularVelocity",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "DeltaTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "SmoothDamp(Quaternion, Quaternion, ref Quaternion, float)",
+      "id": "Global_QuaternionUtil_SmoothDamp_UnityEngine_Quaternion_UnityEngine_Quaternion_UnityEngine_Quaternion__System_Single_",
+      "declaration": "public static Quaternion SmoothDamp(Quaternion rot, Quaternion target, ref Quaternion deriv, float time)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "deriv",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "time",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Quaternion"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,47 @@
+{
+  "uid": "Global.FxFindEntity",
+  "name": "FxFindEntity",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxFindEntity : MonoBehaviour, IEffectSetupComponent",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectSetupComponent",
+      "href": "Global.IEffectSetupComponent.html",
+      "uid": "Global.IEffectSetupComponent"
+    }
+  ],
+  "fields": [
+    {
+      "name": "exactMatch",
+      "id": "Global_FxFindEntity_exactMatch",
+      "declaration": "public bool exactMatch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "findType",
+      "id": "Global_FxFindEntity_findType",
+      "declaration": "public string findType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnEffectSetup()",
+      "id": "Global_FxFindEntity_OnEffectSetup",
+      "declaration": "public void OnEffectSetup()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.DisableOcclusionTransparency",
+  "name": "DisableOcclusionTransparency",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class DisableOcclusionTransparency : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "instance",
+      "id": "Global_DisableOcclusionTransparency_instance",
+      "declaration": "public static DisableOcclusionTransparency instance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

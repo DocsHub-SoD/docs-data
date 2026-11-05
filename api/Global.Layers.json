@@ -1,0 +1,144 @@
+{
+  "uid": "Global.Layers",
+  "name": "Layers",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class Layers",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "CollidableWithProjectile",
+      "id": "Global_Layers_CollidableWithProjectile",
+      "declaration": "public const int CollidableWithProjectile = 15",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_Layers_Default",
+      "declaration": "public const int Default = 0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DewCollider",
+      "id": "Global_Layers_DewCollider",
+      "declaration": "public const int DewCollider = 12",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Entity",
+      "id": "Global_Layers_Entity",
+      "declaration": "public const int Entity = 8",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityModel",
+      "id": "Global_Layers_EntityModel",
+      "declaration": "public const int EntityModel = 9",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Gibs",
+      "id": "Global_Layers_Gibs",
+      "declaration": "public const int Gibs = 16",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ground",
+      "id": "Global_Layers_Ground",
+      "declaration": "public const int Ground = 10",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IgnoreRaycast",
+      "id": "Global_Layers_IgnoreRaycast",
+      "declaration": "public const int IgnoreRaycast = 2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IncludeInNavigation",
+      "id": "Global_Layers_IncludeInNavigation",
+      "declaration": "public const int IncludeInNavigation = 17",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Interactable",
+      "id": "Global_Layers_Interactable",
+      "declaration": "public const int Interactable = 14",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Portrait",
+      "id": "Global_Layers_Portrait",
+      "declaration": "public const int Portrait = 13",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PostProcessing",
+      "id": "Global_Layers_PostProcessing",
+      "declaration": "public const int PostProcessing = 11",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Preview",
+      "id": "Global_Layers_Preview",
+      "declaration": "public const int Preview = 20",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TransparentFX",
+      "id": "Global_Layers_TransparentFX",
+      "declaration": "public const int TransparentFX = 1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UI",
+      "id": "Global_Layers_UI",
+      "declaration": "public const int UI = 5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Water",
+      "id": "Global_Layers_Water",
+      "declaration": "public const int Water = 4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

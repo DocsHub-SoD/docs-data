@@ -1,0 +1,78 @@
+{
+  "uid": "Global.SafeAction",
+  "name": "SafeAction",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SafeAction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "Count",
+      "id": "Global_SafeAction_Count",
+      "declaration": "public int Count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Add(Action)",
+      "id": "Global_SafeAction_Add_System_Action_",
+      "declaration": "public SafeAction Add(Action handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "Contains(Action)",
+      "id": "Global_SafeAction_Contains_System_Action_",
+      "declaration": "public bool Contains(Action handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Invoke()",
+      "id": "Global_SafeAction_Invoke",
+      "declaration": "public void Invoke()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Remove(Action)",
+      "id": "Global_SafeAction_Remove_System_Action_",
+      "declaration": "public SafeAction Remove(Action handler)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handler",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    }
+  ],
+  "events": []
+}

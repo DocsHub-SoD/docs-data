@@ -1,0 +1,40 @@
+{
+  "uid": "Global.ConsoleBindItem",
+  "name": "ConsoleBindItem",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ConsoleBindItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "command",
+      "id": "Global_ConsoleBindItem_command",
+      "declaration": "public string command",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "key",
+      "id": "Global_ConsoleBindItem_key",
+      "declaration": "public KeyCode key",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_ConsoleBindItem_type",
+      "declaration": "public ConsoleBindItemType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

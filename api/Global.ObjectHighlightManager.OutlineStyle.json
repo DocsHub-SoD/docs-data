@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ObjectHighlightManager.OutlineStyle",
+  "name": "ObjectHighlightManager.OutlineStyle",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct ObjectHighlightManager.OutlineStyle",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "color",
+      "id": "Global_ObjectHighlightManager_OutlineStyle_color",
+      "declaration": "public Color color",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.CooldownReductionByRatioSettings",
+  "name": "CooldownReductionByRatioSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct CooldownReductionByRatioSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ignoreCanReceiveCooldown",
+      "id": "Global_CooldownReductionByRatioSettings_ignoreCanReceiveCooldown",
+      "declaration": "public bool ignoreCanReceiveCooldown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ratio",
+      "id": "Global_CooldownReductionByRatioSettings_ratio",
+      "declaration": "public float ratio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

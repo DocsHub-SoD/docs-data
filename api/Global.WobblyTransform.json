@@ -1,0 +1,64 @@
+{
+  "uid": "Global.WobblyTransform",
+  "name": "WobblyTransform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class WobblyTransform : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "positionSmoothTime",
+      "id": "Global_WobblyTransform_positionSmoothTime",
+      "declaration": "public float positionSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionTargetInterval",
+      "id": "Global_WobblyTransform_positionTargetInterval",
+      "declaration": "public float positionTargetInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionTargetMagnitude",
+      "id": "Global_WobblyTransform_positionTargetMagnitude",
+      "declaration": "public Vector3 positionTargetMagnitude",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotationSmoothTime",
+      "id": "Global_WobblyTransform_rotationSmoothTime",
+      "declaration": "public float rotationSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotationTargetInterval",
+      "id": "Global_WobblyTransform_rotationTargetInterval",
+      "declaration": "public float rotationTargetInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotationTargetMagnitude",
+      "id": "Global_WobblyTransform_rotationTargetMagnitude",
+      "declaration": "public Vector3 rotationTargetMagnitude",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

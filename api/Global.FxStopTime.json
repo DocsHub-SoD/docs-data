@@ -1,0 +1,64 @@
+{
+  "uid": "Global.FxStopTime",
+  "name": "FxStopTime",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxStopTime : MonoBehaviour, IEffectComponent",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    }
+  ],
+  "fields": [
+    {
+      "name": "delay",
+      "id": "Global_FxStopTime_delay",
+      "declaration": "public float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_FxStopTime_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxStopTime_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_FxStopTime_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxStopTime_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,57 @@
+{
+  "uid": "Global.DewAnimationEntry",
+  "name": "DewAnimationEntry",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class DewAnimationEntry",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "duration",
+      "id": "Global_DewAnimationEntry_duration",
+      "declaration": "[MinValue(1.401298464324817E-45)]\npublic float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawClip",
+      "id": "Global_DewAnimationEntry_rawClip",
+      "declaration": "public AnimationClip rawClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "timeCurve",
+      "id": "Global_DewAnimationEntry_timeCurve",
+      "declaration": "[LabelText(\"Ease\")]\npublic DewEase timeCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trimRange",
+      "id": "Global_DewAnimationEntry_trimRange",
+      "declaration": "[MinMaxSlider(0, \"_rawClipLength\", false)]\npublic Vector2 trimRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Validate()",
+      "id": "Global_DewAnimationEntry_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

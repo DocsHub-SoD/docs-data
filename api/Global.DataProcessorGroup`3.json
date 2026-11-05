@@ -1,0 +1,96 @@
+{
+  "uid": "Global.DataProcessorGroup`3",
+  "name": "DataProcessorGroup<TData, TFrom, TTo>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DataProcessorGroup<TData, TFrom, TTo> where TData : struct",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "count",
+      "id": "Global_DataProcessorGroup_3_count",
+      "declaration": "public int count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Add(DataProcessor<TData, TFrom, TTo>, int)",
+      "id": "Global_DataProcessorGroup_3_Add_DataProcessor__0__1__2__System_Int32_",
+      "declaration": "public void Add(DataProcessor<TData, TFrom, TTo> processor, int priority = 0)",
+      "summary": "Processors with lower priority value will be executed first.",
+      "parameters": [
+        {
+          "name": "processor",
+          "type": "DataProcessor<TData, TFrom, TTo>",
+          "type_uid": "Global.DataProcessor-3",
+          "description": ""
+        },
+        {
+          "name": "priority",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Clear()",
+      "id": "Global_DataProcessorGroup_3_Clear",
+      "declaration": "public void Clear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Process(ref TData, TFrom, TTo)",
+      "id": "Global_DataProcessorGroup_3_Process__0___1__2_",
+      "declaration": "public void Process(ref TData data, TFrom from, TTo to)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "TData",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "from",
+          "type": "TFrom",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "to",
+          "type": "TTo",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Remove(DataProcessor<TData, TFrom, TTo>)",
+      "id": "Global_DataProcessorGroup_3_Remove_DataProcessor__0__1__2__",
+      "declaration": "public void Remove(DataProcessor<TData, TFrom, TTo> processor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "processor",
+          "type": "DataProcessor<TData, TFrom, TTo>",
+          "type_uid": "Global.DataProcessor-3",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

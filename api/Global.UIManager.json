@@ -1,0 +1,133 @@
+{
+  "uid": "Global.UIManager",
+  "name": "UIManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UIManager : ManagerBase<UIManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "UIManager",
+      "href": "Global.UIManager.html",
+      "uid": "Global.UIManager"
+    },
+    {
+      "name": "InGameUIManager",
+      "href": "Global.InGameUIManager.html",
+      "uid": "Global.InGameUIManager"
+    },
+    {
+      "name": "LobbyUIManager",
+      "href": "Global.LobbyUIManager.html",
+      "uid": "Global.LobbyUIManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "onStateChanged",
+      "id": "Global_UIManager_onStateChanged",
+      "declaration": "public SafeAction<string, string> onStateChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "availableStates",
+      "id": "Global_UIManager_availableStates",
+      "declaration": "public IReadOnlyCollection<string> availableStates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_UIManager_state",
+      "declaration": "public string state { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "IsState(string)",
+      "id": "Global_UIManager_IsState_System_String_",
+      "declaration": "public bool IsState(string state)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnStateChanged(string, string)",
+      "id": "Global_UIManager_OnStateChanged_System_String_System_String_",
+      "declaration": "protected virtual void OnStateChanged(string oldState, string newState)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "oldState",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newState",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetState(string)",
+      "id": "Global_UIManager_SetState_System_String_",
+      "declaration": "public void SetState(string newState)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newState",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldDoAutoFocus()",
+      "id": "Global_UIManager_ShouldDoAutoFocus",
+      "declaration": "public virtual bool ShouldDoAutoFocus()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

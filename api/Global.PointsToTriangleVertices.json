@@ -1,0 +1,48 @@
+{
+  "uid": "Global.PointsToTriangleVertices",
+  "name": "PointsToTriangleVertices",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PointsToTriangleVertices",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "Count",
+      "id": "Global_PointsToTriangleVertices_Count",
+      "declaration": "public int Count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "this[int]",
+      "id": "Global_PointsToTriangleVertices_Item_System_Int32_",
+      "declaration": "public Vector2 this[int index] { get; }",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetEnumerator()",
+      "id": "Global_PointsToTriangleVertices_GetEnumerator",
+      "declaration": "public IEnumerator<Vector2> GetEnumerator()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.IEnumerator<T><UnityEngine.Vector2>"
+    }
+  ],
+  "events": []
+}

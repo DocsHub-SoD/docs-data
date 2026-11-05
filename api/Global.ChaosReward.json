@@ -1,0 +1,40 @@
+{
+  "uid": "Global.ChaosReward",
+  "name": "ChaosReward",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct ChaosReward",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "quantity",
+      "id": "Global_ChaosReward_quantity",
+      "declaration": "public float quantity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rarity",
+      "id": "Global_ChaosReward_rarity",
+      "declaration": "[HideInInspector]\npublic Rarity rarity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_ChaosReward_type",
+      "declaration": "public ChaosRewardType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,383 @@
+{
+  "uid": "Global.DewProfileStats.HeroData",
+  "name": "DewProfileStats.HeroData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileStats.HeroData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "buyCount",
+      "id": "Global_DewProfileStats_HeroData_buyCount",
+      "declaration": "public long buyCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chaosCount",
+      "id": "Global_DewProfileStats_HeroData_chaosCount",
+      "declaration": "public long chaosCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "completedLimboDepth",
+      "id": "Global_DewProfileStats_HeroData_completedLimboDepth",
+      "declaration": "public int completedLimboDepth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMasteryPoints",
+      "id": "Global_DewProfileStats_HeroData_currentMasteryPoints",
+      "declaration": "public long currentMasteryPoints",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageDealt",
+      "id": "Global_DewProfileStats_HeroData_damageDealt",
+      "declaration": "public double damageDealt",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageTaken",
+      "id": "Global_DewProfileStats_HeroData_damageTaken",
+      "declaration": "public double damageTaken",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "deaths",
+      "id": "Global_DewProfileStats_HeroData_deaths",
+      "declaration": "public long deaths",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleCount",
+      "id": "Global_DewProfileStats_HeroData_dismantleCount",
+      "declaration": "public long dismantleCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "earnedDreamDust",
+      "id": "Global_DewProfileStats_HeroData_earnedDreamDust",
+      "declaration": "public double earnedDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "earnedGold",
+      "id": "Global_DewProfileStats_HeroData_earnedGold",
+      "declaration": "public double earnedGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healToOthers",
+      "id": "Global_DewProfileStats_HeroData_healToOthers",
+      "declaration": "public double healToOthers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healToSelf",
+      "id": "Global_DewProfileStats_HeroData_healToSelf",
+      "declaration": "public double healToSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroicBossKills",
+      "id": "Global_DewProfileStats_HeroData_heroicBossKills",
+      "declaration": "public long heroicBossKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterKills",
+      "id": "Global_DewProfileStats_HeroData_hunterKills",
+      "declaration": "public long hunterKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "kills",
+      "id": "Global_DewProfileStats_HeroData_kills",
+      "declaration": "public long kills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "levelUps",
+      "id": "Global_DewProfileStats_HeroData_levelUps",
+      "declaration": "public long levelUps",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loses",
+      "id": "Global_DewProfileStats_HeroData_loses",
+      "declaration": "public long loses",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "masteryLevel",
+      "id": "Global_DewProfileStats_HeroData_masteryLevel",
+      "declaration": "public int masteryLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxEarnedDreamDust",
+      "id": "Global_DewProfileStats_HeroData_maxEarnedDreamDust",
+      "declaration": "public double maxEarnedDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxEarnedGold",
+      "id": "Global_DewProfileStats_HeroData_maxEarnedGold",
+      "declaration": "public double maxEarnedGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxEarnedStardust",
+      "id": "Global_DewProfileStats_HeroData_maxEarnedStardust",
+      "declaration": "public double maxEarnedStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxElapsedGameTimeSeconds",
+      "id": "Global_DewProfileStats_HeroData_maxElapsedGameTimeSeconds",
+      "declaration": "public double maxElapsedGameTimeSeconds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSingleTargetDamage",
+      "id": "Global_DewProfileStats_HeroData_maxSingleTargetDamage",
+      "declaration": "public double maxSingleTargetDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxTotalDamage",
+      "id": "Global_DewProfileStats_HeroData_maxTotalDamage",
+      "declaration": "public double maxTotalDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxVisitedWorlds",
+      "id": "Global_DewProfileStats_HeroData_maxVisitedWorlds",
+      "declaration": "public long maxVisitedWorlds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossKills",
+      "id": "Global_DewProfileStats_HeroData_miniBossKills",
+      "declaration": "public long miniBossKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playCount",
+      "id": "Global_DewProfileStats_HeroData_playCount",
+      "declaration": "public long playCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playTimeMinutes",
+      "id": "Global_DewProfileStats_HeroData_playTimeMinutes",
+      "declaration": "public double playTimeMinutes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pureWhiteDreams",
+      "id": "Global_DewProfileStats_HeroData_pureWhiteDreams",
+      "declaration": "public long pureWhiteDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pureWhiteDreamsNightmare",
+      "id": "Global_DewProfileStats_HeroData_pureWhiteDreamsNightmare",
+      "declaration": "public long pureWhiteDreamsNightmare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sellCount",
+      "id": "Global_DewProfileStats_HeroData_sellCount",
+      "declaration": "public long sellCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spentDreamDust",
+      "id": "Global_DewProfileStats_HeroData_spentDreamDust",
+      "declaration": "public double spentDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spentGold",
+      "id": "Global_DewProfileStats_HeroData_spentGold",
+      "declaration": "public double spentGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalMasteryPoints",
+      "id": "Global_DewProfileStats_HeroData_totalMasteryPoints",
+      "declaration": "public long totalMasteryPoints",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unkownFates",
+      "id": "Global_DewProfileStats_HeroData_unkownFates",
+      "declaration": "public long unkownFates",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unkownFatesNightmare",
+      "id": "Global_DewProfileStats_HeroData_unkownFatesNightmare",
+      "declaration": "public long unkownFatesNightmare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "upgradeCount",
+      "id": "Global_DewProfileStats_HeroData_upgradeCount",
+      "declaration": "public long upgradeCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedHunterLocations",
+      "id": "Global_DewProfileStats_HeroData_visitedHunterLocations",
+      "declaration": "public long visitedHunterLocations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedLocations",
+      "id": "Global_DewProfileStats_HeroData_visitedLocations",
+      "declaration": "public long visitedLocations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedWorlds",
+      "id": "Global_DewProfileStats_HeroData_visitedWorlds",
+      "declaration": "public long visitedWorlds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wins",
+      "id": "Global_DewProfileStats_HeroData_wins",
+      "declaration": "public long wins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AddMasteryPoints(long)",
+      "id": "Global_DewProfileStats_HeroData_AddMasteryPoints_System_Int64_",
+      "declaration": "public void AddMasteryPoints(long points)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "points",
+          "type": "long",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Clone()",
+      "id": "Global_DewProfileStats_HeroData_Clone",
+      "declaration": "public DewProfileStats.HeroData Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewProfileStats.HeroData"
+    },
+    {
+      "name": "RemoveMasteryPoints(long)",
+      "id": "Global_DewProfileStats_HeroData_RemoveMasteryPoints_System_Int64_",
+      "declaration": "public void RemoveMasteryPoints(long points)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "points",
+          "type": "long",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

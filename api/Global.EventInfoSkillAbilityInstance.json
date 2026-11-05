@@ -1,0 +1,40 @@
+{
+  "uid": "Global.EventInfoSkillAbilityInstance",
+  "name": "EventInfoSkillAbilityInstance",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoSkillAbilityInstance",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "instance",
+      "id": "Global_EventInfoSkillAbilityInstance_instance",
+      "declaration": "public AbilityInstance instance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skill",
+      "id": "Global_EventInfoSkillAbilityInstance_skill",
+      "declaration": "public SkillTrigger skill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_EventInfoSkillAbilityInstance_type",
+      "declaration": "public HeroSkillLocation type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

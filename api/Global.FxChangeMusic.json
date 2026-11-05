@@ -1,0 +1,56 @@
+{
+  "uid": "Global.FxChangeMusic",
+  "name": "FxChangeMusic",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxChangeMusic : MonoBehaviour, IEffectComponent",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    }
+  ],
+  "fields": [
+    {
+      "name": "music",
+      "id": "Global_FxChangeMusic_music",
+      "declaration": "public DewMusicItem music",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxChangeMusic_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_FxChangeMusic_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxChangeMusic_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

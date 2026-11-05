@@ -1,0 +1,181 @@
+{
+  "uid": "Global.FeedbackManager",
+  "name": "FeedbackManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FeedbackManager : ManagerBase<FeedbackManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "FeedbackManager",
+      "href": "Global.FeedbackManager.html",
+      "uid": "Global.FeedbackManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "dealDmg",
+      "id": "Global_FeedbackManager_dealDmg",
+      "declaration": "[Title(\"Damage Feedbacks\", null, TitleAlignments.Left, true, true)]\npublic FeedbackManager.EffectPool dealDmg",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealDmgCrit",
+      "id": "Global_FeedbackManager_dealDmgCrit",
+      "declaration": "public FeedbackManager.EffectPool dealDmgCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealDmgDot",
+      "id": "Global_FeedbackManager_dealDmgDot",
+      "declaration": "public FeedbackManager.EffectPool dealDmgDot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealDmgDotCrit",
+      "id": "Global_FeedbackManager_dealDmgDotCrit",
+      "declaration": "public FeedbackManager.EffectPool dealDmgDotCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxGainStardustOnHero",
+      "id": "Global_FeedbackManager_fxGainStardustOnHero",
+      "declaration": "public GameObject fxGainStardustOnHero",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "genericFeedbacksParent",
+      "id": "Global_FeedbackManager_genericFeedbacksParent",
+      "declaration": "public Transform genericFeedbacksParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healCrit",
+      "id": "Global_FeedbackManager_healCrit",
+      "declaration": "public FeedbackManager.EffectPool healCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healNormal",
+      "id": "Global_FeedbackManager_healNormal",
+      "declaration": "public FeedbackManager.EffectPool healNormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "slowTimeBySpecialMenuVolume",
+      "id": "Global_FeedbackManager_slowTimeBySpecialMenuVolume",
+      "declaration": "public Volume slowTimeBySpecialMenuVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "slowTimeBySpecialMenuWeightSpeed",
+      "id": "Global_FeedbackManager_slowTimeBySpecialMenuWeightSpeed",
+      "declaration": "public float slowTimeBySpecialMenuWeightSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takeDmg",
+      "id": "Global_FeedbackManager_takeDmg",
+      "declaration": "public FeedbackManager.EffectPool takeDmg",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takeDmgDot",
+      "id": "Global_FeedbackManager_takeDmgDot",
+      "declaration": "public FeedbackManager.EffectPool takeDmgDot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_FeedbackManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_FeedbackManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PlayFeedbackEffect(string)",
+      "id": "Global_FeedbackManager_PlayFeedbackEffect_System_String_",
+      "declaration": "public void PlayFeedbackEffect(string feedbackName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "feedbackName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopFeedbackEffect(string)",
+      "id": "Global_FeedbackManager_StopFeedbackEffect_System_String_",
+      "declaration": "public void StopFeedbackEffect(string feedbackName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "feedbackName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

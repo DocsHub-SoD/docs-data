@@ -1,0 +1,24 @@
+{
+  "uid": "Global.LookAtCamera",
+  "name": "LookAtCamera",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LookAtCamera : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "useFacingInsteadOfBillboard",
+      "id": "Global_LookAtCamera_useFacingInsteadOfBillboard",
+      "declaration": "[ToggleLeft]\npublic bool useFacingInsteadOfBillboard",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

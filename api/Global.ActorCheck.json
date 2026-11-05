@@ -1,0 +1,31 @@
+{
+  "uid": "Global.ActorCheck",
+  "name": "ActorCheck",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class ActorCheck",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "IsNullOrInactive(Actor)",
+      "id": "Global_ActorCheck_IsNullOrInactive_Actor_",
+      "declaration": "public static bool IsNullOrInactive(this Actor a)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

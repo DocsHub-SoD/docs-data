@@ -1,0 +1,40 @@
+{
+  "uid": "Global.BoneOffset",
+  "name": "BoneOffset",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class BoneOffset : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "localPosition",
+      "id": "Global_BoneOffset_localPosition",
+      "declaration": "public Vector3 localPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localRotation",
+      "id": "Global_BoneOffset_localRotation",
+      "declaration": "public Vector3 localRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localScale",
+      "id": "Global_BoneOffset_localScale",
+      "declaration": "public Vector3 localScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

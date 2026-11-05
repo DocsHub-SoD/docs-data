@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewNetworkMode",
+  "name": "DewNetworkMode",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DewNetworkMode",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,70 @@
+{
+  "uid": "Global.DispByDestination",
+  "name": "DispByDestination",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DispByDestination : Displacement",
+  "inheritance": [
+    {
+      "name": "Displacement",
+      "href": "Global.Displacement.html",
+      "uid": "Global.Displacement"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "canGoOverTerrain",
+      "id": "Global_DispByDestination_canGoOverTerrain",
+      "declaration": "public bool canGoOverTerrain",
+      "summary": "Can this displacement go over terrain/go through walls?If this is false, the displacement might end up not reaching the desired destination.Default value is true.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "curve",
+      "id": "Global_DispByDestination_curve",
+      "declaration": "public Vector4 curve",
+      "summary": "Cubic bezier parameter. Use this to curve the movement trajectory.https://cubic-bezier.com/",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "curveHorizontalDistance",
+      "id": "Global_DispByDestination_curveHorizontalDistance",
+      "declaration": "public float? curveHorizontalDistance",
+      "summary": "Set the horizontal sway magnitude of the curve.If not set, the curve will be scaled to the length of the linear line.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destination",
+      "id": "Global_DispByDestination_destination",
+      "declaration": "public Vector3 destination",
+      "summary": "Destination of this displacement. You should feed in a valid agent position using Dew.GetValidAgentPosition()",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_DispByDestination_duration",
+      "declaration": "public float duration",
+      "summary": "Duration of this displacement.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ease",
+      "id": "Global_DispByDestination_ease",
+      "declaration": "public DewEase ease",
+      "summary": "Type of ease function that this displacement will follow over its course.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

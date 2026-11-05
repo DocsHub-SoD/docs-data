@@ -1,0 +1,31 @@
+{
+  "uid": "Global.IEffectWithSpeed",
+  "name": "IEffectWithSpeed",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEffectWithSpeed",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ApplySpeedMultiplier(float)",
+      "id": "Global_IEffectWithSpeed_ApplySpeedMultiplier_System_Single_",
+      "declaration": "void ApplySpeedMultiplier(float speed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "speed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

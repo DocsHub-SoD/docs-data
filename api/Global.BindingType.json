@@ -1,0 +1,15 @@
+{
+  "uid": "Global.BindingType",
+  "name": "BindingType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum BindingType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

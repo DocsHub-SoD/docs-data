@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ILangaugeChangedCallback",
+  "name": "ILangaugeChangedCallback",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ILangaugeChangedCallback",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnLanguageChanged()",
+      "id": "Global_ILangaugeChangedCallback_OnLanguageChanged",
+      "declaration": "void OnLanguageChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

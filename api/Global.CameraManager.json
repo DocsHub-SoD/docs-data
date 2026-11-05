@@ -1,0 +1,553 @@
+{
+  "uid": "Global.CameraManager",
+  "name": "CameraManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CameraManager : ManagerBase<CameraManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "CameraManager",
+      "href": "Global.CameraManager.html",
+      "uid": "Global.CameraManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "bigDamageAlpha",
+      "id": "Global_CameraManager_bigDamageAlpha",
+      "declaration": "public float bigDamageAlpha",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bigDamageShake",
+      "id": "Global_CameraManager_bigDamageShake",
+      "declaration": "[Title(\"Damage\", null, TitleAlignments.Left, true, true)]\npublic GameObject bigDamageShake",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bigDamageThreshold",
+      "id": "Global_CameraManager_bigDamageThreshold",
+      "declaration": "public float bigDamageThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "closeZoomBody",
+      "id": "Global_CameraManager_closeZoomBody",
+      "declaration": "public Vector3 closeZoomBody",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cutsceneBottomLetterBox",
+      "id": "Global_CameraManager_cutsceneBottomLetterBox",
+      "declaration": "public RectTransform cutsceneBottomLetterBox",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cutsceneFadeTime",
+      "id": "Global_CameraManager_cutsceneFadeTime",
+      "declaration": "public float cutsceneFadeTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cutsceneSkipButtonObject",
+      "id": "Global_CameraManager_cutsceneSkipButtonObject",
+      "declaration": "public GameObject cutsceneSkipButtonObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cutsceneTopLetterBox",
+      "id": "Global_CameraManager_cutsceneTopLetterBox",
+      "declaration": "public RectTransform cutsceneTopLetterBox",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cutsceneTransitionFade",
+      "id": "Global_CameraManager_cutsceneTransitionFade",
+      "declaration": "public CanvasGroup cutsceneTransitionFade",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageOverlay",
+      "id": "Global_CameraManager_damageOverlay",
+      "declaration": "public CanvasGroup damageOverlay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageOverlayDecaySpeed",
+      "id": "Global_CameraManager_damageOverlayDecaySpeed",
+      "declaration": "public float damageOverlayDecaySpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultZoomLevel",
+      "id": "Global_CameraManager_defaultZoomLevel",
+      "declaration": "public int defaultZoomLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableSeeThrough",
+      "id": "Global_CameraManager_disableSeeThrough",
+      "declaration": "[NonSerialized]\npublic bool disableSeeThrough",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entityCamAngleRotation",
+      "id": "Global_CameraManager_entityCamAngleRotation",
+      "declaration": "[NonSerialized]\npublic Quaternion entityCamAngleRotation",
+      "summary": "Flat Y-Axis rotation of current camera rotation.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fadeOutVolume",
+      "id": "Global_CameraManager_fadeOutVolume",
+      "declaration": "public Volume fadeOutVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "farZoomBody",
+      "id": "Global_CameraManager_farZoomBody",
+      "declaration": "[Title(\"Zoom\", null, TitleAlignments.Left, true, true)]\npublic Vector3 farZoomBody",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "followSmoothTime",
+      "id": "Global_CameraManager_followSmoothTime",
+      "declaration": "[Title(\"General\", null, TitleAlignments.Left, true, true)]\npublic float followSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "genericFadeTime",
+      "id": "Global_CameraManager_genericFadeTime",
+      "declaration": "public float genericFadeTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxAlpha",
+      "id": "Global_CameraManager_maxAlpha",
+      "declaration": "public float maxAlpha",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxAlphaHealthThreshold",
+      "id": "Global_CameraManager_maxAlphaHealthThreshold",
+      "declaration": "public float maxAlphaHealthThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "midZoombody",
+      "id": "Global_CameraManager_midZoombody",
+      "declaration": "public Vector3 midZoombody",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minAlphaHealthThreshold",
+      "id": "Global_CameraManager_minAlphaHealthThreshold",
+      "declaration": "public float minAlphaHealthThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextSpectateTargetTime",
+      "id": "Global_CameraManager_nextSpectateTargetTime",
+      "declaration": "public float nextSpectateTargetTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "occlusionTestRadius",
+      "id": "Global_CameraManager_occlusionTestRadius",
+      "declaration": "[Title(\"Extra\", null, TitleAlignments.Left, true, true)]\npublic float occlusionTestRadius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFocusedEntityChanged",
+      "id": "Global_CameraManager_onFocusedEntityChanged",
+      "declaration": "public Action<Entity, Entity> onFocusedEntityChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onIsSpectatingChanged",
+      "id": "Global_CameraManager_onIsSpectatingChanged",
+      "declaration": "public Action<bool> onIsSpectatingChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedEntityCamera",
+      "id": "Global_CameraManager_selectedEntityCamera",
+      "declaration": "public CinemachineVirtualCamera selectedEntityCamera",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "smallDamageAlpha",
+      "id": "Global_CameraManager_smallDamageAlpha",
+      "declaration": "public float smallDamageAlpha",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "smallDamageShake",
+      "id": "Global_CameraManager_smallDamageShake",
+      "declaration": "public GameObject smallDamageShake",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "smallDamageThreshold",
+      "id": "Global_CameraManager_smallDamageThreshold",
+      "declaration": "public float smallDamageThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startSpectatingTime",
+      "id": "Global_CameraManager_startSpectatingTime",
+      "declaration": "public float startSpectatingTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoomSmoothTime",
+      "id": "Global_CameraManager_zoomSmoothTime",
+      "declaration": "public float zoomSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoomSteps",
+      "id": "Global_CameraManager_zoomSteps",
+      "declaration": "public int zoomSteps",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentCutsceneDirector",
+      "id": "Global_CameraManager_currentCutsceneDirector",
+      "declaration": "public DewCutsceneDirector currentCutsceneDirector { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentZoomIndex",
+      "id": "Global_CameraManager_currentZoomIndex",
+      "declaration": "public int currentZoomIndex { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entityCamAngle",
+      "id": "Global_CameraManager_entityCamAngle",
+      "declaration": "public float entityCamAngle { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusedEntity",
+      "id": "Global_CameraManager_focusedEntity",
+      "declaration": "public Entity focusedEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isPlayingCutscene",
+      "id": "Global_CameraManager_isPlayingCutscene",
+      "declaration": "public bool isPlayingCutscene { get; }",
+      "summary": "Is cutscene being played locally?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSpectating",
+      "id": "Global_CameraManager_isSpectating",
+      "declaration": "public bool isSpectating { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_CameraManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoCutsceneFadeIn()",
+      "id": "Global_CameraManager_DoCutsceneFadeIn",
+      "declaration": "public void DoCutsceneFadeIn()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoCutsceneFadeOut()",
+      "id": "Global_CameraManager_DoCutsceneFadeOut",
+      "declaration": "public void DoCutsceneFadeOut()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoGenericFadeIn(bool)",
+      "id": "Global_CameraManager_DoGenericFadeIn_System_Boolean_",
+      "declaration": "public void DoGenericFadeIn(bool immediately = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoGenericFadeOut(bool)",
+      "id": "Global_CameraManager_DoGenericFadeOut_System_Boolean_",
+      "declaration": "public void DoGenericFadeOut(bool immediately = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoLetterBoxFadeIn()",
+      "id": "Global_CameraManager_DoLetterBoxFadeIn",
+      "declaration": "public void DoLetterBoxFadeIn()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoLetterBoxFadeOut()",
+      "id": "Global_CameraManager_DoLetterBoxFadeOut",
+      "declaration": "public void DoLetterBoxFadeOut()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_CameraManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_CameraManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ResetLetterBoxPositions()",
+      "id": "Global_CameraManager_ResetLetterBoxPositions",
+      "declaration": "public void ResetLetterBoxPositions()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetActiveEntityVCam(bool)",
+      "id": "Global_CameraManager_SetActiveEntityVCam_System_Boolean_",
+      "declaration": "public void SetActiveEntityVCam(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetCameraPosition(Vector3)",
+      "id": "Global_CameraManager_SetCameraPosition_UnityEngine_Vector3_",
+      "declaration": "public void SetCameraPosition(Vector3 pos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetFocusedEntity(Entity)",
+      "id": "Global_CameraManager_SetFocusedEntity_Entity_",
+      "declaration": "public void SetFocusedEntity(Entity newValue)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newValue",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetZoomLevel(int)",
+      "id": "Global_CameraManager_SetZoomLevel_System_Int32_",
+      "declaration": "public void SetZoomLevel(int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SkipCurrentCutscene()",
+      "id": "Global_CameraManager_SkipCurrentCutscene",
+      "declaration": "public void SkipCurrentCutscene()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SnapCameraToFocusedEntity()",
+      "id": "Global_CameraManager_SnapCameraToFocusedEntity",
+      "declaration": "public void SnapCameraToFocusedEntity()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpectateImmediatelyIfDead()",
+      "id": "Global_CameraManager_SpectateImmediatelyIfDead",
+      "declaration": "public void SpectateImmediatelyIfDead()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ZoomIn()",
+      "id": "Global_CameraManager_ZoomIn",
+      "declaration": "public void ZoomIn()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ZoomOut()",
+      "id": "Global_CameraManager_ZoomOut",
+      "declaration": "public void ZoomOut()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

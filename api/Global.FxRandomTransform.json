@@ -1,0 +1,96 @@
+{
+  "uid": "Global.FxRandomTransform",
+  "name": "FxRandomTransform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxRandomTransform : MonoBehaviour, IEffectComponent",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    }
+  ],
+  "fields": [
+    {
+      "name": "localPositions",
+      "id": "Global_FxRandomTransform_localPositions",
+      "declaration": "[ShowIf(\"randomizePosition\", true)]\npublic Vector3[] localPositions",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localRotations",
+      "id": "Global_FxRandomTransform_localRotations",
+      "declaration": "[ShowIf(\"randomizeRotation\", true)]\npublic Vector3[] localRotations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localScales",
+      "id": "Global_FxRandomTransform_localScales",
+      "declaration": "[ShowIf(\"randomizeScale\", true)]\npublic Vector3[] localScales",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "randomizePosition",
+      "id": "Global_FxRandomTransform_randomizePosition",
+      "declaration": "public bool randomizePosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "randomizeRotation",
+      "id": "Global_FxRandomTransform_randomizeRotation",
+      "declaration": "public bool randomizeRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "randomizeScale",
+      "id": "Global_FxRandomTransform_randomizeScale",
+      "declaration": "public bool randomizeScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxRandomTransform_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_FxRandomTransform_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxRandomTransform_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

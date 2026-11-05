@@ -1,0 +1,39 @@
+{
+  "uid": "Global.CameraModifierZoom",
+  "name": "CameraModifierZoom",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CameraModifierZoom : CameraModifierBase",
+  "inheritance": [
+    {
+      "name": "CameraModifierBase",
+      "href": "Global.CameraModifierBase.html",
+      "uid": "Global.CameraModifierBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "zoomIndex",
+      "id": "Global_CameraModifierZoom_zoomIndex",
+      "declaration": "public float zoomIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Apply()",
+      "id": "Global_CameraModifierZoom_Apply",
+      "declaration": "public CameraModifierZoom Apply()",
+      "summary": "",
+      "parameters": [],
+      "returns": "CameraModifierZoom"
+    }
+  ],
+  "events": []
+}

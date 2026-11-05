@@ -1,0 +1,39 @@
+{
+  "uid": "Global.LimboObject",
+  "name": "LimboObject",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LimboObject : MonoBehaviour, ILimboNotifyReceiver",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ILimboNotifyReceiver",
+      "href": "Global.ILimboNotifyReceiver.html",
+      "uid": "Global.ILimboNotifyReceiver"
+    }
+  ],
+  "fields": [
+    {
+      "name": "showOnLimbo",
+      "id": "Global_LimboObject_showOnLimbo",
+      "declaration": "public bool showOnLimbo",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnLimboGame()",
+      "id": "Global_LimboObject_OnLimboGame",
+      "declaration": "public void OnLimboGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

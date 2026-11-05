@@ -1,0 +1,194 @@
+{
+  "uid": "Global.StarScalingValue",
+  "name": "StarScalingValue",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\n[LabelWidth(100)]\npublic struct StarScalingValue",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "clampMax",
+      "id": "Global_StarScalingValue_clampMax",
+      "declaration": "[ShowIf(\"@isClamped\", true)]\n[HideLabel]\n[HorizontalGroup(\"C\", 0, 0, 0, 0)]\npublic float clampMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "clampMin",
+      "id": "Global_StarScalingValue_clampMin",
+      "declaration": "[ShowIf(\"@isClamped\", true)]\n[HideLabel]\n[SuffixLabel(\"-\", false)]\n[HorizontalGroup(\"C\", 0, 0, 0, 0)]\npublic float clampMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isClamped",
+      "id": "Global_StarScalingValue_isClamped",
+      "declaration": "[ToggleLeft]\n[HorizontalGroup(\"C\", 0, 0, 0, 0)]\n[LabelText(\"Clamp\")]\npublic bool isClamped",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInteger",
+      "id": "Global_StarScalingValue_isInteger",
+      "declaration": "[ToggleLeft]\n[HorizontalGroup(\"B\", 40, 0, 0, 0)]\n[LabelText(\"Int\")]\npublic bool isInteger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isParentStarEffect",
+      "id": "Global_StarScalingValue_isParentStarEffect",
+      "declaration": "[HideInInspector]\npublic bool isParentStarEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "levels",
+      "id": "Global_StarScalingValue_levels",
+      "declaration": "[HideInInspector]\npublic int levels",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "strengthScaling",
+      "id": "Global_StarScalingValue_strengthScaling",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"B\", 0, 0, 0, 0)]\npublic StarScalingValue.StrengthScalingType strengthScaling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v0",
+      "id": "Global_StarScalingValue_v0",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\npublic float v0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v1",
+      "id": "Global_StarScalingValue_v1",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 2\", true)]\npublic float v1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v2",
+      "id": "Global_StarScalingValue_v2",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 3\", true)]\npublic float v2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v3",
+      "id": "Global_StarScalingValue_v3",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 4\", true)]\npublic float v3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v4",
+      "id": "Global_StarScalingValue_v4",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 5\", true)]\npublic float v4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v5",
+      "id": "Global_StarScalingValue_v5",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 6\", true)]\npublic float v5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v6",
+      "id": "Global_StarScalingValue_v6",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 7\", true)]\npublic float v6",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "v7",
+      "id": "Global_StarScalingValue_v7",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[ShowIf(\"@!isParentStarEffect || levels >= 8\", true)]\npublic float v7",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get(int)",
+      "id": "Global_StarScalingValue_Get_System_Int32_",
+      "declaration": "public float Get(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetValue(int, float)",
+      "id": "Global_StarScalingValue_GetValue_System_Int32_System_Single_",
+      "declaration": "public float GetValue(int level, float strength)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Set(int, float)",
+      "id": "Global_StarScalingValue_Set_System_Int32_System_Single_",
+      "declaration": "public void Set(int index, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

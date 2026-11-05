@@ -1,0 +1,187 @@
+{
+  "uid": "Global.Rift_Sidetrack",
+  "name": "Rift_Sidetrack",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Name)]\npublic class Rift_Sidetrack : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Rift",
+      "href": "Global.Rift.html",
+      "uid": "Global.Rift"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowedZones",
+      "id": "Global_Rift_Sidetrack_allowedZones",
+      "declaration": "[InfoBox(\"All zones will be allowed to have this modifier\", InfoMessageType.Info, \"@allowedZones == null || allowedZones.Length == 0\")]\n[InfoBox(\"@GetZoneValidationMessage(allowedZones)\", InfoMessageType.Error, \"@GetZoneValidationMessage(allowedZones) != null\")]\n[ShowIf(\"@spawnChance > 0\", true)]\npublic string[] allowedZones",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainColor",
+      "id": "Global_Rift_Sidetrack_mainColor",
+      "declaration": "public Color mainColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manualRoomNames",
+      "id": "Global_Rift_Sidetrack_manualRoomNames",
+      "declaration": "[HideIf(\"useWildcardPattern\", true)]\n[LabelText(\"Room Names\")]\npublic List<string> manualRoomNames",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "oncePerLoop",
+      "id": "Global_Rift_Sidetrack_oncePerLoop",
+      "declaration": "[ShowIf(\"@spawnChance > 0\", true)]\npublic bool oncePerLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_Rift_Sidetrack_softInstance",
+      "declaration": "public static Rift_Sidetrack softInstance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnChance",
+      "id": "Global_Rift_Sidetrack_spawnChance",
+      "declaration": "[Title(\"Natural Spawn Settings\", null, TitleAlignments.Left, true, true)]\npublic float spawnChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useWildcardPattern",
+      "id": "Global_Rift_Sidetrack_useWildcardPattern",
+      "declaration": "[Title(\"Destination\", null, TitleAlignments.Left, true, true)]\npublic bool useWildcardPattern",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wildcardPattern",
+      "id": "Global_Rift_Sidetrack_wildcardPattern",
+      "declaration": "[ShowIf(\"useWildcardPattern\", true)]\npublic string wildcardPattern",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_Rift_Sidetrack_instance",
+      "declaration": "public static Rift_Sidetrack instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isValid",
+      "id": "Global_Rift_Sidetrack_isValid",
+      "declaration": "public bool isValid { get; }",
+      "summary": "Is this sidetrack rift valid for use? Sidetrack rifts with no rooms are invalid.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_Rift_Sidetrack_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetConfirmMessage()",
+      "id": "Global_Rift_Sidetrack_GetConfirmMessage",
+      "declaration": "protected virtual string GetConfirmMessage()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "OnInteractRift(Hero)",
+      "id": "Global_Rift_Sidetrack_OnInteractRift_Hero_",
+      "declaration": "protected override bool OnInteractRift(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Rift_Sidetrack_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "TravelImmediately()",
+      "id": "Global_Rift_Sidetrack_TravelImmediately",
+      "declaration": "public virtual void TravelImmediately()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

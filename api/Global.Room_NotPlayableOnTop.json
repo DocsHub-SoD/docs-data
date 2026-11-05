@@ -1,0 +1,21 @@
+{
+  "uid": "Global.Room_NotPlayableOnTop",
+  "name": "Room_NotPlayableOnTop",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_NotPlayableOnTop : MonoBehaviour, INotPlayableOnTop",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "INotPlayableOnTop",
+      "href": "Global.INotPlayableOnTop.html",
+      "uid": "Global.INotPlayableOnTop"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

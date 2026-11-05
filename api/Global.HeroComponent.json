@@ -1,0 +1,46 @@
+{
+  "uid": "Global.HeroComponent",
+  "name": "HeroComponent",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class HeroComponent : EntityComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    },
+    {
+      "name": "HeroSkill",
+      "href": "Global.HeroSkill.html",
+      "uid": "Global.HeroSkill"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "hero",
+      "id": "Global_HeroComponent_hero",
+      "declaration": "public Hero hero { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

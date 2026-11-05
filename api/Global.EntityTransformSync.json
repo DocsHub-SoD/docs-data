@@ -1,0 +1,60 @@
+{
+  "uid": "Global.EntityTransformSync",
+  "name": "EntityTransformSync",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-299)]\npublic class EntityTransformSync : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "AgentVelocityLifetime",
+      "id": "Global_EntityTransformSync_AgentVelocityLifetime",
+      "declaration": "public static float AgentVelocityLifetime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FixSmoothTime",
+      "id": "Global_EntityTransformSync_FixSmoothTime",
+      "declaration": "public static float FixSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FixSnapshotLifetime",
+      "id": "Global_EntityTransformSync_FixSnapshotLifetime",
+      "declaration": "public static float FixSnapshotLifetime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FixWarpDistance",
+      "id": "Global_EntityTransformSync_FixWarpDistance",
+      "declaration": "public static float FixWarpDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

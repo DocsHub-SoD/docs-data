@@ -1,0 +1,24 @@
+{
+  "uid": "Global.RandomGameObjectsGroup",
+  "name": "RandomGameObjectsGroup",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RandomGameObjectsGroup : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "gameObjects",
+      "id": "Global_RandomGameObjectsGroup_gameObjects",
+      "declaration": "public GameObject[] gameObjects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

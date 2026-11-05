@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EntityAnimation.ReplaceableAnimationType",
+  "name": "EntityAnimation.ReplaceableAnimationType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum EntityAnimation.ReplaceableAnimationType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

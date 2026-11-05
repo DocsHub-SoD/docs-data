@@ -1,0 +1,72 @@
+{
+  "uid": "Global.SingletonBehaviour`1",
+  "name": "SingletonBehaviour<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SingletonBehaviour<T> : MonoBehaviour where T : MonoBehaviour",
+  "inheritance": [
+    {
+      "name": "DevCanvas",
+      "href": "Global.DevCanvas.html",
+      "uid": "Global.DevCanvas"
+    },
+    {
+      "name": "Room_BossArena",
+      "href": "Global.Room_BossArena.html",
+      "uid": "Global.Room_BossArena"
+    },
+    {
+      "name": "Special_RoomAnnouncer",
+      "href": "Global.Special_RoomAnnouncer.html",
+      "uid": "Global.Special_RoomAnnouncer"
+    },
+    {
+      "name": "UI_BindingWindow",
+      "href": "Global.UI_BindingWindow.html",
+      "uid": "Global.UI_BindingWindow"
+    },
+    {
+      "name": "UI_EmoteWheel",
+      "href": "Global.UI_EmoteWheel.html",
+      "uid": "Global.UI_EmoteWheel"
+    },
+    {
+      "name": "UI_GamepadTextInput",
+      "href": "Global.UI_GamepadTextInput.html",
+      "uid": "Global.UI_GamepadTextInput"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_SingletonBehaviour_1_instance",
+      "declaration": "public static T instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_SingletonBehaviour_1_softInstance",
+      "declaration": "public static T softInstance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_SingletonBehaviour_1_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

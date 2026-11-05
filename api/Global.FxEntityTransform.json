@@ -1,0 +1,101 @@
+{
+  "uid": "Global.FxEntityTransform",
+  "name": "FxEntityTransform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxEntityTransform : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    },
+    {
+      "name": "IAttachableToEntity",
+      "href": "Global.IAttachableToEntity.html",
+      "uid": "Global.IAttachableToEntity"
+    }
+  ],
+  "fields": [
+    {
+      "name": "localOffset",
+      "id": "Global_FxEntityTransform_localOffset",
+      "declaration": "public Vector3 localOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_FxEntityTransform_rotation",
+      "declaration": "public Vector3 rotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleMultiplier",
+      "id": "Global_FxEntityTransform_scaleMultiplier",
+      "declaration": "public Vector3 scaleMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldOffset",
+      "id": "Global_FxEntityTransform_worldOffset",
+      "declaration": "public Vector3 worldOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_FxEntityTransform_OnAttachToEntity_Entity_",
+      "declaration": "public void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxEntityTransform_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

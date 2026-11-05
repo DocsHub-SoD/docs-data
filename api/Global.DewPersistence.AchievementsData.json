@@ -1,0 +1,32 @@
+{
+  "uid": "Global.DewPersistence.AchievementsData",
+  "name": "DewPersistence.AchievementsData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.AchievementsData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "persistenceData",
+      "id": "Global_DewPersistence_AchievementsData_persistenceData",
+      "declaration": "public Dictionary<string, string> persistenceData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runId",
+      "id": "Global_DewPersistence_AchievementsData_runId",
+      "declaration": "public string runId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

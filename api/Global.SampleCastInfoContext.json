@@ -1,0 +1,112 @@
+{
+  "uid": "Global.SampleCastInfoContext",
+  "name": "SampleCastInfoContext",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct SampleCastInfoContext",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "angleSpeedLimit",
+      "id": "Global_SampleCastInfoContext_angleSpeedLimit",
+      "declaration": "public float angleSpeedLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cancelCallback",
+      "id": "Global_SampleCastInfoContext_cancelCallback",
+      "declaration": "[NonSerialized]\npublic Action cancelCallback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castCallback",
+      "id": "Global_SampleCastInfoContext_castCallback",
+      "declaration": "[NonSerialized]\npublic Action<CastInfo> castCallback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castKey",
+      "id": "Global_SampleCastInfoContext_castKey",
+      "declaration": "[NonSerialized]\npublic DewInputTrigger castKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castMethod",
+      "id": "Global_SampleCastInfoContext_castMethod",
+      "declaration": "public CastMethodData castMethod",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castOnButton",
+      "id": "Global_SampleCastInfoContext_castOnButton",
+      "declaration": "public SampleCastInfoContext.CastOnButtonType castOnButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentInfo",
+      "id": "Global_SampleCastInfoContext_currentInfo",
+      "declaration": "public CastInfo currentInfo",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInitialInfoSet",
+      "id": "Global_SampleCastInfoContext_isInitialInfoSet",
+      "declaration": "public bool isInitialInfoSet",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showCastIndicator",
+      "id": "Global_SampleCastInfoContext_showCastIndicator",
+      "declaration": "public bool showCastIndicator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetValidator",
+      "id": "Global_SampleCastInfoContext_targetValidator",
+      "declaration": "public AbilityTargetValidator targetValidator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trigger",
+      "id": "Global_SampleCastInfoContext_trigger",
+      "declaration": "public AbilityTrigger trigger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "updateCallback",
+      "id": "Global_SampleCastInfoContext_updateCallback",
+      "declaration": "[NonSerialized]\npublic Action<CastInfo> updateCallback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

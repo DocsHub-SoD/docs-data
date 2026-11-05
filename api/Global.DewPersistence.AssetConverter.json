@@ -1,0 +1,91 @@
+{
+  "uid": "Global.DewPersistence.AssetConverter",
+  "name": "DewPersistence.AssetConverter",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.AssetConverter : JsonConverter",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CanConvert(Type)",
+      "id": "Global_DewPersistence_AssetConverter_CanConvert_System_Type_",
+      "declaration": "public override bool CanConvert(Type objectType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "objectType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ReadJson(JsonReader, Type, object, JsonSerializer)",
+      "id": "Global_DewPersistence_AssetConverter_ReadJson_Newtonsoft_Json_JsonReader_System_Type_System_Object_Newtonsoft_Json_JsonSerializer_",
+      "declaration": "public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "reader",
+          "type": "Newtonsoft.Json.JsonReader",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "objectType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "existingValue",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "serializer",
+          "type": "Newtonsoft.Json.JsonSerializer",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "object"
+    },
+    {
+      "name": "WriteJson(JsonWriter, object, JsonSerializer)",
+      "id": "Global_DewPersistence_AssetConverter_WriteJson_Newtonsoft_Json_JsonWriter_System_Object_Newtonsoft_Json_JsonSerializer_",
+      "declaration": "public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "writer",
+          "type": "Newtonsoft.Json.JsonWriter",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "serializer",
+          "type": "Newtonsoft.Json.JsonSerializer",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

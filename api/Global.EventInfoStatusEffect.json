@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EventInfoStatusEffect",
+  "name": "EventInfoStatusEffect",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoStatusEffect",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "effect",
+      "id": "Global_EventInfoStatusEffect_effect",
+      "declaration": "public StatusEffect effect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_EventInfoStatusEffect_victim",
+      "declaration": "public Entity victim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

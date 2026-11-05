@@ -1,0 +1,88 @@
+{
+  "uid": "Global.DewMusicItem",
+  "name": "DewMusicItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Guid)]\n[CreateAssetMenu(fileName = \"mus\", menuName = \"Dew Music Item\")]\npublic class DewMusicItem : ScriptableObject, ILinkedByGuid",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ILinkedByGuid",
+      "href": "Global.ILinkedByGuid.html",
+      "uid": "Global.ILinkedByGuid"
+    }
+  ],
+  "fields": [
+    {
+      "name": "clip",
+      "id": "Global_DewMusicItem_clip",
+      "declaration": "public AudioClip clip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delay",
+      "id": "Global_DewMusicItem_delay",
+      "declaration": "public float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fadeInTime",
+      "id": "Global_DewMusicItem_fadeInTime",
+      "declaration": "public float fadeInTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pitch",
+      "id": "Global_DewMusicItem_pitch",
+      "declaration": "public float pitch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startTime",
+      "id": "Global_DewMusicItem_startTime",
+      "declaration": "public float startTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "volumeMultiplier",
+      "id": "Global_DewMusicItem_volumeMultiplier",
+      "declaration": "public float volumeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "resourceId",
+      "id": "Global_DewMusicItem_resourceId",
+      "declaration": "public string resourceId { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_DewMusicItem_Play",
+      "declaration": "[Button]\npublic void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

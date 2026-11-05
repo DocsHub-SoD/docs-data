@@ -1,0 +1,80 @@
+{
+  "uid": "Global.EventInfoHeal",
+  "name": "EventInfoHeal",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoHeal",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoHeal_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who invoked this event in an actor chain.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "amount",
+      "id": "Global_EventInfoHeal_amount",
+      "declaration": "public float amount",
+      "summary": "Actual amount.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canMerge",
+      "id": "Global_EventInfoHeal_canMerge",
+      "declaration": "public bool canMerge",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chain",
+      "id": "Global_EventInfoHeal_chain",
+      "declaration": "public ReactionChain chain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "discardedAmount",
+      "id": "Global_EventInfoHeal_discardedAmount",
+      "declaration": "public float discardedAmount",
+      "summary": "Discarded amount due to going over the maximum.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heal",
+      "id": "Global_EventInfoHeal_heal",
+      "declaration": "public FinalHealData heal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCrit",
+      "id": "Global_EventInfoHeal_isCrit",
+      "declaration": "public bool isCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_EventInfoHeal_target",
+      "declaration": "public Entity target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

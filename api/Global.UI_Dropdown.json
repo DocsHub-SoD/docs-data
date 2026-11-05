@@ -1,0 +1,86 @@
+{
+  "uid": "Global.UI_Dropdown",
+  "name": "UI_Dropdown",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_Dropdown : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onValueChanged",
+      "id": "Global_UI_Dropdown_onValueChanged",
+      "declaration": "public SafeAction<object> onValueChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "index",
+      "id": "Global_UI_Dropdown_index",
+      "declaration": "public int index { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "value",
+      "id": "Global_UI_Dropdown_value",
+      "declaration": "public object value { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddOption(string, object)",
+      "id": "Global_UI_Dropdown_AddOption_System_String_System_Object_",
+      "declaration": "public void AddOption(string text, object val)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "val",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ClearOptions()",
+      "id": "Global_UI_Dropdown_ClearOptions",
+      "declaration": "public void ClearOptions()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetValueWithoutNotify(object)",
+      "id": "Global_UI_Dropdown_SetValueWithoutNotify_System_Object_",
+      "declaration": "public void SetValueWithoutNotify(object val)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "val",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

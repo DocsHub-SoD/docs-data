@@ -1,0 +1,48 @@
+{
+  "uid": "Global.DewProfile.CosmeticsData",
+  "name": "DewProfile.CosmeticsData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.CosmeticsData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "isNew",
+      "id": "Global_DewProfile_CosmeticsData_isNew",
+      "declaration": "public bool isNew",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isUnlocked",
+      "id": "Global_DewProfile_CosmeticsData_isUnlocked",
+      "declaration": "public bool isUnlocked",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ownershipKey",
+      "id": "Global_DewProfile_CosmeticsData_ownershipKey",
+      "declaration": "public string ownershipKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockDate",
+      "id": "Global_DewProfile_CosmeticsData_unlockDate",
+      "declaration": "public long unlockDate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

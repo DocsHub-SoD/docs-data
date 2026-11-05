@@ -1,0 +1,32 @@
+{
+  "uid": "Global.PlayerStarItem",
+  "name": "PlayerStarItem",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct PlayerStarItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "level",
+      "id": "Global_PlayerStarItem_level",
+      "declaration": "public int level",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_PlayerStarItem_type",
+      "declaration": "public string type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,413 @@
+{
+  "uid": "Global.InGameUIManager",
+  "name": "InGameUIManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InGameUIManager : UIManager, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "UIManager",
+      "href": "Global.UIManager.html",
+      "uid": "Global.UIManager"
+    },
+    {
+      "name": "UIManager",
+      "href": "Global.UIManager.html",
+      "uid": "Global.UIManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "cmsgContainer",
+      "id": "Global_InGameUIManager_cmsgContainer",
+      "declaration": "public Transform cmsgContainer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cmsgErrorPrefab",
+      "id": "Global_InGameUIManager_cmsgErrorPrefab",
+      "declaration": "public GameObject cmsgErrorPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cmsgGeneralPrefab",
+      "id": "Global_InGameUIManager_cmsgGeneralPrefab",
+      "declaration": "public GameObject cmsgGeneralPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cmsgStartPivot",
+      "id": "Global_InGameUIManager_cmsgStartPivot",
+      "declaration": "public Transform cmsgStartPivot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMockExit",
+      "id": "Global_InGameUIManager_currentMockExit",
+      "declaration": "public Rift_MockExit currentMockExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableOnEndingObjects",
+      "id": "Global_InGameUIManager_disableOnEndingObjects",
+      "declaration": "public GameObject[] disableOnEndingObjects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fullWorldMapNodeItems",
+      "id": "Global_InGameUIManager_fullWorldMapNodeItems",
+      "declaration": "[NonSerialized]\npublic List<RectTransform> fullWorldMapNodeItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniWorldMapNodeItems",
+      "id": "Global_InGameUIManager_miniWorldMapNodeItems",
+      "declaration": "[NonSerialized]\npublic List<RectTransform> miniWorldMapNodeItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onHasWorldNodePingChanged",
+      "id": "Global_InGameUIManager_onHasWorldNodePingChanged",
+      "declaration": "public Action<bool> onHasWorldNodePingChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onScoreboardDisplayedChanged",
+      "id": "Global_InGameUIManager_onScoreboardDisplayedChanged",
+      "declaration": "public Action<bool> onScoreboardDisplayedChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onShowWorldMessage",
+      "id": "Global_InGameUIManager_onShowWorldMessage",
+      "declaration": "public Action<WorldMessageSetting> onShowWorldMessage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onWorldDisplayedChanged",
+      "id": "Global_InGameUIManager_onWorldDisplayedChanged",
+      "declaration": "public Action<WorldDisplayStatus> onWorldDisplayedChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "whiteFadeCg",
+      "id": "Global_InGameUIManager_whiteFadeCg",
+      "declaration": "public CanvasGroup whiteFadeCg",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "disablePlayingInput",
+      "id": "Global_InGameUIManager_disablePlayingInput",
+      "declaration": "public bool disablePlayingInput { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasWorldNodePing",
+      "id": "Global_InGameUIManager_hasWorldNodePing",
+      "declaration": "public bool hasWorldNodePing { get; }",
+      "summary": "Do we need mini world map instead of party display right now?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_InGameUIManager_instance",
+      "declaration": "public static InGameUIManager instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDoingEnding",
+      "id": "Global_InGameUIManager_isDoingEnding",
+      "declaration": "public bool isDoingEnding { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isScoreboardDisplayed",
+      "id": "Global_InGameUIManager_isScoreboardDisplayed",
+      "declaration": "public bool isScoreboardDisplayed { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isWorldDisplayed",
+      "id": "Global_InGameUIManager_isWorldDisplayed",
+      "declaration": "public WorldDisplayStatus isWorldDisplayed { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastWorldDisplayUnscaledTime",
+      "id": "Global_InGameUIManager_lastWorldDisplayUnscaledTime",
+      "declaration": "public float lastWorldDisplayUnscaledTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_InGameUIManager_softInstance",
+      "declaration": "public static InGameUIManager softInstance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DecrementWorldNodePingCounter()",
+      "id": "Global_InGameUIManager_DecrementWorldNodePingCounter",
+      "declaration": "public void DecrementWorldNodePingCounter()",
+      "summary": "This decrements internal counter. You must pair this with equivalent number EnableMiniWorldMap calls.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisablePlayingInput()",
+      "id": "Global_InGameUIManager_DisablePlayingInput",
+      "declaration": "public void DisablePlayingInput()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnablePlayingInput()",
+      "id": "Global_InGameUIManager_EnablePlayingInput",
+      "declaration": "public void EnablePlayingInput()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_InGameUIManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetContinueRelatedDescription()",
+      "id": "Global_InGameUIManager_GetContinueRelatedDescription",
+      "declaration": "public string GetContinueRelatedDescription()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetWorldNodeUIPos(int)",
+      "id": "Global_InGameUIManager_GetWorldNodeUIPos_System_Int32_",
+      "declaration": "public Vector2 GetWorldNodeUIPos(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "IncrementWorldNodePingCounter()",
+      "id": "Global_InGameUIManager_IncrementWorldNodePingCounter",
+      "declaration": "public void IncrementWorldNodePingCounter()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStateChanged(string, string)",
+      "id": "Global_InGameUIManager_OnStateChanged_System_String_System_String_",
+      "declaration": "protected override void OnStateChanged(string oldState, string newState)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "oldState",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newState",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetIsDoingEnding(bool)",
+      "id": "Global_InGameUIManager_SetIsDoingEnding_System_Boolean_",
+      "declaration": "public void SetIsDoingEnding(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetWhiteFade(bool)",
+      "id": "Global_InGameUIManager_SetWhiteFade_System_Boolean_",
+      "declaration": "public void SetWhiteFade(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldDoAutoFocus()",
+      "id": "Global_InGameUIManager_ShouldDoAutoFocus",
+      "declaration": "public override bool ShouldDoAutoFocus()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ShowCenterMessage(CenterMessageType, string, object[])",
+      "id": "Global_InGameUIManager_ShowCenterMessage_CenterMessageType_System_String_System_Object___",
+      "declaration": "public void ShowCenterMessage(CenterMessageType type, string key, object[] formatArgs = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "CenterMessageType",
+          "type_uid": "Global.CenterMessageType",
+          "description": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "formatArgs",
+          "type": "object[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowCenterMessageRaw(CenterMessageType, string)",
+      "id": "Global_InGameUIManager_ShowCenterMessageRaw_CenterMessageType_System_String_",
+      "declaration": "public void ShowCenterMessageRaw(CenterMessageType type, string raw)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "CenterMessageType",
+          "type_uid": "Global.CenterMessageType",
+          "description": ""
+        },
+        {
+          "name": "raw",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowWorldPopMessage(WorldMessageSetting)",
+      "id": "Global_InGameUIManager_ShowWorldPopMessage_WorldMessageSetting_",
+      "declaration": "public void ShowWorldPopMessage(WorldMessageSetting message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "WorldMessageSetting",
+          "type_uid": "Global.WorldMessageSetting",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ValidateInGameActionMessage(bool)",
+      "id": "Global_InGameUIManager_ValidateInGameActionMessage_System_Boolean_",
+      "declaration": "public static bool ValidateInGameActionMessage(bool requireAliveHero = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "requireAliveHero",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

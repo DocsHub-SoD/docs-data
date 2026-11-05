@@ -1,0 +1,129 @@
+{
+  "uid": "Global.TimescaleManager",
+  "name": "TimescaleManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class TimescaleManager : NetworkedManagerBase<TimescaleManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "TimescaleManager",
+      "href": "Global.TimescaleManager.html",
+      "uid": "Global.TimescaleManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "desiredTimescale",
+      "id": "Global_TimescaleManager_desiredTimescale",
+      "declaration": "public float desiredTimescale { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectTimescale",
+      "id": "Global_TimescaleManager_effectTimescale",
+      "declaration": "public float effectTimescale { get; }",
+      "summary": "Timescale multiplier of DewEffect (FxStopTime and such) induced changes.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldTimeBeSlowedBySpecialMenu",
+      "id": "Global_TimescaleManager_shouldTimeBeSlowedBySpecialMenu",
+      "declaration": "public bool shouldTimeBeSlowedBySpecialMenu { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ChangeTimescale(float, float)",
+      "id": "Global_TimescaleManager_ChangeTimescale_System_Single_System_Single_",
+      "declaration": "public void ChangeTimescale(float timescale, float duration)",
+      "summary": "Lowest of all changes will apply.",
+      "parameters": [
+        {
+          "name": "timescale",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_TimescaleManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_TimescaleManager_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_TimescaleManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TimescaleChanged(float, float)",
+      "id": "Global_TimescaleManager_TimescaleChanged_System_Single_System_Single_",
+      "declaration": "public void TimescaleChanged(float oldVal, float newVal)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "oldVal",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newVal",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

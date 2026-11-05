@@ -1,0 +1,96 @@
+{
+  "uid": "Global.NextGoalSettings",
+  "name": "NextGoalSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class NextGoalSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "addedModifiers",
+      "id": "Global_NextGoalSettings_addedModifiers",
+      "declaration": "public AddedModifierData[] addedModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontChangeDescription",
+      "id": "Global_NextGoalSettings_dontChangeDescription",
+      "declaration": "public bool dontChangeDescription",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontChangeTitle",
+      "id": "Global_NextGoalSettings_dontChangeTitle",
+      "declaration": "public bool dontChangeTitle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreSuboptimalSituation",
+      "id": "Global_NextGoalSettings_ignoreSuboptimalSituation",
+      "declaration": "public bool ignoreSuboptimalSituation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localizedDescriptionKey",
+      "id": "Global_NextGoalSettings_localizedDescriptionKey",
+      "declaration": "public string localizedDescriptionKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localizedTitleKey",
+      "id": "Global_NextGoalSettings_localizedTitleKey",
+      "declaration": "public string localizedTitleKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nodeIndexSettings",
+      "id": "Global_NextGoalSettings_nodeIndexSettings",
+      "declaration": "public GetNodeIndexSettings nodeIndexSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFail",
+      "id": "Global_NextGoalSettings_onFail",
+      "declaration": "[NonSerialized]\npublic Action<FailReason> onFail",
+      "summary": "Called when players fails to reach the goal node. This can be due to skipping the goal node and moving to the next world, the applied modifier being removed by hunters, room override being overriden by other quest, etc.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onReachDestination",
+      "id": "Global_NextGoalSettings_onReachDestination",
+      "declaration": "[NonSerialized]\npublic Action onReachDestination",
+      "summary": "Called when players reach the goal node.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "roomOverride",
+      "id": "Global_NextGoalSettings_roomOverride",
+      "declaration": "public string roomOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

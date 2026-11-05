@@ -1,0 +1,52 @@
+{
+  "uid": "Global.SampleCastInfoContextSerialization",
+  "name": "SampleCastInfoContextSerialization",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class SampleCastInfoContextSerialization",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ReadSampleCastInfoContext(NetworkReader)",
+      "id": "Global_SampleCastInfoContextSerialization_ReadSampleCastInfoContext_Mirror_NetworkReader_",
+      "declaration": "public static SampleCastInfoContext? ReadSampleCastInfoContext(this NetworkReader reader)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "reader",
+          "type": "Mirror.NetworkReader",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SampleCastInfoContext?"
+    },
+    {
+      "name": "WriteSampleCastInfoContext(NetworkWriter, SampleCastInfoContext?)",
+      "id": "Global_SampleCastInfoContextSerialization_WriteSampleCastInfoContext_Mirror_NetworkWriter_System_Nullable_SampleCastInfoContext__",
+      "declaration": "public static void WriteSampleCastInfoContext(this NetworkWriter writer, SampleCastInfoContext? value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "writer",
+          "type": "Mirror.NetworkWriter",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "SampleCastInfoContext?",
+          "type_uid": "Global.SampleCastInfoContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

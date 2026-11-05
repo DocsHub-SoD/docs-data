@@ -1,0 +1,56 @@
+{
+  "uid": "Global.FloatCost",
+  "name": "FloatCost",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct FloatCost",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "dreamDust",
+      "id": "Global_FloatCost_dreamDust",
+      "declaration": "public float dreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gold",
+      "id": "Global_FloatCost_gold",
+      "declaration": "public float gold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthPercentage",
+      "id": "Global_FloatCost_healthPercentage",
+      "declaration": "public float healthPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "platinumCoin",
+      "id": "Global_FloatCost_platinumCoin",
+      "declaration": "public float platinumCoin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardust",
+      "id": "Global_FloatCost_stardust",
+      "declaration": "public float stardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

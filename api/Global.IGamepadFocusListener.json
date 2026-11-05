@@ -1,0 +1,39 @@
+{
+  "uid": "Global.IGamepadFocusListener",
+  "name": "IGamepadFocusListener",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IGamepadFocusListener",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "IsValid()",
+      "id": "Global_IGamepadFocusListener_IsValid",
+      "declaration": "bool IsValid()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnFocusStateChanged(bool)",
+      "id": "Global_IGamepadFocusListener_OnFocusStateChanged_System_Boolean_",
+      "declaration": "void OnFocusStateChanged(bool state)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

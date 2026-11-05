@@ -1,0 +1,100 @@
+{
+  "uid": "Global.ActionAttackMove",
+  "name": "ActionAttackMove",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ActionAttackMove : ActionBase",
+  "inheritance": [
+    {
+      "name": "ActionBase",
+      "href": "Global.ActionBase.html",
+      "uid": "Global.ActionBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "destination",
+      "id": "Global_ActionAttackMove_destination",
+      "declaration": "public Vector3 destination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useDistanceFromDestination",
+      "id": "Global_ActionAttackMove_useDistanceFromDestination",
+      "declaration": "public bool useDistanceFromDestination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FindAttackMoveTarget(Entity, Vector3)",
+      "id": "Global_ActionAttackMove_FindAttackMoveTarget_Entity_UnityEngine_Vector3_",
+      "declaration": "public static Entity FindAttackMoveTarget(Entity ent, Vector3 sortPivot)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "sortPivot",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetMoveDestination()",
+      "id": "Global_ActionAttackMove_GetMoveDestination",
+      "declaration": "public override Vector3? GetMoveDestination()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3?"
+    },
+    {
+      "name": "GetMoveDestinationRequiredDistance()",
+      "id": "Global_ActionAttackMove_GetMoveDestinationRequiredDistance",
+      "declaration": "public override float GetMoveDestinationRequiredDistance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "ShouldCancelIfDisallowedToMove()",
+      "id": "Global_ActionAttackMove_ShouldCancelIfDisallowedToMove",
+      "declaration": "public override bool ShouldCancelIfDisallowedToMove()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Tick()",
+      "id": "Global_ActionAttackMove_Tick",
+      "declaration": "public override bool Tick()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_ActionAttackMove_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

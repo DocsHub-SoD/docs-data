@@ -1,0 +1,121 @@
+{
+  "uid": "Global.LoadNodeSettings",
+  "name": "LoadNodeSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LoadNodeSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "advanceTurn",
+      "id": "Global_LoadNodeSettings_advanceTurn",
+      "declaration": "public bool advanceTurn",
+      "summary": "Advances hunters, room index and turn index.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontDoRiftTransition",
+      "id": "Global_LoadNodeSettings_dontDoRiftTransition",
+      "declaration": "public bool dontDoRiftTransition",
+      "summary": "Skip animation of moving players, like sidetrack rifts.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontStopLoading",
+      "id": "Global_LoadNodeSettings_dontStopLoading",
+      "declaration": "public bool dontStopLoading",
+      "summary": "For Primus sequence. Does not do SetLoadingStatus after loading is done.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "from",
+      "id": "Global_LoadNodeSettings_from",
+      "declaration": "public int from",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLoadingFromSave",
+      "id": "Global_LoadNodeSettings_isLoadingFromSave",
+      "declaration": "public bool isLoadingFromSave",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSidetrackTransition",
+      "id": "Global_LoadNodeSettings_isSidetrackTransition",
+      "declaration": "public bool isSidetrackTransition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isTravelingRoom",
+      "id": "Global_LoadNodeSettings_isTravelingRoom",
+      "declaration": "public bool isTravelingRoom",
+      "summary": "Set this false only if we are loading from save, and the players were already in this room when the save was made.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isTravelingZone",
+      "id": "Global_LoadNodeSettings_isTravelingZone",
+      "declaration": "public bool isTravelingZone",
+      "summary": "Set this false only if we are loading from save, and the players were already in this zone when the save was made.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isWhiteTransition",
+      "id": "Global_LoadNodeSettings_isWhiteTransition",
+      "declaration": "public bool isWhiteTransition",
+      "summary": "For Primus sequence. Fades out in white instead of normal loading screen. Unused.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "newZone",
+      "id": "Global_LoadNodeSettings_newZone",
+      "declaration": "public Zone newZone",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "newZoneNoAdvance",
+      "id": "Global_LoadNodeSettings_newZoneNoAdvance",
+      "declaration": "public bool newZoneNoAdvance",
+      "summary": "This is only used in development / testing context. Replaces the current zone, instead of advancing zone index.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "to",
+      "id": "Global_LoadNodeSettings_to",
+      "declaration": "public int to",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_LoadNodeSettings_Clone",
+      "declaration": "public LoadNodeSettings Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "LoadNodeSettings"
+    }
+  ],
+  "events": []
+}

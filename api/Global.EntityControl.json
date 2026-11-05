@@ -1,0 +1,1348 @@
+{
+  "uid": "Global.EntityControl",
+  "name": "EntityControl",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[RequireComponent(typeof(EntityTransformSync))]\npublic class EntityControl : EntityComponent, ILogicUpdate, ICleanup",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    }
+  ],
+  "fields": [
+    {
+      "name": "attackTarget",
+      "id": "Global_EntityControl_attackTarget",
+      "declaration": "[NonSerialized]\npublic Entity attackTarget",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "baseAgentSpeed",
+      "id": "Global_EntityControl_baseAgentSpeed",
+      "declaration": "public float baseAgentSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDisplacementCanceled",
+      "id": "Global_EntityControl_ClientEvent_OnDisplacementCanceled",
+      "declaration": "public SafeAction<Displacement> ClientEvent_OnDisplacementCanceled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDisplacementFinished",
+      "id": "Global_EntityControl_ClientEvent_OnDisplacementFinished",
+      "declaration": "public SafeAction<Displacement> ClientEvent_OnDisplacementFinished",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDisplacementStarted",
+      "id": "Global_EntityControl_ClientEvent_OnDisplacementStarted",
+      "declaration": "public SafeAction<Displacement> ClientEvent_OnDisplacementStarted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnInnerRadiusChanged",
+      "id": "Global_EntityControl_ClientEvent_OnInnerRadiusChanged",
+      "declaration": "public SafeAction<float, float> ClientEvent_OnInnerRadiusChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnOuterRadiusChanged",
+      "id": "Global_EntityControl_ClientEvent_OnOuterRadiusChanged",
+      "declaration": "public SafeAction<float, float> ClientEvent_OnOuterRadiusChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnTeleport",
+      "id": "Global_EntityControl_ClientEvent_OnTeleport",
+      "declaration": "public SafeAction<Vector3, Vector3> ClientEvent_OnTeleport",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CommandStallTimeout",
+      "id": "Global_EntityControl_CommandStallTimeout",
+      "declaration": "public const float CommandStallTimeout = 0.15",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastMoveTime",
+      "id": "Global_EntityControl_lastMoveTime",
+      "declaration": "[NonSerialized]\npublic float lastMoveTime",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedAcceleration",
+      "id": "Global_EntityControl_normalizedAcceleration",
+      "declaration": "public float normalizedAcceleration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "obstacleAvoidance",
+      "id": "Global_EntityControl_obstacleAvoidance",
+      "declaration": "public bool obstacleAvoidance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ongoingChannels",
+      "id": "Global_EntityControl_ongoingChannels",
+      "declaration": "public List<Channel> ongoingChannels",
+      "summary": "List of ongoingChannels on this entity.Only valid on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "QueuedActionExpireTime",
+      "id": "Global_EntityControl_QueuedActionExpireTime",
+      "declaration": "public const float QueuedActionExpireTime = 0.2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateSpeed",
+      "id": "Global_EntityControl_rotateSpeed",
+      "declaration": "public float rotateSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotationSmoothTime",
+      "id": "Global_EntityControl_rotationSmoothTime",
+      "declaration": "public float rotationSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncAgentVelocityLifetime",
+      "id": "Global_EntityControl_SyncAgentVelocityLifetime",
+      "declaration": "public static float SyncAgentVelocityLifetime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncExtrapolateMaxTime",
+      "id": "Global_EntityControl_SyncExtrapolateMaxTime",
+      "declaration": "public static float SyncExtrapolateMaxTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncExtrapolateStrength",
+      "id": "Global_EntityControl_SyncExtrapolateStrength",
+      "declaration": "public static float SyncExtrapolateStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncFixSmoothTime",
+      "id": "Global_EntityControl_SyncFixSmoothTime",
+      "declaration": "public static float SyncFixSmoothTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncFixSnapshotLifetime",
+      "id": "Global_EntityControl_SyncFixSnapshotLifetime",
+      "declaration": "public static float SyncFixSnapshotLifetime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncFixWarpDistance",
+      "id": "Global_EntityControl_SyncFixWarpDistance",
+      "declaration": "public static float SyncFixWarpDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "agentPosition",
+      "id": "Global_EntityControl_agentPosition",
+      "declaration": "public Vector3 agentPosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "agentVelocity",
+      "id": "Global_EntityControl_agentVelocity",
+      "declaration": "public Vector3 agentVelocity { get; }",
+      "summary": "Agent velocity of this entity. Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canDestroy",
+      "id": "Global_EntityControl_canDestroy",
+      "declaration": "public bool canDestroy { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMaxAgentSpeed",
+      "id": "Global_EntityControl_currentMaxAgentSpeed",
+      "declaration": "public float currentMaxAgentSpeed { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "desiredAngle",
+      "id": "Global_EntityControl_desiredAngle",
+      "declaration": "public float desiredAngle { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "desiredRotation",
+      "id": "Global_EntityControl_desiredRotation",
+      "declaration": "public Quaternion desiredRotation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "forceWalking",
+      "id": "Global_EntityControl_forceWalking",
+      "declaration": "public bool forceWalking { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "freeMovement",
+      "id": "Global_EntityControl_freeMovement",
+      "declaration": "public bool freeMovement { get; set; }",
+      "summary": "Disables agent.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "innerRadius",
+      "id": "Global_EntityControl_innerRadius",
+      "declaration": "public float innerRadius { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAirborne",
+      "id": "Global_EntityControl_isAirborne",
+      "declaration": "public bool isAirborne { get; }",
+      "summary": "Is this entity doing non-friendly displacement?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isClientSideMovement",
+      "id": "Global_EntityControl_isClientSideMovement",
+      "declaration": "public bool isClientSideMovement { get; }",
+      "summary": "Is client-side movement enabled for this entity?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isControlReversed",
+      "id": "Global_EntityControl_isControlReversed",
+      "declaration": "public bool isControlReversed { get; set; }",
+      "summary": "This only has effect on player-controlled entities.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDashing",
+      "id": "Global_EntityControl_isDashing",
+      "declaration": "public bool isDashing { get; }",
+      "summary": "Is this entity doing friendly displacement?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDisplacing",
+      "id": "Global_EntityControl_isDisplacing",
+      "declaration": "public bool isDisplacing { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDodging",
+      "id": "Global_EntityControl_isDodging",
+      "declaration": "public bool isDodging { get; }",
+      "summary": "Is this entity doing a displacement from dodge ability? e.g. Ai_GenericDodge",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDoingMoveToAction",
+      "id": "Global_EntityControl_isDoingMoveToAction",
+      "declaration": "public bool isDoingMoveToAction { get; }",
+      "summary": "Available on movement processors and server",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGamepadRotationLocked",
+      "id": "Global_EntityControl_isGamepadRotationLocked",
+      "declaration": "public bool isGamepadRotationLocked { get; }",
+      "summary": "Is gamepad look rotation locked?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocalMovementProcessor",
+      "id": "Global_EntityControl_isLocalMovementProcessor",
+      "declaration": "public bool isLocalMovementProcessor { get; }",
+      "summary": "Is local machine liable for processing movements?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isWalking",
+      "id": "Global_EntityControl_isWalking",
+      "declaration": "public bool isWalking { get; }",
+      "summary": "Is this entity walking? Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ongoingDisplacement",
+      "id": "Global_EntityControl_ongoingDisplacement",
+      "declaration": "public Displacement ongoingDisplacement { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "outerRadius",
+      "id": "Global_EntityControl_outerRadius",
+      "declaration": "public float outerRadius { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overridenDesiredAngle",
+      "id": "Global_EntityControl_overridenDesiredAngle",
+      "declaration": "public float? overridenDesiredAngle { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "proxyCollider",
+      "id": "Global_EntityControl_proxyCollider",
+      "declaration": "public ProxyCollider proxyCollider { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "queuedActions",
+      "id": "Global_EntityControl_queuedActions",
+      "declaration": "public IReadOnlyList<ActionBase> queuedActions { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "walkStrength",
+      "id": "Global_EntityControl_walkStrength",
+      "declaration": "public float walkStrength { get; }",
+      "summary": "Can have values of range 0 ~ 1 depending on how fast it is walking. Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Attack(Entity, bool)",
+      "id": "Global_EntityControl_Attack_Entity_System_Boolean_",
+      "declaration": "public void Attack(Entity target, bool doChase)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "doChase",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AttackMove(Vector3, bool)",
+      "id": "Global_EntityControl_AttackMove_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public void AttackMove(Vector3 destination, bool useDistanceFromDestination = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "useDistanceFromDestination",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CancelOngoingChannels()",
+      "id": "Global_EntityControl_CancelOngoingChannels",
+      "declaration": "public void CancelOngoingChannels()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CancelOngoingDisplacement()",
+      "id": "Global_EntityControl_CancelOngoingDisplacement",
+      "declaration": "public void CancelOngoingDisplacement()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Cast(AbilityTrigger, CastInfo, bool)",
+      "id": "Global_EntityControl_Cast_AbilityTrigger_CastInfo_System_Boolean_",
+      "declaration": "public void Cast(AbilityTrigger trigger, CastInfo info, bool allowMoveToCast = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "allowMoveToCast",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Cast(AbilityTrigger, Entity, bool)",
+      "id": "Global_EntityControl_Cast_AbilityTrigger_Entity_System_Boolean_",
+      "declaration": "public void Cast(AbilityTrigger trigger, Entity predictTarget, bool allowMoveToCast = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "predictTarget",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "allowMoveToCast",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Cast(AbilityTrigger, int, CastInfo, bool, bool)",
+      "id": "Global_EntityControl_Cast_AbilityTrigger_System_Int32_CastInfo_System_Boolean_System_Boolean_",
+      "declaration": "public void Cast(AbilityTrigger trigger, int configIndex, CastInfo info, bool allowMoveToCast = true, bool skipRangeCheck = false)",
+      "summary": "Provide -1 forconfigIndexto denote ANY config index.This will cause undefined behavior if cast method differs between configs!!",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "allowMoveToCast",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "skipRangeCheck",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Cast(AbilityTrigger, int, Entity, bool)",
+      "id": "Global_EntityControl_Cast_AbilityTrigger_System_Int32_Entity_System_Boolean_",
+      "declaration": "public void Cast(AbilityTrigger trigger, int configIndex, Entity predictTarget, bool allowMoveToCast = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "predictTarget",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "allowMoveToCast",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ClearActionQueue()",
+      "id": "Global_EntityControl_ClearActionQueue",
+      "declaration": "public void ClearActionQueue()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearMovement()",
+      "id": "Global_EntityControl_ClearMovement",
+      "declaration": "public void ClearMovement()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdAttack(Entity, bool)",
+      "id": "Global_EntityControl_CmdAttack_Entity_System_Boolean_",
+      "declaration": "public void CmdAttack(Entity target, bool doChase)",
+      "summary": "Provide null to clear attack target.",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "doChase",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdAttackMove(Vector3, bool)",
+      "id": "Global_EntityControl_CmdAttackMove_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public void CmdAttackMove(Vector3 destination, bool useDistanceFromDestination)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "useDistanceFromDestination",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdCancelOngoingChannels()",
+      "id": "Global_EntityControl_CmdCancelOngoingChannels",
+      "declaration": "public void CmdCancelOngoingChannels()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdCast(AbilityTrigger, int, CastInfo, bool, bool)",
+      "id": "Global_EntityControl_CmdCast_AbilityTrigger_System_Int32_CastInfo_System_Boolean_System_Boolean_",
+      "declaration": "public void CmdCast(AbilityTrigger trigger, int configIndex, CastInfo info, bool allowMoveToCast, bool skipRangeCheck)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "allowMoveToCast",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "skipRangeCheck",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdClearMovement()",
+      "id": "Global_EntityControl_CmdClearMovement",
+      "declaration": "public void CmdClearMovement()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdInteract(IInteractable, bool, bool)",
+      "id": "Global_EntityControl_CmdInteract_IInteractable_System_Boolean_System_Boolean_",
+      "declaration": "public void CmdInteract(IInteractable interactable, bool isAlt, bool isMouse)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "interactable",
+          "type": "IInteractable",
+          "type_uid": "Global.IInteractable",
+          "description": ""
+        },
+        {
+          "name": "isAlt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isMouse",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdLookInDirection(Vector3)",
+      "id": "Global_EntityControl_CmdLookInDirection_UnityEngine_Vector3_",
+      "declaration": "public void CmdLookInDirection(Vector3 dir)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dir",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdMoveToDestination(Vector3, bool, float)",
+      "id": "Global_EntityControl_CmdMoveToDestination_UnityEngine_Vector3_System_Boolean_System_Single_",
+      "declaration": "public void CmdMoveToDestination(Vector3 destination, bool immediately, float speedMult = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "speedMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdMoveWithDirection(Vector3)",
+      "id": "Global_EntityControl_CmdMoveWithDirection_UnityEngine_Vector3_",
+      "declaration": "public void CmdMoveWithDirection(Vector3 direction)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdStop()",
+      "id": "Global_EntityControl_CmdStop",
+      "declaration": "public void CmdStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CreateTransformABTo01(Vector2, Vector2)",
+      "id": "Global_EntityControl_CreateTransformABTo01_UnityEngine_Vector2_UnityEngine_Vector2_",
+      "declaration": "public static Matrix4x4 CreateTransformABTo01(Vector2 a, Vector2 b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Matrix4x4"
+    },
+    {
+      "name": "DecrementBlockCounters(BlockedAction, bool)",
+      "id": "Global_EntityControl_DecrementBlockCounters_Channel_BlockedAction_System_Boolean_",
+      "declaration": "public void DecrementBlockCounters(Channel.BlockedAction action, bool delayOneFrame = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "Channel.BlockedAction",
+          "type_uid": "Global.Channel",
+          "description": ""
+        },
+        {
+          "name": "delayOneFrame",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DisobeyBlock(BlockableAction)",
+      "id": "Global_EntityControl_DisobeyBlock_EntityControl_BlockableAction_",
+      "declaration": "public void DisobeyBlock(EntityControl.BlockableAction action)",
+      "summary": "Disobey blocks for certain action, canceling related channels.",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "EntityControl.BlockableAction",
+          "type_uid": "Global.EntityControl",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_EntityControl_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetPointOnBezierCurve(Vector2, Vector2, Vector2, Vector2, float)",
+      "id": "Global_EntityControl_GetPointOnBezierCurve_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_",
+      "declaration": "public static Vector2 GetPointOnBezierCurve(Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float t)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "p0",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "p1",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "p2",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "p3",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "t",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "IncrementBlockCounters(BlockedAction)",
+      "id": "Global_EntityControl_IncrementBlockCounters_Channel_BlockedAction_",
+      "declaration": "public void IncrementBlockCounters(Channel.BlockedAction action)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "Channel.BlockedAction",
+          "type_uid": "Global.Channel",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Interact(IInteractable, bool, bool)",
+      "id": "Global_EntityControl_Interact_IInteractable_System_Boolean_System_Boolean_",
+      "declaration": "public void Interact(IInteractable interactable, bool isAlt, bool isMouse)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "interactable",
+          "type": "IInteractable",
+          "type_uid": "Global.IInteractable",
+          "description": ""
+        },
+        {
+          "name": "isAlt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isMouse",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "IsActionBlocked(BlockableAction)",
+      "id": "Global_EntityControl_IsActionBlocked_EntityControl_BlockableAction_",
+      "declaration": "public EntityControl.BlockStatus IsActionBlocked(EntityControl.BlockableAction action)",
+      "summary": "Is the entity allowed to do a certain action? If not, the action will be postponed until the block is resolved.Available everywhere.",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "EntityControl.BlockableAction",
+          "type_uid": "Global.EntityControl",
+          "description": ""
+        }
+      ],
+      "returns": "EntityControl.BlockStatus"
+    },
+    {
+      "name": "LockGamepadRotation()",
+      "id": "Global_EntityControl_LockGamepadRotation",
+      "declaration": "public void LockGamepadRotation()",
+      "summary": "Lock gamepad look rotation of this entity. You must call UnlockLookRotation afterwards.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EntityControl_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MoveToDestination(Vector3, bool, float)",
+      "id": "Global_EntityControl_MoveToDestination_UnityEngine_Vector3_System_Boolean_System_Single_",
+      "declaration": "public void MoveToDestination(Vector3 destination, bool immediately, float speedMult = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "speedMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCleanup()",
+      "id": "Global_EntityControl_OnCleanup",
+      "declaration": "public void OnCleanup()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_EntityControl_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_EntityControl_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_EntityControl_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStop()",
+      "id": "Global_EntityControl_OnStop",
+      "declaration": "public override void OnStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_EntityControl_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Rotate(float, bool, float)",
+      "id": "Global_EntityControl_Rotate_System_Single_System_Boolean_System_Single_",
+      "declaration": "public void Rotate(float angle, bool immediately, float overrideDuration = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "angle",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "overrideDuration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Rotate(Quaternion, bool, float)",
+      "id": "Global_EntityControl_Rotate_UnityEngine_Quaternion_System_Boolean_System_Single_",
+      "declaration": "public void Rotate(Quaternion rotation, bool immediately, float overrideDuration = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "overrideDuration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Rotate(Vector3, bool, float)",
+      "id": "Global_EntityControl_Rotate_UnityEngine_Vector3_System_Boolean_System_Single_",
+      "declaration": "public void Rotate(Vector3 forward, bool immediately, float overrideDuration = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "forward",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "overrideDuration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RotateTowards(Entity, bool, float)",
+      "id": "Global_EntityControl_RotateTowards_Entity_System_Boolean_System_Single_",
+      "declaration": "public void RotateTowards(Entity ent, bool immediately, float overrideDuration = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "overrideDuration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RotateTowards(Vector3, bool, float)",
+      "id": "Global_EntityControl_RotateTowards_UnityEngine_Vector3_System_Boolean_System_Single_",
+      "declaration": "public void RotateTowards(Vector3 position, bool immediately, float overrideDuration = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "immediately",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "overrideDuration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetAgentDestination(Vector3, bool)",
+      "id": "Global_EntityControl_SetAgentDestination_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public void SetAgentDestination(Vector3 destination, bool important)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "important",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetAgentPosition(Vector3)",
+      "id": "Global_EntityControl_SetAgentPosition_UnityEngine_Vector3_",
+      "declaration": "public void SetAgentPosition(Vector3 position)",
+      "summary": "Can be called on local movement processor.",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartChannel(Channel)",
+      "id": "Global_EntityControl_StartChannel_Channel_",
+      "declaration": "public Channel StartChannel(Channel channel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "channel",
+          "type": "Channel",
+          "type_uid": "Global.Channel",
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "StartDaze(float)",
+      "id": "Global_EntityControl_StartDaze_System_Single_",
+      "declaration": "public Channel StartDaze(float duration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "StartDisplacement(Displacement)",
+      "id": "Global_EntityControl_StartDisplacement_Displacement_",
+      "declaration": "public void StartDisplacement(Displacement disp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "disp",
+          "type": "Displacement",
+          "type_uid": "Global.Displacement",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_EntityControl_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopOverrideRotation()",
+      "id": "Global_EntityControl_StopOverrideRotation",
+      "declaration": "public void StopOverrideRotation()",
+      "summary": "Unlock override rotation.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Teleport(Vector3)",
+      "id": "Global_EntityControl_Teleport_UnityEngine_Vector3_",
+      "declaration": "public void Teleport(Vector3 position)",
+      "summary": "Teleport this entity to the targeted position.You should only feed in a valid position by usingDew.GetValidAgentPosition()beforehand.",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TransformPoint(Vector2, Matrix4x4)",
+      "id": "Global_EntityControl_TransformPoint_UnityEngine_Vector2_UnityEngine_Matrix4x4_",
+      "declaration": "public static Vector2 TransformPoint(Vector2 point, Matrix4x4 transform)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "point",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "transform",
+          "type": "UnityEngine.Matrix4x4",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "UnlockGamepadRotation()",
+      "id": "Global_EntityControl_UnlockGamepadRotation",
+      "declaration": "public void UnlockGamepadRotation()",
+      "summary": "Unlock gamepad look rotation of this entity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateLastMoveTime()",
+      "id": "Global_EntityControl_UpdateLastMoveTime",
+      "declaration": "public void UpdateLastMoveTime()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

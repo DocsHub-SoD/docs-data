@@ -1,0 +1,21 @@
+{
+  "uid": "Global.ImportantFogVolume",
+  "name": "ImportantFogVolume",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ImportantFogVolume : MonoBehaviour, IImportantFogVolume",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IImportantFogVolume",
+      "href": "Global.IImportantFogVolume.html",
+      "uid": "Global.IImportantFogVolume"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.GetFocusTargetCacheData",
+  "name": "GetFocusTargetCacheData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct GetFocusTargetCacheData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "candidateFocusables",
+      "id": "Global_GetFocusTargetCacheData_candidateFocusables",
+      "declaration": "public readonly List<(IGamepadFocusable, Rect)> candidateFocusables { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "candidateGroups",
+      "id": "Global_GetFocusTargetCacheData_candidateGroups",
+      "declaration": "public readonly List<(UI_GamepadFocusableGroup, Rect)> candidateGroups { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

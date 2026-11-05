@@ -1,0 +1,40 @@
+{
+  "uid": "Global.ICastMethodDataPoint",
+  "name": "ICastMethodDataPoint",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICastMethodDataPoint",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isClamping",
+      "id": "Global_ICastMethodDataPoint_isClamping",
+      "declaration": "bool isClamping { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "radius",
+      "id": "Global_ICastMethodDataPoint_radius",
+      "declaration": "float radius { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "range",
+      "id": "Global_ICastMethodDataPoint_range",
+      "declaration": "float range { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

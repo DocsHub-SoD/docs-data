@@ -1,0 +1,80 @@
+{
+  "uid": "Global.GameMod_MirageSkin.MirageSkinChancePerPlayer",
+  "name": "GameMod_MirageSkin.MirageSkinChancePerPlayer",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct GameMod_MirageSkin.MirageSkinChancePerPlayer",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "zone0",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_zone0",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic float zone0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zone1",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_zone1",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic float zone1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zone2",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_zone2",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic float zone2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zone3",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_zone3",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic float zone3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zone4",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_zone4",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic float zone4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zone5",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_zone5",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic float zone5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get(int)",
+      "id": "Global_GameMod_MirageSkin_MirageSkinChancePerPlayer_Get_System_Int32_",
+      "declaration": "public float Get(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

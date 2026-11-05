@@ -1,0 +1,15 @@
+{
+  "uid": "Global.SectionCombatAreaType",
+  "name": "SectionCombatAreaType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum SectionCombatAreaType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.LobbyMessage",
+  "name": "LobbyMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct LobbyMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "payload",
+      "id": "Global_LobbyMessage_payload",
+      "declaration": "public string payload",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_LobbyMessage_type",
+      "declaration": "public LobbyMessageType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

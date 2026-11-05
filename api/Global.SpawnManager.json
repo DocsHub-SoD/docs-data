@@ -1,0 +1,196 @@
+{
+  "uid": "Global.SpawnManager",
+  "name": "SpawnManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SpawnManager : ManagerBase<SpawnManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "SpawnManager",
+      "href": "Global.SpawnManager.html",
+      "uid": "Global.SpawnManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activeInstanceToPool",
+      "id": "Global_SpawnManager_activeInstanceToPool",
+      "declaration": "public Dictionary<GameObject, ObjectPoolItem> activeInstanceToPool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pool",
+      "id": "Global_SpawnManager_pool",
+      "declaration": "public Dictionary<GameObject, ObjectPoolItem> pool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showPoolInfo",
+      "id": "Global_SpawnManager_showPoolInfo",
+      "declaration": "[NonSerialized]\npublic bool showPoolInfo",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "usePooling",
+      "id": "Global_SpawnManager_usePooling",
+      "declaration": "[NonSerialized]\npublic bool usePooling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_SpawnManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Create<T>(T, Vector3, Quaternion, Transform)",
+      "id": "Global_SpawnManager_Create__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_",
+      "declaration": "public static T Create<T>(T prefab, Vector3 position, Quaternion rotation, Transform parent) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Create<T>(T, Vector3, Quaternion)",
+      "id": "Global_SpawnManager_Create__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_",
+      "declaration": "public static T Create<T>(T prefab, Vector3 position, Quaternion rotation) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Destroy(GameObject)",
+      "id": "Global_SpawnManager_Destroy_UnityEngine_GameObject_",
+      "declaration": "public static void Destroy(GameObject gobj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gobj",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvalidateInstance(Component)",
+      "id": "Global_SpawnManager_InvalidateInstance_UnityEngine_Component_",
+      "declaration": "public static void InvalidateInstance(Component activeInstance)",
+      "summary": "Invalidate an instance from pool, preventing it from being reused.",
+      "parameters": [
+        {
+          "name": "activeInstance",
+          "type": "UnityEngine.Component",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvalidateInstance(GameObject)",
+      "id": "Global_SpawnManager_InvalidateInstance_UnityEngine_GameObject_",
+      "declaration": "public static void InvalidateInstance(GameObject activeInstance)",
+      "summary": "Invalidate an instance from pool, preventing it from being reused.",
+      "parameters": [
+        {
+          "name": "activeInstance",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

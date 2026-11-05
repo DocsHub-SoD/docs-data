@@ -1,0 +1,149 @@
+{
+  "uid": "Global.FxEntityColor",
+  "name": "FxEntityColor",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxEntityColor : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IAttachableToEntity",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    },
+    {
+      "name": "IAttachableToEntity",
+      "href": "Global.IAttachableToEntity.html",
+      "uid": "Global.IAttachableToEntity"
+    }
+  ],
+  "fields": [
+    {
+      "name": "baseColor",
+      "id": "Global_FxEntityColor_baseColor",
+      "declaration": "[ColorUsage(false, false)]\n[ShowIf(\"doBaseColor\", true)]\npublic Color baseColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissolveAmount",
+      "id": "Global_FxEntityColor_dissolveAmount",
+      "declaration": "[ShowIf(\"doDissolve\", true)]\npublic float dissolveAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissolveColor",
+      "id": "Global_FxEntityColor_dissolveColor",
+      "declaration": "[ColorUsage(false, true)]\n[ShowIf(\"doDissolveColor\", true)]\npublic Color dissolveColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doBaseColor",
+      "id": "Global_FxEntityColor_doBaseColor",
+      "declaration": "public bool doBaseColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doDissolve",
+      "id": "Global_FxEntityColor_doDissolve",
+      "declaration": "public bool doDissolve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doDissolveColor",
+      "id": "Global_FxEntityColor_doDissolveColor",
+      "declaration": "public bool doDissolveColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doEmission",
+      "id": "Global_FxEntityColor_doEmission",
+      "declaration": "public bool doEmission",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doOpacity",
+      "id": "Global_FxEntityColor_doOpacity",
+      "declaration": "public bool doOpacity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "emission",
+      "id": "Global_FxEntityColor_emission",
+      "declaration": "[ColorUsage(false, true)]\n[ShowIf(\"doEmission\", true)]\npublic Color emission",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "opacity",
+      "id": "Global_FxEntityColor_opacity",
+      "declaration": "[ShowIf(\"doOpacity\", true)]\npublic float opacity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_FxEntityColor_OnAttachToEntity_Entity_",
+      "declaration": "public void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxEntityColor_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,49 @@
+{
+  "uid": "Global.MapData",
+  "name": "MapData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class MapData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "area",
+      "id": "Global_MapData_area",
+      "declaration": "public float area",
+      "summary": "Total area of playable area.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cells",
+      "id": "Global_MapData_cells",
+      "declaration": "public Cells2D<MapCellType> cells",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "innerPropNodeIndices",
+      "id": "Global_MapData_innerPropNodeIndices",
+      "declaration": "public IReadOnlyList<(int, int)> innerPropNodeIndices { get; }",
+      "summary": "Represents indices of prop placement nodes.These nodes are on inner playable area with some distance to a nearest wall.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "outerPropNodeIndices",
+      "id": "Global_MapData_outerPropNodeIndices",
+      "declaration": "public IReadOnlyList<(int, int)> outerPropNodeIndices { get; }",
+      "summary": "Represents indices of prop placement nodes.These nodes are on playable area and close to a wall.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

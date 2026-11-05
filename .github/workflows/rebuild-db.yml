@@ -1,0 +1,30 @@
+name: Build Database & Knowledge Graph
+
+on:
+  push:
+    paths:
+      - 'api/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  build-db:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Rebuild SQLite DB & Knowledge Graph
+        run: |
+          python scripts/compile_db.py
+
+      - name: Commit & Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(ci): auto-rebuild api.db & api-graph.json [skip ci]"
+          file_pattern: "api.db api-graph.json"

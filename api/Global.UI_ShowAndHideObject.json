@@ -1,0 +1,65 @@
+{
+  "uid": "Global.UI_ShowAndHideObject",
+  "name": "UI_ShowAndHideObject",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(CanvasGroup))]\npublic class UI_ShowAndHideObject : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "cg",
+      "id": "Global_UI_ShowAndHideObject_cg",
+      "declaration": "public CanvasGroup cg { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Hide()",
+      "id": "Global_UI_ShowAndHideObject_Hide",
+      "declaration": "public void Hide()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_UI_ShowAndHideObject_OnEnable",
+      "declaration": "protected virtual void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHide()",
+      "id": "Global_UI_ShowAndHideObject_OnHide",
+      "declaration": "protected virtual void OnHide()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnShow()",
+      "id": "Global_UI_ShowAndHideObject_OnShow",
+      "declaration": "protected virtual void OnShow()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Show()",
+      "id": "Global_UI_ShowAndHideObject_Show",
+      "declaration": "public void Show()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

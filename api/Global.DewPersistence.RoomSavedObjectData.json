@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewPersistence.RoomSavedObjectData",
+  "name": "DewPersistence.RoomSavedObjectData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.RoomSavedObjectData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "guid",
+      "id": "Global_DewPersistence_RoomSavedObjectData_guid",
+      "declaration": "public string guid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistenceData",
+      "id": "Global_DewPersistence_RoomSavedObjectData_persistenceData",
+      "declaration": "public Dictionary<string, string> persistenceData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scenePath",
+      "id": "Global_DewPersistence_RoomSavedObjectData_scenePath",
+      "declaration": "public string scenePath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Capture(RoomSavedObject)",
+      "id": "Global_DewPersistence_RoomSavedObjectData_Capture_RoomSavedObject_",
+      "declaration": "public DewPersistence.RoomSavedObjectData Capture(RoomSavedObject target)",
+      "summary": "This object is mutated, and self is returned.",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "RoomSavedObject",
+          "type_uid": "Global.RoomSavedObject",
+          "description": ""
+        }
+      ],
+      "returns": "DewPersistence.RoomSavedObjectData"
+    }
+  ],
+  "events": []
+}

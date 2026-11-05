@@ -1,0 +1,89 @@
+{
+  "uid": "Global.Emote",
+  "name": "Emote",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Name)]\npublic class Emote : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "category",
+      "id": "Global_Emote_category",
+      "declaration": "public string category",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customDuration",
+      "id": "Global_Emote_customDuration",
+      "declaration": "[NonSerialized]\npublic float? customDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DefaultUnlocks",
+      "id": "Global_Emote_DefaultUnlocks",
+      "declaration": "public static readonly string[] DefaultUnlocks",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "generatedFromServer",
+      "id": "Global_Emote_generatedFromServer",
+      "declaration": "public bool generatedFromServer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroType",
+      "id": "Global_Emote_heroType",
+      "declaration": "public string heroType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "posGetter",
+      "id": "Global_Emote_posGetter",
+      "declaration": "public Func<Vector3> posGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "price",
+      "id": "Global_Emote_price",
+      "declaration": "public int price",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "SetupPreview()",
+      "id": "Global_Emote_SetupPreview",
+      "declaration": "public void SetupPreview()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetupStationary()",
+      "id": "Global_Emote_SetupStationary",
+      "declaration": "public void SetupStationary()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

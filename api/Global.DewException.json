@@ -1,0 +1,24 @@
+{
+  "uid": "Global.DewException",
+  "name": "DewException",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewException : Exception",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "type",
+      "id": "Global_DewException_type",
+      "declaration": "public DewExceptionType type { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

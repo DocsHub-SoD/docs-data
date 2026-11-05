@@ -1,0 +1,47 @@
+{
+  "uid": "Global.DeathInterruptEffect",
+  "name": "DeathInterruptEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DeathInterruptEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onInterrupt",
+      "id": "Global_DeathInterruptEffect_onInterrupt",
+      "declaration": "public Action<EventInfoKill> onInterrupt",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_DeathInterruptEffect_priority",
+      "declaration": "public int priority",
+      "summary": "DeathInterrupts with lower priority will be fired/checked earlier.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_DeathInterruptEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

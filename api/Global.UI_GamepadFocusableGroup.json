@@ -1,0 +1,83 @@
+{
+  "uid": "Global.UI_GamepadFocusableGroup",
+  "name": "UI_GamepadFocusableGroup",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GamepadFocusableGroup : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "customTarget",
+      "id": "Global_UI_GamepadFocusableGroup_customTarget",
+      "declaration": "[ShowIf(\"@enterBehavior == EnterGroupBehavior.Custom\", true)]\npublic GameObject customTarget",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enterBehavior",
+      "id": "Global_UI_GamepadFocusableGroup_enterBehavior",
+      "declaration": "[HideLabel]\n[LabelText(\"When Entering\")]\npublic EnterGroupBehavior enterBehavior",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetEnterFocusable(GameObject, EnterGroupBehavior, Vector2)",
+      "id": "Global_UI_GamepadFocusableGroup_GetEnterFocusable_UnityEngine_GameObject_EnterGroupBehavior_UnityEngine_Vector2_",
+      "declaration": "public static IGamepadFocusable GetEnterFocusable(GameObject parent, EnterGroupBehavior enterBehavior, Vector2 direction)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "enterBehavior",
+          "type": "EnterGroupBehavior",
+          "type_uid": "Global.EnterGroupBehavior",
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "IGamepadFocusable"
+    },
+    {
+      "name": "GetEnterFocusable(Vector2)",
+      "id": "Global_UI_GamepadFocusableGroup_GetEnterFocusable_UnityEngine_Vector2_",
+      "declaration": "public virtual IGamepadFocusable GetEnterFocusable(Vector2 direction)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "IGamepadFocusable"
+    },
+    {
+      "name": "IsValid()",
+      "id": "Global_UI_GamepadFocusableGroup_IsValid",
+      "declaration": "public bool IsValid()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

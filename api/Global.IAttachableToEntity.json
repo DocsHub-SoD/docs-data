@@ -1,0 +1,31 @@
+{
+  "uid": "Global.IAttachableToEntity",
+  "name": "IAttachableToEntity",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IAttachableToEntity",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnAttachToEntity(Entity)",
+      "id": "Global_IAttachableToEntity_OnAttachToEntity_Entity_",
+      "declaration": "void OnAttachToEntity(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

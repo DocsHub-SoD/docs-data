@@ -1,0 +1,175 @@
+{
+  "uid": "Global.LobbyServiceSteam",
+  "name": "LobbyServiceSteam",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LobbyServiceSteam : LobbyServiceProvider",
+  "inheritance": [
+    {
+      "name": "LobbyServiceProvider",
+      "href": "Global.LobbyServiceProvider.html",
+      "uid": "Global.LobbyServiceProvider"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "disableVersionCheck",
+      "id": "Global_LobbyServiceSteam_disableVersionCheck",
+      "declaration": "public bool disableVersionCheck",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyMembers",
+      "id": "Global_LobbyServiceSteam_lobbyMembers",
+      "declaration": "public List<CSteamID> lobbyMembers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentLobby",
+      "id": "Global_LobbyServiceSteam_currentLobby",
+      "declaration": "public override LobbyInstance currentLobby { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActivateGameOverlayInviteDialog()",
+      "id": "Global_LobbyServiceSteam_ActivateGameOverlayInviteDialog",
+      "declaration": "public void ActivateGameOverlayInviteDialog()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CreateLobby()",
+      "id": "Global_LobbyServiceSteam_CreateLobby",
+      "declaration": "public override UniTask CreateLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "GetGameServerAddress()",
+      "id": "Global_LobbyServiceSteam_GetGameServerAddress",
+      "declaration": "public override string GetGameServerAddress()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetLobbies(Action<LobbySearchResult>, object)",
+      "id": "Global_LobbyServiceSteam_GetLobbies_System_Action_LobbySearchResult__System_Object_",
+      "declaration": "public override UniTask GetLobbies(Action<LobbySearchResult> onUpdated, object continuationToken = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "onUpdated",
+          "type": "System.Action<T><LobbySearchResult>",
+          "type_uid": "Global.LobbySearchResult",
+          "description": ""
+        },
+        {
+          "name": "continuationToken",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "HandleUserLeavingGame(string)",
+      "id": "Global_LobbyServiceSteam_HandleUserLeavingGame_System_String_",
+      "declaration": "public override UniTask HandleUserLeavingGame(string id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "InviteToLobby(CSteamID)",
+      "id": "Global_LobbyServiceSteam_InviteToLobby_Steamworks_CSteamID_",
+      "declaration": "public bool InviteToLobby(CSteamID friend)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "friend",
+          "type": "Steamworks.CSteamID",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "JoinGameOfCurrentLobby()",
+      "id": "Global_LobbyServiceSteam_JoinGameOfCurrentLobby",
+      "declaration": "public override UniTask JoinGameOfCurrentLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "JoinLobby(object)",
+      "id": "Global_LobbyServiceSteam_JoinLobby_System_Object_",
+      "declaration": "public override UniTask JoinLobby(object lobby)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobby",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "LeaveLobby()",
+      "id": "Global_LobbyServiceSteam_LeaveLobby",
+      "declaration": "public override UniTask LeaveLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "SetLobbyAttribute(string, object)",
+      "id": "Global_LobbyServiceSteam_SetLobbyAttribute_System_String_System_Object_",
+      "declaration": "public override UniTask SetLobbyAttribute(string key, object value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    }
+  ],
+  "events": []
+}

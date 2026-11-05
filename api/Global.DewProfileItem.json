@@ -1,0 +1,48 @@
+{
+  "uid": "Global.DewProfileItem",
+  "name": "DewProfileItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "path",
+      "id": "Global_DewProfileItem_path",
+      "declaration": "public string path",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "peek",
+      "id": "Global_DewProfileItem_peek",
+      "declaration": "public DewProfile peek",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "peekStats",
+      "id": "Global_DewProfileItem_peekStats",
+      "declaration": "public DewProfileStats peekStats",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_DewProfileItem_state",
+      "declaration": "public DewProfileState state",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,73 @@
+{
+  "uid": "Global.DewAudioSettings_User",
+  "name": "DewAudioSettings_User",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewAudioSettings_User",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "backgroundAudioBehavior",
+      "id": "Global_DewAudioSettings_User_backgroundAudioBehavior",
+      "declaration": "public BackgroundAudioBehavior backgroundAudioBehavior",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "envVolume",
+      "id": "Global_DewAudioSettings_User_envVolume",
+      "declaration": "public float envVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "masterVolume",
+      "id": "Global_DewAudioSettings_User_masterVolume",
+      "declaration": "public float masterVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "musicVolume",
+      "id": "Global_DewAudioSettings_User_musicVolume",
+      "declaration": "public float musicVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sfxVolume",
+      "id": "Global_DewAudioSettings_User_sfxVolume",
+      "declaration": "public float sfxVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uiVolume",
+      "id": "Global_DewAudioSettings_User_uiVolume",
+      "declaration": "public float uiVolume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewAudioSettings_User_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    }
+  ],
+  "events": []
+}

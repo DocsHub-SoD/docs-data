@@ -1,0 +1,46 @@
+{
+  "uid": "Global.InteractableMeshHighlightProvider",
+  "name": "InteractableMeshHighlightProvider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InteractableMeshHighlightProvider : MeshHighlightProvider, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "HighlightProvider",
+      "href": "Global.HighlightProvider.html",
+      "uid": "Global.HighlightProvider"
+    },
+    {
+      "name": "MeshHighlightProvider",
+      "href": "Global.MeshHighlightProvider.html",
+      "uid": "Global.MeshHighlightProvider"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Start()",
+      "id": "Global_InteractableMeshHighlightProvider_Start",
+      "declaration": "protected override void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

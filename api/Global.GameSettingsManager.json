@@ -1,0 +1,449 @@
+{
+  "uid": "Global.GameSettingsManager",
+  "name": "GameSettingsManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameSettingsManager : NetworkedManagerBase<GameSettingsManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "GameSettingsManager",
+      "href": "Global.GameSettingsManager.html",
+      "uid": "Global.GameSettingsManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activeLucidDreams",
+      "id": "Global_GameSettingsManager_activeLucidDreams",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> activeLucidDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedGameMods",
+      "id": "Global_GameSettingsManager_addedGameMods",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> addedGameMods",
+      "summary": "This should not be changed after starting the server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableLucidDreams",
+      "id": "Global_GameSettingsManager_availableLucidDreams",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> availableLucidDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bannedGameItems",
+      "id": "Global_GameSettingsManager_bannedGameItems",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> bannedGameItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnActiveLucidDreamsChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnActiveLucidDreamsChanged",
+      "declaration": "public SafeAction ClientEvent_OnActiveLucidDreamsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnAvailableLucidDreamsChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnAvailableLucidDreamsChanged",
+      "declaration": "public SafeAction ClientEvent_OnAvailableLucidDreamsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnBannedItemsChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnBannedItemsChanged",
+      "declaration": "public SafeAction ClientEvent_OnBannedItemsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnCustomDataChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnCustomDataChanged",
+      "declaration": "public SafeAction<string> ClientEvent_OnCustomDataChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDifficultyChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnDifficultyChanged",
+      "declaration": "public SafeAction<string, string> ClientEvent_OnDifficultyChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnLobbyTagsChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnLobbyTagsChanged",
+      "declaration": "public SafeAction ClientEvent_OnLobbyTagsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnStateChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnStateChanged",
+      "declaration": "public SafeAction ClientEvent_OnStateChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnUnlockedGameItemsChanged",
+      "id": "Global_GameSettingsManager_ClientEvent_OnUnlockedGameItemsChanged",
+      "declaration": "public SafeAction ClientEvent_OnUnlockedGameItemsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customData",
+      "id": "Global_GameSettingsManager_customData",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncDictionary<string, string> customData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyTags",
+      "id": "Global_GameSettingsManager_lobbyTags",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> lobbyTags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localPlayerDejavuCost",
+      "id": "Global_GameSettingsManager_localPlayerDejavuCost",
+      "declaration": "public int localPlayerDejavuCost",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockedGameItems",
+      "id": "Global_GameSettingsManager_unlockedGameItems",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> unlockedGameItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "allowDejavu",
+      "id": "Global_GameSettingsManager_allowDejavu",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic bool allowDejavu { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowMidJoins",
+      "id": "Global_GameSettingsManager_allowMidJoins",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic AllowMidJoinType allowMidJoins { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficulty",
+      "id": "Global_GameSettingsManager_difficulty",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string difficulty { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableVotes",
+      "id": "Global_GameSettingsManager_enableVotes",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic bool enableVotes { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameSettingsSaveKey",
+      "id": "Global_GameSettingsManager_gameSettingsSaveKey",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string gameSettingsSaveKey { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyDescription",
+      "id": "Global_GameSettingsManager_lobbyDescription",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string lobbyDescription { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyName",
+      "id": "Global_GameSettingsManager_lobbyName",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string lobbyName { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPlayers",
+      "id": "Global_GameSettingsManager_maxPlayers",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int maxPlayers { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "midJoinBanType",
+      "id": "Global_GameSettingsManager_midJoinBanType",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic MidJoinBanType midJoinBanType { get; set; }",
+      "summary": "This is irreversible by design.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "midJoinWaitType",
+      "id": "Global_GameSettingsManager_midJoinWaitType",
+      "declaration": "public MidJoinWaitType midJoinWaitType { get; set; }",
+      "summary": "This should be set and unset accordingly mid-run.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_GameSettingsManager_state",
+      "declaration": "public GameState state { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddLucidDream(string)",
+      "id": "Global_GameSettingsManager_AddLucidDream_System_String_",
+      "declaration": "public void AddLucidDream(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_GameSettingsManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearLucidDreams()",
+      "id": "Global_GameSettingsManager_ClearLucidDreams",
+      "declaration": "public void ClearLucidDreams()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisconnectByMidJoinBan()",
+      "id": "Global_GameSettingsManager_DisconnectByMidJoinBan",
+      "declaration": "public void DisconnectByMidJoinBan()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisconnectByMidJoinWaitBlock()",
+      "id": "Global_GameSettingsManager_DisconnectByMidJoinWaitBlock",
+      "declaration": "public void DisconnectByMidJoinWaitBlock()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetLocalPreferredGameSettings()",
+      "id": "Global_GameSettingsManager_GetLocalPreferredGameSettings",
+      "declaration": "public PreferredGameSettings GetLocalPreferredGameSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "PreferredGameSettings"
+    },
+    {
+      "name": "Lobby_UpdateAttribute(string)",
+      "id": "Global_GameSettingsManager_Lobby_UpdateAttribute_System_String_",
+      "declaration": "public UniTask Lobby_UpdateAttribute(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "Lobby_UpdateCanJoinAndGameStarted(bool?)",
+      "id": "Global_GameSettingsManager_Lobby_UpdateCanJoinAndGameStarted_System_Nullable_System_Boolean__",
+      "declaration": "public UniTask Lobby_UpdateCanJoinAndGameStarted(bool? hasGameStartedOverride = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hasGameStartedOverride",
+          "type": "bool?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "Lobby_UpdateGameAttributes()",
+      "id": "Global_GameSettingsManager_Lobby_UpdateGameAttributes",
+      "declaration": "public UniTask Lobby_UpdateGameAttributes()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "Lobby_UpdateGameStartTimestamp()",
+      "id": "Global_GameSettingsManager_Lobby_UpdateGameStartTimestamp",
+      "declaration": "public UniTask Lobby_UpdateGameStartTimestamp()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Cysharp.Threading.Tasks.UniTask"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_GameSettingsManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_GameSettingsManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_GameSettingsManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_GameSettingsManager_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveLucidDream(string)",
+      "id": "Global_GameSettingsManager_RemoveLucidDream_System_String_",
+      "declaration": "public void RemoveLucidDream(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetEnableVotes(bool)",
+      "id": "Global_GameSettingsManager_SetEnableVotes_System_Boolean_",
+      "declaration": "public void SetEnableVotes(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UpdateAvailableLucidDreams()",
+      "id": "Global_GameSettingsManager_UpdateAvailableLucidDreams",
+      "declaration": "public void UpdateAvailableLucidDreams()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValidateBannedItems(bool)",
+      "id": "Global_GameSettingsManager_ValidateBannedItems_System_Boolean_",
+      "declaration": "public void ValidateBannedItems(bool printMessage)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "printMessage",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

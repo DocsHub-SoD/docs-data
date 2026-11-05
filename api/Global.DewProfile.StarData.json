@@ -1,0 +1,48 @@
+{
+  "uid": "Global.DewProfile.StarData",
+  "name": "DewProfile.StarData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.StarData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "level",
+      "id": "Global_DewProfile_StarData_level",
+      "declaration": "public int level",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewProfile_StarData_Clone",
+      "declaration": "public DewProfile.StarData Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewProfile.StarData"
+    },
+    {
+      "name": "IsUnchanged(StarData)",
+      "id": "Global_DewProfile_StarData_IsUnchanged_DewProfile_StarData_",
+      "declaration": "public bool IsUnchanged(DewProfile.StarData other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DewProfile.StarData",
+          "type_uid": "Global.DewProfile",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

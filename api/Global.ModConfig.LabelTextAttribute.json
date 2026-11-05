@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ModConfig.LabelTextAttribute",
+  "name": "ModConfig.LabelTextAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Field)]\npublic class ModConfig.LabelTextAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "text",
+      "id": "Global_ModConfig_LabelTextAttribute_text",
+      "declaration": "public readonly string text",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

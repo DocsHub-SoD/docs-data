@@ -1,0 +1,32 @@
+{
+  "uid": "Global.DewAuthResponseMessage",
+  "name": "DewAuthResponseMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewAuthResponseMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "errorType",
+      "id": "Global_DewAuthResponseMessage_errorType",
+      "declaration": "public DewExceptionType errorType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isError",
+      "id": "Global_DewAuthResponseMessage_isError",
+      "declaration": "public bool isError",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

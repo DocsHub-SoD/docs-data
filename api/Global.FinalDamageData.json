@@ -1,0 +1,121 @@
+{
+  "uid": "Global.FinalDamageData",
+  "name": "FinalDamageData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct FinalDamageData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "amount",
+      "id": "Global_FinalDamageData_amount",
+      "declaration": "public float amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackEffectStrength",
+      "id": "Global_FinalDamageData_attackEffectStrength",
+      "declaration": "public float attackEffectStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackEffectType",
+      "id": "Global_FinalDamageData_attackEffectType",
+      "declaration": "public AttackEffectType attackEffectType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attributes",
+      "id": "Global_FinalDamageData_attributes",
+      "declaration": "public DamageAttribute attributes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "direction",
+      "id": "Global_FinalDamageData_direction",
+      "declaration": "public Vector3? direction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "discardedAmount",
+      "id": "Global_FinalDamageData_discardedAmount",
+      "declaration": "public float discardedAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elemental",
+      "id": "Global_FinalDamageData_elemental",
+      "declaration": "public ElementalType? elemental",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideElementalStacks",
+      "id": "Global_FinalDamageData_overrideElementalStacks",
+      "declaration": "public int? overrideElementalStacks",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "procCoefficient",
+      "id": "Global_FinalDamageData_procCoefficient",
+      "declaration": "public float procCoefficient",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_FinalDamageData_type",
+      "declaration": "public DamageData.SourceType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canMerge",
+      "id": "Global_FinalDamageData_canMerge",
+      "declaration": "public bool canMerge { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "HasAttr(DamageAttribute)",
+      "id": "Global_FinalDamageData_HasAttr_DamageAttribute_",
+      "declaration": "public bool HasAttr(DamageAttribute attr)",
+      "summary": "Does this damage has specific attribute?",
+      "parameters": [
+        {
+          "name": "attr",
+          "type": "DamageAttribute",
+          "type_uid": "Global.DamageAttribute",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

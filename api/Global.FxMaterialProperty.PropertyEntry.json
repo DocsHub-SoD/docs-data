@@ -1,0 +1,72 @@
+{
+  "uid": "Global.FxMaterialProperty.PropertyEntry",
+  "name": "FxMaterialProperty.PropertyEntry",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct FxMaterialProperty.PropertyEntry",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "endColor",
+      "id": "Global_FxMaterialProperty_PropertyEntry_endColor",
+      "declaration": "[ColorUsage(true, true)]\n[ShowIf(\"@type == FxMaterialProperty.PropertyType.Color\", true)]\npublic Color endColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "property",
+      "id": "Global_FxMaterialProperty_PropertyEntry_property",
+      "declaration": "public string property",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startColor",
+      "id": "Global_FxMaterialProperty_PropertyEntry_startColor",
+      "declaration": "[ColorUsage(true, true)]\n[ShowIf(\"@type == FxMaterialProperty.PropertyType.Color\", true)]\npublic Color startColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_FxMaterialProperty_PropertyEntry_target",
+      "declaration": "[LabelText(\"Renderer\")]\n[HideIf(\"@targetUi != null\", true)]\npublic Renderer target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetUi",
+      "id": "Global_FxMaterialProperty_PropertyEntry_targetUi",
+      "declaration": "[LabelText(\"UI Graphic\")]\n[HideIf(\"@target != null\", true)]\npublic Graphic targetUi",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_FxMaterialProperty_PropertyEntry_type",
+      "declaration": "public FxMaterialProperty.PropertyType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "valueCurve",
+      "id": "Global_FxMaterialProperty_PropertyEntry_valueCurve",
+      "declaration": "public AnimationCurve valueCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

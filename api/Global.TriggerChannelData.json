@@ -1,0 +1,99 @@
+{
+  "uid": "Global.TriggerChannelData",
+  "name": "TriggerChannelData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class TriggerChannelData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "blockedActions",
+      "id": "Global_TriggerChannelData_blockedActions",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[DisableIf(\"@duration <= 0f\")]\npublic Channel.BlockedAction blockedActions",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_TriggerChannelData_duration",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[LabelText(\"Channel Duration\")]\npublic float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CreateChannel(Action, Action, IEntityValidator, Entity, IBinaryEntityValidator)",
+      "id": "Global_TriggerChannelData_CreateChannel_System_Action_System_Action_IEntityValidator_Entity_IBinaryEntityValidator_",
+      "declaration": "public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidator selfValidator, Entity target, IBinaryEntityValidator targetValidator)",
+      "summary": "Create a channel out of this data.",
+      "parameters": [
+        {
+          "name": "onComplete",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "selfValidator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "targetValidator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "CreateChannel(Action, Action, IEntityValidator)",
+      "id": "Global_TriggerChannelData_CreateChannel_System_Action_System_Action_IEntityValidator_",
+      "declaration": "public Channel CreateChannel(Action onComplete, Action onCancel, IEntityValidator selfValidator)",
+      "summary": "Create a channel out of this data.",
+      "parameters": [
+        {
+          "name": "onComplete",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "selfValidator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    }
+  ],
+  "events": []
+}

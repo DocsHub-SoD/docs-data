@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewAudioRollOffType",
+  "name": "DewAudioRollOffType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DewAudioRollOffType : byte",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

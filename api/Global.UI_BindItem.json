@@ -1,0 +1,152 @@
+{
+  "uid": "Global.UI_BindItem",
+  "name": "UI_BindItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_BindItem : LogicBehaviour, ILogicUpdate, ILangaugeChangedCallback",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ILangaugeChangedCallback",
+      "href": "Global.ILangaugeChangedCallback.html",
+      "uid": "Global.ILangaugeChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowedTypes",
+      "id": "Global_UI_BindItem_allowedTypes",
+      "declaration": "public BindingType allowedTypes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowModifiers",
+      "id": "Global_UI_BindItem_allowModifiers",
+      "declaration": "public bool allowModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hoverObject",
+      "id": "Global_UI_BindItem_hoverObject",
+      "declaration": "public GameObject hoverObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "keyDisplayText",
+      "id": "Global_UI_BindItem_keyDisplayText",
+      "declaration": "public TextMeshProUGUI keyDisplayText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "notHoverObject",
+      "id": "Global_UI_BindItem_notHoverObject",
+      "declaration": "public GameObject notHoverObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onValueChanged",
+      "id": "Global_UI_BindItem_onValueChanged",
+      "declaration": "public Action<DewBinding> onValueChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "value",
+      "id": "Global_UI_BindItem_value",
+      "declaration": "public DewBinding value { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnLanguageChanged()",
+      "id": "Global_UI_BindItem_OnLanguageChanged",
+      "declaration": "public void OnLanguageChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerEnter(PointerEventData)",
+      "id": "Global_UI_BindItem_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerEnter(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerExit(PointerEventData)",
+      "id": "Global_UI_BindItem_OnPointerExit_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerExit(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartListening()",
+      "id": "Global_UI_BindItem_StartListening",
+      "declaration": "public void StartListening()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateValueDontNotify(DewBinding)",
+      "id": "Global_UI_BindItem_UpdateValueDontNotify_DewBinding_",
+      "declaration": "public void UpdateValueDontNotify(DewBinding newReference)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newReference",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

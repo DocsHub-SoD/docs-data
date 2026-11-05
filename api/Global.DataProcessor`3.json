@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DataProcessor`3",
+  "name": "DataProcessor<TData, TFrom, TTo>",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate void DataProcessor<TData, TFrom, TTo>(ref TData data, TFrom from, TTo to) where TData : struct",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

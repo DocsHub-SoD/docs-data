@@ -1,0 +1,62 @@
+{
+  "uid": "Global.MonsterPool",
+  "name": "MonsterPool",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"New Monster Pool\", menuName = \"Monster Pool\")]\npublic class MonsterPool : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entries",
+      "id": "Global_MonsterPool_entries",
+      "declaration": "[ListDrawerSettings(Expanded = true)]\npublic List<MonsterPool.SpawnRuleEntry> entries",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scrambleOrder",
+      "id": "Global_MonsterPool_scrambleOrder",
+      "declaration": "public bool scrambleOrder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetFilteredEntries()",
+      "id": "Global_MonsterPool_GetFilteredEntries",
+      "declaration": "public List<MonsterPool.SpawnRuleEntry> GetFilteredEntries()",
+      "summary": "Get only the entries included in the build.",
+      "parameters": [],
+      "returns": "System.Collections.Generic.List<T><MonsterPool.SpawnRuleEntry>"
+    },
+    {
+      "name": "GetMonsters(int, DewRandom)",
+      "id": "Global_MonsterPool_GetMonsters_System_Int32_DewRandom_",
+      "declaration": "public IEnumerator<Monster> GetMonsters(int sectionIndex, DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sectionIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerator<T><Monster>"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,31 @@
+{
+  "uid": "Global.UI_BindingWindow_ClickReceiver",
+  "name": "UI_BindingWindow_ClickReceiver",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_BindingWindow_ClickReceiver : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnPointerClick(PointerEventData)",
+      "id": "Global_UI_BindingWindow_ClickReceiver_OnPointerClick_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerClick(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

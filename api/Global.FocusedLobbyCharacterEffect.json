@@ -1,0 +1,37 @@
+{
+  "uid": "Global.FocusedLobbyCharacterEffect",
+  "name": "FocusedLobbyCharacterEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FocusedLobbyCharacterEffect : MonoBehaviour, ILobbyCharacterModelOnFocus",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ILobbyCharacterModelOnFocus",
+      "href": "Global.ILobbyCharacterModelOnFocus.html",
+      "uid": "Global.ILobbyCharacterModelOnFocus"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnLobbyCharacterFocus(bool)",
+      "id": "Global_FocusedLobbyCharacterEffect_OnLobbyCharacterFocus_System_Boolean_",
+      "declaration": "public void OnLobbyCharacterFocus(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

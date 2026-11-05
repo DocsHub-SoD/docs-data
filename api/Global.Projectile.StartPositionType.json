@@ -1,0 +1,15 @@
+{
+  "uid": "Global.Projectile.StartPositionType",
+  "name": "Projectile.StartPositionType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum Projectile.StartPositionType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

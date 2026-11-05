@@ -1,0 +1,82 @@
+{
+  "uid": "Global.ActionBase",
+  "name": "ActionBase",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ActionBase",
+  "inheritance": [
+    {
+      "name": "ActionAttackMove",
+      "href": "Global.ActionAttackMove.html",
+      "uid": "Global.ActionAttackMove"
+    },
+    {
+      "name": "ActionCast",
+      "href": "Global.ActionCast.html",
+      "uid": "Global.ActionCast"
+    },
+    {
+      "name": "ActionInteract",
+      "href": "Global.ActionInteract.html",
+      "uid": "Global.ActionInteract"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "isAllowedToMove",
+      "id": "Global_ActionBase_isAllowedToMove",
+      "declaration": "public bool isAllowedToMove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isFirstTick",
+      "id": "Global_ActionBase_isFirstTick",
+      "declaration": "public bool isFirstTick { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetMoveDestination()",
+      "id": "Global_ActionBase_GetMoveDestination",
+      "declaration": "public virtual Vector3? GetMoveDestination()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3?"
+    },
+    {
+      "name": "GetMoveDestinationRequiredDistance()",
+      "id": "Global_ActionBase_GetMoveDestinationRequiredDistance",
+      "declaration": "public virtual float GetMoveDestinationRequiredDistance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "ShouldCancelIfDisallowedToMove()",
+      "id": "Global_ActionBase_ShouldCancelIfDisallowedToMove",
+      "declaration": "public virtual bool ShouldCancelIfDisallowedToMove()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Tick()",
+      "id": "Global_ActionBase_Tick",
+      "declaration": "public virtual bool Tick()",
+      "summary": "Returns true if complete.",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

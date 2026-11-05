@@ -1,0 +1,196 @@
+{
+  "uid": "Global.DewAudioSource",
+  "name": "DewAudioSource",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewAudioSource : MonoBehaviour, IEffectComponent, IEffectWithOwnerContext",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithOwnerContext",
+      "href": "Global.IEffectWithOwnerContext.html",
+      "uid": "Global.IEffectWithOwnerContext"
+    }
+  ],
+  "fields": [
+    {
+      "name": "clip",
+      "id": "Global_DewAudioSource_clip",
+      "declaration": "[ShowIf(\"@rawClip == null || clip != null\", true)]\npublic DewAudioClip clip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delay",
+      "id": "Global_DewAudioSource_delay",
+      "declaration": "public float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fadeInTime",
+      "id": "Global_DewAudioSource_fadeInTime",
+      "declaration": "public float fadeInTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fadeOutTime",
+      "id": "Global_DewAudioSource_fadeOutTime",
+      "declaration": "public float fadeOutTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "forceHighestPriority",
+      "id": "Global_DewAudioSource_forceHighestPriority",
+      "declaration": "[ToggleLeft]\npublic bool forceHighestPriority",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreTimescale",
+      "id": "Global_DewAudioSource_ignoreTimescale",
+      "declaration": "[ToggleLeft]\npublic bool ignoreTimescale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLoop",
+      "id": "Global_DewAudioSource_isLoop",
+      "declaration": "[ToggleLeft]\npublic bool isLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PitchChangeByTimescaleMultiplier",
+      "id": "Global_DewAudioSource_PitchChangeByTimescaleMultiplier",
+      "declaration": "public const float PitchChangeByTimescaleMultiplier = 0.75",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pitchMultiplier",
+      "id": "Global_DewAudioSource_pitchMultiplier",
+      "declaration": "public float pitchMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playOnEnable",
+      "id": "Global_DewAudioSource_playOnEnable",
+      "declaration": "[Space(20)]\n[ToggleLeft]\npublic bool playOnEnable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rawClip",
+      "id": "Global_DewAudioSource_rawClip",
+      "declaration": "[ShowIf(\"@clip == null\", true)]\npublic AudioClip rawClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rolloff",
+      "id": "Global_DewAudioSource_rolloff",
+      "declaration": "[ShowIf(\"@space != AudioSpaceType.Global\", true)]\npublic DewAudioRollOffType rolloff",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "space",
+      "id": "Global_DewAudioSource_space",
+      "declaration": "public AudioSpaceType space",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stopWhenEffectStop",
+      "id": "Global_DewAudioSource_stopWhenEffectStop",
+      "declaration": "[HideIf(\"isLoop\", true)]\n[ToggleLeft]\npublic bool stopWhenEffectStop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_DewAudioSource_type",
+      "declaration": "public AudioType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "volumeMultiplier",
+      "id": "Global_DewAudioSource_volumeMultiplier",
+      "declaration": "[Space(20)]\npublic float volumeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_DewAudioSource_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_DewAudioSource_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetOwnerContext(EffectOwnerContext)",
+      "id": "Global_DewAudioSource_SetOwnerContext_EffectOwnerContext_",
+      "declaration": "public void SetOwnerContext(EffectOwnerContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EffectOwnerContext",
+          "type_uid": "Global.EffectOwnerContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_DewAudioSource_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

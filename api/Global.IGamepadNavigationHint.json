@@ -1,0 +1,76 @@
+{
+  "uid": "Global.IGamepadNavigationHint",
+  "name": "IGamepadNavigationHint",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IGamepadNavigationHint",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "TryGetDown(out IGamepadFocusable)",
+      "id": "Global_IGamepadNavigationHint_TryGetDown_IGamepadFocusable__",
+      "declaration": "bool TryGetDown(out IGamepadFocusable next)",
+      "summary": "Return false to fallback to default generic navigation",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetLeft(out IGamepadFocusable)",
+      "id": "Global_IGamepadNavigationHint_TryGetLeft_IGamepadFocusable__",
+      "declaration": "bool TryGetLeft(out IGamepadFocusable next)",
+      "summary": "Return false to fallback to default generic navigation",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetRight(out IGamepadFocusable)",
+      "id": "Global_IGamepadNavigationHint_TryGetRight_IGamepadFocusable__",
+      "declaration": "bool TryGetRight(out IGamepadFocusable next)",
+      "summary": "Return false to fallback to default generic navigation",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetUp(out IGamepadFocusable)",
+      "id": "Global_IGamepadNavigationHint_TryGetUp_IGamepadFocusable__",
+      "declaration": "bool TryGetUp(out IGamepadFocusable next)",
+      "summary": "Return false to fallback to default generic navigation",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

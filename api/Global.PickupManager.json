@@ -1,0 +1,249 @@
+{
+  "uid": "Global.PickupManager",
+  "name": "PickupManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PickupManager : NetworkedManagerBase<PickupManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "PickupManager",
+      "href": "Global.PickupManager.html",
+      "uid": "Global.PickupManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "dreamDustMaxCount",
+      "id": "Global_PickupManager_dreamDustMaxCount",
+      "declaration": "public int dreamDustMaxCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dreamDustMinAmount",
+      "id": "Global_PickupManager_dreamDustMinAmount",
+      "declaration": "public int dreamDustMinAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "expOrbMaxCount",
+      "id": "Global_PickupManager_expOrbMaxCount",
+      "declaration": "public int expOrbMaxCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "goldOrbMaxCount",
+      "id": "Global_PickupManager_goldOrbMaxCount",
+      "declaration": "public int goldOrbMaxCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isStardustDropDisabled",
+      "id": "Global_PickupManager_isStardustDropDisabled",
+      "declaration": "public bool isStardustDropDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "largeExpOrbAmount",
+      "id": "Global_PickupManager_largeExpOrbAmount",
+      "declaration": "public int largeExpOrbAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "largeGoldOrbAmount",
+      "id": "Global_PickupManager_largeGoldOrbAmount",
+      "declaration": "public int largeGoldOrbAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mediumExpOrbAmount",
+      "id": "Global_PickupManager_mediumExpOrbAmount",
+      "declaration": "public int mediumExpOrbAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mediumGoldOrbAmount",
+      "id": "Global_PickupManager_mediumGoldOrbAmount",
+      "declaration": "public int mediumGoldOrbAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "smallExpOrbAmount",
+      "id": "Global_PickupManager_smallExpOrbAmount",
+      "declaration": "public int smallExpOrbAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "smallGoldOrbAmount",
+      "id": "Global_PickupManager_smallGoldOrbAmount",
+      "declaration": "public int smallGoldOrbAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "DropDreamDust(bool, int, Vector3, Hero)",
+      "id": "Global_PickupManager_DropDreamDust_System_Boolean_System_Int32_UnityEngine_Vector3_Hero_",
+      "declaration": "public void DropDreamDust(bool isGivenByOtherPlayer, int amount, Vector3 position, Hero target = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isGivenByOtherPlayer",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DropExp(int, Vector3)",
+      "id": "Global_PickupManager_DropExp_System_Int32_UnityEngine_Vector3_",
+      "declaration": "public void DropExp(int amount, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DropGold(bool, bool, int, Vector3, Hero)",
+      "id": "Global_PickupManager_DropGold_System_Boolean_System_Boolean_System_Int32_UnityEngine_Vector3_Hero_",
+      "declaration": "public void DropGold(bool isKillGold, bool isGivenByOtherPlayer, int amount, Vector3 position, Hero target = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isKillGold",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isGivenByOtherPlayer",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DropStarDust(int, Vector3)",
+      "id": "Global_PickupManager_DropStarDust_System_Int32_UnityEngine_Vector3_",
+      "declaration": "public void DropStarDust(int amount, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_PickupManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

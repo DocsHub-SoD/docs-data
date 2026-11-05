@@ -1,0 +1,72 @@
+{
+  "uid": "Global.ShakeInstance",
+  "name": "ShakeInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ShakeInstance",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "amplitude",
+      "id": "Global_ShakeInstance_amplitude",
+      "declaration": "public float amplitude",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackTime",
+      "id": "Global_ShakeInstance_attackTime",
+      "declaration": "public float attackTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decayTime",
+      "id": "Global_ShakeInstance_decayTime",
+      "declaration": "public float decayTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "frequency",
+      "id": "Global_ShakeInstance_frequency",
+      "declaration": "public float frequency",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_ShakeInstance_position",
+      "declaration": "public Vector3 position",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startTime",
+      "id": "Global_ShakeInstance_startTime",
+      "declaration": "public float startTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sustainTime",
+      "id": "Global_ShakeInstance_sustainTime",
+      "declaration": "public float sustainTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

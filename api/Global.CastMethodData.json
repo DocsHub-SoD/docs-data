@@ -1,0 +1,155 @@
+{
+  "uid": "Global.CastMethodData",
+  "name": "CastMethodData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class CastMethodData : ICastMethodDataArrow, ICastMethodDataCone, ICastMethodDataNone, ICastMethodDataPoint, ICastMethodDataTarget",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ICastMethodDataArrow",
+      "href": "Global.ICastMethodDataArrow.html",
+      "uid": "Global.ICastMethodDataArrow"
+    },
+    {
+      "name": "ICastMethodDataCone",
+      "href": "Global.ICastMethodDataCone.html",
+      "uid": "Global.ICastMethodDataCone"
+    },
+    {
+      "name": "ICastMethodDataNone",
+      "href": "Global.ICastMethodDataNone.html",
+      "uid": "Global.ICastMethodDataNone"
+    },
+    {
+      "name": "ICastMethodDataPoint",
+      "href": "Global.ICastMethodDataPoint.html",
+      "uid": "Global.ICastMethodDataPoint"
+    },
+    {
+      "name": "ICastMethodDataTarget",
+      "href": "Global.ICastMethodDataTarget.html",
+      "uid": "Global.ICastMethodDataTarget"
+    }
+  ],
+  "fields": [
+    {
+      "name": "_angle",
+      "id": "Global_CastMethodData__angle",
+      "declaration": "[SerializeField]\n[ShowIf(\"ShouldAngleFieldShow\", true)]\npublic float _angle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_isClamping",
+      "id": "Global_CastMethodData__isClamping",
+      "declaration": "[SerializeField]\n[ShowIf(\"ShouldIsClampingFieldShow\", true)]\npublic bool _isClamping",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_length",
+      "id": "Global_CastMethodData__length",
+      "declaration": "[SerializeField]\n[ShowIf(\"ShouldLengthFieldShow\", true)]\npublic float _length",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_radius",
+      "id": "Global_CastMethodData__radius",
+      "declaration": "[SerializeField]\n[ShowIf(\"ShouldRadiusFieldShow\", true)]\npublic float _radius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_range",
+      "id": "Global_CastMethodData__range",
+      "declaration": "[SerializeField]\n[ShowIf(\"ShouldRangeFieldShow\", true)]\npublic float _range",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "_width",
+      "id": "Global_CastMethodData__width",
+      "declaration": "[SerializeField]\n[ShowIf(\"ShouldWidthFieldShow\", true)]\npublic float _width",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_CastMethodData_type",
+      "declaration": "[HideLabel]\n[EnumToggleButtons]\npublic CastMethodType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "arrowData",
+      "id": "Global_CastMethodData_arrowData",
+      "declaration": "public ICastMethodDataArrow arrowData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "coneData",
+      "id": "Global_CastMethodData_coneData",
+      "declaration": "public ICastMethodDataCone coneData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "noneData",
+      "id": "Global_CastMethodData_noneData",
+      "declaration": "public ICastMethodDataNone noneData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pointData",
+      "id": "Global_CastMethodData_pointData",
+      "declaration": "public ICastMethodDataPoint pointData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetData",
+      "id": "Global_CastMethodData_targetData",
+      "declaration": "public ICastMethodDataTarget targetData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetEffectiveRange(AbilityTrigger)",
+      "id": "Global_CastMethodData_GetEffectiveRange_AbilityTrigger_",
+      "declaration": "public float GetEffectiveRange(AbilityTrigger parent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "Global.Formula",
+  "name": "Formula",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\npublic struct Formula",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "formula",
+      "id": "Global_Formula_formula",
+      "declaration": "[HideLabel]\n[SuffixLabel(\"f(x)\", true)]\n[ValidateInput(\"IsValid\", \"Expression Error\", InfoMessageType.Error)]\n[FormerlySerializedAs(\"forumla\")]\npublic string formula",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Bake()",
+      "id": "Global_Formula_Bake",
+      "declaration": "public void Bake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Evaluate(float)",
+      "id": "Global_Formula_Evaluate_System_Single_",
+      "declaration": "public float Evaluate(float x)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

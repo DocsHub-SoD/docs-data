@@ -1,0 +1,89 @@
+{
+  "uid": "Global.DewPhysics.EntitySweep",
+  "name": "DewPhysics.EntitySweep",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPhysics.EntitySweep",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ignoreDuplicateHits",
+      "id": "Global_DewPhysics_EntitySweep_ignoreDuplicateHits",
+      "declaration": "public bool ignoreDuplicateHits",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includeUncollidable",
+      "id": "Global_DewPhysics_EntitySweep_includeUncollidable",
+      "declaration": "public bool includeUncollidable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "radius",
+      "id": "Global_DewPhysics_EntitySweep_radius",
+      "declaration": "public float radius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "validator",
+      "id": "Global_DewPhysics_EntitySweep_validator",
+      "declaration": "public AbilityTargetValidator validator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "validatorSelf",
+      "id": "Global_DewPhysics_EntitySweep_validatorSelf",
+      "declaration": "public Entity validatorSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "current",
+      "id": "Global_DewPhysics_EntitySweep_current",
+      "declaration": "public IReadOnlyList<Entity> current { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastPosition",
+      "id": "Global_DewPhysics_EntitySweep_lastPosition",
+      "declaration": "public Vector3 lastPosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Next(Vector3)",
+      "id": "Global_DewPhysics_EntitySweep_Next_UnityEngine_Vector3_",
+      "declaration": "public IReadOnlyList<Entity> Next(Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IReadOnlyList<T><Entity>"
+    }
+  ],
+  "events": []
+}

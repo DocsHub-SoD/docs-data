@@ -1,0 +1,148 @@
+{
+  "uid": "Global.DewReverie",
+  "name": "DewReverie",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewReverie",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CheckSpecialReveries()",
+      "id": "Global_DewReverie_CheckSpecialReveries",
+      "declaration": "public static void CheckSpecialReveries()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearDailyReverie(int)",
+      "id": "Global_DewReverie_ClearDailyReverie_System_Int32_",
+      "declaration": "public static void ClearDailyReverie(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ClearSpecialReverie()",
+      "id": "Global_DewReverie_ClearSpecialReverie",
+      "declaration": "public static void ClearSpecialReverie()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ReceiveRewardOfReverie(ReverieDataBase)",
+      "id": "Global_DewReverie_ReceiveRewardOfReverie_DewProfile_ReverieDataBase_",
+      "declaration": "public static UniTask<bool> ReceiveRewardOfReverie(DewProfile.ReverieDataBase data)",
+      "summary": "Receive the reward of a specific reverie. This does not remove the reverie.If succeeds, returns true.On error, this returns false and prints out error message to the user.",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewProfile.ReverieDataBase",
+          "type_uid": "Global.DewProfile",
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask<T><bool>"
+    },
+    {
+      "name": "SetDailyReverie(int, Type)",
+      "id": "Global_DewReverie_SetDailyReverie_System_Int32_System_Type_",
+      "declaration": "public static void SetDailyReverie(int index, Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetDailyReverie<T>(int)",
+      "id": "Global_DewReverie_SetDailyReverie__1_System_Int32_",
+      "declaration": "public static void SetDailyReverie<T>(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetRandomDailyReverie(int)",
+      "id": "Global_DewReverie_SetRandomDailyReverie_System_Int32_",
+      "declaration": "public static void SetRandomDailyReverie(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetSpecialReverie(Type, DateTime)",
+      "id": "Global_DewReverie_SetSpecialReverie_System_Type_System_DateTime_",
+      "declaration": "public static void SetSpecialReverie(Type type, DateTime endDate)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "endDate",
+          "type": "System.DateTime",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartNextSpecialReverieOrClear()",
+      "id": "Global_DewReverie_StartNextSpecialReverieOrClear",
+      "declaration": "public static void StartNextSpecialReverieOrClear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

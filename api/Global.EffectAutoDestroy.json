@@ -1,0 +1,38 @@
+{
+  "uid": "Global.EffectAutoDestroy",
+  "name": "EffectAutoDestroy",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EffectAutoDestroy : MonoBehaviour",
+  "inheritance": [
+    {
+      "name": "CommandMarker",
+      "href": "Global.CommandMarker.html",
+      "uid": "Global.CommandMarker"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_EffectAutoDestroy_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Update()",
+      "id": "Global_EffectAutoDestroy_Update",
+      "declaration": "protected virtual void Update()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

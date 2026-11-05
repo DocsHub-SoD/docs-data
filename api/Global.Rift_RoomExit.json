@@ -1,0 +1,171 @@
+{
+  "uid": "Global.Rift_RoomExit",
+  "name": "Rift_RoomExit",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Rift_RoomExit : Rift, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby, IBanRoomNodesNearbyMultiple",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Rift",
+      "href": "Global.Rift.html",
+      "uid": "Global.Rift"
+    },
+    {
+      "name": "Rift_MockExit",
+      "href": "Global.Rift_MockExit.html",
+      "uid": "Global.Rift_MockExit"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    },
+    {
+      "name": "IBanRoomNodesNearbyMultiple",
+      "href": "Global.IBanRoomNodesNearbyMultiple.html",
+      "uid": "Global.IBanRoomNodesNearbyMultiple"
+    }
+  ],
+  "fields": [
+    {
+      "name": "forceTravelToNextZone",
+      "id": "Global_Rift_RoomExit_forceTravelToNextZone",
+      "declaration": "public bool forceTravelToNextZone",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextNodeIndex",
+      "id": "Global_Rift_RoomExit_nextNodeIndex",
+      "declaration": "public int nextNodeIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_Rift_RoomExit_softInstance",
+      "declaration": "public static Rift_RoomExit softInstance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_Rift_RoomExit_instance",
+      "declaration": "public static Rift_RoomExit instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_Rift_RoomExit_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetBanSpots()",
+      "id": "Global_Rift_RoomExit_GetBanSpots",
+      "declaration": "public Vector3[] GetBanSpots()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3[]"
+    },
+    {
+      "name": "GetSidetrackPortalPositions(List<(Vector3, Quaternion)>)",
+      "id": "Global_Rift_RoomExit_GetSidetrackPortalPositions_System_Collections_Generic_List_System_ValueTuple_UnityEngine_Vector3_UnityEngine_Quaternion___",
+      "declaration": "public void GetSidetrackPortalPositions(List<(Vector3, Quaternion)> list)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.List<T><(UnityEngine.Vector3,UnityEngine.Quaternion)>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Rift_RoomExit_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteractRift(Hero)",
+      "id": "Global_Rift_RoomExit_OnInteractRift_Hero_",
+      "declaration": "protected override bool OnInteractRift(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TpcInteract(NetworkConnectionToClient)",
+      "id": "Global_Rift_RoomExit_TpcInteract_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void TpcInteract(NetworkConnectionToClient target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

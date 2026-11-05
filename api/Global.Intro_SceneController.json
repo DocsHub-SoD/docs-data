@@ -1,0 +1,41 @@
+{
+  "uid": "Global.Intro_SceneController",
+  "name": "Intro_SceneController",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Intro_SceneController : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "director",
+      "id": "Global_Intro_SceneController_director",
+      "declaration": "public PlayableDirector director",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GoToTitle()",
+      "id": "Global_Intro_SceneController_GoToTitle",
+      "declaration": "public void GoToTitle()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Skip()",
+      "id": "Global_Intro_SceneController_Skip",
+      "declaration": "public void Skip()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

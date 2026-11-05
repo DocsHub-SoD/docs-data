@@ -1,0 +1,47 @@
+{
+  "uid": "Global.PerDeveloperModeVisibility",
+  "name": "PerDeveloperModeVisibility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PerDeveloperModeVisibility : MonoBehaviour, ISettingsChangedCallback",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "showIfDeveloper",
+      "id": "Global_PerDeveloperModeVisibility_showIfDeveloper",
+      "declaration": "public bool showIfDeveloper",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showIfNotDeveloper",
+      "id": "Global_PerDeveloperModeVisibility_showIfNotDeveloper",
+      "declaration": "public bool showIfNotDeveloper",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_PerDeveloperModeVisibility_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

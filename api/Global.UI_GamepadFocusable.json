@@ -1,0 +1,135 @@
+{
+  "uid": "Global.UI_GamepadFocusable",
+  "name": "UI_GamepadFocusable",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DisallowMultipleComponent]\npublic class UI_GamepadFocusable : MonoBehaviour, IGamepadFocusable, IGamepadFocusListener",
+  "inheritance": [
+    {
+      "name": "UI_GamepadInputField",
+      "href": "Global.UI_GamepadInputField.html",
+      "uid": "Global.UI_GamepadInputField"
+    },
+    {
+      "name": "UI_GamepadTextInput_Key",
+      "href": "Global.UI_GamepadTextInput_Key.html",
+      "uid": "Global.UI_GamepadTextInput_Key"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IGamepadFocusable",
+      "href": "Global.IGamepadFocusable.html",
+      "uid": "Global.IGamepadFocusable"
+    },
+    {
+      "name": "IGamepadFocusListener",
+      "href": "Global.IGamepadFocusListener.html",
+      "uid": "Global.IGamepadFocusListener"
+    }
+  ],
+  "fields": [
+    {
+      "name": "canHoldConfirmToRepeat",
+      "id": "Global_UI_GamepadFocusable_canHoldConfirmToRepeat",
+      "declaration": "public bool canHoldConfirmToRepeat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "display",
+      "id": "Global_UI_GamepadFocusable_display",
+      "declaration": "public SelectionDisplayType display",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusOnEnable",
+      "id": "Global_UI_GamepadFocusable_focusOnEnable",
+      "declaration": "public bool focusOnEnable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreSelectableInteractivity",
+      "id": "Global_UI_GamepadFocusable_ignoreSelectableInteractivity",
+      "declaration": "public bool ignoreSelectableInteractivity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isFocused",
+      "id": "Global_UI_GamepadFocusable_isFocused",
+      "declaration": "public bool isFocused { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanBeFocused()",
+      "id": "Global_UI_GamepadFocusable_CanBeFocused",
+      "declaration": "public virtual bool CanBeFocused()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "CanHoldConfirmToRepeat()",
+      "id": "Global_UI_GamepadFocusable_CanHoldConfirmToRepeat",
+      "declaration": "public bool CanHoldConfirmToRepeat()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "GetSelectionDisplayType()",
+      "id": "Global_UI_GamepadFocusable_GetSelectionDisplayType",
+      "declaration": "public SelectionDisplayType GetSelectionDisplayType()",
+      "summary": "",
+      "parameters": [],
+      "returns": "SelectionDisplayType"
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_UI_GamepadFocusable_OnDisable",
+      "declaration": "protected virtual void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_UI_GamepadFocusable_OnEnable",
+      "declaration": "protected virtual void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnFocusStateChanged(bool)",
+      "id": "Global_UI_GamepadFocusable_OnFocusStateChanged_System_Boolean_",
+      "declaration": "public virtual void OnFocusStateChanged(bool state)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

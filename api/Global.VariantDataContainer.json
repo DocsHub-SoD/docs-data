@@ -1,0 +1,88 @@
+{
+  "uid": "Global.VariantDataContainer",
+  "name": "VariantDataContainer",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class VariantDataContainer",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get<T>()",
+      "id": "Global_VariantDataContainer_Get__1",
+      "declaration": "public T Get<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Has<T>()",
+      "id": "Global_VariantDataContainer_Has__1",
+      "declaration": "public bool Has<T>()",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Set<T>(T)",
+      "id": "Global_VariantDataContainer_Set__1___0_",
+      "declaration": "public void Set<T>(T data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TryGet<T>(out T)",
+      "id": "Global_VariantDataContainer_TryGet__1___0__",
+      "declaration": "public bool TryGet<T>(out T data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

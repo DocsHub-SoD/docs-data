@@ -1,0 +1,24 @@
+{
+  "uid": "Global.SaveActorAttribute",
+  "name": "SaveActorAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Class)]\npublic class SaveActorAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "shouldBeSaved",
+      "id": "Global_SaveActorAttribute_shouldBeSaved",
+      "declaration": "public readonly bool shouldBeSaved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

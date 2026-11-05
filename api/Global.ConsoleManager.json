@@ -1,0 +1,230 @@
+{
+  "uid": "Global.ConsoleManager",
+  "name": "ConsoleManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ConsoleManager : NetworkedManagerBase<ConsoleManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "ConsoleManager",
+      "href": "Global.ConsoleManager.html",
+      "uid": "Global.ConsoleManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activeCommandBinds",
+      "id": "Global_ConsoleManager_activeCommandBinds",
+      "declaration": "[NonSerialized]\npublic List<ConsoleBindItem> activeCommandBinds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnCheatEnabledChanged",
+      "id": "Global_ConsoleManager_ClientEvent_OnCheatEnabledChanged",
+      "declaration": "public SafeAction<bool> ClientEvent_OnCheatEnabledChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "executionContext",
+      "id": "Global_ConsoleManager_executionContext",
+      "declaration": "public ConsoleManager.ExecutionContext executionContext",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "glDrawMaterial",
+      "id": "Global_ConsoleManager_glDrawMaterial",
+      "declaration": "public Material glDrawMaterial",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localSelectedEntity",
+      "id": "Global_ConsoleManager_localSelectedEntity",
+      "declaration": "public Entity localSelectedEntity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isCheatEnabled",
+      "id": "Global_ConsoleManager_isCheatEnabled",
+      "declaration": "public bool isCheatEnabled { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isConsoleWindowOpen",
+      "id": "Global_ConsoleManager_isConsoleWindowOpen",
+      "declaration": "public bool isConsoleWindowOpen { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DisableCheats()",
+      "id": "Global_ConsoleManager_DisableCheats",
+      "declaration": "public void DisableCheats()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnableCheats()",
+      "id": "Global_ConsoleManager_EnableCheats",
+      "declaration": "public void EnableCheats()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ExecuteAutoExec(AutoExecKey)",
+      "id": "Global_ConsoleManager_ExecuteAutoExec_ConsoleManager_AutoExecKey_",
+      "declaration": "public void ExecuteAutoExec(ConsoleManager.AutoExecKey key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "ConsoleManager.AutoExecKey",
+          "type_uid": "Global.ConsoleManager",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ExecuteServerCommand(char[], Entity, Vector3, NetworkConnectionToClient)",
+      "id": "Global_ConsoleManager_ExecuteServerCommand_System_Char___Entity_UnityEngine_Vector3_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void ExecuteServerCommand(char[] charCommand, Entity selected, Vector3 cursorWorldPos, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "charCommand",
+          "type": "char[]",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "selected",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "cursorWorldPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_ConsoleManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_ConsoleManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_ConsoleManager_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnGameAreaPointerDown(PointerEventData)",
+      "id": "Global_ConsoleManager_OnGameAreaPointerDown_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnGameAreaPointerDown(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStart()",
+      "id": "Global_ConsoleManager_OnLateStart",
+      "declaration": "public override void OnLateStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_ConsoleManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShouldSkipAutoExec()",
+      "id": "Global_ConsoleManager_ShouldSkipAutoExec",
+      "declaration": "public bool ShouldSkipAutoExec()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

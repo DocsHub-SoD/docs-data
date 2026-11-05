@@ -1,0 +1,47 @@
+{
+  "uid": "Global.AttackOverrideEffect",
+  "name": "AttackOverrideEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AttackOverrideEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onUse",
+      "id": "Global_AttackOverrideEffect_onUse",
+      "declaration": "public Action onUse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_AttackOverrideEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trigger",
+      "id": "Global_AttackOverrideEffect_trigger",
+      "declaration": "public AbilityTrigger trigger { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

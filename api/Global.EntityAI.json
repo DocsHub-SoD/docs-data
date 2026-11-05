@@ -1,0 +1,511 @@
+{
+  "uid": "Global.EntityAI",
+  "name": "EntityAI",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[LogicUpdatePriority(-301)]\npublic class EntityAI : EntityComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "AggroPropagationDelayMax",
+      "id": "Global_EntityAI_AggroPropagationDelayMax",
+      "declaration": "public const float AggroPropagationDelayMax = 0.7",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "AggroPropagationDelayMin",
+      "id": "Global_EntityAI_AggroPropagationDelayMin",
+      "declaration": "public const float AggroPropagationDelayMin = 0.1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "AggroPropagationRange",
+      "id": "Global_EntityAI_AggroPropagationRange",
+      "declaration": "public const float AggroPropagationRange = 17",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "AITickCongestionThreshold",
+      "id": "Global_EntityAI_AITickCongestionThreshold",
+      "declaration": "public const int AITickCongestionThreshold = 5000",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "BossAITickInterval",
+      "id": "Global_EntityAI_BossAITickInterval",
+      "declaration": "public const float BossAITickInterval = 0.25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "BossDetectionRange",
+      "id": "Global_EntityAI_BossDetectionRange",
+      "declaration": "public const float BossDetectionRange = 25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CombatAITickInterval",
+      "id": "Global_EntityAI_CombatAITickInterval",
+      "declaration": "public const float CombatAITickInterval = 0.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customBehaviors",
+      "id": "Global_EntityAI_customBehaviors",
+      "declaration": "public CustomAIBehaviors customBehaviors",
+      "summary": "You can customize AI behavior of this entity externally using this.Available only on server. Null on clients.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DefaultDetectionRange",
+      "id": "Global_EntityAI_DefaultDetectionRange",
+      "declaration": "public const float DefaultDetectionRange = 15",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableAI",
+      "id": "Global_EntityAI_disableAI",
+      "declaration": "public bool disableAI",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisableAI",
+      "id": "Global_EntityAI_DisableAI",
+      "declaration": "public static bool DisableAI",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeFromAutoTargeting",
+      "id": "Global_EntityAI_excludeFromAutoTargeting",
+      "declaration": "public bool excludeFromAutoTargeting",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IdleAITickInterval",
+      "id": "Global_EntityAI_IdleAITickInterval",
+      "declaration": "public const float IdleAITickInterval = 1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoseTargetedEnemyTime",
+      "id": "Global_EntityAI_LoseTargetedEnemyTime",
+      "declaration": "public const float LoseTargetedEnemyTime = 5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PositionSampleCount",
+      "id": "Global_EntityAI_PositionSampleCount",
+      "declaration": "public static int PositionSampleCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PositionSampleInterval",
+      "id": "Global_EntityAI_PositionSampleInterval",
+      "declaration": "public static float PositionSampleInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PositionSampleLagBehindFrames",
+      "id": "Global_EntityAI_PositionSampleLagBehindFrames",
+      "declaration": "public static int PositionSampleLagBehindFrames",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "predictionStrengthOverride",
+      "id": "Global_EntityAI_predictionStrengthOverride",
+      "declaration": "[NonSerialized]\npublic Func<float> predictionStrengthOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RetargetingDistanceFuzziness",
+      "id": "Global_EntityAI_RetargetingDistanceFuzziness",
+      "declaration": "public const float RetargetingDistanceFuzziness = 0.3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RetargetingMaxTime",
+      "id": "Global_EntityAI_RetargetingMaxTime",
+      "declaration": "public const float RetargetingMaxTime = 4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RetargetingMinTime",
+      "id": "Global_EntityAI_RetargetingMinTime",
+      "declaration": "public const float RetargetingMinTime = 1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WanderIntervalMax",
+      "id": "Global_EntityAI_WanderIntervalMax",
+      "declaration": "public const float WanderIntervalMax = 15",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WanderIntervalMin",
+      "id": "Global_EntityAI_WanderIntervalMin",
+      "declaration": "public const float WanderIntervalMin = 4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WanderSpeedMultiplier",
+      "id": "Global_EntityAI_WanderSpeedMultiplier",
+      "declaration": "public const float WanderSpeedMultiplier = 0.6",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "context",
+      "id": "Global_EntityAI_context",
+      "declaration": "public EntityAIContext context { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "detectionRange",
+      "id": "Global_EntityAI_detectionRange",
+      "declaration": "public float detectionRange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "estimatedVelocity",
+      "id": "Global_EntityAI_estimatedVelocity",
+      "declaration": "public Vector3 estimatedVelocity { get; }",
+      "summary": "Available only on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "estimatedVelocityUnclamped",
+      "id": "Global_EntityAI_estimatedVelocityUnclamped",
+      "declaration": "public Vector3 estimatedVelocityUnclamped { get; }",
+      "summary": "Available only on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAITicking",
+      "id": "Global_EntityAI_isAITicking",
+      "declaration": "public bool isAITicking { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Aggro(Entity, bool)",
+      "id": "Global_EntityAI_Aggro_Entity_System_Boolean_",
+      "declaration": "public void Aggro(Entity target, bool doPropagation = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "doPropagation",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CallAIUpdateImmediately()",
+      "id": "Global_EntityAI_CallAIUpdateImmediately",
+      "declaration": "public void CallAIUpdateImmediately()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Helper_CanBeCast(AbilityTrigger)",
+      "id": "Global_EntityAI_Helper_CanBeCast_AbilityTrigger_",
+      "declaration": "public bool Helper_CanBeCast(AbilityTrigger abil)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "abil",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_CanBeCast<T>()",
+      "id": "Global_EntityAI_Helper_CanBeCast__1",
+      "declaration": "public bool Helper_CanBeCast<T>() where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_CastAbility<T>(CastInfo)",
+      "id": "Global_EntityAI_Helper_CastAbility__1_CastInfo_",
+      "declaration": "public void Helper_CastAbility<T>(CastInfo info) where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Helper_CastAbilityAuto(AbilityTrigger)",
+      "id": "Global_EntityAI_Helper_CastAbilityAuto_AbilityTrigger_",
+      "declaration": "public bool Helper_CastAbilityAuto(AbilityTrigger abil)",
+      "summary": "Casts this ability with automatically populated CastInfo.This will select a target and then use ability trigger's prediction data.",
+      "parameters": [
+        {
+          "name": "abil",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_CastAbilityAuto<T>()",
+      "id": "Global_EntityAI_Helper_CastAbilityAuto__1",
+      "declaration": "public void Helper_CastAbilityAuto<T>() where T : AbilityTrigger",
+      "summary": "Casts this ability with automatically populated CastInfo.This will select a target and then use ability trigger's prediction data.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Helper_ChaseTarget()",
+      "id": "Global_EntityAI_Helper_ChaseTarget",
+      "declaration": "public void Helper_ChaseTarget()",
+      "summary": "Chase targeted enemy. Note this will not interrupt ongoing chase if it's already chasing the same target.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Helper_GetAbility<T>()",
+      "id": "Global_EntityAI_Helper_GetAbility__1",
+      "declaration": "public T Helper_GetAbility<T>() where T : AbilityTrigger",
+      "summary": "Get ability of given type. Supports normal abilities and attack trigger.",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Helper_IsTargetInRange(AbilityTrigger)",
+      "id": "Global_EntityAI_Helper_IsTargetInRange_AbilityTrigger_",
+      "declaration": "public bool Helper_IsTargetInRange(AbilityTrigger abil)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "abil",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_IsTargetInRange<T>()",
+      "id": "Global_EntityAI_Helper_IsTargetInRange__1",
+      "declaration": "public bool Helper_IsTargetInRange<T>() where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_IsTargetInRangeOfAttack()",
+      "id": "Global_EntityAI_Helper_IsTargetInRangeOfAttack",
+      "declaration": "public bool Helper_IsTargetInRangeOfAttack()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_TryGetCastInfoAuto(AbilityTrigger, out CastInfo)",
+      "id": "Global_EntityAI_Helper_TryGetCastInfoAuto_AbilityTrigger_CastInfo__",
+      "declaration": "public bool Helper_TryGetCastInfoAuto(AbilityTrigger abil, out CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "abil",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Helper_TryGetCastInfoAuto<T>(out CastInfo)",
+      "id": "Global_EntityAI_Helper_TryGetCastInfoAuto__1_CastInfo__",
+      "declaration": "public bool Helper_TryGetCastInfoAuto<T>(out CastInfo info) where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EntityAI_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_EntityAI_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_EntityAI_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

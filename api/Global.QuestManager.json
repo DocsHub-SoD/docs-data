@@ -1,0 +1,306 @@
+{
+  "uid": "Global.QuestManager",
+  "name": "QuestManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class QuestManager : NetworkedManagerBase<QuestManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "QuestManager",
+      "href": "Global.QuestManager.html",
+      "uid": "Global.QuestManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activeQuests",
+      "id": "Global_QuestManager_activeQuests",
+      "declaration": "[NonSerialized]\npublic List<DewQuest> activeQuests",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnArtifactAppraised",
+      "id": "Global_QuestManager_ClientEvent_OnArtifactAppraised",
+      "declaration": "public SafeAction<string, bool> ClientEvent_OnArtifactAppraised",
+      "summary": "Called everywhere when an artifact is appraised.Second boolean parameter denotes whether the artifact is new and now unlocked.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnArtifactPickedUp",
+      "id": "Global_QuestManager_ClientEvent_OnArtifactPickedUp",
+      "declaration": "public SafeAction<string, DewPlayer, Vector3> ClientEvent_OnArtifactPickedUp",
+      "summary": "Called everywhere when an artifact is picked up.\nParameters denote: artifact type, player, artifact world position",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnArtifactRemoved",
+      "id": "Global_QuestManager_ClientEvent_OnArtifactRemoved",
+      "declaration": "public SafeAction<string> ClientEvent_OnArtifactRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnQuestAdded",
+      "id": "Global_QuestManager_ClientEvent_OnQuestAdded",
+      "declaration": "public SafeAction<DewQuest> ClientEvent_OnQuestAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnQuestRemoved",
+      "id": "Global_QuestManager_ClientEvent_OnQuestRemoved",
+      "declaration": "public SafeAction<DewQuest> ClientEvent_OnQuestRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didCollectArtifactThisLoop",
+      "id": "Global_QuestManager_didCollectArtifactThisLoop",
+      "declaration": "[NonSerialized]\n[SaveVar(SaveVarFlags.Default)]\npublic bool didCollectArtifactThisLoop",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "undiscoveredArtifacts",
+      "id": "Global_QuestManager_undiscoveredArtifacts",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<string> undiscoveredArtifacts",
+      "summary": "Available on server. List of artifacts that are not discovered by any clients.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "artifactPool",
+      "id": "Global_QuestManager_artifactPool",
+      "declaration": "public Type[] artifactPool { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentArtifact",
+      "id": "Global_QuestManager_currentArtifact",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string currentArtifact { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DiscoverArtifactAndShowStory(string)",
+      "id": "Global_QuestManager_DiscoverArtifactAndShowStory_System_String_",
+      "declaration": "public void DiscoverArtifactAndShowStory(string artifact)",
+      "summary": "Discover an artifact and show the story to everyone.",
+      "parameters": [
+        {
+          "name": "artifact",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "HasQuest(Type)",
+      "id": "Global_QuestManager_HasQuest_System_Type_",
+      "declaration": "public bool HasQuest(Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HasQuest<T>()",
+      "id": "Global_QuestManager_HasQuest__1",
+      "declaration": "public bool HasQuest<T>() where T : DewQuest",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_QuestManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_QuestManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PickUpArtifact(string, DewPlayer, Vector3)",
+      "id": "Global_QuestManager_PickUpArtifact_System_String_DewPlayer_UnityEngine_Vector3_",
+      "declaration": "public void PickUpArtifact(string artifactName, DewPlayer player, Vector3 worldPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "artifactName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "worldPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveArtifact()",
+      "id": "Global_QuestManager_RemoveArtifact",
+      "declaration": "public void RemoveArtifact()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartQuest<T>(T, Action<T>)",
+      "id": "Global_QuestManager_StartQuest__1___0_System_Action___0__",
+      "declaration": "public T StartQuest<T>(T prefab, Action<T> beforePrepare = null) where T : DewQuest",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "StartQuest<T>(Action<T>)",
+      "id": "Global_QuestManager_StartQuest__1_System_Action___0__",
+      "declaration": "public T StartQuest<T>(Action<T> beforePrepare = null) where T : DewQuest",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "TryGetQuest(Type, out DewQuest)",
+      "id": "Global_QuestManager_TryGetQuest_System_Type_DewQuest__",
+      "declaration": "public bool TryGetQuest(Type type, out DewQuest quest)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "quest",
+          "type": "DewQuest",
+          "type_uid": "Global.DewQuest",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetQuest<T>(out T)",
+      "id": "Global_QuestManager_TryGetQuest__1___0__",
+      "declaration": "public bool TryGetQuest<T>(out T quest) where T : DewQuest",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "quest",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,85 @@
+{
+  "uid": "Global.EntityComponent",
+  "name": "EntityComponent",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-300)]\npublic abstract class EntityComponent : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityAbility",
+      "href": "Global.EntityAbility.html",
+      "uid": "Global.EntityAbility"
+    },
+    {
+      "name": "EntityAI",
+      "href": "Global.EntityAI.html",
+      "uid": "Global.EntityAI"
+    },
+    {
+      "name": "EntityAnimation",
+      "href": "Global.EntityAnimation.html",
+      "uid": "Global.EntityAnimation"
+    },
+    {
+      "name": "EntityControl",
+      "href": "Global.EntityControl.html",
+      "uid": "Global.EntityControl"
+    },
+    {
+      "name": "EntitySound",
+      "href": "Global.EntitySound.html",
+      "uid": "Global.EntitySound"
+    },
+    {
+      "name": "EntityStatus",
+      "href": "Global.EntityStatus.html",
+      "uid": "Global.EntityStatus"
+    },
+    {
+      "name": "EntityVisual",
+      "href": "Global.EntityVisual.html",
+      "uid": "Global.EntityVisual"
+    },
+    {
+      "name": "HeroComponent",
+      "href": "Global.HeroComponent.html",
+      "uid": "Global.HeroComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "entity",
+      "id": "Global_EntityComponent_entity",
+      "declaration": "public Entity entity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnDisable()",
+      "id": "Global_EntityComponent_OnDisable",
+      "declaration": "protected virtual void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

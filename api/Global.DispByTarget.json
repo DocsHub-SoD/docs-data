@@ -1,0 +1,54 @@
+{
+  "uid": "Global.DispByTarget",
+  "name": "DispByTarget",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DispByTarget : Displacement",
+  "inheritance": [
+    {
+      "name": "Displacement",
+      "href": "Global.Displacement.html",
+      "uid": "Global.Displacement"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "cancelTime",
+      "id": "Global_DispByTarget_cancelTime",
+      "declaration": "public float cancelTime",
+      "summary": "Max duration of this displacement until it cancels itself.Default value is Infinity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "goalDistance",
+      "id": "Global_DispByTarget_goalDistance",
+      "declaration": "public float goalDistance",
+      "summary": "Goal distance. The displacement will finish when it reaches this distance to the target entity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "speed",
+      "id": "Global_DispByTarget_speed",
+      "declaration": "public float speed",
+      "summary": "This displacement's speed in unit/s.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_DispByTarget_target",
+      "declaration": "public Entity target",
+      "summary": "Target entity that this displacement will chase after.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

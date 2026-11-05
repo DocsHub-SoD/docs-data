@@ -1,0 +1,88 @@
+{
+  "uid": "Global.SkillVisualOverrideItem",
+  "name": "SkillVisualOverrideItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class SkillVisualOverrideItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "changeHue",
+      "id": "Global_SkillVisualOverrideItem_changeHue",
+      "declaration": "public bool changeHue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "changeSaturation",
+      "id": "Global_SkillVisualOverrideItem_changeSaturation",
+      "declaration": "public bool changeSaturation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "changeValue",
+      "id": "Global_SkillVisualOverrideItem_changeValue",
+      "declaration": "public bool changeValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hue",
+      "id": "Global_SkillVisualOverrideItem_hue",
+      "declaration": "[Range(0, 360)]\n[ShowIf(\"changeHue\", true)]\npublic float hue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "saturationMultiplier",
+      "id": "Global_SkillVisualOverrideItem_saturationMultiplier",
+      "declaration": "[ShowIf(\"changeSaturation\", true)]\npublic float saturationMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targets",
+      "id": "Global_SkillVisualOverrideItem_targets",
+      "declaration": "public string[] targets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "valueMultiplier",
+      "id": "Global_SkillVisualOverrideItem_valueMultiplier",
+      "declaration": "[ShowIf(\"changeValue\", true)]\npublic float valueMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Apply(GameObject)",
+      "id": "Global_SkillVisualOverrideItem_Apply_UnityEngine_GameObject_",
+      "declaration": "public void Apply(GameObject gobj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gobj",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

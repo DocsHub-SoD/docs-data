@@ -1,0 +1,92 @@
+{
+  "uid": "Global.Pickup_BaseExpOrb",
+  "name": "Pickup_BaseExpOrb",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Pickup_BaseExpOrb : PickupInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "PickupInstance",
+      "href": "Global.PickupInstance.html",
+      "uid": "Global.PickupInstance"
+    },
+    {
+      "name": "Pickup_LargeExpOrb",
+      "href": "Global.Pickup_LargeExpOrb.html",
+      "uid": "Global.Pickup_LargeExpOrb"
+    },
+    {
+      "name": "Pickup_MediumExpOrb",
+      "href": "Global.Pickup_MediumExpOrb.html",
+      "uid": "Global.Pickup_MediumExpOrb"
+    },
+    {
+      "name": "Pickup_SmallExpOrb",
+      "href": "Global.Pickup_SmallExpOrb.html",
+      "uid": "Global.Pickup_SmallExpOrb"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "amount",
+      "id": "Global_Pickup_BaseExpOrb_amount",
+      "declaration": "[NonSerialized]\npublic float amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnPickup(Hero)",
+      "id": "Global_Pickup_BaseExpOrb_OnPickup_Hero_",
+      "declaration": "protected override void OnPickup(Hero hero)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

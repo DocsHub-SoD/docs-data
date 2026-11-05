@@ -1,0 +1,48 @@
+{
+  "uid": "Global.UI_GamepadNavigationHint.NavigationSettings",
+  "name": "UI_GamepadNavigationHint.NavigationSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\npublic struct UI_GamepadNavigationHint.NavigationSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "canFallbackToGeneric",
+      "id": "Global_UI_GamepadNavigationHint_NavigationSettings_canFallbackToGeneric",
+      "declaration": "[ShowIf(\"@navigation != GamepadNavigation.Generic || limitToChildren\", true)]\n[ToggleLeft]\npublic bool canFallbackToGeneric",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customTarget",
+      "id": "Global_UI_GamepadNavigationHint_NavigationSettings_customTarget",
+      "declaration": "[ShowIf(\"@navigation == GamepadNavigation.Custom\", true)]\npublic GameObject customTarget",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "limitToChildren",
+      "id": "Global_UI_GamepadNavigationHint_NavigationSettings_limitToChildren",
+      "declaration": "[ShowIf(\"@navigation != GamepadNavigation.Custom\", true)]\n[ToggleLeft]\npublic bool limitToChildren",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "navigation",
+      "id": "Global_UI_GamepadNavigationHint_NavigationSettings_navigation",
+      "declaration": "[EnumToggleButtons]\n[HideLabel]\npublic GamepadNavigation navigation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

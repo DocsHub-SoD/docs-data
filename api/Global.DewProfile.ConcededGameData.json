@@ -1,0 +1,40 @@
+{
+  "uid": "Global.DewProfile.ConcededGameData",
+  "name": "DewProfile.ConcededGameData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.ConcededGameData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "heroType",
+      "id": "Global_DewProfile_ConcededGameData_heroType",
+      "declaration": "public string heroType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "receivedTravelerMastery",
+      "id": "Global_DewProfile_ConcededGameData_receivedTravelerMastery",
+      "declaration": "public long receivedTravelerMastery",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "result",
+      "id": "Global_DewProfile_ConcededGameData_result",
+      "declaration": "public DewGameResult result",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

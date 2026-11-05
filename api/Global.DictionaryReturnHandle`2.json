@@ -1,0 +1,33 @@
+{
+  "uid": "Global.DictionaryReturnHandle`2",
+  "name": "DictionaryReturnHandle<TKey, TValue>",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DictionaryReturnHandle<TKey, TValue>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "needToReturn",
+      "id": "Global_DictionaryReturnHandle_2_needToReturn",
+      "declaration": "public bool needToReturn { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Return()",
+      "id": "Global_DictionaryReturnHandle_2_Return",
+      "declaration": "public void Return()",
+      "summary": "Clear and return the borrowed dictionary.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

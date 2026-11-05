@@ -1,0 +1,770 @@
+{
+  "uid": "Global.Entity",
+  "name": "Entity",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-400)]\n[RequireComponent(typeof(EntityAI))]\n[RequireComponent(typeof(EntityAnimation))]\n[RequireComponent(typeof(EntityControl))]\n[RequireComponent(typeof(EntityStatus))]\n[RequireComponent(typeof(EntityVisual))]\n[RequireComponent(typeof(EntityAbility))]\n[RequireComponent(typeof(EntitySound))]\npublic class Entity : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Hero",
+      "href": "Global.Hero.html",
+      "uid": "Global.Hero"
+    },
+    {
+      "name": "MockEntity",
+      "href": "Global.MockEntity.html",
+      "uid": "Global.MockEntity"
+    },
+    {
+      "name": "Monster",
+      "href": "Global.Monster.html",
+      "uid": "Global.Monster"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    },
+    {
+      "name": "Summon",
+      "href": "Global.Summon.html",
+      "uid": "Global.Summon"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEntityEvent_OnIsSleepingChanged",
+      "id": "Global_Entity_ClientEntityEvent_OnIsSleepingChanged",
+      "declaration": "public SafeAction<bool> ClientEntityEvent_OnIsSleepingChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEntityEvent_OnStatusEffectAdded",
+      "id": "Global_Entity_ClientEntityEvent_OnStatusEffectAdded",
+      "declaration": "public SafeAction<EventInfoStatusEffect> ClientEntityEvent_OnStatusEffectAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEntityEvent_OnStatusEffectRemoved",
+      "id": "Global_Entity_ClientEntityEvent_OnStatusEffectRemoved",
+      "declaration": "public SafeAction<EventInfoStatusEffect> ClientEntityEvent_OnStatusEffectRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackDodged",
+      "id": "Global_Entity_EntityEvent_OnAttackDodged",
+      "declaration": "public SafeAction<EventInfoAttackMissed> EntityEvent_OnAttackDodged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackEffectTriggered",
+      "id": "Global_Entity_EntityEvent_OnAttackEffectTriggered",
+      "declaration": "public SafeAction<EventInfoAttackEffect> EntityEvent_OnAttackEffectTriggered",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackFired",
+      "id": "Global_Entity_EntityEvent_OnAttackFired",
+      "declaration": "public SafeAction<EventInfoAttackFired> EntityEvent_OnAttackFired",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackFiredBeforePrepare",
+      "id": "Global_Entity_EntityEvent_OnAttackFiredBeforePrepare",
+      "declaration": "public SafeAction<EventInfoAttackFired> EntityEvent_OnAttackFiredBeforePrepare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackHit",
+      "id": "Global_Entity_EntityEvent_OnAttackHit",
+      "declaration": "public SafeAction<EventInfoAttackHit> EntityEvent_OnAttackHit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackMissed",
+      "id": "Global_Entity_EntityEvent_OnAttackMissed",
+      "declaration": "public SafeAction<EventInfoAttackMissed> EntityEvent_OnAttackMissed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnAttackTaken",
+      "id": "Global_Entity_EntityEvent_OnAttackTaken",
+      "declaration": "public SafeAction<EventInfoAttackHit> EntityEvent_OnAttackTaken",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnCastComplete",
+      "id": "Global_Entity_EntityEvent_OnCastComplete",
+      "declaration": "public SafeAction<EventInfoCast> EntityEvent_OnCastComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnCastCompleteBeforePrepare",
+      "id": "Global_Entity_EntityEvent_OnCastCompleteBeforePrepare",
+      "declaration": "public SafeAction<EventInfoCast> EntityEvent_OnCastCompleteBeforePrepare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnDamageNegatedByImmunity",
+      "id": "Global_Entity_EntityEvent_OnDamageNegatedByImmunity",
+      "declaration": "public SafeAction<EventInfoDamageNegatedByImmunity> EntityEvent_OnDamageNegatedByImmunity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnDamageNegatedByShield",
+      "id": "Global_Entity_EntityEvent_OnDamageNegatedByShield",
+      "declaration": "public SafeAction<EventInfoDamageNegatedByShield> EntityEvent_OnDamageNegatedByShield",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnDeath",
+      "id": "Global_Entity_EntityEvent_OnDeath",
+      "declaration": "public SafeAction<EventInfoKill> EntityEvent_OnDeath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnGetManaSpent",
+      "id": "Global_Entity_EntityEvent_OnGetManaSpent",
+      "declaration": "public SafeAction<EventInfoSpentMana> EntityEvent_OnGetManaSpent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnTakeDamage",
+      "id": "Global_Entity_EntityEvent_OnTakeDamage",
+      "declaration": "public SafeAction<EventInfoDamage> EntityEvent_OnTakeDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnTakeHeal",
+      "id": "Global_Entity_EntityEvent_OnTakeHeal",
+      "declaration": "public SafeAction<EventInfoHeal> EntityEvent_OnTakeHeal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnTakeManaHeal",
+      "id": "Global_Entity_EntityEvent_OnTakeManaHeal",
+      "declaration": "public SafeAction<EventInfoHeal> EntityEvent_OnTakeManaHeal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EntityEvent_OnTakeShield",
+      "id": "Global_Entity_EntityEvent_OnTakeShield",
+      "declaration": "public SafeAction<EventInfoShield> EntityEvent_OnTakeShield",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takenDamageProcessor",
+      "id": "Global_Entity_takenDamageProcessor",
+      "declaration": "public DataProcessorGroup<DamageData, Actor, Entity> takenDamageProcessor",
+      "summary": "Processor for all received damages (Except pure damage). This is only valid on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takenHealProcessor",
+      "id": "Global_Entity_takenHealProcessor",
+      "declaration": "public DataProcessorGroup<HealData, Actor, Entity> takenHealProcessor",
+      "summary": "Processor for received heals. This is only valid on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takenManaHealProcessor",
+      "id": "Global_Entity_takenManaHealProcessor",
+      "declaration": "public DataProcessorGroup<HealData, Actor, Entity> takenManaHealProcessor",
+      "summary": "Processor for received mana heals. This is only valid on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takenShieldProcessor",
+      "id": "Global_Entity_takenShieldProcessor",
+      "declaration": "public DataProcessorGroup<HealData, Actor, Entity> takenShieldProcessor",
+      "summary": "Processor for received shields. This is only valid on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "Ability",
+      "id": "Global_Entity_Ability",
+      "declaration": "public EntityAbility Ability { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "agentPosition",
+      "id": "Global_Entity_agentPosition",
+      "declaration": "public Vector3 agentPosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "AI",
+      "id": "Global_Entity_AI",
+      "declaration": "public EntityAI AI { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Animation",
+      "id": "Global_Entity_Animation",
+      "declaration": "public EntityAnimation Animation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Control",
+      "id": "Global_Entity_Control",
+      "declaration": "public EntityControl Control { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentHealth",
+      "id": "Global_Entity_currentHealth",
+      "declaration": "public float currentHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMana",
+      "id": "Global_Entity_currentMana",
+      "declaration": "public float currentMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultOwner",
+      "id": "Global_Entity_defaultOwner",
+      "declaration": "protected virtual DewPlayer defaultOwner { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAlive",
+      "id": "Global_Entity_isAlive",
+      "declaration": "public bool isAlive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDead",
+      "id": "Global_Entity_isDead",
+      "declaration": "public bool isDead { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSleeping",
+      "id": "Global_Entity_isSleeping",
+      "declaration": "public bool isSleeping { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastSection",
+      "id": "Global_Entity_lastSection",
+      "declaration": "public RoomSection lastSection { get; }",
+      "summary": "Section that this entity resided in. Even though an entity leaves a section, this variable will not be cleared.Available on server. Can be null.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "level",
+      "id": "Global_Entity_level",
+      "declaration": "public int level { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealth",
+      "id": "Global_Entity_maxHealth",
+      "declaration": "public float maxHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxMana",
+      "id": "Global_Entity_maxMana",
+      "declaration": "public float maxMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedHealth",
+      "id": "Global_Entity_normalizedHealth",
+      "declaration": "public float normalizedHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedMana",
+      "id": "Global_Entity_normalizedMana",
+      "declaration": "public float normalizedMana { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_Entity_owner",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic DewPlayer owner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "section",
+      "id": "Global_Entity_section",
+      "declaration": "public RoomSection section { get; }",
+      "summary": "Section that this entity resides in. Available on server.Can be null.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Sound",
+      "id": "Global_Entity_Sound",
+      "declaration": "public EntitySound Sound { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Status",
+      "id": "Global_Entity_Status",
+      "declaration": "public EntityStatus Status { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Visual",
+      "id": "Global_Entity_Visual",
+      "declaration": "public EntityVisual Visual { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_Entity_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AIUpdate(ref EntityAIContext)",
+      "id": "Global_Entity_AIUpdate_EntityAIContext__",
+      "declaration": "protected virtual void AIUpdate(ref EntityAIContext context)",
+      "summary": "AI update will not fire if entity is channeling an ability.",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EntityAIContext",
+          "type_uid": "Global.EntityAIContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_Entity_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanAggroTo(Entity)",
+      "id": "Global_Entity_CanAggroTo_Entity_",
+      "declaration": "public virtual bool CanAggroTo(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CheckEnemyOrNeutral(Entity)",
+      "id": "Global_Entity_CheckEnemyOrNeutral_Entity_",
+      "declaration": "public bool CheckEnemyOrNeutral(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetActorReadableName()",
+      "id": "Global_Entity_GetActorReadableName",
+      "declaration": "public override string GetActorReadableName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetNetworkAuthorityConnection()",
+      "id": "Global_Entity_GetNetworkAuthorityConnection",
+      "declaration": "protected override NetworkConnectionToClient GetNetworkAuthorityConnection()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Mirror.NetworkConnectionToClient"
+    },
+    {
+      "name": "GetRelation(Entity)",
+      "id": "Global_Entity_GetRelation_Entity_",
+      "declaration": "public EntityRelation GetRelation(Entity other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "EntityRelation"
+    },
+    {
+      "name": "GetStaggerSettings()",
+      "id": "Global_Entity_GetStaggerSettings",
+      "declaration": "protected virtual Entity.StaggerSettings GetStaggerSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Entity.StaggerSettings"
+    },
+    {
+      "name": "GetTeamRelation(DewPlayer)",
+      "id": "Global_Entity_GetTeamRelation_DewPlayer_",
+      "declaration": "public TeamRelation GetTeamRelation(DewPlayer other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "TeamRelation"
+    },
+    {
+      "name": "Kill()",
+      "id": "Global_Entity_Kill",
+      "declaration": "public void Kill()",
+      "summary": "Kill this entity. Note this can be prevented by death interrupts.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "KillNoInterrupt()",
+      "id": "Global_Entity_KillNoInterrupt",
+      "declaration": "public void KillNoInterrupt()",
+      "summary": "Kill this entity ignoring any death interrupts.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoadEntityModelLocal()",
+      "id": "Global_Entity_LoadEntityModelLocal",
+      "declaration": "public virtual void LoadEntityModelLocal()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDeath(EventInfoKill)",
+      "id": "Global_Entity_OnDeath_EventInfoKill_",
+      "declaration": "protected virtual void OnDeath(EventInfoKill info)",
+      "summary": "Called everywhere when this entity dies.",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoKill",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Entity_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDrawGizmos()",
+      "id": "Global_Entity_OnDrawGizmos",
+      "declaration": "protected virtual void OnDrawGizmos()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnModelLoaded()",
+      "id": "Global_Entity_OnModelLoaded",
+      "declaration": "public virtual void OnModelLoaded()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_Entity_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Entity_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_Entity_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ProcessReceivedDamage(ref DamageData, Actor)",
+      "id": "Global_Entity_ProcessReceivedDamage_DamageData__Actor_",
+      "declaration": "public void ProcessReceivedDamage(ref DamageData data, Actor actor)",
+      "summary": "Process the given damage with this entity's received damage preprocessors.",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DamageData",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ProcessReceivedHeal(ref HealData, Actor)",
+      "id": "Global_Entity_ProcessReceivedHeal_HealData__Actor_",
+      "declaration": "public void ProcessReceivedHeal(ref HealData data, Actor actor)",
+      "summary": "Process the given heal with this entity's received heal preprocessors.",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "HealData",
+          "type_uid": "Global.HealData",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ProcessReceivedManaHeal(ref HealData, Actor)",
+      "id": "Global_Entity_ProcessReceivedManaHeal_HealData__Actor_",
+      "declaration": "public void ProcessReceivedManaHeal(ref HealData data, Actor actor)",
+      "summary": "Process the given mana heal with this entity's received mana heal preprocessors.",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "HealData",
+          "type_uid": "Global.HealData",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ProcessReceivedShield(ref HealData, Actor)",
+      "id": "Global_Entity_ProcessReceivedShield_HealData__Actor_",
+      "declaration": "public void ProcessReceivedShield(ref HealData data, Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "HealData",
+          "type_uid": "Global.HealData",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Entity_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Sleep()",
+      "id": "Global_Entity_Sleep",
+      "declaration": "public void Sleep()",
+      "summary": "Make this entity sleep.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stagger(Vector3?)",
+      "id": "Global_Entity_Stagger_System_Nullable_UnityEngine_Vector3__",
+      "declaration": "public void Stagger(Vector3? dir)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dir",
+          "type": "UnityEngine.Vector3?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "WakeUp()",
+      "id": "Global_Entity_WakeUp",
+      "declaration": "public void WakeUp()",
+      "summary": "Wake this entity up.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

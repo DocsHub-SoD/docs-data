@@ -1,0 +1,40 @@
+{
+  "uid": "Global.FinalHealData",
+  "name": "FinalHealData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct FinalHealData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "amount",
+      "id": "Global_FinalHealData_amount",
+      "declaration": "public float amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "discardedAmount",
+      "id": "Global_FinalHealData_discardedAmount",
+      "declaration": "public float discardedAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCrit",
+      "id": "Global_FinalHealData_isCrit",
+      "declaration": "public bool isCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.SI.WaitForCondition",
+  "name": "SI.WaitForCondition",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct SI.WaitForCondition",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

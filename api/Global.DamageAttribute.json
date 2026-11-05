@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DamageAttribute",
+  "name": "DamageAttribute",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum DamageAttribute : long",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

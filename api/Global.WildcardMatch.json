@@ -1,0 +1,64 @@
+{
+  "uid": "Global.WildcardMatch",
+  "name": "WildcardMatch",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class WildcardMatch",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "EqualsWildcard(string, string, bool)",
+      "id": "Global_WildcardMatch_EqualsWildcard_System_String_System_String_System_Boolean_",
+      "declaration": "public static bool EqualsWildcard(this string text, string wildcardString, bool ignoreCase)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "wildcardString",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreCase",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "EqualsWildcard(string, string)",
+      "id": "Global_WildcardMatch_EqualsWildcard_System_String_System_String_",
+      "declaration": "public static bool EqualsWildcard(this string text, string wildcardString)",
+      "summary": "Compares a string to a wildcard pattern.\n'?' matches any single character.\n'*' matches any sequence of zero or more characters.\nThis implementation is case-sensitive.",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": "The string to test."
+        },
+        {
+          "name": "wildcardString",
+          "type": "string",
+          "type_uid": null,
+          "description": "The wildcard pattern to match against."
+        }
+      ],
+      "returns": "bool: True if the string matches the pattern, otherwise false."
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,40 @@
+{
+  "uid": "Global.StatusEffect.DoAbilityItem",
+  "name": "StatusEffect.DoAbilityItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class StatusEffect.DoAbilityItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "callback",
+      "id": "Global_StatusEffect_DoAbilityItem_callback",
+      "declaration": "public Func<AbilityTrigger, Action> callback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "condition",
+      "id": "Global_StatusEffect_DoAbilityItem_condition",
+      "declaration": "public Func<AbilityTrigger, bool> condition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stopAction",
+      "id": "Global_StatusEffect_DoAbilityItem_stopAction",
+      "declaration": "public SafeAction stopAction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

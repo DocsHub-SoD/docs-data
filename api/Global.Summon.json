@@ -1,0 +1,494 @@
+{
+  "uid": "Global.Summon",
+  "name": "Summon",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Summon : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "armor",
+      "id": "Global_Summon_armor",
+      "declaration": "[BoxGroup(\"Summon Settings\", true, false, 0)]\npublic ScalingValue armor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxDuration",
+      "id": "Global_Summon_maxDuration",
+      "declaration": "[BoxGroup(\"Summon Settings\", true, false, 0)]\npublic float maxDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultAllExceptSelf",
+      "id": "Global_Summon_tvDefaultAllExceptSelf",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultAllExceptSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultHarmfulEffectTargets",
+      "id": "Global_Summon_tvDefaultHarmfulEffectTargets",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultUsefulEffectTargets",
+      "id": "Global_Summon_tvDefaultUsefulEffectTargets",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "effectiveLevel",
+      "id": "Global_Summon_effectiveLevel",
+      "declaration": "public int effectiveLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hero",
+      "id": "Global_Summon_hero",
+      "declaration": "public Hero hero { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_Summon_info",
+      "declaration": "public CastInfo info { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Summon_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedRemainingDuration",
+      "id": "Global_Summon_normalizedRemainingDuration",
+      "declaration": "public float normalizedRemainingDuration { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillLevel",
+      "id": "Global_Summon_skillLevel",
+      "declaration": "public int skillLevel { get; set; }",
+      "summary": "Level of its origin skill trigger at the time this instance was cast. Defaults to -1 or that of parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.You can override level by setting this field when the instance is preparing.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statEntity",
+      "id": "Global_Summon_statEntity",
+      "declaration": "public Entity statEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "summonHealth",
+      "id": "Global_Summon_summonHealth",
+      "declaration": "public float summonHealth { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_Summon_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddDuration(float, bool)",
+      "id": "Global_Summon_AddDuration_System_Single_System_Boolean_",
+      "declaration": "public void AddDuration(float duration, bool clampToMaxDuration = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "clampToMaxDuration",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AIUpdate(ref EntityAIContext)",
+      "id": "Global_Summon_AIUpdate_EntityAIContext__",
+      "declaration": "protected override void AIUpdate(ref EntityAIContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EntityAIContext",
+          "type_uid": "Global.EntityAIContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CanAggroTo(Entity)",
+      "id": "Global_Summon_CanAggroTo_Entity_",
+      "declaration": "public override bool CanAggroTo(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CreateDamage(SourceType, ScalingValue, float)",
+      "id": "Global_Summon_CreateDamage_DamageData_SourceType_ScalingValue_System_Single_",
+      "declaration": "public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DamageData.SourceType",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "Damage(ScalingValue, float)",
+      "id": "Global_Summon_Damage_ScalingValue_System_Single_",
+      "declaration": "public DamageData Damage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "DefaultDamage(ScalingValue, float)",
+      "id": "Global_Summon_DefaultDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "GetStaggerSettings()",
+      "id": "Global_Summon_GetStaggerSettings",
+      "declaration": "protected override Entity.StaggerSettings GetStaggerSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Entity.StaggerSettings"
+    },
+    {
+      "name": "GetValue(ScalingValue)",
+      "id": "Global_Summon_GetValue_ScalingValue_",
+      "declaration": "public float GetValue(ScalingValue val)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "val",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Heal(ScalingValue)",
+      "id": "Global_Summon_Heal_ScalingValue_",
+      "declaration": "public HealData Heal(ScalingValue amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "MagicDamage(ScalingValue, float)",
+      "id": "Global_Summon_MagicDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Summon_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Summon_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_Summon_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "Called on server right before this instance to be spawned.Configure this instance's initial state here.By default this sets skillLevel to parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_Summon_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PhysicalDamage(ScalingValue, float)",
+      "id": "Global_Summon_PhysicalDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "PhysicalMagicDamage(ScalingValue, float)",
+      "id": "Global_Summon_PhysicalMagicDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "PureDamage(ScalingValue, float)",
+      "id": "Global_Summon_PureDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ReduceDuration(float, bool)",
+      "id": "Global_Summon_ReduceDuration_System_Single_System_Boolean_",
+      "declaration": "public void ReduceDuration(float duration, bool clampToMaxDuration = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "clampToMaxDuration",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SummonCommand_AttackTarget(Entity)",
+      "id": "Global_Summon_SummonCommand_AttackTarget_Entity_",
+      "declaration": "public void SummonCommand_AttackTarget(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SummonCommand_MoveToDestination(Vector3)",
+      "id": "Global_Summon_SummonCommand_MoveToDestination_UnityEngine_Vector3_",
+      "declaration": "public void SummonCommand_MoveToDestination(Vector3 destination)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

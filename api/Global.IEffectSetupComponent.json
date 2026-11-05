@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IEffectSetupComponent",
+  "name": "IEffectSetupComponent",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEffectSetupComponent",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnEffectSetup()",
+      "id": "Global_IEffectSetupComponent_OnEffectSetup",
+      "declaration": "void OnEffectSetup()",
+      "summary": "This is called before effects are called.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

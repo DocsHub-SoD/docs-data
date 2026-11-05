@@ -1,0 +1,349 @@
+{
+  "uid": "Global.GameMod_Limbo",
+  "name": "GameMod_Limbo",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameMod_Limbo : GameModifierBase, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "GameEffect",
+      "href": "Global.GameEffect.html",
+      "uid": "Global.GameEffect"
+    },
+    {
+      "name": "GameModifierBase",
+      "href": "Global.GameModifierBase.html",
+      "uid": "Global.GameModifierBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "atkMovSpdPerDepth",
+      "id": "Global_GameMod_Limbo_atkMovSpdPerDepth",
+      "declaration": "public float atkMovSpdPerDepth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "atkMovSpdPerDepthMax",
+      "id": "Global_GameMod_Limbo_atkMovSpdPerDepthMax",
+      "declaration": "public float atkMovSpdPerDepthMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d1HuntSpeedAmp",
+      "id": "Global_GameMod_Limbo_d1HuntSpeedAmp",
+      "declaration": "public float d1HuntSpeedAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d1SkillHaste",
+      "id": "Global_GameMod_Limbo_d1SkillHaste",
+      "declaration": "public float d1SkillHaste",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d2Armor",
+      "id": "Global_GameMod_Limbo_d2Armor",
+      "declaration": "public float d2Armor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d2DamageAmp",
+      "id": "Global_GameMod_Limbo_d2DamageAmp",
+      "declaration": "public float d2DamageAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d3ExpReduction",
+      "id": "Global_GameMod_Limbo_d3ExpReduction",
+      "declaration": "public float d3ExpReduction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d3GoldPriceAmp",
+      "id": "Global_GameMod_Limbo_d3GoldPriceAmp",
+      "declaration": "public float d3GoldPriceAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d3ShieldReduction",
+      "id": "Global_GameMod_Limbo_d3ShieldReduction",
+      "declaration": "public float d3ShieldReduction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d4ElementalDurationAmp",
+      "id": "Global_GameMod_Limbo_d4ElementalDurationAmp",
+      "declaration": "public float d4ElementalDurationAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d4MirageSkinChance",
+      "id": "Global_GameMod_Limbo_d4MirageSkinChance",
+      "declaration": "public float d4MirageSkinChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d5BossAtkSpd",
+      "id": "Global_GameMod_Limbo_d5BossAtkSpd",
+      "declaration": "public float d5BossAtkSpd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "d5BossMovSpd",
+      "id": "Global_GameMod_Limbo_d5BossMovSpd",
+      "declaration": "public float d5BossMovSpd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "depth",
+      "id": "Global_GameMod_Limbo_depth",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic int depth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_GameMod_Limbo_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetCurrentUnlockedEvilLucidDreams()",
+      "id": "Global_GameMod_Limbo_GetCurrentUnlockedEvilLucidDreams",
+      "declaration": "public static int GetCurrentUnlockedEvilLucidDreams()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetDepthLocalized(int)",
+      "id": "Global_GameMod_Limbo_GetDepthLocalized_System_Int32_",
+      "declaration": "public static string GetDepthLocalized(int depth)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "depth",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetInsufficientRequirementMessage()",
+      "id": "Global_GameMod_Limbo_GetInsufficientRequirementMessage",
+      "declaration": "public static string GetInsufficientRequirementMessage()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetMaxDepths()",
+      "id": "Global_GameMod_Limbo_GetMaxDepths",
+      "declaration": "public static int GetMaxDepths()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetRequiredUnlockedEvilLucidDreams()",
+      "id": "Global_GameMod_Limbo_GetRequiredUnlockedEvilLucidDreams",
+      "declaration": "public static int GetRequiredUnlockedEvilLucidDreams()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "IsLimboUnlocked()",
+      "id": "Global_GameMod_Limbo_IsLimboUnlocked",
+      "declaration": "public static bool IsLimboUnlocked()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Lobby_GetDepth()",
+      "id": "Global_GameMod_Limbo_Lobby_GetDepth",
+      "declaration": "public static int Lobby_GetDepth()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "Lobby_GetDepth(LobbyInstance)",
+      "id": "Global_GameMod_Limbo_Lobby_GetDepth_LobbyInstance_",
+      "declaration": "public static int Lobby_GetDepth(LobbyInstance lobby)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobby",
+          "type": "LobbyInstance",
+          "type_uid": "Global.LobbyInstance",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "Lobby_GetLimboDepthState(int)",
+      "id": "Global_GameMod_Limbo_Lobby_GetLimboDepthState_System_Int32_",
+      "declaration": "public static LimboDepthState Lobby_GetLimboDepthState(int depth)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "depth",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "LimboDepthState"
+    },
+    {
+      "name": "Lobby_GetLimboDepthUnavailableReason(int)",
+      "id": "Global_GameMod_Limbo_Lobby_GetLimboDepthUnavailableReason_System_Int32_",
+      "declaration": "public static string Lobby_GetLimboDepthUnavailableReason(int depth)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "depth",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Lobby_SetDepth(int)",
+      "id": "Global_GameMod_Limbo_Lobby_SetDepth_System_Int32_",
+      "declaration": "public static void Lobby_SetDepth(int depth)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "depth",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_GameMod_Limbo_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_GameMod_Limbo_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_GameMod_Limbo_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClientLobby()",
+      "id": "Global_GameMod_Limbo_OnStartClientLobby",
+      "declaration": "public override void OnStartClientLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServerLobby()",
+      "id": "Global_GameMod_Limbo_OnStartServerLobby",
+      "declaration": "public override void OnStartServerLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

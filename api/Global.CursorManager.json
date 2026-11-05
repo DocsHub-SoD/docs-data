@@ -1,0 +1,130 @@
+{
+  "uid": "Global.CursorManager",
+  "name": "CursorManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CursorManager : ManagerBase<CursorManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "CursorManager",
+      "href": "Global.CursorManager.html",
+      "uid": "Global.CursorManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableSoftwareCursor",
+      "id": "Global_CursorManager_disableSoftwareCursor",
+      "declaration": "[NonSerialized]\npublic bool disableSoftwareCursor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleMultiplier",
+      "id": "Global_CursorManager_scaleMultiplier",
+      "declaration": "public float scaleMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "textures",
+      "id": "Global_CursorManager_textures",
+      "declaration": "public Texture2D[] textures",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ApplyCursor(int)",
+      "id": "Global_CursorManager_ApplyCursor_System_Int32_",
+      "declaration": "public void ApplyCursor(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CreateScaledCopy(Texture2D, float)",
+      "id": "Global_CursorManager_CreateScaledCopy_UnityEngine_Texture2D_System_Single_",
+      "declaration": "public Texture2D CreateScaledCopy(Texture2D source, float scaleFactor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "source",
+          "type": "UnityEngine.Texture2D",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scaleFactor",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Texture2D"
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_CursorManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_CursorManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ResizeTextures()",
+      "id": "Global_CursorManager_ResizeTextures",
+      "declaration": "public void ResizeTextures()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

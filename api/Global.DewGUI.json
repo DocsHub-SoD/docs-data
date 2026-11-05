@@ -1,0 +1,714 @@
+{
+  "uid": "Global.DewGUI",
+  "name": "DewGUI",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewGUI",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "fieldBuilders",
+      "id": "Global_DewGUI_fieldBuilders",
+      "declaration": "public static List<(DewGUI.FieldBuilderCondition, DewGUI.FieldBuilder)> fieldBuilders",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SupportedBasicTypes",
+      "id": "Global_DewGUI_SupportedBasicTypes",
+      "declaration": "public static readonly Type[] SupportedBasicTypes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canvasTransform",
+      "id": "Global_DewGUI_canvasTransform",
+      "declaration": "public static RectTransform canvasTransform { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetBindItem",
+      "id": "Global_DewGUI_widgetBindItem",
+      "declaration": "public static UI_BindItem widgetBindItem { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetButton",
+      "id": "Global_DewGUI_widgetButton",
+      "declaration": "public static Button widgetButton { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetDropdown",
+      "id": "Global_DewGUI_widgetDropdown",
+      "declaration": "public static TMP_Dropdown widgetDropdown { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetInputField",
+      "id": "Global_DewGUI_widgetInputField",
+      "declaration": "public static TMP_InputField widgetInputField { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetScrollRect",
+      "id": "Global_DewGUI_widgetScrollRect",
+      "declaration": "public static ScrollRect widgetScrollRect { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetSlider",
+      "id": "Global_DewGUI_widgetSlider",
+      "declaration": "public static Slider widgetSlider { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetTextBody",
+      "id": "Global_DewGUI_widgetTextBody",
+      "declaration": "public static TextMeshProUGUI widgetTextBody { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetTextHeader",
+      "id": "Global_DewGUI_widgetTextHeader",
+      "declaration": "public static TextMeshProUGUI widgetTextHeader { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetTextLabel",
+      "id": "Global_DewGUI_widgetTextLabel",
+      "declaration": "public static TextMeshProUGUI widgetTextLabel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetToggleButton",
+      "id": "Global_DewGUI_widgetToggleButton",
+      "declaration": "public static UI_Toggle widgetToggleButton { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetToggleCheck",
+      "id": "Global_DewGUI_widgetToggleCheck",
+      "declaration": "public static UI_Toggle widgetToggleCheck { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "widgetWindow",
+      "id": "Global_DewGUI_widgetWindow",
+      "declaration": "public static UI_Window widgetWindow { get; }",
+      "summary": "The window comes with VerticalLayoutGroup and ContentSizeFitter, and is draggable by default.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ApplyLayoutGroupDefaultSettings(HorizontalLayoutGroup, TextAnchor)",
+      "id": "Global_DewGUI_ApplyLayoutGroupDefaultSettings_UnityEngine_UI_HorizontalLayoutGroup_UnityEngine_TextAnchor_",
+      "declaration": "public static void ApplyLayoutGroupDefaultSettings(HorizontalLayoutGroup group, TextAnchor alignment = TextAnchor.MiddleLeft)",
+      "summary": "Helper for creating layout groups with nice default values.",
+      "parameters": [
+        {
+          "name": "group",
+          "type": "UnityEngine.UI.HorizontalLayoutGroup",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alignment",
+          "type": "UnityEngine.TextAnchor",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyLayoutGroupDefaultSettings(VerticalLayoutGroup, TextAnchor)",
+      "id": "Global_DewGUI_ApplyLayoutGroupDefaultSettings_UnityEngine_UI_VerticalLayoutGroup_UnityEngine_TextAnchor_",
+      "declaration": "public static void ApplyLayoutGroupDefaultSettings(VerticalLayoutGroup group, TextAnchor alignment = TextAnchor.UpperCenter)",
+      "summary": "Helper for creating layout groups with nice default values.",
+      "parameters": [
+        {
+          "name": "group",
+          "type": "UnityEngine.UI.VerticalLayoutGroup",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alignment",
+          "type": "UnityEngine.TextAnchor",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CreateHorizontalFlexibleSpace(Transform)",
+      "id": "Global_DewGUI_CreateHorizontalFlexibleSpace_UnityEngine_Transform_",
+      "declaration": "public static LayoutElement CreateHorizontalFlexibleSpace(Transform parent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.UI.LayoutElement"
+    },
+    {
+      "name": "CreateHorizontalLayoutGroup(Transform, TextAnchor)",
+      "id": "Global_DewGUI_CreateHorizontalLayoutGroup_UnityEngine_Transform_UnityEngine_TextAnchor_",
+      "declaration": "public static HorizontalLayoutGroup CreateHorizontalLayoutGroup(Transform parent, TextAnchor alignment = TextAnchor.MiddleLeft)",
+      "summary": "Helper for creating layout groups with nice default values.",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alignment",
+          "type": "UnityEngine.TextAnchor",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.UI.HorizontalLayoutGroup"
+    },
+    {
+      "name": "CreateVerticalFlexibleSpace(Transform)",
+      "id": "Global_DewGUI_CreateVerticalFlexibleSpace_UnityEngine_Transform_",
+      "declaration": "public static LayoutElement CreateVerticalFlexibleSpace(Transform parent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.UI.LayoutElement"
+    },
+    {
+      "name": "CreateVerticalLayoutGroup(Transform, TextAnchor)",
+      "id": "Global_DewGUI_CreateVerticalLayoutGroup_UnityEngine_Transform_UnityEngine_TextAnchor_",
+      "declaration": "public static VerticalLayoutGroup CreateVerticalLayoutGroup(Transform parent, TextAnchor alignment = TextAnchor.UpperCenter)",
+      "summary": "Helper for creating layout groups with nice default values.",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alignment",
+          "type": "UnityEngine.TextAnchor",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.UI.VerticalLayoutGroup"
+    },
+    {
+      "name": "CreateWidgetsForObject(Type, object, Transform, out SafeAction, out SafeAction)",
+      "id": "Global_DewGUI_CreateWidgetsForObject_System_Type_System_Object_UnityEngine_Transform_SafeAction__SafeAction__",
+      "declaration": "public static void CreateWidgetsForObject(Type type, object state, Transform parent, out SafeAction onChanged, out SafeAction requestUpdate)",
+      "summary": "Creates data-bound widgets for given object type.",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "state",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onChanged",
+          "type": "SafeAction",
+          "type_uid": "Global.SafeAction",
+          "description": ""
+        },
+        {
+          "name": "requestUpdate",
+          "type": "SafeAction",
+          "type_uid": "Global.SafeAction",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GenericInputFieldBuilder<T>(Transform, TryParseFunc<T>, CharacterValidation, out TMP_InputField)",
+      "id": "Global_DewGUI_GenericInputFieldBuilder__1_UnityEngine_Transform_DewGUI_TryParseFunc___0__TMPro_TMP_InputField_CharacterValidation_TMPro_TMP_InputField__",
+      "declaration": "public static FieldBuildResult GenericInputFieldBuilder<T>(Transform parent, DewGUI.TryParseFunc<T> tryParse, TMP_InputField.CharacterValidation validation, out TMP_InputField inputField)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "tryParse",
+          "type": "DewGUI.TryParseFunc<T>",
+          "type_uid": "Global.DewGUI",
+          "description": ""
+        },
+        {
+          "name": "validation",
+          "type": "TMPro.TMP_InputField.TMPro.TMP_InputField.CharacterValidation",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "inputField",
+          "type": "TMPro.TMP_InputField",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "FieldBuildResult"
+    },
+    {
+      "name": "SetExpandHeight(GameObject, bool)",
+      "id": "Global_DewGUI_SetExpandHeight_UnityEngine_GameObject_System_Boolean_",
+      "declaration": "public static GameObject SetExpandHeight(this GameObject c, bool expand)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "expand",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetExpandHeight(GameObject, float)",
+      "id": "Global_DewGUI_SetExpandHeight_UnityEngine_GameObject_System_Single_",
+      "declaration": "public static GameObject SetExpandHeight(this GameObject c, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetExpandHeight<T>(T, bool)",
+      "id": "Global_DewGUI_SetExpandHeight__1___0_System_Boolean_",
+      "declaration": "public static T SetExpandHeight<T>(this T c, bool expand) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "expand",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetExpandHeight<T>(T, float)",
+      "id": "Global_DewGUI_SetExpandHeight__1___0_System_Single_",
+      "declaration": "public static T SetExpandHeight<T>(this T c, float value) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetExpandWidth(GameObject, bool)",
+      "id": "Global_DewGUI_SetExpandWidth_UnityEngine_GameObject_System_Boolean_",
+      "declaration": "public static GameObject SetExpandWidth(this GameObject c, bool expand)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "expand",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetExpandWidth(GameObject, float)",
+      "id": "Global_DewGUI_SetExpandWidth_UnityEngine_GameObject_System_Single_",
+      "declaration": "public static GameObject SetExpandWidth(this GameObject c, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetExpandWidth<T>(T, bool)",
+      "id": "Global_DewGUI_SetExpandWidth__1___0_System_Boolean_",
+      "declaration": "public static T SetExpandWidth<T>(this T c, bool expand) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "expand",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetExpandWidth<T>(T, float)",
+      "id": "Global_DewGUI_SetExpandWidth__1___0_System_Single_",
+      "declaration": "public static T SetExpandWidth<T>(this T c, float value) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetHeight(GameObject, float)",
+      "id": "Global_DewGUI_SetHeight_UnityEngine_GameObject_System_Single_",
+      "declaration": "public static GameObject SetHeight(this GameObject c, float height)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "height",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetHeight<T>(T, float)",
+      "id": "Global_DewGUI_SetHeight__1___0_System_Single_",
+      "declaration": "public static T SetHeight<T>(this T c, float height) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "height",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetText(GameObject, string)",
+      "id": "Global_DewGUI_SetText_UnityEngine_GameObject_System_String_",
+      "declaration": "public static GameObject SetText(this GameObject c, string text)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetText<T>(T, string)",
+      "id": "Global_DewGUI_SetText__1___0_System_String_",
+      "declaration": "public static T SetText<T>(this T c, string text) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetTextLocalized(GameObject, string)",
+      "id": "Global_DewGUI_SetTextLocalized_UnityEngine_GameObject_System_String_",
+      "declaration": "public static GameObject SetTextLocalized(this GameObject c, string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetTextLocalized<T>(T, string)",
+      "id": "Global_DewGUI_SetTextLocalized__1___0_System_String_",
+      "declaration": "public static T SetTextLocalized<T>(this T c, string key) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetWidth(GameObject, float)",
+      "id": "Global_DewGUI_SetWidth_UnityEngine_GameObject_System_Single_",
+      "declaration": "public static GameObject SetWidth(this GameObject c, float width)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "SetWidth<T>(T, float)",
+      "id": "Global_DewGUI_SetWidth__1___0_System_Single_",
+      "declaration": "public static T SetWidth<T>(this T c, float width) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    }
+  ],
+  "events": []
+}

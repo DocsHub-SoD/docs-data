@@ -1,0 +1,137 @@
+{
+  "uid": "Global.PreferredGameSettings",
+  "name": "PreferredGameSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PreferredGameSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "allowDejavu",
+      "id": "Global_PreferredGameSettings_allowDejavu",
+      "declaration": "public bool allowDejavu",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowMidJoins",
+      "id": "Global_PreferredGameSettings_allowMidJoins",
+      "declaration": "public AllowMidJoinType allowMidJoins",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bannedGameItems",
+      "id": "Global_PreferredGameSettings_bannedGameItems",
+      "declaration": "public List<string> bannedGameItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customData",
+      "id": "Global_PreferredGameSettings_customData",
+      "declaration": "public Dictionary<string, string> customData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dejavuItem",
+      "id": "Global_PreferredGameSettings_dejavuItem",
+      "declaration": "public string dejavuItem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficulty",
+      "id": "Global_PreferredGameSettings_difficulty",
+      "declaration": "public string difficulty",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableVotes",
+      "id": "Global_PreferredGameSettings_enableVotes",
+      "declaration": "public bool enableVotes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hero",
+      "id": "Global_PreferredGameSettings_hero",
+      "declaration": "public string hero",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroSelectedLoadoutIndex",
+      "id": "Global_PreferredGameSettings_heroSelectedLoadoutIndex",
+      "declaration": "public Dictionary<string, int> heroSelectedLoadoutIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyDescription",
+      "id": "Global_PreferredGameSettings_lobbyDescription",
+      "declaration": "public string lobbyDescription",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyName",
+      "id": "Global_PreferredGameSettings_lobbyName",
+      "declaration": "public string lobbyName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lucidDreams",
+      "id": "Global_PreferredGameSettings_lucidDreams",
+      "declaration": "public List<string> lucidDreams",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tags",
+      "id": "Global_PreferredGameSettings_tags",
+      "declaration": "public List<string> tags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ApplyToGame()",
+      "id": "Global_PreferredGameSettings_ApplyToGame",
+      "declaration": "public void ApplyToGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_PreferredGameSettings_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

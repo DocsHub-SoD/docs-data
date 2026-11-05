@@ -1,0 +1,112 @@
+{
+  "uid": "Global.PlayLobby_Tutorial",
+  "name": "PlayLobby_Tutorial",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PlayLobby_Tutorial : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "changeTraveler",
+      "id": "Global_PlayLobby_Tutorial_changeTraveler",
+      "declaration": "public RectTransform changeTraveler",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conCategories",
+      "id": "Global_PlayLobby_Tutorial_conCategories",
+      "declaration": "public RectTransform conCategories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conHeroConstellations",
+      "id": "Global_PlayLobby_Tutorial_conHeroConstellations",
+      "declaration": "public RectTransform conHeroConstellations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conSkillList",
+      "id": "Global_PlayLobby_Tutorial_conSkillList",
+      "declaration": "public RectTransform conSkillList",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conStarList",
+      "id": "Global_PlayLobby_Tutorial_conStarList",
+      "declaration": "public RectTransform conStarList",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conTravelerMastery",
+      "id": "Global_PlayLobby_Tutorial_conTravelerMastery",
+      "declaration": "public RectTransform conTravelerMastery",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficultyBox",
+      "id": "Global_PlayLobby_Tutorial_difficultyBox",
+      "declaration": "public RectTransform difficultyBox",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroList",
+      "id": "Global_PlayLobby_Tutorial_heroList",
+      "declaration": "public RectTransform heroList",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillConstellationsGroup",
+      "id": "Global_PlayLobby_Tutorial_skillConstellationsGroup",
+      "declaration": "public RectTransform skillConstellationsGroup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startButton",
+      "id": "Global_PlayLobby_Tutorial_startButton",
+      "declaration": "public RectTransform startButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "SelectFlexibleStars(bool)",
+      "id": "Global_PlayLobby_Tutorial_SelectFlexibleStars_System_Boolean_",
+      "declaration": "public void SelectFlexibleStars(bool isSelected)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isSelected",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

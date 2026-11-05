@@ -1,0 +1,930 @@
+{
+  "uid": "Global.HeroSkill",
+  "name": "HeroSkill",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class HeroSkill : HeroComponent, ILogicUpdate, ICleanup",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    },
+    {
+      "name": "HeroComponent",
+      "href": "Global.HeroComponent.html",
+      "uid": "Global.HeroComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientHeroEvent_OnGemDrop",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnGemDrop",
+      "declaration": "public SafeAction<Gem> ClientHeroEvent_OnGemDrop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnGemEquip",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnGemEquip",
+      "declaration": "public SafeAction<Gem> ClientHeroEvent_OnGemEquip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnGemPickup",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnGemPickup",
+      "declaration": "public SafeAction<Gem> ClientHeroEvent_OnGemPickup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnGemQualityChanged",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnGemQualityChanged",
+      "declaration": "public SafeAction<Gem, int, int> ClientHeroEvent_OnGemQualityChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnGemSwap",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnGemSwap",
+      "declaration": "public SafeAction<GemLocation, GemLocation> ClientHeroEvent_OnGemSwap",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnGemUnequip",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnGemUnequip",
+      "declaration": "public SafeAction<Gem> ClientHeroEvent_OnGemUnequip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillDrop",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnSkillDrop",
+      "declaration": "public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillDrop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillEquip",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnSkillEquip",
+      "declaration": "public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillEquip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillLevelChanged",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnSkillLevelChanged",
+      "declaration": "public SafeAction<SkillTrigger, int, int> ClientHeroEvent_OnSkillLevelChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillPickup",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnSkillPickup",
+      "declaration": "public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillPickup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillSwap",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnSkillSwap",
+      "declaration": "public SafeAction<HeroSkillLocation, HeroSkillLocation> ClientHeroEvent_OnSkillSwap",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillUnequip",
+      "id": "Global_HeroSkill_ClientHeroEvent_OnSkillUnequip",
+      "declaration": "public SafeAction<SkillTrigger> ClientHeroEvent_OnSkillUnequip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadoutMovement",
+      "id": "Global_HeroSkill_loadoutMovement",
+      "declaration": "public AssetRef<SkillTrigger>[] loadoutMovement",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadoutQ",
+      "id": "Global_HeroSkill_loadoutQ",
+      "declaration": "public AssetRef<SkillTrigger>[] loadoutQ",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadoutR",
+      "id": "Global_HeroSkill_loadoutR",
+      "declaration": "public AssetRef<SkillTrigger>[] loadoutR",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadoutTrait",
+      "id": "Global_HeroSkill_loadoutTrait",
+      "declaration": "public AssetRef<SkillTrigger>[] loadoutTrait",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "starNormalizedStrength",
+      "id": "Global_HeroSkill_starNormalizedStrength",
+      "declaration": "[NonSerialized]\n[SaveVar(SaveVarFlags.Default)]\npublic float starNormalizedStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "E",
+      "id": "Global_HeroSkill_E",
+      "declaration": "public SkillTrigger E { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gems",
+      "id": "Global_HeroSkill_gems",
+      "declaration": "public IReadOnlyDictionary<GemLocation, Gem> gems { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "holdingObject",
+      "id": "Global_HeroSkill_holdingObject",
+      "declaration": "public IItem holdingObject { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Identity",
+      "id": "Global_HeroSkill_Identity",
+      "declaration": "public SkillTrigger Identity { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCountE",
+      "id": "Global_HeroSkill_maxGemCountE",
+      "declaration": "public int maxGemCountE { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCountIdentity",
+      "id": "Global_HeroSkill_maxGemCountIdentity",
+      "declaration": "public int maxGemCountIdentity { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCountMovement",
+      "id": "Global_HeroSkill_maxGemCountMovement",
+      "declaration": "public int maxGemCountMovement { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCountQ",
+      "id": "Global_HeroSkill_maxGemCountQ",
+      "declaration": "public int maxGemCountQ { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCountR",
+      "id": "Global_HeroSkill_maxGemCountR",
+      "declaration": "public int maxGemCountR { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCountW",
+      "id": "Global_HeroSkill_maxGemCountW",
+      "declaration": "public int maxGemCountW { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Movement",
+      "id": "Global_HeroSkill_Movement",
+      "declaration": "public SkillTrigger Movement { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Q",
+      "id": "Global_HeroSkill_Q",
+      "declaration": "public SkillTrigger Q { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "R",
+      "id": "Global_HeroSkill_R",
+      "declaration": "public SkillTrigger R { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "W",
+      "id": "Global_HeroSkill_W",
+      "declaration": "public SkillTrigger W { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_HeroSkill_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanReplaceSkill(HeroSkillLocation)",
+      "id": "Global_HeroSkill_CanReplaceSkill_HeroSkillLocation_",
+      "declaration": "public bool CanReplaceSkill(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CmdEquipGem(GemLocation, Gem)",
+      "id": "Global_HeroSkill_CmdEquipGem_GemLocation_Gem_",
+      "declaration": "public void CmdEquipGem(GemLocation loc, Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdEquipSkill(HeroSkillLocation, SkillTrigger)",
+      "id": "Global_HeroSkill_CmdEquipSkill_HeroSkillLocation_SkillTrigger_",
+      "declaration": "public void CmdEquipSkill(HeroSkillLocation type, SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdMoveGem(Gem, Vector3)",
+      "id": "Global_HeroSkill_CmdMoveGem_Gem_UnityEngine_Vector3_",
+      "declaration": "public void CmdMoveGem(Gem gem, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdMoveSkill(SkillTrigger, Vector3)",
+      "id": "Global_HeroSkill_CmdMoveSkill_SkillTrigger_UnityEngine_Vector3_",
+      "declaration": "public void CmdMoveSkill(SkillTrigger skill, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdStopHoldInHand()",
+      "id": "Global_HeroSkill_CmdStopHoldInHand",
+      "declaration": "public void CmdStopHoldInHand()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdSwapSlotGem(GemLocation, GemLocation)",
+      "id": "Global_HeroSkill_CmdSwapSlotGem_GemLocation_GemLocation_",
+      "declaration": "public void CmdSwapSlotGem(GemLocation a, GemLocation b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSwapSlotSkill(HeroSkillLocation, HeroSkillLocation)",
+      "id": "Global_HeroSkill_CmdSwapSlotSkill_HeroSkillLocation_HeroSkillLocation_",
+      "declaration": "public void CmdSwapSlotSkill(HeroSkillLocation a, HeroSkillLocation b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdUnequipGem(GemLocation, Vector3)",
+      "id": "Global_HeroSkill_CmdUnequipGem_GemLocation_UnityEngine_Vector3_",
+      "declaration": "public void CmdUnequipGem(GemLocation loc, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdUnequipSkill(HeroSkillLocation, Vector3)",
+      "id": "Global_HeroSkill_CmdUnequipSkill_HeroSkillLocation_UnityEngine_Vector3_",
+      "declaration": "public void CmdUnequipSkill(HeroSkillLocation type, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EquipGem(GemLocation, Gem)",
+      "id": "Global_HeroSkill_EquipGem_GemLocation_Gem_",
+      "declaration": "public void EquipGem(GemLocation loc, Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EquipSkill(HeroSkillLocation, SkillTrigger, bool)",
+      "id": "Global_HeroSkill_EquipSkill_HeroSkillLocation_SkillTrigger_System_Boolean_",
+      "declaration": "public void EquipSkill(HeroSkillLocation type, SkillTrigger skill, bool ignoreCanReplace = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "ignoreCanReplace",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetCurrentGemCount(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetCurrentGemCount_HeroSkillLocation_",
+      "declaration": "public int GetCurrentGemCount(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetEmptyGemSlot(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetEmptyGemSlot_HeroSkillLocation_",
+      "declaration": "public int GetEmptyGemSlot(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetFirstGem(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetFirstGem_HeroSkillLocation_",
+      "declaration": "public Gem GetFirstGem(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "Gem"
+    },
+    {
+      "name": "GetGem(GemLocation)",
+      "id": "Global_HeroSkill_GetGem_GemLocation_",
+      "declaration": "public Gem GetGem(GemLocation loc)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": "Gem"
+    },
+    {
+      "name": "GetGemsInSkill(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetGemsInSkill_HeroSkillLocation_",
+      "declaration": "public IEnumerable<Gem> GetGemsInSkill(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><Gem>"
+    },
+    {
+      "name": "GetGemsPairInSkill(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetGemsPairInSkill_HeroSkillLocation_",
+      "declaration": "public IEnumerable<KeyValuePair<GemLocation, Gem>> GetGemsPairInSkill(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><System.Collections.Generic.KeyValuePair<TKey, TValue><GemLocation,Gem>>"
+    },
+    {
+      "name": "GetLoadoutSkills(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetLoadoutSkills_HeroSkillLocation_",
+      "declaration": "public SkillTrigger[] GetLoadoutSkills(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "SkillTrigger[]"
+    },
+    {
+      "name": "GetMaxGemCount(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetMaxGemCount_HeroSkillLocation_",
+      "declaration": "public int GetMaxGemCount(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetSkill(HeroSkillLocation)",
+      "id": "Global_HeroSkill_GetSkill_HeroSkillLocation_",
+      "declaration": "public SkillTrigger GetSkill(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "SkillTrigger"
+    },
+    {
+      "name": "HasGemOfType(string)",
+      "id": "Global_HeroSkill_HasGemOfType_System_String_",
+      "declaration": "public bool HasGemOfType(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "HoldInHand(IItem)",
+      "id": "Global_HeroSkill_HoldInHand_IItem_",
+      "declaration": "public void HoldInHand(IItem holdable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "holdable",
+          "type": "IItem",
+          "type_uid": "Global.IItem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MergeGem(Gem, Gem)",
+      "id": "Global_HeroSkill_MergeGem_Gem_Gem_",
+      "declaration": "public void MergeGem(Gem victim, Gem receivingGem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        },
+        {
+          "name": "receivingGem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_HeroSkill_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_HeroSkill_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetMaxGemCount(HeroSkillLocation, int)",
+      "id": "Global_HeroSkill_SetMaxGemCount_HeroSkillLocation_System_Int32_",
+      "declaration": "public void SetMaxGemCount(HeroSkillLocation type, int count)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "count",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopHoldInHand()",
+      "id": "Global_HeroSkill_StopHoldInHand",
+      "declaration": "public void StopHoldInHand()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TryGetEquippedGemOfSameType(Type, out GemLocation, out Gem)",
+      "id": "Global_HeroSkill_TryGetEquippedGemOfSameType_System_Type_GemLocation__Gem__",
+      "declaration": "public bool TryGetEquippedGemOfSameType(Type type, out GemLocation loc, out Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetGem(GemLocation, out Gem)",
+      "id": "Global_HeroSkill_TryGetGem_GemLocation_Gem__",
+      "declaration": "public bool TryGetGem(GemLocation loc, out Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetGemLocation(Gem, out GemLocation)",
+      "id": "Global_HeroSkill_TryGetGemLocation_Gem_GemLocation__",
+      "declaration": "public bool TryGetGemLocation(Gem gem, out GemLocation location)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        },
+        {
+          "name": "location",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetSkill(HeroSkillLocation, out SkillTrigger)",
+      "id": "Global_HeroSkill_TryGetSkill_HeroSkillLocation_SkillTrigger__",
+      "declaration": "public bool TryGetSkill(HeroSkillLocation type, out SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetSkillLocation(SkillTrigger, out HeroSkillLocation)",
+      "id": "Global_HeroSkill_TryGetSkillLocation_SkillTrigger_HeroSkillLocation__",
+      "declaration": "public bool TryGetSkillLocation(SkillTrigger skill, out HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UnequipGem(GemLocation, Vector3)",
+      "id": "Global_HeroSkill_UnequipGem_GemLocation_UnityEngine_Vector3_",
+      "declaration": "public Gem UnequipGem(GemLocation loc, Vector3 position)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Gem"
+    },
+    {
+      "name": "UnequipSkill(HeroSkillLocation, Vector3, bool)",
+      "id": "Global_HeroSkill_UnequipSkill_HeroSkillLocation_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public SkillTrigger UnequipSkill(HeroSkillLocation type, Vector3 position, bool ignoreCanReplace = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreCanReplace",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "SkillTrigger"
+    }
+  ],
+  "events": []
+}

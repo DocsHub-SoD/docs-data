@@ -1,0 +1,15 @@
+{
+  "uid": "Global.StarScalingValue.StrengthScalingType",
+  "name": "StarScalingValue.StrengthScalingType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum StarScalingValue.StrengthScalingType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

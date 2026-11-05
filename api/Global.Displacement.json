@@ -1,0 +1,124 @@
+{
+  "uid": "Global.Displacement",
+  "name": "Displacement",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class Displacement",
+  "inheritance": [
+    {
+      "name": "DispByDestination",
+      "href": "Global.DispByDestination.html",
+      "uid": "Global.DispByDestination"
+    },
+    {
+      "name": "DispByTarget",
+      "href": "Global.DispByTarget.html",
+      "uid": "Global.DispByTarget"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "affectedByMovementSpeed",
+      "id": "Global_Displacement_affectedByMovementSpeed",
+      "declaration": "public bool affectedByMovementSpeed",
+      "summary": "Is this displacement affected by movement speed multiplier?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCanceledByCC",
+      "id": "Global_Displacement_isCanceledByCC",
+      "declaration": "public bool isCanceledByCC",
+      "summary": "Is this displacement canceled by crowd controls?Note the displacement will not be canceled by CCs applied previously, but by new CCs.Default value is true.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDodging",
+      "id": "Global_Displacement_isDodging",
+      "declaration": "public bool isDodging",
+      "summary": "Is this displacement dodging?Dodging displacement will not cancel channels even when they're not allowed to continue while dashing.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isFriendly",
+      "id": "Global_Displacement_isFriendly",
+      "declaration": "public bool isFriendly",
+      "summary": "Is this displacement considered a friendly displacement?This is used to determine if the displacement is Airborne or Dash, and it's fed to info structs of Displacement-related action callbacks.Default value is false.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MinimumDisplacementDuration",
+      "id": "Global_Displacement_MinimumDisplacementDuration",
+      "declaration": "public const float MinimumDisplacementDuration = 0.0001",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onCancel",
+      "id": "Global_Displacement_onCancel",
+      "declaration": "public Action onCancel",
+      "summary": "Action that is called when this displacement is canceled.This can be due to CCs, auto-canceling behaviour of DispByTarget, manual cancelation, and etc.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFinish",
+      "id": "Global_Displacement_onFinish",
+      "declaration": "public Action onFinish",
+      "summary": "Action that is called when this displacement has successfully finished.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateForward",
+      "id": "Global_Displacement_rotateForward",
+      "declaration": "public bool rotateForward",
+      "summary": "Will the entity rotate towards its velocity during the displacement?Default value is true.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateSmoothly",
+      "id": "Global_Displacement_rotateSmoothly",
+      "declaration": "public bool rotateSmoothly",
+      "summary": "Smoothly rotate if rotateForward is on.Default value is false.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "elapsedTime",
+      "id": "Global_Displacement_elapsedTime",
+      "declaration": "public float elapsedTime { get; }",
+      "summary": "Time elapsed starting from the moment this displacement has started.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasStarted",
+      "id": "Global_Displacement_hasStarted",
+      "declaration": "public bool hasStarted { get; }",
+      "summary": "Has this displacement started?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAlive",
+      "id": "Global_Displacement_isAlive",
+      "declaration": "public bool isAlive { get; }",
+      "summary": "Is this displacement on-going?",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

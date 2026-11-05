@@ -1,0 +1,442 @@
+{
+  "uid": "Global.PropEnt_Merchant_Base",
+  "name": "PropEnt_Merchant_Base",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class PropEnt_Merchant_Base : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    },
+    {
+      "name": "PropEnt_Merchant_Jonas",
+      "href": "Global.PropEnt_Merchant_Jonas.html",
+      "uid": "Global.PropEnt_Merchant_Jonas"
+    },
+    {
+      "name": "PropEnt_Merchant_Smoothie",
+      "href": "Global.PropEnt_Merchant_Smoothie.html",
+      "uid": "Global.PropEnt_Merchant_Smoothie"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowRefresh",
+      "id": "Global_PropEnt_Merchant_Base_allowRefresh",
+      "declaration": "public bool allowRefresh",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPurchase",
+      "id": "Global_PropEnt_Merchant_Base_fxPurchase",
+      "declaration": "public GameObject fxPurchase",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPurchaseGem",
+      "id": "Global_PropEnt_Merchant_Base_fxPurchaseGem",
+      "declaration": "public GameObject fxPurchaseGem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPurchaseSkill",
+      "id": "Global_PropEnt_Merchant_Base_fxPurchaseSkill",
+      "declaration": "public GameObject fxPurchaseSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPurchaseSouvenir",
+      "id": "Global_PropEnt_Merchant_Base_fxPurchaseSouvenir",
+      "declaration": "public GameObject fxPurchaseSouvenir",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPurchaseTreasure",
+      "id": "Global_PropEnt_Merchant_Base_fxPurchaseTreasure",
+      "declaration": "public GameObject fxPurchaseTreasure",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxSell",
+      "id": "Global_PropEnt_Merchant_Base_fxSell",
+      "declaration": "public GameObject fxSell",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSellEnabled",
+      "id": "Global_PropEnt_Merchant_Base_isSellEnabled",
+      "declaration": "public bool isSellEnabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "merchandises",
+      "id": "Global_PropEnt_Merchant_Base_merchandises",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncDictionary<string, MerchandiseData[]> merchandises",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onMerchandisePopulated",
+      "id": "Global_PropEnt_Merchant_Base_onMerchandisePopulated",
+      "declaration": "public SafeAction<DewPlayer> onMerchandisePopulated",
+      "summary": "Called on server after merchandise has been populated for certain player.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "props",
+      "id": "Global_PropEnt_Merchant_Base_props",
+      "declaration": "public GameObject[] props",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_PropEnt_Merchant_Base_canInteractWithMouse",
+      "declaration": "public virtual bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_PropEnt_Merchant_Base_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_PropEnt_Merchant_Base_interactPivot",
+      "declaration": "public virtual Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_PropEnt_Merchant_Base_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_PropEnt_Merchant_Base_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_PropEnt_Merchant_Base_CanInteract_Entity_",
+      "declaration": "public virtual bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CanRefresh(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Base_CanRefresh_DewPlayer_",
+      "declaration": "public virtual bool CanRefresh(DewPlayer player)",
+      "summary": "Checked everywhere.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CmdPurchase(int, NetworkConnectionToClient)",
+      "id": "Global_PropEnt_Merchant_Base_CmdPurchase_System_Int32_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdPurchase(int index, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdRefresh(NetworkConnectionToClient)",
+      "id": "Global_PropEnt_Merchant_Base_CmdRefresh_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdRefresh(NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSell(NetworkBehaviour, NetworkConnectionToClient)",
+      "id": "Global_PropEnt_Merchant_Base_CmdSell_Mirror_NetworkBehaviour_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdSell(NetworkBehaviour target, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetRefreshCost(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Base_GetRefreshCost_DewPlayer_",
+      "declaration": "public virtual Cost GetRefreshCost(DewPlayer player)",
+      "summary": "Available everywhere.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "Cost"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_PropEnt_Merchant_Base_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_PropEnt_Merchant_Base_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteract(Entity, bool)",
+      "id": "Global_PropEnt_Merchant_Base_OnInteract_Entity_System_Boolean_",
+      "declaration": "public virtual void OnInteract(Entity entity, bool alt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "alt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPopulateMerchandises(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Base_OnPopulateMerchandises_DewPlayer_",
+      "declaration": "protected abstract void OnPopulateMerchandises(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRefresh(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Base_OnRefresh_DewPlayer_",
+      "declaration": "protected virtual void OnRefresh(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnSell(DewPlayer, NetworkBehaviour)",
+      "id": "Global_PropEnt_Merchant_Base_OnSell_DewPlayer_Mirror_NetworkBehaviour_",
+      "declaration": "protected void OnSell(DewPlayer activator, NetworkBehaviour target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "activator",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PopulatePlayerMerchandises(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Base_PopulatePlayerMerchandises_DewPlayer_",
+      "declaration": "public void PopulatePlayerMerchandises(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpawnMerchandise(MerchandiseData, DewPlayer, Cost)",
+      "id": "Global_PropEnt_Merchant_Base_SpawnMerchandise_MerchandiseData_DewPlayer_Cost_",
+      "declaration": "protected void SpawnMerchandise(MerchandiseData data, DewPlayer player, Cost finalPrice)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "MerchandiseData",
+          "type_uid": "Global.MerchandiseData",
+          "description": ""
+        },
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "finalPrice",
+          "type": "Cost",
+          "type_uid": "Global.Cost",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EventInfoStartMove",
+  "name": "EventInfoStartMove",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoStartMove",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "destination",
+      "id": "Global_EventInfoStartMove_destination",
+      "declaration": "public Vector3 destination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entity",
+      "id": "Global_EventInfoStartMove_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

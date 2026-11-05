@@ -1,0 +1,262 @@
+{
+  "uid": "Global.ActorManager",
+  "name": "ActorManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ActorManager : NetworkedManagerBase<ActorManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "ActorManager",
+      "href": "Global.ActorManager.html",
+      "uid": "Global.ActorManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allActors",
+      "id": "Global_ActorManager_allActors",
+      "declaration": "public HashSet<Actor> allActors",
+      "summary": "All actors present. This only includes active actors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allActorsBeingDestroyed",
+      "id": "Global_ActorManager_allActorsBeingDestroyed",
+      "declaration": "public HashSet<Actor> allActorsBeingDestroyed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allEntities",
+      "id": "Global_ActorManager_allEntities",
+      "declaration": "public HashSet<Entity> allEntities",
+      "summary": "All entities present. This only includes alive entities.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allHeroes",
+      "id": "Global_ActorManager_allHeroes",
+      "declaration": "public List<Hero> allHeroes",
+      "summary": "All heroes present.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnActorAdd",
+      "id": "Global_ActorManager_ClientEvent_OnActorAdd",
+      "declaration": "public SafeAction<Actor> ClientEvent_OnActorAdd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnActorRemove",
+      "id": "Global_ActorManager_ClientEvent_OnActorRemove",
+      "declaration": "public SafeAction<Actor> ClientEvent_OnActorRemove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnAwakeEntityAdd",
+      "id": "Global_ActorManager_ClientEvent_OnAwakeEntityAdd",
+      "declaration": "public SafeAction<Entity> ClientEvent_OnAwakeEntityAdd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnAwakeEntityRemove",
+      "id": "Global_ActorManager_ClientEvent_OnAwakeEntityRemove",
+      "declaration": "public SafeAction<Entity> ClientEvent_OnAwakeEntityRemove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEntityAdd",
+      "id": "Global_ActorManager_ClientEvent_OnEntityAdd",
+      "declaration": "public SafeAction<Entity> ClientEvent_OnEntityAdd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEntityRemove",
+      "id": "Global_ActorManager_ClientEvent_OnEntityRemove",
+      "declaration": "public SafeAction<Entity> ClientEvent_OnEntityRemove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnHeroAdd",
+      "id": "Global_ActorManager_ClientEvent_OnHeroAdd",
+      "declaration": "public SafeAction<Hero> ClientEvent_OnHeroAdd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnHeroRemove",
+      "id": "Global_ActorManager_ClientEvent_OnHeroRemove",
+      "declaration": "public SafeAction<Hero> ClientEvent_OnHeroRemove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnLocalHeroAdd",
+      "id": "Global_ActorManager_ClientEvent_OnLocalHeroAdd",
+      "declaration": "public SafeAction<Hero> ClientEvent_OnLocalHeroAdd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnLocalHeroRemove",
+      "id": "Global_ActorManager_ClientEvent_OnLocalHeroRemove",
+      "declaration": "public SafeAction<Hero> ClientEvent_OnLocalHeroRemove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableUsefulActorName",
+      "id": "Global_ActorManager_enableUsefulActorName",
+      "declaration": "public static bool enableUsefulActorName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onActorBeforePrepare",
+      "id": "Global_ActorManager_onActorBeforePrepare",
+      "declaration": "public SafeAction<Actor> onActorBeforePrepare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "numOfActors",
+      "id": "Global_ActorManager_numOfActors",
+      "declaration": "[ShowInInspector]\npublic int numOfActors { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfEntities",
+      "id": "Global_ActorManager_numOfEntities",
+      "declaration": "[ShowInInspector]\npublic int numOfEntities { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfHeroes",
+      "id": "Global_ActorManager_numOfHeroes",
+      "declaration": "[ShowInInspector]\npublic int numOfHeroes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "serverActor",
+      "id": "Global_ActorManager_serverActor",
+      "declaration": "public Actor serverActor { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CleanupActorsBeforeShutdown()",
+      "id": "Global_ActorManager_CleanupActorsBeforeShutdown",
+      "declaration": "public static void CleanupActorsBeforeShutdown()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearSceneIdOfAllActors()",
+      "id": "Global_ActorManager_ClearSceneIdOfAllActors",
+      "declaration": "public void ClearSceneIdOfAllActors()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoSleepLogicUpdate(float)",
+      "id": "Global_ActorManager_DoSleepLogicUpdate_System_Single_",
+      "declaration": "public void DoSleepLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_ActorManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_ActorManager_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_ActorManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

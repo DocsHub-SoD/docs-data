@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewAnimationClip.OverrideWalkBehavior",
+  "name": "DewAnimationClip.OverrideWalkBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DewAnimationClip.OverrideWalkBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

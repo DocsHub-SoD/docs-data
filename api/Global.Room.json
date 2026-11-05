@@ -1,0 +1,495 @@
+{
+  "uid": "Global.Room",
+  "name": "Room",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(RoomMap))]\n[RequireComponent(typeof(RoomMonsters))]\n[RequireComponent(typeof(RoomProps))]\n[RequireComponent(typeof(RoomRifts))]\n[RequireComponent(typeof(RoomRewards))]\n[RequireComponent(typeof(RoomModifiers))]\n[RequireComponent(typeof(RoomEditorMaintenance))]\npublic class Room : SingletonDewNetworkBehaviour<Room>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "SingletonDewNetworkBehaviour",
+      "href": "Global.SingletonDewNetworkBehaviour-1.html",
+      "uid": "Global.SingletonDewNetworkBehaviour-1"
+    },
+    {
+      "name": "Room",
+      "href": "Global.Room.html",
+      "uid": "Global.Room"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "availableCameraAngles",
+      "id": "Global_Room_availableCameraAngles",
+      "declaration": "public float[] availableCameraAngles",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnFootstep",
+      "id": "Global_Room_ClientEvent_OnFootstep",
+      "declaration": "public SafeAction<Entity> ClientEvent_OnFootstep",
+      "summary": "Called everywhere everytime a footstep is done on an entity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnPrepareAsNonHostileRoom",
+      "id": "Global_Room_ClientEvent_OnPrepareAsNonHostileRoom",
+      "declaration": "public SafeAction ClientEvent_OnPrepareAsNonHostileRoom",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnRoomClear",
+      "id": "Global_Room_ClientEvent_OnRoomClear",
+      "declaration": "public SafeAction ClientEvent_OnRoomClear",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnRoomStart",
+      "id": "Global_Room_ClientEvent_OnRoomStart",
+      "declaration": "public SafeAction ClientEvent_OnRoomStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_WaypointLocked",
+      "id": "Global_Room_ClientEvent_WaypointLocked",
+      "declaration": "public SafeAction<Room_Waypoint> ClientEvent_WaypointLocked",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_WaypointUnlocked",
+      "id": "Global_Room_ClientEvent_WaypointUnlocked",
+      "declaration": "public SafeAction<Room_Waypoint> ClientEvent_WaypointUnlocked",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultSurface",
+      "id": "Global_Room_defaultSurface",
+      "declaration": "public DewSurfaceData defaultSurface",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "metadata",
+      "id": "Global_Room_metadata",
+      "declaration": "[ReadOnly]\npublic DewRoomMetadata metadata",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "music",
+      "id": "Global_Room_music",
+      "declaration": "public DewMusicItem music",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onRemoveObstacles",
+      "id": "Global_Room_onRemoveObstacles",
+      "declaration": "public SafeAction onRemoveObstacles",
+      "summary": "This is called on server when this room needs to clear any progression obstacles.e.g. Barriers, Locked Shrines of Despair",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onRoomClear",
+      "id": "Global_Room_onRoomClear",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent onRoomClear",
+      "summary": "Called on server when all combat sections are cleared / a hero steps on clear condition section.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "openRoomExitOnClear",
+      "id": "Global_Room_openRoomExitOnClear",
+      "declaration": "[ToggleLeft]\npublic bool openRoomExitOnClear",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerPathablePoints",
+      "id": "Global_Room_playerPathablePoints",
+      "declaration": "public readonly List<Vector3> playerPathablePoints",
+      "summary": "Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "didClearRoom",
+      "id": "Global_Room_didClearRoom",
+      "declaration": "public bool didClearRoom { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didRemoveObstacles",
+      "id": "Global_Room_didRemoveObstacles",
+      "declaration": "public bool didRemoveObstacles { get; set; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroSpawnPos",
+      "id": "Global_Room_heroSpawnPos",
+      "declaration": "public Vector3 heroSpawnPos { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroSpawnRot",
+      "id": "Global_Room_heroSpawnRot",
+      "declaration": "public Quaternion heroSpawnRot { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActive",
+      "id": "Global_Room_isActive",
+      "declaration": "public bool isActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNonHostileRoom",
+      "id": "Global_Room_isNonHostileRoom",
+      "declaration": "public bool isNonHostileRoom { get; set; }",
+      "summary": "Is this room modified to be a non-hostile room? Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRevisit",
+      "id": "Global_Room_isRevisit",
+      "declaration": "public bool isRevisit { get; set; }",
+      "summary": "Are we revisiting this room? Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "map",
+      "id": "Global_Room_map",
+      "declaration": "public RoomMap map { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modifiers",
+      "id": "Global_Room_modifiers",
+      "declaration": "public RoomModifiers modifiers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsters",
+      "id": "Global_Room_monsters",
+      "declaration": "public RoomMonsters monsters { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfActivatedCombatAreas",
+      "id": "Global_Room_numOfActivatedCombatAreas",
+      "declaration": "public int numOfActivatedCombatAreas { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "props",
+      "id": "Global_Room_props",
+      "declaration": "public RoomProps props { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rewards",
+      "id": "Global_Room_rewards",
+      "declaration": "public RoomRewards rewards { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rifts",
+      "id": "Global_Room_rifts",
+      "declaration": "public RoomRifts rifts { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sections",
+      "id": "Global_Room_sections",
+      "declaration": "public IList<RoomSection> sections { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockedWaypoints",
+      "id": "Global_Room_unlockedWaypoints",
+      "declaration": "public IReadOnlyList<Room_Waypoint> unlockedWaypoints { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddUnlockedWaypoint(Room_Waypoint)",
+      "id": "Global_Room_AddUnlockedWaypoint_Room_Waypoint_",
+      "declaration": "public void AddUnlockedWaypoint(Room_Waypoint waypoint)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "waypoint",
+          "type": "Room_Waypoint",
+          "type_uid": "Global.Room_Waypoint",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_Room_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClearRoom()",
+      "id": "Global_Room_ClearRoom",
+      "declaration": "public void ClearRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetFinalSection()",
+      "id": "Global_Room_GetFinalSection",
+      "declaration": "public RoomSection GetFinalSection()",
+      "summary": "Get a section closest to exit rift.",
+      "parameters": [],
+      "returns": "RoomSection"
+    },
+    {
+      "name": "GetHeroSpawnPosition()",
+      "id": "Global_Room_GetHeroSpawnPosition",
+      "declaration": "public Vector3 GetHeroSpawnPosition()",
+      "summary": "Get randomly offset spawn position.",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetHeroSpawnRotation()",
+      "id": "Global_Room_GetHeroSpawnRotation",
+      "declaration": "public Quaternion GetHeroSpawnRotation()",
+      "summary": "Get spawn rotation.",
+      "parameters": [],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "GetRoomRandom(int)",
+      "id": "Global_Room_GetRoomRandom_System_Int32_",
+      "declaration": "public DewRandom GetRoomRandom(int offset)",
+      "summary": "Get a random instance for this room. States for these random instances are persistent.",
+      "parameters": [
+        {
+          "name": "offset",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewRandom"
+    },
+    {
+      "name": "GetSectionFromWorldPos(Vector3)",
+      "id": "Global_Room_GetSectionFromWorldPos_UnityEngine_Vector3_",
+      "declaration": "public RoomSection GetSectionFromWorldPos(Vector3 pos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "RoomSection"
+    },
+    {
+      "name": "OnLateStart()",
+      "id": "Global_Room_OnLateStart",
+      "declaration": "public override void OnLateStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_Room_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_Room_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Room_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OverrideHeroSpawn(Vector3, Quaternion)",
+      "id": "Global_Room_OverrideHeroSpawn_UnityEngine_Vector3_UnityEngine_Quaternion_",
+      "declaration": "public void OverrideHeroSpawn(Vector3 pos, Quaternion rot)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveCombat(bool)",
+      "id": "Global_Room_RemoveCombat_System_Boolean_",
+      "declaration": "public void RemoveCombat(bool clearRoomOnEnteringLastSection)",
+      "summary": "Disables enemy spawns, and removes any existing enemies or camps.It is recommended to call this with Dew.CallDelayed() if you're calling it in RoomModifierBase.OnCreate().",
+      "parameters": [
+        {
+          "name": "clearRoomOnEnteringLastSection",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveObstacles()",
+      "id": "Global_Room_RemoveObstacles",
+      "declaration": "public void RemoveObstacles()",
+      "summary": "Remove any kind of progression-blocking obstacles, like barriers, locked teleport shrines and such.It is recommended to call this with Dew.CallDelayed() if you're calling it in RoomModifierBase.OnCreate().",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveUnlockedWaypoint(Room_Waypoint)",
+      "id": "Global_Room_RemoveUnlockedWaypoint_Room_Waypoint_",
+      "declaration": "public void RemoveUnlockedWaypoint(Room_Waypoint waypoint)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "waypoint",
+          "type": "Room_Waypoint",
+          "type_uid": "Global.Room_Waypoint",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetCameraAngleIndex_Local(int)",
+      "id": "Global_Room_SetCameraAngleIndex_Local_System_Int32_",
+      "declaration": "public void SetCameraAngleIndex_Local(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartRoom()",
+      "id": "Global_Room_StartRoom",
+      "declaration": "public void StartRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopRoom()",
+      "id": "Global_Room_StopRoom",
+      "declaration": "public void StopRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SyncCameraAngle()",
+      "id": "Global_Room_SyncCameraAngle",
+      "declaration": "public void SyncCameraAngle()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

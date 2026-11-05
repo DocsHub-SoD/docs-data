@@ -1,0 +1,335 @@
+{
+  "uid": "Global.UI_GamepadTextInput",
+  "name": "UI_GamepadTextInput",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GamepadTextInput : SingletonBehaviour<UI_GamepadTextInput>",
+  "inheritance": [
+    {
+      "name": "SingletonBehaviour",
+      "href": "Global.SingletonBehaviour-1.html",
+      "uid": "Global.SingletonBehaviour-1"
+    },
+    {
+      "name": "UI_GamepadTextInput",
+      "href": "Global.UI_GamepadTextInput.html",
+      "uid": "Global.UI_GamepadTextInput"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "azertyLayout",
+      "id": "Global_UI_GamepadTextInput_azertyLayout",
+      "declaration": "[Multiline]\npublic string azertyLayout",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "azertyShiftAlpha",
+      "id": "Global_UI_GamepadTextInput_azertyShiftAlpha",
+      "declaration": "public string azertyShiftAlpha",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "backspacePrefab",
+      "id": "Global_UI_GamepadTextInput_backspacePrefab",
+      "declaration": "public UI_GamepadTextInput_Key backspacePrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cancelButton",
+      "id": "Global_UI_GamepadTextInput_cancelButton",
+      "declaration": "public Button cancelButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "clearButton",
+      "id": "Global_UI_GamepadTextInput_clearButton",
+      "declaration": "public Button clearButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "confirmButton",
+      "id": "Global_UI_GamepadTextInput_confirmButton",
+      "declaration": "public Button confirmButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "inputField",
+      "id": "Global_UI_GamepadTextInput_inputField",
+      "declaration": "public TMP_InputField inputField",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "leftShiftPrefab",
+      "id": "Global_UI_GamepadTextInput_leftShiftPrefab",
+      "declaration": "public UI_GamepadTextInput_Key leftShiftPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onIsShiftPressedChanged",
+      "id": "Global_UI_GamepadTextInput_onIsShiftPressedChanged",
+      "declaration": "public Action onIsShiftPressedChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "qwertyLayout",
+      "id": "Global_UI_GamepadTextInput_qwertyLayout",
+      "declaration": "[Multiline]\npublic string qwertyLayout",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "qwertyShiftAlpha",
+      "id": "Global_UI_GamepadTextInput_qwertyShiftAlpha",
+      "declaration": "public string qwertyShiftAlpha",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "regularKeyPrefab",
+      "id": "Global_UI_GamepadTextInput_regularKeyPrefab",
+      "declaration": "public UI_GamepadTextInput_Key regularKeyPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rightShiftPrefab",
+      "id": "Global_UI_GamepadTextInput_rightShiftPrefab",
+      "declaration": "public UI_GamepadTextInput_Key rightShiftPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rowTransforms",
+      "id": "Global_UI_GamepadTextInput_rowTransforms",
+      "declaration": "public Transform[] rowTransforms",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isAzerty",
+      "id": "Global_UI_GamepadTextInput_isAzerty",
+      "declaration": "public bool isAzerty { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isShiftPressed",
+      "id": "Global_UI_GamepadTextInput_isShiftPressed",
+      "declaration": "public bool isShiftPressed { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Cancel()",
+      "id": "Global_UI_GamepadTextInput_Cancel",
+      "declaration": "public void Cancel()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Clear()",
+      "id": "Global_UI_GamepadTextInput_Clear",
+      "declaration": "public void Clear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Confirm()",
+      "id": "Global_UI_GamepadTextInput_Confirm",
+      "declaration": "public void Confirm()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EraseOne()",
+      "id": "Global_UI_GamepadTextInput_EraseOne",
+      "declaration": "public void EraseOne()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetShiftSubstitute(string)",
+      "id": "Global_UI_GamepadTextInput_GetShiftSubstitute_System_String_",
+      "declaration": "public string GetShiftSubstitute(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "PressCharacter(string)",
+      "id": "Global_UI_GamepadTextInput_PressCharacter_System_String_",
+      "declaration": "public void PressCharacter(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetAzertyMode(bool)",
+      "id": "Global_UI_GamepadTextInput_SetAzertyMode_System_Boolean_",
+      "declaration": "public void SetAzertyMode(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShift(bool)",
+      "id": "Global_UI_GamepadTextInput_SetShift_System_Boolean_",
+      "declaration": "public void SetShift(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartInput(string, string, bool, bool, int, Action<string>, Action)",
+      "id": "Global_UI_GamepadTextInput_StartInput_System_String_System_String_System_Boolean_System_Boolean_System_Int32_System_Action_System_String__System_Action_",
+      "declaration": "public void StartInput(string previousText, string placeholderText, bool isMultiline, bool isPassword, int maxCharacters, Action<string> onConfirm, Action onCancel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "previousText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "placeholderText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isMultiline",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isPassword",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxCharacters",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onConfirm",
+          "type": "System.Action<T><string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartInput(TMP_InputField, Action<string>, Action)",
+      "id": "Global_UI_GamepadTextInput_StartInput_TMPro_TMP_InputField_System_Action_System_String__System_Action_",
+      "declaration": "public void StartInput(TMP_InputField target, Action<string> onConfirm = null, Action onCancel = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "TMPro.TMP_InputField",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onConfirm",
+          "type": "System.Action<T><string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ToggleShift()",
+      "id": "Global_UI_GamepadTextInput_ToggleShift",
+      "declaration": "public void ToggleShift()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

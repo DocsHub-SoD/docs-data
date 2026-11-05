@@ -1,0 +1,64 @@
+{
+  "uid": "Global.FxChangeMaterial",
+  "name": "FxChangeMaterial",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxChangeMaterial : MonoBehaviour, IEffectComponent",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    }
+  ],
+  "fields": [
+    {
+      "name": "materials",
+      "id": "Global_FxChangeMaterial_materials",
+      "declaration": "public Material[] materials",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "renderers",
+      "id": "Global_FxChangeMaterial_renderers",
+      "declaration": "public Renderer[] renderers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxChangeMaterial_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_FxChangeMaterial_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxChangeMaterial_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

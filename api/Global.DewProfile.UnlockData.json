@@ -1,0 +1,49 @@
+{
+  "uid": "Global.DewProfile.UnlockData",
+  "name": "DewProfile.UnlockData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.UnlockData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "didReadMemory",
+      "id": "Global_DewProfile_UnlockData_didReadMemory",
+      "declaration": "public bool didReadMemory",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNewHeroOrHeroSkill",
+      "id": "Global_DewProfile_UnlockData_isNewHeroOrHeroSkill",
+      "declaration": "public bool isNewHeroOrHeroSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "status",
+      "id": "Global_DewProfile_UnlockData_status",
+      "declaration": "public UnlockStatus status",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isAvailableInGame",
+      "id": "Global_DewProfile_UnlockData_isAvailableInGame",
+      "declaration": "public bool isAvailableInGame { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

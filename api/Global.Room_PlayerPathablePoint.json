@@ -1,0 +1,30 @@
+{
+  "uid": "Global.Room_PlayerPathablePoint",
+  "name": "Room_PlayerPathablePoint",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_PlayerPathablePoint : MonoBehaviour, IPlayerPathablePoint",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IPlayerPathablePoint",
+      "href": "Global.IPlayerPathablePoint.html",
+      "uid": "Global.IPlayerPathablePoint"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "pathablePosition",
+      "id": "Global_Room_PlayerPathablePoint_pathablePosition",
+      "declaration": "public Vector3 pathablePosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

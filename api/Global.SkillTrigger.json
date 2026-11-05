@@ -1,0 +1,1122 @@
+{
+  "uid": "Global.SkillTrigger",
+  "name": "SkillTrigger",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class SkillTrigger : AbilityTrigger, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IItem, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityTrigger",
+      "href": "Global.AbilityTrigger.html",
+      "uid": "Global.AbilityTrigger"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IItem",
+      "href": "Global.IItem.html",
+      "uid": "Global.IItem"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnHandOwnerChanged",
+      "id": "Global_SkillTrigger_ClientEvent_OnHandOwnerChanged",
+      "declaration": "public SafeAction<Hero, Hero> ClientEvent_OnHandOwnerChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnTempOwnerChanged",
+      "id": "Global_SkillTrigger_ClientEvent_OnTempOwnerChanged",
+      "declaration": "public SafeAction<DewPlayer, DewPlayer> ClientEvent_OnTempOwnerChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientSkillEvent_OnDismantleProgressChanged",
+      "id": "Global_SkillTrigger_ClientSkillEvent_OnDismantleProgressChanged",
+      "declaration": "public SafeAction<float, float> ClientSkillEvent_OnDismantleProgressChanged",
+      "summary": "Called everywhere when dismantle progress changes.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientSkillEvent_OnLevelChange",
+      "id": "Global_SkillTrigger_ClientSkillEvent_OnLevelChange",
+      "declaration": "public SafeAction<int, int> ClientSkillEvent_OnLevelChange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customSkillHastePerLevel",
+      "id": "Global_SkillTrigger_customSkillHastePerLevel",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\n[LabelText(\"Skill Haste Per Level\")]\n[ShowIf(\"useCustomSkillHastePerLevel\", true)]\npublic float customSkillHastePerLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisableHeroTypeCheckOnIdentityMemories",
+      "id": "Global_SkillTrigger_DisableHeroTypeCheckOnIdentityMemories",
+      "declaration": "public static bool DisableHeroTypeCheckOnIdentityMemories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DismantleDecayStartTime",
+      "id": "Global_SkillTrigger_DismantleDecayStartTime",
+      "declaration": "public const float DismantleDecayStartTime = 1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DismantleTapMinInterval",
+      "id": "Global_SkillTrigger_DismantleTapMinInterval",
+      "declaration": "public const float DismantleTapMinInterval = 0.075",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DismantleTapStrength",
+      "id": "Global_SkillTrigger_DismantleTapStrength",
+      "declaration": "public const float DismantleTapStrength = 0.4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endEffect",
+      "id": "Global_SkillTrigger_endEffect",
+      "declaration": "[LabelText(\"End Effect (Attached)\")]\n[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic GameObject endEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeFromPool",
+      "id": "Global_SkillTrigger_excludeFromPool",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic bool excludeFromPool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLevelUpEnabled",
+      "id": "Global_SkillTrigger_isLevelUpEnabled",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic bool isLevelUpEnabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rarity",
+      "id": "Global_SkillTrigger_rarity",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic Rarity rarity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showFillAmountOnScreen",
+      "id": "Global_SkillTrigger_showFillAmountOnScreen",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic bool showFillAmountOnScreen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startEffect",
+      "id": "Global_SkillTrigger_startEffect",
+      "declaration": "[LabelText(\"Start Effect (Attached)\")]\n[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic GameObject startEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statBonus",
+      "id": "Global_SkillTrigger_statBonus",
+      "declaration": "[NonSerialized]\npublic StatBonus statBonus",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tags",
+      "id": "Global_SkillTrigger_tags",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic DescriptionTags tags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_SkillTrigger_type",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic SkillType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_GlobalChargeMultiplier",
+      "id": "Global_SkillTrigger_Ult_GlobalChargeMultiplier",
+      "declaration": "public const float Ult_GlobalChargeMultiplier = 0.85",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_OnKillBoss",
+      "id": "Global_SkillTrigger_Ult_OnKillBoss",
+      "declaration": "public const float Ult_OnKillBoss = 42.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_OnKillLesser",
+      "id": "Global_SkillTrigger_Ult_OnKillLesser",
+      "declaration": "public const float Ult_OnKillLesser = 0.12750001",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_OnKillMiniBoss",
+      "id": "Global_SkillTrigger_Ult_OnKillMiniBoss",
+      "declaration": "public const float Ult_OnKillMiniBoss = 12.75",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_OnKillNormal",
+      "id": "Global_SkillTrigger_Ult_OnKillNormal",
+      "declaration": "public const float Ult_OnKillNormal = 0.63750005",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtAttack",
+      "id": "Global_SkillTrigger_Ult_PerDealtAttack",
+      "declaration": "public const float Ult_PerDealtAttack = 0.2125",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtDamageBossEnemyHealthRatio",
+      "id": "Global_SkillTrigger_Ult_PerDealtDamageBossEnemyHealthRatio",
+      "declaration": "public const float Ult_PerDealtDamageBossEnemyHealthRatio = 25.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtDamageLesserEnemyHealthRatio",
+      "id": "Global_SkillTrigger_Ult_PerDealtDamageLesserEnemyHealthRatio",
+      "declaration": "public const float Ult_PerDealtDamageLesserEnemyHealthRatio = 0.12750001",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtDamageMiniBossEnemyHealthRatio",
+      "id": "Global_SkillTrigger_Ult_PerDealtDamageMiniBossEnemyHealthRatio",
+      "declaration": "public const float Ult_PerDealtDamageMiniBossEnemyHealthRatio = 12.75",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtDamageNormalEnemyHealthRatio",
+      "id": "Global_SkillTrigger_Ult_PerDealtDamageNormalEnemyHealthRatio",
+      "declaration": "public const float Ult_PerDealtDamageNormalEnemyHealthRatio = 0.25500003",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtElementalDamage",
+      "id": "Global_SkillTrigger_Ult_PerDealtElementalDamage",
+      "declaration": "public const float Ult_PerDealtElementalDamage = 0.0425",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerDealtNonElementalDamage",
+      "id": "Global_SkillTrigger_Ult_PerDealtNonElementalDamage",
+      "declaration": "public const float Ult_PerDealtNonElementalDamage = 0.2125",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerTakenDamageMyHealthRatio",
+      "id": "Global_SkillTrigger_Ult_PerTakenDamageMyHealthRatio",
+      "declaration": "public const float Ult_PerTakenDamageMyHealthRatio = 25.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerTakenElementalDamage",
+      "id": "Global_SkillTrigger_Ult_PerTakenElementalDamage",
+      "declaration": "public const float Ult_PerTakenElementalDamage = 0.0425",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Ult_PerTakenNonElementalDamage",
+      "id": "Global_SkillTrigger_Ult_PerTakenNonElementalDamage",
+      "declaration": "public const float Ult_PerTakenNonElementalDamage = 0.2125",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useCustomSkillHastePerLevel",
+      "id": "Global_SkillTrigger_useCustomSkillHastePerLevel",
+      "declaration": "[BoxGroup(\"Skill Settings\", true, false, 0)]\npublic bool useCustomSkillHastePerLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_SkillTrigger_canInteractWithMouse",
+      "declaration": "public bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "characterSkillOwner",
+      "id": "Global_SkillTrigger_characterSkillOwner",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string characterSkillOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleProgress",
+      "id": "Global_SkillTrigger_dismantleProgress",
+      "declaration": "public float dismantleProgress { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectiveLevel",
+      "id": "Global_SkillTrigger_effectiveLevel",
+      "declaration": "public int effectiveLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_SkillTrigger_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "handOwner",
+      "id": "Global_SkillTrigger_handOwner",
+      "declaration": "public Hero handOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_SkillTrigger_interactPivot",
+      "declaration": "public Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAnimatingEmbraceNewIdentity",
+      "id": "Global_SkillTrigger_isAnimatingEmbraceNewIdentity",
+      "declaration": "public bool isAnimatingEmbraceNewIdentity { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCharacterSkill",
+      "id": "Global_SkillTrigger_isCharacterSkill",
+      "declaration": "public bool isCharacterSkill { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocked",
+      "id": "Global_SkillTrigger_isLocked",
+      "declaration": "public bool isLocked { get; }",
+      "summary": "Is this skill locked for local player?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "level",
+      "id": "Global_SkillTrigger_level",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int level { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainConfigOriginalCharge",
+      "id": "Global_SkillTrigger_mainConfigOriginalCharge",
+      "declaration": "public int mainConfigOriginalCharge { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSellGold",
+      "id": "Global_SkillTrigger_maxSellGold",
+      "declaration": "public int maxSellGold { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_SkillTrigger_owner",
+      "declaration": "public Hero owner { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sbCooldownMultiplier",
+      "id": "Global_SkillTrigger_sbCooldownMultiplier",
+      "declaration": "public float sbCooldownMultiplier { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sbCooldownMultiplierIgnoreReceiveCooldownReductionFlag",
+      "id": "Global_SkillTrigger_sbCooldownMultiplierIgnoreReceiveCooldownReductionFlag",
+      "declaration": "public float sbCooldownMultiplierIgnoreReceiveCooldownReductionFlag { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sbCooldownOffset",
+      "id": "Global_SkillTrigger_sbCooldownOffset",
+      "declaration": "public float sbCooldownOffset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sbCooldownOffsetIgnoreReceiveCooldownReductionFlag",
+      "id": "Global_SkillTrigger_sbCooldownOffsetIgnoreReceiveCooldownReductionFlag",
+      "declaration": "public float sbCooldownOffsetIgnoreReceiveCooldownReductionFlag { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillHastePerLevel",
+      "id": "Global_SkillTrigger_skillHastePerLevel",
+      "declaration": "public float skillHastePerLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillType",
+      "id": "Global_SkillTrigger_skillType",
+      "declaration": "public HeroSkillLocation skillType { get; }",
+      "summary": "Location of this skill trigger if equipped.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipStartAnimation",
+      "id": "Global_SkillTrigger_skipStartAnimation",
+      "declaration": "public bool skipStartAnimation { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "specialOverlayColor",
+      "id": "Global_SkillTrigger_specialOverlayColor",
+      "declaration": "public Color specialOverlayColor { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statEntity",
+      "id": "Global_SkillTrigger_statEntity",
+      "declaration": "public Entity statEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tempOwner",
+      "id": "Global_SkillTrigger_tempOwner",
+      "declaration": "public DewPlayer tempOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldModel",
+      "id": "Global_SkillTrigger_worldModel",
+      "declaration": "public ItemWorldModel worldModel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddSkillBonus(SkillBonus)",
+      "id": "Global_SkillTrigger_AddSkillBonus_SkillBonus_",
+      "declaration": "public SkillBonus AddSkillBonus(SkillBonus bonus)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "SkillBonus",
+          "type_uid": "Global.SkillBonus",
+          "description": ""
+        }
+      ],
+      "returns": "SkillBonus"
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_SkillTrigger_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_SkillTrigger_CanInteract_Entity_",
+      "declaration": "public bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CreateDamage(SourceType, ScalingValue, float)",
+      "id": "Global_SkillTrigger_CreateDamage_DamageData_SourceType_ScalingValue_System_Single_",
+      "declaration": "public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DamageData.SourceType",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "Damage(ScalingValue, float)",
+      "id": "Global_SkillTrigger_Damage_ScalingValue_System_Single_",
+      "declaration": "public DamageData Damage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "DefaultDamage(ScalingValue, float)",
+      "id": "Global_SkillTrigger_DefaultDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "DismantleSkill()",
+      "id": "Global_SkillTrigger_DismantleSkill",
+      "declaration": "public void DismantleSkill()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetActorReadableName()",
+      "id": "Global_SkillTrigger_GetActorReadableName",
+      "declaration": "public override string GetActorReadableName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetBuyGold()",
+      "id": "Global_SkillTrigger_GetBuyGold",
+      "declaration": "public int GetBuyGold()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetBuyGold(Rarity, int)",
+      "id": "Global_SkillTrigger_GetBuyGold_Rarity_System_Int32_",
+      "declaration": "public static int GetBuyGold(Rarity rarity, int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetCooldownTimeMultiplier(int)",
+      "id": "Global_SkillTrigger_GetCooldownTimeMultiplier_System_Int32_",
+      "declaration": "public override float GetCooldownTimeMultiplier(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetCooldownTimeOffset(int)",
+      "id": "Global_SkillTrigger_GetCooldownTimeOffset_System_Int32_",
+      "declaration": "public override float GetCooldownTimeOffset(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetCooldownTimeOnLevel(int)",
+      "id": "Global_SkillTrigger_GetCooldownTimeOnLevel_System_Int32_",
+      "declaration": "public float GetCooldownTimeOnLevel(int lvl)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lvl",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetDismantleAmount(DewPlayer)",
+      "id": "Global_SkillTrigger_GetDismantleAmount_DewPlayer_",
+      "declaration": "public int GetDismantleAmount(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetFormattedSkillTitle()",
+      "id": "Global_SkillTrigger_GetFormattedSkillTitle",
+      "declaration": "public string GetFormattedSkillTitle()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetGoldValue(Rarity, int)",
+      "id": "Global_SkillTrigger_GetGoldValue_Rarity_System_Int32_",
+      "declaration": "public static int GetGoldValue(Rarity rarity, int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetLoadoutHero()",
+      "id": "Global_SkillTrigger_GetLoadoutHero",
+      "declaration": "public Type GetLoadoutHero()",
+      "summary": "Get a hero that contains this skill in their loadout.Returns null if this is not from a hero.Note this can be an expensive operation to be calling every frame, since it will iterate through all hero types in the game.",
+      "parameters": [],
+      "returns": "System.Type"
+    },
+    {
+      "name": "GetSellGold()",
+      "id": "Global_SkillTrigger_GetSellGold",
+      "declaration": "public int GetSellGold()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetSellGold(Rarity, int)",
+      "id": "Global_SkillTrigger_GetSellGold_Rarity_System_Int32_",
+      "declaration": "public static int GetSellGold(Rarity rarity, int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetValue(ScalingValue)",
+      "id": "Global_SkillTrigger_GetValue_ScalingValue_",
+      "declaration": "public float GetValue(ScalingValue val)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "val",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Heal(ScalingValue)",
+      "id": "Global_SkillTrigger_Heal_ScalingValue_",
+      "declaration": "public HealData Heal(ScalingValue amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "IsLockedFor(DewPlayer)",
+      "id": "Global_SkillTrigger_IsLockedFor_DewPlayer_",
+      "declaration": "public bool IsLockedFor(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_SkillTrigger_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MagicDamage(ScalingValue, float)",
+      "id": "Global_SkillTrigger_MagicDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "OnCastComplete(int, CastInfo)",
+      "id": "Global_SkillTrigger_OnCastComplete_System_Int32_CastInfo_",
+      "declaration": "public override AbilityInstance OnCastComplete(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "AbilityInstance"
+    },
+    {
+      "name": "OnEquip(Entity)",
+      "id": "Global_SkillTrigger_OnEquip_Entity_",
+      "declaration": "protected override void OnEquip(Entity newOwner)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newOwner",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnLevelChange(int, int)",
+      "id": "Global_SkillTrigger_OnLevelChange_System_Int32_System_Int32_",
+      "declaration": "protected virtual void OnLevelChange(int oldLevel, int newLevel)",
+      "summary": "Called everywhere when this skill's level is changed.",
+      "parameters": [
+        {
+          "name": "oldLevel",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newLevel",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_SkillTrigger_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_SkillTrigger_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_SkillTrigger_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnUnequip(Entity)",
+      "id": "Global_SkillTrigger_OnUnequip_Entity_",
+      "declaration": "protected override void OnUnequip(Entity formerOwner)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "formerOwner",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PhysicalDamage(ScalingValue, float)",
+      "id": "Global_SkillTrigger_PhysicalDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "PhysicalMagicDamage(ScalingValue, float)",
+      "id": "Global_SkillTrigger_PhysicalMagicDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "PureDamage(ScalingValue, float)",
+      "id": "Global_SkillTrigger_PureDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "RemoveSkillBonus(SkillBonus)",
+      "id": "Global_SkillTrigger_RemoveSkillBonus_SkillBonus_",
+      "declaration": "public void RemoveSkillBonus(SkillBonus bonus)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "SkillBonus",
+          "type_uid": "Global.SkillBonus",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RpcSetPositionAndRotation(Vector3, Quaternion)",
+      "id": "Global_SkillTrigger_RpcSetPositionAndRotation_UnityEngine_Vector3_UnityEngine_Quaternion_",
+      "declaration": "public void RpcSetPositionAndRotation(Vector3 pos, Quaternion rot)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_SkillTrigger_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ShouldTickCooldown(int)",
+      "id": "Global_SkillTrigger_ShouldTickCooldown_System_Int32_",
+      "declaration": "protected override bool ShouldTickCooldown(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UpdateSkillBonus()",
+      "id": "Global_SkillTrigger_UpdateSkillBonus",
+      "declaration": "public void UpdateSkillBonus()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

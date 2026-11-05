@@ -1,0 +1,694 @@
+{
+  "uid": "Global.AbilityInstance",
+  "name": "AbilityInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-200)]\npublic abstract class AbilityInstance : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "DamageInstance",
+      "href": "Global.DamageInstance.html",
+      "uid": "Global.DamageInstance"
+    },
+    {
+      "name": "MeleeAttackInstance",
+      "href": "Global.MeleeAttackInstance.html",
+      "uid": "Global.MeleeAttackInstance"
+    },
+    {
+      "name": "MockAbilityInstance",
+      "href": "Global.MockAbilityInstance.html",
+      "uid": "Global.MockAbilityInstance"
+    },
+    {
+      "name": "PickupInstance",
+      "href": "Global.PickupInstance.html",
+      "uid": "Global.PickupInstance"
+    },
+    {
+      "name": "Projectile",
+      "href": "Global.Projectile.html",
+      "uid": "Global.Projectile"
+    },
+    {
+      "name": "PunishmentInstance",
+      "href": "Global.PunishmentInstance.html",
+      "uid": "Global.PunishmentInstance"
+    },
+    {
+      "name": "StatusEffect",
+      "href": "Global.StatusEffect.html",
+      "uid": "Global.StatusEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "budgetCost",
+      "id": "Global_AbilityInstance_budgetCost",
+      "declaration": "[BoxGroup(\"Ability Instance Settings\", true, false, 0)]\npublic int budgetCost",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chain",
+      "id": "Global_AbilityInstance_chain",
+      "declaration": "[NonSerialized]\npublic ReactionChain chain",
+      "summary": "If this instance is part of reaction, you can provide ReactionChain in this variable.\nAvailable only on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentCostSum",
+      "id": "Global_AbilityInstance_currentCostSum",
+      "declaration": "public static int currentCostSum",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentCostSumPerPlayer",
+      "id": "Global_AbilityInstance_currentCostSumPerPlayer",
+      "declaration": "public static Dictionary<DewPlayer, int> currentCostSumPerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endEffect",
+      "id": "Global_AbilityInstance_endEffect",
+      "declaration": "[BoxGroup(\"Ability Instance Settings\", true, false, 0)]\n[LabelText(\"End Effect (Attached To Caster)\")]\npublic GameObject endEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxBudget",
+      "id": "Global_AbilityInstance_maxBudget",
+      "declaration": "public static int maxBudget",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startEffect",
+      "id": "Global_AbilityInstance_startEffect",
+      "declaration": "[BoxGroup(\"Ability Instance Settings\", true, false, 0)]\n[LabelText(\"Loop Effect (Attached To Caster)\")]\npublic GameObject startEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startEffectNoStop",
+      "id": "Global_AbilityInstance_startEffectNoStop",
+      "declaration": "[BoxGroup(\"Ability Instance Settings\", true, false, 0)]\n[LabelText(\"Start Effect (Attached To Caster)\")]\npublic GameObject startEffectNoStop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultAllExceptSelf",
+      "id": "Global_AbilityInstance_tvDefaultAllExceptSelf",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultAllExceptSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultHarmfulEffectTargets",
+      "id": "Global_AbilityInstance_tvDefaultHarmfulEffectTargets",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultUsefulEffectTargets",
+      "id": "Global_AbilityInstance_tvDefaultUsefulEffectTargets",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useBudgetSystem",
+      "id": "Global_AbilityInstance_useBudgetSystem",
+      "declaration": "public static bool useBudgetSystem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "budgetPressure",
+      "id": "Global_AbilityInstance_budgetPressure",
+      "declaration": "public BudgetPressure budgetPressure { get; }",
+      "summary": "Returns current budget pressure. Costly ability instances must adjust their resource spending according to this value.Requires budgetCost to be set to non-zero value.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectiveLevel",
+      "id": "Global_AbilityInstance_effectiveLevel",
+      "declaration": "public int effectiveLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gem",
+      "id": "Global_AbilityInstance_gem",
+      "declaration": "public Gem gem { get; set; }",
+      "summary": "If this instance is from a gem, you can access the gem from here.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasOngoingSequences",
+      "id": "Global_AbilityInstance_hasOngoingSequences",
+      "declaration": "public bool hasOngoingSequences { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_AbilityInstance_info",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic CastInfo info { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillLevel",
+      "id": "Global_AbilityInstance_skillLevel",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int skillLevel { get; set; }",
+      "summary": "Level of its origin skill trigger at the time this instance was cast. Defaults to -1 or that of parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.You can override level by setting this field when the instance is preparing.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statEntity",
+      "id": "Global_AbilityInstance_statEntity",
+      "declaration": "public Entity statEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Budget_ShouldDoFullCalculations()",
+      "id": "Global_AbilityInstance_Budget_ShouldDoFullCalculations",
+      "declaration": "public bool Budget_ShouldDoFullCalculations()",
+      "summary": "Should this instance skip calculations? Based on current budget pressure.Use this as a default suggested behavior.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Budget_ShouldPlayEffects()",
+      "id": "Global_AbilityInstance_Budget_ShouldPlayEffects",
+      "declaration": "public bool Budget_ShouldPlayEffects()",
+      "summary": "Should this instance play effects? Based on current budget pressure.Use this as a default suggested behavior.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "CreateDamage(SourceType, ScalingValue, float)",
+      "id": "Global_AbilityInstance_CreateDamage_DamageData_SourceType_ScalingValue_System_Single_",
+      "declaration": "public DamageData CreateDamage(DamageData.SourceType type, ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DamageData.SourceType",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "CreateStatusEffect<T>(T, Entity, Action<T>)",
+      "id": "Global_AbilityInstance_CreateStatusEffect__1___0_Entity_System_Action___0__",
+      "declaration": "public T CreateStatusEffect<T>(T prefab, Entity victim, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateStatusEffect<T>(Entity, Action<T>)",
+      "id": "Global_AbilityInstance_CreateStatusEffect__1_Entity_System_Action___0__",
+      "declaration": "public T CreateStatusEffect<T>(Entity victim, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Damage(ScalingValue, float)",
+      "id": "Global_AbilityInstance_Damage_ScalingValue_System_Single_",
+      "declaration": "public DamageData Damage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "DefaultDamage(ScalingValue, float)",
+      "id": "Global_AbilityInstance_DefaultDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData DefaultDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "DestroyOnCondition(Func<bool>)",
+      "id": "Global_AbilityInstance_DestroyOnCondition_System_Func_System_Boolean__",
+      "declaration": "public AbilityInstance.WatchedCondition DestroyOnCondition(Func<bool> condition)",
+      "summary": "Kill this instance when condition is met.",
+      "parameters": [
+        {
+          "name": "condition",
+          "type": "System.Func<TResult><bool>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityInstance.WatchedCondition"
+    },
+    {
+      "name": "DestroyOnDeath(Entity, bool)",
+      "id": "Global_AbilityInstance_DestroyOnDeath_Entity_System_Boolean_",
+      "declaration": "public void DestroyOnDeath(Entity entity, bool includeKnockOuts = false)",
+      "summary": "Kill this instance when the specified entity dies/gets destroyed.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "includeKnockOuts",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DestroyOnDestroy(Actor)",
+      "id": "Global_AbilityInstance_DestroyOnDestroy_Actor_",
+      "declaration": "public void DestroyOnDestroy(Actor actor)",
+      "summary": "Remove this instance when the specified actor gets destroyed.",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetActorReadableName()",
+      "id": "Global_AbilityInstance_GetActorReadableName",
+      "declaration": "public override string GetActorReadableName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetValue(ScalingValue)",
+      "id": "Global_AbilityInstance_GetValue_ScalingValue_",
+      "declaration": "public float GetValue(ScalingValue val)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "val",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetValue(StarScalingValue)",
+      "id": "Global_AbilityInstance_GetValue_StarScalingValue_",
+      "declaration": "public float GetValue(StarScalingValue value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "StarScalingValue",
+          "type_uid": "Global.StarScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetValue<T>(T[])",
+      "id": "Global_AbilityInstance_GetValue__1___0___",
+      "declaration": "public T GetValue<T>(T[] val)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "val",
+          "type": "T[]",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetValueInt(StarScalingValue)",
+      "id": "Global_AbilityInstance_GetValueInt_StarScalingValue_",
+      "declaration": "public int GetValueInt(StarScalingValue value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "StarScalingValue",
+          "type_uid": "Global.StarScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "Heal(ScalingValue)",
+      "id": "Global_AbilityInstance_Heal_ScalingValue_",
+      "declaration": "public HealData Heal(ScalingValue amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_AbilityInstance_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MagicDamage(ScalingValue, float)",
+      "id": "Global_AbilityInstance_MagicDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData MagicDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_AbilityInstance_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreateSequenced()",
+      "id": "Global_AbilityInstance_OnCreateSequenced",
+      "declaration": "protected virtual IEnumerator OnCreateSequenced()",
+      "summary": "Started everywhere when this ability instance is created, running on LogicUpdates.This will stop running when this instance gets killed.Return SequenceInstructions (e.g.new SI.WaitForSeconds()) to yield this sequence.Returning null has same effect ofnew SI.WaitForNextLogicUpdate().",
+      "parameters": [],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_AbilityInstance_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_AbilityInstance_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "Called on server right before this instance to be spawned.Configure this instance's initial state here.By default this sets skillLevel to parent's level.Parent type can either be SkillTrigger, AbilityInstance, or Gem.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_AbilityInstance_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PhysicalDamage(ScalingValue, float)",
+      "id": "Global_AbilityInstance_PhysicalDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PhysicalDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "PhysicalMagicDamage(ScalingValue, float)",
+      "id": "Global_AbilityInstance_PhysicalMagicDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PhysicalMagicDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "PureDamage(ScalingValue, float)",
+      "id": "Global_AbilityInstance_PureDamage_ScalingValue_System_Single_",
+      "declaration": "public DamageData PureDamage(ScalingValue value, float procCoefficient = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        },
+        {
+          "name": "procCoefficient",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ResetBudget()",
+      "id": "Global_AbilityInstance_ResetBudget",
+      "declaration": "public static void ResetBudget()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartChargingChannel(ChargingChannel)",
+      "id": "Global_AbilityInstance_StartChargingChannel_ChargingChannel_",
+      "declaration": "public void StartChargingChannel(ChargingChannel channel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "channel",
+          "type": "ChargingChannel",
+          "type_uid": "Global.ChargingChannel",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartSequence(IEnumerator)",
+      "id": "Global_AbilityInstance_StartSequence_System_Collections_IEnumerator_",
+      "declaration": "protected void StartSequence(IEnumerator sequence)",
+      "summary": "Start a sequence that will run while this instance is alive on LogicUpdates.",
+      "parameters": [
+        {
+          "name": "sequence",
+          "type": "System.Collections.IEnumerator",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

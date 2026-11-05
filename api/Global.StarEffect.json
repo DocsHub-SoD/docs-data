@@ -1,0 +1,255 @@
+{
+  "uid": "Global.StarEffect",
+  "name": "StarEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[SaveActor(true)]\npublic class StarEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "StatusEffect",
+      "href": "Global.StatusEffect.html",
+      "uid": "Global.StatusEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "maxStarLevel",
+      "id": "Global_StarEffect_maxStarLevel",
+      "declaration": "[BoxGroup(\"Star Settings\", true, false, 0)]\npublic int maxStarLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "price",
+      "id": "Global_StarEffect_price",
+      "declaration": "[BoxGroup(\"Star Settings\", true, false, 0)]\npublic int[] price",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "requiredLevel",
+      "id": "Global_StarEffect_requiredLevel",
+      "declaration": "[BoxGroup(\"Star Settings\", true, false, 0)]\n[LabelText(\"Req. Mastery Level\")]\npublic int requiredLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "starIcon",
+      "id": "Global_StarEffect_starIcon",
+      "declaration": "[BoxGroup(\"Star Settings\", true, false, 0)]\npublic Sprite starIcon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_StarEffect_type",
+      "declaration": "[BoxGroup(\"Star Settings\", true, false, 0)]\npublic StarType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "hero",
+      "id": "Global_StarEffect_hero",
+      "declaration": "public Hero hero { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroType",
+      "id": "Global_StarEffect_heroType",
+      "declaration": "public virtual Type heroType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMovementSkillType",
+      "id": "Global_StarEffect_isMovementSkillType",
+      "declaration": "public virtual bool isMovementSkillType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "player",
+      "id": "Global_StarEffect_player",
+      "declaration": "public DewPlayer player { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skill",
+      "id": "Global_StarEffect_skill",
+      "declaration": "public SkillTrigger skill { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skills",
+      "id": "Global_StarEffect_skills",
+      "declaration": "public SkillTrigger[] skills { get; }",
+      "summary": "This never returns null.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillType",
+      "id": "Global_StarEffect_skillType",
+      "declaration": "public virtual Type skillType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "strength",
+      "id": "Global_StarEffect_strength",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic float strength { get; set; }",
+      "summary": "Strength of this star effect. Usually 1.0f, but can be lower if non-flexible star is slotted in different category slot.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DoSkill(Action<SkillTrigger>)",
+      "id": "Global_StarEffect_DoSkill_System_Action_SkillTrigger__",
+      "declaration": "public SafeAction DoSkill(Action<SkillTrigger> callback)",
+      "summary": "Do custom action on all matching skill. You can invoke the returned action to immediately call cleanup functions to stop the effect.",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><SkillTrigger>",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "DoSkill(Func<SkillTrigger, Action>)",
+      "id": "Global_StarEffect_DoSkill_System_Func_SkillTrigger_System_Action__",
+      "declaration": "public SafeAction DoSkill(Func<SkillTrigger, Action> callback)",
+      "summary": "Do custom action on all matching skill and do custom cleanup. You can invoke the returned action to immediately call cleanup functions to stop the effect.",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Func<T, TResult><SkillTrigger,System.Action>",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "DoSkillBonusAll(SkillBonus)",
+      "id": "Global_StarEffect_DoSkillBonusAll_SkillBonus_",
+      "declaration": "public SafeAction DoSkillBonusAll(SkillBonus bonus)",
+      "summary": "Note the given bonus will be cloned. You can invoke the returned action to immediately call cleanup functions to stop the effect.",
+      "parameters": [
+        {
+          "name": "bonus",
+          "type": "SkillBonus",
+          "type_uid": "Global.SkillBonus",
+          "description": ""
+        }
+      ],
+      "returns": "SafeAction"
+    },
+    {
+      "name": "IsIncompatibleWith(Hero, HeroLoadoutData)",
+      "id": "Global_StarEffect_IsIncompatibleWith_Hero_HeroLoadoutData_",
+      "declaration": "public bool IsIncompatibleWith(Hero h, HeroLoadoutData l)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "l",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSkillRelated(SkillTrigger)",
+      "id": "Global_StarEffect_IsSkillRelated_SkillTrigger_",
+      "declaration": "public bool IsSkillRelated(SkillTrigger s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSkillRelated(string)",
+      "id": "Global_StarEffect_IsSkillRelated_System_String_",
+      "declaration": "public bool IsSkillRelated(string s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

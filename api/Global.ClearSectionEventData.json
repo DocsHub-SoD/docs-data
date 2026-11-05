@@ -1,0 +1,48 @@
+{
+  "uid": "Global.ClearSectionEventData",
+  "name": "ClearSectionEventData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ClearSectionEventData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "lastMonsterKiller",
+      "id": "Global_ClearSectionEventData_lastMonsterKiller",
+      "declaration": "public Entity lastMonsterKiller",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastMonsterPosition",
+      "id": "Global_ClearSectionEventData_lastMonsterPosition",
+      "declaration": "public Vector3 lastMonsterPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "room",
+      "id": "Global_ClearSectionEventData_room",
+      "declaration": "public Room room",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sectionIndex",
+      "id": "Global_ClearSectionEventData_sectionIndex",
+      "declaration": "public int sectionIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

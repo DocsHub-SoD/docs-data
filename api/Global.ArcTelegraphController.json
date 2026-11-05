@@ -1,0 +1,140 @@
+{
+  "uid": "Global.ArcTelegraphController",
+  "name": "ArcTelegraphController",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ArcTelegraphController : MonoBehaviour, IEffectComponent, IEffectWithSpeed",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    }
+  ],
+  "fields": [
+    {
+      "name": "arcAngle",
+      "id": "Global_ArcTelegraphController_arcAngle",
+      "declaration": "public float arcAngle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_ArcTelegraphController_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fillArea",
+      "id": "Global_ArcTelegraphController_fillArea",
+      "declaration": "[FoldoutGroup(\"References\", false, 0)]\npublic MeshRenderer fillArea",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fillBorder",
+      "id": "Global_ArcTelegraphController_fillBorder",
+      "declaration": "[FoldoutGroup(\"References\", false, 0)]\npublic MeshRenderer fillBorder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "innerRadius",
+      "id": "Global_ArcTelegraphController_innerRadius",
+      "declaration": "public float innerRadius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxBorder",
+      "id": "Global_ArcTelegraphController_maxBorder",
+      "declaration": "[FoldoutGroup(\"References\", false, 0)]\npublic MeshRenderer maxBorder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "outerRadius",
+      "id": "Global_ArcTelegraphController_outerRadius",
+      "declaration": "public float outerRadius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "whiteBorder",
+      "id": "Global_ArcTelegraphController_whiteBorder",
+      "declaration": "[FoldoutGroup(\"References\", false, 0)]\npublic MeshRenderer whiteBorder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_ArcTelegraphController_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "value",
+      "id": "Global_ArcTelegraphController_value",
+      "declaration": "public float value { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ApplySpeedMultiplier(float)",
+      "id": "Global_ArcTelegraphController_ApplySpeedMultiplier_System_Single_",
+      "declaration": "public void ApplySpeedMultiplier(float speed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "speed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_ArcTelegraphController_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_ArcTelegraphController_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

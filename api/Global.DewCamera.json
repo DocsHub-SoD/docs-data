@@ -1,0 +1,72 @@
+{
+  "uid": "Global.DewCamera",
+  "name": "DewCamera",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class DewCamera : ManagerBase<DewCamera>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "DewCamera",
+      "href": "Global.DewCamera.html",
+      "uid": "Global.DewCamera"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "mainCamera",
+      "id": "Global_DewCamera_mainCamera",
+      "declaration": "public Camera mainCamera",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uiCamera",
+      "id": "Global_DewCamera_uiCamera",
+      "declaration": "public Camera uiCamera",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_DewCamera_shouldRegisterUpdates",
+      "declaration": "public override bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_DewCamera_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

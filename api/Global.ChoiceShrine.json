@@ -1,0 +1,186 @@
+{
+  "uid": "Global.ChoiceShrine",
+  "name": "ChoiceShrine",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class ChoiceShrine : Shrine, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IProp, IBanRoomNodesNearby",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Shrine",
+      "href": "Global.Shrine.html",
+      "uid": "Global.Shrine"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [
+    {
+      "name": "choices",
+      "id": "Global_ChoiceShrine_choices",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncDictionary<string, ChoiceShrineItem[]> choices",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnChoicesUpdated",
+      "id": "Global_ChoiceShrine_ClientEvent_OnChoicesUpdated",
+      "declaration": "public SafeAction ClientEvent_OnChoicesUpdated",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "itemCount",
+      "id": "Global_ChoiceShrine_itemCount",
+      "declaration": "public int itemCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onItemsPopulated",
+      "id": "Global_ChoiceShrine_onItemsPopulated",
+      "declaration": "public SafeAction<DewPlayer> onItemsPopulated",
+      "summary": "Called on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_ChoiceShrine_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdChoose(int, NetworkConnectionToClient)",
+      "id": "Global_ChoiceShrine_CmdChoose_System_Int32_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdChoose(int index, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_ChoiceShrine_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_ChoiceShrine_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPopulateChoices(DewPlayer)",
+      "id": "Global_ChoiceShrine_OnPopulateChoices_DewPlayer_",
+      "declaration": "protected abstract void OnPopulateChoices(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnUse(Entity)",
+      "id": "Global_ChoiceShrine_OnUse_Entity_",
+      "declaration": "protected override bool OnUse(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "PopulatePlayerChoices(DewPlayer)",
+      "id": "Global_ChoiceShrine_PopulatePlayerChoices_DewPlayer_",
+      "declaration": "public void PopulatePlayerChoices(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

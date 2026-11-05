@@ -1,0 +1,90 @@
+{
+  "uid": "Global.ReactionChain",
+  "name": "ReactionChain",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ReactionChain",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "DidReact(Actor, bool)",
+      "id": "Global_ReactionChain_DidReact_Actor_System_Boolean_",
+      "declaration": "public bool DidReact(Actor actor, bool checkOnlyType = false)",
+      "summary": "Check if the actor has already contributed to this reaction chain.",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "checkOnlyType",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(ReactionChain)",
+      "id": "Global_ReactionChain_Equals_ReactionChain_",
+      "declaration": "public bool Equals(ReactionChain other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_ReactionChain_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_ReactionChain_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "New(Actor)",
+      "id": "Global_ReactionChain_New_Actor_",
+      "declaration": "public ReactionChain New(Actor actor)",
+      "summary": "Returns new reaction chain with given actor in contribution.",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "ReactionChain"
+    }
+  ],
+  "events": []
+}

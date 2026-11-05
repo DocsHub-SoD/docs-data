@@ -1,0 +1,33 @@
+{
+  "uid": "Global.DewBuildProfileGroup",
+  "name": "DewBuildProfileGroup",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"New Build Profile Group\", menuName = \"Build Profile Group\")]\npublic class DewBuildProfileGroup : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "profiles",
+      "id": "Global_DewBuildProfileGroup_profiles",
+      "declaration": "[InfoBox(\"Place profiles with same content settings next to each other to build faster.\", InfoMessageType.Info, null)]\npublic List<DewBuildProfile> profiles",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Validate()",
+      "id": "Global_DewBuildProfileGroup_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

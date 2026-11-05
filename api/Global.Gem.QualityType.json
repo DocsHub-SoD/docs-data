@@ -1,0 +1,15 @@
+{
+  "uid": "Global.Gem.QualityType",
+  "name": "Gem.QualityType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum Gem.QualityType : byte",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

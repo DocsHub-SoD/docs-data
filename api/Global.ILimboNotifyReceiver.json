@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ILimboNotifyReceiver",
+  "name": "ILimboNotifyReceiver",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ILimboNotifyReceiver",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnLimboGame()",
+      "id": "Global_ILimboNotifyReceiver_OnLimboGame",
+      "declaration": "void OnLimboGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

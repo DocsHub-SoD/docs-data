@@ -1,0 +1,115 @@
+{
+  "uid": "Global.DewPool",
+  "name": "DewPool",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewPool",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "_clearAction",
+      "id": "Global_DewPool__clearAction",
+      "declaration": "public static Dictionary<Type, Action<object>> _clearAction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ClearEventsAndProcessors(Component)",
+      "id": "Global_DewPool_ClearEventsAndProcessors_UnityEngine_Component_",
+      "declaration": "public static void ClearEventsAndProcessors(Component obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Component",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetArray<T>(out ArrayReturnHandle<T>, int)",
+      "id": "Global_DewPool_GetArray__1_ArrayReturnHandle___0___System_Int32_",
+      "declaration": "public static T[] GetArray<T>(out ArrayReturnHandle<T> handle, int minSize = 128)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ArrayReturnHandle<T>",
+          "type_uid": "Global.ArrayReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "minSize",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T[]"
+    },
+    {
+      "name": "GetDictionary<TKey, TValue>(out DictionaryReturnHandle<TKey, TValue>)",
+      "id": "Global_DewPool_GetDictionary__2_DictionaryReturnHandle___0___1___",
+      "declaration": "public static Dictionary<TKey, TValue> GetDictionary<TKey, TValue>(out DictionaryReturnHandle<TKey, TValue> handle)",
+      "summary": "Get an empty dictionary of TKey, TValue.You do not need to clear the dictionary before returning.",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "DictionaryReturnHandle<TKey, TValue>",
+          "type_uid": "Global.DictionaryReturnHandle-2",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "TKey",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "TValue",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.Dictionary<TKey, TValue><TKey, TValue>"
+    },
+    {
+      "name": "GetList<T>(out ListReturnHandle<T>)",
+      "id": "Global_DewPool_GetList__1_ListReturnHandle___0___",
+      "declaration": "public static List<T> GetList<T>(out ListReturnHandle<T> handle)",
+      "summary": "Get an empty list of T.You do not need to clear the list before returning.",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<T>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><T>"
+    }
+  ],
+  "events": []
+}

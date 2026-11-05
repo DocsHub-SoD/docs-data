@@ -1,0 +1,52 @@
+{
+  "uid": "Global.CustomAIBehaviors",
+  "name": "CustomAIBehaviors",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CustomAIBehaviors",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Add(CustomAIUpdate, int)",
+      "id": "Global_CustomAIBehaviors_Add_CustomAIUpdate_System_Int32_",
+      "declaration": "public void Add(CustomAIUpdate onUpdate, int priority = 0)",
+      "summary": "Updates with lower priority value will be executed first. Return true on update if you want to stop execution of further AI updates.",
+      "parameters": [
+        {
+          "name": "onUpdate",
+          "type": "CustomAIUpdate",
+          "type_uid": "Global.CustomAIUpdate",
+          "description": ""
+        },
+        {
+          "name": "priority",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Remove(CustomAIUpdate)",
+      "id": "Global_CustomAIBehaviors_Remove_CustomAIUpdate_",
+      "declaration": "public void Remove(CustomAIUpdate onUpdate)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "onUpdate",
+          "type": "CustomAIUpdate",
+          "type_uid": "Global.CustomAIUpdate",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

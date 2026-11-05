@@ -1,0 +1,131 @@
+{
+  "uid": "Global.UI_GamepadNavigationHint",
+  "name": "UI_GamepadNavigationHint",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GamepadNavigationHint : MonoBehaviour, IGamepadNavigationHint",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IGamepadNavigationHint",
+      "href": "Global.IGamepadNavigationHint.html",
+      "uid": "Global.IGamepadNavigationHint"
+    }
+  ],
+  "fields": [
+    {
+      "name": "down",
+      "id": "Global_UI_GamepadNavigationHint_down",
+      "declaration": "[Header(\"Down\")]\n[ShowIf(\"useDifferentNavigationsPerDirection\", true)]\n[HideLabel]\npublic UI_GamepadNavigationHint.NavigationSettings down",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "left",
+      "id": "Global_UI_GamepadNavigationHint_left",
+      "declaration": "[Header(\"Left\")]\n[ShowIf(\"useDifferentNavigationsPerDirection\", true)]\n[HideLabel]\npublic UI_GamepadNavigationHint.NavigationSettings left",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "navigation",
+      "id": "Global_UI_GamepadNavigationHint_navigation",
+      "declaration": "[HideIf(\"useDifferentNavigationsPerDirection\", true)]\n[HideLabel]\npublic UI_GamepadNavigationHint.NavigationSettings navigation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "right",
+      "id": "Global_UI_GamepadNavigationHint_right",
+      "declaration": "[Header(\"Right\")]\n[ShowIf(\"useDifferentNavigationsPerDirection\", true)]\n[HideLabel]\npublic UI_GamepadNavigationHint.NavigationSettings right",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "up",
+      "id": "Global_UI_GamepadNavigationHint_up",
+      "declaration": "[Header(\"Up\")]\n[ShowIf(\"useDifferentNavigationsPerDirection\", true)]\n[HideLabel]\npublic UI_GamepadNavigationHint.NavigationSettings up",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useDifferentNavigationsPerDirection",
+      "id": "Global_UI_GamepadNavigationHint_useDifferentNavigationsPerDirection",
+      "declaration": "[ToggleLeft]\npublic bool useDifferentNavigationsPerDirection",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "TryGetDown(out IGamepadFocusable)",
+      "id": "Global_UI_GamepadNavigationHint_TryGetDown_IGamepadFocusable__",
+      "declaration": "public bool TryGetDown(out IGamepadFocusable next)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetLeft(out IGamepadFocusable)",
+      "id": "Global_UI_GamepadNavigationHint_TryGetLeft_IGamepadFocusable__",
+      "declaration": "public bool TryGetLeft(out IGamepadFocusable next)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetRight(out IGamepadFocusable)",
+      "id": "Global_UI_GamepadNavigationHint_TryGetRight_IGamepadFocusable__",
+      "declaration": "public bool TryGetRight(out IGamepadFocusable next)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetUp(out IGamepadFocusable)",
+      "id": "Global_UI_GamepadNavigationHint_TryGetUp_IGamepadFocusable__",
+      "declaration": "public bool TryGetUp(out IGamepadFocusable next)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

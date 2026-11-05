@@ -1,0 +1,40 @@
+{
+  "uid": "Global.IEntityValidator",
+  "name": "IEntityValidator",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEntityValidator",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "AlwaysTrue",
+      "id": "Global_IEntityValidator_AlwaysTrue",
+      "declaration": "public static IEntityValidator AlwaysTrue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Evaluate(Entity)",
+      "id": "Global_IEntityValidator_Evaluate_Entity_",
+      "declaration": "bool Evaluate(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,40 @@
+{
+  "uid": "Global.EventInfoSpentMana",
+  "name": "EventInfoSpentMana",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoSpentMana",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoSpentMana_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who invoked this event in an actor chain.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "amount",
+      "id": "Global_EventInfoSpentMana_amount",
+      "declaration": "public float amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entity",
+      "id": "Global_EventInfoSpentMana_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,84 @@
+{
+  "uid": "Global.DataProcessorGroup`1",
+  "name": "DataProcessorGroup<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DataProcessorGroup<T> where T : struct",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "count",
+      "id": "Global_DataProcessorGroup_1_count",
+      "declaration": "public int count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Add(DataProcessor<T>, int)",
+      "id": "Global_DataProcessorGroup_1_Add_DataProcessor__0__System_Int32_",
+      "declaration": "public void Add(DataProcessor<T> processor, int priority = 0)",
+      "summary": "Processors with lower priority value will be executed first.",
+      "parameters": [
+        {
+          "name": "processor",
+          "type": "DataProcessor<T>",
+          "type_uid": "Global.DataProcessor-1",
+          "description": ""
+        },
+        {
+          "name": "priority",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Clear()",
+      "id": "Global_DataProcessorGroup_1_Clear",
+      "declaration": "public void Clear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Process(ref T)",
+      "id": "Global_DataProcessorGroup_1_Process__0__",
+      "declaration": "public void Process(ref T data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Remove(DataProcessor<T>)",
+      "id": "Global_DataProcessorGroup_1_Remove_DataProcessor__0__",
+      "declaration": "public void Remove(DataProcessor<T> processor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "processor",
+          "type": "DataProcessor<T>",
+          "type_uid": "Global.DataProcessor-1",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

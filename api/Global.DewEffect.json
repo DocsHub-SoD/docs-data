@@ -1,0 +1,849 @@
+{
+  "uid": "Global.DewEffect",
+  "name": "DewEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewEffect",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "disablePlay",
+      "id": "Global_DewEffect_disablePlay",
+      "declaration": "public static bool disablePlay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disablePlayNew",
+      "id": "Global_DewEffect_disablePlayNew",
+      "declaration": "public static bool disablePlayNew",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ApplySpeedMultiplier(GameObject, float)",
+      "id": "Global_DewEffect_ApplySpeedMultiplier_UnityEngine_GameObject_System_Single_",
+      "declaration": "public static void ApplySpeedMultiplier(GameObject effect, float multiplier)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplySpeedMultiplierNetworked(NetworkIdentity, GameObject, float)",
+      "id": "Global_DewEffect_ApplySpeedMultiplierNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_System_Single_",
+      "declaration": "public static void ApplySpeedMultiplierNetworked(NetworkIdentity parent, GameObject effect, float multiplier)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ChangeColorObject(object, float?, float, float, float)",
+      "id": "Global_DewEffect_ChangeColorObject_System_Object_System_Nullable_System_Single__System_Single_System_Single_System_Single_",
+      "declaration": "public static void ChangeColorObject(object obj, float? hue = null, float saturationMult = 1, float valueMult = 1, float alphaMult = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "hue",
+          "type": "float?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "saturationMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "valueMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alphaMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ChangeColorRecursively(GameObject, float?, float, float, float)",
+      "id": "Global_DewEffect_ChangeColorRecursively_UnityEngine_GameObject_System_Nullable_System_Single__System_Single_System_Single_System_Single_",
+      "declaration": "public static void ChangeColorRecursively(GameObject gameObject, float? hue = null, float saturationMult = 1, float valueMult = 1, float alphaMult = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gameObject",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "hue",
+          "type": "float?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "saturationMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "valueMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "alphaMult",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetPath(Transform, Transform)",
+      "id": "Global_DewEffect_GetPath_UnityEngine_Transform_UnityEngine_Transform_",
+      "declaration": "public static string GetPath(Transform root, Transform target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "root",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Play(GameObject, Entity, NetworkIdentity)",
+      "id": "Global_DewEffect_Play_UnityEngine_GameObject_Entity_Mirror_NetworkIdentity_",
+      "declaration": "public static void Play(GameObject effect, Entity attach, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)",
+      "id": "Global_DewEffect_Play_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Mirror_NetworkIdentity_",
+      "declaration": "public static void Play(GameObject effect, Entity attach, Vector3 position, Quaternion? rotation, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play(GameObject, NetworkIdentity)",
+      "id": "Global_DewEffect_Play_UnityEngine_GameObject_Mirror_NetworkIdentity_",
+      "declaration": "public static void Play(GameObject effect, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play(GameObject, Vector3, Quaternion?, NetworkIdentity)",
+      "id": "Global_DewEffect_Play_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Mirror_NetworkIdentity_",
+      "declaration": "public static void Play(GameObject effect, Vector3 position, Quaternion? rotation, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayCastEffect(GameObject, CastInfo, CastMethodType, float, NetworkIdentity)",
+      "id": "Global_DewEffect_PlayCastEffect_UnityEngine_GameObject_CastInfo_CastMethodType_System_Single_Mirror_NetworkIdentity_",
+      "declaration": "public static void PlayCastEffect(GameObject effect, CastInfo info, CastMethodType method, float duration = -1, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "method",
+          "type": "CastMethodType",
+          "type_uid": "Global.CastMethodType",
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayCastEffectNetworked(NetworkIdentity, GameObject, CastInfo, CastMethodType, float)",
+      "id": "Global_DewEffect_PlayCastEffectNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_CastInfo_CastMethodType_System_Single_",
+      "declaration": "public static void PlayCastEffectNetworked(NetworkIdentity parent, GameObject effect, CastInfo info, CastMethodType method, float duration = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "method",
+          "type": "CastMethodType",
+          "type_uid": "Global.CastMethodType",
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)",
+      "id": "Global_DewEffect_PlayNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Entity entity, Vector3 position, Quaternion? rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNetworked(NetworkIdentity, GameObject, Entity)",
+      "id": "Global_DewEffect_PlayNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_Entity_",
+      "declaration": "public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)",
+      "id": "Global_DewEffect_PlayNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public static void PlayNetworked(NetworkIdentity parent, GameObject effect, Vector3 position, Quaternion? rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNetworked(NetworkIdentity, GameObject)",
+      "id": "Global_DewEffect_PlayNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_",
+      "declaration": "public static void PlayNetworked(NetworkIdentity parent, GameObject effect)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNew(GameObject, Entity, NetworkIdentity)",
+      "id": "Global_DewEffect_PlayNew_UnityEngine_GameObject_Entity_Mirror_NetworkIdentity_",
+      "declaration": "public static void PlayNew(GameObject effect, Entity attach, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNew(GameObject, Entity, Vector3, Quaternion?, NetworkIdentity)",
+      "id": "Global_DewEffect_PlayNew_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Mirror_NetworkIdentity_",
+      "declaration": "public static void PlayNew(GameObject effect, Entity attach, Vector3 position, Quaternion? rotation, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNew(GameObject, NetworkIdentity)",
+      "id": "Global_DewEffect_PlayNew_UnityEngine_GameObject_Mirror_NetworkIdentity_",
+      "declaration": "public static void PlayNew(GameObject effect, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNew(GameObject, Vector3, Quaternion?, NetworkIdentity)",
+      "id": "Global_DewEffect_PlayNew_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Mirror_NetworkIdentity_",
+      "declaration": "public static void PlayNew(GameObject effect, Vector3 position, Quaternion? rotation, NetworkIdentity parent = null)",
+      "summary": "Provide parent if the effect originates from an entity and needs GameBoss/GameSelf/GameOthers clarifications.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNewNetworked(NetworkIdentity, GameObject, Entity, Vector3, Quaternion?)",
+      "id": "Global_DewEffect_PlayNewNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, Entity entity, Vector3 position, Quaternion? rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNewNetworked(NetworkIdentity, GameObject, Entity)",
+      "id": "Global_DewEffect_PlayNewNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_Entity_",
+      "declaration": "public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNewNetworked(NetworkIdentity, GameObject, Vector3, Quaternion?)",
+      "id": "Global_DewEffect_PlayNewNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect, Vector3 position, Quaternion? rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayNewNetworked(NetworkIdentity, GameObject)",
+      "id": "Global_DewEffect_PlayNewNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_",
+      "declaration": "public static void PlayNewNetworked(NetworkIdentity parent, GameObject effect)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ResolvePath(Transform, string, bool)",
+      "id": "Global_DewEffect_ResolvePath_UnityEngine_Transform_System_String_System_Boolean_",
+      "declaration": "public static GameObject ResolvePath(Transform root, string path, bool warnOnFail = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "root",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "warnOnFail",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "Stop(GameObject)",
+      "id": "Global_DewEffect_Stop_UnityEngine_GameObject_",
+      "declaration": "public static void Stop(GameObject effect)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopNetworked(NetworkIdentity, GameObject)",
+      "id": "Global_DewEffect_StopNetworked_Mirror_NetworkIdentity_UnityEngine_GameObject_",
+      "declaration": "public static void StopNetworked(NetworkIdentity parent, GameObject effect)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "Mirror.NetworkIdentity",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TintObject(object, Color, bool)",
+      "id": "Global_DewEffect_TintObject_System_Object_UnityEngine_Color_System_Boolean_",
+      "declaration": "public static void TintObject(object obj, Color color, bool dontLogWarning = false)",
+      "summary": "Tint color of the object. (Multiply given color to its color)",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "dontLogWarning",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TintRecursively(GameObject, Color)",
+      "id": "Global_DewEffect_TintRecursively_UnityEngine_GameObject_UnityEngine_Color_",
+      "declaration": "public static void TintRecursively(GameObject gameObject, Color color)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gameObject",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

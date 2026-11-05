@@ -1,0 +1,48 @@
+{
+  "uid": "Global.GetNodeIndexSettings",
+  "name": "GetNodeIndexSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GetNodeIndexSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "allowedTypes",
+      "id": "Global_GetNodeIndexSettings_allowedTypes",
+      "declaration": "public WorldNodeType[] allowedTypes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "avoidMainModifier",
+      "id": "Global_GetNodeIndexSettings_avoidMainModifier",
+      "declaration": "public bool avoidMainModifier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "desiredDistance",
+      "id": "Global_GetNodeIndexSettings_desiredDistance",
+      "declaration": "public Vector2Int desiredDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "preferCloserToExit",
+      "id": "Global_GetNodeIndexSettings_preferCloserToExit",
+      "declaration": "public bool preferCloserToExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

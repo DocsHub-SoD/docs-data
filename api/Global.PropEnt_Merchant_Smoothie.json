@@ -1,0 +1,158 @@
+{
+  "uid": "Global.PropEnt_Merchant_Smoothie",
+  "name": "PropEnt_Merchant_Smoothie",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PropEnt_Merchant_Smoothie : PropEnt_Merchant_Base, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable, IEnableWandering",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    },
+    {
+      "name": "PropEnt_Merchant_Base",
+      "href": "Global.PropEnt_Merchant_Base.html",
+      "uid": "Global.PropEnt_Merchant_Base"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IEnableWandering",
+      "href": "Global.IEnableWandering.html",
+      "uid": "Global.IEnableWandering"
+    }
+  ],
+  "fields": [
+    {
+      "name": "souvenirsCount",
+      "id": "Global_PropEnt_Merchant_Smoothie_souvenirsCount",
+      "declaration": "public int souvenirsCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "treasuresCount",
+      "id": "Global_PropEnt_Merchant_Smoothie_treasuresCount",
+      "declaration": "public int treasuresCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "shouldWanderAround",
+      "id": "Global_PropEnt_Merchant_Smoothie_shouldWanderAround",
+      "declaration": "public bool shouldWanderAround { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnCreate()",
+      "id": "Global_PropEnt_Merchant_Smoothie_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteract(Entity, bool)",
+      "id": "Global_PropEnt_Merchant_Smoothie_OnInteract_Entity_System_Boolean_",
+      "declaration": "public override void OnInteract(Entity entity, bool alt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "alt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPopulateMerchandises(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Smoothie_OnPopulateMerchandises_DewPlayer_",
+      "declaration": "protected override void OnPopulateMerchandises(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRefresh(DewPlayer)",
+      "id": "Global_PropEnt_Merchant_Smoothie_OnRefresh_DewPlayer_",
+      "declaration": "protected override void OnRefresh(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

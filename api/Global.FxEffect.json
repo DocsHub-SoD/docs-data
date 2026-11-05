@@ -1,0 +1,73 @@
+{
+  "uid": "Global.FxEffect",
+  "name": "FxEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxEffect : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "bindToEntity",
+      "id": "Global_FxEffect_bindToEntity",
+      "declaration": "public EffectBindEntityType bindToEntity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delayOnEnablePlayOneFrame",
+      "id": "Global_FxEffect_delayOnEnablePlayOneFrame",
+      "declaration": "[ShowIf(\"playOnEnable\", true)]\npublic bool delayOnEnablePlayOneFrame",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playNew",
+      "id": "Global_FxEffect_playNew",
+      "declaration": "public bool playNew",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playOnEnable",
+      "id": "Global_FxEffect_playOnEnable",
+      "declaration": "public bool playOnEnable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "typeSubstring",
+      "id": "Global_FxEffect_typeSubstring",
+      "declaration": "[ShowIf(\"@bindToEntity == EffectBindEntityType.FindType\", true)]\npublic string typeSubstring",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_FxEffect_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxEffect_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

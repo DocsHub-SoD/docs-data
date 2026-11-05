@@ -1,0 +1,120 @@
+{
+  "uid": "Global.MonsterSpawnRule",
+  "name": "MonsterSpawnRule",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"New Monster Spawn Rule\", menuName = \"Monster Spawn Rule\")]\npublic class MonsterSpawnRule : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "initialDelay",
+      "id": "Global_MonsterSpawnRule_initialDelay",
+      "declaration": "public Vector2 initialDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isBossSpawn",
+      "id": "Global_MonsterSpawnRule_isBossSpawn",
+      "declaration": "public bool isBossSpawn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextWavePopulationThreshold",
+      "id": "Global_MonsterSpawnRule_nextWavePopulationThreshold",
+      "declaration": "[HideIf(\"isBossSpawn\", true)]\npublic Vector2 nextWavePopulationThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onOverPopulation",
+      "id": "Global_MonsterSpawnRule_onOverPopulation",
+      "declaration": "[HideIf(\"isBossSpawn\", true)]\npublic OverpopulationBehavior onOverPopulation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pool",
+      "id": "Global_MonsterSpawnRule_pool",
+      "declaration": "public MonsterPool pool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "populationPerWave",
+      "id": "Global_MonsterSpawnRule_populationPerWave",
+      "declaration": "[HideIf(\"isBossSpawn\", true)]\npublic Vector2 populationPerWave",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnMaxDistance",
+      "id": "Global_MonsterSpawnRule_spawnMaxDistance",
+      "declaration": "public float spawnMaxDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnMinDistance",
+      "id": "Global_MonsterSpawnRule_spawnMinDistance",
+      "declaration": "public float spawnMinDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stallCancelTimeout",
+      "id": "Global_MonsterSpawnRule_stallCancelTimeout",
+      "declaration": "[ShowIf(\"@onOverPopulation == OverpopulationBehavior.Stall\", true)]\n[HideIf(\"isBossSpawn\", true)]\npublic float stallCancelTimeout",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wavesMax",
+      "id": "Global_MonsterSpawnRule_wavesMax",
+      "declaration": "[HideIf(\"isBossSpawn\", true)]\n[HorizontalGroup(\"Waves Min, Max/A\", 0, 0, 0, 0)]\n[HideLabel]\npublic int wavesMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wavesMin",
+      "id": "Global_MonsterSpawnRule_wavesMin",
+      "declaration": "[TitleGroup(\"Waves Min, Max\", null, TitleAlignments.Left, true, true, false, 0, HorizontalLine = false, BoldTitle = false)]\n[HorizontalGroup(\"Waves Min, Max/A\", 0, 0, 0, 0)]\n[HideLabel]\n[HideIf(\"isBossSpawn\", true)]\npublic int wavesMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "waveTimeoutMax",
+      "id": "Global_MonsterSpawnRule_waveTimeoutMax",
+      "declaration": "[HorizontalGroup(\"Wave Timeout Min, Max/A\", 0, 0, 0, 0)]\n[HideLabel]\n[HideIf(\"isBossSpawn\", true)]\npublic float waveTimeoutMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "waveTimeoutMin",
+      "id": "Global_MonsterSpawnRule_waveTimeoutMin",
+      "declaration": "[TitleGroup(\"Wave Timeout Min, Max\", null, TitleAlignments.Left, true, true, false, 0, HorizontalLine = false, BoldTitle = false)]\n[HorizontalGroup(\"Wave Timeout Min, Max/A\", 0, 0, 0, 0)]\n[HideLabel]\n[HideIf(\"isBossSpawn\", true)]\npublic float waveTimeoutMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

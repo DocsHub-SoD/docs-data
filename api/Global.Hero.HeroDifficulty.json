@@ -1,0 +1,15 @@
+{
+  "uid": "Global.Hero.HeroDifficulty",
+  "name": "Hero.HeroDifficulty",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum Hero.HeroDifficulty",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewExpressionException",
+  "name": "DewExpressionException",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewExpressionException : Exception",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

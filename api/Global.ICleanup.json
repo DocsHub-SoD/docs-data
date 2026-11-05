@@ -1,0 +1,33 @@
+{
+  "uid": "Global.ICleanup",
+  "name": "ICleanup",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICleanup",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "canDestroy",
+      "id": "Global_ICleanup_canDestroy",
+      "declaration": "bool canDestroy { get; }",
+      "summary": "If anyICleanupreports false, destroy call will be delayed.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnCleanup()",
+      "id": "Global_ICleanup_OnCleanup",
+      "declaration": "void OnCleanup()",
+      "summary": "Called on server to ready itself before getting destroyed.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

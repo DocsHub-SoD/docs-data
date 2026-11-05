@@ -1,0 +1,120 @@
+{
+  "uid": "Global.RoomRewards",
+  "name": "RoomRewards",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RoomComponentStartDependency(typeof(RoomModifiers))]\n[RoomComponentStartDependency(typeof(RoomMonsters))]\npublic class RoomRewards : RoomComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableRewards",
+      "id": "Global_RoomRewards_disableRewards",
+      "declaration": "public bool disableRewards",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemBonusQuality",
+      "id": "Global_RoomRewards_gemBonusQuality",
+      "declaration": "[NonSerialized]\npublic int gemBonusQuality",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "giveHighRarityReward",
+      "id": "Global_RoomRewards_giveHighRarityReward",
+      "declaration": "[NonSerialized]\npublic bool giveHighRarityReward",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillBonusLevel",
+      "id": "Global_RoomRewards_skillBonusLevel",
+      "declaration": "[NonSerialized]\npublic int skillBonusLevel",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isRegularRewardDisabled",
+      "id": "Global_RoomRewards_isRegularRewardDisabled",
+      "declaration": "public bool isRegularRewardDisabled { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DisableRegularRewards()",
+      "id": "Global_RoomRewards_DisableRegularRewards",
+      "declaration": "public void DisableRegularRewards()",
+      "summary": "Disable all shrines and props that would normally spawn as a reward, except the ones from room modifiers.(O) Default skill and essence shrines(O) Natural spawning golds and dream dusts(X) RoomMod_GoldEverywhere golds(X) Shrines from RoomModifierBase.PlaceShrine()",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DropChaosReward(Vector3, bool)",
+      "id": "Global_RoomRewards_DropChaosReward_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public void DropChaosReward(Vector3 pos, bool isHighQuality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isHighQuality",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStartServer()",
+      "id": "Global_RoomRewards_OnRoomStartServer",
+      "declaration": "public override void OnRoomStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpawnCombatCoreShrines()",
+      "id": "Global_RoomRewards_SpawnCombatCoreShrines",
+      "declaration": "public void SpawnCombatCoreShrines()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

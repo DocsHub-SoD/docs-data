@@ -1,0 +1,15 @@
+{
+  "uid": "Global.SI.WaitForNextLogicUpdate",
+  "name": "SI.WaitForNextLogicUpdate",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct SI.WaitForNextLogicUpdate",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

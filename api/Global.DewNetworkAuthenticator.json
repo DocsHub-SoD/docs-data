@@ -1,0 +1,92 @@
+{
+  "uid": "Global.DewNetworkAuthenticator",
+  "name": "DewNetworkAuthenticator",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewNetworkAuthenticator : NetworkAuthenticator",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnAuthRequestMessage(NetworkConnectionToClient, DewAuthRequestMessage)",
+      "id": "Global_DewNetworkAuthenticator_OnAuthRequestMessage_Mirror_NetworkConnectionToClient_DewAuthRequestMessage_",
+      "declaration": "public void OnAuthRequestMessage(NetworkConnectionToClient conn, DewAuthRequestMessage msg)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "conn",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "msg",
+          "type": "DewAuthRequestMessage",
+          "type_uid": "Global.DewAuthRequestMessage",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnAuthResponseMessage(DewAuthResponseMessage)",
+      "id": "Global_DewNetworkAuthenticator_OnAuthResponseMessage_DewAuthResponseMessage_",
+      "declaration": "public void OnAuthResponseMessage(DewAuthResponseMessage msg)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "msg",
+          "type": "DewAuthResponseMessage",
+          "type_uid": "Global.DewAuthResponseMessage",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnClientAuthenticate()",
+      "id": "Global_DewNetworkAuthenticator_OnClientAuthenticate",
+      "declaration": "public override void OnClientAuthenticate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_DewNetworkAuthenticator_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_DewNetworkAuthenticator_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopClient()",
+      "id": "Global_DewNetworkAuthenticator_OnStopClient",
+      "declaration": "public override void OnStopClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_DewNetworkAuthenticator_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

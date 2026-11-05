@@ -1,0 +1,56 @@
+{
+  "uid": "Global.IGamepadFocusable",
+  "name": "IGamepadFocusable",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IGamepadFocusable : IGamepadFocusListener",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CanBeFocused()",
+      "id": "Global_IGamepadFocusable_CanBeFocused",
+      "declaration": "bool CanBeFocused()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "CanHoldConfirmToRepeat()",
+      "id": "Global_IGamepadFocusable_CanHoldConfirmToRepeat",
+      "declaration": "bool CanHoldConfirmToRepeat()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "GetBehavior()",
+      "id": "Global_IGamepadFocusable_GetBehavior",
+      "declaration": "FocusableBehavior GetBehavior()",
+      "summary": "",
+      "parameters": [],
+      "returns": "FocusableBehavior"
+    },
+    {
+      "name": "GetSelectionDisplayType()",
+      "id": "Global_IGamepadFocusable_GetSelectionDisplayType",
+      "declaration": "SelectionDisplayType GetSelectionDisplayType()",
+      "summary": "",
+      "parameters": [],
+      "returns": "SelectionDisplayType"
+    },
+    {
+      "name": "GetTransform()",
+      "id": "Global_IGamepadFocusable_GetTransform",
+      "declaration": "RectTransform GetTransform()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.RectTransform"
+    }
+  ],
+  "events": []
+}

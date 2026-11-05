@@ -1,0 +1,47 @@
+{
+  "uid": "Global.DewAudioSettings_Platform",
+  "name": "DewAudioSettings_Platform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewAudioSettings_Platform : IInitializableSettings",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IInitializableSettings",
+      "href": "Global.IInitializableSettings.html",
+      "uid": "Global.IInitializableSettings"
+    }
+  ],
+  "fields": [
+    {
+      "name": "useAdvancedPrioritization",
+      "id": "Global_DewAudioSettings_Platform_useAdvancedPrioritization",
+      "declaration": "public bool useAdvancedPrioritization",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewAudioSettings_Platform_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewAudioSettings_Platform_Initialize",
+      "declaration": "public void Initialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

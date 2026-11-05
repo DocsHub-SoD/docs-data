@@ -1,0 +1,41 @@
+{
+  "uid": "Global.AnalyticsEquipmentData",
+  "name": "AnalyticsEquipmentData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct AnalyticsEquipmentData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "gems",
+      "id": "Global_AnalyticsEquipmentData_gems",
+      "declaration": "public List<(GemLocation, string, int)> gems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skills",
+      "id": "Global_AnalyticsEquipmentData_skills",
+      "declaration": "public List<(HeroSkillLocation, string, int)> skills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ToBase64()",
+      "id": "Global_AnalyticsEquipmentData_ToBase64",
+      "declaration": "public string ToBase64()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,98 @@
+{
+  "uid": "Global.PropEnt_Merchant_Backpack",
+  "name": "PropEnt_Merchant_Backpack",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PropEnt_Merchant_Backpack : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    }
+  ],
+  "fields": [
+    {
+      "name": "deathEffect",
+      "id": "Global_PropEnt_Merchant_Backpack_deathEffect",
+      "declaration": "public GameObject deathEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnDelay",
+      "id": "Global_PropEnt_Merchant_Backpack_spawnDelay",
+      "declaration": "public float spawnDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnSkillRatio",
+      "id": "Global_PropEnt_Merchant_Backpack_spawnSkillRatio",
+      "declaration": "public float spawnSkillRatio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnDeath(EventInfoKill)",
+      "id": "Global_PropEnt_Merchant_Backpack_OnDeath_EventInfoKill_",
+      "declaration": "protected override void OnDeath(EventInfoKill info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoKill",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

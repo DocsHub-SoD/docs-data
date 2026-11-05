@@ -1,0 +1,49 @@
+{
+  "uid": "Global.UI_Window",
+  "name": "UI_Window",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_Window : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "backdropPrefab",
+      "id": "Global_UI_Window_backdropPrefab",
+      "declaration": "public GameObject backdropPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dragArea",
+      "id": "Global_UI_Window_dragArea",
+      "declaration": "public UI_Window_DragArea dragArea",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "enableBackdrop",
+      "id": "Global_UI_Window_enableBackdrop",
+      "declaration": "public bool enableBackdrop { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDraggable",
+      "id": "Global_UI_Window_isDraggable",
+      "declaration": "public bool isDraggable { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,40 @@
+{
+  "uid": "Global.PerLaunchOptionVisibility",
+  "name": "PerLaunchOptionVisibility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PerLaunchOptionVisibility : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "alwaysShowInEditor",
+      "id": "Global_PerLaunchOptionVisibility_alwaysShowInEditor",
+      "declaration": "public bool alwaysShowInEditor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hideIf",
+      "id": "Global_PerLaunchOptionVisibility_hideIf",
+      "declaration": "public PerLaunchOptionVisibility.LaunchOptions hideIf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showIf",
+      "id": "Global_PerLaunchOptionVisibility_showIf",
+      "declaration": "public PerLaunchOptionVisibility.LaunchOptions showIf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

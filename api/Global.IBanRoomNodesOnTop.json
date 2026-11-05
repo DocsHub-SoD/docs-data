@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IBanRoomNodesOnTop",
+  "name": "IBanRoomNodesOnTop",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IBanRoomNodesOnTop",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

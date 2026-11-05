@@ -1,0 +1,522 @@
+{
+  "uid": "Global.Hero",
+  "name": "Hero",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(HeroSkill))]\npublic class Hero : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "accessories",
+      "id": "Global_Hero_accessories",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<string> accessories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cDestruction",
+      "id": "Global_Hero_cDestruction",
+      "declaration": "[BoxGroup(\"Constellation Settings\", true, false, 0)]\npublic HeroConstellationSettings cDestruction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cDisplayBaseAngle",
+      "id": "Global_Hero_cDisplayBaseAngle",
+      "declaration": "[BoxGroup(\"Constellation Settings\", true, false, 0)]\npublic float cDisplayBaseAngle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cFlexible",
+      "id": "Global_Hero_cFlexible",
+      "declaration": "[BoxGroup(\"Constellation Settings\", true, false, 0)]\npublic HeroConstellationSettings cFlexible",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cImagination",
+      "id": "Global_Hero_cImagination",
+      "declaration": "[BoxGroup(\"Constellation Settings\", true, false, 0)]\npublic HeroConstellationSettings cImagination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "classType",
+      "id": "Global_Hero_classType",
+      "declaration": "[BoxGroup(\"Hero Settings\", true, false, 0)]\npublic Hero.HeroClassType classType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnIsInCombatChanged",
+      "id": "Global_Hero_ClientHeroEvent_OnIsInCombatChanged",
+      "declaration": "public SafeAction<bool> ClientHeroEvent_OnIsInCombatChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnKillOrAssist",
+      "id": "Global_Hero_ClientHeroEvent_OnKillOrAssist",
+      "declaration": "public SafeAction<EventInfoKill> ClientHeroEvent_OnKillOrAssist",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnKnockedOut",
+      "id": "Global_Hero_ClientHeroEvent_OnKnockedOut",
+      "declaration": "public SafeAction<EventInfoKill> ClientHeroEvent_OnKnockedOut",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnLevelChanged",
+      "id": "Global_Hero_ClientHeroEvent_OnLevelChanged",
+      "declaration": "public SafeAction<EventInfoHeroLevelUp> ClientHeroEvent_OnLevelChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnRevive",
+      "id": "Global_Hero_ClientHeroEvent_OnRevive",
+      "declaration": "public SafeAction<Hero> ClientHeroEvent_OnRevive",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientHeroEvent_OnSkillUse",
+      "id": "Global_Hero_ClientHeroEvent_OnSkillUse",
+      "declaration": "public SafeAction<EventInfoSkillUse> ClientHeroEvent_OnSkillUse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cLife",
+      "id": "Global_Hero_cLife",
+      "declaration": "[BoxGroup(\"Constellation Settings\", true, false, 0)]\npublic HeroConstellationSettings cLife",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decoConstellationPrefab",
+      "id": "Global_Hero_decoConstellationPrefab",
+      "declaration": "[BoxGroup(\"Hero Settings\", true, false, 0)]\npublic GameObject decoConstellationPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficulty",
+      "id": "Global_Hero_difficulty",
+      "declaration": "[BoxGroup(\"Hero Settings\", true, false, 0)]\npublic Hero.HeroDifficulty difficulty",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleProcessor",
+      "id": "Global_Hero_dismantleProcessor",
+      "declaration": "public DataProcessorGroup<int, Hero, Actor> dismantleProcessor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeFromPool",
+      "id": "Global_Hero_excludeFromPool",
+      "declaration": "[BoxGroup(\"Hero Settings\", true, false, 0)]\npublic bool excludeFromPool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HeroEvent_OnAbilityInstanceBeforePrepareFromSkill",
+      "id": "Global_Hero_HeroEvent_OnAbilityInstanceBeforePrepareFromSkill",
+      "declaration": "public SafeAction<EventInfoSkillAbilityInstance> HeroEvent_OnAbilityInstanceBeforePrepareFromSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HeroEvent_OnAbilityInstanceCreatedFromSkill",
+      "id": "Global_Hero_HeroEvent_OnAbilityInstanceCreatedFromSkill",
+      "declaration": "public SafeAction<EventInfoSkillAbilityInstance> HeroEvent_OnAbilityInstanceCreatedFromSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_Hero_icon",
+      "declaration": "[BoxGroup(\"Hero Settings\", true, false, 0)]\npublic Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "InCombatCheckInterval",
+      "id": "Global_Hero_InCombatCheckInterval",
+      "declaration": "public const float InCombatCheckInterval = 0.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isWeaponHolstered",
+      "id": "Global_Hero_isWeaponHolstered",
+      "declaration": "[NonSerialized]\npublic bool isWeaponHolstered",
+      "summary": "Checked locally.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainColor",
+      "id": "Global_Hero_mainColor",
+      "declaration": "[BoxGroup(\"Hero Settings\", true, false, 0)]\npublic Color mainColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MarkAsInCombatDuration",
+      "id": "Global_Hero_MarkAsInCombatDuration",
+      "declaration": "public const float MarkAsInCombatDuration = 2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxLevelOverride",
+      "id": "Global_Hero_maxLevelOverride",
+      "declaration": "public int? maxLevelOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "summons",
+      "id": "Global_Hero_summons",
+      "declaration": "[NonSerialized]\npublic List<Summon> summons",
+      "summary": "Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "exp",
+      "id": "Global_Hero_exp",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterCreation)]\npublic int exp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Hero_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInCombat",
+      "id": "Global_Hero_isInCombat",
+      "declaration": "public bool isInCombat { get; }",
+      "summary": "Did this hero dealt damage to an enemy or took damage from an enemy?Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isKnockedOut",
+      "id": "Global_Hero_isKnockedOut",
+      "declaration": "public bool isKnockedOut { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadout",
+      "id": "Global_Hero_loadout",
+      "declaration": "public HeroLoadoutData loadout { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxExp",
+      "id": "Global_Hero_maxExp",
+      "declaration": "public int maxExp { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxLevel",
+      "id": "Global_Hero_maxLevel",
+      "declaration": "public int maxLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Skill",
+      "id": "Global_Hero_Skill",
+      "declaration": "public HeroSkill Skill { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skin",
+      "id": "Global_Hero_skin",
+      "declaration": "public string skin { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_Hero_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AIUpdate(ref EntityAIContext)",
+      "id": "Global_Hero_AIUpdate_EntityAIContext__",
+      "declaration": "protected override void AIUpdate(ref EntityAIContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EntityAIContext",
+          "type_uid": "Global.EntityAIContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_Hero_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdTeleportToWaypoint(Room_Waypoint)",
+      "id": "Global_Hero_CmdTeleportToWaypoint_Room_Waypoint_",
+      "declaration": "public void CmdTeleportToWaypoint(Room_Waypoint waypoint)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "waypoint",
+          "type": "Room_Waypoint",
+          "type_uid": "Global.Room_Waypoint",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_Hero_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetConstellationSettings(StarType)",
+      "id": "Global_Hero_GetConstellationSettings_StarType_",
+      "declaration": "public HeroConstellationSettings GetConstellationSettings(StarType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "StarType",
+          "type_uid": "Global.StarType",
+          "description": ""
+        }
+      ],
+      "returns": "HeroConstellationSettings"
+    },
+    {
+      "name": "GetStaggerSettings()",
+      "id": "Global_Hero_GetStaggerSettings",
+      "declaration": "protected override Entity.StaggerSettings GetStaggerSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Entity.StaggerSettings"
+    },
+    {
+      "name": "IsMeleeHero()",
+      "id": "Global_Hero_IsMeleeHero",
+      "declaration": "public bool IsMeleeHero()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "IsRangedHero()",
+      "id": "Global_Hero_IsRangedHero",
+      "declaration": "public bool IsRangedHero()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LoadEntityModelLocal()",
+      "id": "Global_Hero_LoadEntityModelLocal",
+      "declaration": "public override void LoadEntityModelLocal()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MarkAsInCombat()",
+      "id": "Global_Hero_MarkAsInCombat",
+      "declaration": "public void MarkAsInCombat()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Hero_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_Hero_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnModelLoaded()",
+      "id": "Global_Hero_OnModelLoaded",
+      "declaration": "public override void OnModelLoaded()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_Hero_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartAuthority()",
+      "id": "Global_Hero_OnStartAuthority",
+      "declaration": "public override void OnStartAuthority()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Hero_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopAuthority()",
+      "id": "Global_Hero_OnStopAuthority",
+      "declaration": "public override void OnStopAuthority()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ReceiveExperience(int)",
+      "id": "Global_Hero_ReceiveExperience_System_Int32_",
+      "declaration": "public void ReceiveExperience(int amount)",
+      "summary": "Add to experience of this hero.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

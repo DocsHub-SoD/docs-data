@@ -1,0 +1,126 @@
+{
+  "uid": "Global.FloatingWindowManager",
+  "name": "FloatingWindowManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FloatingWindowManager : ManagerBase<FloatingWindowManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "FloatingWindowManager",
+      "href": "Global.FloatingWindowManager.html",
+      "uid": "Global.FloatingWindowManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "backButtonPriority",
+      "id": "Global_FloatingWindowManager_backButtonPriority",
+      "declaration": "public int backButtonPriority",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxDistance",
+      "id": "Global_FloatingWindowManager_maxDistance",
+      "declaration": "public float maxDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onTargetChanged",
+      "id": "Global_FloatingWindowManager_onTargetChanged",
+      "declaration": "public Action<MonoBehaviour> onTargetChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentTarget",
+      "id": "Global_FloatingWindowManager_currentTarget",
+      "declaration": "public MonoBehaviour currentTarget { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastSetTargetUnscaledTime",
+      "id": "Global_FloatingWindowManager_lastSetTargetUnscaledTime",
+      "declaration": "public float lastSetTargetUnscaledTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ClearTarget()",
+      "id": "Global_FloatingWindowManager_ClearTarget",
+      "declaration": "public void ClearTarget()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_FloatingWindowManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_FloatingWindowManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetTarget(MonoBehaviour)",
+      "id": "Global_FloatingWindowManager_SetTarget_UnityEngine_MonoBehaviour_",
+      "declaration": "public void SetTarget(MonoBehaviour newTarget)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newTarget",
+          "type": "UnityEngine.MonoBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,279 @@
+{
+  "uid": "Global.DewDifficultySettings",
+  "name": "DewDifficultySettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[CreateAssetMenu(fileName = \"New Dew Difficulty Settings\", menuName = \"Dew Difficulty Settings\")]\n[DewResourceLink(ResourceLinkBy.Name)]\npublic class DewDifficultySettings : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "beneficialNodeMultiplier",
+      "id": "Global_DewDifficultySettings_beneficialNodeMultiplier",
+      "declaration": "[Title(\"World\", null, TitleAlignments.Left, true, true)]\npublic float beneficialNodeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bossKillBonusStardust",
+      "id": "Global_DewDifficultySettings_bossKillBonusStardust",
+      "declaration": "public int bossKillBonusStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageFactorAfterLoop",
+      "id": "Global_DewDifficultySettings_damageFactorAfterLoop",
+      "declaration": "public float damageFactorAfterLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageFactorBeforeLoop",
+      "id": "Global_DewDifficultySettings_damageFactorBeforeLoop",
+      "declaration": "public float damageFactorBeforeLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficultyColor",
+      "id": "Global_DewDifficultySettings_difficultyColor",
+      "declaration": "public Color difficultyColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableBleedOuts",
+      "id": "Global_DewDifficultySettings_enableBleedOuts",
+      "declaration": "public bool enableBleedOuts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemyAbilityHasteFlat",
+      "id": "Global_DewDifficultySettings_enemyAbilityHasteFlat",
+      "declaration": "[LabelText(\"AbilHaste %\")]\npublic float enemyAbilityHasteFlat",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemyAttackSpeedPercentage",
+      "id": "Global_DewDifficultySettings_enemyAttackSpeedPercentage",
+      "declaration": "[LabelText(\"AtkSpeed %\")]\npublic float enemyAttackSpeedPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemyHealthPercentage",
+      "id": "Global_DewDifficultySettings_enemyHealthPercentage",
+      "declaration": "[Title(\"Enemy Base Stats\", null, TitleAlignments.Left, true, true)]\n[LabelText(\"Health %\")]\npublic float enemyHealthPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemyMovementSpeedPercentage",
+      "id": "Global_DewDifficultySettings_enemyMovementSpeedPercentage",
+      "declaration": "[LabelText(\"MovSpeed %\")]\npublic float enemyMovementSpeedPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemyPowerPercentage",
+      "id": "Global_DewDifficultySettings_enemyPowerPercentage",
+      "declaration": "[LabelText(\"Power %\")]\npublic float enemyPowerPercentage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "harmfulNodeMultiplier",
+      "id": "Global_DewDifficultySettings_harmfulNodeMultiplier",
+      "declaration": "public float harmfulNodeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healRawMultiplier",
+      "id": "Global_DewDifficultySettings_healRawMultiplier",
+      "declaration": "public float healRawMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthFactorAfterLoop",
+      "id": "Global_DewDifficultySettings_healthFactorAfterLoop",
+      "declaration": "public float healthFactorAfterLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthFactorBeforeLoop",
+      "id": "Global_DewDifficultySettings_healthFactorBeforeLoop",
+      "declaration": "[Title(\"Enemy Scaling Stats\", null, TitleAlignments.Left, true, true)]\npublic float healthFactorBeforeLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroicBossArmor",
+      "id": "Global_DewDifficultySettings_heroicBossArmor",
+      "declaration": "public float heroicBossArmor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterSpreadChance",
+      "id": "Global_DewDifficultySettings_hunterSpreadChance",
+      "declaration": "public float hunterSpreadChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_DewDifficultySettings_icon",
+      "declaration": "public Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "iconScale",
+      "id": "Global_DewDifficultySettings_iconScale",
+      "declaration": "public float iconScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lostSoulDistance",
+      "id": "Global_DewDifficultySettings_lostSoulDistance",
+      "declaration": "public Vector2Int lostSoulDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPopulationMultiplier",
+      "id": "Global_DewDifficultySettings_maxPopulationMultiplier",
+      "declaration": "[Title(\"Generic\", null, TitleAlignments.Left, true, true)]\npublic float maxPopulationMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossArmor",
+      "id": "Global_DewDifficultySettings_miniBossArmor",
+      "declaration": "[Space(16)]\npublic float miniBossArmor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionSampleCount",
+      "id": "Global_DewDifficultySettings_positionSampleCount",
+      "declaration": "[Title(\"Enemy AI\", null, TitleAlignments.Left, true, true)]\n[LabelText(\"Sample Count\")]\npublic int positionSampleCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionSampleInterval",
+      "id": "Global_DewDifficultySettings_positionSampleInterval",
+      "declaration": "[LabelText(\"Sample Interval\")]\npublic float positionSampleInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "positionSampleLagBehindFrames",
+      "id": "Global_DewDifficultySettings_positionSampleLagBehindFrames",
+      "declaration": "[LabelText(\"Lag Behind Count\")]\npublic int positionSampleLagBehindFrames",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "predictionStrengthCurve",
+      "id": "Global_DewDifficultySettings_predictionStrengthCurve",
+      "declaration": "public AnimationCurve predictionStrengthCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "regenOrbChanceMultiplier",
+      "id": "Global_DewDifficultySettings_regenOrbChanceMultiplier",
+      "declaration": "public float regenOrbChanceMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scoreMultiplier",
+      "id": "Global_DewDifficultySettings_scoreMultiplier",
+      "declaration": "public float scoreMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "specialSkillChanceMultiplier",
+      "id": "Global_DewDifficultySettings_specialSkillChanceMultiplier",
+      "declaration": "public float specialSkillChanceMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetScaledZoneIndexForDamage(float)",
+      "id": "Global_DewDifficultySettings_GetScaledZoneIndexForDamage_System_Single_",
+      "declaration": "public float GetScaledZoneIndexForDamage(float zi = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zi",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetScaledZoneIndexForHealth(float)",
+      "id": "Global_DewDifficultySettings_GetScaledZoneIndexForHealth_System_Single_",
+      "declaration": "public float GetScaledZoneIndexForHealth(float zi = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zi",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

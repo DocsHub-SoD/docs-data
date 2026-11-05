@@ -1,0 +1,159 @@
+{
+  "uid": "Global.DewGameplaySettings_User",
+  "name": "DewGameplaySettings_User",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewGameplaySettings_User : IInitializableSettings",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IInitializableSettings",
+      "href": "Global.IInitializableSettings.html",
+      "uid": "Global.IInitializableSettings"
+    }
+  ],
+  "fields": [
+    {
+      "name": "abbreviateBigDamageNumbers",
+      "id": "Global_DewGameplaySettings_User_abbreviateBigDamageNumbers",
+      "declaration": "public bool abbreviateBigDamageNumbers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "confirmMemoryEditByHold",
+      "id": "Global_DewGameplaySettings_User_confirmMemoryEditByHold",
+      "declaration": "public ConfirmMemoryEditBehavior confirmMemoryEditByHold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cursorColor",
+      "id": "Global_DewGameplaySettings_User_cursorColor",
+      "declaration": "public float cursorColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cursorScale",
+      "id": "Global_DewGameplaySettings_User_cursorScale",
+      "declaration": "public float cursorScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageNumberVisibility",
+      "id": "Global_DewGameplaySettings_User_damageNumberVisibility",
+      "declaration": "public DamageNumberVisibility damageNumberVisibility",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableTutorial",
+      "id": "Global_DewGameplaySettings_User_disableTutorial",
+      "declaration": "public bool disableTutorial",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableProfanityFilter",
+      "id": "Global_DewGameplaySettings_User_enableProfanityFilter",
+      "declaration": "public bool enableProfanityFilter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gamepadVibrationStrength",
+      "id": "Global_DewGameplaySettings_User_gamepadVibrationStrength",
+      "declaration": "public float gamepadVibrationStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "highlightCharactersOnMouseOver",
+      "id": "Global_DewGameplaySettings_User_highlightCharactersOnMouseOver",
+      "declaration": "public bool highlightCharactersOnMouseOver",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killScreenEffectsStrength",
+      "id": "Global_DewGameplaySettings_User_killScreenEffectsStrength",
+      "declaration": "public float killScreenEffectsStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reduceOtherPlayerEffectsStrength",
+      "id": "Global_DewGameplaySettings_User_reduceOtherPlayerEffectsStrength",
+      "declaration": "public ReduceOtherPlayerEffectsStrength reduceOtherPlayerEffectsStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "screenShakeStrength",
+      "id": "Global_DewGameplaySettings_User_screenShakeStrength",
+      "declaration": "public float screenShakeStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showHunterWarning",
+      "id": "Global_DewGameplaySettings_User_showHunterWarning",
+      "declaration": "public bool showHunterWarning",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uiScale",
+      "id": "Global_DewGameplaySettings_User_uiScale",
+      "declaration": "public float uiScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockSkillsOutsideEditMode",
+      "id": "Global_DewGameplaySettings_User_unlockSkillsOutsideEditMode",
+      "declaration": "public bool unlockSkillsOutsideEditMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewGameplaySettings_User_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewGameplaySettings_User_Initialize",
+      "declaration": "public void Initialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

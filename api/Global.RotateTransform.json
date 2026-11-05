@@ -1,0 +1,32 @@
+{
+  "uid": "Global.RotateTransform",
+  "name": "RotateTransform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RotateTransform : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "speed",
+      "id": "Global_RotateTransform_speed",
+      "declaration": "public Vector3 speed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useUnscaledTime",
+      "id": "Global_RotateTransform_useUnscaledTime",
+      "declaration": "public bool useUnscaledTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

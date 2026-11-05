@@ -1,0 +1,152 @@
+{
+  "uid": "Global.FinalStats",
+  "name": "FinalStats",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct FinalStats",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "abilityHaste",
+      "id": "Global_FinalStats_abilityHaste",
+      "declaration": "public float abilityHaste",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "abilityPower",
+      "id": "Global_FinalStats_abilityPower",
+      "declaration": "public float abilityPower",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armor",
+      "id": "Global_FinalStats_armor",
+      "declaration": "public float armor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamage",
+      "id": "Global_FinalStats_attackDamage",
+      "declaration": "public float attackDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackSpeedMultiplier",
+      "id": "Global_FinalStats_attackSpeedMultiplier",
+      "declaration": "public float attackSpeedMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "coldEffectAmp",
+      "id": "Global_FinalStats_coldEffectAmp",
+      "declaration": "public float coldEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critAmp",
+      "id": "Global_FinalStats_critAmp",
+      "declaration": "public float critAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChance",
+      "id": "Global_FinalStats_critChance",
+      "declaration": "public float critChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "darkEffectAmp",
+      "id": "Global_FinalStats_darkEffectAmp",
+      "declaration": "public float darkEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireEffectAmp",
+      "id": "Global_FinalStats_fireEffectAmp",
+      "declaration": "public float fireEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthRegen",
+      "id": "Global_FinalStats_healthRegen",
+      "declaration": "public float healthRegen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightEffectAmp",
+      "id": "Global_FinalStats_lightEffectAmp",
+      "declaration": "public float lightEffectAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "manaRegen",
+      "id": "Global_FinalStats_manaRegen",
+      "declaration": "public float manaRegen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealth",
+      "id": "Global_FinalStats_maxHealth",
+      "declaration": "public float maxHealth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxMana",
+      "id": "Global_FinalStats_maxMana",
+      "declaration": "public float maxMana",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "movementSpeedMultiplier",
+      "id": "Global_FinalStats_movementSpeedMultiplier",
+      "declaration": "public float movementSpeedMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tenacity",
+      "id": "Global_FinalStats_tenacity",
+      "declaration": "public float tenacity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

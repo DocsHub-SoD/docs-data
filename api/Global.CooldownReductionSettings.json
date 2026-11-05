@@ -1,0 +1,48 @@
+{
+  "uid": "Global.CooldownReductionSettings",
+  "name": "CooldownReductionSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct CooldownReductionSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "amount",
+      "id": "Global_CooldownReductionSettings_amount",
+      "declaration": "public float amount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreCanReceiveCooldown",
+      "id": "Global_CooldownReductionSettings_ignoreCanReceiveCooldown",
+      "declaration": "public bool ignoreCanReceiveCooldown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isUnscaled",
+      "id": "Global_CooldownReductionSettings_isUnscaled",
+      "declaration": "public bool isUnscaled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minThreshold",
+      "id": "Global_CooldownReductionSettings_minThreshold",
+      "declaration": "public float minThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

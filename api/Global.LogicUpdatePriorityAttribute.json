@@ -1,0 +1,24 @@
+{
+  "uid": "Global.LogicUpdatePriorityAttribute",
+  "name": "LogicUpdatePriorityAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Class, Inherited = true)]\npublic class LogicUpdatePriorityAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "priority",
+      "id": "Global_LogicUpdatePriorityAttribute_priority",
+      "declaration": "public readonly int priority",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

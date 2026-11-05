@@ -1,0 +1,100 @@
+{
+  "uid": "Global.MeshHighlightProvider",
+  "name": "MeshHighlightProvider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MeshHighlightProvider : HighlightProvider, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "HighlightProvider",
+      "href": "Global.HighlightProvider.html",
+      "uid": "Global.HighlightProvider"
+    },
+    {
+      "name": "EntityHighlightProvider",
+      "href": "Global.EntityHighlightProvider.html",
+      "uid": "Global.EntityHighlightProvider"
+    },
+    {
+      "name": "InteractableMeshHighlightProvider",
+      "href": "Global.InteractableMeshHighlightProvider.html",
+      "uid": "Global.InteractableMeshHighlightProvider"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "meshHighlight",
+      "id": "Global_MeshHighlightProvider_meshHighlight",
+      "declaration": "public HighlightEffect meshHighlight { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_MeshHighlightProvider_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_MeshHighlightProvider_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnClickTimeUpdated()",
+      "id": "Global_MeshHighlightProvider_OnClickTimeUpdated",
+      "declaration": "protected override void OnClickTimeUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCursorStatusUpdated()",
+      "id": "Global_MeshHighlightProvider_OnCursorStatusUpdated",
+      "declaration": "protected override void OnCursorStatusUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_MeshHighlightProvider_OnDestroy",
+      "declaration": "protected void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_MeshHighlightProvider_Start",
+      "declaration": "protected virtual void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

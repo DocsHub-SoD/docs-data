@@ -1,0 +1,105 @@
+{
+  "uid": "Global.FxPointLight",
+  "name": "FxPointLight",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(Light))]\npublic class FxPointLight : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    }
+  ],
+  "fields": [
+    {
+      "name": "animateColor",
+      "id": "Global_FxPointLight_animateColor",
+      "declaration": "public bool animateColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "animateIntensity",
+      "id": "Global_FxPointLight_animateIntensity",
+      "declaration": "public bool animateIntensity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "animateRange",
+      "id": "Global_FxPointLight_animateRange",
+      "declaration": "public bool animateRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "colorOverValue",
+      "id": "Global_FxPointLight_colorOverValue",
+      "declaration": "[ShowIf(\"animateColor\", true)]\npublic Gradient colorOverValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "intensityMultiplier",
+      "id": "Global_FxPointLight_intensityMultiplier",
+      "declaration": "[ShowIf(\"animateIntensity\", true)]\npublic float intensityMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rangeMultiplier",
+      "id": "Global_FxPointLight_rangeMultiplier",
+      "declaration": "[ShowIf(\"animateRange\", true)]\npublic float rangeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnInit()",
+      "id": "Global_FxPointLight_OnInit",
+      "declaration": "protected override void OnInit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxPointLight_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

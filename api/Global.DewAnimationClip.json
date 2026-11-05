@@ -1,0 +1,154 @@
+{
+  "uid": "Global.DewAnimationClip",
+  "name": "DewAnimationClip",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[DewResourceLink(ResourceLinkBy.Guid)]\n[CreateAssetMenu(fileName = \"New Dew Animation Clip\", menuName = \"Dew Animation Clip\")]\npublic class DewAnimationClip : ScriptableObject, ILinkedByGuid",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ILinkedByGuid",
+      "href": "Global.ILinkedByGuid.html",
+      "uid": "Global.ILinkedByGuid"
+    }
+  ],
+  "fields": [
+    {
+      "name": "entries",
+      "id": "Global_DewAnimationClip_entries",
+      "declaration": "public DewAnimationEntry[] entries",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hideWeaponOnHeroes",
+      "id": "Global_DewAnimationClip_hideWeaponOnHeroes",
+      "declaration": "public bool hideWeaponOnHeroes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onlyUpperBody",
+      "id": "Global_DewAnimationClip_onlyUpperBody",
+      "declaration": "public bool onlyUpperBody",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideWalk",
+      "id": "Global_DewAnimationClip_overrideWalk",
+      "declaration": "[InfoBox(\"Override Walk cannot be Full if animating only upper body!\", InfoMessageType.Error, null, VisibleIf = \"@onlyUpperBody && overrideWalk == DewAnimationClip.OverrideWalkBehavior.Full\")]\npublic DewAnimationClip.OverrideWalkBehavior overrideWalk",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideWalkNormalizedDuration",
+      "id": "Global_DewAnimationClip_overrideWalkNormalizedDuration",
+      "declaration": "[ShowIf(\"@overrideWalk != OverrideWalkBehavior.None\", true)]\npublic float overrideWalkNormalizedDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "resourceId",
+      "id": "Global_DewAnimationClip_resourceId",
+      "declaration": "public string resourceId { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetEntry()",
+      "id": "Global_DewAnimationClip_GetEntry",
+      "declaration": "public DewAnimationEntry GetEntry()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewAnimationEntry"
+    },
+    {
+      "name": "GetEntry(int)",
+      "id": "Global_DewAnimationClip_GetEntry_System_Int32_",
+      "declaration": "public DewAnimationEntry GetEntry(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewAnimationEntry"
+    },
+    {
+      "name": "GetEntry(float)",
+      "id": "Global_DewAnimationClip_GetEntry_System_Single_",
+      "declaration": "public DewAnimationEntry GetEntry(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewAnimationEntry"
+    },
+    {
+      "name": "GetEntryIndex()",
+      "id": "Global_DewAnimationClip_GetEntryIndex",
+      "declaration": "public int GetEntryIndex()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetEntryIndex(float, int)",
+      "id": "Global_DewAnimationClip_GetEntryIndex_System_Single_System_Int32_",
+      "declaration": "public static int GetEntryIndex(float clipSelectValue, int entriesLength)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "clipSelectValue",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entriesLength",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetEntryIndex(float)",
+      "id": "Global_DewAnimationClip_GetEntryIndex_System_Single_",
+      "declaration": "public int GetEntryIndex(float clipSelectValue)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "clipSelectValue",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,72 @@
+{
+  "uid": "Global.ChatManager.Message",
+  "name": "ChatManager.Message",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ChatManager.Message",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "args",
+      "id": "Global_ChatManager_Message_args",
+      "declaration": "public string[] args",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "content",
+      "id": "Global_ChatManager_Message_content",
+      "declaration": "public string content",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "itemCustomData",
+      "id": "Global_ChatManager_Message_itemCustomData",
+      "declaration": "public string itemCustomData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "itemLevel",
+      "id": "Global_ChatManager_Message_itemLevel",
+      "declaration": "public int itemLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "itemPrice",
+      "id": "Global_ChatManager_Message_itemPrice",
+      "declaration": "public Cost itemPrice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "itemType",
+      "id": "Global_ChatManager_Message_itemType",
+      "declaration": "public string itemType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_ChatManager_Message_type",
+      "declaration": "public ChatManager.MessageType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

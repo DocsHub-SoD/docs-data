@@ -1,0 +1,128 @@
+{
+  "uid": "Global.AssetRef`1",
+  "name": "AssetRef<T>",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct AssetRef<T> where T : Object",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "guid",
+      "id": "Global_AssetRef_1_guid",
+      "declaration": "public string guid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActor",
+      "id": "Global_AssetRef_1_isActor",
+      "declaration": "public bool isActor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMonoBehaviour",
+      "id": "Global_AssetRef_1_isMonoBehaviour",
+      "declaration": "public bool isMonoBehaviour",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "typeAssemblyQualifiedName",
+      "id": "Global_AssetRef_1_typeAssemblyQualifiedName",
+      "declaration": "public string typeAssemblyQualifiedName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "typeName",
+      "id": "Global_AssetRef_1_typeName",
+      "declaration": "public string typeName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "asset",
+      "id": "Global_AssetRef_1_asset",
+      "declaration": "[JsonIgnore]\npublic T asset { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightAsset",
+      "id": "Global_AssetRef_1_lightAsset",
+      "declaration": "[JsonIgnore]\npublic T lightAsset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ClearCache()",
+      "id": "Global_AssetRef_1_ClearCache",
+      "declaration": "public void ClearCache()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Equals(AssetRef<T>)",
+      "id": "Global_AssetRef_1_Equals_AssetRef__0__",
+      "declaration": "public bool Equals(AssetRef<T> other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "AssetRef<T>",
+          "type_uid": "Global.AssetRef-1",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_AssetRef_1_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_AssetRef_1_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetType()",
+      "id": "Global_AssetRef_1_GetType",
+      "declaration": "[Obsolete(\"Using GetType() on AssetRefs is typically a mistake\", true)]\npublic Type GetType()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Type"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,31 @@
+{
+  "uid": "Global.ILobbyCharacterModelOnFocus",
+  "name": "ILobbyCharacterModelOnFocus",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ILobbyCharacterModelOnFocus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnLobbyCharacterFocus(bool)",
+      "id": "Global_ILobbyCharacterModelOnFocus_OnLobbyCharacterFocus_System_Boolean_",
+      "declaration": "void OnLobbyCharacterFocus(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

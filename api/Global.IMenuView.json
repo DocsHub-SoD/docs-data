@@ -1,0 +1,48 @@
+{
+  "uid": "Global.IMenuView",
+  "name": "IMenuView",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IMenuView",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CanShowMenu()",
+      "id": "Global_IMenuView_CanShowMenu",
+      "declaration": "bool CanShowMenu()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "HideMenu()",
+      "id": "Global_IMenuView_HideMenu",
+      "declaration": "void HideMenu()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IsShowing()",
+      "id": "Global_IMenuView_IsShowing",
+      "declaration": "bool IsShowing()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ShowMenu()",
+      "id": "Global_IMenuView_ShowMenu",
+      "declaration": "void ShowMenu()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

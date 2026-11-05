@@ -1,0 +1,47 @@
+{
+  "uid": "Global.ImageComponentAnimated",
+  "name": "ImageComponentAnimated",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class ImageComponentAnimated : ImageComponent",
+  "inheritance": [
+    {
+      "name": "ImageComponent",
+      "href": "Global.ImageComponent.html",
+      "uid": "Global.ImageComponent"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "useUnscaledTime",
+      "id": "Global_ImageComponentAnimated_useUnscaledTime",
+      "declaration": "public bool useUnscaledTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "deltaTime",
+      "id": "Global_ImageComponentAnimated_deltaTime",
+      "declaration": "public float deltaTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "time",
+      "id": "Global_ImageComponentAnimated_time",
+      "declaration": "public float time { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.ConsoleBindItemType",
+  "name": "ConsoleBindItemType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum ConsoleBindItemType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

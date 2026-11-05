@@ -1,0 +1,15 @@
+{
+  "uid": "Global.CustomAIUpdate",
+  "name": "CustomAIUpdate",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate bool CustomAIUpdate(ref EntityAIContext context)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

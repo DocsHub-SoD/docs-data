@@ -1,0 +1,15 @@
+{
+  "uid": "Global.Hero.HeroMainStatType",
+  "name": "Hero.HeroMainStatType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum Hero.HeroMainStatType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

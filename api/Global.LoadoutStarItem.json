@@ -1,0 +1,32 @@
+{
+  "uid": "Global.LoadoutStarItem",
+  "name": "LoadoutStarItem",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct LoadoutStarItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "level",
+      "id": "Global_LoadoutStarItem_level",
+      "declaration": "public int level",
+      "summary": "This is only used in loadout data sent to servers.This is pure level as-is of player's save data, before getting offset by valid/invalid slot placements.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "name",
+      "id": "Global_LoadoutStarItem_name",
+      "declaration": "public string name",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

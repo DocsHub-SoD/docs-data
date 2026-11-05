@@ -1,0 +1,69 @@
+{
+  "uid": "Global.UI_EmoteWheel_Item",
+  "name": "UI_EmoteWheel_Item",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_EmoteWheel_Item : UI_StationaryEmote",
+  "inheritance": [
+    {
+      "name": "UI_StationaryEmote",
+      "href": "Global.UI_StationaryEmote.html",
+      "uid": "Global.UI_StationaryEmote"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "highlightObject",
+      "id": "Global_UI_EmoteWheel_Item_highlightObject",
+      "declaration": "public GameObject highlightObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nonHighlightObject",
+      "id": "Global_UI_EmoteWheel_Item_nonHighlightObject",
+      "declaration": "public GameObject nonHighlightObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "SetHighlight(bool)",
+      "id": "Global_UI_EmoteWheel_Item_SetHighlight_System_Boolean_",
+      "declaration": "public void SetHighlight(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Setup(string)",
+      "id": "Global_UI_EmoteWheel_Item_Setup_System_String_",
+      "declaration": "public override void Setup(string emoteName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "emoteName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

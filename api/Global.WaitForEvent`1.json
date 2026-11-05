@@ -1,0 +1,24 @@
+{
+  "uid": "Global.WaitForEvent`1",
+  "name": "WaitForEvent<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class WaitForEvent<T> : CustomYieldInstruction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "keepWaiting",
+      "id": "Global_WaitForEvent_1_keepWaiting",
+      "declaration": "public override bool keepWaiting { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

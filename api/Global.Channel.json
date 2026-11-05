@@ -1,0 +1,202 @@
+{
+  "uid": "Global.Channel",
+  "name": "Channel",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Channel",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "blockedActions",
+      "id": "Global_Channel_blockedActions",
+      "declaration": "public Channel.BlockedAction blockedActions",
+      "summary": "Blocked actions for the owner of this channel.This channel will fail if any of the cancelable blocks is disobeyed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_Channel_duration",
+      "declaration": "public float duration",
+      "summary": "Total duration of this channel.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAttack",
+      "id": "Global_Channel_isAttack",
+      "declaration": "public bool isAttack",
+      "summary": "Only a single attack channel can exist in an entity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onCancel",
+      "id": "Global_Channel_onCancel",
+      "declaration": "public Action onCancel",
+      "summary": "Callback function to be called when this channel has been canceled.This can be because of either an invalidation flag from any of the validators, or cancelable block being canceled by an entity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onComplete",
+      "id": "Global_Channel_onComplete",
+      "declaration": "public Action onComplete",
+      "summary": "Callback function to be called when this channel has been successfully completed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onTick",
+      "id": "Global_Channel_onTick",
+      "declaration": "public Action<float> onTick",
+      "summary": "Called every logic update tick while channel is alive.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uncancellableTime",
+      "id": "Global_Channel_uncancellableTime",
+      "declaration": "public float uncancellableTime",
+      "summary": "If this channel is cancellable, it won't be cancellable during this period to prevent accidental cancel.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "elapsedTime",
+      "id": "Global_Channel_elapsedTime",
+      "declaration": "public float elapsedTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAlive",
+      "id": "Global_Channel_isAlive",
+      "declaration": "public bool isAlive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddOnCancel(Action)",
+      "id": "Global_Channel_AddOnCancel_System_Action_",
+      "declaration": "public Channel AddOnCancel(Action callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "AddOnComplete(Action)",
+      "id": "Global_Channel_AddOnComplete_System_Action_",
+      "declaration": "public Channel AddOnComplete(Action callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "AddOnTick(Action<float>)",
+      "id": "Global_Channel_AddOnTick_System_Action_System_Single__",
+      "declaration": "public Channel AddOnTick(Action<float> callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><float>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "AddValidation(IBinaryEntityValidator, Entity)",
+      "id": "Global_Channel_AddValidation_IBinaryEntityValidator_Entity_",
+      "declaration": "public Channel AddValidation(IBinaryEntityValidator validator, Entity entity)",
+      "summary": "Adds an binary entity validation for this channel. This channel will fail if any of the added validators evaluates to false.",
+      "parameters": [
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "AddValidation(IEntityValidator)",
+      "id": "Global_Channel_AddValidation_IEntityValidator_",
+      "declaration": "public Channel AddValidation(IEntityValidator validator)",
+      "summary": "Adds an entity validation for this channel. This channel will fail if any of the added validators evaluates to false.",
+      "parameters": [
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    },
+    {
+      "name": "Cancel()",
+      "id": "Global_Channel_Cancel",
+      "declaration": "public Channel Cancel()",
+      "summary": "Cancel this channel next channel update.",
+      "parameters": [],
+      "returns": "Channel"
+    },
+    {
+      "name": "Complete()",
+      "id": "Global_Channel_Complete",
+      "declaration": "public Channel Complete()",
+      "summary": "Complete this channel next channel update.",
+      "parameters": [],
+      "returns": "Channel"
+    },
+    {
+      "name": "Dispatch(Entity)",
+      "id": "Global_Channel_Dispatch_Entity_",
+      "declaration": "public Channel Dispatch(Entity e)",
+      "summary": "Dispatch this channel.",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "Channel"
+    }
+  ],
+  "events": []
+}

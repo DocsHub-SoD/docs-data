@@ -1,0 +1,136 @@
+{
+  "uid": "Global.PropEntity",
+  "name": "PropEntity",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PropEntity : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEnt_Merchant_Backpack",
+      "href": "Global.PropEnt_Merchant_Backpack.html",
+      "uid": "Global.PropEnt_Merchant_Backpack"
+    },
+    {
+      "name": "PropEnt_Merchant_Base",
+      "href": "Global.PropEnt_Merchant_Base.html",
+      "uid": "Global.PropEnt_Merchant_Base"
+    },
+    {
+      "name": "PropEnt_Stone_DreamDust",
+      "href": "Global.PropEnt_Stone_DreamDust.html",
+      "uid": "Global.PropEnt_Stone_DreamDust"
+    },
+    {
+      "name": "PropEnt_Stone_Gold",
+      "href": "Global.PropEnt_Stone_Gold.html",
+      "uid": "Global.PropEnt_Stone_Gold"
+    },
+    {
+      "name": "PropEnt_Stone_Nightmare",
+      "href": "Global.PropEnt_Stone_Nightmare.html",
+      "uid": "Global.PropEnt_Stone_Nightmare"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    }
+  ],
+  "fields": [
+    {
+      "name": "hitInvulnerableTime",
+      "id": "Global_PropEntity_hitInvulnerableTime",
+      "declaration": "[ShowIf(\"takeOneDamageOnHit\", true)]\npublic float hitInvulnerableTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isUnstoppable",
+      "id": "Global_PropEntity_isUnstoppable",
+      "declaration": "public bool isUnstoppable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takeOneDamageOnHit",
+      "id": "Global_PropEntity_takeOneDamageOnHit",
+      "declaration": "public bool takeOneDamageOnHit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isRegularReward",
+      "id": "Global_PropEntity_isRegularReward",
+      "declaration": "public virtual bool isRegularReward { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleSpawnRateWithPlayers",
+      "id": "Global_PropEntity_scaleSpawnRateWithPlayers",
+      "declaration": "public bool scaleSpawnRateWithPlayers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetStaggerSettings()",
+      "id": "Global_PropEntity_GetStaggerSettings",
+      "declaration": "protected override Entity.StaggerSettings GetStaggerSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Entity.StaggerSettings"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_PropEntity_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

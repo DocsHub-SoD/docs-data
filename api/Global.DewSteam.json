@@ -1,0 +1,124 @@
+{
+  "uid": "Global.DewSteam",
+  "name": "DewSteam",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewSteam",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onGameOverlayShownChanged",
+      "id": "Global_DewSteam_onGameOverlayShownChanged",
+      "declaration": "public static SafeAction<bool> onGameOverlayShownChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isAchievementReady",
+      "id": "Global_DewSteam_isAchievementReady",
+      "declaration": "public static bool isAchievementReady { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInitialized",
+      "id": "Global_DewSteam_isInitialized",
+      "declaration": "public static bool isInitialized { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "steamId",
+      "id": "Global_DewSteam_steamId",
+      "declaration": "public static CSteamID steamId { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetTicketForWebApi(string)",
+      "id": "Global_DewSteam_GetTicketForWebApi_System_String_",
+      "declaration": "public static UniTask<SteamTicketForWebApi> GetTicketForWebApi(string pchIdentity = \"DewOwnership\")",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pchIdentity",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cysharp.Threading.Tasks.UniTask<T><SteamTicketForWebApi>"
+    },
+    {
+      "name": "TryStartGamepadInput(string, string, bool, bool, int, Action<string>, Action)",
+      "id": "Global_DewSteam_TryStartGamepadInput_System_String_System_String_System_Boolean_System_Boolean_System_Int32_System_Action_System_String__System_Action_",
+      "declaration": "public static bool TryStartGamepadInput(string previousText, string placeholderText, bool isMultiline, bool isPassword, int maxCharacters, Action<string> onConfirm, Action onCancel)",
+      "summary": "If Steam gamepad input is not available, this returns false and no callbacks are called.",
+      "parameters": [
+        {
+          "name": "previousText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "placeholderText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isMultiline",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isPassword",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxCharacters",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onConfirm",
+          "type": "System.Action<T><string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UnsubscribeItem()",
+      "id": "Global_DewSteam_UnsubscribeItem",
+      "declaration": "public static void UnsubscribeItem()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,177 @@
+{
+  "uid": "Global.LogicBehaviour",
+  "name": "LogicBehaviour",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LogicBehaviour : MonoBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "CharacterModelDisplay",
+      "href": "Global.CharacterModelDisplay.html",
+      "uid": "Global.CharacterModelDisplay"
+    },
+    {
+      "name": "CinematicCameraHelper",
+      "href": "Global.CinematicCameraHelper.html",
+      "uid": "Global.CinematicCameraHelper"
+    },
+    {
+      "name": "CustomLogicBehavior",
+      "href": "Global.CustomLogicBehavior.html",
+      "uid": "Global.CustomLogicBehavior"
+    },
+    {
+      "name": "DewBeamRenderer",
+      "href": "Global.DewBeamRenderer.html",
+      "uid": "Global.DewBeamRenderer"
+    },
+    {
+      "name": "DewCanvas",
+      "href": "Global.DewCanvas.html",
+      "uid": "Global.DewCanvas"
+    },
+    {
+      "name": "FxAttachToEntity",
+      "href": "Global.FxAttachToEntity.html",
+      "uid": "Global.FxAttachToEntity"
+    },
+    {
+      "name": "FxCastTelegraph",
+      "href": "Global.FxCastTelegraph.html",
+      "uid": "Global.FxCastTelegraph"
+    },
+    {
+      "name": "FxRepeatedEffect",
+      "href": "Global.FxRepeatedEffect.html",
+      "uid": "Global.FxRepeatedEffect"
+    },
+    {
+      "name": "HighlightProvider",
+      "href": "Global.HighlightProvider.html",
+      "uid": "Global.HighlightProvider"
+    },
+    {
+      "name": "ManagerBase<T>",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "PlayLobby_Character",
+      "href": "Global.PlayLobby_Character.html",
+      "uid": "Global.PlayLobby_Character"
+    },
+    {
+      "name": "PlayLobby_Fireplace",
+      "href": "Global.PlayLobby_Fireplace.html",
+      "uid": "Global.PlayLobby_Fireplace"
+    },
+    {
+      "name": "RoomSection",
+      "href": "Global.RoomSection.html",
+      "uid": "Global.RoomSection"
+    },
+    {
+      "name": "RoomSectionComponent",
+      "href": "Global.RoomSectionComponent.html",
+      "uid": "Global.RoomSectionComponent"
+    },
+    {
+      "name": "Title_LastGameCharacters",
+      "href": "Global.Title_LastGameCharacters.html",
+      "uid": "Global.Title_LastGameCharacters"
+    },
+    {
+      "name": "UI_BindItem",
+      "href": "Global.UI_BindItem.html",
+      "uid": "Global.UI_BindItem"
+    },
+    {
+      "name": "UI_GamepadBindButton",
+      "href": "Global.UI_GamepadBindButton.html",
+      "uid": "Global.UI_GamepadBindButton"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_LogicBehaviour_shouldRegisterUpdates",
+      "declaration": "public virtual bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_LogicBehaviour_FrameUpdate",
+      "declaration": "public virtual void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetComponent<T>(out T)",
+      "id": "Global_LogicBehaviour_GetComponent__1___0__",
+      "declaration": "protected void GetComponent<T>(out T comp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "comp",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_LogicBehaviour_LogicUpdate_System_Single_",
+      "declaration": "public virtual void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_LogicBehaviour_OnDisable",
+      "declaration": "protected virtual void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_LogicBehaviour_OnEnable",
+      "declaration": "protected virtual void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

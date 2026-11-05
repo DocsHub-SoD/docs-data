@@ -1,0 +1,48 @@
+{
+  "uid": "Global.PerPlatformVisibility",
+  "name": "PerPlatformVisibility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PerPlatformVisibility : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "drmfree",
+      "id": "Global_PerPlatformVisibility_drmfree",
+      "declaration": "[Title(\"Show In...\", null, TitleAlignments.Left, true, true)]\npublic bool drmfree",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "editor",
+      "id": "Global_PerPlatformVisibility_editor",
+      "declaration": "[LabelText(\"Always Show In Editor\")]\npublic bool editor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "steam",
+      "id": "Global_PerPlatformVisibility_steam",
+      "declaration": "public bool steam",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stove",
+      "id": "Global_PerPlatformVisibility_stove",
+      "declaration": "public bool stove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

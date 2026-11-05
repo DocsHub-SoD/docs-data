@@ -1,0 +1,15 @@
+{
+  "uid": "Global.JoystickClickAction",
+  "name": "JoystickClickAction",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum JoystickClickAction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

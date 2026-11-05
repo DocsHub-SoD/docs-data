@@ -1,0 +1,143 @@
+{
+  "uid": "Global.DewReverieItem",
+  "name": "DewReverieItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class DewReverieItem : DewGameObserverWithProgress, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewPersistentGameObserver",
+      "href": "Global.DewPersistentGameObserver.html",
+      "uid": "Global.DewPersistentGameObserver"
+    },
+    {
+      "name": "DewGameObserverWithProgress",
+      "href": "Global.DewGameObserverWithProgress.html",
+      "uid": "Global.DewGameObserverWithProgress"
+    },
+    {
+      "name": "DewSpecialReverieItem",
+      "href": "Global.DewSpecialReverieItem.html",
+      "uid": "Global.DewSpecialReverieItem"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "index",
+      "id": "Global_DewReverieItem_index",
+      "declaration": "public int index",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ReverieSlotCount",
+      "id": "Global_DewReverieItem_ReverieSlotCount",
+      "declaration": "public const int ReverieSlotCount = 3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "excludeFromPool",
+      "id": "Global_DewReverieItem_excludeFromPool",
+      "declaration": "public virtual bool excludeFromPool { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "grantedItems",
+      "id": "Global_DewReverieItem_grantedItems",
+      "declaration": "public virtual string[] grantedItems { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "grantedStardust",
+      "id": "Global_DewReverieItem_grantedStardust",
+      "declaration": "public abstract int grantedStardust { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reverieListButtonText",
+      "id": "Global_DewReverieItem_reverieListButtonText",
+      "declaration": "public virtual string reverieListButtonText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnComplete()",
+      "id": "Global_DewReverieItem_OnComplete",
+      "declaration": "public override void OnComplete()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnReverieListButtonClick()",
+      "id": "Global_DewReverieItem_OnReverieListButtonClick",
+      "declaration": "public virtual void OnReverieListButtonClick()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSetupReverie()",
+      "id": "Global_DewReverieItem_OnSetupReverie",
+      "declaration": "public virtual void OnSetupReverie()",
+      "summary": "Called on a reverie item when the entry gets created for the very first time. You must set persistent variables needed for this reverie to function properly.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartLocalClient()",
+      "id": "Global_DewReverieItem_OnStartLocalClient",
+      "declaration": "public override void OnStartLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopLocalClient()",
+      "id": "Global_DewReverieItem_OnStopLocalClient",
+      "declaration": "public override void OnStopLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SaveReverieStateToData(ReverieDataBase)",
+      "id": "Global_DewReverieItem_SaveReverieStateToData_DewProfile_ReverieDataBase_",
+      "declaration": "public void SaveReverieStateToData(DewProfile.ReverieDataBase data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewProfile.ReverieDataBase",
+          "type_uid": "Global.DewProfile",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

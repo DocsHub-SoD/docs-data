@@ -1,0 +1,46 @@
+{
+  "uid": "Global.EntityCheck",
+  "name": "EntityCheck",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class EntityCheck",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "IsAnyBoss(Entity)",
+      "id": "Global_EntityCheck_IsAnyBoss_Entity_",
+      "declaration": "public static bool IsAnyBoss(this Entity e)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsNullInactiveDeadOrKnockedOut(Entity)",
+      "id": "Global_EntityCheck_IsNullInactiveDeadOrKnockedOut_Entity_",
+      "declaration": "public static bool IsNullInactiveDeadOrKnockedOut(this Entity e)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

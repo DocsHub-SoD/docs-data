@@ -1,0 +1,32 @@
+{
+  "uid": "Global.PerFeatureVisibility_Booth",
+  "name": "PerFeatureVisibility_Booth",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PerFeatureVisibility_Booth : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "destroyIfBooth",
+      "id": "Global_PerFeatureVisibility_Booth_destroyIfBooth",
+      "declaration": "public bool destroyIfBooth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destroyIfNotBooth",
+      "id": "Global_PerFeatureVisibility_Booth_destroyIfNotBooth",
+      "declaration": "public bool destroyIfNotBooth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

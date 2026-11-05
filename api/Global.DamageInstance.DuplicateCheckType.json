@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DamageInstance.DuplicateCheckType",
+  "name": "DamageInstance.DuplicateCheckType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DamageInstance.DuplicateCheckType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

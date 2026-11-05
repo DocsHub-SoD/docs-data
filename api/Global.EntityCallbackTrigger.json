@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EntityCallbackTrigger",
+  "name": "EntityCallbackTrigger",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityCallbackTrigger : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onEntityEnter",
+      "id": "Global_EntityCallbackTrigger_onEntityEnter",
+      "declaration": "public Action<Entity> onEntityEnter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntityExit",
+      "id": "Global_EntityCallbackTrigger_onEntityExit",
+      "declaration": "public Action<Entity> onEntityExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

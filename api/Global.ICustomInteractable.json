@@ -1,0 +1,80 @@
+{
+  "uid": "Global.ICustomInteractable",
+  "name": "ICustomInteractable",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICustomInteractable",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "altInteractProgress",
+      "id": "Global_ICustomInteractable_altInteractProgress",
+      "declaration": "float? altInteractProgress { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canAltInteract",
+      "id": "Global_ICustomInteractable_canAltInteract",
+      "declaration": "bool canAltInteract { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cost",
+      "id": "Global_ICustomInteractable_cost",
+      "declaration": "Cost cost { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "costAlt",
+      "id": "Global_ICustomInteractable_costAlt",
+      "declaration": "Cost costAlt { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactActionRawText",
+      "id": "Global_ICustomInteractable_interactActionRawText",
+      "declaration": "string interactActionRawText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactAltActionRawText",
+      "id": "Global_ICustomInteractable_interactAltActionRawText",
+      "declaration": "string interactAltActionRawText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nameRawText",
+      "id": "Global_ICustomInteractable_nameRawText",
+      "declaration": "string nameRawText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldOffset",
+      "id": "Global_ICustomInteractable_worldOffset",
+      "declaration": "Vector3 worldOffset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

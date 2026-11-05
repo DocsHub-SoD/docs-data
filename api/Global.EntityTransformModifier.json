@@ -1,0 +1,57 @@
+{
+  "uid": "Global.EntityTransformModifier",
+  "name": "EntityTransformModifier",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityTransformModifier",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "localOffset",
+      "id": "Global_EntityTransformModifier_localOffset",
+      "declaration": "public Vector3 localOffset { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_EntityTransformModifier_rotation",
+      "declaration": "public Quaternion rotation { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleMultiplier",
+      "id": "Global_EntityTransformModifier_scaleMultiplier",
+      "declaration": "public Vector3 scaleMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldOffset",
+      "id": "Global_EntityTransformModifier_worldOffset",
+      "declaration": "public Vector3 worldOffset { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Stop()",
+      "id": "Global_EntityTransformModifier_Stop",
+      "declaration": "public void Stop()",
+      "summary": "Remove this transform modifier from its parent.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

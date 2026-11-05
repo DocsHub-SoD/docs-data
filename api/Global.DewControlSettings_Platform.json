@@ -1,0 +1,92 @@
+{
+  "uid": "Global.DewControlSettings_Platform",
+  "name": "DewControlSettings_Platform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewControlSettings_Platform : IInitializableSettings, IValidatableSettings",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IInitializableSettings",
+      "href": "Global.IInitializableSettings.html",
+      "uid": "Global.IInitializableSettings"
+    },
+    {
+      "name": "IValidatableSettings",
+      "href": "Global.IValidatableSettings.html",
+      "uid": "Global.IValidatableSettings"
+    }
+  ],
+  "fields": [
+    {
+      "name": "controllerButtonType",
+      "id": "Global_DewControlSettings_Platform_controllerButtonType",
+      "declaration": "public ControllerButtonType controllerButtonType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "joystick0Dead",
+      "id": "Global_DewControlSettings_Platform_joystick0Dead",
+      "declaration": "public float joystick0Dead",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "joystick0Max",
+      "id": "Global_DewControlSettings_Platform_joystick0Max",
+      "declaration": "public float joystick0Max",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "joystick1Dead",
+      "id": "Global_DewControlSettings_Platform_joystick1Dead",
+      "declaration": "public float joystick1Dead",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "joystick1Max",
+      "id": "Global_DewControlSettings_Platform_joystick1Max",
+      "declaration": "public float joystick1Max",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewControlSettings_Platform_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewControlSettings_Platform_Initialize",
+      "declaration": "public void Initialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewControlSettings_Platform_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.RefValue`1",
+  "name": "RefValue<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RefValue<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "value",
+      "id": "Global_RefValue_1_value",
+      "declaration": "public T value",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

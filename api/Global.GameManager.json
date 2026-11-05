@@ -1,0 +1,1096 @@
+{
+  "uid": "Global.GameManager",
+  "name": "GameManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameManager : NetworkedManagerBase<GameManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "GameManager",
+      "href": "Global.GameManager.html",
+      "uid": "Global.GameManager"
+    },
+    {
+      "name": "DevGameManager",
+      "href": "Global.DevGameManager.html",
+      "uid": "Global.DevGameManager"
+    },
+    {
+      "name": "PlayGameManager",
+      "href": "Global.PlayGameManager.html",
+      "uid": "Global.PlayGameManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnAmbientLevelChanged",
+      "id": "Global_GameManager_ClientEvent_OnAmbientLevelChanged",
+      "declaration": "public SafeAction<int, int> ClientEvent_OnAmbientLevelChanged",
+      "summary": "Called everywhere when ambient level changes",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDifficultyChanged",
+      "id": "Global_GameManager_ClientEvent_OnDifficultyChanged",
+      "declaration": "public SafeAction<DewDifficultySettings, DewDifficultySettings> ClientEvent_OnDifficultyChanged",
+      "summary": "Called everywhere when threat level changes",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnGameConcluded",
+      "id": "Global_GameManager_ClientEvent_OnGameConcluded",
+      "declaration": "public SafeAction ClientEvent_OnGameConcluded",
+      "summary": "Called everywhere when game is concluded",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableStuckCheck",
+      "id": "Global_GameManager_disableStuckCheck",
+      "declaration": "public bool disableStuckCheck",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gainedExpMultiplier",
+      "id": "Global_GameManager_gainedExpMultiplier",
+      "declaration": "[NonSerialized]\npublic float gainedExpMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ges",
+      "id": "Global_GameManager_ges",
+      "declaration": "public DewGameplayExperienceSettings ges",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gesTemplate",
+      "id": "Global_GameManager_gesTemplate",
+      "declaration": "[FormerlySerializedAs(\"gss\")]\npublic DewGameplayExperienceSettings gesTemplate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "goldCostMultiplier",
+      "id": "Global_GameManager_goldCostMultiplier",
+      "declaration": "[NonSerialized]\npublic float goldCostMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "goldIncomeMultiplier",
+      "id": "Global_GameManager_goldIncomeMultiplier",
+      "declaration": "[NonSerialized]\npublic float goldIncomeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerRejoinData",
+      "id": "Global_GameManager_playerRejoinData",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Dictionary<string, DewPersistence.PlayerData> playerRejoinData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "predictionStrengthOverride",
+      "id": "Global_GameManager_predictionStrengthOverride",
+      "declaration": "public Func<float> predictionStrengthOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "ambientLevel",
+      "id": "Global_GameManager_ambientLevel",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int ambientLevel { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficulty",
+      "id": "Global_GameManager_difficulty",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic DewDifficultySettings difficulty { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elapsedGameTime",
+      "id": "Global_GameManager_elapsedGameTime",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic float elapsedGameTime { get; set; }",
+      "summary": "Elapsed game time in seconds.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGameConcluded",
+      "id": "Global_GameManager_isGameConcluded",
+      "declaration": "public bool isGameConcluded { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGameOverEnabled",
+      "id": "Global_GameManager_isGameOverEnabled",
+      "declaration": "public bool isGameOverEnabled { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGameTimePaused",
+      "id": "Global_GameManager_isGameTimePaused",
+      "declaration": "public bool isGameTimePaused { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGameTimePausedByAfk",
+      "id": "Global_GameManager_isGameTimePausedByAfk",
+      "declaration": "public bool isGameTimePausedByAfk { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGameTimePausedByGame",
+      "id": "Global_GameManager_isGameTimePausedByGame",
+      "declaration": "public bool isGameTimePausedByGame { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMidRunSaveLocked",
+      "id": "Global_GameManager_isMidRunSaveLocked",
+      "declaration": "public bool isMidRunSaveLocked { get; }",
+      "summary": "Is continue save blocked by LockMidRunSave()? Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSpawnOverPopulation",
+      "id": "Global_GameManager_isSpawnOverPopulation",
+      "declaration": "public bool isSpawnOverPopulation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxAndSpawnedPopulationMultiplier",
+      "id": "Global_GameManager_maxAndSpawnedPopulationMultiplier",
+      "declaration": "public float maxAndSpawnedPopulationMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSpawnedPopulation",
+      "id": "Global_GameManager_maxSpawnedPopulation",
+      "declaration": "public float maxSpawnedPopulation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runId",
+      "id": "Global_GameManager_runId",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic string runId { get; set; }",
+      "summary": "Globally unique identifier of this run. This is consistent across all clients.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedPopulation",
+      "id": "Global_GameManager_spawnedPopulation",
+      "declaration": "public float spawnedPopulation { get; }",
+      "summary": "Total population excluding env spawns. => Spawns from combat areas.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_GameManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CallOnReady(Action)",
+      "id": "Global_GameManager_CallOnReady_System_Action_",
+      "declaration": "public static void CallOnReady(Action action)",
+      "summary": "Call provided function if the game is ready. (Client is ready, Server is not loading scene, has local hero, map is loaded, screen is shown)If not ready, the function call will be delayed until it is.Available on server and clients.",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CollectAllPlayersRejoinData()",
+      "id": "Global_GameManager_CollectAllPlayersRejoinData",
+      "declaration": "public void CollectAllPlayersRejoinData()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CollectPlayerRejoinData(DewPlayer)",
+      "id": "Global_GameManager_CollectPlayerRejoinData_DewPlayer_",
+      "declaration": "public void CollectPlayerRejoinData(DewPlayer p)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "p",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ConcludePureWhiteDream()",
+      "id": "Global_GameManager_ConcludePureWhiteDream",
+      "declaration": "public void ConcludePureWhiteDream()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ConcludeUnknownFate()",
+      "id": "Global_GameManager_ConcludeUnknownFate",
+      "declaration": "public void ConcludeUnknownFate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetAdjustedDroppedExperienceAmount(float)",
+      "id": "Global_GameManager_GetAdjustedDroppedExperienceAmount_System_Single_",
+      "declaration": "public float GetAdjustedDroppedExperienceAmount(float original)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "original",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAdjustedGoldAmount_Cost_Service(float)",
+      "id": "Global_GameManager_GetAdjustedGoldAmount_Cost_Service_System_Single_",
+      "declaration": "public float GetAdjustedGoldAmount_Cost_Service(float baseAmount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "baseAmount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAdjustedGoldAmount_Cost(float)",
+      "id": "Global_GameManager_GetAdjustedGoldAmount_Cost_System_Single_",
+      "declaration": "public float GetAdjustedGoldAmount_Cost(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAdjustedGoldAmount_Income(float)",
+      "id": "Global_GameManager_GetAdjustedGoldAmount_Income_System_Single_",
+      "declaration": "public float GetAdjustedGoldAmount_Income(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAdjustedGoldAmount(float)",
+      "id": "Global_GameManager_GetAdjustedGoldAmount_System_Single_",
+      "declaration": "public float GetAdjustedGoldAmount(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAdjustedMonsterSpawnPopulation(float, bool, bool)",
+      "id": "Global_GameManager_GetAdjustedMonsterSpawnPopulation_System_Single_System_Boolean_System_Boolean_",
+      "declaration": "public float GetAdjustedMonsterSpawnPopulation(float original, bool ignoreTurnMultiplier = false, bool ignoreCoopMultiplier = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "original",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreTurnMultiplier",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreCoopMultiplier",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetAdjustedMonsterWaves(int, DewRandom)",
+      "id": "Global_GameManager_GetAdjustedMonsterWaves_System_Int32_DewRandom_",
+      "declaration": "public int GetAdjustedMonsterWaves(int original, DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "original",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetAdjustedMonsterWavesMultiplier()",
+      "id": "Global_GameManager_GetAdjustedMonsterWavesMultiplier",
+      "declaration": "public float GetAdjustedMonsterWavesMultiplier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetBossMonsterDamageMultiplierByScaling(float)",
+      "id": "Global_GameManager_GetBossMonsterDamageMultiplierByScaling_System_Single_",
+      "declaration": "public float GetBossMonsterDamageMultiplierByScaling(float customZoneIndex = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "customZoneIndex",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetBossMonsterHealthMultiplierByScaling(float)",
+      "id": "Global_GameManager_GetBossMonsterHealthMultiplierByScaling_System_Single_",
+      "declaration": "public float GetBossMonsterHealthMultiplierByScaling(float customZoneIndex = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "customZoneIndex",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetCleanseGemMinQuality()",
+      "id": "Global_GameManager_GetCleanseGemMinQuality",
+      "declaration": "public int GetCleanseGemMinQuality()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetCleanseGoldCost(Gem)",
+      "id": "Global_GameManager_GetCleanseGoldCost_Gem_",
+      "declaration": "public int GetCleanseGoldCost(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetCleanseGoldCost(SkillTrigger)",
+      "id": "Global_GameManager_GetCleanseGoldCost_SkillTrigger_",
+      "declaration": "public int GetCleanseGoldCost(SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetCleanseReturnedDreamDust(DewPlayer, Gem)",
+      "id": "Global_GameManager_GetCleanseReturnedDreamDust_DewPlayer_Gem_",
+      "declaration": "public int GetCleanseReturnedDreamDust(DewPlayer player, Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetCleanseReturnedDreamDust(DewPlayer, SkillTrigger)",
+      "id": "Global_GameManager_GetCleanseReturnedDreamDust_DewPlayer_SkillTrigger_",
+      "declaration": "public int GetCleanseReturnedDreamDust(DewPlayer player, SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetCleanseSkillMinLevel()",
+      "id": "Global_GameManager_GetCleanseSkillMinLevel",
+      "declaration": "public int GetCleanseSkillMinLevel()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetDifficulty()",
+      "id": "Global_GameManager_GetDifficulty",
+      "declaration": "protected virtual DewDifficultySettings GetDifficulty()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewDifficultySettings"
+    },
+    {
+      "name": "GetExpDropFromEntity(Entity)",
+      "id": "Global_GameManager_GetExpDropFromEntity_Entity_",
+      "declaration": "public float GetExpDropFromEntity(Entity ent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetGainedSkillHastePerSkillLevel(SkillTrigger)",
+      "id": "Global_GameManager_GetGainedSkillHastePerSkillLevel_SkillTrigger_",
+      "declaration": "public float GetGainedSkillHastePerSkillLevel(SkillTrigger skillTrigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillTrigger",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetGemUpgradeAddedQuality()",
+      "id": "Global_GameManager_GetGemUpgradeAddedQuality",
+      "declaration": "public int GetGemUpgradeAddedQuality()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetGemUpgradeDreamDustCost(Gem)",
+      "id": "Global_GameManager_GetGemUpgradeDreamDustCost_Gem_",
+      "declaration": "public int GetGemUpgradeDreamDustCost(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetGemUpgradeDreamDustCost(int)",
+      "id": "Global_GameManager_GetGemUpgradeDreamDustCost_System_Int32_",
+      "declaration": "public int GetGemUpgradeDreamDustCost(int quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetKillGoldAmount(Entity)",
+      "id": "Global_GameManager_GetKillGoldAmount_Entity_",
+      "declaration": "public int GetKillGoldAmount(Entity ent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetLucidDreams()",
+      "id": "Global_GameManager_GetLucidDreams",
+      "declaration": "public virtual IList<string> GetLucidDreams()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.IList<T><string>"
+    },
+    {
+      "name": "GetMiniBossMonsterDamageMultiplierByScaling(float)",
+      "id": "Global_GameManager_GetMiniBossMonsterDamageMultiplierByScaling_System_Single_",
+      "declaration": "public float GetMiniBossMonsterDamageMultiplierByScaling(float customZoneIndex = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "customZoneIndex",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetMiniBossMonsterHealthMultiplierByScaling(float)",
+      "id": "Global_GameManager_GetMiniBossMonsterHealthMultiplierByScaling_System_Single_",
+      "declaration": "public float GetMiniBossMonsterHealthMultiplierByScaling(float customZoneIndex = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "customZoneIndex",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetMonsterBonusHealthPercentageByMultiplayer(Monster)",
+      "id": "Global_GameManager_GetMonsterBonusHealthPercentageByMultiplayer_Monster_",
+      "declaration": "public float GetMonsterBonusHealthPercentageByMultiplayer(Monster m)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "Monster",
+          "type_uid": "Global.Monster",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetMonsterBonusPowerPercentage(Monster)",
+      "id": "Global_GameManager_GetMonsterBonusPowerPercentage_Monster_",
+      "declaration": "public float GetMonsterBonusPowerPercentage(Monster m)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "Monster",
+          "type_uid": "Global.Monster",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetMultiplayerDifficultyFactor(bool)",
+      "id": "Global_GameManager_GetMultiplayerDifficultyFactor_System_Boolean_",
+      "declaration": "public float GetMultiplayerDifficultyFactor(bool reduceWhenDead)",
+      "summary": "Get amount of extra players. Solo: 0, Two: 1, ...If reduceWhenDead is set, dead player will contribute 55% percent instead of 100% to the factor.",
+      "parameters": [
+        {
+          "name": "reduceWhenDead",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetMultiplier_Imp(double, double, double, double, double, int)",
+      "id": "Global_GameManager_GetMultiplier_Imp_System_Double_System_Double_System_Double_System_Double_System_Double_System_Int32_",
+      "declaration": "public static float GetMultiplier_Imp(double x, double a, double b, double c, double d, int linearStart)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "double",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "a",
+          "type": "double",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "double",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "c",
+          "type": "double",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "d",
+          "type": "double",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "linearStart",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetPredictionStrength()",
+      "id": "Global_GameManager_GetPredictionStrength",
+      "declaration": "public float GetPredictionStrength()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetRegularMonsterDamageMultiplierByScaling(float)",
+      "id": "Global_GameManager_GetRegularMonsterDamageMultiplierByScaling_System_Single_",
+      "declaration": "public float GetRegularMonsterDamageMultiplierByScaling(float customZoneIndex = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "customZoneIndex",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetRegularMonsterHealthMultiplierByScaling(float)",
+      "id": "Global_GameManager_GetRegularMonsterHealthMultiplierByScaling_System_Single_",
+      "declaration": "public float GetRegularMonsterHealthMultiplierByScaling(float customZoneIndex = NaN)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "customZoneIndex",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetSkillUpgradeDreamDustCost(SkillTrigger)",
+      "id": "Global_GameManager_GetSkillUpgradeDreamDustCost_SkillTrigger_",
+      "declaration": "public int GetSkillUpgradeDreamDustCost(SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetSkillUpgradeDreamDustCost(int)",
+      "id": "Global_GameManager_GetSkillUpgradeDreamDustCost_System_Int32_",
+      "declaration": "public int GetSkillUpgradeDreamDustCost(int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetSpecialRewardAmount_DreamDust()",
+      "id": "Global_GameManager_GetSpecialRewardAmount_DreamDust",
+      "declaration": "public float GetSpecialRewardAmount_DreamDust()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetSpecialRewardAmount_Gold()",
+      "id": "Global_GameManager_GetSpecialRewardAmount_Gold",
+      "declaration": "public float GetSpecialRewardAmount_Gold()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetSpecialSkillChanceMultiplier()",
+      "id": "Global_GameManager_GetSpecialSkillChanceMultiplier",
+      "declaration": "public float GetSpecialSkillChanceMultiplier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetStrongHealthScalingMultiplier_Imp(float)",
+      "id": "Global_GameManager_GetStrongHealthScalingMultiplier_Imp_System_Single_",
+      "declaration": "public static float GetStrongHealthScalingMultiplier_Imp(float zi)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zi",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetUniversalDamageScalingMultiplier_Imp(float)",
+      "id": "Global_GameManager_GetUniversalDamageScalingMultiplier_Imp_System_Single_",
+      "declaration": "public static float GetUniversalDamageScalingMultiplier_Imp(float zi)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zi",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetWeakHealthScalingMultiplier_Imp(float)",
+      "id": "Global_GameManager_GetWeakHealthScalingMultiplier_Imp_System_Single_",
+      "declaration": "public static float GetWeakHealthScalingMultiplier_Imp(float zi)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "zi",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "IsContinueSaveSupported()",
+      "id": "Global_GameManager_IsContinueSaveSupported",
+      "declaration": "public virtual bool IsContinueSaveSupported()",
+      "summary": "Is continue-saving a normal thing in this game manager? If not, no continue save will be made, and user will not be notified with any save-related things.Used to tell apart from normal game and special games like tutorial.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "IsEligibleForMidRunSave()",
+      "id": "Global_GameManager_IsEligibleForMidRunSave",
+      "declaration": "public bool IsEligibleForMidRunSave()",
+      "summary": "Can the game be saved mid-run right now? Usually save is made every travel, but after clearing the room, the game can be saved mid-run e.g. before exiting the game.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "IsLazyCallReady()",
+      "id": "Global_GameManager_IsLazyCallReady",
+      "declaration": "public virtual bool IsLazyCallReady()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LoadNextZone()",
+      "id": "Global_GameManager_LoadNextZone",
+      "declaration": "public virtual void LoadNextZone()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LockMidRunSave()",
+      "id": "Global_GameManager_LockMidRunSave",
+      "declaration": "public void LockMidRunSave()",
+      "summary": "Calling this will lock mid-run save.If a continue save hasn't been made for more than 20 seconds, a continue save will be immediately made.This call MUST BE ACCOMPANIED by the same number of UnlockMidRunSave() calls.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_GameManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_GameManager_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_GameManager_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_GameManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ResetGameplayExperienceSettings()",
+      "id": "Global_GameManager_ResetGameplayExperienceSettings",
+      "declaration": "public void ResetGameplayExperienceSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SaveContinueData(LoadNodeSettings)",
+      "id": "Global_GameManager_SaveContinueData_LoadNodeSettings_",
+      "declaration": "public void SaveContinueData(LoadNodeSettings s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "LoadNodeSettings",
+          "type_uid": "Global.LoadNodeSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SaveContinueDataMidRun()",
+      "id": "Global_GameManager_SaveContinueDataMidRun",
+      "declaration": "public void SaveContinueDataMidRun()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetAmbientLevel(int)",
+      "id": "Global_GameManager_SetAmbientLevel_System_Int32_",
+      "declaration": "public void SetAmbientLevel(int newLevel)",
+      "summary": "Level will be clamped accordingly to GSS.",
+      "parameters": [
+        {
+          "name": "newLevel",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetDisconnectedForEveryoneElse()",
+      "id": "Global_GameManager_SetDisconnectedForEveryoneElse",
+      "declaration": "public void SetDisconnectedForEveryoneElse()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetElapsedGameTime(float)",
+      "id": "Global_GameManager_SetElapsedGameTime_System_Single_",
+      "declaration": "public void SetElapsedGameTime(float newTime)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnlockMidRunSave()",
+      "id": "Global_GameManager_UnlockMidRunSave",
+      "declaration": "public void UnlockMidRunSave()",
+      "summary": "Calling this will unlock and allow mid-run saves.This call MUST BE DONE AFTER LockMidRunSave() calls.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateSpawnedPopulation()",
+      "id": "Global_GameManager_UpdateSpawnedPopulation",
+      "declaration": "public void UpdateSpawnedPopulation()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WrapUpAndShowResult(ResultType)",
+      "id": "Global_GameManager_WrapUpAndShowResult_DewGameResult_ResultType_",
+      "declaration": "public void WrapUpAndShowResult(DewGameResult.ResultType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DewGameResult.ResultType",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

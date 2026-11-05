@@ -1,0 +1,88 @@
+{
+  "uid": "Global.DewGameResult",
+  "name": "DewGameResult",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewGameResult",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "difficulty",
+      "id": "Global_DewGameResult_difficulty",
+      "declaration": "public string difficulty",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elapsedGameTimeSeconds",
+      "id": "Global_DewGameResult_elapsedGameTimeSeconds",
+      "declaration": "public int elapsedGameTimeSeconds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "limboDepth",
+      "id": "Global_DewGameResult_limboDepth",
+      "declaration": "public int limboDepth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "players",
+      "id": "Global_DewGameResult_players",
+      "declaration": "public List<DewGameResult.PlayerData> players",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "result",
+      "id": "Global_DewGameResult_result",
+      "declaration": "public DewGameResult.ResultType result",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runId",
+      "id": "Global_DewGameResult_runId",
+      "declaration": "public string runId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startTimestamp",
+      "id": "Global_DewGameResult_startTimestamp",
+      "declaration": "public long startTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedLocations",
+      "id": "Global_DewGameResult_visitedLocations",
+      "declaration": "public int visitedLocations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedWorlds",
+      "id": "Global_DewGameResult_visitedWorlds",
+      "declaration": "public int visitedWorlds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

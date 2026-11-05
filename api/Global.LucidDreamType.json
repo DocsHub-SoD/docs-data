@@ -1,0 +1,15 @@
+{
+  "uid": "Global.LucidDreamType",
+  "name": "LucidDreamType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum LucidDreamType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,1539 @@
+{
+  "uid": "Global.AbilityTrigger",
+  "name": "AbilityTrigger",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-300)]\npublic class AbilityTrigger : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AttackTrigger",
+      "href": "Global.AttackTrigger.html",
+      "uid": "Global.AttackTrigger"
+    },
+    {
+      "name": "SkillTrigger",
+      "href": "Global.SkillTrigger.html",
+      "uid": "Global.SkillTrigger"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnOwnerChanged",
+      "id": "Global_AbilityTrigger_ClientEvent_OnOwnerChanged",
+      "declaration": "public SafeAction<Entity, Entity> ClientEvent_OnOwnerChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientTriggerEvent_OnCooldownReduced",
+      "id": "Global_AbilityTrigger_ClientTriggerEvent_OnCooldownReduced",
+      "declaration": "public SafeAction<int, float> ClientTriggerEvent_OnCooldownReduced",
+      "summary": "configIndex, reductionAmount. Note the amount is non-discarded variant. e.g. Applying 100 seconds cooldown reduction to a 3 seconds skill will still report 100 seconds reduction.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientTriggerEvent_OnCooldownReducedByRatio",
+      "id": "Global_AbilityTrigger_ClientTriggerEvent_OnCooldownReducedByRatio",
+      "declaration": "public SafeAction<int, float> ClientTriggerEvent_OnCooldownReducedByRatio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientTriggerEvent_OnCurrentConfigCharged",
+      "id": "Global_AbilityTrigger_ClientTriggerEvent_OnCurrentConfigCharged",
+      "declaration": "public SafeAction ClientTriggerEvent_OnCurrentConfigCharged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientTriggerEvent_OnCurrentConfigCooldownReduced",
+      "id": "Global_AbilityTrigger_ClientTriggerEvent_OnCurrentConfigCooldownReduced",
+      "declaration": "public SafeAction ClientTriggerEvent_OnCurrentConfigCooldownReduced",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "configs",
+      "id": "Global_AbilityTrigger_configs",
+      "declaration": "[ListDrawerSettings(Expanded = true)]\npublic TriggerConfig[] configs",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentCharges",
+      "id": "Global_AbilityTrigger_currentCharges",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]\n[NonSerialized]\npublic int[] currentCharges",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMinimumDelays",
+      "id": "Global_AbilityTrigger_currentMinimumDelays",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]\n[NonSerialized]\npublic float[] currentMinimumDelays",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentUnscaledCooldownTimes",
+      "id": "Global_AbilityTrigger_currentUnscaledCooldownTimes",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterFrameDelay)]\n[NonSerialized]\npublic float[] currentUnscaledCooldownTimes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takenCooldownReductionByRatioProcessor",
+      "id": "Global_AbilityTrigger_takenCooldownReductionByRatioProcessor",
+      "declaration": "public DataProcessorGroup<CooldownReductionByRatioSettings, Actor, AbilityTrigger> takenCooldownReductionByRatioProcessor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "takenCooldownReductionProcessor",
+      "id": "Global_AbilityTrigger_takenCooldownReductionProcessor",
+      "declaration": "public DataProcessorGroup<CooldownReductionSettings, Actor, AbilityTrigger> takenCooldownReductionProcessor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TriggerEvent_OnCastComplete",
+      "id": "Global_AbilityTrigger_TriggerEvent_OnCastComplete",
+      "declaration": "public Action<EventInfoCast> TriggerEvent_OnCastComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TriggerEvent_OnCastCompleteBeforePrepare",
+      "id": "Global_AbilityTrigger_TriggerEvent_OnCastCompleteBeforePrepare",
+      "declaration": "public Action<EventInfoCast> TriggerEvent_OnCastCompleteBeforePrepare",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TriggerEvent_OnCastStart",
+      "id": "Global_AbilityTrigger_TriggerEvent_OnCastStart",
+      "declaration": "public Action<EventInfoCast> TriggerEvent_OnCastStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "abilityIndex",
+      "id": "Global_AbilityTrigger_abilityIndex",
+      "declaration": "public int abilityIndex { get; }",
+      "summary": "Ability index of this trigger if equipped to an entity.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfig",
+      "id": "Global_AbilityTrigger_currentConfig",
+      "declaration": "public TriggerConfig currentConfig { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigChangeHandle",
+      "id": "Global_AbilityTrigger_currentConfigChangeHandle",
+      "declaration": "public AbilityTrigger.ChangedConfigHandle currentConfigChangeHandle { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigCooldownTime",
+      "id": "Global_AbilityTrigger_currentConfigCooldownTime",
+      "declaration": "public float currentConfigCooldownTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigCurrentCharge",
+      "id": "Global_AbilityTrigger_currentConfigCurrentCharge",
+      "declaration": "public int currentConfigCurrentCharge { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigCurrentMinimumDelay",
+      "id": "Global_AbilityTrigger_currentConfigCurrentMinimumDelay",
+      "declaration": "public float currentConfigCurrentMinimumDelay { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigIndex",
+      "id": "Global_AbilityTrigger_currentConfigIndex",
+      "declaration": "public int currentConfigIndex { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigMaxCooldownTime",
+      "id": "Global_AbilityTrigger_currentConfigMaxCooldownTime",
+      "declaration": "public float currentConfigMaxCooldownTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigUnscaledCooldownTime",
+      "id": "Global_AbilityTrigger_currentConfigUnscaledCooldownTime",
+      "declaration": "public float currentConfigUnscaledCooldownTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentConfigUnscaledMaxCooldownTime",
+      "id": "Global_AbilityTrigger_currentConfigUnscaledMaxCooldownTime",
+      "declaration": "public float currentConfigUnscaledMaxCooldownTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentPassiveEffect",
+      "id": "Global_AbilityTrigger_currentPassiveEffect",
+      "declaration": "public StatusEffect currentPassiveEffect { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fillAmount",
+      "id": "Global_AbilityTrigger_fillAmount",
+      "declaration": "public float fillAmount { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreRangeCheck",
+      "id": "Global_AbilityTrigger_ignoreRangeCheck",
+      "declaration": "public bool ignoreRangeCheck { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_AbilityTrigger_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_AbilityTrigger_owner",
+      "declaration": "public Entity owner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_AbilityTrigger_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanBeCast()",
+      "id": "Global_AbilityTrigger_CanBeCast",
+      "declaration": "public virtual bool CanBeCast()",
+      "summary": "Can this ability be cast? By default this checks charges/delay/mana cost/self validator/self applied status effects.This must return same value for everyone to ensure consistency.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "CanBeReserved()",
+      "id": "Global_AbilityTrigger_CanBeReserved",
+      "declaration": "public virtual bool CanBeReserved()",
+      "summary": "Can this ability be reserved? By default this checks everything that CanBeCast() checks but self validators.This must return same value for everyone to ensure consistency.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ChangeConfigTimed(int, float, Action<EventInfoAbilityInstance>, Action, bool)",
+      "id": "Global_AbilityTrigger_ChangeConfigTimed_System_Int32_System_Single_System_Action_EventInfoAbilityInstance__System_Action_System_Boolean_",
+      "declaration": "public AbilityTrigger.ChangedConfigHandle ChangeConfigTimed(int index, float duration, Action<EventInfoAbilityInstance> onUse = null, Action onExpire = null, bool setFillAmount = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onUse",
+          "type": "System.Action<T><EventInfoAbilityInstance>",
+          "type_uid": "Global.EventInfoAbilityInstance",
+          "description": ""
+        },
+        {
+          "name": "onExpire",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "setFillAmount",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityTrigger.ChangedConfigHandle"
+    },
+    {
+      "name": "ChangeConfigTimedOnce(int, float, Action<EventInfoAbilityInstance>, Action, bool)",
+      "id": "Global_AbilityTrigger_ChangeConfigTimedOnce_System_Int32_System_Single_System_Action_EventInfoAbilityInstance__System_Action_System_Boolean_",
+      "declaration": "public AbilityTrigger.ChangedConfigHandle ChangeConfigTimedOnce(int index, float duration, Action<EventInfoAbilityInstance> onUse = null, Action onExpire = null, bool setFillAmount = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onUse",
+          "type": "System.Action<T><EventInfoAbilityInstance>",
+          "type_uid": "Global.EventInfoAbilityInstance",
+          "description": ""
+        },
+        {
+          "name": "onExpire",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "setFillAmount",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "AbilityTrigger.ChangedConfigHandle"
+    },
+    {
+      "name": "GetActorReadableName()",
+      "id": "Global_AbilityTrigger_GetActorReadableName",
+      "declaration": "public override string GetActorReadableName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetAnimationSpeed()",
+      "id": "Global_AbilityTrigger_GetAnimationSpeed",
+      "declaration": "public virtual float GetAnimationSpeed()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetCastInfoToTarget(Entity)",
+      "id": "Global_AbilityTrigger_GetCastInfoToTarget_Entity_",
+      "declaration": "public CastInfo GetCastInfoToTarget(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "CastInfo"
+    },
+    {
+      "name": "GetChannelDurationMultiplier()",
+      "id": "Global_AbilityTrigger_GetChannelDurationMultiplier",
+      "declaration": "public virtual float GetChannelDurationMultiplier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetCooldownTimeMultiplier(int)",
+      "id": "Global_AbilityTrigger_GetCooldownTimeMultiplier_System_Int32_",
+      "declaration": "public virtual float GetCooldownTimeMultiplier(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetCooldownTimeMultiplierByAbilityHaste(float)",
+      "id": "Global_AbilityTrigger_GetCooldownTimeMultiplierByAbilityHaste_System_Single_",
+      "declaration": "public static float GetCooldownTimeMultiplierByAbilityHaste(float abilityHaste)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "abilityHaste",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetCooldownTimeOffset(int)",
+      "id": "Global_AbilityTrigger_GetCooldownTimeOffset_System_Int32_",
+      "declaration": "public virtual float GetCooldownTimeOffset(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetInstanceSpawnPosition(int, CastInfo)",
+      "id": "Global_AbilityTrigger_GetInstanceSpawnPosition_System_Int32_CastInfo_",
+      "declaration": "protected virtual Vector3 GetInstanceSpawnPosition(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetInstanceSpawnRotation(int, CastInfo)",
+      "id": "Global_AbilityTrigger_GetInstanceSpawnRotation_System_Int32_CastInfo_",
+      "declaration": "protected virtual Quaternion? GetInstanceSpawnRotation(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Quaternion?"
+    },
+    {
+      "name": "GetMaxCooldownTime(int, bool)",
+      "id": "Global_AbilityTrigger_GetMaxCooldownTime_System_Int32_System_Boolean_",
+      "declaration": "public float GetMaxCooldownTime(int configIndex, bool scaled = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scaled",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetPostDelayDurationMultiplier()",
+      "id": "Global_AbilityTrigger_GetPostDelayDurationMultiplier",
+      "declaration": "public virtual float GetPostDelayDurationMultiplier()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetPredictedCastInfoToTarget(Entity, float)",
+      "id": "Global_AbilityTrigger_GetPredictedCastInfoToTarget_Entity_System_Single_",
+      "declaration": "public CastInfo GetPredictedCastInfoToTarget(Entity target, float strength)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "CastInfo"
+    },
+    {
+      "name": "GetPredictedCastInfoToTarget(Entity)",
+      "id": "Global_AbilityTrigger_GetPredictedCastInfoToTarget_Entity_",
+      "declaration": "public CastInfo GetPredictedCastInfoToTarget(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "CastInfo"
+    },
+    {
+      "name": "IsConfigLocked(int)",
+      "id": "Global_AbilityTrigger_IsConfigLocked_System_Int32_",
+      "declaration": "public bool IsConfigLocked(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsTargetInRange(Entity)",
+      "id": "Global_AbilityTrigger_IsTargetInRange_Entity_",
+      "declaration": "public bool IsTargetInRange(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LockCooldown(int)",
+      "id": "Global_AbilityTrigger_LockCooldown_System_Int32_",
+      "declaration": "public void LockCooldown(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_AbilityTrigger_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCancel(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastCancel_System_Int32_CastInfo_",
+      "declaration": "protected virtual void OnCastCancel(int configIndex, CastInfo info)",
+      "summary": "Called on server when this ability's cast channel is canceled.By default, this sets the cooldown time to 1 second if its smaller than 1 second.",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCancelSetCooldownTime(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastCancelSetCooldownTime_System_Int32_CastInfo_",
+      "declaration": "protected virtual void OnCastCancelSetCooldownTime(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastComplete(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastComplete_System_Int32_CastInfo_",
+      "declaration": "public virtual AbilityInstance OnCastComplete(int configIndex, CastInfo info)",
+      "summary": "Called on server when this ability's cast channel is completed.By default, this spends mana and ability charge, sets the appropriate cooldown time, delay, and creates the configured ability instance using the owner's position and rotation.If the config is direction-type, the rotation will be based off of the cast direction.",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "AbilityInstance"
+    },
+    {
+      "name": "OnCastCompleteBeforePrepare(EventInfoCast)",
+      "id": "Global_AbilityTrigger_OnCastCompleteBeforePrepare_EventInfoCast_",
+      "declaration": "public virtual void OnCastCompleteBeforePrepare(EventInfoCast cast)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "cast",
+          "type": "EventInfoCast",
+          "type_uid": "Global.EventInfoCast",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSetCharge(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastCompleteSetCharge_System_Int32_CastInfo_",
+      "declaration": "public virtual void OnCastCompleteSetCharge(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSetCooldownTime(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastCompleteSetCooldownTime_System_Int32_CastInfo_",
+      "declaration": "public virtual void OnCastCompleteSetCooldownTime(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSetMinimumDelay(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastCompleteSetMinimumDelay_System_Int32_CastInfo_",
+      "declaration": "public virtual void OnCastCompleteSetMinimumDelay(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteSpendMana(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastCompleteSpendMana_System_Int32_CastInfo_",
+      "declaration": "public virtual void OnCastCompleteSpendMana(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastStart(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnCastStart_System_Int32_CastInfo_",
+      "declaration": "public virtual void OnCastStart(int configIndex, CastInfo info)",
+      "summary": "Called on server when this ability is cast.By default, this plays the animation and starts the configured channel.IffaceForwardis set to true, it will cause the owner to rotate towards the target/point/direction/cursor position.Target validation will be done on the channel if the cast method is set to Target.",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnConfigChanged(int, int)",
+      "id": "Global_AbilityTrigger_OnConfigChanged_System_Int32_System_Int32_",
+      "declaration": "protected virtual void OnConfigChanged(int oldIndex, int newIndex)",
+      "summary": "Called everywhere when current config index is changed or set initial value.",
+      "parameters": [
+        {
+          "name": "oldIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_AbilityTrigger_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDeserialize(NetworkReader, bool)",
+      "id": "Global_AbilityTrigger_OnDeserialize_Mirror_NetworkReader_System_Boolean_",
+      "declaration": "public override void OnDeserialize(NetworkReader reader, bool initialState)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "reader",
+          "type": "Mirror.NetworkReader",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "initialState",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnEquip(Entity)",
+      "id": "Global_AbilityTrigger_OnEquip_Entity_",
+      "declaration": "protected virtual void OnEquip(Entity newOwner)",
+      "summary": "Called on everyone when the trigger is being equipped.",
+      "parameters": [
+        {
+          "name": "newOwner",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRotateForward(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnRotateForward_System_Int32_CastInfo_",
+      "declaration": "protected virtual void OnRotateForward(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnSerialize(NetworkWriter, bool)",
+      "id": "Global_AbilityTrigger_OnSerialize_Mirror_NetworkWriter_System_Boolean_",
+      "declaration": "public override void OnSerialize(NetworkWriter writer, bool initialState)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "writer",
+          "type": "Mirror.NetworkWriter",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "initialState",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartChannel(int, CastInfo)",
+      "id": "Global_AbilityTrigger_OnStartChannel_System_Int32_CastInfo_",
+      "declaration": "protected virtual void OnStartChannel(int configIndex, CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_AbilityTrigger_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_AbilityTrigger_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnUnequip(Entity)",
+      "id": "Global_AbilityTrigger_OnUnequip_Entity_",
+      "declaration": "protected virtual void OnUnequip(Entity formerOwner)",
+      "summary": "Called on everyone when the trigger is being unequipped.",
+      "parameters": [
+        {
+          "name": "formerOwner",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PredictAngle_Simple(float, Entity, Vector3, float)",
+      "id": "Global_AbilityTrigger_PredictAngle_Simple_System_Single_Entity_UnityEngine_Vector3_System_Single_",
+      "declaration": "public static float PredictAngle_Simple(float strength, Entity target, Vector3 startPos, float delay)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "startPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "PredictAngle_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float)",
+      "id": "Global_AbilityTrigger_PredictAngle_SpeedAcceleration_System_Single_Entity_UnityEngine_Vector3_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public static float PredictAngle_SpeedAcceleration(float strength, Entity target, Vector3 startPos, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "startPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "frontDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "initSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "targetSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "acceleration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "PredictPoint_Simple(float, Entity, float)",
+      "id": "Global_AbilityTrigger_PredictPoint_Simple_System_Single_Entity_System_Single_",
+      "declaration": "public static Vector3 PredictPoint_Simple(float strength, Entity target, float delay)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "PredictPoint_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float)",
+      "id": "Global_AbilityTrigger_PredictPoint_SpeedAcceleration_System_Single_Entity_UnityEngine_Vector3_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public static Vector3 PredictPoint_SpeedAcceleration(float strength, Entity target, Vector3 startPos, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "startPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "frontDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "initSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "targetSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "acceleration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "PredictPointClamped_Simple(float, Entity, Vector3, float, float)",
+      "id": "Global_AbilityTrigger_PredictPointClamped_Simple_System_Single_Entity_UnityEngine_Vector3_System_Single_System_Single_",
+      "declaration": "public static Vector3 PredictPointClamped_Simple(float strength, Entity target, Vector3 startPos, float range, float delay)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "startPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "range",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "PredictPointClamped_SpeedAcceleration(float, Entity, Vector3, float, float, float, float, float, float)",
+      "id": "Global_AbilityTrigger_PredictPointClamped_SpeedAcceleration_System_Single_Entity_UnityEngine_Vector3_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public static Vector3 PredictPointClamped_SpeedAcceleration(float strength, Entity target, Vector3 startPos, float range, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "startPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "range",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "frontDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "initSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "targetSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "acceleration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "PredictTime_SpeedAcceleration(Entity, Vector3, float, float, float, float, float)",
+      "id": "Global_AbilityTrigger_PredictTime_SpeedAcceleration_Entity_UnityEngine_Vector3_System_Single_System_Single_System_Single_System_Single_System_Single_",
+      "declaration": "public static float PredictTime_SpeedAcceleration(Entity target, Vector3 startPos, float delay, float frontDistance, float initSpeed, float targetSpeed, float acceleration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "startPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "frontDistance",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "initSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "targetSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "acceleration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "ProcessRange(float)",
+      "id": "Global_AbilityTrigger_ProcessRange_System_Single_",
+      "declaration": "public virtual float ProcessRange(float original)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "original",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "ProcessReceivedCooldownReduction(ref CooldownReductionSettings, Actor)",
+      "id": "Global_AbilityTrigger_ProcessReceivedCooldownReduction_CooldownReductionSettings__Actor_",
+      "declaration": "public void ProcessReceivedCooldownReduction(ref CooldownReductionSettings data, Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "CooldownReductionSettings",
+          "type_uid": "Global.CooldownReductionSettings",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatioSettings, Actor)",
+      "id": "Global_AbilityTrigger_ProcessReceivedCooldownReductionByRatio_CooldownReductionByRatioSettings__Actor_",
+      "declaration": "public void ProcessReceivedCooldownReductionByRatio(ref CooldownReductionByRatioSettings data, Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "CooldownReductionByRatioSettings",
+          "type_uid": "Global.CooldownReductionByRatioSettings",
+          "description": ""
+        },
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetCharge(int, int)",
+      "id": "Global_AbilityTrigger_SetCharge_System_Int32_System_Int32_",
+      "declaration": "public void SetCharge(int configIndex, int charge)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "charge",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetChargeAll(int)",
+      "id": "Global_AbilityTrigger_SetChargeAll_System_Int32_",
+      "declaration": "public void SetChargeAll(int charge)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "charge",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetCooldownTime(int, float, bool)",
+      "id": "Global_AbilityTrigger_SetCooldownTime_System_Int32_System_Single_System_Boolean_",
+      "declaration": "public void SetCooldownTime(int configIndex, float time, bool scaled = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "time",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scaled",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetCooldownTimeAll(float, bool)",
+      "id": "Global_AbilityTrigger_SetCooldownTimeAll_System_Single_System_Boolean_",
+      "declaration": "public void SetCooldownTimeAll(float time, bool scaled = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "time",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scaled",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetMinimumDelay(int, float)",
+      "id": "Global_AbilityTrigger_SetMinimumDelay_System_Int32_System_Single_",
+      "declaration": "public void SetMinimumDelay(int configIndex, float delay)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetMinimumDelayAll(float)",
+      "id": "Global_AbilityTrigger_SetMinimumDelayAll_System_Single_",
+      "declaration": "public void SetMinimumDelayAll(float delay)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "delay",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldTickCooldown(int)",
+      "id": "Global_AbilityTrigger_ShouldTickCooldown_System_Int32_",
+      "declaration": "protected virtual bool ShouldTickCooldown(int configIndex)",
+      "summary": "If false, this trigger will not tick cooldowns by itself nor replenish charges.\nDelays will tick as usual.\nThis should return same values in server and clients for consistent behavior.",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "SyncCastMethodChanges(int)",
+      "id": "Global_AbilityTrigger_SyncCastMethodChanges_System_Int32_",
+      "declaration": "public void SyncCastMethodChanges(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UndoChangeConfig()",
+      "id": "Global_AbilityTrigger_UndoChangeConfig",
+      "declaration": "public void UndoChangeConfig()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UnlockCooldown(int)",
+      "id": "Global_AbilityTrigger_UnlockCooldown_System_Int32_",
+      "declaration": "public void UnlockCooldown(int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

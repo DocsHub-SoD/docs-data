@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IForceHeroicHealthbar",
+  "name": "IForceHeroicHealthbar",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IForceHeroicHealthbar",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

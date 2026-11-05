@@ -1,0 +1,15 @@
+{
+  "uid": "Global.CosmeticPurchasePrerequisite",
+  "name": "CosmeticPurchasePrerequisite",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum CosmeticPurchasePrerequisite",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

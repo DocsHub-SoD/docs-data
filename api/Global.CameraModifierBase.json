@@ -1,0 +1,43 @@
+{
+  "uid": "Global.CameraModifierBase",
+  "name": "CameraModifierBase",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CameraModifierBase",
+  "inheritance": [
+    {
+      "name": "CameraModifierOffset",
+      "href": "Global.CameraModifierOffset.html",
+      "uid": "Global.CameraModifierOffset"
+    },
+    {
+      "name": "CameraModifierZoom",
+      "href": "Global.CameraModifierZoom.html",
+      "uid": "Global.CameraModifierZoom"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Apply()",
+      "id": "Global_CameraModifierBase_Apply",
+      "declaration": "public CameraModifierBase Apply()",
+      "summary": "",
+      "parameters": [],
+      "returns": "CameraModifierBase"
+    },
+    {
+      "name": "Remove()",
+      "id": "Global_CameraModifierBase_Remove",
+      "declaration": "public void Remove()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

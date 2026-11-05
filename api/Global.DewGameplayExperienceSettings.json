@@ -1,0 +1,488 @@
+{
+  "uid": "Global.DewGameplayExperienceSettings",
+  "name": "DewGameplayExperienceSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"New Dew Game Experience Settings\", menuName = \"Dew Game Experience Settings\")]\npublic class DewGameplayExperienceSettings : SerializedScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "bossBonusHealthPercentagePerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_bossBonusHealthPercentagePerPlayer",
+      "declaration": "[LabelText(\"Boss Bonus Health % Per Extra Player\")]\npublic float bossBonusHealthPercentagePerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bossBonusPowerPercentagePerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_bossBonusPowerPercentagePerPlayer",
+      "declaration": "[LabelText(\"Boss Bonus Power % Per Extra Player\")]\npublic float bossBonusPowerPercentagePerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bossRewardsDreamDustMax",
+      "id": "Global_DewGameplayExperienceSettings_bossRewardsDreamDustMax",
+      "declaration": "[LabelText(\"Dream Dust Max\")]\npublic Formula bossRewardsDreamDustMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bossRewardsDreamDustMin",
+      "id": "Global_DewGameplayExperienceSettings_bossRewardsDreamDustMin",
+      "declaration": "[LabelText(\"Dream Dust Min\")]\npublic Formula bossRewardsDreamDustMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bossRewardsGoldMax",
+      "id": "Global_DewGameplayExperienceSettings_bossRewardsGoldMax",
+      "declaration": "[LabelText(\"Gold Max\")]\npublic Formula bossRewardsGoldMax",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bossRewardsGoldMin",
+      "id": "Global_DewGameplayExperienceSettings_bossRewardsGoldMin",
+      "declaration": "[Header(\"Boss Rewards by Zone Index\")]\n[LabelText(\"Gold Min\")]\npublic Formula bossRewardsGoldMin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "combatRewardFantasyChance",
+      "id": "Global_DewGameplayExperienceSettings_combatRewardFantasyChance",
+      "declaration": "[LabelText(\"Fantasy\")]\npublic Formula combatRewardFantasyChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "combatRewardMemoryChance",
+      "id": "Global_DewGameplayExperienceSettings_combatRewardMemoryChance",
+      "declaration": "[Header(\"Combat Reward Chances By Zone Index\")]\n[LabelText(\"Memory\")]\npublic Formula combatRewardMemoryChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownFloorRatioByAbilityHaste",
+      "id": "Global_DewGameplayExperienceSettings_cooldownFloorRatioByAbilityHaste",
+      "declaration": "[Header(\"Cooldown Reductions\")]\npublic float cooldownFloorRatioByAbilityHaste",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownFloorRatioBySkillUpgrade",
+      "id": "Global_DewGameplayExperienceSettings_cooldownFloorRatioBySkillUpgrade",
+      "declaration": "public float cooldownFloorRatioBySkillUpgrade",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "droppedExpMultiplierPerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_droppedExpMultiplierPerPlayer",
+      "declaration": "public float droppedExpMultiplierPerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "expDropDeviation",
+      "id": "Global_DewGameplayExperienceSettings_expDropDeviation",
+      "declaration": "public float expDropDeviation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "expGlobalMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_expGlobalMultiplier",
+      "declaration": "public float expGlobalMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "expMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_expMultiplier",
+      "declaration": "public PerMonsterTypeData<float> expMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gainedSkillHastePerSkillLevel",
+      "id": "Global_DewGameplayExperienceSettings_gainedSkillHastePerSkillLevel",
+      "declaration": "public float gainedSkillHastePerSkillLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemAddedQualityOnUpgrade",
+      "id": "Global_DewGameplayExperienceSettings_gemAddedQualityOnUpgrade",
+      "declaration": "public int gemAddedQualityOnUpgrade",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemCleanseCostByQuality",
+      "id": "Global_DewGameplayExperienceSettings_gemCleanseCostByQuality",
+      "declaration": "[Header(\"Cleanses\")]\npublic Formula gemCleanseCostByQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemCleanseMinQuality",
+      "id": "Global_DewGameplayExperienceSettings_gemCleanseMinQuality",
+      "declaration": "public int gemCleanseMinQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemDismantleDreamDustByQuality",
+      "id": "Global_DewGameplayExperienceSettings_gemDismantleDreamDustByQuality",
+      "declaration": "[Header(\"Dismantle, Upgrades\")]\npublic Formula gemDismantleDreamDustByQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemDismantleDreamDustMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_gemDismantleDreamDustMultiplier",
+      "declaration": "public PerRarityData<float> gemDismantleDreamDustMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemUpgradeDreamDustByQuality",
+      "id": "Global_DewGameplayExperienceSettings_gemUpgradeDreamDustByQuality",
+      "declaration": "public Formula gemUpgradeDreamDustByQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemValue",
+      "id": "Global_DewGameplayExperienceSettings_gemValue",
+      "declaration": "public PerRarityData<int> gemValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "generalServiceGoldPriceMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_generalServiceGoldPriceMultiplier",
+      "declaration": "public float generalServiceGoldPriceMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "generalServiceGoldPriceMultiplierByZoneIndex",
+      "id": "Global_DewGameplayExperienceSettings_generalServiceGoldPriceMultiplierByZoneIndex",
+      "declaration": "public Formula generalServiceGoldPriceMultiplierByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "globalGoldEconomyMultiplierByZoneIndex",
+      "id": "Global_DewGameplayExperienceSettings_globalGoldEconomyMultiplierByZoneIndex",
+      "declaration": "[Header(\"Gold\")]\npublic Formula globalGoldEconomyMultiplierByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killGold",
+      "id": "Global_DewGameplayExperienceSettings_killGold",
+      "declaration": "public PerMonsterTypeData<float> killGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killGoldDeviation",
+      "id": "Global_DewGameplayExperienceSettings_killGoldDeviation",
+      "declaration": "public float killGoldDeviation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killGoldMultiplierByZoneIndex",
+      "id": "Global_DewGameplayExperienceSettings_killGoldMultiplierByZoneIndex",
+      "declaration": "public Formula killGoldMultiplierByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGlobalPopulation",
+      "id": "Global_DewGameplayExperienceSettings_maxGlobalPopulation",
+      "declaration": "[Header(\"Max Population (Spawned)\")]\n[LabelText(\"Max Spawned Population\")]\npublic float maxGlobalPopulation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGlobalPopulationMultiplierByAmbientLevel",
+      "id": "Global_DewGameplayExperienceSettings_maxGlobalPopulationMultiplierByAmbientLevel",
+      "declaration": "[LabelText(\"Multiplier By Ambient Level\")]\npublic Formula maxGlobalPopulationMultiplierByAmbientLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGlobalPopulationMultiplierPerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_maxGlobalPopulationMultiplierPerPlayer",
+      "declaration": "[LabelText(\"Multiplier Per Extra Player\")]\npublic float maxGlobalPopulationMultiplierPerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHeroLevel",
+      "id": "Global_DewGameplayExperienceSettings_maxHeroLevel",
+      "declaration": "[Header(\"Experience\")]\npublic int maxHeroLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSectionPopulation",
+      "id": "Global_DewGameplayExperienceSettings_maxSectionPopulation",
+      "declaration": "[Header(\"Max Population (Section)\")]\n[LabelText(\"Max Population\")]\npublic float maxSectionPopulation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSectionPopulationMultiplierByAmbientLevel",
+      "id": "Global_DewGameplayExperienceSettings_maxSectionPopulationMultiplierByAmbientLevel",
+      "declaration": "[LabelText(\"Multiplier By Ambient Level\")]\npublic Formula maxSectionPopulationMultiplierByAmbientLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSectionPopulationMultiplierPerPlayerInSection",
+      "id": "Global_DewGameplayExperienceSettings_maxSectionPopulationMultiplierPerPlayerInSection",
+      "declaration": "[LabelText(\"Multiplier Per Extra Player In Section\")]\npublic float maxSectionPopulationMultiplierPerPlayerInSection",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossBonusHealthPercentagePerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_miniBossBonusHealthPercentagePerPlayer",
+      "declaration": "[LabelText(\"MiniBoss Bonus Health % Per Extra Player\")]\npublic float miniBossBonusHealthPercentagePerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossBonusPowerPercentagePerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_miniBossBonusPowerPercentagePerPlayer",
+      "declaration": "[LabelText(\"MiniBoss Bonus Power % Per Extra Player\")]\npublic float miniBossBonusPowerPercentagePerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossSpawnChanceByNonMiniBossCombatNodesVisited",
+      "id": "Global_DewGameplayExperienceSettings_miniBossSpawnChanceByNonMiniBossCombatNodesVisited",
+      "declaration": "[Header(\"Monsters\")]\npublic Formula miniBossSpawnChanceByNonMiniBossCombatNodesVisited",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterBonusHealthPercentagePerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_monsterBonusHealthPercentagePerPlayer",
+      "declaration": "[LabelText(\"Bonus Health % Per Extra Player\")]\npublic float monsterBonusHealthPercentagePerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterBonusPowerPercentagePerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_monsterBonusPowerPercentagePerPlayer",
+      "declaration": "[LabelText(\"Bonus Power % Per Extra Player\")]\npublic float monsterBonusPowerPercentagePerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterSpawnPopulationMultiplierByTurnIndex",
+      "id": "Global_DewGameplayExperienceSettings_monsterSpawnPopulationMultiplierByTurnIndex",
+      "declaration": "[LabelText(\"Total Spawned Pop Multiplier By Turn Index\")]\npublic Formula monsterSpawnPopulationMultiplierByTurnIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterSpawnPopulationMultiplierPerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_monsterSpawnPopulationMultiplierPerPlayer",
+      "declaration": "[LabelText(\"Total Spawned Pop Multiplier Per Extra Player\")]\npublic float monsterSpawnPopulationMultiplierPerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterWavesMultiplierPerPlayer",
+      "id": "Global_DewGameplayExperienceSettings_monsterWavesMultiplierPerPlayer",
+      "declaration": "[LabelText(\"Waves Multiplier Per Extra Player\")]\npublic float monsterWavesMultiplierPerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "regenOrbDropChanceOnLowHealth",
+      "id": "Global_DewGameplayExperienceSettings_regenOrbDropChanceOnLowHealth",
+      "declaration": "public PerMonsterTypeData<float> regenOrbDropChanceOnLowHealth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "regenOrbDropChanceOnMaxHealth",
+      "id": "Global_DewGameplayExperienceSettings_regenOrbDropChanceOnMaxHealth",
+      "declaration": "[Header(\"Regen Orb\")]\npublic PerMonsterTypeData<float> regenOrbDropChanceOnMaxHealth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sellValueMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_sellValueMultiplier",
+      "declaration": "public float sellValueMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillCleanseCostByLevel",
+      "id": "Global_DewGameplayExperienceSettings_skillCleanseCostByLevel",
+      "declaration": "public Formula skillCleanseCostByLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillCleanseMinLevel",
+      "id": "Global_DewGameplayExperienceSettings_skillCleanseMinLevel",
+      "declaration": "public int skillCleanseMinLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillDismantleDreamDustByLevel",
+      "id": "Global_DewGameplayExperienceSettings_skillDismantleDreamDustByLevel",
+      "declaration": "public Formula skillDismantleDreamDustByLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillDismantleDreamDustMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_skillDismantleDreamDustMultiplier",
+      "declaration": "public PerRarityData<float> skillDismantleDreamDustMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillUpgradeDreamDustByLevel",
+      "id": "Global_DewGameplayExperienceSettings_skillUpgradeDreamDustByLevel",
+      "declaration": "public Formula skillUpgradeDreamDustByLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillValue",
+      "id": "Global_DewGameplayExperienceSettings_skillValue",
+      "declaration": "public PerRarityData<int> skillValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardustBossSoulAmount",
+      "id": "Global_DewGameplayExperienceSettings_stardustBossSoulAmount",
+      "declaration": "[LabelText(\"Boss Soul Amount\")]\npublic Vector2Int stardustBossSoulAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardustDeathDropAmount",
+      "id": "Global_DewGameplayExperienceSettings_stardustDeathDropAmount",
+      "declaration": "[LabelText(\"Death Drop Amount Range\")]\npublic Vector2Int stardustDeathDropAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardustDeathDropChance",
+      "id": "Global_DewGameplayExperienceSettings_stardustDeathDropChance",
+      "declaration": "[Header(\"Stardust\")]\n[LabelText(\"Death Drop Chance\")]\npublic PerMonsterTypeData<float> stardustDeathDropChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "valueGlobalMultiplier",
+      "id": "Global_DewGameplayExperienceSettings_valueGlobalMultiplier",
+      "declaration": "[Header(\"Buy, Sell\")]\npublic float valueGlobalMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "valueMultiplierPerGemQuality",
+      "id": "Global_DewGameplayExperienceSettings_valueMultiplierPerGemQuality",
+      "declaration": "public float valueMultiplierPerGemQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "valueMultiplierPerSkillLevel",
+      "id": "Global_DewGameplayExperienceSettings_valueMultiplierPerSkillLevel",
+      "declaration": "public float valueMultiplierPerSkillLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "welcomingSpawnPopMultiplierByArea",
+      "id": "Global_DewGameplayExperienceSettings_welcomingSpawnPopMultiplierByArea",
+      "declaration": "[Header(\"Hunters\")]\npublic AnimationCurve welcomingSpawnPopMultiplierByArea",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

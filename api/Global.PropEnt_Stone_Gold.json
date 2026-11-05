@@ -1,0 +1,99 @@
+{
+  "uid": "Global.PropEnt_Stone_Gold",
+  "name": "PropEnt_Stone_Gold",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PropEnt_Stone_Gold : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    }
+  ],
+  "fields": [
+    {
+      "name": "amountByZoneIndex",
+      "id": "Global_PropEnt_Stone_Gold_amountByZoneIndex",
+      "declaration": "public Formula amountByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isRegularReward",
+      "id": "Global_PropEnt_Stone_Gold_isRegularReward",
+      "declaration": "public override bool isRegularReward { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetAmount()",
+      "id": "Global_PropEnt_Stone_Gold_GetAmount",
+      "declaration": "public int GetAmount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "OnDeath(EventInfoKill)",
+      "id": "Global_PropEnt_Stone_Gold_OnDeath_EventInfoKill_",
+      "declaration": "protected override void OnDeath(EventInfoKill info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoKill",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

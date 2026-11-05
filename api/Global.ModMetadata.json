@@ -1,0 +1,56 @@
+{
+  "uid": "Global.ModMetadata",
+  "name": "ModMetadata",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ModMetadata",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "assemblies",
+      "id": "Global_ModMetadata_assemblies",
+      "declaration": "public string[] assemblies",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "author",
+      "id": "Global_ModMetadata_author",
+      "declaration": "public string author",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id",
+      "id": "Global_ModMetadata_id",
+      "declaration": "public string id",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modVer",
+      "id": "Global_ModMetadata_modVer",
+      "declaration": "public string modVer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "name",
+      "id": "Global_ModMetadata_name",
+      "declaration": "public string name",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

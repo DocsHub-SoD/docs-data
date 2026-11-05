@@ -1,0 +1,55 @@
+{
+  "uid": "Global.UI_HoldToRapidClickButton",
+  "name": "UI_HoldToRapidClickButton",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_HoldToRapidClickButton : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onClick",
+      "id": "Global_UI_HoldToRapidClickButton_onClick",
+      "declaration": "[InfoBox(\"Subscribe to this instead of Button's to prevent double clicks.\", InfoMessageType.Info, null)]\npublic UnityEvent onClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnPointerDown(PointerEventData)",
+      "id": "Global_UI_HoldToRapidClickButton_OnPointerDown_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerDown(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerUp(PointerEventData)",
+      "id": "Global_UI_HoldToRapidClickButton_OnPointerUp_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerUp(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

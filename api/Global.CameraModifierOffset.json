@@ -1,0 +1,39 @@
+{
+  "uid": "Global.CameraModifierOffset",
+  "name": "CameraModifierOffset",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CameraModifierOffset : CameraModifierBase",
+  "inheritance": [
+    {
+      "name": "CameraModifierBase",
+      "href": "Global.CameraModifierBase.html",
+      "uid": "Global.CameraModifierBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "offset",
+      "id": "Global_CameraModifierOffset_offset",
+      "declaration": "public Vector3 offset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Apply()",
+      "id": "Global_CameraModifierOffset_Apply",
+      "declaration": "public CameraModifierOffset Apply()",
+      "summary": "",
+      "parameters": [],
+      "returns": "CameraModifierOffset"
+    }
+  ],
+  "events": []
+}

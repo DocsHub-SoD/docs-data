@@ -1,0 +1,32 @@
+{
+  "uid": "Global.CollidableHit",
+  "name": "CollidableHit",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct CollidableHit",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "point",
+      "id": "Global_CollidableHit_point",
+      "declaration": "public Vector3 point",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "projectile",
+      "id": "Global_CollidableHit_projectile",
+      "declaration": "public Projectile projectile",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

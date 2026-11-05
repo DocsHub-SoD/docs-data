@@ -1,0 +1,32 @@
+{
+  "uid": "Global.ICastMethodDataCone",
+  "name": "ICastMethodDataCone",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICastMethodDataCone",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "angle",
+      "id": "Global_ICastMethodDataCone_angle",
+      "declaration": "float angle { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "radius",
+      "id": "Global_ICastMethodDataCone_radius",
+      "declaration": "float radius { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

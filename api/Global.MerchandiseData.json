@@ -1,0 +1,64 @@
+{
+  "uid": "Global.MerchandiseData",
+  "name": "MerchandiseData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct MerchandiseData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "count",
+      "id": "Global_MerchandiseData_count",
+      "declaration": "public int count",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customData",
+      "id": "Global_MerchandiseData_customData",
+      "declaration": "public string customData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "itemName",
+      "id": "Global_MerchandiseData_itemName",
+      "declaration": "public string itemName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "level",
+      "id": "Global_MerchandiseData_level",
+      "declaration": "public int level",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "price",
+      "id": "Global_MerchandiseData_price",
+      "declaration": "public Cost price",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_MerchandiseData_type",
+      "declaration": "public MerchandiseType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,762 @@
+{
+  "uid": "Global.GlobalUIManager",
+  "name": "GlobalUIManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GlobalUIManager : ManagerBase<GlobalUIManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "GlobalUIManager",
+      "href": "Global.GlobalUIManager.html",
+      "uid": "Global.GlobalUIManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "currentMenuView",
+      "id": "Global_GlobalUIManager_currentMenuView",
+      "declaration": "[NonSerialized]\npublic IMenuView currentMenuView",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "devFloatingTextParent",
+      "id": "Global_GlobalUIManager_devFloatingTextParent",
+      "declaration": "public RectTransform devFloatingTextParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "devFloatingTextPrefab",
+      "id": "Global_GlobalUIManager_devFloatingTextPrefab",
+      "declaration": "public TextMeshProUGUI devFloatingTextPrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDisplayAnimationTarget",
+      "id": "Global_GlobalUIManager_focusDisplayAnimationTarget",
+      "declaration": "public Transform focusDisplayAnimationTarget",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDisplayBoxObject",
+      "id": "Global_GlobalUIManager_focusDisplayBoxObject",
+      "declaration": "public GameObject focusDisplayBoxObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDisplayCircleObject",
+      "id": "Global_GlobalUIManager_focusDisplayCircleObject",
+      "declaration": "public GameObject focusDisplayCircleObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDisplayObject",
+      "id": "Global_GlobalUIManager_focusDisplayObject",
+      "declaration": "public GameObject focusDisplayObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDisplayTransform",
+      "id": "Global_GlobalUIManager_focusDisplayTransform",
+      "declaration": "public RectTransform focusDisplayTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fontBody",
+      "id": "Global_GlobalUIManager_fontBody",
+      "declaration": "public TMP_FontAsset fontBody",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fontHeading",
+      "id": "Global_GlobalUIManager_fontHeading",
+      "declaration": "public TMP_FontAsset fontHeading",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fontHeadingBold",
+      "id": "Global_GlobalUIManager_fontHeadingBold",
+      "declaration": "public TMP_FontAsset fontHeadingBold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fontHeadingLight",
+      "id": "Global_GlobalUIManager_fontHeadingLight",
+      "declaration": "public TMP_FontAsset fontHeadingLight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxHighlightHide",
+      "id": "Global_GlobalUIManager_fxHighlightHide",
+      "declaration": "public GameObject fxHighlightHide",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxHighlightShow",
+      "id": "Global_GlobalUIManager_fxHighlightShow",
+      "declaration": "public GameObject fxHighlightShow",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxTick",
+      "id": "Global_GlobalUIManager_fxTick",
+      "declaration": "public GameObject fxTick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isBackDisabled",
+      "id": "Global_GlobalUIManager_isBackDisabled",
+      "declaration": "[NonSerialized]\npublic bool isBackDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFocusedChanged",
+      "id": "Global_GlobalUIManager_onFocusedChanged",
+      "declaration": "public Action<IGamepadFocusable, IGamepadFocusable> onFocusedChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tooltipBoxCanvasGroup",
+      "id": "Global_GlobalUIManager_tooltipBoxCanvasGroup",
+      "declaration": "public CanvasGroup tooltipBoxCanvasGroup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tooltipBoxTransform",
+      "id": "Global_GlobalUIManager_tooltipBoxTransform",
+      "declaration": "public RectTransform tooltipBoxTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightBackdropBottom",
+      "id": "Global_GlobalUIManager_tutHighlightBackdropBottom",
+      "declaration": "public RectTransform tutHighlightBackdropBottom",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightBackdropLeft",
+      "id": "Global_GlobalUIManager_tutHighlightBackdropLeft",
+      "declaration": "public RectTransform tutHighlightBackdropLeft",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightBackdropRight",
+      "id": "Global_GlobalUIManager_tutHighlightBackdropRight",
+      "declaration": "public RectTransform tutHighlightBackdropRight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightBackdropTop",
+      "id": "Global_GlobalUIManager_tutHighlightBackdropTop",
+      "declaration": "public RectTransform tutHighlightBackdropTop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightBox",
+      "id": "Global_GlobalUIManager_tutHighlightBox",
+      "declaration": "public RectTransform tutHighlightBox",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightObject",
+      "id": "Global_GlobalUIManager_tutHighlightObject",
+      "declaration": "public GameObject tutHighlightObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tutHighlightText",
+      "id": "Global_GlobalUIManager_tutHighlightText",
+      "declaration": "public TextMeshProUGUI tutHighlightText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "focused",
+      "id": "Global_GlobalUIManager_focused",
+      "declaration": "public IGamepadFocusable focused { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isTooltipShown",
+      "id": "Global_GlobalUIManager_isTooltipShown",
+      "declaration": "public bool isTooltipShown { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isTutorialHighlighting",
+      "id": "Global_GlobalUIManager_isTutorialHighlighting",
+      "declaration": "public bool isTutorialHighlighting { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastFocusChangeUnscaledTime",
+      "id": "Global_GlobalUIManager_lastFocusChangeUnscaledTime",
+      "declaration": "public float lastFocusChangeUnscaledTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tooltipScreenSpaceRect",
+      "id": "Global_GlobalUIManager_tooltipScreenSpaceRect",
+      "declaration": "public Rect tooltipScreenSpaceRect { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddBackHandler(MonoBehaviour, int, Func<bool>)",
+      "id": "Global_GlobalUIManager_AddBackHandler_UnityEngine_MonoBehaviour_System_Int32_System_Func_System_Boolean__",
+      "declaration": "public BackHandler AddBackHandler(MonoBehaviour owner, int priority, Func<bool> callback)",
+      "summary": "Add handler for back buttons.Handler must return boolean value as indication of whether the back button event is consumed or not.Callback with highest priority will fire first when back button is pressed.If priority is the same, last added item will be fired first.If owner is destroyed, back handler will automatically be unregistered.",
+      "parameters": [
+        {
+          "name": "owner",
+          "type": "UnityEngine.MonoBehaviour",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "priority",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "callback",
+          "type": "System.Func<TResult><bool>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "BackHandler"
+    },
+    {
+      "name": "AddGamepadFocusable(IGamepadFocusable)",
+      "id": "Global_GlobalUIManager_AddGamepadFocusable_IGamepadFocusable_",
+      "declaration": "public void AddGamepadFocusable(IGamepadFocusable focusable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "focusable",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ClickHighlightForTutorial()",
+      "id": "Global_GlobalUIManager_ClickHighlightForTutorial",
+      "declaration": "public void ClickHighlightForTutorial()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnforceFontFallbackOrder()",
+      "id": "Global_GlobalUIManager_EnforceFontFallbackOrder",
+      "declaration": "public void EnforceFontFallbackOrder()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_GlobalUIManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetFocusedComponent<T>()",
+      "id": "Global_GlobalUIManager_GetFocusedComponent__1",
+      "declaration": "public T GetFocusedComponent<T>() where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetIntersectingRects(List<Rect>, Vector2, Vector2, float, float)",
+      "id": "Global_GlobalUIManager_GetIntersectingRects_System_Collections_Generic_List_UnityEngine_Rect__UnityEngine_Vector2_UnityEngine_Vector2_System_Single_System_Single_",
+      "declaration": "public static List<GlobalUIManager.RectResult> GetIntersectingRects(List<Rect> rects, Vector2 origin, Vector2 direction, float angle, float radius)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rects",
+          "type": "System.Collections.Generic.List<T><UnityEngine.Rect>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "origin",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "angle",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><GlobalUIManager.RectResult>"
+    },
+    {
+      "name": "GoBack()",
+      "id": "Global_GlobalUIManager_GoBack",
+      "declaration": "public void GoBack()",
+      "summary": "Handle go back event with registered handlers.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HighlightForTutorial(TutorialHighlightSettings)",
+      "id": "Global_GlobalUIManager_HighlightForTutorial_TutorialHighlightSettings_",
+      "declaration": "public IEnumerator HighlightForTutorial(TutorialHighlightSettings s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "TutorialHighlightSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "IsUIElementClickable(RectTransform)",
+      "id": "Global_GlobalUIManager_IsUIElementClickable_UnityEngine_RectTransform_",
+      "declaration": "public bool IsUIElementClickable(RectTransform rectTransform)",
+      "summary": "This checks for occlusions.",
+      "parameters": [
+        {
+          "name": "rectTransform",
+          "type": "UnityEngine.RectTransform",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_GlobalUIManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MoveFocus(Vector3, float, float, float, Func<IGamepadFocusable, bool>, Func<IGamepadFocusable, float>)",
+      "id": "Global_GlobalUIManager_MoveFocus_UnityEngine_Vector3_System_Single_System_Single_System_Single_System_Func_IGamepadFocusable_System_Boolean__System_Func_IGamepadFocusable_System_Single__",
+      "declaration": "public bool MoveFocus(Vector3 direction, float angleLimit, float normalizedPerpendicularDistLimit, float normalizedDistLimit, Func<IGamepadFocusable, bool> condition = null, Func<IGamepadFocusable, float> customScoreFunc = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "angleLimit",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "normalizedPerpendicularDistLimit",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "normalizedDistLimit",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "condition",
+          "type": "System.Func<T, TResult><IGamepadFocusable,bool>",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        },
+        {
+          "name": "customScoreFunc",
+          "type": "System.Func<T, TResult><IGamepadFocusable,float>",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "MoveFocus(Vector3, Vector2, Vector2, Vector2, Func<IGamepadFocusable, bool>, Func<IGamepadFocusable, float>)",
+      "id": "Global_GlobalUIManager_MoveFocus_UnityEngine_Vector3_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector2_System_Func_IGamepadFocusable_System_Boolean__System_Func_IGamepadFocusable_System_Single__",
+      "declaration": "public bool MoveFocus(Vector3 direction, Vector2 angleLimit, Vector2 normalizedPerpendicularDistLimit, Vector2 normalizedDistLimit, Func<IGamepadFocusable, bool> condition = null, Func<IGamepadFocusable, float> customScoreFunc = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "angleLimit",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "normalizedPerpendicularDistLimit",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "normalizedDistLimit",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "condition",
+          "type": "System.Func<T, TResult><IGamepadFocusable,bool>",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        },
+        {
+          "name": "customScoreFunc",
+          "type": "System.Func<T, TResult><IGamepadFocusable,float>",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "MoveFocus(Vector3)",
+      "id": "Global_GlobalUIManager_MoveFocus_UnityEngine_Vector3_",
+      "declaration": "public bool MoveFocus(Vector3 direction)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "PopulateCacheData(ref GetFocusTargetSettings, out Action)",
+      "id": "Global_GlobalUIManager_PopulateCacheData_GetFocusTargetSettings__System_Action__",
+      "declaration": "public void PopulateCacheData(ref GetFocusTargetSettings settings, out Action handle)",
+      "summary": "Populate cache data for the given settings to make consecutive GetTarget calls faster.",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "GetFocusTargetSettings",
+          "type_uid": "Global.GetFocusTargetSettings",
+          "description": ""
+        },
+        {
+          "name": "handle",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveBackHandler(BackHandler)",
+      "id": "Global_GlobalUIManager_RemoveBackHandler_BackHandler_",
+      "declaration": "public void RemoveBackHandler(BackHandler handle)",
+      "summary": "Remove the provided back handler if it exists in current handler list.If owner is destroyed, back handler will automatically be unregistered.",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "BackHandler",
+          "type_uid": "Global.BackHandler",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveGamepadFocusable(IGamepadFocusable)",
+      "id": "Global_GlobalUIManager_RemoveGamepadFocusable_IGamepadFocusable_",
+      "declaration": "public void RemoveGamepadFocusable(IGamepadFocusable focusable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "focusable",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetFocus(IGamepadFocusable)",
+      "id": "Global_GlobalUIManager_SetFocus_IGamepadFocusable_",
+      "declaration": "public void SetFocus(IGamepadFocusable focusable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "focusable",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetFocusOnComponent(Component)",
+      "id": "Global_GlobalUIManager_SetFocusOnComponent_UnityEngine_Component_",
+      "declaration": "public void SetFocusOnComponent(Component focusable)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "focusable",
+          "type": "UnityEngine.Component",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetFocusOnFirstFocusable(GameObject)",
+      "id": "Global_GlobalUIManager_SetFocusOnFirstFocusable_UnityEngine_GameObject_",
+      "declaration": "public void SetFocusOnFirstFocusable(GameObject parent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowDevText(string, bool)",
+      "id": "Global_GlobalUIManager_ShowDevText_System_String_System_Boolean_",
+      "declaration": "public void ShowDevText(string rawText, bool log = true)",
+      "summary": "Show developer-only floating text in top-left corner of the screen for some time.This is not shown to non-developers.",
+      "parameters": [
+        {
+          "name": "rawText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "log",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SimulateClickOnUIElement(Component)",
+      "id": "Global_GlobalUIManager_SimulateClickOnUIElement_UnityEngine_Component_",
+      "declaration": "public void SimulateClickOnUIElement(Component comp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "comp",
+          "type": "UnityEngine.Component",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TryGetFocusTarget(GetFocusTargetSettings, out IGamepadFocusable)",
+      "id": "Global_GlobalUIManager_TryGetFocusTarget_GetFocusTargetSettings_IGamepadFocusable__",
+      "declaration": "public bool TryGetFocusTarget(GetFocusTargetSettings s, out IGamepadFocusable next)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "GetFocusTargetSettings",
+          "type_uid": "Global.GetFocusTargetSettings",
+          "description": ""
+        },
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetFocusTargetGeneric(Vector3, Func<IGamepadFocusable, bool>, out IGamepadFocusable)",
+      "id": "Global_GlobalUIManager_TryGetFocusTargetGeneric_UnityEngine_Vector3_System_Func_IGamepadFocusable_System_Boolean__IGamepadFocusable__",
+      "declaration": "public bool TryGetFocusTargetGeneric(Vector3 direction, Func<IGamepadFocusable, bool> condition, out IGamepadFocusable next)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "direction",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "condition",
+          "type": "System.Func<T, TResult><IGamepadFocusable,bool>",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        },
+        {
+          "name": "next",
+          "type": "IGamepadFocusable",
+          "type_uid": "Global.IGamepadFocusable",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryMoveFocusBack()",
+      "id": "Global_GlobalUIManager_TryMoveFocusBack",
+      "declaration": "public bool TryMoveFocusBack()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "UnhighlightForTutorial()",
+      "id": "Global_GlobalUIManager_UnhighlightForTutorial",
+      "declaration": "public void UnhighlightForTutorial()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

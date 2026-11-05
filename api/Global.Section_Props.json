@@ -1,0 +1,49 @@
+{
+  "uid": "Global.Section_Props",
+  "name": "Section_Props",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Section_Props : RoomSectionComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "RoomSectionComponent",
+      "href": "Global.RoomSectionComponent.html",
+      "uid": "Global.RoomSectionComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "excludeFromGlobalRule",
+      "id": "Global_Section_Props_excludeFromGlobalRule",
+      "declaration": "public bool excludeFromGlobalRule",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sectionRule",
+      "id": "Global_Section_Props_sectionRule",
+      "declaration": "public PropSpawnRule sectionRule",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

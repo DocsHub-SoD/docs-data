@@ -1,0 +1,88 @@
+{
+  "uid": "Global.DewNetworkStartSettings",
+  "name": "DewNetworkStartSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewNetworkStartSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "addedGameMods",
+      "id": "Global_DewNetworkStartSettings_addedGameMods",
+      "declaration": "public List<string> addedGameMods",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "address",
+      "id": "Global_DewNetworkStartSettings_address",
+      "declaration": "public string address",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "continueData",
+      "id": "Global_DewNetworkStartSettings_continueData",
+      "declaration": "public DewPersistence.GameData continueData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customGameSettingsSaveKey",
+      "id": "Global_DewNetworkStartSettings_customGameSettingsSaveKey",
+      "declaration": "public string customGameSettingsSaveKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lanMode",
+      "id": "Global_DewNetworkStartSettings_lanMode",
+      "declaration": "public bool lanMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyName",
+      "id": "Global_DewNetworkStartSettings_lobbyName",
+      "declaration": "public string lobbyName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyType",
+      "id": "Global_DewNetworkStartSettings_lobbyType",
+      "declaration": "public DewLobbyType lobbyType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPlayers",
+      "id": "Global_DewNetworkStartSettings_maxPlayers",
+      "declaration": "public int maxPlayers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "networkMode",
+      "id": "Global_DewNetworkStartSettings_networkMode",
+      "declaration": "public DewNetworkMode networkMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

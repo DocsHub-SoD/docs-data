@@ -1,0 +1,80 @@
+{
+  "uid": "Global.PingUIInstance",
+  "name": "PingUIInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PingUIInstance : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "angleOffset",
+      "id": "Global_PingUIInstance_angleOffset",
+      "declaration": "public float angleOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "arrowCanvasGroup",
+      "id": "Global_PingUIInstance_arrowCanvasGroup",
+      "declaration": "public CanvasGroup arrowCanvasGroup",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerNameText",
+      "id": "Global_PingUIInstance_playerNameText",
+      "declaration": "public TextMeshProUGUI playerNameText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "punchDuration",
+      "id": "Global_PingUIInstance_punchDuration",
+      "declaration": "public float punchDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotationTransform",
+      "id": "Global_PingUIInstance_rotationTransform",
+      "declaration": "public Transform rotationTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scalePunch",
+      "id": "Global_PingUIInstance_scalePunch",
+      "declaration": "public Vector3 scalePunch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "screenMargin",
+      "id": "Global_PingUIInstance_screenMargin",
+      "declaration": "public Vector2 screenMargin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useAlwaysOnTopUIParent",
+      "id": "Global_PingUIInstance_useAlwaysOnTopUIParent",
+      "declaration": "public bool useAlwaysOnTopUIParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

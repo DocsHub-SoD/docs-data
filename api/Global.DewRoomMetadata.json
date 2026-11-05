@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewRoomMetadata",
+  "name": "DewRoomMetadata",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewRoomMetadata : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "area",
+      "id": "Global_DewRoomMetadata_area",
+      "declaration": "public float area",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customPropRules",
+      "id": "Global_DewRoomMetadata_customPropRules",
+      "declaration": "public List<PropSpawnRule> customPropRules",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customRules",
+      "id": "Global_DewRoomMetadata_customRules",
+      "declaration": "public List<MonsterSpawnRule> customRules",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasSectionWithNoNodes",
+      "id": "Global_DewRoomMetadata_hasSectionWithNoNodes",
+      "declaration": "public bool hasSectionWithNoNodes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sceneActors",
+      "id": "Global_DewRoomMetadata_sceneActors",
+      "declaration": "public List<string> sceneActors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

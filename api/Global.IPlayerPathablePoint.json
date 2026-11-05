@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IPlayerPathablePoint",
+  "name": "IPlayerPathablePoint",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IPlayerPathablePoint",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "pathablePosition",
+      "id": "Global_IPlayerPathablePoint_pathablePosition",
+      "declaration": "Vector3 pathablePosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

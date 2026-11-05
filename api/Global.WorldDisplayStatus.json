@@ -1,0 +1,15 @@
+{
+  "uid": "Global.WorldDisplayStatus",
+  "name": "WorldDisplayStatus",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum WorldDisplayStatus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

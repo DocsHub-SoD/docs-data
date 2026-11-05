@@ -1,0 +1,43 @@
+{
+  "uid": "Global.DewDebug",
+  "name": "DewDebug",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewDebug",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "DrawRect(Rect, Color, float)",
+      "id": "Global_DewDebug_DrawRect_UnityEngine_Rect_UnityEngine_Color_System_Single_",
+      "declaration": "public static void DrawRect(Rect rect, Color color, float duration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rect",
+          "type": "UnityEngine.Rect",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

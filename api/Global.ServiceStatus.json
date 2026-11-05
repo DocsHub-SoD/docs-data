@@ -1,0 +1,15 @@
+{
+  "uid": "Global.ServiceStatus",
+  "name": "ServiceStatus",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum ServiceStatus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

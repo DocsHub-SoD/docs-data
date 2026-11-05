@@ -1,0 +1,126 @@
+{
+  "uid": "Global.MusicManager",
+  "name": "MusicManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class MusicManager : ManagerBase<MusicManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "MusicManager",
+      "href": "Global.MusicManager.html",
+      "uid": "Global.MusicManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fadeOutTime",
+      "id": "Global_MusicManager_fadeOutTime",
+      "declaration": "public float fadeOutTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "volumeMultiplier",
+      "id": "Global_MusicManager_volumeMultiplier",
+      "declaration": "public float volumeMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_MusicManager_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_MusicManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_MusicManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Pause()",
+      "id": "Global_MusicManager_Pause",
+      "declaration": "public void Pause()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Play(DewMusicItem)",
+      "id": "Global_MusicManager_Play_DewMusicItem_",
+      "declaration": "public void Play(DewMusicItem music)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "music",
+          "type": "DewMusicItem",
+          "type_uid": "Global.DewMusicItem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_MusicManager_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UnPause()",
+      "id": "Global_MusicManager_UnPause",
+      "declaration": "public void UnPause()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

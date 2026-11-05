@@ -1,0 +1,64 @@
+{
+  "uid": "Global.DewProfile.AchievementData",
+  "name": "DewProfile.AchievementData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.AchievementData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "completeTimestamp",
+      "id": "Global_DewProfile_AchievementData_completeTimestamp",
+      "declaration": "public long completeTimestamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentProgress",
+      "id": "Global_DewProfile_AchievementData_currentProgress",
+      "declaration": "public int currentProgress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCompleted",
+      "id": "Global_DewProfile_AchievementData_isCompleted",
+      "declaration": "public bool isCompleted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNew",
+      "id": "Global_DewProfile_AchievementData_isNew",
+      "declaration": "public bool isNew",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxProgress",
+      "id": "Global_DewProfile_AchievementData_maxProgress",
+      "declaration": "public int maxProgress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistentVariables",
+      "id": "Global_DewProfile_AchievementData_persistentVariables",
+      "declaration": "public Dictionary<string, string> persistentVariables",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

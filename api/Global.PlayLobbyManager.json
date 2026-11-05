@@ -1,0 +1,209 @@
+{
+  "uid": "Global.PlayLobbyManager",
+  "name": "PlayLobbyManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PlayLobbyManager : ManagerBase<PlayLobbyManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "PlayLobbyManager",
+      "href": "Global.PlayLobbyManager.html",
+      "uid": "Global.PlayLobbyManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fxRiftActivate",
+      "id": "Global_PlayLobbyManager_fxRiftActivate",
+      "declaration": "public GameObject fxRiftActivate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxRiftCharge",
+      "id": "Global_PlayLobbyManager_fxRiftCharge",
+      "declaration": "public GameObject fxRiftCharge",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxRiftLoop",
+      "id": "Global_PlayLobbyManager_fxRiftLoop",
+      "declaration": "public GameObject fxRiftLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxRiftOpen",
+      "id": "Global_PlayLobbyManager_fxRiftOpen",
+      "declaration": "public GameObject fxRiftOpen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isEveryoneReady",
+      "id": "Global_PlayLobbyManager_isEveryoneReady",
+      "declaration": "public bool isEveryoneReady { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfReadyPlayers",
+      "id": "Global_PlayLobbyManager_numOfReadyPlayers",
+      "declaration": "public int numOfReadyPlayers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numOfReadyPlayersMax",
+      "id": "Global_PlayLobbyManager_numOfReadyPlayersMax",
+      "declaration": "public int numOfReadyPlayersMax { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddStartGameCondition(Func<string>)",
+      "id": "Global_PlayLobbyManager_AddStartGameCondition_System_Func_System_String__",
+      "declaration": "public void AddStartGameCondition(Func<string> func)",
+      "summary": "Given function must return a reason for start button unavailability. Return null for approval.",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Func<TResult><string>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CheckStartGameCondition(out string, bool)",
+      "id": "Global_PlayLobbyManager_CheckStartGameCondition_System_String__System_Boolean_",
+      "declaration": "public bool CheckStartGameCondition(out string reason, bool showMessage)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "reason",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "showMessage",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GoBack()",
+      "id": "Global_PlayLobbyManager_GoBack",
+      "declaration": "public void GoBack()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "JoinMidGame()",
+      "id": "Global_PlayLobbyManager_JoinMidGame",
+      "declaration": "public void JoinMidGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_PlayLobbyManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveStartGameCondition(Func<string>)",
+      "id": "Global_PlayLobbyManager_RemoveStartGameCondition_System_Func_System_String__",
+      "declaration": "public void RemoveStartGameCondition(Func<string> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Func<TResult><string>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetReady(bool)",
+      "id": "Global_PlayLobbyManager_SetReady_System_Boolean_",
+      "declaration": "public void SetReady(bool ready)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ready",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartGame()",
+      "id": "Global_PlayLobbyManager_StartGame",
+      "declaration": "public void StartGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ToggleReady()",
+      "id": "Global_PlayLobbyManager_ToggleReady",
+      "declaration": "public void ToggleReady()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

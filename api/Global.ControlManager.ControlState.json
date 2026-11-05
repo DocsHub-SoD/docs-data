@@ -1,0 +1,64 @@
+{
+  "uid": "Global.ControlManager.ControlState",
+  "name": "ControlManager.ControlState",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ControlManager.ControlState",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "castKey",
+      "id": "Global_ControlManager_ControlState_castKey",
+      "declaration": "public DewBinding castKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castType",
+      "id": "Global_ControlManager_ControlState_castType",
+      "declaration": "public CastConfirmType castType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "configIndex",
+      "id": "Global_ControlManager_ControlState_configIndex",
+      "declaration": "public int configIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCastInDirectionOfMovement",
+      "id": "Global_ControlManager_ControlState_isCastInDirectionOfMovement",
+      "declaration": "public bool isCastInDirectionOfMovement",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trigger",
+      "id": "Global_ControlManager_ControlState_trigger",
+      "declaration": "public AbilityTrigger trigger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_ControlManager_ControlState_type",
+      "declaration": "public ControlManager.ControlStateType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

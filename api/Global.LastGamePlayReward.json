@@ -1,0 +1,72 @@
+{
+  "uid": "Global.LastGamePlayReward",
+  "name": "LastGamePlayReward",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LastGamePlayReward",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "completedLimboDepth",
+      "id": "Global_LastGamePlayReward_completedLimboDepth",
+      "declaration": "public int completedLimboDepth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "discoveredGems",
+      "id": "Global_LastGamePlayReward_discoveredGems",
+      "declaration": "public List<Type> discoveredGems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "discoveredSkills",
+      "id": "Global_LastGamePlayReward_discoveredSkills",
+      "declaration": "public List<Type> discoveredSkills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroMasteryPoints",
+      "id": "Global_LastGamePlayReward_heroMasteryPoints",
+      "declaration": "public long heroMasteryPoints",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroType",
+      "id": "Global_LastGamePlayReward_heroType",
+      "declaration": "public string heroType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockedAchievements",
+      "id": "Global_LastGamePlayReward_unlockedAchievements",
+      "declaration": "public List<Type> unlockedAchievements",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockedArtifacts",
+      "id": "Global_LastGamePlayReward_unlockedArtifacts",
+      "declaration": "public List<string> unlockedArtifacts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

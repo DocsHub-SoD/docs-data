@@ -1,0 +1,55 @@
+{
+  "uid": "Global.NetworkLogicPackage",
+  "name": "NetworkLogicPackage",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class NetworkLogicPackage : ManagerBase<NetworkLogicPackage>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "NetworkLogicPackage",
+      "href": "Global.NetworkLogicPackage.html",
+      "uid": "Global.NetworkLogicPackage"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "networkIdentities",
+      "id": "Global_NetworkLogicPackage_networkIdentities",
+      "declaration": "public List<NetworkIdentity> networkIdentities",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_NetworkLogicPackage_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

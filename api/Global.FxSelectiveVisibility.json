@@ -1,0 +1,89 @@
+{
+  "uid": "Global.FxSelectiveVisibility",
+  "name": "FxSelectiveVisibility",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DisallowMultipleComponent]\npublic class FxSelectiveVisibility : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "forceFail",
+      "id": "Global_FxSelectiveVisibility_forceFail",
+      "declaration": "public static bool forceFail",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hideOnSummons",
+      "id": "Global_FxSelectiveVisibility_hideOnSummons",
+      "declaration": "[ShowIf(\"@visibleTo != EffectVisibility.Everyone\", true)]\npublic bool hideOnSummons",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "invertVisibility",
+      "id": "Global_FxSelectiveVisibility_invertVisibility",
+      "declaration": "public bool invertVisibility",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "parent",
+      "id": "Global_FxSelectiveVisibility_parent",
+      "declaration": "[HideInInspector]\npublic Actor parent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visibleTo",
+      "id": "Global_FxSelectiveVisibility_visibleTo",
+      "declaration": "[InfoBox(\"@_helpText\", InfoMessageType.Info, null)]\npublic EffectVisibility visibleTo",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wasDisabled",
+      "id": "Global_FxSelectiveVisibility_wasDisabled",
+      "declaration": "[HideInInspector]\npublic bool wasDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "IsVisibleLocally()",
+      "id": "Global_FxSelectiveVisibility_IsVisibleLocally",
+      "declaration": "public bool IsVisibleLocally()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnAfterDeserialize()",
+      "id": "Global_FxSelectiveVisibility_OnAfterDeserialize",
+      "declaration": "public void OnAfterDeserialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnBeforeSerialize()",
+      "id": "Global_FxSelectiveVisibility_OnBeforeSerialize",
+      "declaration": "public void OnBeforeSerialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

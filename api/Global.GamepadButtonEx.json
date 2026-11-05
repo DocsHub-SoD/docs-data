@@ -1,0 +1,15 @@
+{
+  "uid": "Global.GamepadButtonEx",
+  "name": "GamepadButtonEx",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum GamepadButtonEx",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

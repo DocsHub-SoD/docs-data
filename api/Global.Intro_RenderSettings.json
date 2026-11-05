@@ -1,0 +1,56 @@
+{
+  "uid": "Global.Intro_RenderSettings",
+  "name": "Intro_RenderSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class Intro_RenderSettings : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ambientColor",
+      "id": "Global_Intro_RenderSettings_ambientColor",
+      "declaration": "[ColorUsage(false, true)]\npublic Color ambientColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fogColor",
+      "id": "Global_Intro_RenderSettings_fogColor",
+      "declaration": "public Color fogColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fogEnd",
+      "id": "Global_Intro_RenderSettings_fogEnd",
+      "declaration": "public float fogEnd",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fogStart",
+      "id": "Global_Intro_RenderSettings_fogStart",
+      "declaration": "public float fogStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skybox",
+      "id": "Global_Intro_RenderSettings_skybox",
+      "declaration": "public Material skybox",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.LoadingStatus",
+  "name": "LoadingStatus",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum LoadingStatus",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

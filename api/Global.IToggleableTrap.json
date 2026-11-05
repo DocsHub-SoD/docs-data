@@ -1,0 +1,41 @@
+{
+  "uid": "Global.IToggleableTrap",
+  "name": "IToggleableTrap",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IToggleableTrap : IBanRoomNodesNearby, IBanCampsNearby",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isOn",
+      "id": "Global_IToggleableTrap_isOn",
+      "declaration": "bool isOn { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "StartTrap()",
+      "id": "Global_IToggleableTrap_StartTrap",
+      "declaration": "void StartTrap()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopTrap()",
+      "id": "Global_IToggleableTrap_StopTrap",
+      "declaration": "void StopTrap()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

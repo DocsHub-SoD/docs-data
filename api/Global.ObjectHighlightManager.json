@@ -1,0 +1,139 @@
+{
+  "uid": "Global.ObjectHighlightManager",
+  "name": "ObjectHighlightManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ObjectHighlightManager : ManagerBase<ObjectHighlightManager>, ILogicUpdate, ICinematicCameraHelperStateReceiver",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "ObjectHighlightManager",
+      "href": "Global.ObjectHighlightManager.html",
+      "uid": "Global.ObjectHighlightManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICinematicCameraHelperStateReceiver",
+      "href": "Global.ICinematicCameraHelperStateReceiver.html",
+      "uid": "Global.ICinematicCameraHelperStateReceiver"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ally",
+      "id": "Global_ObjectHighlightManager_ally",
+      "declaration": "public ObjectHighlightManager.OutlineStyle ally",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemy",
+      "id": "Global_ObjectHighlightManager_enemy",
+      "declaration": "public ObjectHighlightManager.OutlineStyle enemy",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactable",
+      "id": "Global_ObjectHighlightManager_interactable",
+      "declaration": "public ObjectHighlightManager.OutlineStyle interactable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isObjectHighlightDisabled",
+      "id": "Global_ObjectHighlightManager_isObjectHighlightDisabled",
+      "declaration": "[NonSerialized]\npublic bool isObjectHighlightDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MouseDownStrength",
+      "id": "Global_ObjectHighlightManager_MouseDownStrength",
+      "declaration": "public const float MouseDownStrength = 0.6",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MouseOverStrength",
+      "id": "Global_ObjectHighlightManager_MouseOverStrength",
+      "declaration": "public const float MouseOverStrength = 0.4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "neutral",
+      "id": "Global_ObjectHighlightManager_neutral",
+      "declaration": "public ObjectHighlightManager.OutlineStyle neutral",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "own",
+      "id": "Global_ObjectHighlightManager_own",
+      "declaration": "public ObjectHighlightManager.OutlineStyle own",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_ObjectHighlightManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetProfile()",
+      "id": "Global_ObjectHighlightManager_GetProfile",
+      "declaration": "public static HighlightProfile GetProfile()",
+      "summary": "",
+      "parameters": [],
+      "returns": "HighlightPlus.HighlightProfile"
+    },
+    {
+      "name": "OnCinematicCameraHelperChanged(bool)",
+      "id": "Global_ObjectHighlightManager_OnCinematicCameraHelperChanged_System_Boolean_",
+      "declaration": "public void OnCinematicCameraHelperChanged(bool on)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "on",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

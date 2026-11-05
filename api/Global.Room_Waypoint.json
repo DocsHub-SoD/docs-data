@@ -1,0 +1,99 @@
+{
+  "uid": "Global.Room_Waypoint",
+  "name": "Room_Waypoint",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_Waypoint : DewNetworkBehaviour, ILogicUpdate, IPlayerPathablePoint",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "IPlayerPathablePoint",
+      "href": "Global.IPlayerPathablePoint.html",
+      "uid": "Global.IPlayerPathablePoint"
+    }
+  ],
+  "fields": [
+    {
+      "name": "dewCollider",
+      "id": "Global_Room_Waypoint_dewCollider",
+      "declaration": "public DewCollider dewCollider",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lockedEffect",
+      "id": "Global_Room_Waypoint_lockedEffect",
+      "declaration": "public GameObject lockedEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockedEffect",
+      "id": "Global_Room_Waypoint_unlockedEffect",
+      "declaration": "public GameObject unlockedEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isUnlocked",
+      "id": "Global_Room_Waypoint_isUnlocked",
+      "declaration": "public bool isUnlocked { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Lock()",
+      "id": "Global_Room_Waypoint_Lock",
+      "declaration": "public void Lock()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_Room_Waypoint_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_Room_Waypoint_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Unlock()",
+      "id": "Global_Room_Waypoint_Unlock",
+      "declaration": "public void Unlock()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

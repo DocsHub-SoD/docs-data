@@ -1,0 +1,41 @@
+{
+  "uid": "Global.EntityShellModifier",
+  "name": "EntityShellModifier",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityShellModifier",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "color",
+      "id": "Global_EntityShellModifier_color",
+      "declaration": "public Color color { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "opacity",
+      "id": "Global_EntityShellModifier_opacity",
+      "declaration": "public float opacity { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Stop()",
+      "id": "Global_EntityShellModifier_Stop",
+      "declaration": "public void Stop()",
+      "summary": "Remove this color modifier from its parent.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

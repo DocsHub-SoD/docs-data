@@ -1,0 +1,183 @@
+{
+  "uid": "Global.Treasure",
+  "name": "Treasure",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Type)]\npublic abstract class Treasure : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "basePrice",
+      "id": "Global_Treasure_basePrice",
+      "declaration": "[BoxGroup(\"Treasure Settings\", true, false, 0)]\npublic int basePrice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chanceWeight",
+      "id": "Global_Treasure_chanceWeight",
+      "declaration": "[HideIf(\"@excludeFromPool\", true)]\n[BoxGroup(\"Treasure Settings\", true, false, 0)]\npublic float chanceWeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeFromPool",
+      "id": "Global_Treasure_excludeFromPool",
+      "declaration": "[BoxGroup(\"Treasure Settings\", true, false, 0)]\npublic bool excludeFromPool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_Treasure_icon",
+      "declaration": "[BoxGroup(\"Treasure Settings\", true, false, 0)]\npublic Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxUse",
+      "id": "Global_Treasure_maxUse",
+      "declaration": "[BoxGroup(\"Treasure Settings\", true, false, 0)]\npublic int maxUse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "customData",
+      "id": "Global_Treasure_customData",
+      "declaration": "public string customData { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hero",
+      "id": "Global_Treasure_hero",
+      "declaration": "public Hero hero { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "merchant",
+      "id": "Global_Treasure_merchant",
+      "declaration": "public PropEnt_Merchant_Base merchant { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "player",
+      "id": "Global_Treasure_player",
+      "declaration": "public DewPlayer player { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "price",
+      "id": "Global_Treasure_price",
+      "declaration": "public int price { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanBePurchased()",
+      "id": "Global_Treasure_CanBePurchased",
+      "declaration": "public virtual bool CanBePurchased()",
+      "summary": "This is checked on server upon purchase. If this returns false, purchase will not be made. You should show some kind of message to the user if this returns false.This is invoked on a prefab, and before being invoked, relevant fields like hero / player will be populated.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "GetCustomDescription()",
+      "id": "Global_Treasure_GetCustomDescription",
+      "declaration": "public virtual string GetCustomDescription()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetCustomName()",
+      "id": "Global_Treasure_GetCustomName",
+      "declaration": "public virtual string GetCustomName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "OnAddMerchandise(out Cost, out string)",
+      "id": "Global_Treasure_OnAddMerchandise_Cost__System_String__",
+      "declaration": "public virtual void OnAddMerchandise(out Cost mercPrice, out string customData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "mercPrice",
+          "type": "Cost",
+          "type_uid": "Global.Cost",
+          "description": ""
+        },
+        {
+          "name": "customData",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeIncludedInPool()",
+      "id": "Global_Treasure_ShouldBeIncludedInPool",
+      "declaration": "public virtual bool ShouldBeIncludedInPool()",
+      "summary": "This is checked on server when populating for each player. If this returns false, this treasure will not be included in the pool.",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

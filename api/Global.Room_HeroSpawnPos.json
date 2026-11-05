@@ -1,0 +1,26 @@
+{
+  "uid": "Global.Room_HeroSpawnPos",
+  "name": "Room_HeroSpawnPos",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_HeroSpawnPos : MonoBehaviour, IPlayerPathablePoint, IBanRoomNodesNearby",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IPlayerPathablePoint",
+      "href": "Global.IPlayerPathablePoint.html",
+      "uid": "Global.IPlayerPathablePoint"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

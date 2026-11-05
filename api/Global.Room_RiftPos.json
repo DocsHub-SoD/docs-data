@@ -1,0 +1,21 @@
+{
+  "uid": "Global.Room_RiftPos",
+  "name": "Room_RiftPos",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_RiftPos : MonoBehaviour, IBanRoomNodesNearby",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

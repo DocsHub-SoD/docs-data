@@ -1,0 +1,24 @@
+{
+  "uid": "Global.EntityAccPoint",
+  "name": "EntityAccPoint",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityAccPoint : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "type",
+      "id": "Global_EntityAccPoint_type",
+      "declaration": "public AccType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,49 @@
+{
+  "uid": "Global.PCBind",
+  "name": "PCBind",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class PCBind",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "key",
+      "id": "Global_PCBind_key",
+      "declaration": "public Key key",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modifiers",
+      "id": "Global_PCBind_modifiers",
+      "declaration": "public List<Key> modifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mouse",
+      "id": "Global_PCBind_mouse",
+      "declaration": "public MouseButton mouse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_PCBind_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,57 @@
+{
+  "uid": "Global.ChannelData",
+  "name": "ChannelData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class ChannelData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "blockedActions",
+      "id": "Global_ChannelData_blockedActions",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[DisableIf(\"@duration <= 0f\")]\npublic Channel.BlockedAction blockedActions",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_ChannelData_duration",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[LabelText(\"Channel Duration\")]\npublic float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selfValidator",
+      "id": "Global_ChannelData_selfValidator",
+      "declaration": "[HideLabel]\npublic AbilitySelfValidator selfValidator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "uncancellableTime",
+      "id": "Global_ChannelData_uncancellableTime",
+      "declaration": "[ShowIf(\"@duration > 0f && ((byte)(blockedActions & Channel.BlockedAction.Cancelable)) != (byte)0\", true)]\npublic float uncancellableTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get()",
+      "id": "Global_ChannelData_Get",
+      "declaration": "public Channel Get()",
+      "summary": "Create a channel using this data.",
+      "parameters": [],
+      "returns": "Channel"
+    }
+  ],
+  "events": []
+}

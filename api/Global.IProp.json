@@ -1,0 +1,56 @@
+{
+  "uid": "Global.IProp",
+  "name": "IProp",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IProp",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "customSpawnPosition",
+      "id": "Global_IProp_customSpawnPosition",
+      "declaration": "Vector3? customSpawnPosition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customSpawnRotation",
+      "id": "Global_IProp_customSpawnRotation",
+      "declaration": "Quaternion? customSpawnRotation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRegularReward",
+      "id": "Global_IProp_isRegularReward",
+      "declaration": "bool isRegularReward { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSingleton",
+      "id": "Global_IProp_isSingleton",
+      "declaration": "bool isSingleton { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleSpawnRateWithPlayers",
+      "id": "Global_IProp_scaleSpawnRateWithPlayers",
+      "declaration": "bool scaleSpawnRateWithPlayers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

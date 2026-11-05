@@ -1,0 +1,230 @@
+{
+  "uid": "Global.FxInterpolatedEffectBase",
+  "name": "FxInterpolatedEffectBase",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class FxInterpolatedEffectBase : MonoBehaviour, IEffectComponent, IEffectWithSpeed",
+  "inheritance": [
+    {
+      "name": "FxEntityColor",
+      "href": "Global.FxEntityColor.html",
+      "uid": "Global.FxEntityColor"
+    },
+    {
+      "name": "FxEntityShake",
+      "href": "Global.FxEntityShake.html",
+      "uid": "Global.FxEntityShake"
+    },
+    {
+      "name": "FxEntityShell",
+      "href": "Global.FxEntityShell.html",
+      "uid": "Global.FxEntityShell"
+    },
+    {
+      "name": "FxEntityTransform",
+      "href": "Global.FxEntityTransform.html",
+      "uid": "Global.FxEntityTransform"
+    },
+    {
+      "name": "FxGameObject",
+      "href": "Global.FxGameObject.html",
+      "uid": "Global.FxGameObject"
+    },
+    {
+      "name": "FxGibs",
+      "href": "Global.FxGibs.html",
+      "uid": "Global.FxGibs"
+    },
+    {
+      "name": "FxMaterialProperty",
+      "href": "Global.FxMaterialProperty.html",
+      "uid": "Global.FxMaterialProperty"
+    },
+    {
+      "name": "FxMeshTrail",
+      "href": "Global.FxMeshTrail.html",
+      "uid": "Global.FxMeshTrail"
+    },
+    {
+      "name": "FxPointLight",
+      "href": "Global.FxPointLight.html",
+      "uid": "Global.FxPointLight"
+    },
+    {
+      "name": "FxVolume",
+      "href": "Global.FxVolume.html",
+      "uid": "Global.FxVolume"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    }
+  ],
+  "fields": [
+    {
+      "name": "decayTime",
+      "id": "Global_FxInterpolatedEffectBase_decayTime",
+      "declaration": "[BoxGroup(\"Interpolated Effect\", true, false, 0)]\npublic float decayTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delay",
+      "id": "Global_FxInterpolatedEffectBase_delay",
+      "declaration": "[BoxGroup(\"Interpolated Effect\", true, false, 0)]\npublic float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLoop",
+      "id": "Global_FxInterpolatedEffectBase_isLoop",
+      "declaration": "[BoxGroup(\"Interpolated Effect\", true, false, 0)]\npublic bool isLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startTime",
+      "id": "Global_FxInterpolatedEffectBase_startTime",
+      "declaration": "[BoxGroup(\"Interpolated Effect\", true, false, 0)]\npublic float startTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sustainTime",
+      "id": "Global_FxInterpolatedEffectBase_sustainTime",
+      "declaration": "[ShowIf(\"@!isLoop\", true)]\n[BoxGroup(\"Interpolated Effect\", true, false, 0)]\npublic float sustainTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentLinearValue",
+      "id": "Global_FxInterpolatedEffectBase_currentLinearValue",
+      "declaration": "public float currentLinearValue { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentValue",
+      "id": "Global_FxInterpolatedEffectBase_currentValue",
+      "declaration": "public float currentValue { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isEmitting",
+      "id": "Global_FxInterpolatedEffectBase_isEmitting",
+      "declaration": "public bool isEmitting { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isPlaying",
+      "id": "Global_FxInterpolatedEffectBase_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ApplySpeedMultiplier(float)",
+      "id": "Global_FxInterpolatedEffectBase_ApplySpeedMultiplier_System_Single_",
+      "declaration": "public void ApplySpeedMultiplier(float speed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "speed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_FxInterpolatedEffectBase_Awake",
+      "declaration": "protected void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInit()",
+      "id": "Global_FxInterpolatedEffectBase_OnInit",
+      "declaration": "protected virtual void OnInit()",
+      "summary": "Guaranteed to be called once when this effect starts, before this effect sets a value.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FxInterpolatedEffectBase_Play",
+      "declaration": "public virtual void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_FxInterpolatedEffectBase_Start",
+      "declaration": "protected virtual void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxInterpolatedEffectBase_Stop",
+      "declaration": "public virtual void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Update()",
+      "id": "Global_FxInterpolatedEffectBase_Update",
+      "declaration": "protected virtual void Update()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxInterpolatedEffectBase_ValueSetter_System_Single_",
+      "declaration": "protected abstract void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

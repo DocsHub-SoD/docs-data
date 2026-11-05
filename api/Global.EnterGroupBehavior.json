@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EnterGroupBehavior",
+  "name": "EnterGroupBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum EnterGroupBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

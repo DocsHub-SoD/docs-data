@@ -1,0 +1,165 @@
+{
+  "uid": "Global.InputManager",
+  "name": "InputManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InputManager : ManagerBase<InputManager>, ILogicUpdate, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "InputManager",
+      "href": "Global.InputManager.html",
+      "uid": "Global.InputManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AddShakeInstance(ShakeInstance)",
+      "id": "Global_InputManager_AddShakeInstance_ShakeInstance_",
+      "declaration": "public void AddShakeInstance(ShakeInstance si)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "si",
+          "type": "ShakeInstance",
+          "type_uid": "Global.ShakeInstance",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_InputManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetMouseSensitivity()",
+      "id": "Global_InputManager_GetMouseSensitivity",
+      "declaration": "public static int GetMouseSensitivity()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetStickDirection(GamepadButtonEx)",
+      "id": "Global_InputManager_GetStickDirection_GamepadButtonEx_",
+      "declaration": "public bool GetStickDirection(GamepadButtonEx g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetStickDirectionDown(GamepadButtonEx)",
+      "id": "Global_InputManager_GetStickDirectionDown_GamepadButtonEx_",
+      "declaration": "public bool GetStickDirectionDown(GamepadButtonEx g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetStickDirectionUp(GamepadButtonEx)",
+      "id": "Global_InputManager_GetStickDirectionUp_GamepadButtonEx_",
+      "declaration": "public bool GetStickDirectionUp(GamepadButtonEx g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsStickDirection(GamepadButtonEx)",
+      "id": "Global_InputManager_IsStickDirection_GamepadButtonEx_",
+      "declaration": "public bool IsStickDirection(GamepadButtonEx g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_InputManager_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ResetInputDevices()",
+      "id": "Global_InputManager_ResetInputDevices",
+      "declaration": "public void ResetInputDevices()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetMouseSensitivity(int)",
+      "id": "Global_InputManager_SetMouseSensitivity_System_Int32_",
+      "declaration": "public static void SetMouseSensitivity(int sensitivity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sensitivity",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

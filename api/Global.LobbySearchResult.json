@@ -1,0 +1,32 @@
+{
+  "uid": "Global.LobbySearchResult",
+  "name": "LobbySearchResult",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LobbySearchResult",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "continuationToken",
+      "id": "Global_LobbySearchResult_continuationToken",
+      "declaration": "public object continuationToken",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbies",
+      "id": "Global_LobbySearchResult_lobbies",
+      "declaration": "public List<LobbyInstance> lobbies",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

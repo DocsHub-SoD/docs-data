@@ -1,0 +1,70 @@
+{
+  "uid": "Global.GlobalLogicPackage",
+  "name": "GlobalLogicPackage",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GlobalLogicPackage : ManagerBase<GlobalLogicPackage>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "GlobalLogicPackage",
+      "href": "Global.GlobalLogicPackage.html",
+      "uid": "Global.GlobalLogicPackage"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "showFps",
+      "id": "Global_GlobalLogicPackage_showFps",
+      "declaration": "[NonSerialized]\npublic bool showFps",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_GlobalLogicPackage_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CallOnReady(Action)",
+      "id": "Global_GlobalLogicPackage_CallOnReady_System_Action_",
+      "declaration": "public static void CallOnReady(Action callback)",
+      "summary": "Call the action after global package has been added. If the global package already exists, it will be called immediately.",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

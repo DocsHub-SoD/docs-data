@@ -1,0 +1,105 @@
+{
+  "uid": "Global.DewInputTrigger",
+  "name": "DewInputTrigger",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewInputTrigger",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "binding",
+      "id": "Global_DewInputTrigger_binding",
+      "declaration": "public Func<DewBinding> binding",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canConsume",
+      "id": "Global_DewInputTrigger_canConsume",
+      "declaration": "public bool canConsume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "checkGameAreaForMouse",
+      "id": "Global_DewInputTrigger_checkGameAreaForMouse",
+      "declaration": "public bool checkGameAreaForMouse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreConsumeCheck",
+      "id": "Global_DewInputTrigger_ignoreConsumeCheck",
+      "declaration": "public bool ignoreConsumeCheck",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isValidCheck",
+      "id": "Global_DewInputTrigger_isValidCheck",
+      "declaration": "public Func<bool> isValidCheck",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MockTrigger",
+      "id": "Global_DewInputTrigger_MockTrigger",
+      "declaration": "public static DewInputTrigger MockTrigger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_DewInputTrigger_owner",
+      "declaration": "public Object owner",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_DewInputTrigger_priority",
+      "declaration": "public int priority",
+      "summary": "Lower will be checked first.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "down",
+      "id": "Global_DewInputTrigger_down",
+      "declaration": "public bool down { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "downRepeated",
+      "id": "Global_DewInputTrigger_downRepeated",
+      "declaration": "public bool downRepeated { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "up",
+      "id": "Global_DewInputTrigger_up",
+      "declaration": "public bool up { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

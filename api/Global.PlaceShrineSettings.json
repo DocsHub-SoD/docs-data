@@ -1,0 +1,48 @@
+{
+  "uid": "Global.PlaceShrineSettings",
+  "name": "PlaceShrineSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PlaceShrineSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "customPosition",
+      "id": "Global_PlaceShrineSettings_customPosition",
+      "declaration": "public Vector3? customPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lockedUntilCleared",
+      "id": "Global_PlaceShrineSettings_lockedUntilCleared",
+      "declaration": "public bool lockedUntilCleared",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "removeModifierOnUse",
+      "id": "Global_PlaceShrineSettings_removeModifierOnUse",
+      "declaration": "public bool removeModifierOnUse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnOnLastSection",
+      "id": "Global_PlaceShrineSettings_spawnOnLastSection",
+      "declaration": "public bool spawnOnLastSection",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

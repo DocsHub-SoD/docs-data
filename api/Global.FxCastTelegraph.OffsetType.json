@@ -1,0 +1,15 @@
+{
+  "uid": "Global.FxCastTelegraph.OffsetType",
+  "name": "FxCastTelegraph.OffsetType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum FxCastTelegraph.OffsetType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

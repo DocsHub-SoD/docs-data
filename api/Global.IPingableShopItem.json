@@ -1,0 +1,32 @@
+{
+  "uid": "Global.IPingableShopItem",
+  "name": "IPingableShopItem",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IPingableShopItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "merchandiseIndex",
+      "id": "Global_IPingableShopItem_merchandiseIndex",
+      "declaration": "int merchandiseIndex { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shop",
+      "id": "Global_IPingableShopItem_shop",
+      "declaration": "Object shop { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

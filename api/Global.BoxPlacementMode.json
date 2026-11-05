@@ -1,0 +1,15 @@
+{
+  "uid": "Global.BoxPlacementMode",
+  "name": "BoxPlacementMode",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum BoxPlacementMode",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

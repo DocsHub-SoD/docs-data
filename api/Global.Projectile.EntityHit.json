@@ -1,0 +1,32 @@
+{
+  "uid": "Global.Projectile.EntityHit",
+  "name": "Projectile.EntityHit",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct Projectile.EntityHit",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entity",
+      "id": "Global_Projectile_EntityHit_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "point",
+      "id": "Global_Projectile_EntityHit_point",
+      "declaration": "public Vector3 point",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

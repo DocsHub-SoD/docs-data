@@ -1,0 +1,990 @@
+{
+  "uid": "Global.EntityVisual",
+  "name": "EntityVisual",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[RequireComponent(typeof(EntityHighlightProvider))]\n[LogicUpdatePriority(-299)]\npublic class EntityVisual : EntityComponent, ILogicUpdate, ICleanup",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    }
+  ],
+  "fields": [
+    {
+      "name": "accessoryInstances",
+      "id": "Global_EntityVisual_accessoryInstances",
+      "declaration": "[NonSerialized]\npublic List<Accessory> accessoryInstances",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnGroundMarkerHiddenChanged",
+      "id": "Global_EntityVisual_ClientEvent_OnGroundMarkerHiddenChanged",
+      "declaration": "public SafeAction<bool> ClientEvent_OnGroundMarkerHiddenChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnModelLoaded",
+      "id": "Global_EntityVisual_ClientEvent_OnModelLoaded",
+      "declaration": "public SafeAction ClientEvent_OnModelLoaded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnRendererEnabledChanged",
+      "id": "Global_EntityVisual_ClientEvent_OnRendererEnabledChanged",
+      "declaration": "public SafeAction<bool> ClientEvent_OnRendererEnabledChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSpawnComplete",
+      "id": "Global_EntityVisual_ClientEvent_OnSpawnComplete",
+      "declaration": "public SafeAction ClientEvent_OnSpawnComplete",
+      "summary": "Called when the entity finishes spawning or spawning is skipped.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dazeAfterSpawnDuration",
+      "id": "Global_EntityVisual_dazeAfterSpawnDuration",
+      "declaration": "public float dazeAfterSpawnDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delayLoopEffectTilSpawned",
+      "id": "Global_EntityVisual_delayLoopEffectTilSpawned",
+      "declaration": "[LabelText(\"Delay Loop Effect Until Spawned\")]\n[FormerlySerializedAs(\"delayStartEffectTilSpawned\")]\n[ToggleLeft]\npublic bool delayLoopEffectTilSpawned",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delaySpawnEffectOnGroundTilSpawned",
+      "id": "Global_EntityVisual_delaySpawnEffectOnGroundTilSpawned",
+      "declaration": "[LabelText(\"Delay Until Spawned\")]\n[ShowIf(\"@spawnEffectOnGround != null\", true)]\npublic bool delaySpawnEffectOnGroundTilSpawned",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delaySpawnEffectUntilSpawned",
+      "id": "Global_EntityVisual_delaySpawnEffectUntilSpawned",
+      "declaration": "[LabelText(\"Delay Until Spawned\")]\n[ShowIf(\"@spawnEffect != null\", true)]\npublic bool delaySpawnEffectUntilSpawned",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableModelTransformUpdate",
+      "id": "Global_EntityVisual_disableModelTransformUpdate",
+      "declaration": "[NonSerialized]\npublic bool disableModelTransformUpdate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doPositionOffset",
+      "id": "Global_EntityVisual_doPositionOffset",
+      "declaration": "public bool doPositionOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doScaling",
+      "id": "Global_EntityVisual_doScaling",
+      "declaration": "public bool doScaling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "invisibleByDefault",
+      "id": "Global_EntityVisual_invisibleByDefault",
+      "declaration": "[NonSerialized]\npublic bool invisibleByDefault",
+      "summary": "Set this true on before spawn to make entities invisible by default, appearing after EnableRenderers is called.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "invulnerableWhileSpawning",
+      "id": "Global_EntityVisual_invulnerableWhileSpawning",
+      "declaration": "public bool invulnerableWhileSpawning",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mirageSkinObjects",
+      "id": "Global_EntityVisual_mirageSkinObjects",
+      "declaration": "public Dictionary<string, List<GameObject>> mirageSkinObjects",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "model",
+      "id": "Global_EntityVisual_model",
+      "declaration": "[NonSerialized]\npublic EntityModel model",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modelTransform",
+      "id": "Global_EntityVisual_modelTransform",
+      "declaration": "[NonSerialized]\npublic Transform modelTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "renderers",
+      "id": "Global_EntityVisual_renderers",
+      "declaration": "[NonSerialized]\npublic List<Renderer> renderers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipSpawning",
+      "id": "Global_EntityVisual_skipSpawning",
+      "declaration": "[NonSerialized]\npublic bool skipSpawning",
+      "summary": "Set this true on before spawn to make entities pop in instead of play its spawning effects, voices and animations.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "solidRenderers",
+      "id": "Global_EntityVisual_solidRenderers",
+      "declaration": "[NonSerialized]\npublic List<Renderer> solidRenderers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnAnim",
+      "id": "Global_EntityVisual_spawnAnim",
+      "declaration": "public DewAnimationClip spawnAnim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnDuration",
+      "id": "Global_EntityVisual_spawnDuration",
+      "declaration": "[Title(\"Spawn\", null, TitleAlignments.Left, true, true)]\npublic float spawnDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnEffect",
+      "id": "Global_EntityVisual_spawnEffect",
+      "declaration": "[Title(\"Effects\", null, TitleAlignments.Left, true, true)]\npublic GameObject spawnEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnEffectOnGround",
+      "id": "Global_EntityVisual_spawnEffectOnGround",
+      "declaration": "public GameObject spawnEffectOnGround",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnXOffset",
+      "id": "Global_EntityVisual_spawnXOffset",
+      "declaration": "[ShowIf(\"doPositionOffset\", true)]\npublic AnimationCurve spawnXOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnXScale",
+      "id": "Global_EntityVisual_spawnXScale",
+      "declaration": "[ShowIf(\"doScaling\", true)]\n[LabelText(\"@useSeparateAxis ? \\\"Spawn X Scale\\\" : \\\"Spawn Scale\\\"\")]\npublic AnimationCurve spawnXScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnYOffset",
+      "id": "Global_EntityVisual_spawnYOffset",
+      "declaration": "[ShowIf(\"doPositionOffset\", true)]\npublic AnimationCurve spawnYOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnYScale",
+      "id": "Global_EntityVisual_spawnYScale",
+      "declaration": "[ShowIf(\"@doScaling && useSeparateAxis\", true)]\npublic AnimationCurve spawnYScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnZOffset",
+      "id": "Global_EntityVisual_spawnZOffset",
+      "declaration": "[ShowIf(\"doPositionOffset\", true)]\npublic AnimationCurve spawnZOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnZScale",
+      "id": "Global_EntityVisual_spawnZScale",
+      "declaration": "[ShowIf(\"@doScaling && useSeparateAxis\", true)]\npublic AnimationCurve spawnZScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useSeparateAxis",
+      "id": "Global_EntityVisual_useSeparateAxis",
+      "declaration": "[ShowIf(\"doScaling\", true)]\npublic bool useSeparateAxis",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentYOffset",
+      "id": "Global_EntityVisual_currentYOffset",
+      "declaration": "public float currentYOffset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentYVelocity",
+      "id": "Global_EntityVisual_currentYVelocity",
+      "declaration": "public float currentYVelocity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "etLocalOffset",
+      "id": "Global_EntityVisual_etLocalOffset",
+      "declaration": "public Vector3 etLocalOffset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "etRotation",
+      "id": "Global_EntityVisual_etRotation",
+      "declaration": "public Quaternion etRotation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "etScaleMultiplier",
+      "id": "Global_EntityVisual_etScaleMultiplier",
+      "declaration": "public Vector3 etScaleMultiplier { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "etWorldOffset",
+      "id": "Global_EntityVisual_etWorldOffset",
+      "declaration": "public Vector3 etWorldOffset { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "genericStackIndicatorMax",
+      "id": "Global_EntityVisual_genericStackIndicatorMax",
+      "declaration": "public int genericStackIndicatorMax { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "genericStackIndicatorValue",
+      "id": "Global_EntityVisual_genericStackIndicatorValue",
+      "declaration": "public int genericStackIndicatorValue { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "highlight",
+      "id": "Global_EntityVisual_highlight",
+      "declaration": "public EntityHighlightProvider highlight { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGroundMarkerHidden",
+      "id": "Global_EntityVisual_isGroundMarkerHidden",
+      "declaration": "public bool isGroundMarkerHidden { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRendererOff",
+      "id": "Global_EntityVisual_isRendererOff",
+      "declaration": "public bool isRendererOff { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSpawning",
+      "id": "Global_EntityVisual_isSpawning",
+      "declaration": "public bool isSpawning { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "materials",
+      "id": "Global_EntityVisual_materials",
+      "declaration": "public IReadOnlyList<Material> materials { get; }",
+      "summary": "List of this entity's materials. (Instantiated)",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddSharedMaterialLocal(Material)",
+      "id": "Global_EntityVisual_AddSharedMaterialLocal_UnityEngine_Material_",
+      "declaration": "public void AddSharedMaterialLocal(Material material)",
+      "summary": "Locally add a material to all mesh renderers of this entity.",
+      "parameters": [
+        {
+          "name": "material",
+          "type": "UnityEngine.Material",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_EntityVisual_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisableRenderers()",
+      "id": "Global_EntityVisual_DisableRenderers",
+      "declaration": "public void DisableRenderers()",
+      "summary": "Make this entity invisible by turning off all renderers everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DisableRenderersLocal()",
+      "id": "Global_EntityVisual_DisableRenderersLocal",
+      "declaration": "public void DisableRenderersLocal()",
+      "summary": "Locally make this entity invisible by turning off all renderers.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnableRenderers()",
+      "id": "Global_EntityVisual_EnableRenderers",
+      "declaration": "public void EnableRenderers()",
+      "summary": "Undo this entity'sDisableRenderers()and make it visible again everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnableRenderersLocal()",
+      "id": "Global_EntityVisual_EnableRenderersLocal",
+      "declaration": "public void EnableRenderersLocal()",
+      "summary": "Locally undo this entity'sDisableRenderers()and make it visible again.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FixClothes()",
+      "id": "Global_EntityVisual_FixClothes",
+      "declaration": "public void FixClothes()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FixTails()",
+      "id": "Global_EntityVisual_FixTails",
+      "declaration": "public void FixTails()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FixTailsAndClothes()",
+      "id": "Global_EntityVisual_FixTailsAndClothes",
+      "declaration": "public void FixTailsAndClothes()",
+      "summary": "Reset tails and clothes.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_EntityVisual_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetAbovePosition()",
+      "id": "Global_EntityVisual_GetAbovePosition",
+      "declaration": "public Vector3 GetAbovePosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetBasePosition()",
+      "id": "Global_EntityVisual_GetBasePosition",
+      "declaration": "public Vector3 GetBasePosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetBodyBounds()",
+      "id": "Global_EntityVisual_GetBodyBounds",
+      "declaration": "public Bounds GetBodyBounds()",
+      "summary": "Get bounds of renderers specified as \"body\" of this entity.",
+      "parameters": [],
+      "returns": "UnityEngine.Bounds"
+    },
+    {
+      "name": "GetBonePosition(HumanBodyBones)",
+      "id": "Global_EntityVisual_GetBonePosition_UnityEngine_HumanBodyBones_",
+      "declaration": "public Vector3 GetBonePosition(HumanBodyBones bone)",
+      "summary": "This will return center position if the bone couldn't be found.",
+      "parameters": [
+        {
+          "name": "bone",
+          "type": "UnityEngine.HumanBodyBones",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetBoneRotation(HumanBodyBones)",
+      "id": "Global_EntityVisual_GetBoneRotation_UnityEngine_HumanBodyBones_",
+      "declaration": "public Quaternion GetBoneRotation(HumanBodyBones bone)",
+      "summary": "This will return entity's rotation if the bone couldn't be found.",
+      "parameters": [
+        {
+          "name": "bone",
+          "type": "UnityEngine.HumanBodyBones",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "GetCenterPosition()",
+      "id": "Global_EntityVisual_GetCenterPosition",
+      "declaration": "public Vector3 GetCenterPosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetMuzzlePosition()",
+      "id": "Global_EntityVisual_GetMuzzlePosition",
+      "declaration": "public Vector3 GetMuzzlePosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetMuzzleRotation()",
+      "id": "Global_EntityVisual_GetMuzzleRotation",
+      "declaration": "public Quaternion GetMuzzleRotation()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "GetNewColorModifier()",
+      "id": "Global_EntityVisual_GetNewColorModifier",
+      "declaration": "public EntityColorModifier GetNewColorModifier()",
+      "summary": "Gets a new color modifier for this entity. The color is applied locally.",
+      "parameters": [],
+      "returns": "EntityColorModifier"
+    },
+    {
+      "name": "GetNewShellModifier()",
+      "id": "Global_EntityVisual_GetNewShellModifier",
+      "declaration": "public EntityShellModifier GetNewShellModifier()",
+      "summary": "Gets a new color modifier for this entity. The color is applied locally.",
+      "parameters": [],
+      "returns": "EntityShellModifier"
+    },
+    {
+      "name": "GetNewTransformModifier()",
+      "id": "Global_EntityVisual_GetNewTransformModifier",
+      "declaration": "public EntityTransformModifier GetNewTransformModifier()",
+      "summary": "Gets a new transform modifier for this entity. The transform is applied locally to its model.",
+      "parameters": [],
+      "returns": "EntityTransformModifier"
+    },
+    {
+      "name": "GetRenderBounds()",
+      "id": "Global_EntityVisual_GetRenderBounds",
+      "declaration": "public Bounds GetRenderBounds()",
+      "summary": "Get bounds of all solid renderers.",
+      "parameters": [],
+      "returns": "UnityEngine.Bounds"
+    },
+    {
+      "name": "GetWeaponPosition()",
+      "id": "Global_EntityVisual_GetWeaponPosition",
+      "declaration": "public Vector3 GetWeaponPosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetWeaponRotation()",
+      "id": "Global_EntityVisual_GetWeaponRotation",
+      "declaration": "public Quaternion GetWeaponRotation()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Quaternion"
+    },
+    {
+      "name": "HideGroundMarker()",
+      "id": "Global_EntityVisual_HideGroundMarker",
+      "declaration": "public void HideGroundMarker()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HideGroundMarkerLocal()",
+      "id": "Global_EntityVisual_HideGroundMarkerLocal",
+      "declaration": "public void HideGroundMarkerLocal()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "KnockUp(KnockUpStrength, bool)",
+      "id": "Global_EntityVisual_KnockUp_KnockUpStrength_System_Boolean_",
+      "declaration": "public void KnockUp(KnockUpStrength strength, bool isFriendly)",
+      "summary": "Knock up this entity everywhere.",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "KnockUpStrength",
+          "type_uid": "Global.KnockUpStrength",
+          "description": ""
+        },
+        {
+          "name": "isFriendly",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "KnockUp(float, bool)",
+      "id": "Global_EntityVisual_KnockUp_System_Single_System_Boolean_",
+      "declaration": "public void KnockUp(float strength, bool isFriendly)",
+      "summary": "Knock up this entity everywhere. Strength: 0.8(Small), 1.1(Normal), 1.5(Big)",
+      "parameters": [
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isFriendly",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LoadModelDefault()",
+      "id": "Global_EntityVisual_LoadModelDefault",
+      "declaration": "public void LoadModelDefault()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoadModelDefaultLocal()",
+      "id": "Global_EntityVisual_LoadModelDefaultLocal",
+      "declaration": "public void LoadModelDefaultLocal()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoadModelLocal(EntityModel)",
+      "id": "Global_EntityVisual_LoadModelLocal_EntityModel_",
+      "declaration": "public void LoadModelLocal(EntityModel m)",
+      "summary": "Locally change model of this entity. You can provide either a model in a prefab, or the default one in the spawned entity.The provided model must be fresh; it must never be the already initialized instance of EntityModel.",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "EntityModel",
+          "type_uid": "Global.EntityModel",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EntityVisual_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_EntityVisual_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_EntityVisual_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_EntityVisual_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_EntityVisual_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_EntityVisual_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStop()",
+      "id": "Global_EntityVisual_OnStop",
+      "declaration": "public override void OnStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_EntityVisual_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveMaterialLocal(Material)",
+      "id": "Global_EntityVisual_RemoveMaterialLocal_UnityEngine_Material_",
+      "declaration": "public void RemoveMaterialLocal(Material material)",
+      "summary": "Locally remove a material from all mesh renderers of this entity.",
+      "parameters": [
+        {
+          "name": "material",
+          "type": "UnityEngine.Material",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShaderProperty(string, float)",
+      "id": "Global_EntityVisual_SetShaderProperty_System_String_System_Single_",
+      "declaration": "public void SetShaderProperty(string key, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShaderProperty(string, Color)",
+      "id": "Global_EntityVisual_SetShaderProperty_System_String_UnityEngine_Color_",
+      "declaration": "public void SetShaderProperty(string key, Color value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShaderPropertyLocal(int, float)",
+      "id": "Global_EntityVisual_SetShaderPropertyLocal_System_Int32_System_Single_",
+      "declaration": "public void SetShaderPropertyLocal(int propertyId, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "propertyId",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShaderPropertyLocal(int, Color)",
+      "id": "Global_EntityVisual_SetShaderPropertyLocal_System_Int32_UnityEngine_Color_",
+      "declaration": "public void SetShaderPropertyLocal(int propertyId, Color value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "propertyId",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShaderPropertyLocal(string, float)",
+      "id": "Global_EntityVisual_SetShaderPropertyLocal_System_String_System_Single_",
+      "declaration": "public void SetShaderPropertyLocal(string key, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetShaderPropertyLocal(string, Color)",
+      "id": "Global_EntityVisual_SetShaderPropertyLocal_System_String_UnityEngine_Color_",
+      "declaration": "public void SetShaderPropertyLocal(string key, Color value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetYOffset(float)",
+      "id": "Global_EntityVisual_SetYOffset_System_Single_",
+      "declaration": "public void SetYOffset(float offset)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "offset",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetYOffsetLocal(float)",
+      "id": "Global_EntityVisual_SetYOffsetLocal_System_Single_",
+      "declaration": "public void SetYOffsetLocal(float offset)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "offset",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetYVelocity(float)",
+      "id": "Global_EntityVisual_SetYVelocity_System_Single_",
+      "declaration": "public void SetYVelocity(float velocity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "velocity",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetYVelocityLocal(float)",
+      "id": "Global_EntityVisual_SetYVelocityLocal_System_Single_",
+      "declaration": "public void SetYVelocityLocal(float velocity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "velocity",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowGroundMarker()",
+      "id": "Global_EntityVisual_ShowGroundMarker",
+      "declaration": "public void ShowGroundMarker()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShowGroundMarkerLocal()",
+      "id": "Global_EntityVisual_ShowGroundMarkerLocal",
+      "declaration": "public void ShowGroundMarkerLocal()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SkipSpawning()",
+      "id": "Global_EntityVisual_SkipSpawning",
+      "declaration": "public void SkipSpawning()",
+      "summary": "Cancels ongoing spawn animation of this entity.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "Global.FieldBuildResult",
+  "name": "FieldBuildResult",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FieldBuildResult",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "getValue",
+      "id": "Global_FieldBuildResult_getValue",
+      "declaration": "public Func<object> getValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onChanged",
+      "id": "Global_FieldBuildResult_onChanged",
+      "declaration": "public SafeAction<object> onChanged",
+      "summary": "Notification sent from created field widgets when a change is done on UI-side.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "root",
+      "id": "Global_FieldBuildResult_root",
+      "declaration": "public GameObject root",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "setValue",
+      "id": "Global_FieldBuildResult_setValue",
+      "declaration": "public Action<object> setValue",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

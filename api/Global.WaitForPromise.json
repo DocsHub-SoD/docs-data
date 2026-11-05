@@ -1,0 +1,24 @@
+{
+  "uid": "Global.WaitForPromise",
+  "name": "WaitForPromise",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class WaitForPromise : CustomYieldInstruction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "keepWaiting",
+      "id": "Global_WaitForPromise_keepWaiting",
+      "declaration": "public override bool keepWaiting { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

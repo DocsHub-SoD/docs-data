@@ -1,0 +1,145 @@
+{
+  "uid": "Global.DashAttackInstance",
+  "name": "DashAttackInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DashAttackInstance : DamageInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "DamageInstance",
+      "href": "Global.DamageInstance.html",
+      "uid": "Global.DamageInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "damageGracePeriod",
+      "id": "Global_DashAttackInstance_damageGracePeriod",
+      "declaration": "[Title(\"Dash Attack Instance\", null, TitleAlignments.Left, true, true)]\npublic float damageGracePeriod",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dash",
+      "id": "Global_DashAttackInstance_dash",
+      "declaration": "[InlineProperty]\n[HideLabel]\npublic Dash dash",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDirectionMode",
+      "id": "Global_DashAttackInstance_isDirectionMode",
+      "declaration": "public bool isDirectionMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ActiveFrameUpdate()",
+      "id": "Global_DashAttackInstance_ActiveFrameUpdate",
+      "declaration": "protected override void ActiveFrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_DashAttackInstance_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnBeforeDispatchDamage(ref DamageData, Entity)",
+      "id": "Global_DashAttackInstance_OnBeforeDispatchDamage_DamageData__Entity_",
+      "declaration": "protected override void OnBeforeDispatchDamage(ref DamageData dmg, Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dmg",
+          "type": "DamageData",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_DashAttackInstance_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSetupDash(DispByDestination)",
+      "id": "Global_DashAttackInstance_OnSetupDash_DispByDestination_",
+      "declaration": "protected virtual void OnSetupDash(DispByDestination disp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "disp",
+          "type": "DispByDestination",
+          "type_uid": "Global.DispByDestination",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,107 @@
+{
+  "uid": "Global.UI_BindingWindow",
+  "name": "UI_BindingWindow",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_BindingWindow : SingletonBehaviour<UI_BindingWindow>",
+  "inheritance": [
+    {
+      "name": "SingletonBehaviour",
+      "href": "Global.SingletonBehaviour-1.html",
+      "uid": "Global.SingletonBehaviour-1"
+    },
+    {
+      "name": "UI_BindingWindow",
+      "href": "Global.UI_BindingWindow.html",
+      "uid": "Global.UI_BindingWindow"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "keyText",
+      "id": "Global_UI_BindingWindow_keyText",
+      "declaration": "public TextMeshProUGUI keyText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Cancel()",
+      "id": "Global_UI_BindingWindow_Cancel",
+      "declaration": "public void Cancel()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Clear()",
+      "id": "Global_UI_BindingWindow_Clear",
+      "declaration": "public void Clear()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Confirm()",
+      "id": "Global_UI_BindingWindow_Confirm",
+      "declaration": "public void Confirm()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoLeftClick()",
+      "id": "Global_UI_BindingWindow_DoLeftClick",
+      "declaration": "public void DoLeftClick()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Show(DewBinding, BindingType, bool, Action, Action)",
+      "id": "Global_UI_BindingWindow_Show_DewBinding_BindingType_System_Boolean_System_Action_System_Action_",
+      "declaration": "public void Show(DewBinding newBinding, BindingType allowedTypes, bool allowModifiers, Action onFinish, Action onCancel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newBinding",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "allowedTypes",
+          "type": "BindingType",
+          "type_uid": "Global.BindingType",
+          "description": ""
+        },
+        {
+          "name": "allowModifiers",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onFinish",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

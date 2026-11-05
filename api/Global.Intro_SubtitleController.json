@@ -1,0 +1,64 @@
+{
+  "uid": "Global.Intro_SubtitleController",
+  "name": "Intro_SubtitleController",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Intro_SubtitleController : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "showDurationAfterDone",
+      "id": "Global_Intro_SubtitleController_showDurationAfterDone",
+      "declaration": "public float showDurationAfterDone",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "subtitleObject",
+      "id": "Global_Intro_SubtitleController_subtitleObject",
+      "declaration": "public GameObject subtitleObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "text",
+      "id": "Global_Intro_SubtitleController_text",
+      "declaration": "public TextMeshProUGUI text",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AdvanceSubtitle()",
+      "id": "Global_Intro_SubtitleController_AdvanceSubtitle",
+      "declaration": "public void AdvanceSubtitle()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "AdvanceSubtitle(float)",
+      "id": "Global_Intro_SubtitleController_AdvanceSubtitle_System_Single_",
+      "declaration": "public void AdvanceSubtitle(float duration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

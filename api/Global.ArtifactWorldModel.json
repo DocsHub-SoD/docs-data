@@ -1,0 +1,88 @@
+{
+  "uid": "Global.ArtifactWorldModel",
+  "name": "ArtifactWorldModel",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ArtifactWorldModel : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "fire",
+      "id": "Global_ArtifactWorldModel_fire",
+      "declaration": "public ParticleSystemRenderer fire",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxAppear",
+      "id": "Global_ArtifactWorldModel_fxAppear",
+      "declaration": "public GameObject fxAppear",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxLoop",
+      "id": "Global_ArtifactWorldModel_fxLoop",
+      "declaration": "public GameObject fxLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPickUp",
+      "id": "Global_ArtifactWorldModel_fxPickUp",
+      "declaration": "public GameObject fxPickUp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_ArtifactWorldModel_icon",
+      "declaration": "public MeshRenderer icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_ArtifactWorldModel_interactPivot",
+      "declaration": "public Transform interactPivot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tinted",
+      "id": "Global_ArtifactWorldModel_tinted",
+      "declaration": "public GameObject[] tinted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Setup(Artifact)",
+      "id": "Global_ArtifactWorldModel_Setup_Artifact_",
+      "declaration": "public void Setup(Artifact a)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "Artifact",
+          "type_uid": "Global.Artifact",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

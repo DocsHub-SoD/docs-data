@@ -1,0 +1,152 @@
+{
+  "uid": "Global.Entity.StaggerSettings",
+  "name": "Entity.StaggerSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct Entity.StaggerSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "accumulatedDamageStaggerThreshold",
+      "id": "Global_Entity_StaggerSettings_accumulatedDamageStaggerThreshold",
+      "declaration": "public float accumulatedDamageStaggerThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "BossMonsterDefault",
+      "id": "Global_Entity_StaggerSettings_BossMonsterDefault",
+      "declaration": "public static readonly Entity.StaggerSettings BossMonsterDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canStaggerWhileChanneling",
+      "id": "Global_Entity_StaggerSettings_canStaggerWhileChanneling",
+      "declaration": "public bool canStaggerWhileChanneling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chance",
+      "id": "Global_Entity_StaggerSettings_chance",
+      "declaration": "public float chance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chanceInChannel",
+      "id": "Global_Entity_StaggerSettings_chanceInChannel",
+      "declaration": "public float chanceInChannel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enabled",
+      "id": "Global_Entity_StaggerSettings_enabled",
+      "declaration": "public bool enabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HeroDefault",
+      "id": "Global_Entity_StaggerSettings_HeroDefault",
+      "declaration": "public static readonly Entity.StaggerSettings HeroDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "highDamageStaggerThreshold",
+      "id": "Global_Entity_StaggerSettings_highDamageStaggerThreshold",
+      "declaration": "public float highDamageStaggerThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "knockbackDistance",
+      "id": "Global_Entity_StaggerSettings_knockbackDistance",
+      "declaration": "public float knockbackDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "knockbackDuration",
+      "id": "Global_Entity_StaggerSettings_knockbackDuration",
+      "declaration": "public float knockbackDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "knockbackEase",
+      "id": "Global_Entity_StaggerSettings_knockbackEase",
+      "declaration": "public DewEase knockbackEase",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LesserMonsterDefault",
+      "id": "Global_Entity_StaggerSettings_LesserMonsterDefault",
+      "declaration": "public static readonly Entity.StaggerSettings LesserMonsterDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MiniBossMonsterDefault",
+      "id": "Global_Entity_StaggerSettings_MiniBossMonsterDefault",
+      "declaration": "public static readonly Entity.StaggerSettings MiniBossMonsterDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "NormalMonsterDefault",
+      "id": "Global_Entity_StaggerSettings_NormalMonsterDefault",
+      "declaration": "public static readonly Entity.StaggerSettings NormalMonsterDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "staggerImmunityTime",
+      "id": "Global_Entity_StaggerSettings_staggerImmunityTime",
+      "declaration": "public float staggerImmunityTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stunDuration",
+      "id": "Global_Entity_StaggerSettings_stunDuration",
+      "declaration": "public float stunDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SummonDefault",
+      "id": "Global_Entity_StaggerSettings_SummonDefault",
+      "declaration": "public static readonly Entity.StaggerSettings SummonDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IDisableGamepadTargeting",
+  "name": "IDisableGamepadTargeting",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IDisableGamepadTargeting",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

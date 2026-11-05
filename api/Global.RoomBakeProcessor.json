@@ -1,0 +1,32 @@
+{
+  "uid": "Global.RoomBakeProcessor",
+  "name": "RoomBakeProcessor",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RoomBakeProcessor : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AfterNavMeshBake()",
+      "id": "Global_RoomBakeProcessor_AfterNavMeshBake",
+      "declaration": "public virtual void AfterNavMeshBake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "BeforeNavMeshBake()",
+      "id": "Global_RoomBakeProcessor_BeforeNavMeshBake",
+      "declaration": "public virtual void BeforeNavMeshBake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

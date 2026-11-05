@@ -1,0 +1,92 @@
+{
+  "uid": "Global.DewProfile.ReverieDataBase",
+  "name": "DewProfile.ReverieDataBase",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfile.ReverieDataBase",
+  "inheritance": [
+    {
+      "name": "DewProfile.DailyReverieData",
+      "href": "Global.DewProfile.DailyReverieData.html",
+      "uid": "Global.DewProfile.DailyReverieData"
+    },
+    {
+      "name": "DewProfile.SpecialReverieData",
+      "href": "Global.DewProfile.SpecialReverieData.html",
+      "uid": "Global.DewProfile.SpecialReverieData"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "currentProgress",
+      "id": "Global_DewProfile_ReverieDataBase_currentProgress",
+      "declaration": "public int currentProgress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "grantedItems",
+      "id": "Global_DewProfile_ReverieDataBase_grantedItems",
+      "declaration": "public string[] grantedItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "grantedStardust",
+      "id": "Global_DewProfile_ReverieDataBase_grantedStardust",
+      "declaration": "public int grantedStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isComplete",
+      "id": "Global_DewProfile_ReverieDataBase_isComplete",
+      "declaration": "public bool isComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxProgress",
+      "id": "Global_DewProfile_ReverieDataBase_maxProgress",
+      "declaration": "public int maxProgress",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "persistentVariables",
+      "id": "Global_DewProfile_ReverieDataBase_persistentVariables",
+      "declaration": "public Dictionary<string, string> persistentVariables",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_DewProfile_ReverieDataBase_type",
+      "declaration": "public string type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "IsEmpty()",
+      "id": "Global_DewProfile_ReverieDataBase_IsEmpty",
+      "declaration": "public bool IsEmpty()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

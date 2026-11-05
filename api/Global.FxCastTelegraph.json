@@ -1,0 +1,113 @@
+{
+  "uid": "Global.FxCastTelegraph",
+  "name": "FxCastTelegraph",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[LogicUpdatePriority(1000)]\npublic class FxCastTelegraph : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "adjustSimulationSpeed",
+      "id": "Global_FxCastTelegraph_adjustSimulationSpeed",
+      "declaration": "public bool adjustSimulationSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "offset",
+      "id": "Global_FxCastTelegraph_offset",
+      "declaration": "[HideIf(\"@position == FxCastTelegraph.PositionType.None\", true)]\npublic FxCastTelegraph.OffsetType offset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "position",
+      "id": "Global_FxCastTelegraph_position",
+      "declaration": "public FxCastTelegraph.PositionType position",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotation",
+      "id": "Global_FxCastTelegraph_rotation",
+      "declaration": "public FxCastTelegraph.RotationType rotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "castInfo",
+      "id": "Global_FxCastTelegraph_castInfo",
+      "declaration": "public CastInfo castInfo { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "castMethod",
+      "id": "Global_FxCastTelegraph_castMethod",
+      "declaration": "public CastMethodType castMethod { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_FxCastTelegraph_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Setup(CastMethodType, CastInfo, float)",
+      "id": "Global_FxCastTelegraph_Setup_CastMethodType_CastInfo_System_Single_",
+      "declaration": "public void Setup(CastMethodType method, CastInfo info, float duration)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "method",
+          "type": "CastMethodType",
+          "type_uid": "Global.CastMethodType",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

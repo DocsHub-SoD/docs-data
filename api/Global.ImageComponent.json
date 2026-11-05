@@ -1,0 +1,79 @@
+{
+  "uid": "Global.ImageComponent",
+  "name": "ImageComponent",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class ImageComponent : MonoBehaviour",
+  "inheritance": [
+    {
+      "name": "ImageComponentAnimated",
+      "href": "Global.ImageComponentAnimated.html",
+      "uid": "Global.ImageComponentAnimated"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "image",
+      "id": "Global_ImageComponent_image",
+      "declaration": "public Image image { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "material",
+      "id": "Global_ImageComponent_material",
+      "declaration": "public Material material { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Init()",
+      "id": "Global_ImageComponent_Init",
+      "declaration": "public virtual void Init()",
+      "summary": "It's guaranteed image and material to be non-null when this is called.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_ImageComponent_OnDestroy",
+      "declaration": "public void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_ImageComponent_Start",
+      "declaration": "public virtual void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Tick()",
+      "id": "Global_ImageComponent_Tick",
+      "declaration": "public virtual void Tick()",
+      "summary": "It's guaranteed image and material to be non-null when this is called.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Update()",
+      "id": "Global_ImageComponent_Update",
+      "declaration": "public virtual void Update()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

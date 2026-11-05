@@ -1,0 +1,681 @@
+{
+  "uid": "Global.DewNetworkBehaviour",
+  "name": "DewNetworkBehaviour",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewNetworkBehaviour : NetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "DewAllHeroesPresentZone",
+      "href": "Global.DewAllHeroesPresentZone.html",
+      "uid": "Global.DewAllHeroesPresentZone"
+    },
+    {
+      "name": "DewCutsceneDirector",
+      "href": "Global.DewCutsceneDirector.html",
+      "uid": "Global.DewCutsceneDirector"
+    },
+    {
+      "name": "DewPlayer",
+      "href": "Global.DewPlayer.html",
+      "uid": "Global.DewPlayer"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    },
+    {
+      "name": "EntityTransformSync",
+      "href": "Global.EntityTransformSync.html",
+      "uid": "Global.EntityTransformSync"
+    },
+    {
+      "name": "GenericTransformSync",
+      "href": "Global.GenericTransformSync.html",
+      "uid": "Global.GenericTransformSync"
+    },
+    {
+      "name": "NetworkedManagerBase<T>",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "Room_Barrier",
+      "href": "Global.Room_Barrier.html",
+      "uid": "Global.Room_Barrier"
+    },
+    {
+      "name": "Room_Shortcut",
+      "href": "Global.Room_Shortcut.html",
+      "uid": "Global.Room_Shortcut"
+    },
+    {
+      "name": "Room_Trap_ActivatorBase",
+      "href": "Global.Room_Trap_ActivatorBase.html",
+      "uid": "Global.Room_Trap_ActivatorBase"
+    },
+    {
+      "name": "Room_Waypoint",
+      "href": "Global.Room_Waypoint.html",
+      "uid": "Global.Room_Waypoint"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    },
+    {
+      "name": "SingletonDewNetworkBehaviour<T>",
+      "href": "Global.SingletonDewNetworkBehaviour-1.html",
+      "uid": "Global.SingletonDewNetworkBehaviour-1"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_DewNetworkBehaviour_Awake",
+      "declaration": "protected virtual void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_DewNetworkBehaviour_FrameUpdate",
+      "declaration": "public virtual void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FxApplySpeedMultiplier(GameObject, float)",
+      "id": "Global_DewNetworkBehaviour_FxApplySpeedMultiplier_UnityEngine_GameObject_System_Single_",
+      "declaration": "public void FxApplySpeedMultiplier(GameObject effect, float multiplier)",
+      "summary": "Change speed of an effect, affecting ParticleSystems and IEffectWithSpeed inheritors.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxApplySpeedMultiplierNetworked(GameObject, float)",
+      "id": "Global_DewNetworkBehaviour_FxApplySpeedMultiplierNetworked_UnityEngine_GameObject_System_Single_",
+      "declaration": "public void FxApplySpeedMultiplierNetworked(GameObject effect, float multiplier)",
+      "summary": "Change speed of an effect, affecting ParticleSystems and IEffectWithSpeed inheritors.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlay(GameObject, Entity, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlay_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlay(GameObject effect, Entity attach, Vector3 position, Quaternion? rotation)",
+      "summary": "Play effect locally attached to given entity, positioned.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlay(GameObject, Entity)",
+      "id": "Global_DewNetworkBehaviour_FxPlay_UnityEngine_GameObject_Entity_",
+      "declaration": "public void FxPlay(GameObject effect, Entity attach)",
+      "summary": "Play effect locally attached to given entity.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlay(GameObject, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlay_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlay(GameObject effect, Vector3 position, Quaternion? rotation)",
+      "summary": "Play effect locally at given position.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlay(GameObject)",
+      "id": "Global_DewNetworkBehaviour_FxPlay_UnityEngine_GameObject_",
+      "declaration": "public void FxPlay(GameObject effect)",
+      "summary": "Play effect locally.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNetworked(GameObject, Entity, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNetworked_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlayNetworked(GameObject effect, Entity entity, Vector3 position, Quaternion? rotation)",
+      "summary": "Play effect everywhere attached to given entity, positioned. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNetworked(GameObject, Entity)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNetworked_UnityEngine_GameObject_Entity_",
+      "declaration": "public void FxPlayNetworked(GameObject effect, Entity entity)",
+      "summary": "Play effect everywhere attached to given entity. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNetworked(GameObject, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNetworked_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlayNetworked(GameObject effect, Vector3 position, Quaternion? rotation)",
+      "summary": "Play effect everywhere. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNetworked(GameObject)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNetworked_UnityEngine_GameObject_",
+      "declaration": "public void FxPlayNetworked(GameObject effect)",
+      "summary": "Play effect everywhere. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNew(GameObject, Entity, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNew_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlayNew(GameObject effect, Entity attach, Vector3 position, Quaternion? rotation)",
+      "summary": "Instantiate and play effect locally attached to given entity, positioned.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNew(GameObject, Entity)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNew_UnityEngine_GameObject_Entity_",
+      "declaration": "public void FxPlayNew(GameObject effect, Entity attach)",
+      "summary": "Instantiate and play effect locally attached to given entity.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "attach",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNew(GameObject, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNew_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlayNew(GameObject effect, Vector3 position, Quaternion? rotation)",
+      "summary": "Instantiate and play effect locally at given position.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNew(GameObject)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNew_UnityEngine_GameObject_",
+      "declaration": "public void FxPlayNew(GameObject effect)",
+      "summary": "Instantiate and play effect locally.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNewNetworked(GameObject, Entity, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNewNetworked_UnityEngine_GameObject_Entity_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlayNewNetworked(GameObject effect, Entity entity, Vector3 position, Quaternion? rotation)",
+      "summary": "Instantiate and play effect everywhere attached to given entity, positioned. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNewNetworked(GameObject, Entity)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNewNetworked_UnityEngine_GameObject_Entity_",
+      "declaration": "public void FxPlayNewNetworked(GameObject effect, Entity entity)",
+      "summary": "Instantiate and play effect everywhere attached to given entity. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNewNetworked(GameObject, Vector3, Quaternion?)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNewNetworked_UnityEngine_GameObject_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__",
+      "declaration": "public void FxPlayNewNetworked(GameObject effect, Vector3 position, Quaternion? rotation)",
+      "summary": "Instantiate and play effect everywhere at given position. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxPlayNewNetworked(GameObject)",
+      "id": "Global_DewNetworkBehaviour_FxPlayNewNetworked_UnityEngine_GameObject_",
+      "declaration": "public void FxPlayNewNetworked(GameObject effect)",
+      "summary": "Instantiate and play effect everywhere. Only callable in server.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxStop(GameObject)",
+      "id": "Global_DewNetworkBehaviour_FxStop_UnityEngine_GameObject_",
+      "declaration": "public void FxStop(GameObject effect)",
+      "summary": "Stop effect locally.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FxStopNetworked(GameObject)",
+      "id": "Global_DewNetworkBehaviour_FxStopNetworked_UnityEngine_GameObject_",
+      "declaration": "public void FxStopNetworked(GameObject effect)",
+      "summary": "Stop effect everywhere. Only callable in server. Use non-networked variant in DewEffect if you want to stop effect locally.",
+      "parameters": [
+        {
+          "name": "effect",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetComponent<T>(out T)",
+      "id": "Global_DewNetworkBehaviour_GetComponent__1___0__",
+      "declaration": "protected void GetComponent<T>(out T comp)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "comp",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvalidateInstance()",
+      "id": "Global_DewNetworkBehaviour_InvalidateInstance",
+      "declaration": "public void InvalidateInstance()",
+      "summary": "Invalidate an instance from pool, preventing it from being reused.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_DewNetworkBehaviour_LogicUpdate_System_Single_",
+      "declaration": "public virtual void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_DewNetworkBehaviour_OnDestroy",
+      "declaration": "protected virtual void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStart()",
+      "id": "Global_DewNetworkBehaviour_OnLateStart",
+      "declaration": "public virtual void OnLateStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_DewNetworkBehaviour_OnLateStartServer",
+      "declaration": "public virtual void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_DewNetworkBehaviour_OnStart",
+      "declaration": "public virtual void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_DewNetworkBehaviour_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_DewNetworkBehaviour_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStop()",
+      "id": "Global_DewNetworkBehaviour_OnStop",
+      "declaration": "public virtual void OnStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopClient()",
+      "id": "Global_DewNetworkBehaviour_OnStopClient",
+      "declaration": "public override void OnStopClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_DewNetworkBehaviour_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

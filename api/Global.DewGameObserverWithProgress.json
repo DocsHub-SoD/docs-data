@@ -1,0 +1,94 @@
+{
+  "uid": "Global.DewGameObserverWithProgress",
+  "name": "DewGameObserverWithProgress",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewGameObserverWithProgress : DewPersistentGameObserver",
+  "inheritance": [
+    {
+      "name": "DewPersistentGameObserver",
+      "href": "Global.DewPersistentGameObserver.html",
+      "uid": "Global.DewPersistentGameObserver"
+    },
+    {
+      "name": "DewAchievementItem",
+      "href": "Global.DewAchievementItem.html",
+      "uid": "Global.DewAchievementItem"
+    },
+    {
+      "name": "DewReverieItem",
+      "href": "Global.DewReverieItem.html",
+      "uid": "Global.DewReverieItem"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "hero",
+      "id": "Global_DewGameObserverWithProgress_hero",
+      "declaration": "public Hero hero { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AchCompleteWhen(Func<bool>, float)",
+      "id": "Global_DewGameObserverWithProgress_AchCompleteWhen_System_Func_System_Boolean__System_Single_",
+      "declaration": "protected void AchCompleteWhen(Func<bool> condition, float checkInterval = 2)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "condition",
+          "type": "System.Func<TResult><bool>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "checkInterval",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Complete()",
+      "id": "Global_DewGameObserverWithProgress_Complete",
+      "declaration": "public void Complete()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetCurrentProgress()",
+      "id": "Global_DewGameObserverWithProgress_GetCurrentProgress",
+      "declaration": "public virtual int GetCurrentProgress()",
+      "summary": "Get current progress of this observer.",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetMaxProgress()",
+      "id": "Global_DewGameObserverWithProgress_GetMaxProgress",
+      "declaration": "public virtual int GetMaxProgress()",
+      "summary": "Get max progress of this observer. Defaults to 1. Must return consistent value.",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "OnComplete()",
+      "id": "Global_DewGameObserverWithProgress_OnComplete",
+      "declaration": "public virtual void OnComplete()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

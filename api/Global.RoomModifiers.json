@@ -1,0 +1,50 @@
+{
+  "uid": "Global.RoomModifiers",
+  "name": "RoomModifiers",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RoomModifiers : RoomComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "modifierInstances",
+      "id": "Global_RoomModifiers_modifierInstances",
+      "declaration": "[NonSerialized]\npublic List<RoomModifierBase> modifierInstances",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnRoomStartServer()",
+      "id": "Global_RoomModifiers_OnRoomStartServer",
+      "declaration": "public override void OnRoomStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,349 @@
+{
+  "uid": "Global.DewPersistence",
+  "name": "DewPersistence",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewPersistence",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ApplyAchievementData(AchievementsData)",
+      "id": "Global_DewPersistence_ApplyAchievementData_DewPersistence_AchievementsData_",
+      "declaration": "public static void ApplyAchievementData(DewPersistence.AchievementsData data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewPersistence.AchievementsData",
+          "type_uid": "Global.DewPersistence",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyGameData(GameData, Action, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_ApplyGameData_DewPersistence_GameData_System_Action_Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static void ApplyGameData(DewPersistence.GameData data, Action onFinish = null, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewPersistence.GameData",
+          "type_uid": "Global.DewPersistence",
+          "description": ""
+        },
+        {
+          "name": "onFinish",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyPlayerData(DewPlayer, PlayerData, List<(uint, Action)>, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_ApplyPlayerData_DewPlayer_DewPersistence_PlayerData_System_Collections_Generic_List_System_ValueTuple_System_UInt32_System_Action___Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static void ApplyPlayerData(DewPlayer player, DewPersistence.PlayerData data, List<(uint, Action)> batchActions = null, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "data",
+          "type": "DewPersistence.PlayerData",
+          "type_uid": "Global.DewPersistence",
+          "description": ""
+        },
+        {
+          "name": "batchActions",
+          "type": "System.Collections.Generic.List<T><(uint,System.Action)>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyRoomDataAfterSpawnObjects(RoomData, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_ApplyRoomDataAfterSpawnObjects_DewPersistence_RoomData_Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static void ApplyRoomDataAfterSpawnObjects(DewPersistence.RoomData data, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewPersistence.RoomData",
+          "type_uid": "Global.DewPersistence",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyRoomDataBeforeSpawnObjects(RoomData, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_ApplyRoomDataBeforeSpawnObjects_DewPersistence_RoomData_Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static void ApplyRoomDataBeforeSpawnObjects(DewPersistence.RoomData data, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewPersistence.RoomData",
+          "type_uid": "Global.DewPersistence",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CreateActor<T>(GeneralData, List<(uint, Action)>, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_CreateActor__1_DewPersistence_GeneralData_System_Collections_Generic_List_System_ValueTuple_System_UInt32_System_Action___Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static T CreateActor<T>(DewPersistence.GeneralData data, List<(uint, Action)> batchActions = null, JsonSerializerSettings settings = null) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "DewPersistence.GeneralData",
+          "type_uid": "Global.DewPersistence",
+          "description": ""
+        },
+        {
+          "name": "batchActions",
+          "type": "System.Collections.Generic.List<T><(uint,System.Action)>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "DeserializeOnGameObject(GameObject, Dictionary<string, string>, JsonSerializerSettings, SaveVarFlags, SaveVarFlags)",
+      "id": "Global_DewPersistence_DeserializeOnGameObject_UnityEngine_GameObject_System_Collections_Generic_Dictionary_System_String_System_String__Newtonsoft_Json_JsonSerializerSettings_SaveVarFlags_SaveVarFlags_",
+      "declaration": "public static void DeserializeOnGameObject(GameObject gobj, Dictionary<string, string> data, JsonSerializerSettings settings, SaveVarFlags required = SaveVarFlags.Default, SaveVarFlags excluded = SaveVarFlags.Default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gobj",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "data",
+          "type": "System.Collections.Generic.Dictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "required",
+          "type": "SaveVarFlags",
+          "type_uid": "Global.SaveVarFlags",
+          "description": ""
+        },
+        {
+          "name": "excluded",
+          "type": "SaveVarFlags",
+          "type_uid": "Global.SaveVarFlags",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FromJson(string, Type, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_FromJson_System_String_System_Type_Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static object FromJson(string json, Type type, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "json",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "object"
+    },
+    {
+      "name": "FromJson<T>(string, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_FromJson__1_System_String_Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static T FromJson<T>(string json, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "json",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetNewSettings()",
+      "id": "Global_DewPersistence_GetNewSettings",
+      "declaration": "public static JsonSerializerSettings GetNewSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Newtonsoft.Json.JsonSerializerSettings"
+    },
+    {
+      "name": "SerializeAchievementData()",
+      "id": "Global_DewPersistence_SerializeAchievementData",
+      "declaration": "public static DewPersistence.AchievementsData SerializeAchievementData()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewPersistence.AchievementsData"
+    },
+    {
+      "name": "SerializeGameData(LoadNodeSettings)",
+      "id": "Global_DewPersistence_SerializeGameData_LoadNodeSettings_",
+      "declaration": "public static DewPersistence.GameData SerializeGameData(LoadNodeSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "LoadNodeSettings",
+          "type_uid": "Global.LoadNodeSettings",
+          "description": ""
+        }
+      ],
+      "returns": "DewPersistence.GameData"
+    },
+    {
+      "name": "SerializeGameObject(GameObject)",
+      "id": "Global_DewPersistence_SerializeGameObject_UnityEngine_GameObject_",
+      "declaration": "public static Dictionary<string, string> SerializeGameObject(GameObject gobj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gobj",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.Dictionary<TKey, TValue><string,string>"
+    },
+    {
+      "name": "SerializePlayerData(DewPlayer)",
+      "id": "Global_DewPersistence_SerializePlayerData_DewPlayer_",
+      "declaration": "public static DewPersistence.PlayerData SerializePlayerData(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "DewPersistence.PlayerData"
+    },
+    {
+      "name": "SerializeRoomData()",
+      "id": "Global_DewPersistence_SerializeRoomData",
+      "declaration": "public static DewPersistence.RoomData SerializeRoomData()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewPersistence.RoomData"
+    },
+    {
+      "name": "ToJson(object, JsonSerializerSettings)",
+      "id": "Global_DewPersistence_ToJson_System_Object_Newtonsoft_Json_JsonSerializerSettings_",
+      "declaration": "public static string ToJson(object obj, JsonSerializerSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "Newtonsoft.Json.JsonSerializerSettings",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

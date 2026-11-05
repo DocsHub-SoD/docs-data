@@ -1,0 +1,24 @@
+{
+  "uid": "Global.DewBossRoomEntry",
+  "name": "DewBossRoomEntry",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(DewHeroesTeleporter))]\n[RequireComponent(typeof(DewAllHeroesPresentZone))]\npublic class DewBossRoomEntry : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "cutscene",
+      "id": "Global_DewBossRoomEntry_cutscene",
+      "declaration": "public DewCutsceneDirector cutscene",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

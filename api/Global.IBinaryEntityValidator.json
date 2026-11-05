@@ -1,0 +1,37 @@
+{
+  "uid": "Global.IBinaryEntityValidator",
+  "name": "IBinaryEntityValidator",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IBinaryEntityValidator",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Evaluate(Entity, Entity)",
+      "id": "Global_IBinaryEntityValidator_Evaluate_Entity_Entity_",
+      "declaration": "bool Evaluate(Entity self, Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

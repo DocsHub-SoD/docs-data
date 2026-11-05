@@ -1,0 +1,72 @@
+{
+  "uid": "Global.DewQuest.ReachNodeGoal",
+  "name": "DewQuest.ReachNodeGoal",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewQuest.ReachNodeGoal",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "addedModifierIds",
+      "id": "Global_DewQuest_ReachNodeGoal_addedModifierIds",
+      "declaration": "public List<int> addedModifierIds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedRoomName",
+      "id": "Global_DewQuest_ReachNodeGoal_addedRoomName",
+      "declaration": "public string addedRoomName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActive",
+      "id": "Global_DewQuest_ReachNodeGoal_isActive",
+      "declaration": "public bool isActive",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nodeIndex",
+      "id": "Global_DewQuest_ReachNodeGoal_nodeIndex",
+      "declaration": "public int nodeIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "settings",
+      "id": "Global_DewQuest_ReachNodeGoal_settings",
+      "declaration": "public NextGoalSettings settings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "waitingForZoneIndex",
+      "id": "Global_DewQuest_ReachNodeGoal_waitingForZoneIndex",
+      "declaration": "public bool waitingForZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoneIndex",
+      "id": "Global_DewQuest_ReachNodeGoal_zoneIndex",
+      "declaration": "public int zoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

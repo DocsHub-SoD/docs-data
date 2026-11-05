@@ -1,0 +1,104 @@
+{
+  "uid": "Global.ModItem",
+  "name": "ModItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ModItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "assemblyPaths",
+      "id": "Global_ModItem_assemblyPaths",
+      "declaration": "public string[] assemblyPaths",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "description",
+      "id": "Global_ModItem_description",
+      "declaration": "public string description",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "descriptionRichText",
+      "id": "Global_ModItem_descriptionRichText",
+      "declaration": "public string descriptionRichText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_ModItem_icon",
+      "declaration": "public Texture2D icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "iconPath",
+      "id": "Global_ModItem_iconPath",
+      "declaration": "public string iconPath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "metadata",
+      "id": "Global_ModItem_metadata",
+      "declaration": "public ModMetadata metadata",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "path",
+      "id": "Global_ModItem_path",
+      "declaration": "public string path",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewPath",
+      "id": "Global_ModItem_previewPath",
+      "declaration": "public string previewPath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "publishedFileId",
+      "id": "Global_ModItem_publishedFileId",
+      "declaration": "public ulong publishedFileId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "source",
+      "id": "Global_ModItem_source",
+      "declaration": "public ModSourceType source",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_ModItem_state",
+      "declaration": "public ModItemState state",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

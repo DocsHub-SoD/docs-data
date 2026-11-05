@@ -1,0 +1,15 @@
+{
+  "uid": "Global.QuestProgressType",
+  "name": "QuestProgressType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum QuestProgressType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

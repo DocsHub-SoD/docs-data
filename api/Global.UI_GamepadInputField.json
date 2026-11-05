@@ -1,0 +1,85 @@
+{
+  "uid": "Global.UI_GamepadInputField",
+  "name": "UI_GamepadInputField",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GamepadInputField : UI_GamepadFocusable, IGamepadFocusable, IGamepadFocusListener",
+  "inheritance": [
+    {
+      "name": "UI_GamepadFocusable",
+      "href": "Global.UI_GamepadFocusable.html",
+      "uid": "Global.UI_GamepadFocusable"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IGamepadFocusable",
+      "href": "Global.IGamepadFocusable.html",
+      "uid": "Global.IGamepadFocusable"
+    },
+    {
+      "name": "IGamepadFocusListener",
+      "href": "Global.IGamepadFocusListener.html",
+      "uid": "Global.IGamepadFocusListener"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CanBeFocused()",
+      "id": "Global_UI_GamepadInputField_CanBeFocused",
+      "declaration": "public override bool CanBeFocused()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_UI_GamepadInputField_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerClick(PointerEventData)",
+      "id": "Global_UI_GamepadInputField_OnPointerClick_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerClick(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartInput(Action<string>, Action)",
+      "id": "Global_UI_GamepadInputField_StartInput_System_Action_System_String__System_Action_",
+      "declaration": "public void StartInput(Action<string> onConfirm = null, Action onCancel = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "onConfirm",
+          "type": "System.Action<T><string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onCancel",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

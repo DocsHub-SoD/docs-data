@@ -1,0 +1,51 @@
+{
+  "uid": "Global.DewPersistence.RoomActorData",
+  "name": "DewPersistence.RoomActorData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.RoomActorData : DewPersistence.GeneralData",
+  "inheritance": [
+    {
+      "name": "DewPersistence",
+      "href": "Global.DewPersistence.html",
+      "uid": "Global.DewPersistence"
+    },
+    {
+      "name": "GeneralData",
+      "href": "Global.DewPersistence.GeneralData.html",
+      "uid": "Global.DewPersistence.GeneralData"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "sceneId",
+      "id": "Global_DewPersistence_RoomActorData_sceneId",
+      "declaration": "public ulong sceneId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Capture(Actor)",
+      "id": "Global_DewPersistence_RoomActorData_Capture_Actor_",
+      "declaration": "public override DewPersistence.GeneralData Capture(Actor target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "DewPersistence.GeneralData"
+    }
+  ],
+  "events": []
+}

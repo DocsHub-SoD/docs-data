@@ -1,0 +1,64 @@
+{
+  "uid": "Global.EventInfoShield",
+  "name": "EventInfoShield",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoShield",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "chain",
+      "id": "Global_EventInfoShield_chain",
+      "declaration": "public ReactionChain chain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "discardedAmount",
+      "id": "Global_EventInfoShield_discardedAmount",
+      "declaration": "public float discardedAmount",
+      "summary": "The amount of discarded shield due to total max restrictions.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "finalAmount",
+      "id": "Global_EventInfoShield_finalAmount",
+      "declaration": "public float finalAmount",
+      "summary": "The amount of shield after being processed by processors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "originalAmount",
+      "id": "Global_EventInfoShield_originalAmount",
+      "declaration": "public float originalAmount",
+      "summary": "The amount of shield before being processed by processors.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statusEffect",
+      "id": "Global_EventInfoShield_statusEffect",
+      "declaration": "public StatusEffect statusEffect",
+      "summary": "The status effect that is giving the entity shield.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_EventInfoShield_target",
+      "declaration": "public Entity target",
+      "summary": "The entity receiving the shield.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

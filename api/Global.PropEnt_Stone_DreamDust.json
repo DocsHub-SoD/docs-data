@@ -1,0 +1,138 @@
+{
+  "uid": "Global.PropEnt_Stone_DreamDust",
+  "name": "PropEnt_Stone_DreamDust",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PropEnt_Stone_DreamDust : PropEntity, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    }
+  ],
+  "fields": [
+    {
+      "name": "amountByZoneIndex",
+      "id": "Global_PropEnt_Stone_DreamDust_amountByZoneIndex",
+      "declaration": "public Formula amountByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotSpeed",
+      "id": "Global_PropEnt_Stone_DreamDust_rotSpeed",
+      "declaration": "public float rotSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isRegularReward",
+      "id": "Global_PropEnt_Stone_DreamDust_isRegularReward",
+      "declaration": "public override bool isRegularReward { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_PropEnt_Stone_DreamDust_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetAmount()",
+      "id": "Global_PropEnt_Stone_DreamDust_GetAmount",
+      "declaration": "public int GetAmount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_PropEnt_Stone_DreamDust_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDeath(EventInfoKill)",
+      "id": "Global_PropEnt_Stone_DreamDust_OnDeath_EventInfoKill_",
+      "declaration": "protected override void OnDeath(EventInfoKill info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoKill",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_PropEnt_Stone_DreamDust_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

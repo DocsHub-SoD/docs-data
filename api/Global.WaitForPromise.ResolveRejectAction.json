@@ -1,0 +1,15 @@
+{
+  "uid": "Global.WaitForPromise.ResolveRejectAction",
+  "name": "WaitForPromise.ResolveRejectAction",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate void WaitForPromise.ResolveRejectAction(Action resolve, Action<Exception> reject)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

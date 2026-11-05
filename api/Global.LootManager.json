@@ -1,0 +1,304 @@
+{
+  "uid": "Global.LootManager",
+  "name": "LootManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LootManager : NetworkedManagerBase<LootManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "LootManager",
+      "href": "Global.LootManager.html",
+      "uid": "Global.LootManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "gemQualityMaxByZoneIndex",
+      "id": "Global_LootManager_gemQualityMaxByZoneIndex",
+      "declaration": "public PerRarityData<Formula> gemQualityMaxByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemQualityMinByZoneIndex",
+      "id": "Global_LootManager_gemQualityMinByZoneIndex",
+      "declaration": "public PerRarityData<Formula> gemQualityMinByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemQualityRandomCurve",
+      "id": "Global_LootManager_gemQualityRandomCurve",
+      "declaration": "public AnimationCurve gemQualityRandomCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemRarityChance",
+      "id": "Global_LootManager_gemRarityChance",
+      "declaration": "[Title(\"Gem\", null, TitleAlignments.Left, true, true)]\npublic PerRarityData<float> gemRarityChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemRarityChanceHigh",
+      "id": "Global_LootManager_gemRarityChanceHigh",
+      "declaration": "public PerRarityData<float> gemRarityChanceHigh",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "poolGems",
+      "id": "Global_LootManager_poolGems",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<string> poolGems",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "poolGemsByRarity",
+      "id": "Global_LootManager_poolGemsByRarity",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic Dictionary<Rarity, List<string>> poolGemsByRarity",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "poolGemsByTag",
+      "id": "Global_LootManager_poolGemsByTag",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic Dictionary<DescriptionTags, List<string>> poolGemsByTag",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "poolSkills",
+      "id": "Global_LootManager_poolSkills",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<string> poolSkills",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "poolSkillsByRarity",
+      "id": "Global_LootManager_poolSkillsByRarity",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic Dictionary<Rarity, List<string>> poolSkillsByRarity",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "poolSkillsByTag",
+      "id": "Global_LootManager_poolSkillsByTag",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic Dictionary<DescriptionTags, List<string>> poolSkillsByTag",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillLevelMaxByZoneIndex",
+      "id": "Global_LootManager_skillLevelMaxByZoneIndex",
+      "declaration": "public PerRarityData<Formula> skillLevelMaxByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillLevelMinByZoneIndex",
+      "id": "Global_LootManager_skillLevelMinByZoneIndex",
+      "declaration": "public PerRarityData<Formula> skillLevelMinByZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillLevelRandomCurve",
+      "id": "Global_LootManager_skillLevelRandomCurve",
+      "declaration": "public AnimationCurve skillLevelRandomCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillRarityChance",
+      "id": "Global_LootManager_skillRarityChance",
+      "declaration": "[Title(\"Skill\", null, TitleAlignments.Left, true, true)]\npublic PerRarityData<float> skillRarityChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillRarityChanceHigh",
+      "id": "Global_LootManager_skillRarityChanceHigh",
+      "declaration": "public PerRarityData<float> skillRarityChanceHigh",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnStartServer()",
+      "id": "Global_LootManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SelectGemAndQuality(Rarity?, out Gem, out int)",
+      "id": "Global_LootManager_SelectGemAndQuality_System_Nullable_Rarity__Gem__System_Int32__",
+      "declaration": "public void SelectGemAndQuality(Rarity? rarity, out Gem gem, out int quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity?",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SelectGemQuality(Rarity)",
+      "id": "Global_LootManager_SelectGemQuality_Rarity_",
+      "declaration": "public int SelectGemQuality(Rarity rarity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "SelectGemRarity(bool)",
+      "id": "Global_LootManager_SelectGemRarity_System_Boolean_",
+      "declaration": "public Rarity SelectGemRarity(bool isHigh = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isHigh",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Rarity"
+    },
+    {
+      "name": "SelectRarity(PerRarityData<float>)",
+      "id": "Global_LootManager_SelectRarity_PerRarityData_System_Single__",
+      "declaration": "public static Rarity SelectRarity(PerRarityData<float> chances)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "chances",
+          "type": "PerRarityData<float>",
+          "type_uid": "Global.PerRarityData-1",
+          "description": ""
+        }
+      ],
+      "returns": "Rarity"
+    },
+    {
+      "name": "SelectSkillAndLevel(Rarity?, out SkillTrigger, out int)",
+      "id": "Global_LootManager_SelectSkillAndLevel_System_Nullable_Rarity__SkillTrigger__System_Int32__",
+      "declaration": "public void SelectSkillAndLevel(Rarity? rarity, out SkillTrigger skill, out int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity?",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SelectSkillLevel(Rarity)",
+      "id": "Global_LootManager_SelectSkillLevel_Rarity_",
+      "declaration": "public int SelectSkillLevel(Rarity rarity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "SelectSkillRarity(bool)",
+      "id": "Global_LootManager_SelectSkillRarity_System_Boolean_",
+      "declaration": "public Rarity SelectSkillRarity(bool isHigh = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "isHigh",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Rarity"
+    }
+  ],
+  "events": []
+}

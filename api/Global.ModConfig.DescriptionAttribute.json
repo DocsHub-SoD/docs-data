@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ModConfig.DescriptionAttribute",
+  "name": "ModConfig.DescriptionAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Field)]\npublic class ModConfig.DescriptionAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "text",
+      "id": "Global_ModConfig_DescriptionAttribute_text",
+      "declaration": "public readonly string text",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,56 @@
+{
+  "uid": "Global.EventInfoDamageNegatedByShield",
+  "name": "EventInfoDamageNegatedByShield",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoDamageNegatedByShield",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoDamageNegatedByShield_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who started the damage.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damage",
+      "id": "Global_EventInfoDamageNegatedByShield_damage",
+      "declaration": "public FinalDamageData damage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "negatedAmount",
+      "id": "Global_EventInfoDamageNegatedByShield_negatedAmount",
+      "declaration": "public float negatedAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shield",
+      "id": "Global_EventInfoDamageNegatedByShield_shield",
+      "declaration": "[NonSerialized]\npublic ShieldEffect shield",
+      "summary": "The shield effect responsible for this event. Only available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_EventInfoDamageNegatedByShield_victim",
+      "declaration": "public Entity victim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

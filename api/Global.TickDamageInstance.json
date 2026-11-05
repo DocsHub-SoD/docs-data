@@ -1,0 +1,142 @@
+{
+  "uid": "Global.TickDamageInstance",
+  "name": "TickDamageInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class TickDamageInstance : DamageInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "DamageInstance",
+      "href": "Global.DamageInstance.html",
+      "uid": "Global.DamageInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "delay",
+      "id": "Global_TickDamageInstance_delay",
+      "declaration": "[Title(\"Tick Damage Instance\", null, TitleAlignments.Left, true, true)]\npublic float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxLoop",
+      "id": "Global_TickDamageInstance_fxLoop",
+      "declaration": "[LabelText(\"Fx Loop (After Delay)\")]\npublic GameObject fxLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxPerTick",
+      "id": "Global_TickDamageInstance_fxPerTick",
+      "declaration": "public GameObject fxPerTick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxTelegraph",
+      "id": "Global_TickDamageInstance_fxTelegraph",
+      "declaration": "public GameObject fxTelegraph",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tickInterval",
+      "id": "Global_TickDamageInstance_tickInterval",
+      "declaration": "public float tickInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ticks",
+      "id": "Global_TickDamageInstance_ticks",
+      "declaration": "public int ticks",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "duration",
+      "id": "Global_TickDamageInstance_duration",
+      "declaration": "[ShowInInspector]\npublic float duration { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_TickDamageInstance_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected override void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreateSequenced()",
+      "id": "Global_TickDamageInstance_OnCreateSequenced",
+      "declaration": "protected override IEnumerator OnCreateSequenced()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_TickDamageInstance_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

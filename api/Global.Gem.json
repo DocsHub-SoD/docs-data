@@ -1,0 +1,1038 @@
+{
+  "uid": "Global.Gem",
+  "name": "Gem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Gem : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IItem, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IItem",
+      "href": "Global.IItem.html",
+      "uid": "Global.IItem"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnHandOwnerChanged",
+      "id": "Global_Gem_ClientEvent_OnHandOwnerChanged",
+      "declaration": "public SafeAction<Hero, Hero> ClientEvent_OnHandOwnerChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnOwnerChanged",
+      "id": "Global_Gem_ClientEvent_OnOwnerChanged",
+      "declaration": "public SafeAction<Hero, Hero> ClientEvent_OnOwnerChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnTempOwnerChanged",
+      "id": "Global_Gem_ClientEvent_OnTempOwnerChanged",
+      "declaration": "public SafeAction<DewPlayer, DewPlayer> ClientEvent_OnTempOwnerChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientGemEvent_OnCooldownReady",
+      "id": "Global_Gem_ClientGemEvent_OnCooldownReady",
+      "declaration": "public SafeAction ClientGemEvent_OnCooldownReady",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientGemEvent_OnCooldownReduced",
+      "id": "Global_Gem_ClientGemEvent_OnCooldownReduced",
+      "declaration": "public SafeAction<float> ClientGemEvent_OnCooldownReduced",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientGemEvent_OnCooldownReducedByRatio",
+      "id": "Global_Gem_ClientGemEvent_OnCooldownReducedByRatio",
+      "declaration": "public SafeAction<float> ClientGemEvent_OnCooldownReducedByRatio",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientGemEvent_OnCooldownStarted",
+      "id": "Global_Gem_ClientGemEvent_OnCooldownStarted",
+      "declaration": "public SafeAction ClientGemEvent_OnCooldownStarted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientGemEvent_OnFlash",
+      "id": "Global_Gem_ClientGemEvent_OnFlash",
+      "declaration": "public SafeAction ClientGemEvent_OnFlash",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientGemEvent_OnQualityChanged",
+      "id": "Global_Gem_ClientGemEvent_OnQualityChanged",
+      "declaration": "public SafeAction<int, int> ClientGemEvent_OnQualityChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownTime",
+      "id": "Global_Gem_cooldownTime",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\n[ShowIf(\"isCooldownEnabled\", true)]\npublic ScalingValue cooldownTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableStatBonus",
+      "id": "Global_Gem_enableStatBonus",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic bool enableStatBonus",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeFromPool",
+      "id": "Global_Gem_excludeFromPool",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic bool excludeFromPool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GemMergeExponent",
+      "id": "Global_Gem_GemMergeExponent",
+      "declaration": "public const float GemMergeExponent = 1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_Gem_icon",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCooldownEnabled",
+      "id": "Global_Gem_isCooldownEnabled",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic bool isCooldownEnabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRateLimited",
+      "id": "Global_Gem_isRateLimited",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic bool isRateLimited",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rarity",
+      "id": "Global_Gem_rarity",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic Rarity rarity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rateLimitCount",
+      "id": "Global_Gem_rateLimitCount",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\n[ShowIf(\"isRateLimited\", true)]\npublic ScalingValue rateLimitCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rateLimitTime",
+      "id": "Global_Gem_rateLimitTime",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\n[ShowIf(\"isRateLimited\", true)]\npublic ScalingValue rateLimitTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "readyEffect",
+      "id": "Global_Gem_readyEffect",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\n[ShowIf(\"isCooldownEnabled\", true)]\npublic GameObject readyEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "setNumberDisplay",
+      "id": "Global_Gem_setNumberDisplay",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\n[ShowIf(\"isRateLimited\", true)]\npublic bool setNumberDisplay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "statBonus",
+      "id": "Global_Gem_statBonus",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\n[ShowIf(\"enableStatBonus\", true)]\npublic StatBonus statBonus",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tags",
+      "id": "Global_Gem_tags",
+      "declaration": "[BoxGroup(\"Gem Settings\", true, false, 0)]\npublic DescriptionTags tags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultAllExceptSelf",
+      "id": "Global_Gem_tvDefaultAllExceptSelf",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultAllExceptSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultHarmfulEffectTargets",
+      "id": "Global_Gem_tvDefaultHarmfulEffectTargets",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultHarmfulEffectTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tvDefaultUsefulEffectTargets",
+      "id": "Global_Gem_tvDefaultUsefulEffectTargets",
+      "declaration": "protected AbilityTargetValidatorWrapper tvDefaultUsefulEffectTargets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_Gem_canInteractWithMouse",
+      "declaration": "public bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentCooldown",
+      "id": "Global_Gem_currentCooldown",
+      "declaration": "public float currentCooldown { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleDreamDustOverride",
+      "id": "Global_Gem_dismantleDreamDustOverride",
+      "declaration": "public int? dismantleDreamDustOverride { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleProgress",
+      "id": "Global_Gem_dismantleProgress",
+      "declaration": "public float dismantleProgress { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effectiveLevel",
+      "id": "Global_Gem_effectiveLevel",
+      "declaration": "public int effectiveLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fillAmount",
+      "id": "Global_Gem_fillAmount",
+      "declaration": "public float fillAmount { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_Gem_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "handOwner",
+      "id": "Global_Gem_handOwner",
+      "declaration": "public Hero handOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_Gem_interactPivot",
+      "declaration": "public Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Gem_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocked",
+      "id": "Global_Gem_isLocked",
+      "declaration": "public bool isLocked { get; }",
+      "summary": "Is this gem locked for local player?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isNotReadyByRateLimit",
+      "id": "Global_Gem_isNotReadyByRateLimit",
+      "declaration": "public bool isNotReadyByRateLimit { get; }",
+      "summary": "Is this gem not ready because of rate limit?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isValid",
+      "id": "Global_Gem_isValid",
+      "declaration": "public bool isValid { get; }",
+      "summary": "Returns true if gem is not destroyed, is active, and has owner.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "location",
+      "id": "Global_Gem_location",
+      "declaration": "public GemLocation location { get; set; }",
+      "summary": "Location of this gem if equipped to a hero.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxCooldown",
+      "id": "Global_Gem_maxCooldown",
+      "declaration": "public float maxCooldown { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxSellGold",
+      "id": "Global_Gem_maxSellGold",
+      "declaration": "public int maxSellGold { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "numberDisplay",
+      "id": "Global_Gem_numberDisplay",
+      "declaration": "public int? numberDisplay { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "owner",
+      "id": "Global_Gem_owner",
+      "declaration": "public Hero owner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "quality",
+      "id": "Global_Gem_quality",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int quality { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "qualityType",
+      "id": "Global_Gem_qualityType",
+      "declaration": "public Gem.QualityType qualityType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sellGoldOverride",
+      "id": "Global_Gem_sellGoldOverride",
+      "declaration": "public int? sellGoldOverride { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skill",
+      "id": "Global_Gem_skill",
+      "declaration": "public SkillTrigger skill { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipStartAnimation",
+      "id": "Global_Gem_skipStartAnimation",
+      "declaration": "public bool skipStartAnimation { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tempOwner",
+      "id": "Global_Gem_tempOwner",
+      "declaration": "public DewPlayer tempOwner { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldModel",
+      "id": "Global_Gem_worldModel",
+      "declaration": "public ItemWorldModel worldModel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ApplyCooldownReduction(float)",
+      "id": "Global_Gem_ApplyCooldownReduction_System_Single_",
+      "declaration": "public void ApplyCooldownReduction(float amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyCooldownReductionByRatio(float)",
+      "id": "Global_Gem_ApplyCooldownReductionByRatio_System_Single_",
+      "declaration": "public void ApplyCooldownReductionByRatio(float ratio)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ratio",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_Gem_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_Gem_CanInteract_Entity_",
+      "declaration": "public bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CreateAbilityInstanceWithSource<T>(Actor, Vector3, Quaternion?, CastInfo, Action<T>)",
+      "id": "Global_Gem_CreateAbilityInstanceWithSource__1_Actor_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__CastInfo_System_Action___0__",
+      "declaration": "public T CreateAbilityInstanceWithSource<T>(Actor source, Vector3 position, Quaternion? rotation, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance",
+      "summary": "Create an ability instance on behalf of source actor, but make it inherit this gem's quality. You MUST ensure source will not be destroyed before calling this. Call this right after instance spawn or use Actor.LockDestroy().",
+      "parameters": [
+        {
+          "name": "source",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateBasicEffectWithSource(Actor, Entity, BasicEffect, float, string, DuplicateEffectBehavior)",
+      "id": "Global_Gem_CreateBasicEffectWithSource_Actor_Entity_BasicEffect_System_Single_System_String_DuplicateEffectBehavior_",
+      "declaration": "public Se_GenericEffectContainer CreateBasicEffectWithSource(Actor source, Entity victim, BasicEffect eff, float duration, string id, DuplicateEffectBehavior onDuplicate = DuplicateEffectBehavior.ReplacePrevious)",
+      "summary": "Create a basic effect container on behalf of source actor. You MUST ensure source will not be destroyed before calling this. Call this right after instance spawn or use Actor.LockDestroy().",
+      "parameters": [
+        {
+          "name": "source",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "eff",
+          "type": "BasicEffect",
+          "type_uid": "Global.BasicEffect",
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onDuplicate",
+          "type": "DuplicateEffectBehavior",
+          "type_uid": "Global.DuplicateEffectBehavior",
+          "description": ""
+        }
+      ],
+      "returns": "Se_GenericEffectContainer"
+    },
+    {
+      "name": "CreateStatusEffectWithSource<T>(Actor, Entity, CastInfo, Action<T>)",
+      "id": "Global_Gem_CreateStatusEffectWithSource__1_Actor_Entity_CastInfo_System_Action___0__",
+      "declaration": "public T CreateStatusEffectWithSource<T>(Actor source, Entity victim, CastInfo info, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a status effect on behalf of source actor, but make it inherit this gem's quality. You MUST ensure source will not be destroyed before calling this. Call this right after instance spawn or use Actor.LockDestroy().",
+      "parameters": [
+        {
+          "name": "source",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "DismantleGem()",
+      "id": "Global_Gem_DismantleGem",
+      "declaration": "public void DismantleGem()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetBuyGold()",
+      "id": "Global_Gem_GetBuyGold",
+      "declaration": "public int GetBuyGold()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetBuyGold(Rarity, int)",
+      "id": "Global_Gem_GetBuyGold_Rarity_System_Int32_",
+      "declaration": "public static int GetBuyGold(Rarity rarity, int quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetDismantleAmount(DewPlayer)",
+      "id": "Global_Gem_GetDismantleAmount_DewPlayer_",
+      "declaration": "public int GetDismantleAmount(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetGoldValue(Rarity, int)",
+      "id": "Global_Gem_GetGoldValue_Rarity_System_Int32_",
+      "declaration": "public static int GetGoldValue(Rarity rarity, int quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetMergedQuality(int, int)",
+      "id": "Global_Gem_GetMergedQuality_System_Int32_System_Int32_",
+      "declaration": "public static int GetMergedQuality(int a, int b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetQualityType(float)",
+      "id": "Global_Gem_GetQualityType_System_Single_",
+      "declaration": "public static Gem.QualityType GetQualityType(float quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "quality",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Gem.QualityType"
+    },
+    {
+      "name": "GetSellGold()",
+      "id": "Global_Gem_GetSellGold",
+      "declaration": "public int GetSellGold()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetSellGold(Rarity, int)",
+      "id": "Global_Gem_GetSellGold_Rarity_System_Int32_",
+      "declaration": "public static int GetSellGold(Rarity rarity, int quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetValue(ScalingValue)",
+      "id": "Global_Gem_GetValue_ScalingValue_",
+      "declaration": "public float GetValue(ScalingValue val)",
+      "summary": "Gets value of the given scaling value using this gem's level and caster.",
+      "parameters": [
+        {
+          "name": "val",
+          "type": "ScalingValue",
+          "type_uid": "Global.ScalingValue",
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "IsLockedFor(DewPlayer)",
+      "id": "Global_Gem_IsLockedFor_DewPlayer_",
+      "declaration": "public bool IsLockedFor(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsReady()",
+      "id": "Global_Gem_IsReady",
+      "declaration": "public virtual bool IsReady()",
+      "summary": "Is this gem ready? By default this checks if the gem is cooled down and has at least 1 use left (rate-limit).This must return the same value everywhere(server/clients) for consistent behavior.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_Gem_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "NotifyUse()",
+      "id": "Global_Gem_NotifyUse",
+      "declaration": "public void NotifyUse()",
+      "summary": "Flash this gem in UI for highlighting or giving attention to player.If this gem is rate-limited, it will decrement remaining use.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCastComplete(EventInfoCast)",
+      "id": "Global_Gem_OnCastComplete_EventInfoCast_",
+      "declaration": "protected virtual void OnCastComplete(EventInfoCast info)",
+      "summary": "Called on server when equipped skill completes casting.",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoCast",
+          "type_uid": "Global.EventInfoCast",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCastCompleteBeforePrepare(EventInfoCast)",
+      "id": "Global_Gem_OnCastCompleteBeforePrepare_EventInfoCast_",
+      "declaration": "protected virtual void OnCastCompleteBeforePrepare(EventInfoCast info)",
+      "summary": "Called on server when equipped skill creates ability instance before it is spawned and prepared.",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoCast",
+          "type_uid": "Global.EventInfoCast",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDealDamage(EventInfoDamage)",
+      "id": "Global_Gem_OnDealDamage_EventInfoDamage_",
+      "declaration": "protected virtual void OnDealDamage(EventInfoDamage info)",
+      "summary": "Called on server when equipped skill deals damage.",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoDamage",
+          "type_uid": "Global.EventInfoDamage",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDoHeal(EventInfoHeal)",
+      "id": "Global_Gem_OnDoHeal_EventInfoHeal_",
+      "declaration": "protected virtual void OnDoHeal(EventInfoHeal obj)",
+      "summary": "Called on server when equipped skill does heal.",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "EventInfoHeal",
+          "type_uid": "Global.EventInfoHeal",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnEquipGem(Hero)",
+      "id": "Global_Gem_OnEquipGem_Hero_",
+      "declaration": "public virtual void OnEquipGem(Hero newOwner)",
+      "summary": "Called everywhere when this gem is picked up by hero.",
+      "parameters": [
+        {
+          "name": "newOwner",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnEquipSkill(SkillTrigger)",
+      "id": "Global_Gem_OnEquipSkill_SkillTrigger_",
+      "declaration": "public virtual void OnEquipSkill(SkillTrigger newSkill)",
+      "summary": "Called everywhere when this gem starts taking effect on skill.",
+      "parameters": [
+        {
+          "name": "newSkill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_Gem_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnQualityChange(int, int)",
+      "id": "Global_Gem_OnQualityChange_System_Int32_System_Int32_",
+      "declaration": "protected virtual void OnQualityChange(int oldQuality, int newQuality)",
+      "summary": "Called everywhere when this gem's quality is changed.",
+      "parameters": [
+        {
+          "name": "oldQuality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newQuality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_Gem_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Gem_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnUnequipGem(Hero)",
+      "id": "Global_Gem_OnUnequipGem_Hero_",
+      "declaration": "public virtual void OnUnequipGem(Hero oldOwner)",
+      "summary": "Called everywhere when this gem is dropped by hero.",
+      "parameters": [
+        {
+          "name": "oldOwner",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnUnequipSkill(SkillTrigger)",
+      "id": "Global_Gem_OnUnequipSkill_SkillTrigger_",
+      "declaration": "public virtual void OnUnequipSkill(SkillTrigger oldSkill)",
+      "summary": "Called everywhere when this gem stops taking effect on skill.",
+      "parameters": [
+        {
+          "name": "oldSkill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ResetCooldown()",
+      "id": "Global_Gem_ResetCooldown",
+      "declaration": "public void ResetCooldown()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Gem_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "StartCooldown()",
+      "id": "Global_Gem_StartCooldown",
+      "declaration": "public void StartCooldown()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

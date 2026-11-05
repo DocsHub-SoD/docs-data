@@ -1,0 +1,62 @@
+{
+  "uid": "Global.GameCursorManager",
+  "name": "GameCursorManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameCursorManager : ManagerBase<GameCursorManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "GameCursorManager",
+      "href": "Global.GameCursorManager.html",
+      "uid": "Global.GameCursorManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "currentCursor",
+      "id": "Global_GameCursorManager_currentCursor",
+      "declaration": "public GameCursorManager.CursorData currentCursor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cursors",
+      "id": "Global_GameCursorManager_cursors",
+      "declaration": "public GameCursorManager.CursorData[] cursors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "downCursors",
+      "id": "Global_GameCursorManager_downCursors",
+      "declaration": "public GameCursorManager.CursorData[] downCursors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,52 @@
+{
+  "uid": "Global.CastMethodDataSerialization",
+  "name": "CastMethodDataSerialization",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class CastMethodDataSerialization",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ReadWriteCastMethodData(NetworkReader)",
+      "id": "Global_CastMethodDataSerialization_ReadWriteCastMethodData_Mirror_NetworkReader_",
+      "declaration": "public static CastMethodData ReadWriteCastMethodData(this NetworkReader reader)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "reader",
+          "type": "Mirror.NetworkReader",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "CastMethodData"
+    },
+    {
+      "name": "WriteCastMethodData(NetworkWriter, CastMethodData)",
+      "id": "Global_CastMethodDataSerialization_WriteCastMethodData_Mirror_NetworkWriter_CastMethodData_",
+      "declaration": "public static void WriteCastMethodData(this NetworkWriter writer, CastMethodData value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "writer",
+          "type": "Mirror.NetworkWriter",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "CastMethodData",
+          "type_uid": "Global.CastMethodData",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

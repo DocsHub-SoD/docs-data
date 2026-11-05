@@ -1,0 +1,53 @@
+{
+  "uid": "Global.ISpawnableAsMiniBoss",
+  "name": "ISpawnableAsMiniBoss",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ISpawnableAsMiniBoss",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GiveGenericMiniBossBonus(Entity, float)",
+      "id": "Global_ISpawnableAsMiniBoss_GiveGenericMiniBossBonus_Entity_System_Single_",
+      "declaration": "public static void GiveGenericMiniBossBonus(Entity entity, float postDelayMultiplier = 0.5)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "postDelayMultiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnBeforeSpawnAsMiniBoss()",
+      "id": "Global_ISpawnableAsMiniBoss_OnBeforeSpawnAsMiniBoss",
+      "declaration": "void OnBeforeSpawnAsMiniBoss()",
+      "summary": "Called on server before being spawned as an elite.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreateAsMiniBoss()",
+      "id": "Global_ISpawnableAsMiniBoss_OnCreateAsMiniBoss",
+      "declaration": "void OnCreateAsMiniBoss()",
+      "summary": "Called everywhere after being spawned as an elite.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

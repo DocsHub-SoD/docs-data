@@ -1,0 +1,15 @@
+{
+  "uid": "Global.PerLaunchOptionVisibility.LaunchOptions",
+  "name": "PerLaunchOptionVisibility.LaunchOptions",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum PerLaunchOptionVisibility.LaunchOptions",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

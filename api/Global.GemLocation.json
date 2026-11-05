@@ -1,0 +1,71 @@
+{
+  "uid": "Global.GemLocation",
+  "name": "GemLocation",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct GemLocation",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "index",
+      "id": "Global_GemLocation_index",
+      "declaration": "public int index",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skill",
+      "id": "Global_GemLocation_skill",
+      "declaration": "public HeroSkillLocation skill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Equals(GemLocation)",
+      "id": "Global_GemLocation_Equals_GemLocation_",
+      "declaration": "public bool Equals(GemLocation other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_GemLocation_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_GemLocation_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

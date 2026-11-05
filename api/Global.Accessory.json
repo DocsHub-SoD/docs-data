@@ -1,0 +1,102 @@
+{
+  "uid": "Global.Accessory",
+  "name": "Accessory",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Name)]\npublic class Accessory : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "category",
+      "id": "Global_Accessory_category",
+      "declaration": "public string category",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customOffsets",
+      "id": "Global_Accessory_customOffsets",
+      "declaration": "public List<Accessory.AttachOffset> customOffsets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "generatedFromServer",
+      "id": "Global_Accessory_generatedFromServer",
+      "declaration": "public bool generatedFromServer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewCustomCenter",
+      "id": "Global_Accessory_previewCustomCenter",
+      "declaration": "[LabelText(\"Custom Center\")]\npublic Transform previewCustomCenter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewImage",
+      "id": "Global_Accessory_previewImage",
+      "declaration": "[Space(30)]\n[PreviewField(60)]\n[LabelText(\"Thumbnail\")]\npublic Sprite previewImage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewOffset",
+      "id": "Global_Accessory_previewOffset",
+      "declaration": "[LabelText(\"Normalized Offset\")]\n[ReadOnly]\npublic Vector2 previewOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previewPadding",
+      "id": "Global_Accessory_previewPadding",
+      "declaration": "[Range(-0.25, 0.25)]\n[LabelText(\"Padding\")]\npublic float previewPadding",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_Accessory_type",
+      "declaration": "public AccType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Setup(Transform, string)",
+      "id": "Global_Accessory_Setup_UnityEngine_Transform_System_String_",
+      "declaration": "public void Setup(Transform target, string entityOrSkinName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "entityOrSkinName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

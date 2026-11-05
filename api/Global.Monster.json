@@ -1,0 +1,197 @@
+{
+  "uid": "Global.Monster",
+  "name": "Monster",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Monster : Entity, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "BossMonster",
+      "href": "Global.BossMonster.html",
+      "uid": "Global.BossMonster"
+    },
+    {
+      "name": "Mon_DreamTeller",
+      "href": "Global.Mon_DreamTeller.html",
+      "uid": "Global.Mon_DreamTeller"
+    },
+    {
+      "name": "Mon_RedGiant",
+      "href": "Global.Mon_RedGiant.html",
+      "uid": "Global.Mon_RedGiant"
+    },
+    {
+      "name": "Mon_RedMan",
+      "href": "Global.Mon_RedMan.html",
+      "uid": "Global.Mon_RedMan"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "chasePredictiveness",
+      "id": "Global_Monster_chasePredictiveness",
+      "declaration": "[BoxGroup(\"Monster Settings\", true, false, 0)]\npublic float chasePredictiveness",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chaseRandomness",
+      "id": "Global_Monster_chaseRandomness",
+      "declaration": "[BoxGroup(\"Monster Settings\", true, false, 0)]\npublic float chaseRandomness",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableLoot",
+      "id": "Global_Monster_disableLoot",
+      "declaration": "[NonSerialized]\npublic bool disableLoot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_Monster_type",
+      "declaration": "[BoxGroup(\"Monster Settings\", true, false, 0)]\npublic Monster.MonsterType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "campPosition",
+      "id": "Global_Monster_campPosition",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Vector3? campPosition { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultOwner",
+      "id": "Global_Monster_defaultOwner",
+      "declaration": "protected override DewPlayer defaultOwner { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isHunter",
+      "id": "Global_Monster_isHunter",
+      "declaration": "public bool isHunter { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "populationCost",
+      "id": "Global_Monster_populationCost",
+      "declaration": "public float populationCost { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnPosOverride",
+      "id": "Global_Monster_spawnPosOverride",
+      "declaration": "public virtual Vector3? spawnPosOverride { get; }",
+      "summary": "Override spawn position for this monster. This has higher priority than all other spawn pos overrides.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnRotOverride",
+      "id": "Global_Monster_spawnRotOverride",
+      "declaration": "public virtual Quaternion? spawnRotOverride { get; }",
+      "summary": "Override spawn rotation for this monster. This has higher priority than all other spawn rot overrides.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AIUpdate(ref EntityAIContext)",
+      "id": "Global_Monster_AIUpdate_EntityAIContext__",
+      "declaration": "protected override void AIUpdate(ref EntityAIContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EntityAIContext",
+          "type_uid": "Global.EntityAIContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetStaggerSettings()",
+      "id": "Global_Monster_GetStaggerSettings",
+      "declaration": "protected override Entity.StaggerSettings GetStaggerSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Entity.StaggerSettings"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Monster_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Monster_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_Monster_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

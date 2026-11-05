@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DescriptionTags",
+  "name": "DescriptionTags",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum DescriptionTags",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

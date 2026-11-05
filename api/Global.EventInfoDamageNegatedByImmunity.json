@@ -1,0 +1,48 @@
+{
+  "uid": "Global.EventInfoDamageNegatedByImmunity",
+  "name": "EventInfoDamageNegatedByImmunity",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoDamageNegatedByImmunity",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoDamageNegatedByImmunity_actor",
+      "declaration": "public Actor actor",
+      "summary": "The actor who started the damage.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "data",
+      "id": "Global_EventInfoDamageNegatedByImmunity_data",
+      "declaration": "public FinalDamageData data",
+      "summary": "Final damage data that is prevented.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "effect",
+      "id": "Global_EventInfoDamageNegatedByImmunity_effect",
+      "declaration": "public BasicEffect effect",
+      "summary": "The basic effect responsible for the negated damage. e.g. ProtectedEffect, InvulnerableEffect",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_EventInfoDamageNegatedByImmunity_victim",
+      "declaration": "public Entity victim",
+      "summary": "Victim of the negated damage.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

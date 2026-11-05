@@ -1,0 +1,15 @@
+{
+  "uid": "Global.UI_GamepadBindButton.ButtonType",
+  "name": "UI_GamepadBindButton.ButtonType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum UI_GamepadBindButton.ButtonType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

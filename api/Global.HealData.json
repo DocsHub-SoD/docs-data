@@ -1,0 +1,313 @@
+{
+  "uid": "Global.HealData",
+  "name": "HealData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct HealData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "actor",
+      "id": "Global_HealData_actor",
+      "declaration": "public readonly Actor actor { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "amplificationMultiplier",
+      "id": "Global_HealData_amplificationMultiplier",
+      "declaration": "public readonly float amplificationMultiplier { get; }",
+      "summary": "Heal multiplier for amplications.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canMerge",
+      "id": "Global_HealData_canMerge",
+      "declaration": "public readonly bool canMerge { get; }",
+      "summary": "Can this heal number be merged into single number",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentAmount",
+      "id": "Global_HealData_currentAmount",
+      "declaration": "public float currentAmount { get; }",
+      "summary": "Amount of processed damage with current modifications.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "flatModifier",
+      "id": "Global_HealData_flatModifier",
+      "declaration": "public readonly float flatModifier { get; }",
+      "summary": "Flat heal modifier. This value will be added to the final heal before any other multipliers.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCrit",
+      "id": "Global_HealData_isCrit",
+      "declaration": "public readonly bool isCrit { get; }",
+      "summary": "Should this heal show a critical hit marker?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "originalAmount",
+      "id": "Global_HealData_originalAmount",
+      "declaration": "public readonly float originalAmount { get; }",
+      "summary": "Original amount of heal.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reductionMultiplier",
+      "id": "Global_HealData_reductionMultiplier",
+      "declaration": "public readonly float reductionMultiplier { get; }",
+      "summary": "Heal multiplier for reductions.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddAmount(float)",
+      "id": "Global_HealData_AddAmount_System_Single_",
+      "declaration": "public HealData AddAmount(float amount)",
+      "summary": "Add a flat amount to this heal.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": "The amount to add. Must be a positive number or zero."
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "ApplyAmplification(float)",
+      "id": "Global_HealData_ApplyAmplification_System_Single_",
+      "declaration": "public HealData ApplyAmplification(float value)",
+      "summary": "Amplify this heal by the value specified, stacking additively.e.g. One Amplication by 0.5 will cause 50% increase in heal.Two Amplifications by 0.5 will cause 125% increase in heal.",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": "Amplification value. Must be a positive number or zero."
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "ApplyRawMultiplier(float)",
+      "id": "Global_HealData_ApplyRawMultiplier_System_Single_",
+      "declaration": "public HealData ApplyRawMultiplier(float multiplier)",
+      "summary": "Apply raw multiplier to this heal's original amount.",
+      "parameters": [
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "ApplyReduction(float)",
+      "id": "Global_HealData_ApplyReduction_System_Single_",
+      "declaration": "public HealData ApplyReduction(float value)",
+      "summary": "Reduce this heal by the value specified, stacking multiplicatively.e.g. One Reduction by 0.5 will cause 50% decrease in heal.Two Reductions by 0.5 will cause 75% decrease in heal.",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": "Reduction value. This value will be clamped between 0 and 1."
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "Dispatch(Entity, ReactionChain)",
+      "id": "Global_HealData_Dispatch_Entity_ReactionChain_",
+      "declaration": "public void Dispatch(Entity victim, ReactionChain chain = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "IsAmountModifiedBy(Actor)",
+      "id": "Global_HealData_IsAmountModifiedBy_Actor_",
+      "declaration": "public bool IsAmountModifiedBy(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAmountModifiedBy(Type)",
+      "id": "Global_HealData_IsAmountModifiedBy_System_Type_",
+      "declaration": "public bool IsAmountModifiedBy(Type actorType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actorType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "SetActor(Actor)",
+      "id": "Global_HealData_SetActor_Actor_",
+      "declaration": "public HealData SetActor(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetAmountModifiedBy(Actor)",
+      "id": "Global_HealData_SetAmountModifiedBy_Actor_",
+      "declaration": "public HealData SetAmountModifiedBy(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetAmountModifiedBy(Type)",
+      "id": "Global_HealData_SetAmountModifiedBy_System_Type_",
+      "declaration": "public HealData SetAmountModifiedBy(Type actorType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actorType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetAmountOrigin(FinalDamageData)",
+      "id": "Global_HealData_SetAmountOrigin_FinalDamageData_",
+      "declaration": "public HealData SetAmountOrigin(FinalDamageData damage)",
+      "summary": "If amount of this heal originates from other damage, you can specify it here to make it inherit its flags and isCrit.",
+      "parameters": [
+        {
+          "name": "damage",
+          "type": "FinalDamageData",
+          "type_uid": "Global.FinalDamageData",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetAmountOrigin(FinalHealData)",
+      "id": "Global_HealData_SetAmountOrigin_FinalHealData_",
+      "declaration": "public HealData SetAmountOrigin(FinalHealData heal)",
+      "summary": "If amount of this heal originates from other heal, you can specify it here to make it inherit its flags and isCrit.",
+      "parameters": [
+        {
+          "name": "heal",
+          "type": "FinalHealData",
+          "type_uid": "Global.FinalHealData",
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetCanMerge()",
+      "id": "Global_HealData_SetCanMerge",
+      "declaration": "public HealData SetCanMerge()",
+      "summary": "Make this heal mergeable into one damage number in UI.",
+      "parameters": [],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetCrit()",
+      "id": "Global_HealData_SetCrit",
+      "declaration": "public HealData SetCrit()",
+      "summary": "Make this heal show a critical hit marker.",
+      "parameters": [],
+      "returns": "HealData"
+    },
+    {
+      "name": "SetOriginalAmount(float)",
+      "id": "Global_HealData_SetOriginalAmount_System_Single_",
+      "declaration": "public HealData SetOriginalAmount(float newAmount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newAmount",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "HealData"
+    },
+    {
+      "name": "SubtractAmount(float)",
+      "id": "Global_HealData_SubtractAmount_System_Single_",
+      "declaration": "public HealData SubtractAmount(float amount)",
+      "summary": "Subtract a flat amount from this heal.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": "The amount to subtract. Must be a positive number or zero."
+        }
+      ],
+      "returns": "HealData"
+    }
+  ],
+  "events": []
+}

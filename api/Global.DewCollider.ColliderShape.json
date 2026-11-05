@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewCollider.ColliderShape",
+  "name": "DewCollider.ColliderShape",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DewCollider.ColliderShape",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

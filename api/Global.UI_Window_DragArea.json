@@ -1,0 +1,46 @@
+{
+  "uid": "Global.UI_Window_DragArea",
+  "name": "UI_Window_DragArea",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_Window_DragArea : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnPointerDown(PointerEventData)",
+      "id": "Global_UI_Window_DragArea_OnPointerDown_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerDown(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerUp(PointerEventData)",
+      "id": "Global_UI_Window_DragArea_OnPointerUp_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerUp(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

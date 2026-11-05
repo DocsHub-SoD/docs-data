@@ -1,0 +1,103 @@
+{
+  "uid": "Global.EntityHighlightProvider",
+  "name": "EntityHighlightProvider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityHighlightProvider : MeshHighlightProvider, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "HighlightProvider",
+      "href": "Global.HighlightProvider.html",
+      "uid": "Global.HighlightProvider"
+    },
+    {
+      "name": "MeshHighlightProvider",
+      "href": "Global.MeshHighlightProvider.html",
+      "uid": "Global.MeshHighlightProvider"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableHighlight",
+      "id": "Global_EntityHighlightProvider_disableHighlight",
+      "declaration": "public bool disableHighlight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HitEffectDuration",
+      "id": "Global_EntityHighlightProvider_HitEffectDuration",
+      "declaration": "public const float HitEffectDuration = 0.1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_EntityHighlightProvider_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_EntityHighlightProvider_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnClickTimeUpdated()",
+      "id": "Global_EntityHighlightProvider_OnClickTimeUpdated",
+      "declaration": "protected override void OnClickTimeUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCursorStatusUpdated()",
+      "id": "Global_EntityHighlightProvider_OnCursorStatusUpdated",
+      "declaration": "protected override void OnCursorStatusUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShowHit()",
+      "id": "Global_EntityHighlightProvider_ShowHit",
+      "declaration": "public void ShowHit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_EntityHighlightProvider_Start",
+      "declaration": "protected override void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

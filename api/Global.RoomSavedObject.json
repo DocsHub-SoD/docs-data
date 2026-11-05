@@ -1,0 +1,24 @@
+{
+  "uid": "Global.RoomSavedObject",
+  "name": "RoomSavedObject",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class RoomSavedObject : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "guid",
+      "id": "Global_RoomSavedObject_guid",
+      "declaration": "[ReadOnly]\n[SerializeField]\npublic string guid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

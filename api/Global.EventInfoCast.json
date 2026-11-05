@@ -1,0 +1,48 @@
+{
+  "uid": "Global.EventInfoCast",
+  "name": "EventInfoCast",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoCast",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "configIndex",
+      "id": "Global_EventInfoCast_configIndex",
+      "declaration": "public int configIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "info",
+      "id": "Global_EventInfoCast_info",
+      "declaration": "public CastInfo info",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_EventInfoCast_instance",
+      "declaration": "public AbilityInstance instance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trigger",
+      "id": "Global_EventInfoCast_trigger",
+      "declaration": "public AbilityTrigger trigger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

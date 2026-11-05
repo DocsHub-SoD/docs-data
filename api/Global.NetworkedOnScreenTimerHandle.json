@@ -1,0 +1,40 @@
+{
+  "uid": "Global.NetworkedOnScreenTimerHandle",
+  "name": "NetworkedOnScreenTimerHandle",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class NetworkedOnScreenTimerHandle",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "localeKey",
+      "id": "Global_NetworkedOnScreenTimerHandle_localeKey",
+      "declaration": "public string localeKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillKey",
+      "id": "Global_NetworkedOnScreenTimerHandle_skillKey",
+      "declaration": "public string skillKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "valueGetter",
+      "id": "Global_NetworkedOnScreenTimerHandle_valueGetter",
+      "declaration": "[NonSerialized]\npublic Func<float> valueGetter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

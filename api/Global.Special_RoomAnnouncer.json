@@ -1,0 +1,91 @@
+{
+  "uid": "Global.Special_RoomAnnouncer",
+  "name": "Special_RoomAnnouncer",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Special_RoomAnnouncer : SingletonBehaviour<Special_RoomAnnouncer>",
+  "inheritance": [
+    {
+      "name": "SingletonBehaviour",
+      "href": "Global.SingletonBehaviour-1.html",
+      "uid": "Global.SingletonBehaviour-1"
+    },
+    {
+      "name": "Special_RoomAnnouncer",
+      "href": "Global.Special_RoomAnnouncer.html",
+      "uid": "Global.Special_RoomAnnouncer"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "announceEvent",
+      "id": "Global_Special_RoomAnnouncer_announceEvent",
+      "declaration": "[Space]\npublic bool announceEvent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "color",
+      "id": "Global_Special_RoomAnnouncer_color",
+      "declaration": "[ShowIf(\"announceEvent\", true)]\npublic Color color",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "key",
+      "id": "Global_Special_RoomAnnouncer_key",
+      "declaration": "public string key",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "setRoomName",
+      "id": "Global_Special_RoomAnnouncer_setRoomName",
+      "declaration": "[Space]\npublic bool setRoomName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showZoneIndex",
+      "id": "Global_Special_RoomAnnouncer_showZoneIndex",
+      "declaration": "[ShowIf(\"setRoomName\", true)]\npublic bool showZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sprite",
+      "id": "Global_Special_RoomAnnouncer_sprite",
+      "declaration": "[ShowIf(\"announceEvent\", true)]\npublic Sprite sprite",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spriteScale",
+      "id": "Global_Special_RoomAnnouncer_spriteScale",
+      "declaration": "[ShowIf(\"announceEvent\", true)]\npublic float spriteScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoneIndexOffset",
+      "id": "Global_Special_RoomAnnouncer_zoneIndexOffset",
+      "declaration": "[ShowIf(\"@showZoneIndex && setRoomName\", true)]\npublic int zoneIndexOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

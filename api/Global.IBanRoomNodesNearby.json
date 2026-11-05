@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IBanRoomNodesNearby",
+  "name": "IBanRoomNodesNearby",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IBanRoomNodesNearby",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

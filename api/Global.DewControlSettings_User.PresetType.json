@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewControlSettings_User.PresetType",
+  "name": "DewControlSettings_User.PresetType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DewControlSettings_User.PresetType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

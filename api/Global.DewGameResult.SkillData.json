@@ -1,0 +1,104 @@
+{
+  "uid": "Global.DewGameResult.SkillData",
+  "name": "DewGameResult.SkillData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewGameResult.SkillData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "capturedTooltipFields",
+      "id": "Global_DewGameResult_SkillData_capturedTooltipFields",
+      "declaration": "public Dictionary<string, string> capturedTooltipFields",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownTime",
+      "id": "Global_DewGameResult_SkillData_cooldownTime",
+      "declaration": "public float cooldownTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "level",
+      "id": "Global_DewGameResult_SkillData_level",
+      "declaration": "public int level",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loc",
+      "id": "Global_DewGameResult_SkillData_loc",
+      "declaration": "public HeroSkillLocation loc",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxCharges",
+      "id": "Global_DewGameResult_SkillData_maxCharges",
+      "declaration": "public int maxCharges",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "name",
+      "id": "Global_DewGameResult_SkillData_name",
+      "declaration": "public string name",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "netId",
+      "id": "Global_DewGameResult_SkillData_netId",
+      "declaration": "public uint netId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_DewGameResult_SkillData_type",
+      "declaration": "public SkillType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CaptureTooltipFields(SkillTrigger)",
+      "id": "Global_DewGameResult_SkillData_CaptureTooltipFields_SkillTrigger_",
+      "declaration": "public void CaptureTooltipFields(SkillTrigger skill)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetSkillTrigger()",
+      "id": "Global_DewGameResult_SkillData_GetSkillTrigger",
+      "declaration": "public SkillTrigger GetSkillTrigger()",
+      "summary": "",
+      "parameters": [],
+      "returns": "SkillTrigger"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,81 @@
+{
+  "uid": "Global.PropEnt_Merchant_Unmanned",
+  "name": "PropEnt_Merchant_Unmanned",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PropEnt_Merchant_Unmanned : PropEnt_Merchant_Jonas, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IProp, IInteractable",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "PropEntity",
+      "href": "Global.PropEntity.html",
+      "uid": "Global.PropEntity"
+    },
+    {
+      "name": "PropEnt_Merchant_Base",
+      "href": "Global.PropEnt_Merchant_Base.html",
+      "uid": "Global.PropEnt_Merchant_Base"
+    },
+    {
+      "name": "PropEnt_Merchant_Jonas",
+      "href": "Global.PropEnt_Merchant_Jonas.html",
+      "uid": "Global.PropEnt_Merchant_Jonas"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    }
+  ],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnCreate()",
+      "id": "Global_PropEnt_Merchant_Unmanned_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

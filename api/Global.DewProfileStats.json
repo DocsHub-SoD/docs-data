@@ -1,0 +1,210 @@
+{
+  "uid": "Global.DewProfileStats",
+  "name": "DewProfileStats",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileStats",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "gems",
+      "id": "Global_DewProfileStats_gems",
+      "declaration": "public Dictionary<string, DewProfileStats.ItemData> gems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroes",
+      "id": "Global_DewProfileStats_heroes",
+      "declaration": "public Dictionary<string, DewProfileStats.HeroData> heroes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsters",
+      "id": "Global_DewProfileStats_monsters",
+      "declaration": "public Dictionary<string, DewProfileStats.MonsterData> monsters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "recoveredLossPoints",
+      "id": "Global_DewProfileStats_recoveredLossPoints",
+      "declaration": "public List<string> recoveredLossPoints",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skills",
+      "id": "Global_DewProfileStats_skills",
+      "declaration": "public Dictionary<string, DewProfileStats.ItemData> skills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "total",
+      "id": "Global_DewProfileStats_total",
+      "declaration": "public DewProfileStats.HeroData total",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zones",
+      "id": "Global_DewProfileStats_zones",
+      "declaration": "public Dictionary<string, DewProfileStats.ZoneData> zones",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AddMasteryPoints(string, long)",
+      "id": "Global_DewProfileStats_AddMasteryPoints_System_String_System_Int64_",
+      "declaration": "public void AddMasteryPoints(string heroType, long points)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "points",
+          "type": "long",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyRecoveryDelta(DewProfileStats)",
+      "id": "Global_DewProfileStats_ApplyRecoveryDelta_DewProfileStats_",
+      "declaration": "public void ApplyRecoveryDelta(DewProfileStats delta)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "delta",
+          "type": "DewProfileStats",
+          "type_uid": "Global.DewProfileStats",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetItemData(Type)",
+      "id": "Global_DewProfileStats_GetItemData_System_Type_",
+      "declaration": "public DewProfileStats.ItemData GetItemData(Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewProfileStats.ItemData"
+    },
+    {
+      "name": "GetRecoveryDelta(DewProfileStats, DewProfileStats)",
+      "id": "Global_DewProfileStats_GetRecoveryDelta_DewProfileStats_DewProfileStats_",
+      "declaration": "public static DewProfileStats GetRecoveryDelta(DewProfileStats beforeLoss, DewProfileStats afterLoss)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "beforeLoss",
+          "type": "DewProfileStats",
+          "type_uid": "Global.DewProfileStats",
+          "description": ""
+        },
+        {
+          "name": "afterLoss",
+          "type": "DewProfileStats",
+          "type_uid": "Global.DewProfileStats",
+          "description": ""
+        }
+      ],
+      "returns": "DewProfileStats"
+    },
+    {
+      "name": "RemoveMasteryPoints(string, long)",
+      "id": "Global_DewProfileStats_RemoveMasteryPoints_System_String_System_Int64_",
+      "declaration": "public void RemoveMasteryPoints(string heroType, long points)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "points",
+          "type": "long",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TryGetItemData(Type, out ItemData)",
+      "id": "Global_DewProfileStats_TryGetItemData_System_Type_DewProfileStats_ItemData__",
+      "declaration": "public bool TryGetItemData(Type type, out DewProfileStats.ItemData data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "data",
+          "type": "DewProfileStats.ItemData",
+          "type_uid": "Global.DewProfileStats",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UpdateTotalData(long)",
+      "id": "Global_DewProfileStats_UpdateTotalData_System_Int64_",
+      "declaration": "public void UpdateTotalData(long minPlayTime = 0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "minPlayTime",
+          "type": "long",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewProfileStats_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

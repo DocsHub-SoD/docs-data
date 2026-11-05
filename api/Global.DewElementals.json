@@ -1,0 +1,72 @@
+{
+  "uid": "Global.DewElementals",
+  "name": "DewElementals",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewElementals",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ColdCripplePerStack",
+      "id": "Global_DewElementals_ColdCripplePerStack",
+      "declaration": "public const float ColdCripplePerStack = 25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ColdSlowPerStack",
+      "id": "Global_DewElementals_ColdSlowPerStack",
+      "declaration": "public const float ColdSlowPerStack = 35",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DarkDamageAmpPerStack",
+      "id": "Global_DewElementals_DarkDamageAmpPerStack",
+      "declaration": "public const float DarkDamageAmpPerStack = 0.05",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FireDamageBase",
+      "id": "Global_DewElementals_FireDamageBase",
+      "declaration": "public const float FireDamageBase = 3.5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FireDamageInterval",
+      "id": "Global_DewElementals_FireDamageInterval",
+      "declaration": "public const float FireDamageInterval = 0.25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FireDamageMultiplierPerStack",
+      "id": "Global_DewElementals_FireDamageMultiplierPerStack",
+      "declaration": "public const float FireDamageMultiplierPerStack = 1.3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LightDamageAmpPerStack",
+      "id": "Global_DewElementals_LightDamageAmpPerStack",
+      "declaration": "public const float LightDamageAmpPerStack = 0.05",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

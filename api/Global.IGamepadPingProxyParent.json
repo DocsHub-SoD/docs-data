@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IGamepadPingProxyParent",
+  "name": "IGamepadPingProxyParent",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IGamepadPingProxyParent",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "pingableTarget",
+      "id": "Global_IGamepadPingProxyParent_pingableTarget",
+      "declaration": "MonoBehaviour pingableTarget { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

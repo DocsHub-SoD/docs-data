@@ -1,0 +1,32 @@
+{
+  "uid": "Global.ICastMethodDataTarget",
+  "name": "ICastMethodDataTarget",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICastMethodDataTarget",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "radius",
+      "id": "Global_ICastMethodDataTarget_radius",
+      "declaration": "float radius { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "range",
+      "id": "Global_ICastMethodDataTarget_range",
+      "declaration": "float range { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

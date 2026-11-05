@@ -1,0 +1,40 @@
+{
+  "uid": "Global.ConsoleManager.ExecutionContext",
+  "name": "ConsoleManager.ExecutionContext",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ConsoleManager.ExecutionContext",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "cursorWorldPos",
+      "id": "Global_ConsoleManager_ExecutionContext_cursorWorldPos",
+      "declaration": "public Vector3 cursorWorldPos",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "player",
+      "id": "Global_ConsoleManager_ExecutionContext_player",
+      "declaration": "public DewPlayer player",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selection",
+      "id": "Global_ConsoleManager_ExecutionContext_selection",
+      "declaration": "public Entity selection",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

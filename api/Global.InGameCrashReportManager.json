@@ -1,0 +1,46 @@
+{
+  "uid": "Global.InGameCrashReportManager",
+  "name": "InGameCrashReportManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InGameCrashReportManager : ManagerBase<InGameCrashReportManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "InGameCrashReportManager",
+      "href": "Global.InGameCrashReportManager.html",
+      "uid": "Global.InGameCrashReportManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_InGameCrashReportManager_shouldRegisterUpdates",
+      "declaration": "public override bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

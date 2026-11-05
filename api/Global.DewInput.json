@@ -1,0 +1,493 @@
+{
+  "uid": "Global.DewInput",
+  "name": "DewInput",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewInput",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "ModifierKeys",
+      "id": "Global_DewInput_ModifierKeys",
+      "declaration": "public static readonly List<Key> ModifierKeys",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "NameToMouseButton",
+      "id": "Global_DewInput_NameToMouseButton",
+      "declaration": "public static readonly IReadOnlyDictionary<string, MouseButton> NameToMouseButton",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onCurrentModeChanged",
+      "id": "Global_DewInput_onCurrentModeChanged",
+      "declaration": "public static SafeAction<InputMode, InputMode> onCurrentModeChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "controllerButtonType",
+      "id": "Global_DewInput_controllerButtonType",
+      "declaration": "public static ControllerButtonType controllerButtonType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentMode",
+      "id": "Global_DewInput_currentMode",
+      "declaration": "public static InputMode currentMode { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetButton(DewBinding, bool)",
+      "id": "Global_DewInput_GetButton_DewBinding_System_Boolean_",
+      "declaration": "public static bool GetButton(DewBinding b, bool checkGameAreaForMouse)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "checkGameAreaForMouse",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButton(MouseButton, bool)",
+      "id": "Global_DewInput_GetButton_MouseButton_System_Boolean_",
+      "declaration": "public static bool GetButton(MouseButton m, bool checkGameArea)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "MouseButton",
+          "type_uid": "Global.MouseButton",
+          "description": ""
+        },
+        {
+          "name": "checkGameArea",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButton(GamepadButtonEx?)",
+      "id": "Global_DewInput_GetButton_System_Nullable_GamepadButtonEx__",
+      "declaration": "public static bool GetButton(GamepadButtonEx? g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx?",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButton(Key)",
+      "id": "Global_DewInput_GetButton_UnityEngine_InputSystem_Key_",
+      "declaration": "public static bool GetButton(Key k)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "k",
+          "type": "UnityEngine.InputSystem.Key",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDown(DewBinding, bool)",
+      "id": "Global_DewInput_GetButtonDown_DewBinding_System_Boolean_",
+      "declaration": "public static bool GetButtonDown(DewBinding b, bool checkGameAreaForMouse)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "checkGameAreaForMouse",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDown(MouseButton, bool)",
+      "id": "Global_DewInput_GetButtonDown_MouseButton_System_Boolean_",
+      "declaration": "public static bool GetButtonDown(MouseButton m, bool checkGameArea)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "MouseButton",
+          "type_uid": "Global.MouseButton",
+          "description": ""
+        },
+        {
+          "name": "checkGameArea",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDown(GamepadButtonEx?)",
+      "id": "Global_DewInput_GetButtonDown_System_Nullable_GamepadButtonEx__",
+      "declaration": "public static bool GetButtonDown(GamepadButtonEx? g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx?",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDown(Key)",
+      "id": "Global_DewInput_GetButtonDown_UnityEngine_InputSystem_Key_",
+      "declaration": "public static bool GetButtonDown(Key k)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "k",
+          "type": "UnityEngine.InputSystem.Key",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDownAnyGamepad()",
+      "id": "Global_DewInput_GetButtonDownAnyGamepad",
+      "declaration": "public static bool GetButtonDownAnyGamepad()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDownAnyKey()",
+      "id": "Global_DewInput_GetButtonDownAnyKey",
+      "declaration": "public static bool GetButtonDownAnyKey()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonDownAnyMouse()",
+      "id": "Global_DewInput_GetButtonDownAnyMouse",
+      "declaration": "public static bool GetButtonDownAnyMouse()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonUp(DewBinding, bool)",
+      "id": "Global_DewInput_GetButtonUp_DewBinding_System_Boolean_",
+      "declaration": "public static bool GetButtonUp(DewBinding b, bool checkGameAreaForMouse)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "checkGameAreaForMouse",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonUp(MouseButton, bool)",
+      "id": "Global_DewInput_GetButtonUp_MouseButton_System_Boolean_",
+      "declaration": "public static bool GetButtonUp(MouseButton m, bool checkGameArea)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "MouseButton",
+          "type_uid": "Global.MouseButton",
+          "description": ""
+        },
+        {
+          "name": "checkGameArea",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonUp(GamepadButtonEx?)",
+      "id": "Global_DewInput_GetButtonUp_System_Nullable_GamepadButtonEx__",
+      "declaration": "public static bool GetButtonUp(GamepadButtonEx? g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "GamepadButtonEx?",
+          "type_uid": "Global.GamepadButtonEx",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetButtonUp(Key)",
+      "id": "Global_DewInput_GetButtonUp_UnityEngine_InputSystem_Key_",
+      "declaration": "public static bool GetButtonUp(Key k)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "k",
+          "type": "UnityEngine.InputSystem.Key",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetLeftJoystick()",
+      "id": "Global_DewInput_GetLeftJoystick",
+      "declaration": "public static Vector2 GetLeftJoystick()",
+      "summary": "Magnitude will be full range of 0 ~ 1 regardless of dead zone settings. Returns Vector2.zero if under dead zone.",
+      "parameters": [],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "GetReadableTextForCurrentMode(DewBinding, out BindingType)",
+      "id": "Global_DewInput_GetReadableTextForCurrentMode_DewBinding_BindingType__",
+      "declaration": "public static string GetReadableTextForCurrentMode(DewBinding b, out BindingType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "BindingType",
+          "type_uid": "Global.BindingType",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTextForCurrentMode(DewBinding)",
+      "id": "Global_DewInput_GetReadableTextForCurrentMode_DewBinding_",
+      "declaration": "public static string GetReadableTextForCurrentMode(DewBinding b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTextOfGamepad(DewBinding, out BindingType)",
+      "id": "Global_DewInput_GetReadableTextOfGamepad_DewBinding_BindingType__",
+      "declaration": "public static string GetReadableTextOfGamepad(DewBinding b, out BindingType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "BindingType",
+          "type_uid": "Global.BindingType",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTextOfGamepad(DewBinding)",
+      "id": "Global_DewInput_GetReadableTextOfGamepad_DewBinding_",
+      "declaration": "public static string GetReadableTextOfGamepad(DewBinding b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTextOfPC(DewBinding, out BindingType, int)",
+      "id": "Global_DewInput_GetReadableTextOfPC_DewBinding_BindingType__System_Int32_",
+      "declaration": "public static string GetReadableTextOfPC(DewBinding b, out BindingType type, int i = 0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "BindingType",
+          "type_uid": "Global.BindingType",
+          "description": ""
+        },
+        {
+          "name": "i",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTextOfPC(DewBinding, int)",
+      "id": "Global_DewInput_GetReadableTextOfPC_DewBinding_System_Int32_",
+      "declaration": "public static string GetReadableTextOfPC(DewBinding b, int i = 0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "DewBinding",
+          "type_uid": "Global.DewBinding",
+          "description": ""
+        },
+        {
+          "name": "i",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetRightJoystick()",
+      "id": "Global_DewInput_GetRightJoystick",
+      "declaration": "public static Vector2 GetRightJoystick()",
+      "summary": "Magnitude will be full range of 0 ~ 1 regardless of dead zone settings. Returns Vector2.zero if under dead zone.",
+      "parameters": [],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "IsGameRelatedMouseInputValid(MouseButton)",
+      "id": "Global_DewInput_IsGameRelatedMouseInputValid_MouseButton_",
+      "declaration": "public static bool IsGameRelatedMouseInputValid(MouseButton button)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "button",
+          "type": "MouseButton",
+          "type_uid": "Global.MouseButton",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ListenAnyButtonRaw(Object, Func<InputControl, bool>)",
+      "id": "Global_DewInput_ListenAnyButtonRaw_UnityEngine_Object_System_Func_UnityEngine_InputSystem_InputControl_System_Boolean__",
+      "declaration": "public static void ListenAnyButtonRaw(Object caller, Func<InputControl, bool> callback)",
+      "summary": "Return true in callback to stop listening.",
+      "parameters": [
+        {
+          "name": "caller",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "callback",
+          "type": "System.Func<T, TResult><InputControl,bool>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetInputMode(InputMode)",
+      "id": "Global_DewInput_SetInputMode_InputMode_",
+      "declaration": "public static void SetInputMode(InputMode mode)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "mode",
+          "type": "InputMode",
+          "type_uid": "Global.InputMode",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StopListenAnyButton()",
+      "id": "Global_DewInput_StopListenAnyButton",
+      "declaration": "public static void StopListenAnyButton()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,184 @@
+{
+  "uid": "Global.DewAdvText",
+  "name": "DewAdvText",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewAdvText",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Adv_ChatContent(DewPlayer, string)",
+      "id": "Global_DewAdvText_Adv_ChatContent_DewPlayer_System_String_",
+      "declaration": "public static string Adv_ChatContent(DewPlayer player, string content)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_ColoredDescribedPlayerName(DewPlayer)",
+      "id": "Global_DewAdvText_Adv_ColoredDescribedPlayerName_DewPlayer_",
+      "declaration": "public static string Adv_ColoredDescribedPlayerName(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_Cost(Cost)",
+      "id": "Global_DewAdvText_Adv_Cost_Cost_",
+      "declaration": "public static string Adv_Cost(Cost cost)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "cost",
+          "type": "Cost",
+          "type_uid": "Global.Cost",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_DescribedPlayerName(DewPlayer)",
+      "id": "Global_DewAdvText_Adv_DescribedPlayerName_DewPlayer_",
+      "declaration": "public static string Adv_DescribedPlayerName(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_Format(string, params string[])",
+      "id": "Global_DewAdvText_Adv_Format_System_String_System_String___",
+      "declaration": "public static string Adv_Format(string template, params string[] args)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "template",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "args",
+          "type": "string[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_LocCurseName(string)",
+      "id": "Global_DewAdvText_Adv_LocCurseName_System_String_",
+      "declaration": "public static string Adv_LocCurseName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_LocCurseShortDesc(string)",
+      "id": "Global_DewAdvText_Adv_LocCurseShortDesc_System_String_",
+      "declaration": "public static string Adv_LocCurseShortDesc(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_LocUI(string)",
+      "id": "Global_DewAdvText_Adv_LocUI_System_String_",
+      "declaration": "public static string Adv_LocUI(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Adv_Number(float, string)",
+      "id": "Global_DewAdvText_Adv_Number_System_Single_System_String_",
+      "declaration": "public static string Adv_Number(float value, string format = \"#,##0\")",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "ConvertAdvToText(string)",
+      "id": "Global_DewAdvText_ConvertAdvToText_System_String_",
+      "declaration": "public static string ConvertAdvToText(string adv)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "adv",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

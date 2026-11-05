@@ -1,0 +1,58 @@
+{
+  "uid": "Global.DevCanvas",
+  "name": "DevCanvas",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DevCanvas : SingletonBehaviour<DevCanvas>, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "SingletonBehaviour",
+      "href": "Global.SingletonBehaviour-1.html",
+      "uid": "Global.SingletonBehaviour-1"
+    },
+    {
+      "name": "DevCanvas",
+      "href": "Global.DevCanvas.html",
+      "uid": "Global.DevCanvas"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "consoleObject",
+      "id": "Global_DevCanvas_consoleObject",
+      "declaration": "public GameObject consoleObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_DevCanvas_state",
+      "declaration": "[NonSerialized]\npublic DevCanvas.DevCanvasState state",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_DevCanvas_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

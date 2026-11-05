@@ -1,0 +1,40 @@
+{
+  "uid": "Global.DewChildrenCullingGroup",
+  "name": "DewChildrenCullingGroup",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class DewChildrenCullingGroup : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "sphereLocalOffset",
+      "id": "Global_DewChildrenCullingGroup_sphereLocalOffset",
+      "declaration": "public Vector3 sphereLocalOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sphereRadius",
+      "id": "Global_DewChildrenCullingGroup_sphereRadius",
+      "declaration": "public float sphereRadius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sphereWorldOffset",
+      "id": "Global_DewChildrenCullingGroup_sphereWorldOffset",
+      "declaration": "public Vector3 sphereWorldOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

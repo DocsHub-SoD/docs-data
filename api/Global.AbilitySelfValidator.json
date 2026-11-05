@@ -1,0 +1,78 @@
+{
+  "uid": "Global.AbilitySelfValidator",
+  "name": "AbilitySelfValidator",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class AbilitySelfValidator : IEntityValidator",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEntityValidator",
+      "href": "Global.IEntityValidator.html",
+      "uid": "Global.IEntityValidator"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowWhileDashing",
+      "id": "Global_AbilitySelfValidator_allowWhileDashing",
+      "declaration": "[ToggleLeft]\npublic bool allowWhileDashing",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowWhileDisabled",
+      "id": "Global_AbilitySelfValidator_allowWhileDisabled",
+      "declaration": "[ToggleLeft]\npublic bool allowWhileDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allowWhileDodging",
+      "id": "Global_AbilitySelfValidator_allowWhileDodging",
+      "declaration": "[ToggleLeft]\npublic bool allowWhileDodging",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_AbilitySelfValidator_Default",
+      "declaration": "public static AbilitySelfValidator Default",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMovementAbility",
+      "id": "Global_AbilitySelfValidator_isMovementAbility",
+      "declaration": "[ToggleLeft]\npublic bool isMovementAbility",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Evaluate(Entity)",
+      "id": "Global_AbilitySelfValidator_Evaluate_Entity_",
+      "declaration": "public bool Evaluate(Entity self)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

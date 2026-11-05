@@ -1,0 +1,40 @@
+{
+  "uid": "Global.AttachToFace.CacheItem",
+  "name": "AttachToFace.CacheItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AttachToFace.CacheItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "frameCount",
+      "id": "Global_AttachToFace_CacheItem_frameCount",
+      "declaration": "public int frameCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mesh",
+      "id": "Global_AttachToFace_CacheItem_mesh",
+      "declaration": "public Mesh mesh",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "user",
+      "id": "Global_AttachToFace_CacheItem_user",
+      "declaration": "public int user",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

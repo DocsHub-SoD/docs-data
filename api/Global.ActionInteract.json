@@ -1,0 +1,79 @@
+{
+  "uid": "Global.ActionInteract",
+  "name": "ActionInteract",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ActionInteract : ActionBase",
+  "inheritance": [
+    {
+      "name": "ActionBase",
+      "href": "Global.ActionBase.html",
+      "uid": "Global.ActionBase"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "interactable",
+      "id": "Global_ActionInteract_interactable",
+      "declaration": "public IInteractable interactable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAlt",
+      "id": "Global_ActionInteract_isAlt",
+      "declaration": "public bool isAlt",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "noActivation",
+      "id": "Global_ActionInteract_noActivation",
+      "declaration": "public bool noActivation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetMoveDestination()",
+      "id": "Global_ActionInteract_GetMoveDestination",
+      "declaration": "public override Vector3? GetMoveDestination()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3?"
+    },
+    {
+      "name": "GetMoveDestinationRequiredDistance()",
+      "id": "Global_ActionInteract_GetMoveDestinationRequiredDistance",
+      "declaration": "public override float GetMoveDestinationRequiredDistance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "Tick()",
+      "id": "Global_ActionInteract_Tick",
+      "declaration": "public override bool Tick()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_ActionInteract_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

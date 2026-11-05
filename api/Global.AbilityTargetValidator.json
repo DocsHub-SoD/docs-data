@@ -1,0 +1,52 @@
+{
+  "uid": "Global.AbilityTargetValidator",
+  "name": "AbilityTargetValidator",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\npublic class AbilityTargetValidator : IBinaryEntityValidator",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IBinaryEntityValidator",
+      "href": "Global.IBinaryEntityValidator.html",
+      "uid": "Global.IBinaryEntityValidator"
+    }
+  ],
+  "fields": [
+    {
+      "name": "targets",
+      "id": "Global_AbilityTargetValidator_targets",
+      "declaration": "[HideLabel]\n[EnumToggleButtons]\npublic EntityRelation targets",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Evaluate(Entity, Entity)",
+      "id": "Global_AbilityTargetValidator_Evaluate_Entity_Entity_",
+      "declaration": "public bool Evaluate(Entity self, Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

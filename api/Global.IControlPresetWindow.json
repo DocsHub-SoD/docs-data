@@ -1,0 +1,47 @@
+{
+  "uid": "Global.IControlPresetWindow",
+  "name": "IControlPresetWindow",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IControlPresetWindow",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Hide()",
+      "id": "Global_IControlPresetWindow_Hide",
+      "declaration": "void Hide()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IsShown()",
+      "id": "Global_IControlPresetWindow_IsShown",
+      "declaration": "bool IsShown()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Show(bool)",
+      "id": "Global_IControlPresetWindow_Show_System_Boolean_",
+      "declaration": "void Show(bool showCancel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "showCancel",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

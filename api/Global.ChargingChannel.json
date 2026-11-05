@@ -1,0 +1,178 @@
+{
+  "uid": "Global.ChargingChannel",
+  "name": "ChargingChannel",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ChargingChannel",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "castMethod",
+      "id": "Global_ChargingChannel_castMethod",
+      "declaration": "public CastMethodData castMethod",
+      "summary": "You must call UpdateCastMethod after making change to this.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "castInfo",
+      "id": "Global_ChargingChannel_castInfo",
+      "declaration": "public CastInfo castInfo { get; }",
+      "summary": "Current cast info of this charging channel.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeAmount",
+      "id": "Global_ChargingChannel_chargeAmount",
+      "declaration": "public float chargeAmount { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elapsedTime",
+      "id": "Global_ChargingChannel_elapsedTime",
+      "declaration": "public float elapsedTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isActive",
+      "id": "Global_ChargingChannel_isActive",
+      "declaration": "public bool isActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normalizedTime",
+      "id": "Global_ChargingChannel_normalizedTime",
+      "declaration": "public float normalizedTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Cancel()",
+      "id": "Global_ChargingChannel_Cancel",
+      "declaration": "public void Cancel()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Dispatch(Entity, AbilityTrigger)",
+      "id": "Global_ChargingChannel_Dispatch_Entity_AbilityTrigger_",
+      "declaration": "public ChargingChannel Dispatch(Entity entity, AbilityTrigger trigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    },
+    {
+      "name": "OnCancel(Action<ChargingChannel>)",
+      "id": "Global_ChargingChannel_OnCancel_System_Action_ChargingChannel__",
+      "declaration": "public ChargingChannel OnCancel(Action<ChargingChannel> callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><ChargingChannel>",
+          "type_uid": "Global.ChargingChannel",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    },
+    {
+      "name": "OnCast(Action<ChargingChannel>)",
+      "id": "Global_ChargingChannel_OnCast_System_Action_ChargingChannel__",
+      "declaration": "public ChargingChannel OnCast(Action<ChargingChannel> callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><ChargingChannel>",
+          "type_uid": "Global.ChargingChannel",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    },
+    {
+      "name": "OnChargeFull(Action<ChargingChannel>)",
+      "id": "Global_ChargingChannel_OnChargeFull_System_Action_ChargingChannel__",
+      "declaration": "public ChargingChannel OnChargeFull(Action<ChargingChannel> callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><ChargingChannel>",
+          "type_uid": "Global.ChargingChannel",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    },
+    {
+      "name": "OnComplete(Action<ChargingChannel>)",
+      "id": "Global_ChargingChannel_OnComplete_System_Action_ChargingChannel__",
+      "declaration": "public ChargingChannel OnComplete(Action<ChargingChannel> callback)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "System.Action<T><ChargingChannel>",
+          "type_uid": "Global.ChargingChannel",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    },
+    {
+      "name": "SetInitialInfo(CastInfo)",
+      "id": "Global_ChargingChannel_SetInitialInfo_CastInfo_",
+      "declaration": "public ChargingChannel SetInitialInfo(CastInfo info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "ChargingChannel"
+    },
+    {
+      "name": "UpdateCastMethod()",
+      "id": "Global_ChargingChannel_UpdateCastMethod",
+      "declaration": "public ChargingChannel UpdateCastMethod()",
+      "summary": "Send updated cast method to client to reflect the changes.",
+      "parameters": [],
+      "returns": "ChargingChannel"
+    }
+  ],
+  "events": []
+}

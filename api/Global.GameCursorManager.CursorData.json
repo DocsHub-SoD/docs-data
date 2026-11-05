@@ -1,0 +1,32 @@
+{
+  "uid": "Global.GameCursorManager.CursorData",
+  "name": "GameCursorManager.CursorData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class GameCursorManager.CursorData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "hotspot",
+      "id": "Global_GameCursorManager_CursorData_hotspot",
+      "declaration": "public Vector2 hotspot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "texture",
+      "id": "Global_GameCursorManager_CursorData_texture",
+      "declaration": "public Texture2D texture",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

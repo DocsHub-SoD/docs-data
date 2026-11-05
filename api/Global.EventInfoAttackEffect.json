@@ -1,0 +1,64 @@
+{
+  "uid": "Global.EventInfoAttackEffect",
+  "name": "EventInfoAttackEffect",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoAttackEffect",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actor",
+      "id": "Global_EventInfoAttackEffect_actor",
+      "declaration": "public Actor actor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attacker",
+      "id": "Global_EventInfoAttackEffect_attacker",
+      "declaration": "public Entity attacker",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chain",
+      "id": "Global_EventInfoAttackEffect_chain",
+      "declaration": "public ReactionChain chain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "strength",
+      "id": "Global_EventInfoAttackEffect_strength",
+      "declaration": "public float strength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_EventInfoAttackEffect_type",
+      "declaration": "public AttackEffectType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "victim",
+      "id": "Global_EventInfoAttackEffect_victim",
+      "declaration": "public Entity victim",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

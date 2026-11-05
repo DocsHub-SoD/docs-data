@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IMonsterNoScaling",
+  "name": "IMonsterNoScaling",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IMonsterNoScaling",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

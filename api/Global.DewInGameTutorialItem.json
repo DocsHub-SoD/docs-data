@@ -1,0 +1,139 @@
+{
+  "uid": "Global.DewInGameTutorialItem",
+  "name": "DewInGameTutorialItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewInGameTutorialItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isActive",
+      "id": "Global_DewInGameTutorialItem_isActive",
+      "declaration": "public bool isActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mgr",
+      "id": "Global_DewInGameTutorialItem_mgr",
+      "declaration": "public InGameTutorialManager mgr { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnStart()",
+      "id": "Global_DewInGameTutorialItem_OnStart",
+      "declaration": "public virtual void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStop()",
+      "id": "Global_DewInGameTutorialItem_OnStop",
+      "declaration": "public virtual void OnStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TutComplete()",
+      "id": "Global_DewInGameTutorialItem_TutComplete",
+      "declaration": "protected void TutComplete()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TutCreateArrow()",
+      "id": "Global_DewInGameTutorialItem_TutCreateArrow",
+      "declaration": "protected TutorialArrow TutCreateArrow()",
+      "summary": "",
+      "parameters": [],
+      "returns": "TutorialArrow"
+    },
+    {
+      "name": "TutDelayedExecution(Action, float)",
+      "id": "Global_DewInGameTutorialItem_TutDelayedExecution_System_Action_System_Single_",
+      "declaration": "protected void TutDelayedExecution(Action func, float seconds)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "seconds",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TutGetCoroutiner()",
+      "id": "Global_DewInGameTutorialItem_TutGetCoroutiner",
+      "declaration": "protected Coroutiner TutGetCoroutiner()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Coroutiner"
+    },
+    {
+      "name": "TutOnFrameUpdate(Action)",
+      "id": "Global_DewInGameTutorialItem_TutOnFrameUpdate_System_Action_",
+      "declaration": "protected void TutOnFrameUpdate(Action func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TutOnLogicUpdate(Action)",
+      "id": "Global_DewInGameTutorialItem_TutOnLogicUpdate_System_Action_",
+      "declaration": "protected void TutOnLogicUpdate(Action func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TutOnOutOfCombat(Action)",
+      "id": "Global_DewInGameTutorialItem_TutOnOutOfCombat_System_Action_",
+      "declaration": "protected void TutOnOutOfCombat(Action func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

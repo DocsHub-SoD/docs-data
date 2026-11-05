@@ -1,0 +1,104 @@
+{
+  "uid": "Global.DewAudioClip",
+  "name": "DewAudioClip",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\n[DewResourceLink(ResourceLinkBy.Guid)]\n[CreateAssetMenu(fileName = \"New Dew Audio Clip\", menuName = \"Dew Audio Clip\")]\npublic class DewAudioClip : ScriptableObject, ILinkedByGuid",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ILinkedByGuid",
+      "href": "Global.ILinkedByGuid.html",
+      "uid": "Global.ILinkedByGuid"
+    }
+  ],
+  "fields": [
+    {
+      "name": "clips",
+      "id": "Global_DewAudioClip_clips",
+      "declaration": "public AudioClip[] clips",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPitch",
+      "id": "Global_DewAudioClip_maxPitch",
+      "declaration": "[ShowIf(\"randomizePitch\", true)]\npublic float maxPitch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "minPitch",
+      "id": "Global_DewAudioClip_minPitch",
+      "declaration": "[ShowIf(\"randomizePitch\", true)]\npublic float minPitch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pitch",
+      "id": "Global_DewAudioClip_pitch",
+      "declaration": "[ShowIf(\"@!randomizePitch\", true)]\npublic float pitch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "randomizePitch",
+      "id": "Global_DewAudioClip_randomizePitch",
+      "declaration": "public bool randomizePitch",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "timeOffset",
+      "id": "Global_DewAudioClip_timeOffset",
+      "declaration": "public float timeOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "volume",
+      "id": "Global_DewAudioClip_volume",
+      "declaration": "public float volume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "resourceId",
+      "id": "Global_DewAudioClip_resourceId",
+      "declaration": "public string resourceId { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetAudioClip()",
+      "id": "Global_DewAudioClip_GetAudioClip",
+      "declaration": "public AudioClip GetAudioClip()",
+      "summary": "Get a random audio clip from the pre-configured array of clips.",
+      "parameters": [],
+      "returns": "UnityEngine.AudioClip"
+    },
+    {
+      "name": "GetPitch()",
+      "id": "Global_DewAudioClip_GetPitch",
+      "declaration": "public float GetPitch()",
+      "summary": "Get an appropriate pitch value depending on how its configured.",
+      "parameters": [],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,133 @@
+{
+  "uid": "Global.ColorSmoothDamp",
+  "name": "ColorSmoothDamp",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class ColorSmoothDamp",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "SmoothDamp(Color, Color, ref Vector4, float, float, float)",
+      "id": "Global_ColorSmoothDamp_SmoothDamp_UnityEngine_Color_UnityEngine_Color_UnityEngine_Vector4__System_Single_System_Single_System_Single_",
+      "declaration": "public static Color SmoothDamp(Color current, Color target, ref Vector4 currentVelocity, float smoothTime, float maxSpeed, float deltaTime)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "current",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "currentVelocity",
+          "type": "UnityEngine.Vector4",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "smoothTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "deltaTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "SmoothDamp(Color, Color, ref Vector4, float, float)",
+      "id": "Global_ColorSmoothDamp_SmoothDamp_UnityEngine_Color_UnityEngine_Color_UnityEngine_Vector4__System_Single_System_Single_",
+      "declaration": "public static Color SmoothDamp(Color current, Color target, ref Vector4 currentVelocity, float smoothTime, float maxSpeed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "current",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "currentVelocity",
+          "type": "UnityEngine.Vector4",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "smoothTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxSpeed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "SmoothDamp(Color, Color, ref Vector4, float)",
+      "id": "Global_ColorSmoothDamp_SmoothDamp_UnityEngine_Color_UnityEngine_Color_UnityEngine_Vector4__System_Single_",
+      "declaration": "public static Color SmoothDamp(Color current, Color target, ref Vector4 currentVelocity, float smoothTime)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "current",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "currentVelocity",
+          "type": "UnityEngine.Vector4",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "smoothTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,15 @@
+{
+  "uid": "Global.BackgroundAudioBehavior",
+  "name": "BackgroundAudioBehavior",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum BackgroundAudioBehavior",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,148 @@
+{
+  "uid": "Global.FxCameraShake",
+  "name": "FxCameraShake",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FxCameraShake : MonoBehaviour, IEffectComponent, IEffectWithOwnerContext",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithOwnerContext",
+      "href": "Global.IEffectWithOwnerContext.html",
+      "uid": "Global.IEffectWithOwnerContext"
+    }
+  ],
+  "fields": [
+    {
+      "name": "amplitude",
+      "id": "Global_FxCameraShake_amplitude",
+      "declaration": "public float amplitude",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackTime",
+      "id": "Global_FxCameraShake_attackTime",
+      "declaration": "public float attackTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "decayTime",
+      "id": "Global_FxCameraShake_decayTime",
+      "declaration": "public float decayTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delay",
+      "id": "Global_FxCameraShake_delay",
+      "declaration": "public float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "frequency",
+      "id": "Global_FxCameraShake_frequency",
+      "declaration": "public float frequency",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Global_AmplitudeMultiplier",
+      "id": "Global_FxCameraShake_Global_AmplitudeMultiplier",
+      "declaration": "public const float Global_AmplitudeMultiplier = 1.25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Global_FrequencyMultiplier",
+      "id": "Global_FxCameraShake_Global_FrequencyMultiplier",
+      "declaration": "public const float Global_FrequencyMultiplier = 0.9",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Global_TimeMultiplier",
+      "id": "Global_FxCameraShake_Global_TimeMultiplier",
+      "declaration": "public const float Global_TimeMultiplier = 1.25",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "signalSource",
+      "id": "Global_FxCameraShake_signalSource",
+      "declaration": "public SignalSourceAsset signalSource",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sustainTime",
+      "id": "Global_FxCameraShake_sustainTime",
+      "declaration": "public float sustainTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_FxCameraShake_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Play()",
+      "id": "Global_FxCameraShake_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetOwnerContext(EffectOwnerContext)",
+      "id": "Global_FxCameraShake_SetOwnerContext_EffectOwnerContext_",
+      "declaration": "public void SetOwnerContext(EffectOwnerContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EffectOwnerContext",
+          "type_uid": "Global.EffectOwnerContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_FxCameraShake_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

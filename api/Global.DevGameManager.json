@@ -1,0 +1,133 @@
+{
+  "uid": "Global.DevGameManager",
+  "name": "DevGameManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DevGameManager : GameManager, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "GameManager",
+      "href": "Global.GameManager.html",
+      "uid": "Global.GameManager"
+    },
+    {
+      "name": "GameManager",
+      "href": "Global.GameManager.html",
+      "uid": "Global.GameManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "startZonePrefab",
+      "id": "Global_DevGameManager_startZonePrefab",
+      "declaration": "public Zone startZonePrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "HostGame()",
+      "id": "Global_DevGameManager_HostGame",
+      "declaration": "public void HostGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStart()",
+      "id": "Global_DevGameManager_OnLateStart",
+      "declaration": "public override void OnLateStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_DevGameManager_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_DevGameManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopClient()",
+      "id": "Global_DevGameManager_OnStopClient",
+      "declaration": "public override void OnStopClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpawnHero(Type, int, HeroLoadoutData, NetworkConnectionToClient)",
+      "id": "Global_DevGameManager_SpawnHero_System_Type_System_Int32_HeroLoadoutData_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void SpawnHero(Type heroType, int level, HeroLoadoutData loadout, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "loadout",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartLocalGame()",
+      "id": "Global_DevGameManager_StartLocalGame",
+      "declaration": "public void StartLocalGame()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

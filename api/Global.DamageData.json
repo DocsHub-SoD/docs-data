@@ -1,0 +1,534 @@
+{
+  "uid": "Global.DamageData",
+  "name": "DamageData",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DamageData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "elemental",
+      "id": "Global_DamageData_elemental",
+      "declaration": "public ElementalType? elemental",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "source",
+      "id": "Global_DamageData_source",
+      "declaration": "public DamageData.SourceType source",
+      "summary": "Source type of this damage.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "actor",
+      "id": "Global_DamageData_actor",
+      "declaration": "public readonly Actor actor { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "amplificationMultiplier",
+      "id": "Global_DamageData_amplificationMultiplier",
+      "declaration": "public readonly float amplificationMultiplier { get; }",
+      "summary": "Damage multiplier for amplications. Amplications are multiplicatively combined. This value will be multiplied to the damage after flatModifier.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackEffectStrength",
+      "id": "Global_DamageData_attackEffectStrength",
+      "declaration": "public readonly float attackEffectStrength { get; }",
+      "summary": "Attack effect strength (0~1). If this value is above 0, this damage will trigger attack effects.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackEffectType",
+      "id": "Global_DamageData_attackEffectType",
+      "declaration": "public readonly AttackEffectType attackEffectType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attributes",
+      "id": "Global_DamageData_attributes",
+      "declaration": "public readonly DamageAttribute attributes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentAmount",
+      "id": "Global_DamageData_currentAmount",
+      "declaration": "public float currentAmount { get; }",
+      "summary": "Amount of processed damage with current modifications.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "damageToShieldMultiplier",
+      "id": "Global_DamageData_damageToShieldMultiplier",
+      "declaration": "public readonly float damageToShieldMultiplier { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "direction",
+      "id": "Global_DamageData_direction",
+      "declaration": "public readonly Vector3? direction { get; }",
+      "summary": "Direction of this damage.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "flatModifier",
+      "id": "Global_DamageData_flatModifier",
+      "declaration": "public readonly float flatModifier { get; }",
+      "summary": "Flat damage modifier. This value will be added to the final damage before any other multipliers.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isBlockedByImmunity",
+      "id": "Global_DamageData_isBlockedByImmunity",
+      "declaration": "public readonly bool isBlockedByImmunity { get; }",
+      "summary": "Is this damage currently blocked by immunity?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "originalAmount",
+      "id": "Global_DamageData_originalAmount",
+      "declaration": "public readonly float originalAmount { get; }",
+      "summary": "Original amount of damage.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "originPosition",
+      "id": "Global_DamageData_originPosition",
+      "declaration": "public readonly Vector3? originPosition { get; }",
+      "summary": "Origin position of this damage.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "overrideElementalStacks",
+      "id": "Global_DamageData_overrideElementalStacks",
+      "declaration": "public readonly int? overrideElementalStacks { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "procCoefficient",
+      "id": "Global_DamageData_procCoefficient",
+      "declaration": "public readonly float procCoefficient { get; }",
+      "summary": "Proc coefficient of damage.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reductionMultiplier",
+      "id": "Global_DamageData_reductionMultiplier",
+      "declaration": "public readonly float reductionMultiplier { get; }",
+      "summary": "Damage multiplier for reductions. Reductions are multiplicatively combined. This value will be multiplied to the damage after flatModifier.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddFlatAmount(float)",
+      "id": "Global_DamageData_AddFlatAmount_System_Single_",
+      "declaration": "public DamageData AddFlatAmount(float amount)",
+      "summary": "Add a flat amount to this damage.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": "The amount to add. Must be a positive number or zero."
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ApplyAmplification(float)",
+      "id": "Global_DamageData_ApplyAmplification_System_Single_",
+      "declaration": "public DamageData ApplyAmplification(float value)",
+      "summary": "Amplify this damage by the value specified, stacking multiplicatively.e.g. One Amplication by 0.5 will cause 50% increase in damage.Two Amplifications by 0.5 will cause 125% increase in damage.",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": "Amplification value. Must be a positive number or zero."
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ApplyDamageToShieldMultiplier(float)",
+      "id": "Global_DamageData_ApplyDamageToShieldMultiplier_System_Single_",
+      "declaration": "public DamageData ApplyDamageToShieldMultiplier(float multiplier)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ApplyRawMultiplier(float)",
+      "id": "Global_DamageData_ApplyRawMultiplier_System_Single_",
+      "declaration": "public DamageData ApplyRawMultiplier(float multiplier)",
+      "summary": "Apply raw multiplier to this damage's original amount.",
+      "parameters": [
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ApplyReduction(float)",
+      "id": "Global_DamageData_ApplyReduction_System_Single_",
+      "declaration": "public DamageData ApplyReduction(float value)",
+      "summary": "Reduce this damage by the value specified, stacking multiplicatively.e.g. One Reduction by 0.5 will cause 50% decrease in damage.Two Reductions by 0.5 will cause 75% decrease in damage.",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": "Reduction value. This value will be clamped between 0 and 1."
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "ApplyStrength(float)",
+      "id": "Global_DamageData_ApplyStrength_System_Single_",
+      "declaration": "public DamageData ApplyStrength(float multiplier)",
+      "summary": "Apply the given multiplier to the damage and the proc coefficient.",
+      "parameters": [
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "BlockWithImmunity()",
+      "id": "Global_DamageData_BlockWithImmunity",
+      "declaration": "public DamageData BlockWithImmunity()",
+      "summary": "Block this damage with damage immunity. Note this will be ignored ifIgnoreDamageImmunityis set to true.",
+      "parameters": [],
+      "returns": "DamageData"
+    },
+    {
+      "name": "Dispatch(Entity, ReactionChain)",
+      "id": "Global_DamageData_Dispatch_Entity_ReactionChain_",
+      "declaration": "public void Dispatch(Entity victim, ReactionChain chain = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "chain",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoAttackEffect(AttackEffectType, float)",
+      "id": "Global_DamageData_DoAttackEffect_AttackEffectType_System_Single_",
+      "declaration": "public DamageData DoAttackEffect(AttackEffectType type, float strength = 1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "AttackEffectType",
+          "type_uid": "Global.AttackEffectType",
+          "description": ""
+        },
+        {
+          "name": "strength",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "HasAttr(DamageAttribute)",
+      "id": "Global_DamageData_HasAttr_DamageAttribute_",
+      "declaration": "public bool HasAttr(DamageAttribute attr)",
+      "summary": "Does this damage has specific attribute?",
+      "parameters": [
+        {
+          "name": "attr",
+          "type": "DamageAttribute",
+          "type_uid": "Global.DamageAttribute",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAmountModifiedBy(Actor)",
+      "id": "Global_DamageData_IsAmountModifiedBy_Actor_",
+      "declaration": "public bool IsAmountModifiedBy(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAmountModifiedBy(Type)",
+      "id": "Global_DamageData_IsAmountModifiedBy_System_Type_",
+      "declaration": "public bool IsAmountModifiedBy(Type actorType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actorType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "SetActor(Actor)",
+      "id": "Global_DamageData_SetActor_Actor_",
+      "declaration": "public DamageData SetActor(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetAmountModifiedBy(Actor)",
+      "id": "Global_DamageData_SetAmountModifiedBy_Actor_",
+      "declaration": "public DamageData SetAmountModifiedBy(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetAmountModifiedBy(Type)",
+      "id": "Global_DamageData_SetAmountModifiedBy_System_Type_",
+      "declaration": "public DamageData SetAmountModifiedBy(Type actorType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actorType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetAmountOrigin(FinalDamageData)",
+      "id": "Global_DamageData_SetAmountOrigin_FinalDamageData_",
+      "declaration": "public DamageData SetAmountOrigin(FinalDamageData damage)",
+      "summary": "If amount of this damage originates from other damage, you can specify it here to make it inherit its modifier flags and attributes.",
+      "parameters": [
+        {
+          "name": "damage",
+          "type": "FinalDamageData",
+          "type_uid": "Global.FinalDamageData",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetAmountOrigin(FinalHealData)",
+      "id": "Global_DamageData_SetAmountOrigin_FinalHealData_",
+      "declaration": "public DamageData SetAmountOrigin(FinalHealData heal)",
+      "summary": "If amount of this damage originates from other heal, you can specify it here to make it inherit its modifier flags and isCrit.",
+      "parameters": [
+        {
+          "name": "heal",
+          "type": "FinalHealData",
+          "type_uid": "Global.FinalHealData",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetAttr(DamageAttribute)",
+      "id": "Global_DamageData_SetAttr_DamageAttribute_",
+      "declaration": "public DamageData SetAttr(DamageAttribute attr)",
+      "summary": "Add special attribute for this damage.",
+      "parameters": [
+        {
+          "name": "attr",
+          "type": "DamageAttribute",
+          "type_uid": "Global.DamageAttribute",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetDirection(Quaternion)",
+      "id": "Global_DamageData_SetDirection_UnityEngine_Quaternion_",
+      "declaration": "public DamageData SetDirection(Quaternion rot)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetDirection(Vector3)",
+      "id": "Global_DamageData_SetDirection_UnityEngine_Vector3_",
+      "declaration": "public DamageData SetDirection(Vector3 dir)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dir",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetElemental(ElementalType?)",
+      "id": "Global_DamageData_SetElemental_System_Nullable_ElementalType__",
+      "declaration": "public DamageData SetElemental(ElementalType? type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "ElementalType?",
+          "type_uid": "Global.ElementalType",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetOriginPosition(Vector3)",
+      "id": "Global_DamageData_SetOriginPosition_UnityEngine_Vector3_",
+      "declaration": "public DamageData SetOriginPosition(Vector3 pos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetOverrideElementalStacks(int)",
+      "id": "Global_DamageData_SetOverrideElementalStacks_System_Int32_",
+      "declaration": "public DamageData SetOverrideElementalStacks(int stacks)",
+      "summary": "Set this to override number of elemental stacks this damage applies.",
+      "parameters": [
+        {
+          "name": "stacks",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SetSourceType(SourceType)",
+      "id": "Global_DamageData_SetSourceType_DamageData_SourceType_",
+      "declaration": "public DamageData SetSourceType(DamageData.SourceType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "DamageData.SourceType",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        }
+      ],
+      "returns": "DamageData"
+    },
+    {
+      "name": "SubtractFlatAmount(float)",
+      "id": "Global_DamageData_SubtractFlatAmount_System_Single_",
+      "declaration": "public DamageData SubtractFlatAmount(float amount)",
+      "summary": "Subtract a flat amount from this damage.",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "type_uid": null,
+          "description": "The amount to subtract. Must be a positive number or zero."
+        }
+      ],
+      "returns": "DamageData"
+    }
+  ],
+  "events": []
+}

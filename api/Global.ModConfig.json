@@ -1,0 +1,72 @@
+{
+  "uid": "Global.ModConfig",
+  "name": "ModConfig",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class ModConfig",
+  "inheritance": [
+    {
+      "name": "ExampleModConfig",
+      "href": "Global.ExampleModConfig.html",
+      "uid": "Global.ExampleModConfig"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "BuildWidgets(Transform, out SafeAction, out SafeAction)",
+      "id": "Global_ModConfig_BuildWidgets_UnityEngine_Transform_SafeAction__SafeAction__",
+      "declaration": "public virtual void BuildWidgets(Transform parent, out SafeAction onChanged, out SafeAction requestUpdate)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parent",
+          "type": "UnityEngine.Transform",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onChanged",
+          "type": "SafeAction",
+          "type_uid": "Global.SafeAction",
+          "description": ""
+        },
+        {
+          "name": "requestUpdate",
+          "type": "SafeAction",
+          "type_uid": "Global.SafeAction",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Clone()",
+      "id": "Global_ModConfig_Clone",
+      "declaration": "public virtual ModConfig Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "ModConfig"
+    },
+    {
+      "name": "CopyTo(ModConfig)",
+      "id": "Global_ModConfig_CopyTo_ModConfig_",
+      "declaration": "public virtual void CopyTo(ModConfig other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "ModConfig",
+          "type_uid": "Global.ModConfig",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,211 @@
+{
+  "uid": "Global.CurseStatusEffect",
+  "name": "CurseStatusEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[SaveActor(true)]\npublic class CurseStatusEffect : StatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "StatusEffect",
+      "href": "Global.StatusEffect.html",
+      "uid": "Global.StatusEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "availableStrengths",
+      "id": "Global_CurseStatusEffect_availableStrengths",
+      "declaration": "[BoxGroup(\"Curse Settings\", true, false, 0)]\npublic HatredStrengthType availableStrengths",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chanceWeight",
+      "id": "Global_CurseStatusEffect_chanceWeight",
+      "declaration": "[BoxGroup(\"Curse Settings\", true, false, 0)]\npublic float chanceWeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CurseEvent_OnProgressChanged",
+      "id": "Global_CurseStatusEffect_CurseEvent_OnProgressChanged",
+      "declaration": "public Action CurseEvent_OnProgressChanged",
+      "summary": "Called on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontRemoveOnKnockOut",
+      "id": "Global_CurseStatusEffect_dontRemoveOnKnockOut",
+      "declaration": "[NonSerialized]\n[SaveVar(SaveVarFlags.Default)]\npublic bool dontRemoveOnKnockOut",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "quest",
+      "id": "Global_CurseStatusEffect_quest",
+      "declaration": "[NonSerialized]\n[SaveVar(SaveVarFlags.Default)]\npublic Quest_KillToLiftCurse quest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentProgress",
+      "id": "Global_CurseStatusEffect_currentProgress",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentProgress { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentStrength",
+      "id": "Global_CurseStatusEffect_currentStrength",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic HatredStrengthType currentStrength { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableEndNotification",
+      "id": "Global_CurseStatusEffect_disableEndNotification",
+      "declaration": "public bool disableEndNotification { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableStartNotification",
+      "id": "Global_CurseStatusEffect_disableStartNotification",
+      "declaration": "public bool disableStartNotification { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "progressType",
+      "id": "Global_CurseStatusEffect_progressType",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic QuestProgressType progressType { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "requiredAmount",
+      "id": "Global_CurseStatusEffect_requiredAmount",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int requiredAmount { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetName()",
+      "id": "Global_CurseStatusEffect_GetName",
+      "declaration": "public string GetName()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetValue<T>(T[])",
+      "id": "Global_CurseStatusEffect_GetValue__1___0___",
+      "declaration": "public T GetValue<T>(T[] arr)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "arr",
+          "type": "T[]",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "IsViable(Entity)",
+      "id": "Global_CurseStatusEffect_IsViable_Entity_",
+      "declaration": "public virtual bool IsViable(Entity target)",
+      "summary": "Is this curse viable on this entity? Checked on server, on prefab CurseStatusEffect.If this returns false, this curse will not be chosen.",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_CurseStatusEffect_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_CurseStatusEffect_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_CurseStatusEffect_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.Room_SurfaceOverride",
+  "name": "Room_SurfaceOverride",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_SurfaceOverride : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "data",
+      "id": "Global_Room_SurfaceOverride_data",
+      "declaration": "public DewSurfaceData data",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,45 @@
+{
+  "uid": "Global.LobbyInstanceSteam",
+  "name": "LobbyInstanceSteam",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LobbyInstanceSteam : LobbyInstance",
+  "inheritance": [
+    {
+      "name": "LobbyInstance",
+      "href": "Global.LobbyInstance.html",
+      "uid": "Global.LobbyInstance"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetCSteamId()",
+      "id": "Global_LobbyInstanceSteam_GetCSteamId",
+      "declaration": "public CSteamID GetCSteamId()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Steamworks.CSteamID"
+    },
+    {
+      "name": "SetCSteamId(CSteamID)",
+      "id": "Global_LobbyInstanceSteam_SetCSteamId_Steamworks_CSteamID_",
+      "declaration": "public void SetCSteamId(CSteamID lobbyId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobbyId",
+          "type": "Steamworks.CSteamID",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,339 @@
+{
+  "uid": "Global.DewGameResult.PlayerData",
+  "name": "DewGameResult.PlayerData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewGameResult.PlayerData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "abilityPower",
+      "id": "Global_DewGameResult_PlayerData_abilityPower",
+      "declaration": "public float abilityPower",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedHp",
+      "id": "Global_DewGameResult_PlayerData_addedHp",
+      "declaration": "public float addedHp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armor",
+      "id": "Global_DewGameResult_PlayerData_armor",
+      "declaration": "public float armor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamage",
+      "id": "Global_DewGameResult_PlayerData_attackDamage",
+      "declaration": "public float attackDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackSpeed",
+      "id": "Global_DewGameResult_PlayerData_attackSpeed",
+      "declaration": "public float attackSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "capturedStarTooltipFields",
+      "id": "Global_DewGameResult_PlayerData_capturedStarTooltipFields",
+      "declaration": "public Dictionary<string, string> capturedStarTooltipFields",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "causeOfDeathActor",
+      "id": "Global_DewGameResult_PlayerData_causeOfDeathActor",
+      "declaration": "public string causeOfDeathActor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "causeOfDeathEntity",
+      "id": "Global_DewGameResult_PlayerData_causeOfDeathEntity",
+      "declaration": "public string causeOfDeathEntity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "combatTime",
+      "id": "Global_DewGameResult_PlayerData_combatTime",
+      "declaration": "public int combatTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChance",
+      "id": "Global_DewGameResult_PlayerData_critChance",
+      "declaration": "public float critChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dealtDamageToEnemies",
+      "id": "Global_DewGameResult_PlayerData_dealtDamageToEnemies",
+      "declaration": "public float dealtDamageToEnemies",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "deaths",
+      "id": "Global_DewGameResult_PlayerData_deaths",
+      "declaration": "public int deaths",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fireAmp",
+      "id": "Global_DewGameResult_PlayerData_fireAmp",
+      "declaration": "public float fireAmp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gems",
+      "id": "Global_DewGameResult_PlayerData_gems",
+      "declaration": "public List<DewGameResult.GemData> gems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healToOthers",
+      "id": "Global_DewGameResult_PlayerData_healToOthers",
+      "declaration": "public float healToOthers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healToSelf",
+      "id": "Global_DewGameResult_PlayerData_healToSelf",
+      "declaration": "public float healToSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroicBossKills",
+      "id": "Global_DewGameResult_PlayerData_heroicBossKills",
+      "declaration": "public int heroicBossKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroType",
+      "id": "Global_DewGameResult_PlayerData_heroType",
+      "declaration": "public string heroType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterKills",
+      "id": "Global_DewGameResult_PlayerData_hunterKills",
+      "declaration": "public int hunterKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocalPlayer",
+      "id": "Global_DewGameResult_PlayerData_isLocalPlayer",
+      "declaration": "public bool isLocalPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "kills",
+      "id": "Global_DewGameResult_PlayerData_kills",
+      "declaration": "public int kills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "level",
+      "id": "Global_DewGameResult_PlayerData_level",
+      "declaration": "public int level",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadout",
+      "id": "Global_DewGameResult_PlayerData_loadout",
+      "declaration": "public HeroLoadoutData loadout",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxDealtSingleDamageToEnemy",
+      "id": "Global_DewGameResult_PlayerData_maxDealtSingleDamageToEnemy",
+      "declaration": "public float maxDealtSingleDamageToEnemy",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxGemCounts",
+      "id": "Global_DewGameResult_PlayerData_maxGemCounts",
+      "declaration": "public List<int> maxGemCounts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxHealth",
+      "id": "Global_DewGameResult_PlayerData_maxHealth",
+      "declaration": "public float maxHealth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossKills",
+      "id": "Global_DewGameResult_PlayerData_miniBossKills",
+      "declaration": "public int miniBossKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerGuid",
+      "id": "Global_DewGameResult_PlayerData_playerGuid",
+      "declaration": "public string playerGuid",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerProfileName",
+      "id": "Global_DewGameResult_PlayerData_playerProfileName",
+      "declaration": "public string playerProfileName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "receivedDamage",
+      "id": "Global_DewGameResult_PlayerData_receivedDamage",
+      "declaration": "public float receivedDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillHaste",
+      "id": "Global_DewGameResult_PlayerData_skillHaste",
+      "declaration": "public float skillHaste",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skills",
+      "id": "Global_DewGameResult_PlayerData_skills",
+      "declaration": "public List<DewGameResult.SkillData> skills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalDreamDustIncome",
+      "id": "Global_DewGameResult_PlayerData_totalDreamDustIncome",
+      "declaration": "public int totalDreamDustIncome",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalGoldIncome",
+      "id": "Global_DewGameResult_PlayerData_totalGoldIncome",
+      "declaration": "public int totalGoldIncome",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalStardustIncome",
+      "id": "Global_DewGameResult_PlayerData_totalStardustIncome",
+      "declaration": "public int totalStardustIncome",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "TryGetGemData(GemLocation, out GemData)",
+      "id": "Global_DewGameResult_PlayerData_TryGetGemData_GemLocation_DewGameResult_GemData__",
+      "declaration": "public bool TryGetGemData(GemLocation location, out DewGameResult.GemData data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "location",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "data",
+          "type": "DewGameResult.GemData",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetSkillData(HeroSkillLocation, out SkillData)",
+      "id": "Global_DewGameResult_PlayerData_TryGetSkillData_HeroSkillLocation_DewGameResult_SkillData__",
+      "declaration": "public bool TryGetSkillData(HeroSkillLocation type, out DewGameResult.SkillData data)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "data",
+          "type": "DewGameResult.SkillData",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

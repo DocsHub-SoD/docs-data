@@ -1,0 +1,526 @@
+{
+  "uid": "Global.ClientEventManager",
+  "name": "ClientEventManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ClientEventManager : NetworkedManagerBase<ClientEventManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "ClientEventManager",
+      "href": "Global.ClientEventManager.html",
+      "uid": "Global.ClientEventManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "OnApplyElemental",
+      "id": "Global_ClientEventManager_OnApplyElemental",
+      "declaration": "public SafeAction<EventInfoApplyElemental> OnApplyElemental",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnAttackHit",
+      "id": "Global_ClientEventManager_OnAttackHit",
+      "declaration": "public SafeAction<EventInfoAttackHit> OnAttackHit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnAttackMissed",
+      "id": "Global_ClientEventManager_OnAttackMissed",
+      "declaration": "public SafeAction<EventInfoAttackMissed> OnAttackMissed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCastComplete",
+      "id": "Global_ClientEventManager_OnCastComplete",
+      "declaration": "public SafeAction<EventInfoCast> OnCastComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnChaosUsed",
+      "id": "Global_ClientEventManager_OnChaosUsed",
+      "declaration": "public SafeAction<DewPlayer> OnChaosUsed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDamageNegated",
+      "id": "Global_ClientEventManager_OnDamageNegated",
+      "declaration": "public SafeAction<EventInfoDamageNegatedByImmunity> OnDamageNegated",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDamageNegatedByShield",
+      "id": "Global_ClientEventManager_OnDamageNegatedByShield",
+      "declaration": "public SafeAction<EventInfoDamageNegatedByShield> OnDamageNegatedByShield",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDeath",
+      "id": "Global_ClientEventManager_OnDeath",
+      "declaration": "public SafeAction<EventInfoKill> OnDeath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDismantled",
+      "id": "Global_ClientEventManager_OnDismantled",
+      "declaration": "public SafeAction<Hero, NetworkBehaviour> OnDismantled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnGemMergeUpgraded",
+      "id": "Global_ClientEventManager_OnGemMergeUpgraded",
+      "declaration": "public SafeAction<Hero, Gem> OnGemMergeUpgraded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnGetManaSpent",
+      "id": "Global_ClientEventManager_OnGetManaSpent",
+      "declaration": "public SafeAction<EventInfoSpentMana> OnGetManaSpent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnGiveCurrency",
+      "id": "Global_ClientEventManager_OnGiveCurrency",
+      "declaration": "public SafeAction<DewPlayer, DewPlayer, int, int> OnGiveCurrency",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHeroKnockedOut",
+      "id": "Global_ClientEventManager_OnHeroKnockedOut",
+      "declaration": "public SafeAction<Hero> OnHeroKnockedOut",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHeroRevive",
+      "id": "Global_ClientEventManager_OnHeroRevive",
+      "declaration": "public SafeAction<Hero> OnHeroRevive",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHideOnScreenTimer",
+      "id": "Global_ClientEventManager_OnHideOnScreenTimer",
+      "declaration": "public SafeAction<OnScreenTimerHandle> OnHideOnScreenTimer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHideStatusEffectIcon",
+      "id": "Global_ClientEventManager_OnHideStatusEffectIcon",
+      "declaration": "public SafeAction<StatusEffect> OnHideStatusEffectIcon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnIgnoreCC",
+      "id": "Global_ClientEventManager_OnIgnoreCC",
+      "declaration": "public SafeAction<Entity> OnIgnoreCC",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnItemBought",
+      "id": "Global_ClientEventManager_OnItemBought",
+      "declaration": "public SafeAction<Hero, NetworkBehaviour> OnItemBought",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnItemCleansed",
+      "id": "Global_ClientEventManager_OnItemCleansed",
+      "declaration": "public SafeAction<Hero, NetworkBehaviour> OnItemCleansed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnItemSold",
+      "id": "Global_ClientEventManager_OnItemSold",
+      "declaration": "public SafeAction<Hero, NetworkBehaviour> OnItemSold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnItemUpgraded",
+      "id": "Global_ClientEventManager_OnItemUpgraded",
+      "declaration": "public SafeAction<Hero, NetworkBehaviour> OnItemUpgraded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLocalHeroAbilityChanged",
+      "id": "Global_ClientEventManager_OnLocalHeroAbilityChanged",
+      "declaration": "public SafeAction<Hero, HeroSkillLocation> OnLocalHeroAbilityChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLocalHeroGemChanged",
+      "id": "Global_ClientEventManager_OnLocalHeroGemChanged",
+      "declaration": "public SafeAction<Hero, GemLocation> OnLocalHeroGemChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRefreshEntityHealthbar",
+      "id": "Global_ClientEventManager_OnRefreshEntityHealthbar",
+      "declaration": "public SafeAction<Entity> OnRefreshEntityHealthbar",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnShowOnScreenTimer",
+      "id": "Global_ClientEventManager_OnShowOnScreenTimer",
+      "declaration": "public SafeAction<OnScreenTimerHandle> OnShowOnScreenTimer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnShowStatusEffectIcon",
+      "id": "Global_ClientEventManager_OnShowStatusEffectIcon",
+      "declaration": "public SafeAction<StatusEffect> OnShowStatusEffectIcon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnTakeDamage",
+      "id": "Global_ClientEventManager_OnTakeDamage",
+      "declaration": "public SafeAction<EventInfoDamage> OnTakeDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnTakeHeal",
+      "id": "Global_ClientEventManager_OnTakeHeal",
+      "declaration": "public SafeAction<EventInfoHeal> OnTakeHeal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnTakeManaHeal",
+      "id": "Global_ClientEventManager_OnTakeManaHeal",
+      "declaration": "public SafeAction<EventInfoHeal> OnTakeManaHeal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnTakeShield",
+      "id": "Global_ClientEventManager_OnTakeShield",
+      "declaration": "public SafeAction<EventInfoShield> OnTakeShield",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AddEvents(Actor)",
+      "id": "Global_ClientEventManager_AddEvents_Actor_",
+      "declaration": "public virtual void AddEvents(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnApplyElemental(EventInfoApplyElemental)",
+      "id": "Global_ClientEventManager_InvokeOnApplyElemental_EventInfoApplyElemental_",
+      "declaration": "public void InvokeOnApplyElemental(EventInfoApplyElemental info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoApplyElemental",
+          "type_uid": "Global.EventInfoApplyElemental",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnCastComplete(EventInfoCast)",
+      "id": "Global_ClientEventManager_InvokeOnCastComplete_EventInfoCast_",
+      "declaration": "public void InvokeOnCastComplete(EventInfoCast eventInfo)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventInfo",
+          "type": "EventInfoCast",
+          "type_uid": "Global.EventInfoCast",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnChaosUsed(DewPlayer)",
+      "id": "Global_ClientEventManager_InvokeOnChaosUsed_DewPlayer_",
+      "declaration": "public void InvokeOnChaosUsed(DewPlayer p)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "p",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnDismantled(Hero, NetworkBehaviour)",
+      "id": "Global_ClientEventManager_InvokeOnDismantled_Hero_Mirror_NetworkBehaviour_",
+      "declaration": "public void InvokeOnDismantled(Hero h, NetworkBehaviour nb)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "nb",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnGemMergeUpgraded(Hero, Gem)",
+      "id": "Global_ClientEventManager_InvokeOnGemMergeUpgraded_Hero_Gem_",
+      "declaration": "public void InvokeOnGemMergeUpgraded(Hero h, Gem g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "g",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnIgnoreCC(Entity)",
+      "id": "Global_ClientEventManager_InvokeOnIgnoreCC_Entity_",
+      "declaration": "public void InvokeOnIgnoreCC(Entity ent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnItemBought(Hero, NetworkBehaviour)",
+      "id": "Global_ClientEventManager_InvokeOnItemBought_Hero_Mirror_NetworkBehaviour_",
+      "declaration": "public void InvokeOnItemBought(Hero h, NetworkBehaviour nb)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "nb",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnItemCleansed(Hero, NetworkBehaviour)",
+      "id": "Global_ClientEventManager_InvokeOnItemCleansed_Hero_Mirror_NetworkBehaviour_",
+      "declaration": "public void InvokeOnItemCleansed(Hero h, NetworkBehaviour nb)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "nb",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnItemSold(Hero, NetworkBehaviour)",
+      "id": "Global_ClientEventManager_InvokeOnItemSold_Hero_Mirror_NetworkBehaviour_",
+      "declaration": "public void InvokeOnItemSold(Hero h, NetworkBehaviour nb)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "nb",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnItemUpgraded(Hero, NetworkBehaviour)",
+      "id": "Global_ClientEventManager_InvokeOnItemUpgraded_Hero_Mirror_NetworkBehaviour_",
+      "declaration": "public void InvokeOnItemUpgraded(Hero h, NetworkBehaviour nb)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "nb",
+          "type": "Mirror.NetworkBehaviour",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "InvokeOnRefreshEntityHealthbar(Entity)",
+      "id": "Global_ClientEventManager_InvokeOnRefreshEntityHealthbar_Entity_",
+      "declaration": "public void InvokeOnRefreshEntityHealthbar(Entity e)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_ClientEventManager_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_ClientEventManager_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveEvents(Actor)",
+      "id": "Global_ClientEventManager_RemoveEvents_Actor_",
+      "declaration": "public virtual void RemoveEvents(Actor actor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,80 @@
+{
+  "uid": "Global.AbilityTrigger.PredictionSettings",
+  "name": "AbilityTrigger.PredictionSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\n[HideLabel]\npublic struct AbilityTrigger.PredictionSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "acceleration",
+      "id": "Global_AbilityTrigger_PredictionSettings_acceleration",
+      "declaration": "[ShowIf(\"_shouldShowSpeedAccelerationParameters\", true)]\npublic float acceleration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Default",
+      "id": "Global_AbilityTrigger_PredictionSettings_Default",
+      "declaration": "public static readonly AbilityTrigger.PredictionSettings Default",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "delay",
+      "id": "Global_AbilityTrigger_PredictionSettings_delay",
+      "declaration": "[ShowIf(\"_shouldShowSimpleParameters\", true)]\npublic float delay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "frontDistance",
+      "id": "Global_AbilityTrigger_PredictionSettings_frontDistance",
+      "declaration": "[ShowIf(\"_shouldShowSpeedAccelerationParameters\", true)]\npublic float frontDistance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "initSpeed",
+      "id": "Global_AbilityTrigger_PredictionSettings_initSpeed",
+      "declaration": "[ShowIf(\"_shouldShowSpeedAccelerationParameters\", true)]\npublic float initSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetSpeed",
+      "id": "Global_AbilityTrigger_PredictionSettings_targetSpeed",
+      "declaration": "[ShowIf(\"_shouldShowSpeedAccelerationParameters\", true)]\npublic float targetSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_AbilityTrigger_PredictionSettings_type",
+      "declaration": "[LabelText(\"Prediction\")]\npublic AbilityTrigger.PredictionSettings.ModelType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useCustomParameters",
+      "id": "Global_AbilityTrigger_PredictionSettings_useCustomParameters",
+      "declaration": "[ShowIf(\"_shouldShowCustomParameters\", true)]\npublic bool useCustomParameters",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

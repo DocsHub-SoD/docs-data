@@ -1,0 +1,31 @@
+{
+  "uid": "Global.ICinematicCameraHelperStateReceiver",
+  "name": "ICinematicCameraHelperStateReceiver",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICinematicCameraHelperStateReceiver",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnCinematicCameraHelperChanged(bool)",
+      "id": "Global_ICinematicCameraHelperStateReceiver_OnCinematicCameraHelperChanged_System_Boolean_",
+      "declaration": "void OnCinematicCameraHelperChanged(bool on)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "on",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

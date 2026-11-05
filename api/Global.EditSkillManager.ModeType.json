@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EditSkillManager.ModeType",
+  "name": "EditSkillManager.ModeType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum EditSkillManager.ModeType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

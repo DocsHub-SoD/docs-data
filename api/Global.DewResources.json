@@ -1,0 +1,1028 @@
+{
+  "uid": "Global.DewResources",
+  "name": "DewResources",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewResources",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "EnableVerboseLogging",
+      "id": "Global_DewResources_EnableVerboseLogging",
+      "declaration": "public static bool EnableVerboseLogging",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onRepairMissingReferences",
+      "id": "Global_DewResources_onRepairMissingReferences",
+      "declaration": "public static SafeAction onRepairMissingReferences",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onVariantsCleared",
+      "id": "Global_DewResources_onVariantsCleared",
+      "declaration": "public static SafeAction onVariantsCleared",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "variantsParent",
+      "id": "Global_DewResources_variantsParent",
+      "declaration": "public static Transform variantsParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vOtherPlayersTonedDown",
+      "id": "Global_DewResources_vOtherPlayersTonedDown",
+      "declaration": "public static int vOtherPlayersTonedDown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vQualityAdjusted",
+      "id": "Global_DewResources_vQualityAdjusted",
+      "declaration": "public static int vQualityAdjusted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "database",
+      "id": "Global_DewResources_database",
+      "declaration": "public static DewResourceDatabase database { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadedGuids",
+      "id": "Global_DewResources_loadedGuids",
+      "declaration": "public static IReadOnlyCollection<string> loadedGuids { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "transparentMat",
+      "id": "Global_DewResources_transparentMat",
+      "declaration": "public static Material transparentMat { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddPreloadRule(MonoBehaviour, Action<PreloadInterface>)",
+      "id": "Global_DewResources_AddPreloadRule_UnityEngine_MonoBehaviour_System_Action_PreloadInterface__",
+      "declaration": "public static void AddPreloadRule(MonoBehaviour owner, Action<PreloadInterface> onPreload)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "owner",
+          "type": "UnityEngine.MonoBehaviour",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "onPreload",
+          "type": "System.Action<T><PreloadInterface>",
+          "type_uid": "Global.PreloadInterface",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ClearAllVariants(bool)",
+      "id": "Global_DewResources_ClearAllVariants_System_Boolean_",
+      "declaration": "public static int ClearAllVariants(bool repairReferences)",
+      "summary": "This will cause serious issues when used in the middle of a run! Use more selective ClearVariants variants to avoid issues.",
+      "parameters": [
+        {
+          "name": "repairReferences",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "ClearVariantsOfAsset(string, VariantDef?, bool)",
+      "id": "Global_DewResources_ClearVariantsOfAsset_System_String_System_Nullable_VariantDef__System_Boolean_",
+      "declaration": "public static int ClearVariantsOfAsset(string guid, VariantDef? target, bool repairReferences)",
+      "summary": "Destroy loaded variants of the specified asset. This will also clear light version of assets if one exists.",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "VariantDef?",
+          "type_uid": "Global.VariantDef",
+          "description": ""
+        },
+        {
+          "name": "repairReferences",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "ClearVariantsOfVarDef(VariantDef, bool)",
+      "id": "Global_DewResources_ClearVariantsOfVarDef_VariantDef_System_Boolean_",
+      "declaration": "public static int ClearVariantsOfVarDef(VariantDef target, bool repairReferences)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "VariantDef",
+          "type_uid": "Global.VariantDef",
+          "description": ""
+        },
+        {
+          "name": "repairReferences",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "Convert(Object, Type)",
+      "id": "Global_DewResources_Convert_UnityEngine_Object_System_Type_",
+      "declaration": "public static Object Convert(Object obj, Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "Convert<T>(Object)",
+      "id": "Global_DewResources_Convert__1_UnityEngine_Object_",
+      "declaration": "public static T Convert<T>(Object obj) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "FindAllByNameSubstring(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindAllByNameSubstring_System_String_ResourceLoadSettings_",
+      "declaration": "public static IEnumerable<Object> FindAllByNameSubstring(string substring, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><UnityEngine.Object>"
+    },
+    {
+      "name": "FindAllByNameSubstring<TFilter>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindAllByNameSubstring__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static IEnumerable<TFilter> FindAllByNameSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "TFilter",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><TFilter>"
+    },
+    {
+      "name": "FindAllByType(Type, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindAllByType_System_Type_ResourceLoadSettings_",
+      "declaration": "public static IEnumerable<Object> FindAllByType(Type type, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><UnityEngine.Object>"
+    },
+    {
+      "name": "FindAllByType<T>(ResourceLoadSettings)",
+      "id": "Global_DewResources_FindAllByType__1_ResourceLoadSettings_",
+      "declaration": "public static IEnumerable<T> FindAllByType<T>(ResourceLoadSettings settings = default) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><T>"
+    },
+    {
+      "name": "FindAllByTypeSubstring(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindAllByTypeSubstring_System_String_ResourceLoadSettings_",
+      "declaration": "public static IEnumerable<Object> FindAllByTypeSubstring(string substring, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><UnityEngine.Object>"
+    },
+    {
+      "name": "FindAllByTypeSubstring<TFilter>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindAllByTypeSubstring__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static IEnumerable<TFilter> FindAllByTypeSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "TFilter",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><TFilter>"
+    },
+    {
+      "name": "FindOneByIdSubstring(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindOneByIdSubstring_System_String_ResourceLoadSettings_",
+      "declaration": "public static Object FindOneByIdSubstring(string substring, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "FindOneByIdSubstring<TFilter>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindOneByIdSubstring__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static TFilter FindOneByIdSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "TFilter",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "TFilter"
+    },
+    {
+      "name": "FindOneByTypeSubstring(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindOneByTypeSubstring_System_String_ResourceLoadSettings_",
+      "declaration": "public static Object FindOneByTypeSubstring(string substring, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "FindOneByTypeSubstring<TFilter>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_FindOneByTypeSubstring__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static TFilter FindOneByTypeSubstring<TFilter>(string substring, ResourceLoadSettings settings = default) where TFilter : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "substring",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "TFilter",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "TFilter"
+    },
+    {
+      "name": "FindRoomNameBySubstring(string)",
+      "id": "Global_DewResources_FindRoomNameBySubstring_System_String_",
+      "declaration": "public static string FindRoomNameBySubstring(string name)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetAllDependencies(out ListReturnHandle<string>, string)",
+      "id": "Global_DewResources_GetAllDependencies_ListReturnHandle_System_String___System_String_",
+      "declaration": "public static List<string> GetAllDependencies(out ListReturnHandle<string> handle, string objName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<string>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "objName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><string>"
+    },
+    {
+      "name": "GetByGuid(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByGuid_System_String_ResourceLoadSettings_",
+      "declaration": "public static Object GetByGuid(string guid, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "GetByGuid<T>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByGuid__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static T GetByGuid<T>(string guid, ResourceLoadSettings settings = default) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetByLinkTypeAndId<T>(ResourceLinkBy, string)",
+      "id": "Global_DewResources_GetByLinkTypeAndId__1_ResourceLinkBy_System_String_",
+      "declaration": "public static T GetByLinkTypeAndId<T>(ResourceLinkBy type, string id) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "ResourceLinkBy",
+          "type_uid": "Global.ResourceLinkBy",
+          "description": ""
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetByName(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByName_System_String_ResourceLoadSettings_",
+      "declaration": "public static Object GetByName(string name, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "GetByName<T>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByName__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static T GetByName<T>(string name, ResourceLoadSettings settings = default) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetByShortTypeName(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByShortTypeName_System_String_ResourceLoadSettings_",
+      "declaration": "public static Object GetByShortTypeName(string name, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "GetByShortTypeName<T>(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByShortTypeName__1_System_String_ResourceLoadSettings_",
+      "declaration": "public static T GetByShortTypeName<T>(string name, ResourceLoadSettings settings = default) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetByType(Type, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByType_System_Type_ResourceLoadSettings_",
+      "declaration": "public static Object GetByType(Type type, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "GetByType<T>(ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByType__1_ResourceLoadSettings_",
+      "declaration": "public static T GetByType<T>(ResourceLoadSettings settings = default) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetByType<T>(Type, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetByType__1_System_Type_ResourceLoadSettings_",
+      "declaration": "public static T GetByType<T>(Type type, ResourceLoadSettings settings = default) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetGuidOfAsset(Object)",
+      "id": "Global_DewResources_GetGuidOfAsset_UnityEngine_Object_",
+      "declaration": "public static string GetGuidOfAsset(Object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetLinkId(Object)",
+      "id": "Global_DewResources_GetLinkId_UnityEngine_Object_",
+      "declaration": "public static string GetLinkId(Object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetLinkType(Type)",
+      "id": "Global_DewResources_GetLinkType_System_Type_",
+      "declaration": "public static ResourceLinkBy GetLinkType(Type objType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "objType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "ResourceLinkBy"
+    },
+    {
+      "name": "GetNetworkedPrefab(uint, ResourceLoadSettings)",
+      "id": "Global_DewResources_GetNetworkedPrefab_System_UInt32_ResourceLoadSettings_",
+      "declaration": "public static GameObject GetNetworkedPrefab(uint id, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.GameObject"
+    },
+    {
+      "name": "GetNextVariantId()",
+      "id": "Global_DewResources_GetNextVariantId",
+      "declaration": "public static int GetNextVariantId()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetSuggestedResourceLoadSettings(Actor, Type)",
+      "id": "Global_DewResources_GetSuggestedResourceLoadSettings_Actor_System_Type_",
+      "declaration": "public static ResourceLoadSettings GetSuggestedResourceLoadSettings(Actor parentActor, Type childType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parentActor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "childType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "ResourceLoadSettings"
+    },
+    {
+      "name": "GetSuggestedVarDef(Actor, Type)",
+      "id": "Global_DewResources_GetSuggestedVarDef_Actor_System_Type_",
+      "declaration": "public static VariantDef GetSuggestedVarDef(Actor parentActor, Type childType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "parentActor",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "childType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "VariantDef"
+    },
+    {
+      "name": "GetVariantIdForSkin(string)",
+      "id": "Global_DewResources_GetVariantIdForSkin_System_String_",
+      "declaration": "public static int GetVariantIdForSkin(string skinName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skinName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "Load(string, ResourceLoadSettings)",
+      "id": "Global_DewResources_Load_System_String_ResourceLoadSettings_",
+      "declaration": "public static Object Load(string guid, ResourceLoadSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "ResourceLoadSettings",
+          "type_uid": "Global.ResourceLoadSettings",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Object"
+    },
+    {
+      "name": "Preload(string)",
+      "id": "Global_DewResources_Preload_System_String_",
+      "declaration": "public static void Preload(string guid)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RegisterVariantProcessor(int, ResourceVariantProcessor)",
+      "id": "Global_DewResources_RegisterVariantProcessor_System_Int32_ResourceVariantProcessor_",
+      "declaration": "public static void RegisterVariantProcessor(int id, ResourceVariantProcessor processor)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "processor",
+          "type": "ResourceVariantProcessor",
+          "type_uid": "Global.ResourceVariantProcessor",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RepairMissingReferences_Prepare()",
+      "id": "Global_DewResources_RepairMissingReferences_Prepare",
+      "declaration": "public static void RepairMissingReferences_Prepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RepairMissingReferences_Repair()",
+      "id": "Global_DewResources_RepairMissingReferences_Repair",
+      "declaration": "public static void RepairMissingReferences_Repair()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TryConvert(Object, Type, out Object)",
+      "id": "Global_DewResources_TryConvert_UnityEngine_Object_System_Type_UnityEngine_Object__",
+      "declaration": "public static bool TryConvert(Object obj, Type type, out Object result)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "result",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryConvert<T>(Object, out T)",
+      "id": "Global_DewResources_TryConvert__1_UnityEngine_Object___0__",
+      "declaration": "public static bool TryConvert<T>(Object obj, out T result) where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "result",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetGuidOfAsset(Object, out string)",
+      "id": "Global_DewResources_TryGetGuidOfAsset_UnityEngine_Object_System_String__",
+      "declaration": "public static bool TryGetGuidOfAsset(Object obj, out string guid)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "guid",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UnloadUnused()",
+      "id": "Global_DewResources_UnloadUnused",
+      "declaration": "public static void UnloadUnused()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UnregisterVariantProcessor(int)",
+      "id": "Global_DewResources_UnregisterVariantProcessor_System_Int32_",
+      "declaration": "public static void UnregisterVariantProcessor(int id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

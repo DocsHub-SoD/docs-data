@@ -1,0 +1,124 @@
+{
+  "uid": "Global.Room_Trap_Toggleable",
+  "name": "Room_Trap_Toggleable",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.None)]\npublic abstract class Room_Trap_Toggleable : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IToggleableTrap, IBanRoomNodesNearby, IBanCampsNearby",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IToggleableTrap",
+      "href": "Global.IToggleableTrap.html",
+      "uid": "Global.IToggleableTrap"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    },
+    {
+      "name": "IBanCampsNearby",
+      "href": "Global.IBanCampsNearby.html",
+      "uid": "Global.IBanCampsNearby"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fxOff",
+      "id": "Global_Room_Trap_Toggleable_fxOff",
+      "declaration": "public GameObject fxOff",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxOn",
+      "id": "Global_Room_Trap_Toggleable_fxOn",
+      "declaration": "public GameObject fxOn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isOn",
+      "id": "Global_Room_Trap_Toggleable_isOn",
+      "declaration": "public bool isOn { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startTime",
+      "id": "Global_Room_Trap_Toggleable_startTime",
+      "declaration": "public float startTime { get; }",
+      "summary": "Available on server. Based onTime.time. By default it is negative infinity.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnStartTrapServer()",
+      "id": "Global_Room_Trap_Toggleable_OnStartTrapServer",
+      "declaration": "protected virtual void OnStartTrapServer()",
+      "summary": "Called on server when this trap is started.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopTrapServer()",
+      "id": "Global_Room_Trap_Toggleable_OnStopTrapServer",
+      "declaration": "protected virtual void OnStopTrapServer()",
+      "summary": "Called on server when this trap is stopped.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartTrap()",
+      "id": "Global_Room_Trap_Toggleable_StartTrap",
+      "declaration": "public void StartTrap()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopTrap()",
+      "id": "Global_Room_Trap_Toggleable_StopTrap",
+      "declaration": "public void StopTrap()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,48 @@
+{
+  "uid": "Global.Accessory.AttachOffset",
+  "name": "Accessory.AttachOffset",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class Accessory.AttachOffset",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "entityName",
+      "id": "Global_Accessory_AttachOffset_entityName",
+      "declaration": "public string entityName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localPosition",
+      "id": "Global_Accessory_AttachOffset_localPosition",
+      "declaration": "public Vector3 localPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localRotation",
+      "id": "Global_Accessory_AttachOffset_localRotation",
+      "declaration": "public Vector3 localRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "localScale",
+      "id": "Global_Accessory_AttachOffset_localScale",
+      "declaration": "public float localScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,397 @@
+{
+  "uid": "Global.EditSkillShrine",
+  "name": "EditSkillShrine",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class EditSkillShrine : Shrine, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IProp, IBanRoomNodesNearby",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Shrine",
+      "href": "Global.Shrine.html",
+      "uid": "Global.Shrine"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [
+    {
+      "name": "canRepeatConfirmHold",
+      "id": "Global_EditSkillShrine_canRepeatConfirmHold",
+      "declaration": "[BoxGroup(\"EditSkillShrine Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool canRepeatConfirmHold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canTargetGem",
+      "id": "Global_EditSkillShrine_canTargetGem",
+      "declaration": "[BoxGroup(\"EditSkillShrine Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool canTargetGem",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canTargetSkill",
+      "id": "Global_EditSkillShrine_canTargetSkill",
+      "declaration": "[BoxGroup(\"EditSkillShrine Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool canTargetSkill",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxEnterEditMode",
+      "id": "Global_EditSkillShrine_fxEnterEditMode",
+      "declaration": "[BoxGroup(\"EditSkillShrine Settings\", true, false, 0)]\npublic GameObject fxEnterEditMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxEnterEditModeLocal",
+      "id": "Global_EditSkillShrine_fxEnterEditModeLocal",
+      "declaration": "[BoxGroup(\"EditSkillShrine Settings\", true, false, 0)]\npublic GameObject fxEnterEditModeLocal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GenericGemIndicatorColor",
+      "id": "Global_EditSkillShrine_GenericGemIndicatorColor",
+      "declaration": "public static readonly Color GenericGemIndicatorColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GenericSkillIndicatorColor",
+      "id": "Global_EditSkillShrine_GenericSkillIndicatorColor",
+      "declaration": "public static readonly Color GenericSkillIndicatorColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldExitEditModeAfterAction",
+      "id": "Global_EditSkillShrine_shouldExitEditModeAfterAction",
+      "declaration": "[BoxGroup(\"EditSkillShrine Settings\", true, false, 0)]\n[ToggleLeft]\npublic bool shouldExitEditModeAfterAction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "CmdActivateEditSkillAction(HeroSkillLocation?, GemLocation?, NetworkConnectionToClient)",
+      "id": "Global_EditSkillShrine_CmdActivateEditSkillAction_System_Nullable_HeroSkillLocation__System_Nullable_GemLocation__Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdActivateEditSkillAction(HeroSkillLocation? skillLoc, GemLocation? gemLoc, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillLoc",
+          "type": "HeroSkillLocation?",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "gemLoc",
+          "type": "GemLocation?",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EnterEditSkill(DewPlayer, string)",
+      "id": "Global_EditSkillShrine_EnterEditSkill_DewPlayer_System_String_",
+      "declaration": "public void EnterEditSkill(DewPlayer player, string customData = null)",
+      "summary": "Make the player enter edit skill mode of this shrine.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "customData",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EnterEditSkill(Entity, string)",
+      "id": "Global_EditSkillShrine_EnterEditSkill_Entity_System_String_",
+      "declaration": "public void EnterEditSkill(Entity entity, string customData = null)",
+      "summary": "Make the player enter edit skill mode of this shrine.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "customData",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetCost(Entity)",
+      "id": "Global_EditSkillShrine_GetCost_Entity_",
+      "declaration": "public override Cost? GetCost(Entity activator)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "activator",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "Cost?"
+    },
+    {
+      "name": "GetCustomData(DewPlayer)",
+      "id": "Global_EditSkillShrine_GetCustomData_DewPlayer_",
+      "declaration": "public string GetCustomData(DewPlayer player)",
+      "summary": "Get the custom data for the player, provided with the EnterEditSkill call.Available everywhere.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetEditSkillBackdropColor()",
+      "id": "Global_EditSkillShrine_GetEditSkillBackdropColor",
+      "declaration": "public virtual Color GetEditSkillBackdropColor()",
+      "summary": "The color of the backdrop behind skill buttons in this edit skill mode. Disabled by default.",
+      "parameters": [],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetEditSkillIndicatorColor()",
+      "id": "Global_EditSkillShrine_GetEditSkillIndicatorColor",
+      "declaration": "public virtual Color GetEditSkillIndicatorColor()",
+      "summary": "The color of the editskill indicator text.",
+      "parameters": [],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetEditSkillIndicatorRawText()",
+      "id": "Global_EditSkillShrine_GetEditSkillIndicatorRawText",
+      "declaration": "public virtual string GetEditSkillIndicatorRawText()",
+      "summary": "Text to show on editskill indicator of this shrine's action.",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetTargetInfo(DewPlayer, GemLocation, Gem)",
+      "id": "Global_EditSkillShrine_GetTargetInfo_DewPlayer_GemLocation_Gem_",
+      "declaration": "public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, GemLocation loc, Gem target)",
+      "summary": "Checked everywhere.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "EditSkillTargetInfo"
+    },
+    {
+      "name": "GetTargetInfo(DewPlayer, HeroSkillLocation, SkillTrigger)",
+      "id": "Global_EditSkillShrine_GetTargetInfo_DewPlayer_HeroSkillLocation_SkillTrigger_",
+      "declaration": "public virtual EditSkillTargetInfo GetTargetInfo(DewPlayer player, HeroSkillLocation loc, SkillTrigger target)",
+      "summary": "Checked everywhere.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "loc",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "EditSkillTargetInfo"
+    },
+    {
+      "name": "GetTargetTypes(DewPlayer)",
+      "id": "Global_EditSkillShrine_GetTargetTypes_DewPlayer_",
+      "declaration": "public virtual EditSkillTargetType GetTargetTypes(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "EditSkillTargetType"
+    },
+    {
+      "name": "OnActivateEditSkill(DewPlayer, GemLocation, Gem)",
+      "id": "Global_EditSkillShrine_OnActivateEditSkill_DewPlayer_GemLocation_Gem_",
+      "declaration": "protected virtual bool OnActivateEditSkill(DewPlayer player, GemLocation loc, Gem target)",
+      "summary": "Called on server. Return true to denote success, which will show the activation effect, spend the cost, and deduct use count.Note this will be called only if all validations has been passed.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "loc",
+          "type": "GemLocation",
+          "type_uid": "Global.GemLocation",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnActivateEditSkill(DewPlayer, HeroSkillLocation, SkillTrigger)",
+      "id": "Global_EditSkillShrine_OnActivateEditSkill_DewPlayer_HeroSkillLocation_SkillTrigger_",
+      "declaration": "protected virtual bool OnActivateEditSkill(DewPlayer player, HeroSkillLocation loc, SkillTrigger target)",
+      "summary": "Called on server. Return true to denote success, which will show the activation effect, spend the cost, and deduct use count.Note this will be called only if all validations has been passed.",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "loc",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnUse(Entity)",
+      "id": "Global_EditSkillShrine_OnUse_Entity_",
+      "declaration": "protected override bool OnUse(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ShouldExitEditModeAfterAction()",
+      "id": "Global_EditSkillShrine_ShouldExitEditModeAfterAction",
+      "declaration": "public virtual bool ShouldExitEditModeAfterAction()",
+      "summary": "Checked on local client. You can override this to dynamically adjust behavior for each player.",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

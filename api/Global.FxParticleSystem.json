@@ -1,0 +1,56 @@
+{
+  "uid": "Global.FxParticleSystem",
+  "name": "FxParticleSystem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[HideMonoScript]\npublic class FxParticleSystem : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "clearParticlesOnStop",
+      "id": "Global_FxParticleSystem_clearParticlesOnStop",
+      "declaration": "public FxParticleSystem.ClearParticlesBehavior clearParticlesOnStop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontDisableAsPartOfEntityRenderer",
+      "id": "Global_FxParticleSystem_dontDisableAsPartOfEntityRenderer",
+      "declaration": "[Header(\"Inside Entity Model\")]\n[ToggleLeft]\npublic bool dontDisableAsPartOfEntityRenderer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontPauseAttachedWhenRendererDisabled",
+      "id": "Global_FxParticleSystem_dontPauseAttachedWhenRendererDisabled",
+      "declaration": "[ToggleLeft]\npublic bool dontPauseAttachedWhenRendererDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dontPauseAttachedWhenTeleport",
+      "id": "Global_FxParticleSystem_dontPauseAttachedWhenTeleport",
+      "declaration": "[Header(\"Attached Effects\")]\n[ToggleLeft]\npublic bool dontPauseAttachedWhenTeleport",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hideAttachedWhenRendererDisabled",
+      "id": "Global_FxParticleSystem_hideAttachedWhenRendererDisabled",
+      "declaration": "[ToggleLeft]\npublic bool hideAttachedWhenRendererDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

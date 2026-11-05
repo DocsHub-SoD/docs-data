@@ -1,0 +1,96 @@
+{
+  "uid": "Global.DewLocalization.DescriptionSettings",
+  "name": "DewLocalization.DescriptionSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewLocalization.DescriptionSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "capturedFields",
+      "id": "Global_DewLocalization_DescriptionSettings_capturedFields",
+      "declaration": "public Dictionary<string, string> capturedFields",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "contextEntity",
+      "id": "Global_DewLocalization_DescriptionSettings_contextEntity",
+      "declaration": "public Entity contextEntity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "contextObject",
+      "id": "Global_DewLocalization_DescriptionSettings_contextObject",
+      "declaration": "public Object contextObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentLevel",
+      "id": "Global_DewLocalization_DescriptionSettings_currentLevel",
+      "declaration": "public int? currentLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSkillStar",
+      "id": "Global_DewLocalization_DescriptionSettings_isSkillStar",
+      "declaration": "public bool isSkillStar",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "previousLevel",
+      "id": "Global_DewLocalization_DescriptionSettings_previousLevel",
+      "declaration": "public int? previousLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "showLevelScaling",
+      "id": "Global_DewLocalization_DescriptionSettings_showLevelScaling",
+      "declaration": "public bool showLevelScaling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "starLevels",
+      "id": "Global_DewLocalization_DescriptionSettings_starLevels",
+      "declaration": "public int[] starLevels",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "starStrength",
+      "id": "Global_DewLocalization_DescriptionSettings_starStrength",
+      "declaration": "public float? starStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stats",
+      "id": "Global_DewLocalization_DescriptionSettings_stats",
+      "declaration": "public DewLocalization.EntityStats? stats",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

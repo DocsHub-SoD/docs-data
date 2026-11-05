@@ -1,0 +1,87 @@
+{
+  "uid": "Global.InGameReverieManager",
+  "name": "InGameReverieManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InGameReverieManager : ManagerBase<InGameReverieManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "InGameReverieManager",
+      "href": "Global.InGameReverieManager.html",
+      "uid": "Global.InGameReverieManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableTrackingReveries",
+      "id": "Global_InGameReverieManager_disableTrackingReveries",
+      "declaration": "public bool disableTrackingReveries",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RerollMaxCount",
+      "id": "Global_InGameReverieManager_RerollMaxCount",
+      "declaration": "public const int RerollMaxCount = 3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpecialReverieIndex",
+      "id": "Global_InGameReverieManager_SpecialReverieIndex",
+      "declaration": "public const int SpecialReverieIndex = -99",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isTrackingReveries",
+      "id": "Global_InGameReverieManager_isTrackingReveries",
+      "declaration": "public bool isTrackingReveries { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CompleteReverie(DewReverieItem)",
+      "id": "Global_InGameReverieManager_CompleteReverie_DewReverieItem_",
+      "declaration": "public void CompleteReverie(DewReverieItem item)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "DewReverieItem",
+          "type_uid": "Global.DewReverieItem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

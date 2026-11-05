@@ -1,0 +1,49 @@
+{
+  "uid": "Global.EntityAIContext",
+  "name": "EntityAIContext",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EntityAIContext",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "targetEnemyLastKnownPosition",
+      "id": "Global_EntityAIContext_targetEnemyLastKnownPosition",
+      "declaration": "public Vector3? targetEnemyLastKnownPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "deltaTime",
+      "id": "Global_EntityAIContext_deltaTime",
+      "declaration": "public readonly float deltaTime { get; }",
+      "summary": "Usually similar to aiInterval of this entity, but this can get longer if AI congestion control is active.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetEnemy",
+      "id": "Global_EntityAIContext_targetEnemy",
+      "declaration": "public readonly Entity targetEnemy { get; }",
+      "summary": "Get this entity's primary target enemy.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetEnemyElapsedTime",
+      "id": "Global_EntityAIContext_targetEnemyElapsedTime",
+      "declaration": "public float targetEnemyElapsedTime { get; }",
+      "summary": "Get elapsed time since this entity chose its primary target enemy.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,211 @@
+{
+  "uid": "Global.HeroLoadoutData",
+  "name": "HeroLoadoutData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class HeroLoadoutData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "cDestruction",
+      "id": "Global_HeroLoadoutData_cDestruction",
+      "declaration": "public List<LoadoutStarItem> cDestruction",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cFlexible",
+      "id": "Global_HeroLoadoutData_cFlexible",
+      "declaration": "public List<LoadoutStarItem> cFlexible",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cImagination",
+      "id": "Global_HeroLoadoutData_cImagination",
+      "declaration": "public List<LoadoutStarItem> cImagination",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cLife",
+      "id": "Global_HeroLoadoutData_cLife",
+      "declaration": "public List<LoadoutStarItem> cLife",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HeroLoadoutCount",
+      "id": "Global_HeroLoadoutData_HeroLoadoutCount",
+      "declaration": "public const int HeroLoadoutCount = 5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillMovement",
+      "id": "Global_HeroLoadoutData_skillMovement",
+      "declaration": "public int skillMovement",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillQ",
+      "id": "Global_HeroLoadoutData_skillQ",
+      "declaration": "public int skillQ",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillR",
+      "id": "Global_HeroLoadoutData_skillR",
+      "declaration": "public int skillR",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skillTrait",
+      "id": "Global_HeroLoadoutData_skillTrait",
+      "declaration": "public int skillTrait",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ContainsStar(string)",
+      "id": "Global_HeroLoadoutData_ContainsStar_System_String_",
+      "declaration": "public bool ContainsStar(string starName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "starName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetSkill(HeroSkillLocation)",
+      "id": "Global_HeroLoadoutData_GetSkill_HeroSkillLocation_",
+      "declaration": "public int GetSkill(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetStarList(StarType)",
+      "id": "Global_HeroLoadoutData_GetStarList_StarType_",
+      "declaration": "public List<LoadoutStarItem> GetStarList(StarType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "StarType",
+          "type_uid": "Global.StarType",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><LoadoutStarItem>"
+    },
+    {
+      "name": "IsValidFor(string)",
+      "id": "Global_HeroLoadoutData_IsValidFor_System_String_",
+      "declaration": "public bool IsValidFor(string heroType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "PopulateLevelsByLocalSaveData()",
+      "id": "Global_HeroLoadoutData_PopulateLevelsByLocalSaveData",
+      "declaration": "public void PopulateLevelsByLocalSaveData()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetSkill(HeroSkillLocation, int)",
+      "id": "Global_HeroLoadoutData_SetSkill_HeroSkillLocation_System_Int32_",
+      "declaration": "public void SetSkill(HeroSkillLocation type, int value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Validate_Imp(string, bool, bool, HeroStarSlotUnlockData)",
+      "id": "Global_HeroLoadoutData_Validate_Imp_System_String_System_Boolean_System_Boolean_DewProfile_HeroStarSlotUnlockData_",
+      "declaration": "public bool Validate_Imp(string heroType, bool isRepair, bool checkStarLevels, DewProfile.HeroStarSlotUnlockData unlockedSlots)",
+      "summary": "Returns false if something is invalid.If isRepair is true, the loadout data will be repaired.If not, nothing will be changed.",
+      "parameters": [
+        {
+          "name": "heroType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isRepair",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "checkStarLevels",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "unlockedSlots",
+          "type": "DewProfile.HeroStarSlotUnlockData",
+          "type_uid": "Global.DewProfile",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

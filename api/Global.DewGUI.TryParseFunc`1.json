@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewGUI.TryParseFunc`1",
+  "name": "DewGUI.TryParseFunc<T>",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate bool DewGUI.TryParseFunc<T>(string str, out T result)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

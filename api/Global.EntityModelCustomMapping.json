@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EntityModelCustomMapping",
+  "name": "EntityModelCustomMapping",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct EntityModelCustomMapping",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "id",
+      "id": "Global_EntityModelCustomMapping_id",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic string id",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "target",
+      "id": "Global_EntityModelCustomMapping_target",
+      "declaration": "[HideLabel]\n[HorizontalGroup(\"A\", 0, 0, 0, 0)]\npublic GameObject target",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

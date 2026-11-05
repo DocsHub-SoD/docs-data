@@ -1,0 +1,211 @@
+{
+  "uid": "Global.Section_Monsters",
+  "name": "Section_Monsters",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Section_Monsters : RoomSectionComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "RoomSectionComponent",
+      "href": "Global.RoomSectionComponent.html",
+      "uid": "Global.RoomSectionComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "activateCondition",
+      "id": "Global_Section_Monsters_activateCondition",
+      "declaration": "[ShowIf(\"@combatAreaSettings != SectionCombatAreaType.No\", true)]\npublic CombatAreaActivateCondition activateCondition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedInitDelay",
+      "id": "Global_Section_Monsters_addedInitDelay",
+      "declaration": "[ShowIf(\"@combatAreaSettings != SectionCombatAreaType.No\", true)]\npublic Vector2 addedInitDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "combatAreaSettings",
+      "id": "Global_Section_Monsters_combatAreaSettings",
+      "declaration": "public SectionCombatAreaType combatAreaSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBossCount",
+      "id": "Global_Section_Monsters_miniBossCount",
+      "declaration": "[ShowIf(\"@combatAreaSettings != SectionCombatAreaType.No\", true)]\npublic int miniBossCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onClearCombatArea",
+      "id": "Global_Section_Monsters_onClearCombatArea",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent onClearCombatArea",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onStartCombatArea",
+      "id": "Global_Section_Monsters_onStartCombatArea",
+      "declaration": "[FoldoutGroup(\"Events\", 0)]\npublic UnityEvent onStartCombatArea",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ruleOverride",
+      "id": "Global_Section_Monsters_ruleOverride",
+      "declaration": "[ShowIf(\"@combatAreaSettings != SectionCombatAreaType.No\", true)]\npublic MonsterSpawnRule ruleOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnMiniBossInstead",
+      "id": "Global_Section_Monsters_spawnMiniBossInstead",
+      "declaration": "[ShowIf(\"@combatAreaSettings != SectionCombatAreaType.No\", true)]\npublic bool spawnMiniBossInstead",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnPosOverride",
+      "id": "Global_Section_Monsters_spawnPosOverride",
+      "declaration": "[ShowIf(\"@combatAreaSettings != SectionCombatAreaType.No\", true)]\npublic Transform spawnPosOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "didClearCombatArea",
+      "id": "Global_Section_Monsters_didClearCombatArea",
+      "declaration": "public bool didClearCombatArea { get; set; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCombatActive",
+      "id": "Global_Section_Monsters_isCombatActive",
+      "declaration": "public bool isCombatActive { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMarkedAsCombatArea",
+      "id": "Global_Section_Monsters_isMarkedAsCombatArea",
+      "declaration": "public bool isMarkedAsCombatArea { get; set; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isOverPopulation",
+      "id": "Global_Section_Monsters_isOverPopulation",
+      "declaration": "public bool isOverPopulation { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxPopulation",
+      "id": "Global_Section_Monsters_maxPopulation",
+      "declaration": "public float maxPopulation { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "population",
+      "id": "Global_Section_Monsters_population",
+      "declaration": "public float population { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_Section_Monsters_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetSpawnPositionInSection(Func<Vector3, bool>, DewRandom)",
+      "id": "Global_Section_Monsters_GetSpawnPositionInSection_System_Func_UnityEngine_Vector3_System_Boolean__DewRandom_",
+      "declaration": "public Vector3 GetSpawnPositionInSection(Func<Vector3, bool> evaluator = null, DewRandom random = null)",
+      "summary": "Evaluator will be provided raw position without NavMesh, ground or any checks.Position got passed by evaluator might not be returned as result of this function.",
+      "parameters": [
+        {
+          "name": "evaluator",
+          "type": "System.Func<T, TResult><UnityEngine.Vector3,bool>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetSpawnPositionInSection(float, float, DewRandom)",
+      "id": "Global_Section_Monsters_GetSpawnPositionInSection_System_Single_System_Single_DewRandom_",
+      "declaration": "public Vector3 GetSpawnPositionInSection(float minDist, float maxDist, DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "minDist",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "maxDist",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.PingInstance",
+  "name": "PingInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PingInstance : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "effect",
+      "id": "Global_PingInstance_effect",
+      "declaration": "public GameObject effect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pingLifeTime",
+      "id": "Global_PingInstance_pingLifeTime",
+      "declaration": "public float pingLifeTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

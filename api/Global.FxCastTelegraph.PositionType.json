@@ -1,0 +1,15 @@
+{
+  "uid": "Global.FxCastTelegraph.PositionType",
+  "name": "FxCastTelegraph.PositionType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum FxCastTelegraph.PositionType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

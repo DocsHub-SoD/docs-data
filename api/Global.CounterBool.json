@@ -1,0 +1,24 @@
+{
+  "uid": "Global.CounterBool",
+  "name": "CounterBool",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct CounterBool",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "count",
+      "id": "Global_CounterBool_count",
+      "declaration": "public int count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

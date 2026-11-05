@@ -1,0 +1,105 @@
+{
+  "uid": "Global.DewConversationSettings",
+  "name": "DewConversationSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewConversationSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "callFunctions",
+      "id": "Global_DewConversationSettings_callFunctions",
+      "declaration": "[NonSerialized]\npublic Dictionary<string, Action> callFunctions",
+      "summary": "This is not synced to clients.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onStop",
+      "id": "Global_DewConversationSettings_onStop",
+      "declaration": "[NonSerialized]\npublic Action onStop",
+      "summary": "This is not synced to clients.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "player",
+      "id": "Global_DewConversationSettings_player",
+      "declaration": "public DewPlayer player",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rotateTowardsCenter",
+      "id": "Global_DewConversationSettings_rotateTowardsCenter",
+      "declaration": "public bool rotateTowardsCenter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "speakers",
+      "id": "Global_DewConversationSettings_speakers",
+      "declaration": "public Entity[] speakers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startConversationKey",
+      "id": "Global_DewConversationSettings_startConversationKey",
+      "declaration": "public string startConversationKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "variables",
+      "id": "Global_DewConversationSettings_variables",
+      "declaration": "public Dictionary<string, string> variables",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visibility",
+      "id": "Global_DewConversationSettings_visibility",
+      "declaration": "public ConversationVisibility visibility",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isLocalAuthority",
+      "id": "Global_DewConversationSettings_isLocalAuthority",
+      "declaration": "public bool isLocalAuthority { get; }",
+      "summary": "Is local player authorized to advance the conversation?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isVisibleToLocal",
+      "id": "Global_DewConversationSettings_isVisibleToLocal",
+      "declaration": "public bool isVisibleToLocal { get; }",
+      "summary": "Can local player see this conversation?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "seed",
+      "id": "Global_DewConversationSettings_seed",
+      "declaration": "public int seed { get; }",
+      "summary": "Used for solving randomness consistently across clients.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

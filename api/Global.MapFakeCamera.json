@@ -1,0 +1,48 @@
+{
+  "uid": "Global.MapFakeCamera",
+  "name": "MapFakeCamera",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class MapFakeCamera : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "currentCamAngleIndex",
+      "id": "Global_MapFakeCamera_currentCamAngleIndex",
+      "declaration": "public static int currentCamAngleIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "followTransform",
+      "id": "Global_MapFakeCamera_followTransform",
+      "declaration": "public Transform followTransform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "originalOffset",
+      "id": "Global_MapFakeCamera_originalOffset",
+      "declaration": "public Vector3 originalOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vcam",
+      "id": "Global_MapFakeCamera_vcam",
+      "declaration": "public CinemachineVirtualCamera vcam",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

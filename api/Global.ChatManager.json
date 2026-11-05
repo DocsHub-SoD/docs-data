@@ -1,0 +1,525 @@
+{
+  "uid": "Global.ChatManager",
+  "name": "ChatManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ChatManager : NetworkedManagerBase<ChatManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "ChatManager",
+      "href": "Global.ChatManager.html",
+      "uid": "Global.ChatManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ChatContentColorHex",
+      "id": "Global_ChatManager_ChatContentColorHex",
+      "declaration": "public const string ChatContentColorHex = \"#e4edf0\"",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ChatMessage_MaxLength",
+      "id": "Global_ChatManager_ChatMessage_MaxLength",
+      "declaration": "public const int ChatMessage_MaxLength = 100",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ChatMessage_RateLimitCount",
+      "id": "Global_ChatManager_ChatMessage_RateLimitCount",
+      "declaration": "public const int ChatMessage_RateLimitCount = 8",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ChatMessage_RateLimitLockTime",
+      "id": "Global_ChatManager_ChatMessage_RateLimitLockTime",
+      "declaration": "public const float ChatMessage_RateLimitLockTime = 8",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ChatMessage_RateLimitTimeframe",
+      "id": "Global_ChatManager_ChatMessage_RateLimitTimeframe",
+      "declaration": "public const float ChatMessage_RateLimitTimeframe = 12",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEmoteReceived",
+      "id": "Global_ChatManager_ClientEvent_OnEmoteReceived",
+      "declaration": "public SafeAction<DewPlayer, string> ClientEvent_OnEmoteReceived",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnMessageReceived",
+      "id": "Global_ChatManager_ClientEvent_OnMessageReceived",
+      "declaration": "public SafeAction<ChatManager.Message> ClientEvent_OnMessageReceived",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Emote_CooldownTime",
+      "id": "Global_ChatManager_Emote_CooldownTime",
+      "declaration": "public const float Emote_CooldownTime = 1.4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "BroadcastAdvText(string)",
+      "id": "Global_ChatManager_BroadcastAdvText_System_String_",
+      "declaration": "public void BroadcastAdvText(string advText)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "advText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "BroadcastMessage(Message)",
+      "id": "Global_ChatManager_BroadcastMessage_ChatManager_Message_",
+      "declaration": "public void BroadcastMessage(ChatManager.Message message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "ChatManager.Message",
+          "type_uid": "Global.ChatManager",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSendAchievementMessage(string, NetworkConnectionToClient)",
+      "id": "Global_ChatManager_CmdSendAchievementMessage_System_String_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdSendAchievementMessage(string achKey, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "achKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSendChatMessage(string, NetworkConnectionToClient)",
+      "id": "Global_ChatManager_CmdSendChatMessage_System_String_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdSendChatMessage(string content, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSendEmote(string, NetworkConnectionToClient)",
+      "id": "Global_ChatManager_CmdSendEmote_System_String_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdSendEmote(string emoteName, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "emoteName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSendPingMessage(string, NetworkConnectionToClient)",
+      "id": "Global_ChatManager_CmdSendPingMessage_System_String_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdSendPingMessage(string advMessage, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "advMessage",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetColoredDescribedPlayerName(DewPlayer)",
+      "id": "Global_ChatManager_GetColoredDescribedPlayerName_DewPlayer_",
+      "declaration": "public static string GetColoredDescribedPlayerName(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetColoredGemName(string, int)",
+      "id": "Global_ChatManager_GetColoredGemName_System_String_System_Int32_",
+      "declaration": "public static string GetColoredGemName(string typeName, int quality)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetColoredSkillName(string, int)",
+      "id": "Global_ChatManager_GetColoredSkillName_System_String_System_Int32_",
+      "declaration": "public static string GetColoredSkillName(string typeName, int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetDescribedPlayerName(DewPlayer)",
+      "id": "Global_ChatManager_GetDescribedPlayerName_DewPlayer_",
+      "declaration": "public static string GetDescribedPlayerName(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetFormattedChatContent(string, string)",
+      "id": "Global_ChatManager_GetFormattedChatContent_System_String_System_String_",
+      "declaration": "public static string GetFormattedChatContent(string playerName, string content)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "playerName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetPlayerColorHex(DewPlayer)",
+      "id": "Global_ChatManager_GetPlayerColorHex_DewPlayer_",
+      "declaration": "public static string GetPlayerColorHex(DewPlayer player = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "IncrementRateAndCheck(NetworkConnectionToClient)",
+      "id": "Global_ChatManager_IncrementRateAndCheck_Mirror_NetworkConnectionToClient_",
+      "declaration": "public bool IncrementRateAndCheck(NetworkConnectionToClient connection)",
+      "summary": "Increment chat rate of given player. Returns true if succeeds.Returns false if the player have exceeded the rate limit.",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsChatLocked(NetworkConnectionToClient)",
+      "id": "Global_ChatManager_IsChatLocked_Mirror_NetworkConnectionToClient_",
+      "declaration": "public bool IsChatLocked(NetworkConnectionToClient connection)",
+      "summary": "Is chat disabled for given player? Chat will be disabled temporarily if a player sends chat messages too fast.",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsPlayerMuted(DewPlayer)",
+      "id": "Global_ChatManager_IsPlayerMuted_DewPlayer_",
+      "declaration": "public bool IsPlayerMuted(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsPlayerMutedByNetId(uint)",
+      "id": "Global_ChatManager_IsPlayerMutedByNetId_System_UInt32_",
+      "declaration": "public bool IsPlayerMutedByNetId(uint playerNetId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "playerNetId",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsPlayerMutedBySteamId(ulong)",
+      "id": "Global_ChatManager_IsPlayerMutedBySteamId_System_UInt64_",
+      "declaration": "public bool IsPlayerMutedBySteamId(ulong playerSteamId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "playerSteamId",
+          "type": "ulong",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_ChatManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "MutePlayer(DewPlayer)",
+      "id": "Global_ChatManager_MutePlayer_DewPlayer_",
+      "declaration": "public void MutePlayer(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_ChatManager_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RpcShowEmote(string, DewPlayer)",
+      "id": "Global_ChatManager_RpcShowEmote_System_String_DewPlayer_",
+      "declaration": "public void RpcShowEmote(string emoteName, DewPlayer sender)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "emoteName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SendChatLockedNotice(NetworkConnectionToClient)",
+      "id": "Global_ChatManager_SendChatLockedNotice_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void SendChatLockedNotice(NetworkConnectionToClient target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SendChatMessage(NetworkConnection, Message)",
+      "id": "Global_ChatManager_SendChatMessage_Mirror_NetworkConnection_ChatManager_Message_",
+      "declaration": "public void SendChatMessage(NetworkConnection target, ChatManager.Message message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Mirror.NetworkConnection",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "message",
+          "type": "ChatManager.Message",
+          "type_uid": "Global.ChatManager",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowMessageLocally(Message)",
+      "id": "Global_ChatManager_ShowMessageLocally_ChatManager_Message_",
+      "declaration": "public void ShowMessageLocally(ChatManager.Message message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "ChatManager.Message",
+          "type_uid": "Global.ChatManager",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UnmutePlayer(DewPlayer)",
+      "id": "Global_ChatManager_UnmutePlayer_DewPlayer_",
+      "declaration": "public void UnmutePlayer(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

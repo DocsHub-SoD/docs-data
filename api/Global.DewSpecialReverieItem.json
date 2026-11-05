@@ -1,0 +1,63 @@
+{
+  "uid": "Global.DewSpecialReverieItem",
+  "name": "DewSpecialReverieItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class DewSpecialReverieItem : DewReverieItem, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewPersistentGameObserver",
+      "href": "Global.DewPersistentGameObserver.html",
+      "uid": "Global.DewPersistentGameObserver"
+    },
+    {
+      "name": "DewGameObserverWithProgress",
+      "href": "Global.DewGameObserverWithProgress.html",
+      "uid": "Global.DewGameObserverWithProgress"
+    },
+    {
+      "name": "DewReverieItem",
+      "href": "Global.DewReverieItem.html",
+      "uid": "Global.DewReverieItem"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "nextReverie",
+      "id": "Global_DewSpecialReverieItem_nextReverie",
+      "declaration": "public virtual Type nextReverie { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnStartLocalClient()",
+      "id": "Global_DewSpecialReverieItem_OnStartLocalClient",
+      "declaration": "public override void OnStartLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopLocalClient()",
+      "id": "Global_DewSpecialReverieItem_OnStopLocalClient",
+      "declaration": "public override void OnStopLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

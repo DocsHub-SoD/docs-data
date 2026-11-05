@@ -1,0 +1,24 @@
+{
+  "uid": "Global.RoomComponentStartDependencyAttribute",
+  "name": "RoomComponentStartDependencyAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]\npublic class RoomComponentStartDependencyAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "targetRoomComponent",
+      "id": "Global_RoomComponentStartDependencyAttribute_targetRoomComponent",
+      "declaration": "public Type targetRoomComponent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,32 @@
+{
+  "uid": "Global.ChoiceShrineItem",
+  "name": "ChoiceShrineItem",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ChoiceShrineItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "level",
+      "id": "Global_ChoiceShrineItem_level",
+      "declaration": "public int level",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "typeName",
+      "id": "Global_ChoiceShrineItem_typeName",
+      "declaration": "public string typeName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

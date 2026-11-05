@@ -1,0 +1,24 @@
+{
+  "uid": "Global.PlayLobby_CharacterCamera",
+  "name": "PlayLobby_CharacterCamera",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PlayLobby_CharacterCamera : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "basisCharacter",
+      "id": "Global_PlayLobby_CharacterCamera_basisCharacter",
+      "declaration": "public PlayLobby_Character basisCharacter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

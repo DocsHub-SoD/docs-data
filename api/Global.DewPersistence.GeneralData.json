@@ -1,0 +1,100 @@
+{
+  "uid": "Global.DewPersistence.GeneralData",
+  "name": "DewPersistence.GeneralData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.GeneralData",
+  "inheritance": [
+    {
+      "name": "DewPersistence.GemData",
+      "href": "Global.DewPersistence.GemData.html",
+      "uid": "Global.DewPersistence.GemData"
+    },
+    {
+      "name": "DewPersistence.RoomActorData",
+      "href": "Global.DewPersistence.RoomActorData.html",
+      "uid": "Global.DewPersistence.RoomActorData"
+    },
+    {
+      "name": "DewPersistence.SkillData",
+      "href": "Global.DewPersistence.SkillData.html",
+      "uid": "Global.DewPersistence.SkillData"
+    },
+    {
+      "name": "DewPersistence.StatusEffectData",
+      "href": "Global.DewPersistence.StatusEffectData.html",
+      "uid": "Global.DewPersistence.StatusEffectData"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "persistenceData",
+      "id": "Global_DewPersistence_GeneralData_persistenceData",
+      "declaration": "public Dictionary<string, string> persistenceData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "prevNetId",
+      "id": "Global_DewPersistence_GeneralData_prevNetId",
+      "declaration": "public uint prevNetId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "resId",
+      "id": "Global_DewPersistence_GeneralData_resId",
+      "declaration": "public string resId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "resType",
+      "id": "Global_DewPersistence_GeneralData_resType",
+      "declaration": "public ResourceLinkBy resType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Capture(Actor)",
+      "id": "Global_DewPersistence_GeneralData_Capture_Actor_",
+      "declaration": "public virtual DewPersistence.GeneralData Capture(Actor target)",
+      "summary": "This object is mutated, and self is returned.",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        }
+      ],
+      "returns": "DewPersistence.GeneralData"
+    },
+    {
+      "name": "GetPrefab<T>()",
+      "id": "Global_DewPersistence_GeneralData_GetPrefab__1",
+      "declaration": "public virtual T GetPrefab<T>() where T : Object",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    }
+  ],
+  "events": []
+}

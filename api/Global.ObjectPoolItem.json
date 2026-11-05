@@ -1,0 +1,56 @@
+{
+  "uid": "Global.ObjectPoolItem",
+  "name": "ObjectPoolItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ObjectPoolItem",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "activeInstances",
+      "id": "Global_ObjectPoolItem_activeInstances",
+      "declaration": "public int activeInstances",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "inactiveInstances",
+      "id": "Global_ObjectPoolItem_inactiveInstances",
+      "declaration": "public List<GameObject> inactiveInstances",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastDestroyUnscaledTime",
+      "id": "Global_ObjectPoolItem_lastDestroyUnscaledTime",
+      "declaration": "public float lastDestroyUnscaledTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastInstantiateUnscaledTime",
+      "id": "Global_ObjectPoolItem_lastInstantiateUnscaledTime",
+      "declaration": "public float lastInstantiateUnscaledTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastReuseUnscaledTime",
+      "id": "Global_ObjectPoolItem_lastReuseUnscaledTime",
+      "declaration": "public float lastReuseUnscaledTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

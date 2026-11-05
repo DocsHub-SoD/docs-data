@@ -1,0 +1,40 @@
+{
+  "uid": "Global.ShownConversation",
+  "name": "ShownConversation",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ShownConversation",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "choices",
+      "id": "Global_ShownConversation_choices",
+      "declaration": "public int[] choices",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "key",
+      "id": "Global_ShownConversation_key",
+      "declaration": "public string key",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lineIndex",
+      "id": "Global_ShownConversation_lineIndex",
+      "declaration": "public int lineIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

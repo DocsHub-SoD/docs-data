@@ -1,0 +1,125 @@
+{
+  "uid": "Global.BossMonster",
+  "name": "BossMonster",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class BossMonster : Monster, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Entity",
+      "href": "Global.Entity.html",
+      "uid": "Global.Entity"
+    },
+    {
+      "name": "Monster",
+      "href": "Global.Monster.html",
+      "uid": "Global.Monster"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "isHiddenBoss",
+      "id": "Global_BossMonster_isHiddenBoss",
+      "declaration": "public bool isHiddenBoss",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playBossKillFeedback",
+      "id": "Global_BossMonster_playBossKillFeedback",
+      "declaration": "public bool playBossKillFeedback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipBossSoulFlow",
+      "id": "Global_BossMonster_skipBossSoulFlow",
+      "declaration": "[NonSerialized]\npublic bool skipBossSoulFlow",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetUniqueReward()",
+      "id": "Global_BossMonster_GetUniqueReward",
+      "declaration": "public virtual Type GetUniqueReward()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Type"
+    },
+    {
+      "name": "GetUniqueRewardChance()",
+      "id": "Global_BossMonster_GetUniqueRewardChance",
+      "declaration": "public virtual float GetUniqueRewardChance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_BossMonster_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDeath(EventInfoKill)",
+      "id": "Global_BossMonster_OnDeath_EventInfoKill_",
+      "declaration": "protected override void OnDeath(EventInfoKill info)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "info",
+          "type": "EventInfoKill",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_BossMonster_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

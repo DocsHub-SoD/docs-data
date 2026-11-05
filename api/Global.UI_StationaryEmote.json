@@ -1,0 +1,70 @@
+{
+  "uid": "Global.UI_StationaryEmote",
+  "name": "UI_StationaryEmote",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_StationaryEmote : MonoBehaviour",
+  "inheritance": [
+    {
+      "name": "UI_EmoteWheel_Item",
+      "href": "Global.UI_EmoteWheel_Item.html",
+      "uid": "Global.UI_EmoteWheel_Item"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "currentEmoteInstance",
+      "id": "Global_UI_StationaryEmote_currentEmoteInstance",
+      "declaration": "[NonSerialized]\npublic Emote currentEmoteInstance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentEmoteName",
+      "id": "Global_UI_StationaryEmote_currentEmoteName",
+      "declaration": "[NonSerialized]\npublic string currentEmoteName",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentEmotePrefab",
+      "id": "Global_UI_StationaryEmote_currentEmotePrefab",
+      "declaration": "[NonSerialized]\npublic AssetRef<Emote> currentEmotePrefab",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customParent",
+      "id": "Global_UI_StationaryEmote_customParent",
+      "declaration": "public RectTransform customParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Setup(string)",
+      "id": "Global_UI_StationaryEmote_Setup_System_String_",
+      "declaration": "public virtual void Setup(string emoteName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "emoteName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

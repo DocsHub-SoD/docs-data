@@ -1,0 +1,40 @@
+{
+  "uid": "Global.HeroConstellationSettings",
+  "name": "HeroConstellationSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\n[InlineProperty]\npublic class HeroConstellationSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "angleOffset",
+      "id": "Global_HeroConstellationSettings_angleOffset",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[SuffixLabel(\"deg\", false)]\npublic float angleOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultCount",
+      "id": "Global_HeroConstellationSettings_defaultCount",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\n[SuffixLabel(\"/\", false)]\npublic int defaultCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxCount",
+      "id": "Global_HeroConstellationSettings_maxCount",
+      "declaration": "[HorizontalGroup(\"A\", 0, 0, 0, 0)]\n[HideLabel]\npublic int maxCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

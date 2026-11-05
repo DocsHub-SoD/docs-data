@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IBanCampsNearby",
+  "name": "IBanCampsNearby",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IBanCampsNearby",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,114 @@
+{
+  "uid": "Global.LucidDream",
+  "name": "LucidDream",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class LucidDream : GameEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "GameEffect",
+      "href": "Global.GameEffect.html",
+      "uid": "Global.GameEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ChaoticColor",
+      "id": "Global_LucidDream_ChaoticColor",
+      "declaration": "public static readonly Color ChaoticColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EvilColor",
+      "id": "Global_LucidDream_EvilColor",
+      "declaration": "public static readonly Color EvilColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GoodColor",
+      "id": "Global_LucidDream_GoodColor",
+      "declaration": "public static readonly Color GoodColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "icon",
+      "id": "Global_LucidDream_icon",
+      "declaration": "[BoxGroup(\"Lucid Dream Settings\", true, false, 0)]\npublic Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_LucidDream_type",
+      "declaration": "[BoxGroup(\"Lucid Dream Settings\", true, false, 0)]\npublic LucidDreamType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "color",
+      "id": "Global_LucidDream_color",
+      "declaration": "public Color color { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_LucidDream_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetCustomInGameTooltip()",
+      "id": "Global_LucidDream_GetCustomInGameTooltip",
+      "declaration": "public virtual string GetCustomInGameTooltip()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

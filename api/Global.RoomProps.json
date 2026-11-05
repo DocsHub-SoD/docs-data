@@ -1,0 +1,79 @@
+{
+  "uid": "Global.RoomProps",
+  "name": "RoomProps",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RoomComponentStartDependency(typeof(RoomModifiers))]\npublic class RoomProps : RoomComponent, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomComponent",
+      "href": "Global.RoomComponent.html",
+      "uid": "Global.RoomComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "defaultPerSectionRule",
+      "id": "Global_RoomProps_defaultPerSectionRule",
+      "declaration": "public PropSpawnRule defaultPerSectionRule",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "globalRule",
+      "id": "Global_RoomProps_globalRule",
+      "declaration": "public PropSpawnRule globalRule",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnRoomStartServer()",
+      "id": "Global_RoomProps_OnRoomStartServer",
+      "declaration": "public override void OnRoomStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TryGetGoodNodePosition(out Vector3, DewRandom)",
+      "id": "Global_RoomProps_TryGetGoodNodePosition_UnityEngine_Vector3__DewRandom_",
+      "declaration": "public bool TryGetGoodNodePosition(out Vector3 position, DewRandom random = null)",
+      "summary": "Returns false if suboptimal position is returned.",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

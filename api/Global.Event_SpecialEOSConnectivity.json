@@ -1,0 +1,24 @@
+{
+  "uid": "Global.Event_SpecialEOSConnectivity",
+  "name": "Event_SpecialEOSConnectivity",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Event_SpecialEOSConnectivity : Event",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "c_success",
+      "id": "Global_Event_SpecialEOSConnectivity_c_success",
+      "declaration": "public bool c_success { set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

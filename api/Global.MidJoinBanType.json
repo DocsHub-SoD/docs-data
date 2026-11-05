@@ -1,0 +1,15 @@
+{
+  "uid": "Global.MidJoinBanType",
+  "name": "MidJoinBanType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum MidJoinBanType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

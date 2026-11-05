@@ -1,0 +1,153 @@
+{
+  "uid": "Global.RoomComponent",
+  "name": "RoomComponent",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(Room))]\npublic class RoomComponent : DewNetworkBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "RoomMap",
+      "href": "Global.RoomMap.html",
+      "uid": "Global.RoomMap"
+    },
+    {
+      "name": "RoomModifiers",
+      "href": "Global.RoomModifiers.html",
+      "uid": "Global.RoomModifiers"
+    },
+    {
+      "name": "RoomMonsters",
+      "href": "Global.RoomMonsters.html",
+      "uid": "Global.RoomMonsters"
+    },
+    {
+      "name": "RoomProps",
+      "href": "Global.RoomProps.html",
+      "uid": "Global.RoomProps"
+    },
+    {
+      "name": "RoomRewards",
+      "href": "Global.RoomRewards.html",
+      "uid": "Global.RoomRewards"
+    },
+    {
+      "name": "RoomRifts",
+      "href": "Global.RoomRifts.html",
+      "uid": "Global.RoomRifts"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isRevisit",
+      "id": "Global_RoomComponent_isRevisit",
+      "declaration": "public bool isRevisit { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRoomActive",
+      "id": "Global_RoomComponent_isRoomActive",
+      "declaration": "public bool isRoomActive { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "room",
+      "id": "Global_RoomComponent_room",
+      "declaration": "public Room room { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ActiveLogicUpdate(float)",
+      "id": "Global_RoomComponent_ActiveLogicUpdate_System_Single_",
+      "declaration": "protected virtual void ActiveLogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_RoomComponent_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_RoomComponent_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStart()",
+      "id": "Global_RoomComponent_OnRoomStart",
+      "declaration": "public virtual void OnRoomStart()",
+      "summary": "Called everywhere when this room has finished loading and needs setup.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStartServer()",
+      "id": "Global_RoomComponent_OnRoomStartServer",
+      "declaration": "public virtual void OnRoomStartServer()",
+      "summary": "Called on server when this room has finished loading and needs setup.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStop()",
+      "id": "Global_RoomComponent_OnRoomStop",
+      "declaration": "public virtual void OnRoomStop()",
+      "summary": "Called everywhere when next room is about to load and this room is cleaning up.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnRoomStopServer()",
+      "id": "Global_RoomComponent_OnRoomStopServer",
+      "declaration": "public virtual void OnRoomStopServer()",
+      "summary": "Called on server when next room is about to load and this room is cleaning up.Populate save data here.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

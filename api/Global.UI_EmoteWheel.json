@@ -1,0 +1,131 @@
+{
+  "uid": "Global.UI_EmoteWheel",
+  "name": "UI_EmoteWheel",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_EmoteWheel : SingletonBehaviour<UI_EmoteWheel>, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "SingletonBehaviour",
+      "href": "Global.SingletonBehaviour-1.html",
+      "uid": "Global.SingletonBehaviour-1"
+    },
+    {
+      "name": "UI_EmoteWheel",
+      "href": "Global.UI_EmoteWheel.html",
+      "uid": "Global.UI_EmoteWheel"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fxFocusChanged",
+      "id": "Global_UI_EmoteWheel_fxFocusChanged",
+      "declaration": "public GameObject fxFocusChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxHide",
+      "id": "Global_UI_EmoteWheel_fxHide",
+      "declaration": "public GameObject fxHide",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxShow",
+      "id": "Global_UI_EmoteWheel_fxShow",
+      "declaration": "public GameObject fxShow",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_emote",
+      "id": "Global_UI_EmoteWheel_it_emote",
+      "declaration": "public DewInputTrigger it_emote",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_emoteCancel",
+      "id": "Global_UI_EmoteWheel_it_emoteCancel",
+      "declaration": "public DewInputTrigger it_emoteCancel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_emoteConfirm",
+      "id": "Global_UI_EmoteWheel_it_emoteConfirm",
+      "declaration": "public DewInputTrigger it_emoteConfirm",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lineRenderer",
+      "id": "Global_UI_EmoteWheel_lineRenderer",
+      "declaration": "public UILineRenderer lineRenderer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "wheelItems",
+      "id": "Global_UI_EmoteWheel_wheelItems",
+      "declaration": "public UI_EmoteWheel_Item[] wheelItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isShown",
+      "id": "Global_UI_EmoteWheel_isShown",
+      "declaration": "public bool isShown { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CheckValid()",
+      "id": "Global_UI_EmoteWheel_CheckValid",
+      "declaration": "public bool CheckValid()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_UI_EmoteWheel_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Show()",
+      "id": "Global_UI_EmoteWheel_Show",
+      "declaration": "public void Show()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

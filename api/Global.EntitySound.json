@@ -1,0 +1,188 @@
+{
+  "uid": "Global.EntitySound",
+  "name": "EntitySound",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntitySound : EntityComponent, ILogicUpdate, ICleanup",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "EntityComponent",
+      "href": "Global.EntityComponent.html",
+      "uid": "Global.EntityComponent"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientEvent_OnFootstep",
+      "id": "Global_EntitySound_ClientEvent_OnFootstep",
+      "declaration": "public SafeAction ClientEvent_OnFootstep",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conversationClick",
+      "id": "Global_EntitySound_conversationClick",
+      "declaration": "public DewAudioClip conversationClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "conversationStart",
+      "id": "Global_EntitySound_conversationStart",
+      "declaration": "public DewAudioClip conversationStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voiceDeath",
+      "id": "Global_EntitySound_voiceDeath",
+      "declaration": "public DewAudioClip voiceDeath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voiceIdle",
+      "id": "Global_EntitySound_voiceIdle",
+      "declaration": "public DewAudioClip voiceIdle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voiceIdleInterval",
+      "id": "Global_EntitySound_voiceIdleInterval",
+      "declaration": "public Vector2 voiceIdleInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voiceStart",
+      "id": "Global_EntitySound_voiceStart",
+      "declaration": "public DewAudioClip voiceStart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canDestroy",
+      "id": "Global_EntitySound_canDestroy",
+      "declaration": "public bool canDestroy { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DoFootstep()",
+      "id": "Global_EntitySound_DoFootstep",
+      "declaration": "public void DoFootstep()",
+      "summary": "Play footstep effect.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DoPeriodicSurfaceEffect()",
+      "id": "Global_EntitySound_DoPeriodicSurfaceEffect",
+      "declaration": "public void DoPeriodicSurfaceEffect()",
+      "summary": "Do periodic effect on the surface the entity is currently on.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_EntitySound_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCleanup()",
+      "id": "Global_EntitySound_OnCleanup",
+      "declaration": "public void OnCleanup()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_EntitySound_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_EntitySound_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartServer()",
+      "id": "Global_EntitySound_OnStartServer",
+      "declaration": "public override void OnStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Say(DewAudioClip, bool)",
+      "id": "Global_EntitySound_Say_DewAudioClip_System_Boolean_",
+      "declaration": "public void Say(DewAudioClip clip, bool interruptPrevious)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "clip",
+          "type": "DewAudioClip",
+          "type_uid": "Global.DewAudioClip",
+          "description": ""
+        },
+        {
+          "name": "interruptPrevious",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

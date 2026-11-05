@@ -1,0 +1,80 @@
+{
+  "uid": "Global.UI_CursorEvents",
+  "name": "UI_CursorEvents",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_CursorEvents : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onDrag",
+      "id": "Global_UI_CursorEvents_onDrag",
+      "declaration": "public Action<PointerEventData> onDrag",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onDrop",
+      "id": "Global_UI_CursorEvents_onDrop",
+      "declaration": "public Action<PointerEventData> onDrop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerClick",
+      "id": "Global_UI_CursorEvents_onPointerClick",
+      "declaration": "public Action<PointerEventData> onPointerClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerDown",
+      "id": "Global_UI_CursorEvents_onPointerDown",
+      "declaration": "public Action<PointerEventData> onPointerDown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerEnter",
+      "id": "Global_UI_CursorEvents_onPointerEnter",
+      "declaration": "public Action<PointerEventData> onPointerEnter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerExit",
+      "id": "Global_UI_CursorEvents_onPointerExit",
+      "declaration": "public Action<PointerEventData> onPointerExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerMove",
+      "id": "Global_UI_CursorEvents_onPointerMove",
+      "declaration": "public Action<PointerEventData> onPointerMove",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerUp",
+      "id": "Global_UI_CursorEvents_onPointerUp",
+      "declaration": "public Action<PointerEventData> onPointerUp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

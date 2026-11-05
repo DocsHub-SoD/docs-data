@@ -1,0 +1,114 @@
+{
+  "uid": "Global.AttackProjectile",
+  "name": "AttackProjectile",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AttackProjectile : StandardProjectile, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "Projectile",
+      "href": "Global.Projectile.html",
+      "uid": "Global.Projectile"
+    },
+    {
+      "name": "StandardProjectile",
+      "href": "Global.StandardProjectile.html",
+      "uid": "Global.StandardProjectile"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "isCrit",
+      "id": "Global_AttackProjectile_isCrit",
+      "declaration": "public bool isCrit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMain",
+      "id": "Global_AttackProjectile_isMain",
+      "declaration": "[NonSerialized]\npublic bool isMain",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "strength",
+      "id": "Global_AttackProjectile_strength",
+      "declaration": "public float strength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnCreate()",
+      "id": "Global_AttackProjectile_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEntity(EntityHit)",
+      "id": "Global_AttackProjectile_OnEntity_Projectile_EntityHit_",
+      "declaration": "protected override void OnEntity(Projectile.EntityHit hit)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hit",
+          "type": "Projectile.EntityHit",
+          "type_uid": "Global.Projectile",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPrepare()",
+      "id": "Global_AttackProjectile_OnPrepare",
+      "declaration": "protected override void OnPrepare()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

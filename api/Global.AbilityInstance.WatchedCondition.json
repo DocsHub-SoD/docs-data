@@ -1,0 +1,33 @@
+{
+  "uid": "Global.AbilityInstance.WatchedCondition",
+  "name": "AbilityInstance.WatchedCondition",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AbilityInstance.WatchedCondition",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "isWatched",
+      "id": "Global_AbilityInstance_WatchedCondition_isWatched",
+      "declaration": "public bool isWatched { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "StopWatching()",
+      "id": "Global_AbilityInstance_WatchedCondition_StopWatching",
+      "declaration": "public void StopWatching()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

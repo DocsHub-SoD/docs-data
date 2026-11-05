@@ -1,0 +1,219 @@
+{
+  "uid": "Global.Artifact",
+  "name": "Artifact",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Type)]\npublic class Artifact : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, ICustomInteractable",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "ICustomInteractable",
+      "href": "Global.ICustomInteractable.html",
+      "uid": "Global.ICustomInteractable"
+    }
+  ],
+  "fields": [
+    {
+      "name": "icon",
+      "id": "Global_Artifact_icon",
+      "declaration": "public Sprite icon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainColor",
+      "id": "Global_Artifact_mainColor",
+      "declaration": "[ColorUsage(false)]\npublic Color mainColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "touchSound",
+      "id": "Global_Artifact_touchSound",
+      "declaration": "public DewAudioClip touchSound",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "altInteractProgress",
+      "id": "Global_Artifact_altInteractProgress",
+      "declaration": "public float? altInteractProgress { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canAltInteract",
+      "id": "Global_Artifact_canAltInteract",
+      "declaration": "public bool canAltInteract { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_Artifact_canInteractWithMouse",
+      "declaration": "public bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cost",
+      "id": "Global_Artifact_cost",
+      "declaration": "public Cost cost { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_Artifact_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "grantedStardust",
+      "id": "Global_Artifact_grantedStardust",
+      "declaration": "public int grantedStardust { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactActionRawText",
+      "id": "Global_Artifact_interactActionRawText",
+      "declaration": "public string interactActionRawText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactAltActionRawText",
+      "id": "Global_Artifact_interactAltActionRawText",
+      "declaration": "public string interactAltActionRawText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_Artifact_interactPivot",
+      "declaration": "public Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nameRawText",
+      "id": "Global_Artifact_nameRawText",
+      "declaration": "public string nameRawText { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_Artifact_priority",
+      "declaration": "public int priority { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_Artifact_CanInteract_Entity_",
+      "declaration": "public bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Artifact_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Artifact_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteract(Entity, bool)",
+      "id": "Global_Artifact_OnInteract_Entity_System_Boolean_",
+      "declaration": "public void OnInteract(Entity entity, bool alt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "alt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

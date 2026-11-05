@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewLaunchOptions",
+  "name": "DewLaunchOptions",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewLaunchOptions",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "connectLobby",
+      "id": "Global_DewLaunchOptions_connectLobby",
+      "declaration": "public static string connectLobby",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "forceGamepad",
+      "id": "Global_DewLaunchOptions_forceGamepad",
+      "declaration": "public static bool forceGamepad",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "forceKeyboardAndMouse",
+      "id": "Global_DewLaunchOptions_forceKeyboardAndMouse",
+      "declaration": "public static bool forceKeyboardAndMouse",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modDir",
+      "id": "Global_DewLaunchOptions_modDir",
+      "declaration": "public static string modDir",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "steamNoRestart",
+      "id": "Global_DewLaunchOptions_steamNoRestart",
+      "declaration": "public static bool steamNoRestart",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

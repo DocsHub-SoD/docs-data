@@ -1,0 +1,24 @@
+{
+  "uid": "Global.EntityVisualPoint",
+  "name": "EntityVisualPoint",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityVisualPoint : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "type",
+      "id": "Global_EntityVisualPoint_type",
+      "declaration": "public EntityVisualPointType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

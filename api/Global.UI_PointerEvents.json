@@ -1,0 +1,132 @@
+{
+  "uid": "Global.UI_PointerEvents",
+  "name": "UI_PointerEvents",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_PointerEvents : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onPointerClick",
+      "id": "Global_UI_PointerEvents_onPointerClick",
+      "declaration": "public UnityEvent onPointerClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerDown",
+      "id": "Global_UI_PointerEvents_onPointerDown",
+      "declaration": "public UnityEvent onPointerDown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerEnter",
+      "id": "Global_UI_PointerEvents_onPointerEnter",
+      "declaration": "public UnityEvent onPointerEnter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerExit",
+      "id": "Global_UI_PointerEvents_onPointerExit",
+      "declaration": "public UnityEvent onPointerExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onPointerUp",
+      "id": "Global_UI_PointerEvents_onPointerUp",
+      "declaration": "public UnityEvent onPointerUp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnPointerClick(PointerEventData)",
+      "id": "Global_UI_PointerEvents_OnPointerClick_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerClick(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerDown(PointerEventData)",
+      "id": "Global_UI_PointerEvents_OnPointerDown_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerDown(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerEnter(PointerEventData)",
+      "id": "Global_UI_PointerEvents_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerEnter(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerExit(PointerEventData)",
+      "id": "Global_UI_PointerEvents_OnPointerExit_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerExit(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnPointerUp(PointerEventData)",
+      "id": "Global_UI_PointerEvents_OnPointerUp_UnityEngine_EventSystems_PointerEventData_",
+      "declaration": "public void OnPointerUp(PointerEventData eventData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "eventData",
+          "type": "UnityEngine.EventSystems.PointerEventData",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,73 @@
+{
+  "uid": "Global.LeveledPropertyTools",
+  "name": "LeveledPropertyTools",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class LeveledPropertyTools",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ParseFloatValues(string)",
+      "id": "Global_LeveledPropertyTools_ParseFloatValues_System_String_",
+      "declaration": "public static float[] ParseFloatValues(string values)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "values",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float[]"
+    },
+    {
+      "name": "ParseIntValues(string)",
+      "id": "Global_LeveledPropertyTools_ParseIntValues_System_String_",
+      "declaration": "public static int[] ParseIntValues(string values)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "values",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int[]"
+    },
+    {
+      "name": "SetPropertyOrFieldValue(object, string, string)",
+      "id": "Global_LeveledPropertyTools_SetPropertyOrFieldValue_System_Object_System_String_System_String_",
+      "declaration": "public static void SetPropertyOrFieldValue(object target, string name, string value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

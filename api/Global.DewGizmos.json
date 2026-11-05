@@ -1,0 +1,136 @@
+{
+  "uid": "Global.DewGizmos",
+  "name": "DewGizmos",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewGizmos",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "DrawArrow(Vector3, Vector3, Color, float)",
+      "id": "Global_DewGizmos_DrawArrow_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Color_System_Single_",
+      "declaration": "public static void DrawArrow(Vector3 start, Vector3 end, Color color, float headSize)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "headSize",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DrawLine(Vector3, Vector3, Color)",
+      "id": "Global_DewGizmos_DrawLine_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Color_",
+      "declaration": "public static void DrawLine(Vector3 start, Vector3 end, Color color)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DrawRift(Color, Vector3, Quaternion)",
+      "id": "Global_DewGizmos_DrawRift_UnityEngine_Color_UnityEngine_Vector3_UnityEngine_Quaternion_",
+      "declaration": "public static void DrawRift(Color color, Vector3 position, Quaternion rotation)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DrawText(string, Vector3, Color, int)",
+      "id": "Global_DewGizmos_DrawText_System_String_UnityEngine_Vector3_UnityEngine_Color_System_Int32_",
+      "declaration": "public static void DrawText(string text, Vector3 pos, Color color, int fontSize)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fontSize",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

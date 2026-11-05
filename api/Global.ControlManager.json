@@ -1,0 +1,1404 @@
+{
+  "uid": "Global.ControlManager",
+  "name": "ControlManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(-500)]\npublic class ControlManager : ManagerBase<ControlManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "ControlManager",
+      "href": "Global.ControlManager.html",
+      "uid": "Global.ControlManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "aimPointUi",
+      "id": "Global_ControlManager_aimPointUi",
+      "declaration": "public GameObject aimPointUi",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackMarker",
+      "id": "Global_ControlManager_attackMarker",
+      "declaration": "public CommandMarker attackMarker",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DirectionalControlStandStillActionGracePeriod",
+      "id": "Global_ControlManager_DirectionalControlStandStillActionGracePeriod",
+      "declaration": "public const float DirectionalControlStandStillActionGracePeriod = 0.3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleConstraint",
+      "id": "Global_ControlManager_dismantleConstraint",
+      "declaration": "[NonSerialized]\npublic Func<Object, bool> dismantleConstraint",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dropConstraint",
+      "id": "Global_ControlManager_dropConstraint",
+      "declaration": "[NonSerialized]\npublic Func<Object, bool> dropConstraint",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gemLocationConstraint",
+      "id": "Global_ControlManager_gemLocationConstraint",
+      "declaration": "[NonSerialized]\npublic HeroSkillLocation? gemLocationConstraint",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HeroSkillTypes",
+      "id": "Global_ControlManager_HeroSkillTypes",
+      "declaration": "public static readonly HeroSkillLocation[] HeroSkillTypes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactMarker",
+      "id": "Global_ControlManager_interactMarker",
+      "declaration": "public CommandMarker interactMarker",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDismantleDisabled",
+      "id": "Global_ControlManager_isDismantleDisabled",
+      "declaration": "[NonSerialized]\npublic bool isDismantleDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDodgeDisabled",
+      "id": "Global_ControlManager_isDodgeDisabled",
+      "declaration": "[NonSerialized]\npublic bool isDodgeDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isEditSkillDisabled",
+      "id": "Global_ControlManager_isEditSkillDisabled",
+      "declaration": "[NonSerialized]\npublic bool isEditSkillDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMainSkillDisabled",
+      "id": "Global_ControlManager_isMainSkillDisabled",
+      "declaration": "[NonSerialized]\npublic bool isMainSkillDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isWorldMapDisabled",
+      "id": "Global_ControlManager_isWorldMapDisabled",
+      "declaration": "[NonSerialized]\npublic bool isWorldMapDisabled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_attackInPlace",
+      "id": "Global_ControlManager_it_attackInPlace",
+      "declaration": "public DewInputTrigger it_attackInPlace",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_attackMoveImmediately",
+      "id": "Global_ControlManager_it_attackMoveImmediately",
+      "declaration": "public DewInputTrigger it_attackMoveImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_attackMoveNormal",
+      "id": "Global_ControlManager_it_attackMoveNormal",
+      "declaration": "public DewInputTrigger it_attackMoveNormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_attackMoveOnRelease",
+      "id": "Global_ControlManager_it_attackMoveOnRelease",
+      "declaration": "public DewInputTrigger it_attackMoveOnRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_cancelNormalCast",
+      "id": "Global_ControlManager_it_cancelNormalCast",
+      "declaration": "public DewInputTrigger it_cancelNormalCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_confirmCast",
+      "id": "Global_ControlManager_it_confirmCast",
+      "declaration": "public DewInputTrigger it_confirmCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_editSkillHold",
+      "id": "Global_ControlManager_it_editSkillHold",
+      "declaration": "public DewInputTrigger it_editSkillHold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_editSkillToggle",
+      "id": "Global_ControlManager_it_editSkillToggle",
+      "declaration": "public DewInputTrigger it_editSkillToggle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_interact",
+      "id": "Global_ControlManager_it_interact",
+      "declaration": "public DewInputTrigger it_interact",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_interactAlt",
+      "id": "Global_ControlManager_it_interactAlt",
+      "declaration": "public DewInputTrigger it_interactAlt",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_move",
+      "id": "Global_ControlManager_it_move",
+      "declaration": "public DewInputTrigger it_move",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_moveDown",
+      "id": "Global_ControlManager_it_moveDown",
+      "declaration": "public DewInputTrigger it_moveDown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_moveLeft",
+      "id": "Global_ControlManager_it_moveLeft",
+      "declaration": "public DewInputTrigger it_moveLeft",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_moveRight",
+      "id": "Global_ControlManager_it_moveRight",
+      "declaration": "public DewInputTrigger it_moveRight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_moveUp",
+      "id": "Global_ControlManager_it_moveUp",
+      "declaration": "public DewInputTrigger it_moveUp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_ping",
+      "id": "Global_ControlManager_it_ping",
+      "declaration": "public DewInputTrigger it_ping",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_scoreboard",
+      "id": "Global_ControlManager_it_scoreboard",
+      "declaration": "public DewInputTrigger it_scoreboard",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_showDetails",
+      "id": "Global_ControlManager_it_showDetails",
+      "declaration": "public DewInputTrigger it_showDetails",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillE",
+      "id": "Global_ControlManager_it_skillE",
+      "declaration": "public DewInputTrigger it_skillE",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillEEdit",
+      "id": "Global_ControlManager_it_skillEEdit",
+      "declaration": "public DewInputTrigger it_skillEEdit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillEImmediately",
+      "id": "Global_ControlManager_it_skillEImmediately",
+      "declaration": "public DewInputTrigger it_skillEImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillENormal",
+      "id": "Global_ControlManager_it_skillENormal",
+      "declaration": "public DewInputTrigger it_skillENormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillEOnRelease",
+      "id": "Global_ControlManager_it_skillEOnRelease",
+      "declaration": "public DewInputTrigger it_skillEOnRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillESelf",
+      "id": "Global_ControlManager_it_skillESelf",
+      "declaration": "public DewInputTrigger it_skillESelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillIdentityEdit",
+      "id": "Global_ControlManager_it_skillIdentityEdit",
+      "declaration": "public DewInputTrigger it_skillIdentityEdit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillMovement",
+      "id": "Global_ControlManager_it_skillMovement",
+      "declaration": "public DewInputTrigger it_skillMovement",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillMovementImmediately",
+      "id": "Global_ControlManager_it_skillMovementImmediately",
+      "declaration": "public DewInputTrigger it_skillMovementImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillMovementNormal",
+      "id": "Global_ControlManager_it_skillMovementNormal",
+      "declaration": "public DewInputTrigger it_skillMovementNormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillMovementOnRelease",
+      "id": "Global_ControlManager_it_skillMovementOnRelease",
+      "declaration": "public DewInputTrigger it_skillMovementOnRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillQ",
+      "id": "Global_ControlManager_it_skillQ",
+      "declaration": "public DewInputTrigger it_skillQ",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillQEdit",
+      "id": "Global_ControlManager_it_skillQEdit",
+      "declaration": "public DewInputTrigger it_skillQEdit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillQImmediately",
+      "id": "Global_ControlManager_it_skillQImmediately",
+      "declaration": "public DewInputTrigger it_skillQImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillQNormal",
+      "id": "Global_ControlManager_it_skillQNormal",
+      "declaration": "public DewInputTrigger it_skillQNormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillQOnRelease",
+      "id": "Global_ControlManager_it_skillQOnRelease",
+      "declaration": "public DewInputTrigger it_skillQOnRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillQSelf",
+      "id": "Global_ControlManager_it_skillQSelf",
+      "declaration": "public DewInputTrigger it_skillQSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillR",
+      "id": "Global_ControlManager_it_skillR",
+      "declaration": "public DewInputTrigger it_skillR",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillREdit",
+      "id": "Global_ControlManager_it_skillREdit",
+      "declaration": "public DewInputTrigger it_skillREdit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillRImmediately",
+      "id": "Global_ControlManager_it_skillRImmediately",
+      "declaration": "public DewInputTrigger it_skillRImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillRNormal",
+      "id": "Global_ControlManager_it_skillRNormal",
+      "declaration": "public DewInputTrigger it_skillRNormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillROnRelease",
+      "id": "Global_ControlManager_it_skillROnRelease",
+      "declaration": "public DewInputTrigger it_skillROnRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillRSelf",
+      "id": "Global_ControlManager_it_skillRSelf",
+      "declaration": "public DewInputTrigger it_skillRSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillW",
+      "id": "Global_ControlManager_it_skillW",
+      "declaration": "public DewInputTrigger it_skillW",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillWEdit",
+      "id": "Global_ControlManager_it_skillWEdit",
+      "declaration": "public DewInputTrigger it_skillWEdit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillWImmediately",
+      "id": "Global_ControlManager_it_skillWImmediately",
+      "declaration": "public DewInputTrigger it_skillWImmediately",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillWNormal",
+      "id": "Global_ControlManager_it_skillWNormal",
+      "declaration": "public DewInputTrigger it_skillWNormal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillWOnRelease",
+      "id": "Global_ControlManager_it_skillWOnRelease",
+      "declaration": "public DewInputTrigger it_skillWOnRelease",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_skillWSelf",
+      "id": "Global_ControlManager_it_skillWSelf",
+      "declaration": "public DewInputTrigger it_skillWSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_spectatorNextTarget",
+      "id": "Global_ControlManager_it_spectatorNextTarget",
+      "declaration": "public DewInputTrigger it_spectatorNextTarget",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_stop",
+      "id": "Global_ControlManager_it_stop",
+      "declaration": "public DewInputTrigger it_stop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_travelVote",
+      "id": "Global_ControlManager_it_travelVote",
+      "declaration": "public DewInputTrigger it_travelVote",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_travelVoteCancel",
+      "id": "Global_ControlManager_it_travelVoteCancel",
+      "declaration": "public DewInputTrigger it_travelVoteCancel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_worldMap",
+      "id": "Global_ControlManager_it_worldMap",
+      "declaration": "public DewInputTrigger it_worldMap",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_zoomInCamera",
+      "id": "Global_ControlManager_it_zoomInCamera",
+      "declaration": "public DewInputTrigger it_zoomInCamera",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "it_zoomOutCamera",
+      "id": "Global_ControlManager_it_zoomOutCamera",
+      "declaration": "public DewInputTrigger it_zoomOutCamera",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "moveMarker",
+      "id": "Global_ControlManager_moveMarker",
+      "declaration": "public CommandMarker moveMarker",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "noTargetIndicator",
+      "id": "Global_ControlManager_noTargetIndicator",
+      "declaration": "public GameObject noTargetIndicator",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "noTargetIndicatorParent",
+      "id": "Global_ControlManager_noTargetIndicatorParent",
+      "declaration": "public Transform noTargetIndicatorParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onCastFailed",
+      "id": "Global_ControlManager_onCastFailed",
+      "declaration": "public Action<AbilityTrigger> onCastFailed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFocusedInteractableChanged",
+      "id": "Global_ControlManager_onFocusedInteractableChanged",
+      "declaration": "public Action<IInteractable> onFocusedInteractableChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSelectedEntityChanged",
+      "id": "Global_ControlManager_onSelectedEntityChanged",
+      "declaration": "public Action<Entity, Entity> onSelectedEntityChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_ControlManager_state",
+      "declaration": "public ControlManager.ControlState state",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetEnemyIndicatorUi",
+      "id": "Global_ControlManager_targetEnemyIndicatorUi",
+      "declaration": "public GameObject targetEnemyIndicatorUi",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetEnemyIndicatorWorld",
+      "id": "Global_ControlManager_targetEnemyIndicatorWorld",
+      "declaration": "public GameObject targetEnemyIndicatorWorld",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "aimDirection",
+      "id": "Global_ControlManager_aimDirection",
+      "declaration": "public Vector3? aimDirection { get; }",
+      "summary": "This value is not normalized. Available when controlling with gamepad.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "aimPoint",
+      "id": "Global_ControlManager_aimPoint",
+      "declaration": "public Vector3? aimPoint { get; }",
+      "summary": "Position of the aim point. Available when controlling with gamepad.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "controllingEntity",
+      "id": "Global_ControlManager_controllingEntity",
+      "declaration": "public Entity controllingEntity { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusedInteractable",
+      "id": "Global_ControlManager_focusedInteractable",
+      "declaration": "public IInteractable focusedInteractable { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCharacterControlEnabled",
+      "id": "Global_ControlManager_isCharacterControlEnabled",
+      "declaration": "public bool isCharacterControlEnabled { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isFocusedInteractableAtCursor",
+      "id": "Global_ControlManager_isFocusedInteractableAtCursor",
+      "declaration": "public bool isFocusedInteractableAtCursor { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLastMovementDirectionFresh",
+      "id": "Global_ControlManager_isLastMovementDirectionFresh",
+      "declaration": "public bool isLastMovementDirectionFresh { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMovementSchemeDirectional",
+      "id": "Global_ControlManager_isMovementSchemeDirectional",
+      "declaration": "public bool isMovementSchemeDirectional { get; }",
+      "summary": "Is current user's main movement scheme directional movement?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastMovementDirection",
+      "id": "Global_ControlManager_lastMovementDirection",
+      "declaration": "public Vector3 lastMovementDirection { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastMovementStrength",
+      "id": "Global_ControlManager_lastMovementStrength",
+      "declaration": "public float lastMovementStrength { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldProcessCharacterInput",
+      "id": "Global_ControlManager_shouldProcessCharacterInput",
+      "declaration": "public bool shouldProcessCharacterInput { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldProcessCharacterInputAllowKnockedOut",
+      "id": "Global_ControlManager_shouldProcessCharacterInputAllowKnockedOut",
+      "declaration": "public bool shouldProcessCharacterInputAllowKnockedOut { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetEnemy",
+      "id": "Global_ControlManager_targetEnemy",
+      "declaration": "public Entity targetEnemy { get; }",
+      "summary": "Available when controlling with gamepad.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AreControlsInverted()",
+      "id": "Global_ControlManager_AreControlsInverted",
+      "declaration": "public static bool AreControlsInverted()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_ControlManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CastAbility(AbilityTrigger, CastInfo, bool)",
+      "id": "Global_ControlManager_CastAbility_AbilityTrigger_CastInfo_System_Boolean_",
+      "declaration": "public void CastAbility(AbilityTrigger trigger, CastInfo info, bool shouldMoveToCast)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "shouldMoveToCast",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CastAbilityAtCursor(AbilityTrigger)",
+      "id": "Global_ControlManager_CastAbilityAtCursor_AbilityTrigger_",
+      "declaration": "public bool CastAbilityAtCursor(AbilityTrigger trigger)",
+      "summary": "Returns whether the cast attempt was successful or not.",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CastAbilityAuto(AbilityTrigger)",
+      "id": "Global_ControlManager_CastAbilityAuto_AbilityTrigger_",
+      "declaration": "public bool CastAbilityAuto(AbilityTrigger trigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CastAbilityGamepad(AbilityTrigger)",
+      "id": "Global_ControlManager_CastAbilityGamepad_AbilityTrigger_",
+      "declaration": "public bool CastAbilityGamepad(AbilityTrigger trigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CastAbilityInDirectionOfMovement(AbilityTrigger)",
+      "id": "Global_ControlManager_CastAbilityInDirectionOfMovement_AbilityTrigger_",
+      "declaration": "public bool CastAbilityInDirectionOfMovement(AbilityTrigger trigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CastAbilityWithAim(AbilityTrigger)",
+      "id": "Global_ControlManager_CastAbilityWithAim_AbilityTrigger_",
+      "declaration": "public bool CastAbilityWithAim(AbilityTrigger trigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "DisableCharacterControls()",
+      "id": "Global_ControlManager_DisableCharacterControls",
+      "declaration": "public void DisableCharacterControls()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EnableCharacterControls()",
+      "id": "Global_ControlManager_EnableCharacterControls",
+      "declaration": "public void EnableCharacterControls()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_ControlManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GetAimAssistAttackTargetAngleGamepad()",
+      "id": "Global_ControlManager_GetAimAssistAttackTargetAngleGamepad",
+      "declaration": "public static float GetAimAssistAttackTargetAngleGamepad()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetAimAssistAttackTargetRange()",
+      "id": "Global_ControlManager_GetAimAssistAttackTargetRange",
+      "declaration": "public static float GetAimAssistAttackTargetRange()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetAimAssistSphereCastRadius()",
+      "id": "Global_ControlManager_GetAimAssistSphereCastRadius",
+      "declaration": "public static float GetAimAssistSphereCastRadius()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetCastInfo(CastMethodData, AbilityTargetValidator, CastInfo)",
+      "id": "Global_ControlManager_GetCastInfo_CastMethodData_AbilityTargetValidator_CastInfo_",
+      "declaration": "public CastInfo GetCastInfo(CastMethodData method, AbilityTargetValidator targetValidator, CastInfo prev = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "method",
+          "type": "CastMethodData",
+          "type_uid": "Global.CastMethodData",
+          "description": ""
+        },
+        {
+          "name": "targetValidator",
+          "type": "AbilityTargetValidator",
+          "type_uid": "Global.AbilityTargetValidator",
+          "description": ""
+        },
+        {
+          "name": "prev",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        }
+      ],
+      "returns": "CastInfo"
+    },
+    {
+      "name": "GetEntityFromScreenPoint(Vector2, Entity, IBinaryEntityValidator, float)",
+      "id": "Global_ControlManager_GetEntityFromScreenPoint_UnityEngine_Vector2_Entity_IBinaryEntityValidator_System_Single_",
+      "declaration": "public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Entity self, IBinaryEntityValidator validator, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityFromScreenPoint(Vector2, IEntityValidator, float)",
+      "id": "Global_ControlManager_GetEntityFromScreenPoint_UnityEngine_Vector2_IEntityValidator_System_Single_",
+      "declaration": "public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, IEntityValidator validator, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityFromScreenPoint(Vector2, Func<Entity, bool>, float)",
+      "id": "Global_ControlManager_GetEntityFromScreenPoint_UnityEngine_Vector2_System_Func_Entity_System_Boolean__System_Single_",
+      "declaration": "public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, Func<Entity, bool> validator, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><Entity,bool>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityFromScreenPoint(Vector2, float)",
+      "id": "Global_ControlManager_GetEntityFromScreenPoint_UnityEngine_Vector2_System_Single_",
+      "declaration": "public static Entity GetEntityFromScreenPoint(Vector2 screenPoint, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityOnCursor(Entity, IBinaryEntityValidator, float)",
+      "id": "Global_ControlManager_GetEntityOnCursor_Entity_IBinaryEntityValidator_System_Single_",
+      "declaration": "public static Entity GetEntityOnCursor(Entity self, IBinaryEntityValidator validator, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityOnCursor(IEntityValidator, float)",
+      "id": "Global_ControlManager_GetEntityOnCursor_IEntityValidator_System_Single_",
+      "declaration": "public static Entity GetEntityOnCursor(IEntityValidator validator, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityOnCursor(Func<Entity, bool>, float)",
+      "id": "Global_ControlManager_GetEntityOnCursor_System_Func_Entity_System_Boolean__System_Single_",
+      "declaration": "public static Entity GetEntityOnCursor(Func<Entity, bool> validator, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><Entity,bool>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetEntityOnCursor(float)",
+      "id": "Global_ControlManager_GetEntityOnCursor_System_Single_",
+      "declaration": "public static Entity GetEntityOnCursor(float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Entity"
+    },
+    {
+      "name": "GetFromScreenPoint<T>(Vector2, int, Func<T, bool>, float)",
+      "id": "Global_ControlManager_GetFromScreenPoint__1_UnityEngine_Vector2_System_Int32_System_Func___0_System_Boolean__System_Single_",
+      "declaration": "public static T GetFromScreenPoint<T>(Vector2 screenPoint, int layerMask, Func<T, bool> validator = null, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "layerMask",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><T,bool>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetHighlightableFromScreenPoint(Vector2)",
+      "id": "Global_ControlManager_GetHighlightableFromScreenPoint_UnityEngine_Vector2_",
+      "declaration": "public static HighlightProvider GetHighlightableFromScreenPoint(Vector2 screenPoint)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "HighlightProvider"
+    },
+    {
+      "name": "GetHighlightableOnCursor()",
+      "id": "Global_ControlManager_GetHighlightableOnCursor",
+      "declaration": "public static HighlightProvider GetHighlightableOnCursor()",
+      "summary": "",
+      "parameters": [],
+      "returns": "HighlightProvider"
+    },
+    {
+      "name": "GetInteractableFromScreenPoint(Vector2, float)",
+      "id": "Global_ControlManager_GetInteractableFromScreenPoint_UnityEngine_Vector2_System_Single_",
+      "declaration": "public static IInteractable GetInteractableFromScreenPoint(Vector2 screenPoint, float sphereCastRadius = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sphereCastRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "IInteractable"
+    },
+    {
+      "name": "GetInteractableOnCursor()",
+      "id": "Global_ControlManager_GetInteractableOnCursor",
+      "declaration": "public static IInteractable GetInteractableOnCursor()",
+      "summary": "",
+      "parameters": [],
+      "returns": "IInteractable"
+    },
+    {
+      "name": "GetMousePositionWithInversionInMind()",
+      "id": "Global_ControlManager_GetMousePositionWithInversionInMind",
+      "declaration": "public static Vector2 GetMousePositionWithInversionInMind()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "GetSkillBinding(HeroSkillLocation)",
+      "id": "Global_ControlManager_GetSkillBinding_HeroSkillLocation_",
+      "declaration": "public DewBinding GetSkillBinding(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "DewBinding"
+    },
+    {
+      "name": "GetSkillInputTrigger(HeroSkillLocation)",
+      "id": "Global_ControlManager_GetSkillInputTrigger_HeroSkillLocation_",
+      "declaration": "public DewInputTrigger GetSkillInputTrigger(HeroSkillLocation type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "HeroSkillLocation",
+          "type_uid": "Global.HeroSkillLocation",
+          "description": ""
+        }
+      ],
+      "returns": "DewInputTrigger"
+    },
+    {
+      "name": "GetWorldPositionOnGroundFromScreenPoint(Vector2, bool)",
+      "id": "Global_ControlManager_GetWorldPositionOnGroundFromScreenPoint_UnityEngine_Vector2_System_Boolean_",
+      "declaration": "public static Vector3 GetWorldPositionOnGroundFromScreenPoint(Vector2 screenPoint, bool forDirectionalAttacks)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "forDirectionalAttacks",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetWorldPositionOnGroundFromViewportPoint(Vector2, bool)",
+      "id": "Global_ControlManager_GetWorldPositionOnGroundFromViewportPoint_UnityEngine_Vector2_System_Boolean_",
+      "declaration": "public static Vector3 GetWorldPositionOnGroundFromViewportPoint(Vector2 viewportPoint, bool forDirectionalAttacks)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "viewportPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "forDirectionalAttacks",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetWorldPositionOnGroundOnCursor(bool)",
+      "id": "Global_ControlManager_GetWorldPositionOnGroundOnCursor_System_Boolean_",
+      "declaration": "public static Vector3 GetWorldPositionOnGroundOnCursor(bool forDirectionalAttacks = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "forDirectionalAttacks",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "IsInputFieldFocused()",
+      "id": "Global_ControlManager_IsInputFieldFocused",
+      "declaration": "public static bool IsInputFieldFocused()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_ControlManager_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SendPingGamepad()",
+      "id": "Global_ControlManager_SendPingGamepad",
+      "declaration": "public void SendPingGamepad()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetCastByKeyFlag(AbilityTrigger, bool, DewInputTrigger)",
+      "id": "Global_ControlManager_SetCastByKeyFlag_AbilityTrigger_System_Boolean_DewInputTrigger_",
+      "declaration": "public void SetCastByKeyFlag(AbilityTrigger trigger, bool value, DewInputTrigger it)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "it",
+          "type": "DewInputTrigger",
+          "type_uid": "Global.DewInputTrigger",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldCastInDirectionOfMovement(AbilityTrigger)",
+      "id": "Global_ControlManager_ShouldCastInDirectionOfMovement_AbilityTrigger_",
+      "declaration": "public bool ShouldCastInDirectionOfMovement(AbilityTrigger trigger)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "AbilityTrigger",
+          "type_uid": "Global.AbilityTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ShouldProcessPingInput()",
+      "id": "Global_ControlManager_ShouldProcessPingInput",
+      "declaration": "public bool ShouldProcessPingInput()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

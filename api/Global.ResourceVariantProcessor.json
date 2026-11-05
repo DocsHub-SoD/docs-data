@@ -1,0 +1,15 @@
+{
+  "uid": "Global.ResourceVariantProcessor",
+  "name": "ResourceVariantProcessor",
+  "kind": "Delegate",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public delegate Action ResourceVariantProcessor(Object obj)",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

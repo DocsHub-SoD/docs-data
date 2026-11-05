@@ -1,0 +1,24 @@
+{
+  "uid": "Global.AchUnlockOnComplete",
+  "name": "AchUnlockOnComplete",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Class)]\npublic class AchUnlockOnComplete : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "targetType",
+      "id": "Global_AchUnlockOnComplete_targetType",
+      "declaration": "public Type targetType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,65 @@
+{
+  "uid": "Global.EntityColorModifier",
+  "name": "EntityColorModifier",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityColorModifier",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "baseColor",
+      "id": "Global_EntityColorModifier_baseColor",
+      "declaration": "public Color baseColor { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissolveAmount",
+      "id": "Global_EntityColorModifier_dissolveAmount",
+      "declaration": "public float dissolveAmount { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissolveColor",
+      "id": "Global_EntityColorModifier_dissolveColor",
+      "declaration": "public Color? dissolveColor { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "emission",
+      "id": "Global_EntityColorModifier_emission",
+      "declaration": "public Color emission { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "opacity",
+      "id": "Global_EntityColorModifier_opacity",
+      "declaration": "public float opacity { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Stop()",
+      "id": "Global_EntityColorModifier_Stop",
+      "declaration": "public void Stop()",
+      "summary": "Remove this color modifier from its parent.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

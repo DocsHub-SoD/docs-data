@@ -1,0 +1,79 @@
+{
+  "uid": "Global.HighlightProvider",
+  "name": "HighlightProvider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(500)]\npublic class HighlightProvider : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "MaterialHighlightProvider",
+      "href": "Global.MaterialHighlightProvider.html",
+      "uid": "Global.MaterialHighlightProvider"
+    },
+    {
+      "name": "MeshHighlightProvider",
+      "href": "Global.MeshHighlightProvider.html",
+      "uid": "Global.MeshHighlightProvider"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "cursorStatus",
+      "id": "Global_HighlightProvider_cursorStatus",
+      "declaration": "public HighlightProvider.CursorStatus cursorStatus { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elapsedClickTime",
+      "id": "Global_HighlightProvider_elapsedClickTime",
+      "declaration": "public float elapsedClickTime { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnClickTimeUpdated()",
+      "id": "Global_HighlightProvider_OnClickTimeUpdated",
+      "declaration": "protected virtual void OnClickTimeUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCursorStatusUpdated()",
+      "id": "Global_HighlightProvider_OnCursorStatusUpdated",
+      "declaration": "protected virtual void OnCursorStatusUpdated()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShowClick()",
+      "id": "Global_HighlightProvider_ShowClick",
+      "declaration": "public void ShowClick()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

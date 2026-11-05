@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IExcludeFromPool",
+  "name": "IExcludeFromPool",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IExcludeFromPool",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "excludeFromPool",
+      "id": "Global_IExcludeFromPool_excludeFromPool",
+      "declaration": "bool excludeFromPool { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

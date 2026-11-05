@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IShrineCustomAction",
+  "name": "IShrineCustomAction",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IShrineCustomAction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetRawAction()",
+      "id": "Global_IShrineCustomAction_GetRawAction",
+      "declaration": "string GetRawAction()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

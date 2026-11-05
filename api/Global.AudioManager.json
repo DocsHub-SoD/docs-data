@@ -1,0 +1,252 @@
+{
+  "uid": "Global.AudioManager",
+  "name": "AudioManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AudioManager : ManagerBase<AudioManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "AudioManager",
+      "href": "Global.AudioManager.html",
+      "uid": "Global.AudioManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "defaultCurve",
+      "id": "Global_AudioManager_defaultCurve",
+      "declaration": "[Title(\"Volume Roll-offs\", null, TitleAlignments.Left, true, true)]\npublic AnimationCurve defaultCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameBoss",
+      "id": "Global_AudioManager_gameBoss",
+      "declaration": "public AudioMixerGroup gameBoss",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameEnvironment",
+      "id": "Global_AudioManager_gameEnvironment",
+      "declaration": "public AudioMixerGroup gameEnvironment",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameOtherPlayers",
+      "id": "Global_AudioManager_gameOtherPlayers",
+      "declaration": "public AudioMixerGroup gameOtherPlayers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameOthers",
+      "id": "Global_AudioManager_gameOthers",
+      "declaration": "public AudioMixerGroup gameOthers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameSelf",
+      "id": "Global_AudioManager_gameSelf",
+      "declaration": "public AudioMixerGroup gameSelf",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loudCurve",
+      "id": "Global_AudioManager_loudCurve",
+      "declaration": "public AnimationCurve loudCurve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "master",
+      "id": "Global_AudioManager_master",
+      "declaration": "public AudioMixerGroup master",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mixer",
+      "id": "Global_AudioManager_mixer",
+      "declaration": "public AudioMixer mixer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "music",
+      "id": "Global_AudioManager_music",
+      "declaration": "public AudioMixerGroup music",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sfx",
+      "id": "Global_AudioManager_sfx",
+      "declaration": "public AudioMixerGroup sfx",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ui",
+      "id": "Global_AudioManager_ui",
+      "declaration": "public AudioMixerGroup ui",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "shouldRegisterUpdates",
+      "id": "Global_AudioManager_shouldRegisterUpdates",
+      "declaration": "public override bool shouldRegisterUpdates { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "FadeInMasterVolume()",
+      "id": "Global_AudioManager_FadeInMasterVolume",
+      "declaration": "public void FadeInMasterVolume()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FadeOutMasterVolume()",
+      "id": "Global_AudioManager_FadeOutMasterVolume",
+      "declaration": "public void FadeOutMasterVolume()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "NeedsSetupEverytime(AudioType)",
+      "id": "Global_AudioManager_NeedsSetupEverytime_AudioType_",
+      "declaration": "public static bool NeedsSetupEverytime(AudioType type)",
+      "summary": "Does the type needs to be setup everytime before being played?",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "AudioType",
+          "type_uid": "Global.AudioType",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "PlayUISound(AudioClip)",
+      "id": "Global_AudioManager_PlayUISound_UnityEngine_AudioClip_",
+      "declaration": "public void PlayUISound(AudioClip clip)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "clip",
+          "type": "UnityEngine.AudioClip",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetMasterVolumeMultiplier(float)",
+      "id": "Global_AudioManager_SetMasterVolumeMultiplier_System_Single_",
+      "declaration": "public void SetMasterVolumeMultiplier(float multiplier)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "multiplier",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetupAudioSource(AudioSource, AudioType, AudioSpaceType, DewAudioRollOffType, bool)",
+      "id": "Global_AudioManager_SetupAudioSource_UnityEngine_AudioSource_AudioType_AudioSpaceType_DewAudioRollOffType_System_Boolean_",
+      "declaration": "public void SetupAudioSource(AudioSource source, AudioType type, AudioSpaceType space, DewAudioRollOffType rolloff, bool forceCriticalPriority)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "source",
+          "type": "UnityEngine.AudioSource",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "AudioType",
+          "type_uid": "Global.AudioType",
+          "description": ""
+        },
+        {
+          "name": "space",
+          "type": "AudioSpaceType",
+          "type_uid": "Global.AudioSpaceType",
+          "description": ""
+        },
+        {
+          "name": "rolloff",
+          "type": "DewAudioRollOffType",
+          "type_uid": "Global.DewAudioRollOffType",
+          "description": ""
+        },
+        {
+          "name": "forceCriticalPriority",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UpdateMixerAttenuations()",
+      "id": "Global_AudioManager_UpdateMixerAttenuations",
+      "declaration": "public void UpdateMixerAttenuations()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

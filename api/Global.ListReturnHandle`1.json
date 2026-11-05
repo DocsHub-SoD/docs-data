@@ -1,0 +1,33 @@
+{
+  "uid": "Global.ListReturnHandle`1",
+  "name": "ListReturnHandle<T>",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ListReturnHandle<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "needToReturn",
+      "id": "Global_ListReturnHandle_1_needToReturn",
+      "declaration": "public bool needToReturn { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Return()",
+      "id": "Global_ListReturnHandle_1_Return",
+      "declaration": "public void Return()",
+      "summary": "Clear and return the borrowed list.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

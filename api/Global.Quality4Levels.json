@@ -1,0 +1,15 @@
+{
+  "uid": "Global.Quality4Levels",
+  "name": "Quality4Levels",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum Quality4Levels",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

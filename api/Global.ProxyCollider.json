@@ -1,0 +1,48 @@
+{
+  "uid": "Global.ProxyCollider",
+  "name": "ProxyCollider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ProxyCollider : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "collidableWithProjectile",
+      "id": "Global_ProxyCollider_collidableWithProjectile",
+      "declaration": "public ICollidableWithProjectile collidableWithProjectile",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "collider",
+      "id": "Global_ProxyCollider_collider",
+      "declaration": "public Collider2D collider",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "entity",
+      "id": "Global_ProxyCollider_entity",
+      "declaration": "public Entity entity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactable",
+      "id": "Global_ProxyCollider_interactable",
+      "declaration": "public IInteractable interactable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

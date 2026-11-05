@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DamageData.SourceType",
+  "name": "DamageData.SourceType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Flags]\npublic enum DamageData.SourceType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,104 @@
+{
+  "uid": "Global.Knockback",
+  "name": "Knockback",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class Knockback",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "distance",
+      "id": "Global_Knockback_distance",
+      "declaration": "public float distance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_Knockback_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ignoreTenacity",
+      "id": "Global_Knockback_ignoreTenacity",
+      "declaration": "public bool ignoreTenacity",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "ApplyWithDirection(Quaternion, Entity)",
+      "id": "Global_Knockback_ApplyWithDirection_UnityEngine_Quaternion_Entity_",
+      "declaration": "public void ApplyWithDirection(Quaternion rot, Entity to)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rot",
+          "type": "UnityEngine.Quaternion",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "to",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyWithDirection(Vector3, Entity)",
+      "id": "Global_Knockback_ApplyWithDirection_UnityEngine_Vector3_Entity_",
+      "declaration": "public void ApplyWithDirection(Vector3 dir, Entity to)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dir",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "to",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ApplyWithOrigin(Vector3, Entity)",
+      "id": "Global_Knockback_ApplyWithOrigin_UnityEngine_Vector3_Entity_",
+      "declaration": "public void ApplyWithOrigin(Vector3 origin, Entity to)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "origin",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "to",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

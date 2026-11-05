@@ -1,0 +1,52 @@
+{
+  "uid": "Global.ReactionChainComparer",
+  "name": "ReactionChainComparer",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ReactionChainComparer",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Equals(ReactionChain, ReactionChain)",
+      "id": "Global_ReactionChainComparer_Equals_ReactionChain_ReactionChain_",
+      "declaration": "public bool Equals(ReactionChain x, ReactionChain y)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        },
+        {
+          "name": "y",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode(ReactionChain)",
+      "id": "Global_ReactionChainComparer_GetHashCode_ReactionChain_",
+      "declaration": "public int GetHashCode(ReactionChain obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "ReactionChain",
+          "type_uid": "Global.ReactionChain",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,41 @@
+{
+  "uid": "Global.ResourceLoadSettings",
+  "name": "ResourceLoadSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ResourceLoadSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "loadLight",
+      "id": "Global_ResourceLoadSettings_loadLight",
+      "declaration": "public bool loadLight",
+      "summary": "Tries to load a lighter version of the given object with unnecessary things like child game objects removed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "varDef",
+      "id": "Global_ResourceLoadSettings_varDef",
+      "declaration": "public VariantDef varDef",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "Light",
+      "id": "Global_ResourceLoadSettings_Light",
+      "declaration": "public static ResourceLoadSettings Light { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

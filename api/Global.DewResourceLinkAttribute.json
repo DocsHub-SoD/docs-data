@@ -1,0 +1,24 @@
+{
+  "uid": "Global.DewResourceLinkAttribute",
+  "name": "DewResourceLinkAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]\npublic class DewResourceLinkAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "by",
+      "id": "Global_DewResourceLinkAttribute_by",
+      "declaration": "public ResourceLinkBy by",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

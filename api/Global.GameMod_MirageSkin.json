@@ -1,0 +1,124 @@
+{
+  "uid": "Global.GameMod_MirageSkin",
+  "name": "GameMod_MirageSkin",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class GameMod_MirageSkin : GameModifierBase, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "GameEffect",
+      "href": "Global.GameEffect.html",
+      "uid": "Global.GameEffect"
+    },
+    {
+      "name": "GameModifierBase",
+      "href": "Global.GameModifierBase.html",
+      "uid": "Global.GameModifierBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "baseChancesByPlayerCount",
+      "id": "Global_GameMod_MirageSkin_baseChancesByPlayerCount",
+      "declaration": "public GameMod_MirageSkin.MirageSkinChancePerPlayer[] baseChancesByPlayerCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentZonePool",
+      "id": "Global_GameMod_MirageSkin_currentZonePool",
+      "declaration": "[NonSerialized]\n[SaveVar(SaveVarFlags.Default)]\npublic List<AssetRef<MirageSkinEffect>> currentZonePool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_GameMod_MirageSkin_softInstance",
+      "declaration": "public static GameMod_MirageSkin softInstance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_GameMod_MirageSkin_instance",
+      "declaration": "public static GameMod_MirageSkin instance { get; }",
+      "summary": "If you expect the instance to be null, you MUST USE softInstance in Update loops.This will call FindObjectOfType if current instance is null, which can be very expensive.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetCurrentBaseMirageChance()",
+      "id": "Global_GameMod_MirageSkin_GetCurrentBaseMirageChance",
+      "declaration": "public float GetCurrentBaseMirageChance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_GameMod_MirageSkin_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_GameMod_MirageSkin_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RefreshPool()",
+      "id": "Global_GameMod_MirageSkin_RefreshPool",
+      "declaration": "public void RefreshPool()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

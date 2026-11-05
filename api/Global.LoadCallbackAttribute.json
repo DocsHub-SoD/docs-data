@@ -1,0 +1,24 @@
+{
+  "uid": "Global.LoadCallbackAttribute",
+  "name": "LoadCallbackAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Method)]\npublic class LoadCallbackAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "flags",
+      "id": "Global_LoadCallbackAttribute_flags",
+      "declaration": "public readonly SaveVarFlags flags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

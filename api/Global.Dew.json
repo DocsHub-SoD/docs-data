@@ -1,0 +1,4138 @@
+{
+  "uid": "Global.Dew",
+  "name": "Dew",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class Dew",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "CharacterColor",
+      "id": "Global_Dew_CharacterColor",
+      "declaration": "public static readonly Color CharacterColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CharacterColorHex",
+      "id": "Global_Dew_CharacterColorHex",
+      "declaration": "public static readonly string CharacterColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CommonColor",
+      "id": "Global_Dew_CommonColor",
+      "declaration": "public static readonly Color CommonColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CommonColorHex",
+      "id": "Global_Dew_CommonColorHex",
+      "declaration": "public static readonly string CommonColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DestroyDelay",
+      "id": "Global_Dew_DestroyDelay",
+      "declaration": "public const float DestroyDelay = 0.3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DestructionColor",
+      "id": "Global_Dew_DestructionColor",
+      "declaration": "public static readonly Color DestructionColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DreamDustColor",
+      "id": "Global_Dew_DreamDustColor",
+      "declaration": "public static readonly Color DreamDustColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EpicColor",
+      "id": "Global_Dew_EpicColor",
+      "declaration": "public static readonly Color EpicColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EpicColorHex",
+      "id": "Global_Dew_EpicColorHex",
+      "declaration": "public static readonly string EpicColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FlexibleColor",
+      "id": "Global_Dew_FlexibleColor",
+      "declaration": "public static readonly Color FlexibleColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GoldColor",
+      "id": "Global_Dew_GoldColor",
+      "declaration": "public static readonly Color GoldColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HealthColor",
+      "id": "Global_Dew_HealthColor",
+      "declaration": "public static readonly Color HealthColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HeroOrder",
+      "id": "Global_Dew_HeroOrder",
+      "declaration": "public static readonly List<string> HeroOrder",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IdentityColor",
+      "id": "Global_Dew_IdentityColor",
+      "declaration": "public static readonly Color IdentityColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IdentityColorHex",
+      "id": "Global_Dew_IdentityColorHex",
+      "declaration": "public static readonly string IdentityColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ImaginationColor",
+      "id": "Global_Dew_ImaginationColor",
+      "declaration": "public static readonly Color ImaginationColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LegendaryColor",
+      "id": "Global_Dew_LegendaryColor",
+      "declaration": "public static readonly Color LegendaryColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LegendaryColorHex",
+      "id": "Global_Dew_LegendaryColorHex",
+      "declaration": "public static readonly string LegendaryColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LifeColor",
+      "id": "Global_Dew_LifeColor",
+      "declaration": "public static readonly Color LifeColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ObliterationSlotPrice",
+      "id": "Global_Dew_ObliterationSlotPrice",
+      "declaration": "public static readonly int[] ObliterationSlotPrice",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PlatinumCoinColor",
+      "id": "Global_Dew_PlatinumCoinColor",
+      "declaration": "public static readonly Color PlatinumCoinColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RareColor",
+      "id": "Global_Dew_RareColor",
+      "declaration": "public static readonly Color RareColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RareColorHex",
+      "id": "Global_Dew_RareColorHex",
+      "declaration": "public static readonly string RareColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StardustColor",
+      "id": "Global_Dew_StardustColor",
+      "declaration": "public static readonly Color StardustColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UniqueColor",
+      "id": "Global_Dew_UniqueColor",
+      "declaration": "public static readonly Color UniqueColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UniqueColorHex",
+      "id": "Global_Dew_UniqueColorHex",
+      "declaration": "public static readonly string UniqueColorHex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "achievementsByName",
+      "id": "Global_Dew_achievementsByName",
+      "declaration": "public static IReadOnlyDictionary<string, Type> achievementsByName { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allAchievements",
+      "id": "Global_Dew_allAchievements",
+      "declaration": "public static IReadOnlyList<Type> allAchievements { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allArtifacts",
+      "id": "Global_Dew_allArtifacts",
+      "declaration": "public static IReadOnlyList<Type> allArtifacts { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allGameModifiers",
+      "id": "Global_Dew_allGameModifiers",
+      "declaration": "public static IReadOnlyList<Type> allGameModifiers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allGems",
+      "id": "Global_Dew_allGems",
+      "declaration": "public static IReadOnlyList<Type> allGems { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allHeroes",
+      "id": "Global_Dew_allHeroes",
+      "declaration": "public static IReadOnlyList<Type> allHeroes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allHeroSkills",
+      "id": "Global_Dew_allHeroSkills",
+      "declaration": "public static IReadOnlyList<Type> allHeroSkills { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allLucidDreams",
+      "id": "Global_Dew_allLucidDreams",
+      "declaration": "public static IReadOnlyList<Type> allLucidDreams { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allMonsters",
+      "id": "Global_Dew_allMonsters",
+      "declaration": "public static IReadOnlyList<Type> allMonsters { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allOldStars",
+      "id": "Global_Dew_allOldStars",
+      "declaration": "public static IReadOnlyList<DewStarItemOld> allOldStars { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allReveries",
+      "id": "Global_Dew_allReveries",
+      "declaration": "public static IReadOnlyList<DewReverieItem> allReveries { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allRoomModifiers",
+      "id": "Global_Dew_allRoomModifiers",
+      "declaration": "public static IReadOnlyList<Type> allRoomModifiers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allSkills",
+      "id": "Global_Dew_allSkills",
+      "declaration": "public static IReadOnlyList<Type> allSkills { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allStarTypes",
+      "id": "Global_Dew_allStarTypes",
+      "declaration": "public static IReadOnlyList<Type> allStarTypes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allTutorialItems",
+      "id": "Global_Dew_allTutorialItems",
+      "declaration": "public static IReadOnlyList<Type> allTutorialItems { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameCanvas",
+      "id": "Global_Dew_gameCanvas",
+      "declaration": "public static Canvas gameCanvas { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroTypeOfOldStar",
+      "id": "Global_Dew_heroTypeOfOldStar",
+      "declaration": "public static IReadOnlyDictionary<DewStarItemOld, Type> heroTypeOfOldStar { get; }",
+      "summary": "Contains all stars. Non-hero stars will have value of null.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainCamera",
+      "id": "Global_Dew_mainCamera",
+      "declaration": "public static Camera mainCamera { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "resourceLinkTypes",
+      "id": "Global_Dew_resourceLinkTypes",
+      "declaration": "public static IReadOnlyList<(Type, DewResourceLinkAttribute)> resourceLinkTypes { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reveriesByName",
+      "id": "Global_Dew_reveriesByName",
+      "declaration": "public static IReadOnlyDictionary<string, DewReverieItem> reveriesByName { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CallDelayed(Action, int)",
+      "id": "Global_Dew_CallDelayed_System_Action_System_Int32_",
+      "declaration": "public static void CallDelayed(Action func, int frameCount = 1)",
+      "summary": "Call a function delayed by one frame.",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "frameCount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CallOnReady(MonoBehaviour, Func<bool>, Action)",
+      "id": "Global_Dew_CallOnReady_UnityEngine_MonoBehaviour_System_Func_System_Boolean__System_Action_",
+      "declaration": "public static void CallOnReady(MonoBehaviour caller, Func<bool> condition, Action func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "caller",
+          "type": "UnityEngine.MonoBehaviour",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "condition",
+          "type": "System.Func<TResult><bool>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ClearTypeReferences()",
+      "id": "Global_Dew_ClearTypeReferences",
+      "declaration": "public static void ClearTypeReferences()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ContainsData(IDictionary<string, string>, string, string, string)",
+      "id": "Global_Dew_ContainsData_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_System_String_",
+      "declaration": "public static bool ContainsData(this IDictionary<string, string> dict, string key0, string key1, string key2)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ContainsData(IDictionary<string, string>, string, string)",
+      "id": "Global_Dew_ContainsData_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_",
+      "declaration": "public static bool ContainsData(this IDictionary<string, string> dict, string key0, string key1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ContainsData(IDictionary<string, string>, string)",
+      "id": "Global_Dew_ContainsData_System_Collections_Generic_IDictionary_System_String_System_String__System_String_",
+      "declaration": "public static bool ContainsData(this IDictionary<string, string> dict, string key0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ConvertToStringInvariantCulture(object)",
+      "id": "Global_Dew_ConvertToStringInvariantCulture_System_Object_",
+      "declaration": "public static string ConvertToStringInvariantCulture(object value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "CreateAbilityInstance<T>(T, Vector3, Quaternion?, Actor, CastInfo, Action<T>)",
+      "id": "Global_Dew_CreateAbilityInstance__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_CastInfo_System_Action___0__",
+      "declaration": "public static T CreateAbilityInstance<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateAbilityInstance<T>(Vector3, Quaternion?, Actor, CastInfo, Action<T>)",
+      "id": "Global_Dew_CreateAbilityInstance__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_CastInfo_System_Action___0__",
+      "declaration": "public static T CreateAbilityInstance<T>(Vector3 position, Quaternion? rotation, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : AbilityInstance",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateAbilityTrigger<T>(T, Action<T>)",
+      "id": "Global_Dew_CreateAbilityTrigger__1___0_System_Action___0__",
+      "declaration": "public static T CreateAbilityTrigger<T>(T trigger, Action<T> beforePrepare = null) where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateAbilityTrigger<T>(Action<T>)",
+      "id": "Global_Dew_CreateAbilityTrigger__1_System_Action___0__",
+      "declaration": "public static T CreateAbilityTrigger<T>(Action<T> beforeSpawn = null) where T : AbilityTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateActor<T>()",
+      "id": "Global_Dew_CreateActor__1",
+      "declaration": "public static T CreateActor<T>() where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateActor<T>(T, Vector3, Quaternion?, Actor, Action<T>)",
+      "id": "Global_Dew_CreateActor__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_System_Action___0__",
+      "declaration": "public static T CreateActor<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent = null, Action<T> beforePrepare = null) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateActor<T>(Action<T>)",
+      "id": "Global_Dew_CreateActor__1_System_Action___0__",
+      "declaration": "public static T CreateActor<T>(Action<T> beforePrepare = null) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateActor<T>(Vector3, Quaternion?, Actor, Action<T>)",
+      "id": "Global_Dew_CreateActor__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_System_Action___0__",
+      "declaration": "public static T CreateActor<T>(Vector3 position, Quaternion? rotation, Actor parent = null, Action<T> beforePrepare = null) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateGem<T>(T, Vector3, int, DewPlayer, Action<T>)",
+      "id": "Global_Dew_CreateGem__1___0_UnityEngine_Vector3_System_Int32_DewPlayer_System_Action___0__",
+      "declaration": "public static T CreateGem<T>(T gem, Vector3 position, int quality, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : Gem",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "tempOwner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateGem<T>(Vector3, int, DewPlayer, Action<T>)",
+      "id": "Global_Dew_CreateGem__1_UnityEngine_Vector3_System_Int32_DewPlayer_System_Action___0__",
+      "declaration": "public static T CreateGem<T>(Vector3 position, int quality, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : Gem",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "quality",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "tempOwner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateSkillTrigger<T>(T, Vector3, int, DewPlayer, Action<T>)",
+      "id": "Global_Dew_CreateSkillTrigger__1___0_UnityEngine_Vector3_System_Int32_DewPlayer_System_Action___0__",
+      "declaration": "public static T CreateSkillTrigger<T>(T trigger, Vector3 position, int level, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : SkillTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "trigger",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "tempOwner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateSkillTrigger<T>(Vector3, int, DewPlayer, Action<T>)",
+      "id": "Global_Dew_CreateSkillTrigger__1_UnityEngine_Vector3_System_Int32_DewPlayer_System_Action___0__",
+      "declaration": "public static T CreateSkillTrigger<T>(Vector3 position, int level, DewPlayer tempOwner = null, Action<T> beforePrepare = null) where T : SkillTrigger",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "tempOwner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateStatusEffect<T>(T, Entity, Actor, CastInfo, Action<T>)",
+      "id": "Global_Dew_CreateStatusEffect__1___0_Entity_Actor_CastInfo_System_Action___0__",
+      "declaration": "public static T CreateStatusEffect<T>(T prefab, Entity victim, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "CreateStatusEffect<T>(Entity, Actor, CastInfo, Action<T>)",
+      "id": "Global_Dew_CreateStatusEffect__1_Entity_Actor_CastInfo_System_Action___0__",
+      "declaration": "public static T CreateStatusEffect<T>(Entity victim, Actor parent, CastInfo info, Action<T> beforePrepare = null) where T : StatusEffect",
+      "summary": "Create a new status effect and attach it to an entity.This can return null if the creation fails:e.g. Trying to apply a status effect with isKilledByUnstoppable flag to an unstoppable/invulnerable entity.",
+      "parameters": [
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Debounce(Object, float, Action, object)",
+      "id": "Global_Dew_Debounce_UnityEngine_Object_System_Single_System_Action_System_Object_",
+      "declaration": "public static void Debounce(Object owner, float unscaledTime, Action callback, object id = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "owner",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "unscaledTime",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "callback",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "id",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Destroy(GameObject)",
+      "id": "Global_Dew_Destroy_UnityEngine_GameObject_",
+      "declaration": "public static void Destroy(GameObject gameObject)",
+      "summary": "Destroy a networked game object. Despawning and destroying will be delayed for network RPCs and cleanups.",
+      "parameters": [
+        {
+          "name": "gameObject",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FilterNonOkayValues(ref float, float)",
+      "id": "Global_Dew_FilterNonOkayValues_System_Single__System_Single_",
+      "declaration": "public static void FilterNonOkayValues(ref float v, float fallback = 0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "v",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fallback",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FilterNonOkayValues(ref Vector2, Vector2)",
+      "id": "Global_Dew_FilterNonOkayValues_UnityEngine_Vector2__UnityEngine_Vector2_",
+      "declaration": "public static void FilterNonOkayValues(ref Vector2 v, Vector2 fallback = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "v",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fallback",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FilterNonOkayValues(ref Vector3, Vector3)",
+      "id": "Global_Dew_FilterNonOkayValues_UnityEngine_Vector3__UnityEngine_Vector3_",
+      "declaration": "public static void FilterNonOkayValues(ref Vector3 v, Vector3 fallback = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "v",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fallback",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FindActorOfType<T>()",
+      "id": "Global_Dew_FindActorOfType__1",
+      "declaration": "public static T FindActorOfType<T>() where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "FindAllActorsOfType<T>(out ListReturnHandle<T>)",
+      "id": "Global_Dew_FindAllActorsOfType__1_ListReturnHandle___0___",
+      "declaration": "public static List<T> FindAllActorsOfType<T>(out ListReturnHandle<T> handle) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<T>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><T>"
+    },
+    {
+      "name": "FindInterfaceOfType<T>(bool)",
+      "id": "Global_Dew_FindInterfaceOfType__1_System_Boolean_",
+      "declaration": "public static T FindInterfaceOfType<T>(bool includeInactive) where T : class",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "includeInactive",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "FindInterfacesOfType<T>(bool)",
+      "id": "Global_Dew_FindInterfacesOfType__1_System_Boolean_",
+      "declaration": "public static T[] FindInterfacesOfType<T>(bool includeInactive) where T : class",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "includeInactive",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T[]"
+    },
+    {
+      "name": "FormatBigNumbers(float, float, string)",
+      "id": "Global_Dew_FormatBigNumbers_System_Single_System_Single_System_String_",
+      "declaration": "public static string FormatBigNumbers(float number, float threshold, string format)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "number",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "threshold",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetAchievementColor(Type)",
+      "id": "Global_Dew_GetAchievementColor_System_Type_",
+      "declaration": "public static Color GetAchievementColor(Type achievementType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "achievementType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetAchievementColorHex(Type)",
+      "id": "Global_Dew_GetAchievementColorHex_System_Type_",
+      "declaration": "public static string GetAchievementColorHex(Type achievementType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "achievementType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetAliveHeroCount()",
+      "id": "Global_Dew_GetAliveHeroCount",
+      "declaration": "public static int GetAliveHeroCount()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetClosestAliveHero(Vector3, bool)",
+      "id": "Global_Dew_GetClosestAliveHero_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public static Hero GetClosestAliveHero(Vector3 pivot, bool fallbackToDead = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pivot",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fallbackToDead",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Hero"
+    },
+    {
+      "name": "GetClosestHeroDistance(Vector3, bool)",
+      "id": "Global_Dew_GetClosestHeroDistance_UnityEngine_Vector3_System_Boolean_",
+      "declaration": "public static float GetClosestHeroDistance(Vector3 pivot, bool fallbackToDead = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pivot",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fallbackToDead",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetControlPresetWindow()",
+      "id": "Global_Dew_GetControlPresetWindow",
+      "declaration": "public static IControlPresetWindow GetControlPresetWindow()",
+      "summary": "",
+      "parameters": [],
+      "returns": "IControlPresetWindow"
+    },
+    {
+      "name": "GetCoroutiner()",
+      "id": "Global_Dew_GetCoroutiner",
+      "declaration": "public static Coroutiner GetCoroutiner()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Coroutiner"
+    },
+    {
+      "name": "GetCurrencyColor(CurrencyType)",
+      "id": "Global_Dew_GetCurrencyColor_CurrencyType_",
+      "declaration": "public static Color GetCurrencyColor(CurrencyType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "CurrencyType",
+          "type_uid": "Global.CurrencyType",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetCurrencyColorHex(CurrencyType)",
+      "id": "Global_Dew_GetCurrencyColorHex_CurrencyType_",
+      "declaration": "public static string GetCurrencyColorHex(CurrencyType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "CurrencyType",
+          "type_uid": "Global.CurrencyType",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetCurrentMultiplayerCompatibilityVersion()",
+      "id": "Global_Dew_GetCurrentMultiplayerCompatibilityVersion",
+      "declaration": "public static string GetCurrentMultiplayerCompatibilityVersion()",
+      "summary": "Used to check game compatibility between multiplayer host/clients.This special version is used to allow cross-platform multiplayer (DRM-Free, STOVE, Steam, e.g.)",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetData<T>(IDictionary<string, string>, string, string, string)",
+      "id": "Global_Dew_GetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_System_String_",
+      "declaration": "public static T GetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetData<T>(IDictionary<string, string>, string, string)",
+      "id": "Global_Dew_GetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_",
+      "declaration": "public static T GetData<T>(this IDictionary<string, string> dict, string key0, string key1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetData<T>(IDictionary<string, string>, string)",
+      "id": "Global_Dew_GetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_",
+      "declaration": "public static T GetData<T>(this IDictionary<string, string> dict, string key0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetDataKey(string, string, string)",
+      "id": "Global_Dew_GetDataKey_System_String_System_String_System_String_",
+      "declaration": "public static string GetDataKey(string key0, string key1, string key2)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetDataKey(string, string)",
+      "id": "Global_Dew_GetDataKey_System_String_System_String_",
+      "declaration": "public static string GetDataKey(string key0, string key1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetDataKey(string)",
+      "id": "Global_Dew_GetDataKey_System_String_",
+      "declaration": "public static string GetDataKey(string key0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetDataOrDefault<T>(IDictionary<string, string>, string, T)",
+      "id": "Global_Dew_GetDataOrDefault__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String___0_",
+      "declaration": "public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, T defaultValue = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetDataOrDefault<T>(IDictionary<string, string>, string, string, T)",
+      "id": "Global_Dew_GetDataOrDefault__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String___0_",
+      "declaration": "public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, string key1, T defaultValue = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetDataOrDefault<T>(IDictionary<string, string>, string, string, string, T)",
+      "id": "Global_Dew_GetDataOrDefault__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_System_String___0_",
+      "declaration": "public static T GetDataOrDefault<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, T defaultValue = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetDefaultObliterationSlots()",
+      "id": "Global_Dew_GetDefaultObliterationSlots",
+      "declaration": "public static int GetDefaultObliterationSlots()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetDejavuCost(Object, int)",
+      "id": "Global_Dew_GetDejavuCost_UnityEngine_Object_System_Int32_",
+      "declaration": "public static int GetDejavuCost(Object target, int wins = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "wins",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetDejavuMaxWins(Object)",
+      "id": "Global_Dew_GetDejavuMaxWins_UnityEngine_Object_",
+      "declaration": "public static int GetDejavuMaxWins(Object target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetGoodRewardPosition(Vector3, float)",
+      "id": "Global_Dew_GetGoodRewardPosition_UnityEngine_Vector3_System_Single_",
+      "declaration": "public static Vector3 GetGoodRewardPosition(Vector3 pivot, float randomOffset = 2)",
+      "summary": "This applies random offset to pivot and avoids nearby IBanRoomNodesNearby, items and interactables.The position will be traversable by nearest hero.",
+      "parameters": [
+        {
+          "name": "pivot",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "randomOffset",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetHex(Color)",
+      "id": "Global_Dew_GetHex_UnityEngine_Color_",
+      "declaration": "public static string GetHex(Color color)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "color",
+          "type": "UnityEngine.Color",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetMaxObliterationSlots()",
+      "id": "Global_Dew_GetMaxObliterationSlots",
+      "declaration": "public static int GetMaxObliterationSlots()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetMultiplayerCompatibilityVersion(string)",
+      "id": "Global_Dew_GetMultiplayerCompatibilityVersion_System_String_",
+      "declaration": "public static string GetMultiplayerCompatibilityVersion(string bundleVersion)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "bundleVersion",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetNavMeshPath(Vector3, Vector3)",
+      "id": "Global_Dew_GetNavMeshPath_UnityEngine_Vector3_UnityEngine_Vector3_",
+      "declaration": "public static NavMeshPath GetNavMeshPath(Vector3 start, Vector3 end)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.AI.NavMeshPath"
+    },
+    {
+      "name": "GetNavMeshPathStatus(Vector3, Vector3)",
+      "id": "Global_Dew_GetNavMeshPathStatus_UnityEngine_Vector3_UnityEngine_Vector3_",
+      "declaration": "public static NavMeshPathStatus GetNavMeshPathStatus(Vector3 start, Vector3 end)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.AI.NavMeshPathStatus"
+    },
+    {
+      "name": "GetObliterationMinAllowedHeroes()",
+      "id": "Global_Dew_GetObliterationMinAllowedHeroes",
+      "declaration": "public static int GetObliterationMinAllowedHeroes()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetObliterationMinAllowedItemsPerRarity()",
+      "id": "Global_Dew_GetObliterationMinAllowedItemsPerRarity",
+      "declaration": "public static int GetObliterationMinAllowedItemsPerRarity()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetObliterationSlotPrice(int)",
+      "id": "Global_Dew_GetObliterationSlotPrice_System_Int32_",
+      "declaration": "public static int GetObliterationSlotPrice(int slotIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "slotIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetOriginalName(string)",
+      "id": "Global_Dew_GetOriginalName_System_String_",
+      "declaration": "public static string GetOriginalName(string name)",
+      "summary": "Clean the given name removing (Clone) or variant suffixes.Useful when trying to figure out id of name-linked resources.",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetParentDirectory(string)",
+      "id": "Global_Dew_GetParentDirectory_System_String_",
+      "declaration": "public static string GetParentDirectory(string path)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetPositionOnGround(Vector3, float)",
+      "id": "Global_Dew_GetPositionOnGround_UnityEngine_Vector3_System_Single_",
+      "declaration": "public static Vector3 GetPositionOnGround(Vector3 position, float yDiffRange = 50)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "yDiffRange",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetProjectRootPath()",
+      "id": "Global_Dew_GetProjectRootPath",
+      "declaration": "public static string GetProjectRootPath()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetRarityColor(Rarity)",
+      "id": "Global_Dew_GetRarityColor_Rarity_",
+      "declaration": "public static Color GetRarityColor(Rarity rarity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetRarityColor(SkinRarity)",
+      "id": "Global_Dew_GetRarityColor_SkinRarity_",
+      "declaration": "public static Color GetRarityColor(SkinRarity rarity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "SkinRarity",
+          "type_uid": "Global.SkinRarity",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetRarityColorHex(Rarity)",
+      "id": "Global_Dew_GetRarityColorHex_Rarity_",
+      "declaration": "public static string GetRarityColorHex(Rarity rarity)",
+      "summary": "Gets rarity color with prefix #.",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "Rarity",
+          "type_uid": "Global.Rarity",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetRarityColorHex(SkinRarity)",
+      "id": "Global_Dew_GetRarityColorHex_SkinRarity_",
+      "declaration": "public static string GetRarityColorHex(SkinRarity rarity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rarity",
+          "type": "SkinRarity",
+          "type_uid": "Global.SkinRarity",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTimespanConcise(TimeSpan)",
+      "id": "Global_Dew_GetReadableTimespanConcise_System_TimeSpan_",
+      "declaration": "public static string GetReadableTimespanConcise(TimeSpan t)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "t",
+          "type": "System.TimeSpan",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableTimespanDetailed(TimeSpan)",
+      "id": "Global_Dew_GetReadableTimespanDetailed_System_TimeSpan_",
+      "declaration": "public static string GetReadableTimespanDetailed(TimeSpan t)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "t",
+          "type": "System.TimeSpan",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetRequiredAchievementOfTarget(string)",
+      "id": "Global_Dew_GetRequiredAchievementOfTarget_System_String_",
+      "declaration": "public static Type GetRequiredAchievementOfTarget(string targetTypeName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "targetTypeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Type"
+    },
+    {
+      "name": "GetRequiredAchievementOfTarget(Type)",
+      "id": "Global_Dew_GetRequiredAchievementOfTarget_System_Type_",
+      "declaration": "public static Type GetRequiredAchievementOfTarget(Type targetType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "targetType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Type"
+    },
+    {
+      "name": "GetRequiredMasteryLevelForStarSlotUnlock(int)",
+      "id": "Global_Dew_GetRequiredMasteryLevelForStarSlotUnlock_System_Int32_",
+      "declaration": "public static int GetRequiredMasteryLevelForStarSlotUnlock(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetRequiredMasteryPointsToLevelUp(int)",
+      "id": "Global_Dew_GetRequiredMasteryPointsToLevelUp_System_Int32_",
+      "declaration": "public static long GetRequiredMasteryPointsToLevelUp(int currentLevel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "currentLevel",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "long"
+    },
+    {
+      "name": "GetRequiredStardustForStarSlotUnlock(int)",
+      "id": "Global_Dew_GetRequiredStardustForStarSlotUnlock_System_Int32_",
+      "declaration": "public static int GetRequiredStardustForStarSlotUnlock(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetRewardedMasteryPoints(float)",
+      "id": "Global_Dew_GetRewardedMasteryPoints_System_Single_",
+      "declaration": "public static long GetRewardedMasteryPoints(float minutes)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "minutes",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "long"
+    },
+    {
+      "name": "GetStarCategoryColor(StarType)",
+      "id": "Global_Dew_GetStarCategoryColor_StarType_",
+      "declaration": "public static Color GetStarCategoryColor(StarType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "StarType",
+          "type_uid": "Global.StarType",
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Color"
+    },
+    {
+      "name": "GetStardustRewardOnLevelUpAmount(int)",
+      "id": "Global_Dew_GetStardustRewardOnLevelUpAmount_System_Int32_",
+      "declaration": "public static int GetStardustRewardOnLevelUpAmount(int nextLevel)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nextLevel",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetTypeFromShortName(string)",
+      "id": "Global_Dew_GetTypeFromShortName_System_String_",
+      "declaration": "public static Type GetTypeFromShortName(string typeName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Type"
+    },
+    {
+      "name": "GetUIComponentBelowCursor<T>(bool)",
+      "id": "Global_Dew_GetUIComponentBelowCursor__1_System_Boolean_",
+      "declaration": "public static T GetUIComponentBelowCursor<T>(bool includeParent = true) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "includeParent",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetUnlockedTargetsOfAchievement(Type)",
+      "id": "Global_Dew_GetUnlockedTargetsOfAchievement_System_Type_",
+      "declaration": "public static List<Type> GetUnlockedTargetsOfAchievement(Type achievementType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "achievementType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><System.Type>"
+    },
+    {
+      "name": "GetValidAgentDestination_Closest(Vector3, Vector3)",
+      "id": "Global_Dew_GetValidAgentDestination_Closest_UnityEngine_Vector3_UnityEngine_Vector3_",
+      "declaration": "public static Vector3 GetValidAgentDestination_Closest(Vector3 start, Vector3 end)",
+      "summary": "Returns a point that is pathable from start position that is the closest to the end point.",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetValidAgentDestination_LinearSweep(Vector3, Vector3)",
+      "id": "Global_Dew_GetValidAgentDestination_LinearSweep_UnityEngine_Vector3_UnityEngine_Vector3_",
+      "declaration": "public static Vector3 GetValidAgentDestination_LinearSweep(Vector3 start, Vector3 end)",
+      "summary": "Returns a point that is pathable from start position, sweeping linearly across two points.",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetValidAgentPosition(Vector3, float)",
+      "id": "Global_Dew_GetValidAgentPosition_UnityEngine_Vector3_System_Single_",
+      "declaration": "public static Vector3 GetValidAgentPosition(Vector3 pos, float threshold = 10)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "threshold",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "Helper_GetInstanceOfActor<T>(ref T)",
+      "id": "Global_Dew_Helper_GetInstanceOfActor__1___0__",
+      "declaration": "public static T Helper_GetInstanceOfActor<T>(ref T softInstance) where T : Actor",
+      "summary": "This is a helper function for instance / softInstance management of actors.",
+      "parameters": [
+        {
+          "name": "softInstance",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "InitAllTypeReferences()",
+      "id": "Global_Dew_InitAllTypeReferences",
+      "declaration": "[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]\npublic static void InitAllTypeReferences()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "InstantiateActor_Imp<T>(T, Vector3, Quaternion?, Actor)",
+      "id": "Global_Dew_InstantiateActor_Imp__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_",
+      "declaration": "public static T InstantiateActor_Imp<T>(T prefab, Vector3 position, Quaternion? rotation, Actor parent) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "InstantiateAndSpawn<T>(T, Action<T>)",
+      "id": "Global_Dew_InstantiateAndSpawn__1___0_System_Action___0__",
+      "declaration": "public static T InstantiateAndSpawn<T>(T prefab, Action<T> beforeSpawn = null) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "InstantiateAndSpawn<T>(T, Vector3, Quaternion?, Action<T>)",
+      "id": "Global_Dew_InstantiateAndSpawn__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__System_Action___0__",
+      "declaration": "public static T InstantiateAndSpawn<T>(T prefab, Vector3 position, Quaternion? rotation, Action<T> beforeSpawn = null) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "InstantiateAndSpawn<T>(Action<T>)",
+      "id": "Global_Dew_InstantiateAndSpawn__1_System_Action___0__",
+      "declaration": "public static T InstantiateAndSpawn<T>(Action<T> beforeSpawn = null) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "InstantiateAndSpawn<T>(Vector3, Quaternion?, Action<T>)",
+      "id": "Global_Dew_InstantiateAndSpawn__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__System_Action___0__",
+      "declaration": "public static T InstantiateAndSpawn<T>(Vector3 position, Quaternion? rotation, Action<T> beforeSpawn = null) where T : Component",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "IntToRoman(int)",
+      "id": "Global_Dew_IntToRoman_System_Int32_",
+      "declaration": "public static string IntToRoman(int num)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "num",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "IsAccessoryIncludedInGame(string)",
+      "id": "Global_Dew_IsAccessoryIncludedInGame_System_String_",
+      "declaration": "public static bool IsAccessoryIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAchievementIncludedInGame(string)",
+      "id": "Global_Dew_IsAchievementIncludedInGame_System_String_",
+      "declaration": "public static bool IsAchievementIncludedInGame(string typeStr)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeStr",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsAnyActorBeingDestroyed()",
+      "id": "Global_Dew_IsAnyActorBeingDestroyed",
+      "declaration": "public static bool IsAnyActorBeingDestroyed()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "IsArtifactIncludedInGame(string)",
+      "id": "Global_Dew_IsArtifactIncludedInGame_System_String_",
+      "declaration": "public static bool IsArtifactIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsBeingDestroyed(GameObject)",
+      "id": "Global_Dew_IsBeingDestroyed_UnityEngine_GameObject_",
+      "declaration": "public static bool IsBeingDestroyed(GameObject gameObject)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gameObject",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsChristmas()",
+      "id": "Global_Dew_IsChristmas",
+      "declaration": "public static bool IsChristmas()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "IsCurseIncludedInGame(string)",
+      "id": "Global_Dew_IsCurseIncludedInGame_System_String_",
+      "declaration": "public static bool IsCurseIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsDejavuFree(string)",
+      "id": "Global_Dew_IsDejavuFree_System_String_",
+      "declaration": "public static bool IsDejavuFree(string typeName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsDejavuFree(Object)",
+      "id": "Global_Dew_IsDejavuFree_UnityEngine_Object_",
+      "declaration": "public static bool IsDejavuFree(Object target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "UnityEngine.Object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsEmoteIncludedInGame(string)",
+      "id": "Global_Dew_IsEmoteIncludedInGame_System_String_",
+      "declaration": "public static bool IsEmoteIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsExcludedFromPool(string)",
+      "id": "Global_Dew_IsExcludedFromPool_System_String_",
+      "declaration": "public static bool IsExcludedFromPool(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsGameModifierIncludedInGame(string)",
+      "id": "Global_Dew_IsGameModifierIncludedInGame_System_String_",
+      "declaration": "public static bool IsGameModifierIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsGemIncludedInGame(string)",
+      "id": "Global_Dew_IsGemIncludedInGame_System_String_",
+      "declaration": "public static bool IsGemIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsHeroIncludedInGame(string)",
+      "id": "Global_Dew_IsHeroIncludedInGame_System_String_",
+      "declaration": "public static bool IsHeroIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsLucidDreamIncludedInGame(string)",
+      "id": "Global_Dew_IsLucidDreamIncludedInGame_System_String_",
+      "declaration": "public static bool IsLucidDreamIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsMeleeHero(HeroClassType)",
+      "id": "Global_Dew_IsMeleeHero_Hero_HeroClassType_",
+      "declaration": "public static bool IsMeleeHero(Hero.HeroClassType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "Hero.HeroClassType",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsMonsterIncludedInGame(string)",
+      "id": "Global_Dew_IsMonsterIncludedInGame_System_String_",
+      "declaration": "public static bool IsMonsterIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsNametagIncludedInGame(string)",
+      "id": "Global_Dew_IsNametagIncludedInGame_System_String_",
+      "declaration": "public static bool IsNametagIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsNearChristmas()",
+      "id": "Global_Dew_IsNearChristmas",
+      "declaration": "public static bool IsNearChristmas()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "IsNotPlayableOnTop(Vector3)",
+      "id": "Global_Dew_IsNotPlayableOnTop_UnityEngine_Vector3_",
+      "declaration": "public static bool IsNotPlayableOnTop(Vector3 pos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsOkay(Displacement)",
+      "id": "Global_Dew_IsOkay_Displacement_",
+      "declaration": "public static bool IsOkay(Displacement d)",
+      "summary": "Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.",
+      "parameters": [
+        {
+          "name": "d",
+          "type": "Displacement",
+          "type_uid": "Global.Displacement",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsOkay(double)",
+      "id": "Global_Dew_IsOkay_System_Double_",
+      "declaration": "public static bool IsOkay(double d)",
+      "summary": "Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.",
+      "parameters": [
+        {
+          "name": "d",
+          "type": "double",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsOkay(float)",
+      "id": "Global_Dew_IsOkay_System_Single_",
+      "declaration": "public static bool IsOkay(float f)",
+      "summary": "Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.",
+      "parameters": [
+        {
+          "name": "f",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsOkay(Vector2)",
+      "id": "Global_Dew_IsOkay_UnityEngine_Vector2_",
+      "declaration": "public static bool IsOkay(Vector2 v)",
+      "summary": "Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.",
+      "parameters": [
+        {
+          "name": "v",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsOkay(Vector3)",
+      "id": "Global_Dew_IsOkay_UnityEngine_Vector3_",
+      "declaration": "public static bool IsOkay(Vector3 v)",
+      "summary": "Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.",
+      "parameters": [
+        {
+          "name": "v",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsOkay(Vector4)",
+      "id": "Global_Dew_IsOkay_UnityEngine_Vector4_",
+      "declaration": "public static bool IsOkay(Vector4 v)",
+      "summary": "Check floating values if they're not infinity nor NaNs.This will print out exceptions for getting stack traces in Cloud Diagnostics.",
+      "parameters": [
+        {
+          "name": "v",
+          "type": "UnityEngine.Vector4",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsRangedHero(HeroClassType)",
+      "id": "Global_Dew_IsRangedHero_Hero_HeroClassType_",
+      "declaration": "public static bool IsRangedHero(Hero.HeroClassType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "Hero.HeroClassType",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsRoomModifierIncludedInGame(string)",
+      "id": "Global_Dew_IsRoomModifierIncludedInGame_System_String_",
+      "declaration": "public static bool IsRoomModifierIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSkillIncludedInGame(string)",
+      "id": "Global_Dew_IsSkillIncludedInGame_System_String_",
+      "declaration": "public static bool IsSkillIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsSkinIncludedInGame(string)",
+      "id": "Global_Dew_IsSkinIncludedInGame_System_String_",
+      "declaration": "public static bool IsSkinIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsStarIncludedInGame(string)",
+      "id": "Global_Dew_IsStarIncludedInGame_System_String_",
+      "declaration": "public static bool IsStarIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsTreasureIncludedInGame(string)",
+      "id": "Global_Dew_IsTreasureIncludedInGame_System_String_",
+      "declaration": "public static bool IsTreasureIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "IsZoneIncludedInGame(string)",
+      "id": "Global_Dew_IsZoneIncludedInGame_System_String_",
+      "declaration": "public static bool IsZoneIncludedInGame(string type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "NicifyVariableName(string)",
+      "id": "Global_Dew_NicifyVariableName_System_String_",
+      "declaration": "public static string NicifyVariableName(this string input)",
+      "summary": "Converts a variable name string into a human-readable label.\nExample: \"helloThere_fella\" becomes \"Hello There Fella\".",
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "OpenURL(string, OpenURLSettings)",
+      "id": "Global_Dew_OpenURL_System_String_OpenURLSettings_",
+      "declaration": "public static void OpenURL(string url, OpenURLSettings settings = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "OpenURLSettings",
+          "type_uid": "Global.OpenURLSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PrepareAndSpawnActor_Imp<T>(T, Action<T>)",
+      "id": "Global_Dew_PrepareAndSpawnActor_Imp__1___0_System_Action___0__",
+      "declaration": "public static T PrepareAndSpawnActor_Imp<T>(T newActor, Action<T> beforePrepare) where T : Actor",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newActor",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "PrepareAndSpawnHero_Imp<T>(T, DewPlayer, int, HeroLoadoutData, string, Action<T>)",
+      "id": "Global_Dew_PrepareAndSpawnHero_Imp__1___0_DewPlayer_System_Int32_HeroLoadoutData_System_String_System_Action___0__",
+      "declaration": "public static T PrepareAndSpawnHero_Imp<T>(T newEntity, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforePrepare) where T : Hero",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newEntity",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "loadout",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        },
+        {
+          "name": "skin",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "PrepareAndSpawnStatusEffect_Imp<T>(T, Entity, Actor, CastInfo, Action<T>)",
+      "id": "Global_Dew_PrepareAndSpawnStatusEffect_Imp__1___0_Entity_Actor_CastInfo_System_Action___0__",
+      "declaration": "public static T PrepareAndSpawnStatusEffect_Imp<T>(T newSe, Entity victim, Actor parent, CastInfo info, Action<T> beforePrepare) where T : StatusEffect",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newSe",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "victim",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "info",
+          "type": "CastInfo",
+          "type_uid": "Global.CastInfo",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "QuitApplication(bool)",
+      "id": "Global_Dew_QuitApplication_System_Boolean_",
+      "declaration": "public static void QuitApplication(bool dontSave = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dontSave",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RaycastAllUIElementsBelowCursor(out ListReturnHandle<RaycastResult>)",
+      "id": "Global_Dew_RaycastAllUIElementsBelowCursor_ListReturnHandle_UnityEngine_EventSystems_RaycastResult___",
+      "declaration": "public static List<RaycastResult> RaycastAllUIElementsBelowCursor(out ListReturnHandle<RaycastResult> handle)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<RaycastResult>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><RaycastResult>"
+    },
+    {
+      "name": "RaycastAllUIElementsBelowCursor(List<RaycastResult>)",
+      "id": "Global_Dew_RaycastAllUIElementsBelowCursor_System_Collections_Generic_List_UnityEngine_EventSystems_RaycastResult__",
+      "declaration": "public static void RaycastAllUIElementsBelowCursor(List<RaycastResult> results)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "results",
+          "type": "System.Collections.Generic.List<T><RaycastResult>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RaycastAllUIElementsBelowScreenPoint(Vector2, out ListReturnHandle<RaycastResult>)",
+      "id": "Global_Dew_RaycastAllUIElementsBelowScreenPoint_UnityEngine_Vector2_ListReturnHandle_UnityEngine_EventSystems_RaycastResult___",
+      "declaration": "public static List<RaycastResult> RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, out ListReturnHandle<RaycastResult> handle)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<RaycastResult>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><RaycastResult>"
+    },
+    {
+      "name": "RaycastAllUIElementsBelowScreenPoint(Vector2, List<RaycastResult>)",
+      "id": "Global_Dew_RaycastAllUIElementsBelowScreenPoint_UnityEngine_Vector2_System_Collections_Generic_List_UnityEngine_EventSystems_RaycastResult__",
+      "declaration": "public static void RaycastAllUIElementsBelowScreenPoint(Vector2 screenPoint, List<RaycastResult> results)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "screenPoint",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "results",
+          "type": "System.Collections.Generic.List<T><RaycastResult>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RefreshRenderer()",
+      "id": "Global_Dew_RefreshRenderer",
+      "declaration": "public static void RefreshRenderer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveData(IDictionary<string, string>, string, string, string)",
+      "id": "Global_Dew_RemoveData_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_System_String_",
+      "declaration": "public static bool RemoveData(this IDictionary<string, string> dict, string key0, string key1, string key2)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "RemoveData(IDictionary<string, string>, string, string)",
+      "id": "Global_Dew_RemoveData_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_",
+      "declaration": "public static bool RemoveData(this IDictionary<string, string> dict, string key0, string key1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "RemoveData(IDictionary<string, string>, string)",
+      "id": "Global_Dew_RemoveData_System_Collections_Generic_IDictionary_System_String_System_String__System_String_",
+      "declaration": "public static bool RemoveData(this IDictionary<string, string> dict, string key0)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ResolveLocalizedFormatArgs(string[])",
+      "id": "Global_Dew_ResolveLocalizedFormatArgs_System_String___",
+      "declaration": "public static void ResolveLocalizedFormatArgs(string[] localizedFormatArgs)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "localizedFormatArgs",
+          "type": "string[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SelectBestIndexWithScore<T>(IList<T>, Func<T, int, float>, float, DewRandom)",
+      "id": "Global_Dew_SelectBestIndexWithScore__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32_System_Single__System_Single_DewRandom_",
+      "declaration": "public static int SelectBestIndexWithScore<T>(IList<T> list, Func<T, int, float> scoreFunc, float fuzziness = 0, DewRandom random = null)",
+      "summary": "Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.IList<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scoreFunc",
+          "type": "System.Func<T1, T2, TResult><T,int,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fuzziness",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "SelectBestIndexWithScore<T>(ReadOnlySpan<T>, Func<T, int, float>, float, DewRandom)",
+      "id": "Global_Dew_SelectBestIndexWithScore__1_System_ReadOnlySpan___0__System_Func___0_System_Int32_System_Single__System_Single_DewRandom_",
+      "declaration": "public static int SelectBestIndexWithScore<T>(ReadOnlySpan<T> list, Func<T, int, float> scoreFunc, float fuzziness = 0, DewRandom random = null)",
+      "summary": "Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.ReadOnlySpan<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scoreFunc",
+          "type": "System.Func<T1, T2, TResult><T,int,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fuzziness",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "SelectBestWithScore<T>(HashSet<T>, Func<T, float>, float, DewRandom)",
+      "id": "Global_Dew_SelectBestWithScore__1_System_Collections_Generic_HashSet___0__System_Func___0_System_Single__System_Single_DewRandom_",
+      "declaration": "public static T SelectBestWithScore<T>(HashSet<T> list, Func<T, float> scoreFunc, float fuzziness = 0, DewRandom random = null)",
+      "summary": "Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.HashSet<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scoreFunc",
+          "type": "System.Func<T, TResult><T,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fuzziness",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SelectBestWithScore<T>(IList<T>, Func<T, int, float>, float, DewRandom)",
+      "id": "Global_Dew_SelectBestWithScore__1_System_Collections_Generic_IList___0__System_Func___0_System_Int32_System_Single__System_Single_DewRandom_",
+      "declaration": "public static T SelectBestWithScore<T>(IList<T> list, Func<T, int, float> scoreFunc, float fuzziness = 0, DewRandom random = null)",
+      "summary": "Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.IList<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scoreFunc",
+          "type": "System.Func<T1, T2, TResult><T,int,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fuzziness",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SelectBestWithScore<T>(ReadOnlySpan<T>, Func<T, int, float>, float, DewRandom)",
+      "id": "Global_Dew_SelectBestWithScore__1_System_ReadOnlySpan___0__System_Func___0_System_Int32_System_Single__System_Single_DewRandom_",
+      "declaration": "public static T SelectBestWithScore<T>(ReadOnlySpan<T> list, Func<T, int, float> scoreFunc, float fuzziness = 0, DewRandom random = null)",
+      "summary": "Item with best score will be returned. If fuzziness is set, score will be multiplied by a random value between (1+fuzziness) ~ (1-fuzziness)",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.ReadOnlySpan<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "scoreFunc",
+          "type": "System.Func<T1, T2, TResult><T,int,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "fuzziness",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SelectRandomAliveHero(bool)",
+      "id": "Global_Dew_SelectRandomAliveHero_System_Boolean_",
+      "declaration": "public static Hero SelectRandomAliveHero(bool fallbackToDead = true)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "fallbackToDead",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Hero"
+    },
+    {
+      "name": "SelectRandomWeightedIndexInParams(params float[])",
+      "id": "Global_Dew_SelectRandomWeightedIndexInParams_System_Single___",
+      "declaration": "public static int SelectRandomWeightedIndexInParams(params float[] weights)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "weights",
+          "type": "float[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "SelectRandomWeightedInList<T>(IList<T>, Func<T, float>, DewRandom)",
+      "id": "Global_Dew_SelectRandomWeightedInList__1_System_Collections_Generic_IList___0__System_Func___0_System_Single__DewRandom_",
+      "declaration": "public static T SelectRandomWeightedInList<T>(IList<T> list, Func<T, float> weightGetter, DewRandom random = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.IList<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "weightGetter",
+          "type": "System.Func<T, TResult><T,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "random",
+          "type": "DewRandom",
+          "type_uid": "Global.DewRandom",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SelectRandomWeightedInList<T>(ReadOnlySpan<T>, Func<T, float>)",
+      "id": "Global_Dew_SelectRandomWeightedInList__1_System_ReadOnlySpan___0__System_Func___0_System_Single__",
+      "declaration": "public static T SelectRandomWeightedInList<T>(ReadOnlySpan<T> list, Func<T, float> weightGetter)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.ReadOnlySpan<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "weightGetter",
+          "type": "System.Func<T, TResult><T,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SelectRandomWeightedInParams<T>(params (float, T)[])",
+      "id": "Global_Dew_SelectRandomWeightedInParams__1_System_ValueTuple_System_Single___0____",
+      "declaration": "public static T SelectRandomWeightedInParams<T>(params (float, T)[] elements)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "elements",
+          "type": "(float, T)[]",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SelectRandomWeightedInReadOnlyList<T>(IReadOnlyList<T>, Func<T, float>)",
+      "id": "Global_Dew_SelectRandomWeightedInReadOnlyList__1_System_Collections_Generic_IReadOnlyList___0__System_Func___0_System_Single__",
+      "declaration": "public static T SelectRandomWeightedInReadOnlyList<T>(IReadOnlyList<T> list, Func<T, float> weightGetter)",
+      "summary": "Without the postfix, you won't be able to feed in Lists because of ambiguity.",
+      "parameters": [
+        {
+          "name": "list",
+          "type": "System.Collections.Generic.IReadOnlyList<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "weightGetter",
+          "type": "System.Func<T, TResult><T,float>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SetData<T>(IDictionary<string, string>, string, T)",
+      "id": "Global_Dew_SetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String___0_",
+      "declaration": "public static void SetData<T>(this IDictionary<string, string> dict, string key0, T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetData<T>(IDictionary<string, string>, string, string, T)",
+      "id": "Global_Dew_SetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String___0_",
+      "declaration": "public static void SetData<T>(this IDictionary<string, string> dict, string key0, string key1, T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetData<T>(IDictionary<string, string>, string, string, string, T)",
+      "id": "Global_Dew_SetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_System_String___0_",
+      "declaration": "public static void SetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetUnscaledTimeUpdate(GameObject)",
+      "id": "Global_Dew_SetUnscaledTimeUpdate_UnityEngine_GameObject_",
+      "declaration": "public static void SetUnscaledTimeUpdate(GameObject gobj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gobj",
+          "type": "UnityEngine.GameObject",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowJsonWithEditor(string)",
+      "id": "Global_Dew_ShowJsonWithEditor_System_String_",
+      "declaration": "public static void ShowJsonWithEditor(string json)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "json",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpawnEntity<T>(T, Vector3, Quaternion?, Actor, DewPlayer, int, Action<T>)",
+      "id": "Global_Dew_SpawnEntity__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_DewPlayer_System_Int32_System_Action___0__",
+      "declaration": "public static T SpawnEntity<T>(T entity, Vector3 position, Quaternion? rotation, Actor parent, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SpawnEntity<T>(Vector3, Quaternion?, Actor, DewPlayer, int, Action<T>)",
+      "id": "Global_Dew_SpawnEntity__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__Actor_DewPlayer_System_Int32_System_Action___0__",
+      "declaration": "public static T SpawnEntity<T>(Vector3 position, Quaternion? rotation, Actor parent, DewPlayer owner, int level, Action<T> beforeSpawn = null) where T : Entity",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "type": "Actor",
+          "type_uid": "Global.Actor",
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SpawnHero<T>(T, Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action<T>)",
+      "id": "Global_Dew_SpawnHero__1___0_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__DewPlayer_System_Int32_HeroLoadoutData_System_String_System_Action___0__",
+      "declaration": "public static T SpawnHero<T>(T hero, Vector3 position, Quaternion? rotation, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforeSpawn = null) where T : Hero",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "loadout",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        },
+        {
+          "name": "skin",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "SpawnHero<T>(Vector3, Quaternion?, DewPlayer, int, HeroLoadoutData, string, Action<T>)",
+      "id": "Global_Dew_SpawnHero__1_UnityEngine_Vector3_System_Nullable_UnityEngine_Quaternion__DewPlayer_System_Int32_HeroLoadoutData_System_String_System_Action___0__",
+      "declaration": "public static T SpawnHero<T>(Vector3 position, Quaternion? rotation, DewPlayer owner, int level, HeroLoadoutData loadout, string skin, Action<T> beforeSpawn = null) where T : Hero",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "position",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "rotation",
+          "type": "UnityEngine.Quaternion?",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "loadout",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        },
+        {
+          "name": "skin",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforeSpawn",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "TryGetData<T>(IDictionary<string, string>, string, out T)",
+      "id": "Global_Dew_TryGetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String___0__",
+      "declaration": "public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, out T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetData<T>(IDictionary<string, string>, string, string, out T)",
+      "id": "Global_Dew_TryGetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String___0__",
+      "declaration": "public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, string key1, out T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetData<T>(IDictionary<string, string>, string, string, string, out T)",
+      "id": "Global_Dew_TryGetData__1_System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_System_String___0__",
+      "declaration": "public static bool TryGetData<T>(this IDictionary<string, string> dict, string key0, string key1, string key2, out T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dict",
+          "type": "System.Collections.Generic.IDictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key0",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key1",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "key2",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "TryGetTypeFromShortName(string, out Type)",
+      "id": "Global_Dew_TryGetTypeFromShortName_System_String_System_Type__",
+      "declaration": "public static bool TryGetTypeFromShortName(string typeName, out Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "typeName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "WaitForAggroedEnemiesRoutine()",
+      "id": "Global_Dew_WaitForAggroedEnemiesRoutine",
+      "declaration": "public static IEnumerator WaitForAggroedEnemiesRoutine()",
+      "summary": "Wait until no enemies aggroed to any player exists.",
+      "parameters": [],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "WaitForClientsReadyRoutine(List<DewPlayer>)",
+      "id": "Global_Dew_WaitForClientsReadyRoutine_System_Collections_Generic_List_DewPlayer__",
+      "declaration": "public static IEnumerator WaitForClientsReadyRoutine(List<DewPlayer> players = null)",
+      "summary": "Wait until all connections are ready.",
+      "parameters": [
+        {
+          "name": "players",
+          "type": "System.Collections.Generic.List<T><DewPlayer>",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.IEnumerator"
+    }
+  ],
+  "events": []
+}

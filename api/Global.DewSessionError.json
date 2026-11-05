@@ -1,0 +1,117 @@
+{
+  "uid": "Global.DewSessionError",
+  "name": "DewSessionError",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewSessionError",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "args",
+      "id": "Global_DewSessionError_args",
+      "declaration": "public object[] args",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Error()",
+      "id": "Global_DewSessionError_Error",
+      "declaration": "public static DewSessionError Error()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewSessionError"
+    },
+    {
+      "name": "Error(Exception)",
+      "id": "Global_DewSessionError_Error_System_Exception_",
+      "declaration": "public static DewSessionError Error(Exception e)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "System.Exception",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewSessionError"
+    },
+    {
+      "name": "Show(bool, bool)",
+      "id": "Global_DewSessionError_Show_System_Boolean_System_Boolean_",
+      "declaration": "public void Show(bool isFatal, bool isGame)",
+      "summary": "Output this error message on screen.",
+      "parameters": [
+        {
+          "name": "isFatal",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isGame",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowError(bool, bool)",
+      "id": "Global_DewSessionError_ShowError_System_Boolean_System_Boolean_",
+      "declaration": "public static void ShowError(bool isFatal = false, bool isGame = true)",
+      "summary": "Show a generic, unknown error",
+      "parameters": [
+        {
+          "name": "isFatal",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isGame",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowError(Exception, bool, bool)",
+      "id": "Global_DewSessionError_ShowError_System_Exception_System_Boolean_System_Boolean_",
+      "declaration": "public static void ShowError(Exception e, bool isFatal = false, bool isGame = true)",
+      "summary": "Fatal error will close the application after it's closed.",
+      "parameters": [
+        {
+          "name": "e",
+          "type": "System.Exception",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isFatal",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isGame",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

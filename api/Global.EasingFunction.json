@@ -1,0 +1,1816 @@
+{
+  "uid": "Global.EasingFunction",
+  "name": "EasingFunction",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class EasingFunction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "EaseInBack(float, float, float)",
+      "id": "Global_EasingFunction_EaseInBack_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInBack(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInBackD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInBackD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInBackD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInBounce(float, float, float)",
+      "id": "Global_EasingFunction_EaseInBounce_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInBounce(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInBounceD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInBounceD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInBounceD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInCirc(float, float, float)",
+      "id": "Global_EasingFunction_EaseInCirc_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInCirc(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInCircD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInCircD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInCircD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInCubic(float, float, float)",
+      "id": "Global_EasingFunction_EaseInCubic_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInCubic(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInCubicD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInCubicD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInCubicD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInElastic(float, float, float)",
+      "id": "Global_EasingFunction_EaseInElastic_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInElastic(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInElasticD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInElasticD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInElasticD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInExpo(float, float, float)",
+      "id": "Global_EasingFunction_EaseInExpo_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInExpo(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInExpoD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInExpoD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInExpoD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutBack(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutBack_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutBack(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutBackD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutBackD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutBackD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutBounce(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutBounce_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutBounce(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutBounceD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutBounceD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutBounceD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutCirc(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutCirc_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutCirc(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutCircD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutCircD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutCircD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutCubic(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutCubic_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutCubic(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutCubicD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutCubicD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutCubicD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutElastic(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutElastic_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutElastic(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutElasticD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutElasticD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutElasticD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutExpo(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutExpo_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutExpo(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutExpoD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutExpoD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutExpoD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutQuad(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutQuad_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutQuad(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutQuadD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutQuadD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutQuadD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutQuart(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutQuart_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutQuart(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutQuartD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutQuartD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutQuartD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutQuint(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutQuint_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutQuint(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutQuintD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutQuintD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutQuintD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutSine(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutSine_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutSine(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInOutSineD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInOutSineD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInOutSineD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInQuad(float, float, float)",
+      "id": "Global_EasingFunction_EaseInQuad_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInQuad(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInQuadD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInQuadD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInQuadD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInQuart(float, float, float)",
+      "id": "Global_EasingFunction_EaseInQuart_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInQuart(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInQuartD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInQuartD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInQuartD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInQuint(float, float, float)",
+      "id": "Global_EasingFunction_EaseInQuint_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInQuint(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInQuintD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInQuintD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInQuintD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInSine(float, float, float)",
+      "id": "Global_EasingFunction_EaseInSine_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInSine(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseInSineD(float, float, float)",
+      "id": "Global_EasingFunction_EaseInSineD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseInSineD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutBack(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutBack_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutBack(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutBackD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutBackD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutBackD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutBounce(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutBounce_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutBounce(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutBounceD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutBounceD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutBounceD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutCirc(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutCirc_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutCirc(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutCircD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutCircD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutCircD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutCubic(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutCubic_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutCubic(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutCubicD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutCubicD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutCubicD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutElastic(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutElastic_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutElastic(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutElasticD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutElasticD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutElasticD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutExpo(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutExpo_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutExpo(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutExpoD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutExpoD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutExpoD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutQuad(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutQuad_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutQuad(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutQuadD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutQuadD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutQuadD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutQuart(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutQuart_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutQuart(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutQuartD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutQuartD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutQuartD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutQuint(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutQuint_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutQuint(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutQuintD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutQuintD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutQuintD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutSine(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutSine_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutSine(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "EaseOutSineD(float, float, float)",
+      "id": "Global_EasingFunction_EaseOutSineD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float EaseOutSineD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Get(DewEase, float)",
+      "id": "Global_EasingFunction_Get_DewEase_System_Single_",
+      "declaration": "public static float Get(this DewEase ease, float x)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ease",
+          "type": "DewEase",
+          "type_uid": "Global.DewEase",
+          "description": ""
+        },
+        {
+          "name": "x",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetDelta(DewEase, float)",
+      "id": "Global_EasingFunction_GetDelta_DewEase_System_Single_",
+      "declaration": "public static float GetDelta(this DewEase ease, float x)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ease",
+          "type": "DewEase",
+          "type_uid": "Global.DewEase",
+          "description": ""
+        },
+        {
+          "name": "x",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "GetEasingFunction(DewEase)",
+      "id": "Global_EasingFunction_GetEasingFunction_DewEase_",
+      "declaration": "public static EaseFunction GetEasingFunction(DewEase easingFunction)",
+      "summary": "Returns the function associated to the easingFunction enum. This value returned should be cached as it allocates memory\nto return.",
+      "parameters": [
+        {
+          "name": "easingFunction",
+          "type": "DewEase",
+          "type_uid": "Global.DewEase",
+          "description": "The enum associated with the easing function."
+        }
+      ],
+      "returns": "EaseFunction: The easing function"
+    },
+    {
+      "name": "GetEasingFunctionDerivative(DewEase)",
+      "id": "Global_EasingFunction_GetEasingFunctionDerivative_DewEase_",
+      "declaration": "public static EaseFunction GetEasingFunctionDerivative(DewEase easingFunction)",
+      "summary": "Gets the derivative function of the appropriate easing function. If you use an easing function for position then this\nfunction can get you the speed at a given time (normalized).",
+      "parameters": [
+        {
+          "name": "easingFunction",
+          "type": "DewEase",
+          "type_uid": "Global.DewEase",
+          "description": ""
+        }
+      ],
+      "returns": "EaseFunction: The derivative function"
+    },
+    {
+      "name": "Linear(float, float, float)",
+      "id": "Global_EasingFunction_Linear_System_Single_System_Single_System_Single_",
+      "declaration": "public static float Linear(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "LinearD(float, float, float)",
+      "id": "Global_EasingFunction_LinearD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float LinearD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "Spring(float, float, float)",
+      "id": "Global_EasingFunction_Spring_System_Single_System_Single_System_Single_",
+      "declaration": "public static float Spring(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    },
+    {
+      "name": "SpringD(float, float, float)",
+      "id": "Global_EasingFunction_SpringD_System_Single_System_Single_System_Single_",
+      "declaration": "public static float SpringD(float start, float end, float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "float"
+    }
+  ],
+  "events": []
+}

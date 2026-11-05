@@ -1,0 +1,133 @@
+{
+  "uid": "Global.Room_Shortcut",
+  "name": "Room_Shortcut",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_Shortcut : DewNetworkBehaviour, ILogicUpdate, IInteractable, ICustomInteractable, IPlayerPathablePoint",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "ICustomInteractable",
+      "href": "Global.ICustomInteractable.html",
+      "uid": "Global.ICustomInteractable"
+    },
+    {
+      "name": "IPlayerPathablePoint",
+      "href": "Global.IPlayerPathablePoint.html",
+      "uid": "Global.IPlayerPathablePoint"
+    }
+  ],
+  "fields": [
+    {
+      "name": "closedEffect",
+      "id": "Global_Room_Shortcut_closedEffect",
+      "declaration": "public GameObject closedEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isOpen",
+      "id": "Global_Room_Shortcut_isOpen",
+      "declaration": "public bool isOpen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "openEffect",
+      "id": "Global_Room_Shortcut_openEffect",
+      "declaration": "public GameObject openEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetShortcut",
+      "id": "Global_Room_Shortcut_targetShortcut",
+      "declaration": "public Room_Shortcut targetShortcut",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "walkEndPos",
+      "id": "Global_Room_Shortcut_walkEndPos",
+      "declaration": "public Transform walkEndPos",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "walkStartPos",
+      "id": "Global_Room_Shortcut_walkStartPos",
+      "declaration": "public Transform walkStartPos",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "altInteractProgress",
+      "id": "Global_Room_Shortcut_altInteractProgress",
+      "declaration": "public float? altInteractProgress { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cost",
+      "id": "Global_Room_Shortcut_cost",
+      "declaration": "public Cost cost { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Close()",
+      "id": "Global_Room_Shortcut_Close",
+      "declaration": "public void Close()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_Room_Shortcut_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Open()",
+      "id": "Global_Room_Shortcut_Open",
+      "declaration": "public void Open()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,39 @@
+{
+  "uid": "Global.InvulnerableEffect",
+  "name": "InvulnerableEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InvulnerableEffect : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "onDamageNegated",
+      "id": "Global_InvulnerableEffect_onDamageNegated",
+      "declaration": "public Action<EventInfoDamageNegatedByImmunity> onDamageNegated",
+      "summary": "If multiple effect is protecting this entity, only the last basic effect's callback will be called prioritizing InvulnerableEffect.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "mask",
+      "id": "Global_InvulnerableEffect_mask",
+      "declaration": "public override BasicEffectMask mask { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

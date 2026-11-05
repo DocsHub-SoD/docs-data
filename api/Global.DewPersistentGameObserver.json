@@ -1,0 +1,235 @@
+{
+  "uid": "Global.DewPersistentGameObserver",
+  "name": "DewPersistentGameObserver",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistentGameObserver",
+  "inheritance": [
+    {
+      "name": "DewGameObserverWithProgress",
+      "href": "Global.DewGameObserverWithProgress.html",
+      "uid": "Global.DewGameObserverWithProgress"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "_coroutines",
+      "id": "Global_DewPersistentGameObserver__coroutines",
+      "declaration": "protected List<Coroutine> _coroutines",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "name",
+      "id": "Global_DewPersistentGameObserver_name",
+      "declaration": "public string name { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AchOnDealDamage(Action<EventInfoDamage>)",
+      "id": "Global_DewPersistentGameObserver_AchOnDealDamage_System_Action_EventInfoDamage__",
+      "declaration": "protected void AchOnDealDamage(Action<EventInfoDamage> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action<T><EventInfoDamage>",
+          "type_uid": "Global.EventInfoDamage",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchOnDoHeal(Action<EventInfoHeal>)",
+      "id": "Global_DewPersistentGameObserver_AchOnDoHeal_System_Action_EventInfoHeal__",
+      "declaration": "protected void AchOnDoHeal(Action<EventInfoHeal> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action<T><EventInfoHeal>",
+          "type_uid": "Global.EventInfoHeal",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchOnGameConcluded(Action<DewGameResult>)",
+      "id": "Global_DewPersistentGameObserver_AchOnGameConcluded_System_Action_DewGameResult__",
+      "declaration": "protected void AchOnGameConcluded(Action<DewGameResult> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action<T><DewGameResult>",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchOnKillLastHit(Action<EventInfoKill>)",
+      "id": "Global_DewPersistentGameObserver_AchOnKillLastHit_System_Action_EventInfoKill__",
+      "declaration": "protected void AchOnKillLastHit(Action<EventInfoKill> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action<T><EventInfoKill>",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchOnKillOrAssist(Action<EventInfoKill>)",
+      "id": "Global_DewPersistentGameObserver_AchOnKillOrAssist_System_Action_EventInfoKill__",
+      "declaration": "protected void AchOnKillOrAssist(Action<EventInfoKill> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action<T><EventInfoKill>",
+          "type_uid": "Global.EventInfoKill",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchOnTakeDamage(Action<EventInfoDamage>)",
+      "id": "Global_DewPersistentGameObserver_AchOnTakeDamage_System_Action_EventInfoDamage__",
+      "declaration": "protected void AchOnTakeDamage(Action<EventInfoDamage> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action<T><EventInfoDamage>",
+          "type_uid": "Global.EventInfoDamage",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchSetInterval(Action, float)",
+      "id": "Global_DewPersistentGameObserver_AchSetInterval_System_Action_System_Single_",
+      "declaration": "protected void AchSetInterval(Action func, float interval)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "interval",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchStartCoroutine(IEnumerator)",
+      "id": "Global_DewPersistentGameObserver_AchStartCoroutine_System_Collections_IEnumerator_",
+      "declaration": "protected void AchStartCoroutine(IEnumerator routine)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "routine",
+          "type": "System.Collections.IEnumerator",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AchStopAllCoroutines()",
+      "id": "Global_DewPersistentGameObserver_AchStopAllCoroutines",
+      "declaration": "protected void AchStopAllCoroutines()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FeedGameResult(DewGameResult)",
+      "id": "Global_DewPersistentGameObserver_FeedGameResult_DewGameResult_",
+      "declaration": "public void FeedGameResult(DewGameResult obj)",
+      "summary": "This needs to be called when the game ends by appropriate observer managers, e.g. AchievementManager, InGameReverieManager",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "DewGameResult",
+          "type_uid": "Global.DewGameResult",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LoadState(Dictionary<string, string>)",
+      "id": "Global_DewPersistentGameObserver_LoadState_System_Collections_Generic_Dictionary_System_String_System_String__",
+      "declaration": "public void LoadState(Dictionary<string, string> storage)",
+      "summary": "Load all persistent variables from the provided dictionary.",
+      "parameters": [
+        {
+          "name": "storage",
+          "type": "System.Collections.Generic.Dictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartLocalClient()",
+      "id": "Global_DewPersistentGameObserver_OnStartLocalClient",
+      "declaration": "public virtual void OnStartLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopLocalClient()",
+      "id": "Global_DewPersistentGameObserver_OnStopLocalClient",
+      "declaration": "public virtual void OnStopLocalClient()",
+      "summary": "Helper trackers are unregistered automatically, you only have to unregister custom handlers.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SaveState(Dictionary<string, string>)",
+      "id": "Global_DewPersistentGameObserver_SaveState_System_Collections_Generic_Dictionary_System_String_System_String__",
+      "declaration": "public void SaveState(Dictionary<string, string> storage)",
+      "summary": "Save all persistent variables to the provided dictionary.",
+      "parameters": [
+        {
+          "name": "storage",
+          "type": "System.Collections.Generic.Dictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

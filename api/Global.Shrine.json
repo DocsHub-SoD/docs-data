@@ -1,0 +1,459 @@
+{
+  "uid": "Global.Shrine",
+  "name": "Shrine",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class Shrine : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IProp, IBanRoomNodesNearby",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "ChoiceShrine",
+      "href": "Global.ChoiceShrine.html",
+      "uid": "Global.ChoiceShrine"
+    },
+    {
+      "name": "EditSkillShrine",
+      "href": "Global.EditSkillShrine.html",
+      "uid": "Global.EditSkillShrine"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IProp",
+      "href": "Global.IProp.html",
+      "uid": "Global.IProp"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [
+    {
+      "name": "availableEffect",
+      "id": "Global_Shrine_availableEffect",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject availableEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "baseGoldCost",
+      "id": "Global_Shrine_baseGoldCost",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic int baseGoldCost",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSuccessfulUse",
+      "id": "Global_Shrine_ClientEvent_OnSuccessfulUse",
+      "declaration": "public SafeAction<Entity> ClientEvent_OnSuccessfulUse",
+      "summary": "Called everywhere after an entity uses this shrine successfully.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactableDelay",
+      "id": "Global_Shrine_interactableDelay",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic float interactableDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lockedEffect",
+      "id": "Global_Shrine_lockedEffect",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject lockedEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mapVisibility",
+      "id": "Global_Shrine_mapVisibility",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic MapItemVisibility mapVisibility",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxTotalUseCount",
+      "id": "Global_Shrine_maxTotalUseCount",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[FormerlySerializedAs(\"maxUseCount\")]\n[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic int maxTotalUseCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxUseCountPerPlayer",
+      "id": "Global_Shrine_maxUseCountPerPlayer",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic int maxUseCountPerPlayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "model",
+      "id": "Global_Shrine_model",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject model",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unavailableByDefault",
+      "id": "Global_Shrine_unavailableByDefault",
+      "declaration": "[ToggleLeft]\n[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic bool unavailableByDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unavailableEffect",
+      "id": "Global_Shrine_unavailableEffect",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject unavailableEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockEffect",
+      "id": "Global_Shrine_unlockEffect",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject unlockEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useCooldown",
+      "id": "Global_Shrine_useCooldown",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic float useCooldown",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useEffect",
+      "id": "Global_Shrine_useEffect",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject useEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useEffectLocal",
+      "id": "Global_Shrine_useEffectLocal",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject useEffectLocal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useLockedEffect",
+      "id": "Global_Shrine_useLockedEffect",
+      "declaration": "[BoxGroup(\"Shrine Settings\", true, false, 0)]\npublic GameObject useLockedEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_Shrine_canInteractWithMouse",
+      "declaration": "public virtual bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_Shrine_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_Shrine_interactPivot",
+      "declaration": "public virtual Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isAvailable",
+      "id": "Global_Shrine_isAvailable",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic bool isAvailable { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocked",
+      "id": "Global_Shrine_isLocked",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic bool isLocked { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isOnCooldown",
+      "id": "Global_Shrine_isOnCooldown",
+      "declaration": "public bool isOnCooldown { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isRegularReward",
+      "id": "Global_Shrine_isRegularReward",
+      "declaration": "public virtual bool isRegularReward { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "scaleSpawnRateWithPlayers",
+      "id": "Global_Shrine_scaleSpawnRateWithPlayers",
+      "declaration": "public bool scaleSpawnRateWithPlayers { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalUseCount",
+      "id": "Global_Shrine_totalUseCount",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int totalUseCount { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanAfford(Entity)",
+      "id": "Global_Shrine_CanAfford_Entity_",
+      "declaration": "public AffordType CanAfford(Entity entity)",
+      "summary": "Checked everywhere.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "AffordType"
+    },
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_Shrine_CanInteract_Entity_",
+      "declaration": "public virtual bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "DoPostUseRoutines(Entity)",
+      "id": "Global_Shrine_DoPostUseRoutines_Entity_",
+      "declaration": "public void DoPostUseRoutines(Entity entity)",
+      "summary": "Deduct cost from the entity, increment use count and invoke callbacks.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetClosestPointOnShrine(Vector3)",
+      "id": "Global_Shrine_GetClosestPointOnShrine_UnityEngine_Vector3_",
+      "declaration": "public Vector3 GetClosestPointOnShrine(Vector3 pos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "pos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetCost(Entity)",
+      "id": "Global_Shrine_GetCost_Entity_",
+      "declaration": "public virtual Cost? GetCost(Entity activator)",
+      "summary": "Get gold/health cost of this shrine for specified activator. This must return consistent values across server and clients.",
+      "parameters": [
+        {
+          "name": "activator",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "Cost?"
+    },
+    {
+      "name": "GetRandomSpawnPosition(Vector3)",
+      "id": "Global_Shrine_GetRandomSpawnPosition_UnityEngine_Vector3_",
+      "declaration": "public Vector3 GetRandomSpawnPosition(Vector3 activatorPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "activatorPos",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetUseCountByPlayer(DewPlayer)",
+      "id": "Global_Shrine_GetUseCountByPlayer_DewPlayer_",
+      "declaration": "public int GetUseCountByPlayer(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "MakeAvailable()",
+      "id": "Global_Shrine_MakeAvailable",
+      "declaration": "[Button]\npublic void MakeAvailable()",
+      "summary": "Forcibly make the shrine available for use. Callable on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "MakeUnavailable()",
+      "id": "Global_Shrine_MakeUnavailable",
+      "declaration": "[Button]\npublic void MakeUnavailable()",
+      "summary": "Forcibly make the shrine unavailable for use. Callable on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Shrine_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Shrine_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteract(Entity, bool)",
+      "id": "Global_Shrine_OnInteract_Entity_System_Boolean_",
+      "declaration": "public virtual void OnInteract(Entity entity, bool alt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "alt",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnUse(Entity)",
+      "id": "Global_Shrine_OnUse_Entity_",
+      "declaration": "protected abstract bool OnUse(Entity entity)",
+      "summary": "Called on server when an entity uses this shrine. Return value must indicate success of this use.Returning true will play use effect, increment use count, and deduct cost from entity.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ResetUseCounts()",
+      "id": "Global_Shrine_ResetUseCounts",
+      "declaration": "public void ResetUseCounts()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Shrine_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

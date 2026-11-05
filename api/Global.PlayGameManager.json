@@ -1,0 +1,146 @@
+{
+  "uid": "Global.PlayGameManager",
+  "name": "PlayGameManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Type)]\npublic class PlayGameManager : GameManager, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "GameManager",
+      "href": "Global.GameManager.html",
+      "uid": "Global.GameManager"
+    },
+    {
+      "name": "GameManager",
+      "href": "Global.GameManager.html",
+      "uid": "Global.GameManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [],
+  "properties": [
+    {
+      "name": "instance",
+      "id": "Global_PlayGameManager_instance",
+      "declaration": "public static PlayGameManager instance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "DoDejavuSpawn(DewPlayer)",
+      "id": "Global_PlayGameManager_DoDejavuSpawn_DewPlayer_",
+      "declaration": "public void DoDejavuSpawn(DewPlayer h)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "h",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetDifficulty()",
+      "id": "Global_PlayGameManager_GetDifficulty",
+      "declaration": "protected override DewDifficultySettings GetDifficulty()",
+      "summary": "",
+      "parameters": [],
+      "returns": "DewDifficultySettings"
+    },
+    {
+      "name": "IsContinueSaveSupported()",
+      "id": "Global_PlayGameManager_IsContinueSaveSupported",
+      "declaration": "public override bool IsContinueSaveSupported()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "LoadNextZone()",
+      "id": "Global_PlayGameManager_LoadNextZone",
+      "declaration": "public override void LoadNextZone()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnLateStartServer()",
+      "id": "Global_PlayGameManager_OnLateStartServer",
+      "declaration": "public override void OnLateStartServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_PlayGameManager_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SpawnHero(DewPlayer, Hero, HeroLoadoutData, string, List<string>)",
+      "id": "Global_PlayGameManager_SpawnHero_DewPlayer_Hero_HeroLoadoutData_System_String_System_Collections_Generic_List_System_String__",
+      "declaration": "public void SpawnHero(DewPlayer player, Hero hero, HeroLoadoutData loadout, string skin, List<string> accs)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        },
+        {
+          "name": "loadout",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        },
+        {
+          "name": "skin",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "accs",
+          "type": "System.Collections.Generic.List<T><string>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

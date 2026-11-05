@@ -1,0 +1,125 @@
+{
+  "uid": "Global.FxVolume",
+  "name": "FxVolume",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[RequireComponent(typeof(Volume))]\npublic class FxVolume : FxInterpolatedEffectBase, IEffectComponent, IEffectWithSpeed, IEffectWithOwnerContext",
+  "inheritance": [
+    {
+      "name": "FxInterpolatedEffectBase",
+      "href": "Global.FxInterpolatedEffectBase.html",
+      "uid": "Global.FxInterpolatedEffectBase"
+    }
+  ],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    },
+    {
+      "name": "IEffectWithOwnerContext",
+      "href": "Global.IEffectWithOwnerContext.html",
+      "uid": "Global.IEffectWithOwnerContext"
+    }
+  ],
+  "fields": [
+    {
+      "name": "otherPlayersMultiplier",
+      "id": "Global_FxVolume_otherPlayersMultiplier",
+      "declaration": "[ShowIf(\"useCustomOtherPlayersMultiplier\", true)]\npublic float otherPlayersMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetStrength",
+      "id": "Global_FxVolume_targetStrength",
+      "declaration": "public float targetStrength",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useCustomOtherPlayersMultiplier",
+      "id": "Global_FxVolume_useCustomOtherPlayersMultiplier",
+      "declaration": "[ToggleLeft]\npublic bool useCustomOtherPlayersMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnInit()",
+      "id": "Global_FxVolume_OnInit",
+      "declaration": "protected override void OnInit()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_FxVolume_Play",
+      "declaration": "public override void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetOwnerContext(EffectOwnerContext)",
+      "id": "Global_FxVolume_SetOwnerContext_EffectOwnerContext_",
+      "declaration": "public void SetOwnerContext(EffectOwnerContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EffectOwnerContext",
+          "type_uid": "Global.EffectOwnerContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Start()",
+      "id": "Global_FxVolume_Start",
+      "declaration": "protected override void Start()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateVolume()",
+      "id": "Global_FxVolume_UpdateVolume",
+      "declaration": "public void UpdateVolume()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ValueSetter(float)",
+      "id": "Global_FxVolume_ValueSetter_System_Single_",
+      "declaration": "protected override void ValueSetter(float value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,56 @@
+{
+  "uid": "Global.UI_BackButtonHandler",
+  "name": "UI_BackButtonHandler",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_BackButtonHandler : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "activateOnRightClickAnywhere",
+      "id": "Global_UI_BackButtonHandler_activateOnRightClickAnywhere",
+      "declaration": "[ToggleLeft]\npublic bool activateOnRightClickAnywhere",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "checkUIOcclusion",
+      "id": "Global_UI_BackButtonHandler_checkUIOcclusion",
+      "declaration": "public bool checkUIOcclusion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "consume",
+      "id": "Global_UI_BackButtonHandler_consume",
+      "declaration": "public bool consume",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onHandle",
+      "id": "Global_UI_BackButtonHandler_onHandle",
+      "declaration": "public UnityEvent onHandle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "priority",
+      "id": "Global_UI_BackButtonHandler_priority",
+      "declaration": "public int priority",
+      "summary": "Higher priorities will be called first.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ArrayReturnHandle`1",
+  "name": "ArrayReturnHandle<T>",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct ArrayReturnHandle<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Return()",
+      "id": "Global_ArrayReturnHandle_1_Return",
+      "declaration": "public void Return()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

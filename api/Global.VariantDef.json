@@ -1,0 +1,141 @@
+{
+  "uid": "Global.VariantDef",
+  "name": "VariantDef",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct VariantDef",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "id0",
+      "id": "Global_VariantDef_id0",
+      "declaration": "public int id0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id1",
+      "id": "Global_VariantDef_id1",
+      "declaration": "public int id1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id2",
+      "id": "Global_VariantDef_id2",
+      "declaration": "public int id2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id3",
+      "id": "Global_VariantDef_id3",
+      "declaration": "public int id3",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id4",
+      "id": "Global_VariantDef_id4",
+      "declaration": "public int id4",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "id5",
+      "id": "Global_VariantDef_id5",
+      "declaration": "public int id5",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Add(int)",
+      "id": "Global_VariantDef_Add_System_Int32_",
+      "declaration": "public VariantDef Add(int id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "VariantDef"
+    },
+    {
+      "name": "Contains(int)",
+      "id": "Global_VariantDef_Contains_System_Int32_",
+      "declaration": "public bool Contains(int id)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(object)",
+      "id": "Global_VariantDef_Equals_System_Object_",
+      "declaration": "public override bool Equals(object obj)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "obj",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Equals(VariantDef)",
+      "id": "Global_VariantDef_Equals_VariantDef_",
+      "declaration": "public bool Equals(VariantDef other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "VariantDef",
+          "type_uid": "Global.VariantDef",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetHashCode()",
+      "id": "Global_VariantDef_GetHashCode",
+      "declaration": "public override int GetHashCode()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "ToString()",
+      "id": "Global_VariantDef_ToString",
+      "declaration": "public override string ToString()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    }
+  ],
+  "events": []
+}

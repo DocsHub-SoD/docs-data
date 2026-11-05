@@ -1,0 +1,279 @@
+{
+  "uid": "Global.TransitionManager",
+  "name": "TransitionManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class TransitionManager : ManagerBase<TransitionManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "TransitionManager",
+      "href": "Global.TransitionManager.html",
+      "uid": "Global.TransitionManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "busyObject",
+      "id": "Global_TransitionManager_busyObject",
+      "declaration": "public GameObject busyObject",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fadeTime",
+      "id": "Global_TransitionManager_fadeTime",
+      "declaration": "public float fadeTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxTransition",
+      "id": "Global_TransitionManager_fxTransition",
+      "declaration": "public GameObject fxTransition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadingTexts",
+      "id": "Global_TransitionManager_loadingTexts",
+      "declaration": "public TextMeshProUGUI[] loadingTexts",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "newTipCooldownTime",
+      "id": "Global_TransitionManager_newTipCooldownTime",
+      "declaration": "public float newTipCooldownTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFadeIn",
+      "id": "Global_TransitionManager_onFadeIn",
+      "declaration": "public Action onFadeIn",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onFadeOut",
+      "id": "Global_TransitionManager_onFadeOut",
+      "declaration": "public Action onFadeOut",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onStateChanged",
+      "id": "Global_TransitionManager_onStateChanged",
+      "declaration": "public SafeAction onStateChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "screenFadeCg",
+      "id": "Global_TransitionManager_screenFadeCg",
+      "declaration": "public CanvasGroup screenFadeCg",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tipText",
+      "id": "Global_TransitionManager_tipText",
+      "declaration": "public TextMeshProUGUI tipText",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "whiteFadeCg",
+      "id": "Global_TransitionManager_whiteFadeCg",
+      "declaration": "public CanvasGroup whiteFadeCg",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "state",
+      "id": "Global_TransitionManager_state",
+      "declaration": "[ShowInInspector]\npublic TransitionManager.StateType state { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "FadeIn()",
+      "id": "Global_TransitionManager_FadeIn",
+      "declaration": "[Button]\npublic void FadeIn()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FadeInRoutine()",
+      "id": "Global_TransitionManager_FadeInRoutine",
+      "declaration": "public IEnumerator FadeInRoutine()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "FadeOut()",
+      "id": "Global_TransitionManager_FadeOut",
+      "declaration": "[Button]\npublic void FadeOut()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FadeOut(bool)",
+      "id": "Global_TransitionManager_FadeOut_System_Boolean_",
+      "declaration": "public void FadeOut(bool showTips)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "showTips",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FadeOutRoutine(bool)",
+      "id": "Global_TransitionManager_FadeOutRoutine_System_Boolean_",
+      "declaration": "public IEnumerator FadeOutRoutine(bool showTips)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "showTips",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.IEnumerator"
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_TransitionManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoadScene(string, bool)",
+      "id": "Global_TransitionManager_LoadScene_System_String_System_Boolean_",
+      "declaration": "public void LoadScene(string sceneName, bool dontFadeIn = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sceneName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "dontFadeIn",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "PlayGame(DewNetworkStartSettings)",
+      "id": "Global_TransitionManager_PlayGame_DewNetworkStartSettings_",
+      "declaration": "public void PlayGame(DewNetworkStartSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "DewNetworkStartSettings",
+          "type_uid": "Global.DewNetworkStartSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetBusy(bool)",
+      "id": "Global_TransitionManager_SetBusy_System_Boolean_",
+      "declaration": "public void SetBusy(bool value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UpdateLoadingStatus(LoadingStatus)",
+      "id": "Global_TransitionManager_UpdateLoadingStatus_LoadingStatus_",
+      "declaration": "public void UpdateLoadingStatus(LoadingStatus status)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "status",
+          "type": "LoadingStatus",
+          "type_uid": "Global.LoadingStatus",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "UpdateLoadingStatus(string)",
+      "id": "Global_TransitionManager_UpdateLoadingStatus_System_String_",
+      "declaration": "public void UpdateLoadingStatus(string rawText)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "rawText",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

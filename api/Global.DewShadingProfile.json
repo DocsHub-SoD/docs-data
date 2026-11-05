@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewShadingProfile",
+  "name": "DewShadingProfile",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"Shading\", menuName = \"Dew/Dew Shading Profile\", order = 1)]\npublic class DewShadingProfile : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "directionalLightRamp",
+      "id": "Global_DewShadingProfile_directionalLightRamp",
+      "declaration": "public Texture directionalLightRamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lightRamp",
+      "id": "Global_DewShadingProfile_lightRamp",
+      "declaration": "public Texture lightRamp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "termAlpha",
+      "id": "Global_DewShadingProfile_termAlpha",
+      "declaration": "public float termAlpha",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "termBeta",
+      "id": "Global_DewShadingProfile_termBeta",
+      "declaration": "public float termBeta",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "termGamma",
+      "id": "Global_DewShadingProfile_termGamma",
+      "declaration": "public float termGamma",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,73 @@
+{
+  "uid": "Global.BasicEffectWithStrength",
+  "name": "BasicEffectWithStrength",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class BasicEffectWithStrength : BasicEffect",
+  "inheritance": [
+    {
+      "name": "BasicEffect",
+      "href": "Global.BasicEffect.html",
+      "uid": "Global.BasicEffect"
+    },
+    {
+      "name": "ArmorBoostEffect",
+      "href": "Global.ArmorBoostEffect.html",
+      "uid": "Global.ArmorBoostEffect"
+    },
+    {
+      "name": "ArmorReductionEffect",
+      "href": "Global.ArmorReductionEffect.html",
+      "uid": "Global.ArmorReductionEffect"
+    },
+    {
+      "name": "CrippleEffect",
+      "href": "Global.CrippleEffect.html",
+      "uid": "Global.CrippleEffect"
+    },
+    {
+      "name": "FakeMaxHealthEffect",
+      "href": "Global.FakeMaxHealthEffect.html",
+      "uid": "Global.FakeMaxHealthEffect"
+    },
+    {
+      "name": "HasteEffect",
+      "href": "Global.HasteEffect.html",
+      "uid": "Global.HasteEffect"
+    },
+    {
+      "name": "SlowEffect",
+      "href": "Global.SlowEffect.html",
+      "uid": "Global.SlowEffect"
+    },
+    {
+      "name": "SpeedEffect",
+      "href": "Global.SpeedEffect.html",
+      "uid": "Global.SpeedEffect"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "decay",
+      "id": "Global_BasicEffectWithStrength_decay",
+      "declaration": "public bool decay { get; set; }",
+      "summary": "If true, strength will be scaled to remaining duration of the status effect.Works only if the status effect has a timer active.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "strength",
+      "id": "Global_BasicEffectWithStrength_strength",
+      "declaration": "public float strength { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

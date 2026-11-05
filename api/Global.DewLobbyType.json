@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DewLobbyType",
+  "name": "DewLobbyType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DewLobbyType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

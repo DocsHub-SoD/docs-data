@@ -1,0 +1,164 @@
+{
+  "uid": "Global.BoxTelegraphController",
+  "name": "BoxTelegraphController",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class BoxTelegraphController : MonoBehaviour, IEffectComponent, IEffectWithSpeed",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IEffectComponent",
+      "href": "Global.IEffectComponent.html",
+      "uid": "Global.IEffectComponent"
+    },
+    {
+      "name": "IEffectWithSpeed",
+      "href": "Global.IEffectWithSpeed.html",
+      "uid": "Global.IEffectWithSpeed"
+    }
+  ],
+  "fields": [
+    {
+      "name": "animateX",
+      "id": "Global_BoxTelegraphController_animateX",
+      "declaration": "public BoxTelegraphAnimType animateX",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "animateXEase",
+      "id": "Global_BoxTelegraphController_animateXEase",
+      "declaration": "[HideLabel]\n[ShowIf(\"@animateX != BoxTelegraphAnimType.None\", true)]\npublic DewEase animateXEase",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "animateY",
+      "id": "Global_BoxTelegraphController_animateY",
+      "declaration": "public BoxTelegraphAnimType animateY",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "animateYEase",
+      "id": "Global_BoxTelegraphController_animateYEase",
+      "declaration": "[HideLabel]\n[ShowIf(\"@animateY != BoxTelegraphAnimType.None\", true)]\npublic DewEase animateYEase",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duration",
+      "id": "Global_BoxTelegraphController_duration",
+      "declaration": "public float duration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "height",
+      "id": "Global_BoxTelegraphController_height",
+      "declaration": "public float height",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "inners",
+      "id": "Global_BoxTelegraphController_inners",
+      "declaration": "[FoldoutGroup(\"References\", 0)]\npublic SpriteRenderer[] inners",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "outers",
+      "id": "Global_BoxTelegraphController_outers",
+      "declaration": "[FoldoutGroup(\"References\", 0)]\npublic SpriteRenderer[] outers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "reds",
+      "id": "Global_BoxTelegraphController_reds",
+      "declaration": "[FoldoutGroup(\"References\", 0)]\npublic SpriteRenderer[] reds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "whites",
+      "id": "Global_BoxTelegraphController_whites",
+      "declaration": "[FoldoutGroup(\"References\", 0)]\npublic SpriteRenderer[] whites",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "width",
+      "id": "Global_BoxTelegraphController_width",
+      "declaration": "public float width",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isPlaying",
+      "id": "Global_BoxTelegraphController_isPlaying",
+      "declaration": "public bool isPlaying { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "value",
+      "id": "Global_BoxTelegraphController_value",
+      "declaration": "public float value { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ApplySpeedMultiplier(float)",
+      "id": "Global_BoxTelegraphController_ApplySpeedMultiplier_System_Single_",
+      "declaration": "public void ApplySpeedMultiplier(float speed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "speed",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Play()",
+      "id": "Global_BoxTelegraphController_Play",
+      "declaration": "public void Play()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Stop()",
+      "id": "Global_BoxTelegraphController_Stop",
+      "declaration": "public void Stop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,56 @@
+{
+  "uid": "Global.EditSkillTargetInfo",
+  "name": "EditSkillTargetInfo",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EditSkillTargetInfo",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actionTypeRawText",
+      "id": "Global_EditSkillTargetInfo_actionTypeRawText",
+      "declaration": "public string actionTypeRawText",
+      "summary": "Text to show on action button.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cost",
+      "id": "Global_EditSkillTargetInfo_cost",
+      "declaration": "public Cost? cost",
+      "summary": "Providing null denotes the cost is irrelevant here.You don't need to provide rejectReason when the player cannot afford the action,",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextLevel",
+      "id": "Global_EditSkillTargetInfo_nextLevel",
+      "declaration": "public int? nextLevel",
+      "summary": "Next level to show by comparison.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "rejectReasonRawText",
+      "id": "Global_EditSkillTargetInfo_rejectReasonRawText",
+      "declaration": "public string rejectReasonRawText",
+      "summary": "If not null, the action will be rejected and center message will be shown. You don't need to set this for the cost affordability.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "tooltipRawText",
+      "id": "Global_EditSkillTargetInfo_tooltipRawText",
+      "declaration": "public string tooltipRawText",
+      "summary": "Text to show on tooltip as a description of this action.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

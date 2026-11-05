@@ -1,0 +1,117 @@
+{
+  "uid": "Global.ElementalStatusEffect",
+  "name": "ElementalStatusEffect",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ElementalStatusEffect : StackedStatusEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IOtherPlayersTonedDownDisable",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "StatusEffect",
+      "href": "Global.StatusEffect.html",
+      "uid": "Global.StatusEffect"
+    },
+    {
+      "name": "StackedStatusEffect",
+      "href": "Global.StackedStatusEffect.html",
+      "uid": "Global.StackedStatusEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IOtherPlayersTonedDownDisable",
+      "href": "Global.IOtherPlayersTonedDownDisable.html",
+      "uid": "Global.IOtherPlayersTonedDownDisable"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ampAmount",
+      "id": "Global_ElementalStatusEffect_ampAmount",
+      "declaration": "[NonSerialized]\npublic float ampAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stackScaledEmissions",
+      "id": "Global_ElementalStatusEffect_stackScaledEmissions",
+      "declaration": "public ParticleSystem[] stackScaledEmissions",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_ElementalStatusEffect_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStackChange(int, int)",
+      "id": "Global_ElementalStatusEffect_OnStackChange_System_Int32_System_Int32_",
+      "declaration": "protected override void OnStackChange(int oldStack, int newStack)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "oldStack",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "newStack",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_ElementalStatusEffect_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

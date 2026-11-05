@@ -1,0 +1,433 @@
+{
+  "uid": "Global.DamageInstance",
+  "name": "DamageInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class DamageInstance : AbilityInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "DashAttackInstance",
+      "href": "Global.DashAttackInstance.html",
+      "uid": "Global.DashAttackInstance"
+    },
+    {
+      "name": "InstantDamageInstance",
+      "href": "Global.InstantDamageInstance.html",
+      "uid": "Global.InstantDamageInstance"
+    },
+    {
+      "name": "TickDamageInstance",
+      "href": "Global.TickDamageInstance.html",
+      "uid": "Global.TickDamageInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "applyElemental",
+      "id": "Global_DamageInstance_applyElemental",
+      "declaration": "public bool applyElemental",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackEffect",
+      "id": "Global_DamageInstance_attackEffect",
+      "declaration": "public float attackEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackEffectType",
+      "id": "Global_DamageInstance_attackEffectType",
+      "declaration": "[ShowIf(\"@attackEffect > 0.001f\", true)]\npublic AttackEffectType attackEffectType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cancelIfCasterDead",
+      "id": "Global_DamageInstance_cancelIfCasterDead",
+      "declaration": "public bool cancelIfCasterDead",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "closeEnemyDistanceThreshold",
+      "id": "Global_DamageInstance_closeEnemyDistanceThreshold",
+      "declaration": "public float closeEnemyDistanceThreshold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "closeEnemyMultiplier",
+      "id": "Global_DamageInstance_closeEnemyMultiplier",
+      "declaration": "public float closeEnemyMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cooldownTime",
+      "id": "Global_DamageInstance_cooldownTime",
+      "declaration": "[ShowIf(\"_isCooldownCheck\", true)]\npublic float cooldownTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "destroyWhenDone",
+      "id": "Global_DamageInstance_destroyWhenDone",
+      "declaration": "public bool destroyWhenDone",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dmgFactor",
+      "id": "Global_DamageInstance_dmgFactor",
+      "declaration": "public ScalingValue dmgFactor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doKnockback",
+      "id": "Global_DamageInstance_doKnockback",
+      "declaration": "public bool doKnockback",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "duplicateCheck",
+      "id": "Global_DamageInstance_duplicateCheck",
+      "declaration": "public DamageInstance.DuplicateCheckType duplicateCheck",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elemental",
+      "id": "Global_DamageInstance_elemental",
+      "declaration": "[ShowIf(\"applyElemental\", true)]\npublic ElementalType elemental",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "elementalChance",
+      "id": "Global_DamageInstance_elementalChance",
+      "declaration": "[ShowIf(\"applyElemental\", true)]\npublic float elementalChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "forceMergeNumbers",
+      "id": "Global_DamageInstance_forceMergeNumbers",
+      "declaration": "public bool forceMergeNumbers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "heroDamageMultiplier",
+      "id": "Global_DamageInstance_heroDamageMultiplier",
+      "declaration": "public float heroDamageMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hitEffect",
+      "id": "Global_DamageInstance_hitEffect",
+      "declaration": "[Title(\"Effects\", null, TitleAlignments.Left, true, true)]\npublic GameObject hitEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hittable",
+      "id": "Global_DamageInstance_hittable",
+      "declaration": "public AbilityTargetValidator hittable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDamageOverTime",
+      "id": "Global_DamageInstance_isDamageOverTime",
+      "declaration": "public bool isDamageOverTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "knockbackSettings",
+      "id": "Global_DamageInstance_knockbackSettings",
+      "declaration": "[ShowIf(\"doKnockback\", true)]\n[InlineProperty]\n[HideLabel]\npublic Knockback knockbackSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "knockupAmount",
+      "id": "Global_DamageInstance_knockupAmount",
+      "declaration": "[Title(\"Extras\", null, TitleAlignments.Left, true, true)]\npublic float knockupAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainEffect",
+      "id": "Global_DamageInstance_mainEffect",
+      "declaration": "[LabelText(\"Main Effect (Obsolete, Use Start Effect)\")]\n[HideIf(\"@mainEffect == null\", true)]\npublic GameObject mainEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterDamageMultiplier",
+      "id": "Global_DamageInstance_monsterDamageMultiplier",
+      "declaration": "public float monsterDamageMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "multiplyDamageByMaxHp",
+      "id": "Global_DamageInstance_multiplyDamageByMaxHp",
+      "declaration": "public bool multiplyDamageByMaxHp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onHit",
+      "id": "Global_DamageInstance_onHit",
+      "declaration": "public SafeAction<Entity> onHit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "origin",
+      "id": "Global_DamageInstance_origin",
+      "declaration": "public DamageInstance.OriginType origin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "procCoefficient",
+      "id": "Global_DamageInstance_procCoefficient",
+      "declaration": "public float procCoefficient",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "range",
+      "id": "Global_DamageInstance_range",
+      "declaration": "[Title(\"General\", null, TitleAlignments.Left, true, true)]\npublic DewCollider range",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "strengthMultiplier",
+      "id": "Global_DamageInstance_strengthMultiplier",
+      "declaration": "public float strengthMultiplier",
+      "summary": "Affects damage amount, knockup amount and proc coefficient.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_DamageInstance_type",
+      "declaration": "[Title(\"Damage\", null, TitleAlignments.Left, true, true)]\npublic DamageData.SourceType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useDirectionOfCast",
+      "id": "Global_DamageInstance_useDirectionOfCast",
+      "declaration": "[ShowIf(\"doKnockback\", true)]\npublic bool useDirectionOfCast",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "AddToDuplicateTracker(Entity)",
+      "id": "Global_DamageInstance_AddToDuplicateTracker_Entity_",
+      "declaration": "protected void AddToDuplicateTracker(Entity ent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CheckShouldBeDestroyed()",
+      "id": "Global_DamageInstance_CheckShouldBeDestroyed",
+      "declaration": "protected bool CheckShouldBeDestroyed()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "DoCollisionChecks()",
+      "id": "Global_DamageInstance_DoCollisionChecks",
+      "declaration": "protected void DoCollisionChecks()",
+      "summary": "Can be called multiple times. Duplicates will be excluded.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IsDuplicate(Entity)",
+      "id": "Global_DamageInstance_IsDuplicate_Entity_",
+      "declaration": "protected bool IsDuplicate(Entity ent)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ent",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "OnBeforeDispatchDamage(ref DamageData, Entity)",
+      "id": "Global_DamageInstance_OnBeforeDispatchDamage_DamageData__Entity_",
+      "declaration": "protected virtual void OnBeforeDispatchDamage(ref DamageData dmg, Entity target)",
+      "summary": "Called on server to process damage before applying it.",
+      "parameters": [
+        {
+          "name": "dmg",
+          "type": "DamageData",
+          "type_uid": "Global.DamageData",
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCollisionCheck()",
+      "id": "Global_DamageInstance_OnCollisionCheck",
+      "declaration": "protected virtual void OnCollisionCheck()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_DamageInstance_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_DamageInstance_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnHit(Entity)",
+      "id": "Global_DamageInstance_OnHit_Entity_",
+      "declaration": "protected virtual void OnHit(Entity entity)",
+      "summary": "Called on server when this instance hits an entity.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnValidateTarget(Entity)",
+      "id": "Global_DamageInstance_OnValidateTarget_Entity_",
+      "declaration": "protected virtual bool OnValidateTarget(Entity entity)",
+      "summary": "Called on server to validate hits on entity. Return false here to ignore certain hit on an entity.",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "ShouldUseDefaultAbilityTargetValidator()",
+      "id": "Global_DamageInstance_ShouldUseDefaultAbilityTargetValidator",
+      "declaration": "protected virtual bool ShouldUseDefaultAbilityTargetValidator()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

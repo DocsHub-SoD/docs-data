@@ -1,0 +1,24 @@
+{
+  "uid": "Global.DewNetworkManager.ChangeSceneMessage",
+  "name": "DewNetworkManager.ChangeSceneMessage",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewNetworkManager.ChangeSceneMessage",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "name",
+      "id": "Global_DewNetworkManager_ChangeSceneMessage_name",
+      "declaration": "public string name",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

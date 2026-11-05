@@ -1,0 +1,15 @@
+{
+  "uid": "Global.IImportantFogVolume",
+  "name": "IImportantFogVolume",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IImportantFogVolume",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

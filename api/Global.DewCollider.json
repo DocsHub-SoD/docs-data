@@ -1,0 +1,504 @@
+{
+  "uid": "Global.DewCollider",
+  "name": "DewCollider",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewCollider : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "invokeEventsOnClients",
+      "id": "Global_DewCollider_invokeEventsOnClients",
+      "declaration": "[ShowIf(\"receiveEntityCallbacks\", true)]\npublic bool invokeEventsOnClients",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "maxDecimals",
+      "id": "Global_DewCollider_maxDecimals",
+      "declaration": "[ShowIf(\"@shape == DewCollider.ColliderShape.Polygon\", true)]\npublic int maxDecimals",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "offset",
+      "id": "Global_DewCollider_offset",
+      "declaration": "[ShowIf(\"@shape == DewCollider.ColliderShape.Box || shape == DewCollider.ColliderShape.Circle\", true)]\npublic Vector2 offset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntityEnter",
+      "id": "Global_DewCollider_onEntityEnter",
+      "declaration": "[ShowIf(\"receiveEntityCallbacks\", true)]\npublic UnityEvent<Entity> onEntityEnter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onEntityExit",
+      "id": "Global_DewCollider_onEntityExit",
+      "declaration": "[ShowIf(\"receiveEntityCallbacks\", true)]\npublic UnityEvent<Entity> onEntityExit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "points",
+      "id": "Global_DewCollider_points",
+      "declaration": "[ShowIf(\"@shape == DewCollider.ColliderShape.Polygon\", true)]\npublic Vector2[] points",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "radius",
+      "id": "Global_DewCollider_radius",
+      "declaration": "[ShowIf(\"@shape == DewCollider.ColliderShape.Circle\", true)]\npublic float radius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "receiveEntityCallbacks",
+      "id": "Global_DewCollider_receiveEntityCallbacks",
+      "declaration": "public bool receiveEntityCallbacks",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shape",
+      "id": "Global_DewCollider_shape",
+      "declaration": "[EnumToggleButtons]\npublic DewCollider.ColliderShape shape",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "size",
+      "id": "Global_DewCollider_size",
+      "declaration": "[ShowIf(\"@shape == DewCollider.ColliderShape.Box\", true)]\npublic Vector2 size",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GeneratePointsInCircle(int, float, float, Vector2[])",
+      "id": "Global_DewCollider_GeneratePointsInCircle_System_Int32_System_Single_System_Single_UnityEngine_Vector2___",
+      "declaration": "public static void GeneratePointsInCircle(int count, float radius, float angle, Vector2[] points)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "count",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "angle",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "points",
+          "type": "UnityEngine.Vector2[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GeneratePointsInCircle(int, float, float)",
+      "id": "Global_DewCollider_GeneratePointsInCircle_System_Int32_System_Single_System_Single_",
+      "declaration": "public static Vector2[] GeneratePointsInCircle(int count, float radius, float angle)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "count",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "radius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "angle",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2[]"
+    },
+    {
+      "name": "GeneratePolygonPoints_Arc(float, float, int)",
+      "id": "Global_DewCollider_GeneratePolygonPoints_Arc_System_Single_System_Single_System_Int32_",
+      "declaration": "public void GeneratePolygonPoints_Arc(float arcRadius, float arcAngle, int accuracy = 20)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "arcRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "arcAngle",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "accuracy",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GeneratePolygonPoints_ArcDonut(float, float, float, int)",
+      "id": "Global_DewCollider_GeneratePolygonPoints_ArcDonut_System_Single_System_Single_System_Single_System_Int32_",
+      "declaration": "public void GeneratePolygonPoints_ArcDonut(float innerRadius, float outerRadius, float arcAngle = 360, int accuracy = 20)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "innerRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "outerRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "arcAngle",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "accuracy",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GeneratePolygonPoints_Circle(float, int)",
+      "id": "Global_DewCollider_GeneratePolygonPoints_Circle_System_Single_System_Int32_",
+      "declaration": "public void GeneratePolygonPoints_Circle(float circleRadius, int accuracy = 20)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "circleRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "accuracy",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GeneratePolygonPoints_Donut(float, float, int)",
+      "id": "Global_DewCollider_GeneratePolygonPoints_Donut_System_Single_System_Single_System_Int32_",
+      "declaration": "public void GeneratePolygonPoints_Donut(float innerRadius, float outerRadius, int accuracy = 20)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "innerRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "outerRadius",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "accuracy",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetEntities(out ListReturnHandle<Entity>, CollisionCheckSettings)",
+      "id": "Global_DewCollider_GetEntities_ListReturnHandle_Entity___CollisionCheckSettings_",
+      "declaration": "public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "GetEntities(out ListReturnHandle<Entity>, IBinaryEntityValidator, Entity, CollisionCheckSettings)",
+      "id": "Global_DewCollider_GetEntities_ListReturnHandle_Entity___IBinaryEntityValidator_Entity_CollisionCheckSettings_",
+      "declaration": "public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IBinaryEntityValidator validator, Entity self, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "GetEntities(out ListReturnHandle<Entity>, IEntityValidator, CollisionCheckSettings)",
+      "id": "Global_DewCollider_GetEntities_ListReturnHandle_Entity___IEntityValidator_CollisionCheckSettings_",
+      "declaration": "public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, IEntityValidator validator, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "GetEntities(out ListReturnHandle<Entity>, Func<Entity, bool>, CollisionCheckSettings)",
+      "id": "Global_DewCollider_GetEntities_ListReturnHandle_Entity___System_Func_Entity_System_Boolean__CollisionCheckSettings_",
+      "declaration": "public List<Entity> GetEntities(out ListReturnHandle<Entity> handle, Func<Entity, bool> validator, CollisionCheckSettings settings = default)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "ListReturnHandle<Entity>",
+          "type_uid": "Global.ListReturnHandle-1",
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><Entity,bool>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "CollisionCheckSettings",
+          "type_uid": "Global.CollisionCheckSettings",
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><Entity>"
+    },
+    {
+      "name": "OverlapPoint(Vector2)",
+      "id": "Global_DewCollider_OverlapPoint_UnityEngine_Vector2_",
+      "declaration": "public bool OverlapPoint(Vector2 point)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "point",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "SweepEntitiesFromOrigin(int, IBinaryEntityValidator, Entity, bool)",
+      "id": "Global_DewCollider_SweepEntitiesFromOrigin_System_Int32_IBinaryEntityValidator_Entity_System_Boolean_",
+      "declaration": "public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IBinaryEntityValidator validator, Entity self, bool includeUncollidable = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "iterations",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IBinaryEntityValidator",
+          "type_uid": "Global.IBinaryEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "self",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "includeUncollidable",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>"
+    },
+    {
+      "name": "SweepEntitiesFromOrigin(int, IEntityValidator, bool)",
+      "id": "Global_DewCollider_SweepEntitiesFromOrigin_System_Int32_IEntityValidator_System_Boolean_",
+      "declaration": "public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, IEntityValidator validator, bool includeUncollidable = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "iterations",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "IEntityValidator",
+          "type_uid": "Global.IEntityValidator",
+          "description": ""
+        },
+        {
+          "name": "includeUncollidable",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>"
+    },
+    {
+      "name": "SweepEntitiesFromOrigin(int, bool)",
+      "id": "Global_DewCollider_SweepEntitiesFromOrigin_System_Int32_System_Boolean_",
+      "declaration": "public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, bool includeUncollidable = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "iterations",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "includeUncollidable",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>"
+    },
+    {
+      "name": "SweepEntitiesFromOrigin(int, Func<Entity, bool>, bool)",
+      "id": "Global_DewCollider_SweepEntitiesFromOrigin_System_Int32_System_Func_Entity_System_Boolean__System_Boolean_",
+      "declaration": "public IEnumerable<List<Entity>> SweepEntitiesFromOrigin(int iterations, Func<Entity, bool> validator, bool includeUncollidable = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "iterations",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "validator",
+          "type": "System.Func<T, TResult><Entity,bool>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "includeUncollidable",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IEnumerable<T><System.Collections.Generic.List<T><Entity>>"
+    },
+    {
+      "name": "UpdateProxyCollider()",
+      "id": "Global_DewCollider_UpdateProxyCollider",
+      "declaration": "public void UpdateProxyCollider()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

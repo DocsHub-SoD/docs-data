@@ -1,0 +1,32 @@
+{
+  "uid": "Global.EventInfoHeroLevelUp",
+  "name": "EventInfoHeroLevelUp",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct EventInfoHeroLevelUp",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "newLevel",
+      "id": "Global_EventInfoHeroLevelUp_newLevel",
+      "declaration": "public int newLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "oldLevel",
+      "id": "Global_EventInfoHeroLevelUp_oldLevel",
+      "declaration": "public int oldLevel",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

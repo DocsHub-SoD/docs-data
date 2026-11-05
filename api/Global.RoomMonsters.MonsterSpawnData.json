@@ -1,0 +1,40 @@
+{
+  "uid": "Global.RoomMonsters.MonsterSpawnData",
+  "name": "RoomMonsters.MonsterSpawnData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RoomMonsters.MonsterSpawnData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "lastDeathPosition",
+      "id": "Global_RoomMonsters_MonsterSpawnData_lastDeathPosition",
+      "declaration": "public Vector3 lastDeathPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastKiller",
+      "id": "Global_RoomMonsters_MonsterSpawnData_lastKiller",
+      "declaration": "public Entity lastKiller",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "remainingPopulation",
+      "id": "Global_RoomMonsters_MonsterSpawnData_remainingPopulation",
+      "declaration": "public float remainingPopulation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

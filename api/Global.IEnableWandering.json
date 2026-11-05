@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IEnableWandering",
+  "name": "IEnableWandering",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEnableWandering",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "shouldWanderAround",
+      "id": "Global_IEnableWandering_shouldWanderAround",
+      "declaration": "bool shouldWanderAround { get; }",
+      "summary": "Chekced on server.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

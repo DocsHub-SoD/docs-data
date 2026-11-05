@@ -1,0 +1,86 @@
+{
+  "uid": "Global.InstantDamageInstance",
+  "name": "InstantDamageInstance",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class InstantDamageInstance : DamageInstance, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "AbilityInstance",
+      "href": "Global.AbilityInstance.html",
+      "uid": "Global.AbilityInstance"
+    },
+    {
+      "name": "DamageInstance",
+      "href": "Global.DamageInstance.html",
+      "uid": "Global.DamageInstance"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "damageDelay",
+      "id": "Global_InstantDamageInstance_damageDelay",
+      "declaration": "[Title(\"Instant Damage Instance\", null, TitleAlignments.Left, true, true)]\n[LabelText(\"Delay\")]\npublic float damageDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainEffectAfterDelay",
+      "id": "Global_InstantDamageInstance_mainEffectAfterDelay",
+      "declaration": "[LabelText(\"Main Effect (After Delay)\")]\npublic GameObject mainEffectAfterDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnAfterDelay()",
+      "id": "Global_InstantDamageInstance_OnAfterDelay",
+      "declaration": "protected virtual void OnAfterDelay()",
+      "summary": "Called after instant damage instance's delay on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreateSequenced()",
+      "id": "Global_InstantDamageInstance_OnCreateSequenced",
+      "declaration": "protected override IEnumerator OnCreateSequenced()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.IEnumerator"
+    }
+  ],
+  "events": []
+}

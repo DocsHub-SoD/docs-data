@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IEditSkillDropTargetSkillButton",
+  "name": "IEditSkillDropTargetSkillButton",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEditSkillDropTargetSkillButton",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "skillType",
+      "id": "Global_IEditSkillDropTargetSkillButton_skillType",
+      "declaration": "HeroSkillLocation skillType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

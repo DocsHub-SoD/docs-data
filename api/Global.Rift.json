@@ -1,0 +1,271 @@
+{
+  "uid": "Global.Rift",
+  "name": "Rift",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.None)]\npublic class Rift : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IInteractable, IBanRoomNodesNearby",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "Rift_RoomExit",
+      "href": "Global.Rift_RoomExit.html",
+      "uid": "Global.Rift_RoomExit"
+    },
+    {
+      "name": "Rift_Sidetrack",
+      "href": "Global.Rift_Sidetrack.html",
+      "uid": "Global.Rift_Sidetrack"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IInteractable",
+      "href": "Global.IInteractable.html",
+      "uid": "Global.IInteractable"
+    },
+    {
+      "name": "IBanRoomNodesNearby",
+      "href": "Global.IBanRoomNodesNearby.html",
+      "uid": "Global.IBanRoomNodesNearby"
+    }
+  ],
+  "fields": [
+    {
+      "name": "afterOpenInteractableDelay",
+      "id": "Global_Rift_afterOpenInteractableDelay",
+      "declaration": "public float afterOpenInteractableDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chargeDuration",
+      "id": "Global_Rift_chargeDuration",
+      "declaration": "public float chargeDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxActivate",
+      "id": "Global_Rift_fxActivate",
+      "declaration": "public GameObject fxActivate",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxCharge",
+      "id": "Global_Rift_fxCharge",
+      "declaration": "public GameObject fxCharge",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxLocked",
+      "id": "Global_Rift_fxLocked",
+      "declaration": "public GameObject fxLocked",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxLoop",
+      "id": "Global_Rift_fxLoop",
+      "declaration": "public GameObject fxLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxOpen",
+      "id": "Global_Rift_fxOpen",
+      "declaration": "public GameObject fxOpen",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxUnlocked",
+      "id": "Global_Rift_fxUnlocked",
+      "declaration": "public GameObject fxUnlocked",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "softInstance",
+      "id": "Global_Rift_softInstance",
+      "declaration": "public static Rift softInstance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "canInteractWithMouse",
+      "id": "Global_Rift_canInteractWithMouse",
+      "declaration": "public bool canInteractWithMouse { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "focusDistance",
+      "id": "Global_Rift_focusDistance",
+      "declaration": "public float focusDistance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "instance",
+      "id": "Global_Rift_instance",
+      "declaration": "public static Rift instance { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interactPivot",
+      "id": "Global_Rift_interactPivot",
+      "declaration": "public Transform interactPivot { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_Rift_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLocked",
+      "id": "Global_Rift_isLocked",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic bool isLocked { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isOpen",
+      "id": "Global_Rift_isOpen",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic bool isOpen { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_Rift_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CanInteract(Entity)",
+      "id": "Global_Rift_CanInteract_Entity_",
+      "declaration": "public virtual bool CanInteract(Entity entity)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Close()",
+      "id": "Global_Rift_Close",
+      "declaration": "[Button]\npublic void Close()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_Rift_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_Rift_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnInteractRift(Hero)",
+      "id": "Global_Rift_OnInteractRift_Hero_",
+      "declaration": "protected virtual bool OnInteractRift(Hero hero)",
+      "summary": "Called on server when a hero interacts with this rift.Return true to indicate success of interaction. (Will play activate effect)",
+      "parameters": [
+        {
+          "name": "hero",
+          "type": "Hero",
+          "type_uid": "Global.Hero",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Open()",
+      "id": "Global_Rift_Open",
+      "declaration": "[Button]\npublic void Open()",
+      "summary": "Open the rift with charging animation. If you wish to skip the animation, set the isOpen property directly.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_Rift_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,144 @@
+{
+  "uid": "Global.DewBeamRenderer",
+  "name": "DewBeamRenderer",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[LogicUpdatePriority(1100)]\npublic class DewBeamRenderer : LogicBehaviour, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "acrossEffect",
+      "id": "Global_DewBeamRenderer_acrossEffect",
+      "declaration": "public GameObject acrossEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "acrossEffectInterval",
+      "id": "Global_DewBeamRenderer_acrossEffectInterval",
+      "declaration": "[ShowIf(\"@acrossEffect != null\", true)]\npublic float acrossEffectInterval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "endEffect",
+      "id": "Global_DewBeamRenderer_endEffect",
+      "declaration": "public GameObject endEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lineRenderer",
+      "id": "Global_DewBeamRenderer_lineRenderer",
+      "declaration": "public LineRenderer lineRenderer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startEffect",
+      "id": "Global_DewBeamRenderer_startEffect",
+      "declaration": "public GameObject startEffect",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_DewBeamRenderer_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDisable()",
+      "id": "Global_DewBeamRenderer_OnDisable",
+      "declaration": "protected override void OnDisable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnEnable()",
+      "id": "Global_DewBeamRenderer_OnEnable",
+      "declaration": "protected override void OnEnable()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetEndPoint(Vector3)",
+      "id": "Global_DewBeamRenderer_SetEndPoint_UnityEngine_Vector3_",
+      "declaration": "public void SetEndPoint(Vector3 point)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "point",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetPoints(Vector3, Vector3)",
+      "id": "Global_DewBeamRenderer_SetPoints_UnityEngine_Vector3_UnityEngine_Vector3_",
+      "declaration": "public void SetPoints(Vector3 start, Vector3 end)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "end",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetStartPoint(Vector3)",
+      "id": "Global_DewBeamRenderer_SetStartPoint_UnityEngine_Vector3_",
+      "declaration": "public void SetStartPoint(Vector3 point)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "point",
+          "type": "UnityEngine.Vector3",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,71 @@
+{
+  "uid": "Global.DewGameplaySettings_Platform",
+  "name": "DewGameplaySettings_Platform",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewGameplaySettings_Platform : IInitializableSettings",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IInitializableSettings",
+      "href": "Global.IInitializableSettings.html",
+      "uid": "Global.IInitializableSettings"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableSoftwareCursor",
+      "id": "Global_DewGameplaySettings_Platform_disableSoftwareCursor",
+      "declaration": "public bool disableSoftwareCursor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableDeveloperMode",
+      "id": "Global_DewGameplaySettings_Platform_enableDeveloperMode",
+      "declaration": "public bool enableDeveloperMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipIntro",
+      "id": "Global_DewGameplaySettings_Platform_skipIntro",
+      "declaration": "public bool skipIntro",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "skipPhotosensitivityWarning",
+      "id": "Global_DewGameplaySettings_Platform_skipPhotosensitivityWarning",
+      "declaration": "public bool skipPhotosensitivityWarning",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewGameplaySettings_Platform_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewGameplaySettings_Platform_Initialize",
+      "declaration": "public void Initialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.UI_GameInputPassThrough",
+  "name": "UI_GameInputPassThrough",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class UI_GameInputPassThrough : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "exceptLeftClick",
+      "id": "Global_UI_GameInputPassThrough_exceptLeftClick",
+      "declaration": "public bool exceptLeftClick",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

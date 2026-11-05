@@ -1,0 +1,15 @@
+{
+  "uid": "Global.DevCanvas.DevCanvasState",
+  "name": "DevCanvas.DevCanvasState",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum DevCanvas.DevCanvasState",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

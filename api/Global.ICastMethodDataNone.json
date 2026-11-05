@@ -1,0 +1,24 @@
+{
+  "uid": "Global.ICastMethodDataNone",
+  "name": "ICastMethodDataNone",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface ICastMethodDataNone",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "radius",
+      "id": "Global_ICastMethodDataNone_radius",
+      "declaration": "float radius { get; }",
+      "summary": "Effective range of the ability around the caster.",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

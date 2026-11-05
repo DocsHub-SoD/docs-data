@@ -1,0 +1,31 @@
+{
+  "uid": "Global.IEffectWithOwnerContext",
+  "name": "IEffectWithOwnerContext",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEffectWithOwnerContext",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [
+    {
+      "name": "SetOwnerContext(EffectOwnerContext)",
+      "id": "Global_IEffectWithOwnerContext_SetOwnerContext_EffectOwnerContext_",
+      "declaration": "void SetOwnerContext(EffectOwnerContext context)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "context",
+          "type": "EffectOwnerContext",
+          "type_uid": "Global.EffectOwnerContext",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

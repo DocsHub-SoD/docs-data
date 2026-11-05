@@ -1,0 +1,15 @@
+{
+  "uid": "Global.WorldNodeType",
+  "name": "WorldNodeType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum WorldNodeType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

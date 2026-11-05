@@ -1,0 +1,334 @@
+{
+  "uid": "Global.EntityModel",
+  "name": "EntityModel",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class EntityModel : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "bodyRenderers",
+      "id": "Global_EntityModel_bodyRenderers",
+      "declaration": "[Title(\"General\", null, TitleAlignments.Left, true, true)]\npublic Renderer[] bodyRenderers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customMappings",
+      "id": "Global_EntityModel_customMappings",
+      "declaration": "[Title(\"Custom Mappings\", null, TitleAlignments.Left, true, true)]\npublic List<EntityModelCustomMapping> customMappings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "death",
+      "id": "Global_EntityModel_death",
+      "declaration": "public AnimationClipWithSpeed death",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "deathBehavior",
+      "id": "Global_EntityModel_deathBehavior",
+      "declaration": "public EntityVisual.EntityDeathBehavior deathBehavior",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissolveDelay",
+      "id": "Global_EntityModel_dissolveDelay",
+      "declaration": "[ShowIf(\"@deathBehavior == EntityVisual.EntityDeathBehavior.Dissolve\", true)]\npublic float dissolveDelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dissolveDuration",
+      "id": "Global_EntityModel_dissolveDuration",
+      "declaration": "[ShowIf(\"@deathBehavior == EntityVisual.EntityDeathBehavior.Dissolve\", true)]\npublic float dissolveDuration",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxDeath",
+      "id": "Global_EntityModel_fxDeath",
+      "declaration": "public GameObject fxDeath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxLoop",
+      "id": "Global_EntityModel_fxLoop",
+      "declaration": "[Title(\"Effects\", null, TitleAlignments.Left, true, true)]\npublic GameObject fxLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxTakeDamage",
+      "id": "Global_EntityModel_fxTakeDamage",
+      "declaration": "public GameObject fxTakeDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hasGoldDissolve",
+      "id": "Global_EntityModel_hasGoldDissolve",
+      "declaration": "public bool hasGoldDissolve",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "healthBarPosition",
+      "id": "Global_EntityModel_healthBarPosition",
+      "declaration": "public Transform healthBarPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "holsteredWeapon",
+      "id": "Global_EntityModel_holsteredWeapon",
+      "declaration": "public Transform holsteredWeapon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "idle",
+      "id": "Global_EntityModel_idle",
+      "declaration": "[Title(\"Animations\", null, TitleAlignments.Left, true, true)]\npublic AnimationClipWithSpeed idle",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobby",
+      "id": "Global_EntityModel_lobby",
+      "declaration": "[Title(\"Hero\", null, TitleAlignments.Left, true, true)]\npublic AnimationClipWithSpeed lobby",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "locomotion",
+      "id": "Global_EntityModel_locomotion",
+      "declaration": "public EntityAnimation.LocomotionType locomotion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runBackwardClip",
+      "id": "Global_EntityModel_runBackwardClip",
+      "declaration": "[ShowIf(\"support4Directions\", true)]\npublic AnimationClip runBackwardClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runBackwardLeftClip",
+      "id": "Global_EntityModel_runBackwardLeftClip",
+      "declaration": "[ShowIf(\"support8Directions\", true)]\npublic AnimationClip runBackwardLeftClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runBackwardRightClip",
+      "id": "Global_EntityModel_runBackwardRightClip",
+      "declaration": "[ShowIf(\"support8Directions\", true)]\npublic AnimationClip runBackwardRightClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runForwardClip",
+      "id": "Global_EntityModel_runForwardClip",
+      "declaration": "public AnimationClip runForwardClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runForwardLeftClip",
+      "id": "Global_EntityModel_runForwardLeftClip",
+      "declaration": "[ShowIf(\"support8Directions\", true)]\npublic AnimationClip runForwardLeftClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runForwardRightClip",
+      "id": "Global_EntityModel_runForwardRightClip",
+      "declaration": "[ShowIf(\"support8Directions\", true)]\npublic AnimationClip runForwardRightClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runLeftClip",
+      "id": "Global_EntityModel_runLeftClip",
+      "declaration": "[ShowIf(\"support4Directions\", true)]\npublic AnimationClip runLeftClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "runRightClip",
+      "id": "Global_EntityModel_runRightClip",
+      "declaration": "[ShowIf(\"support4Directions\", true)]\npublic AnimationClip runRightClip",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stagger",
+      "id": "Global_EntityModel_stagger",
+      "declaration": "public AnimationClipWithSpeed stagger",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "walkAnimationSpeed",
+      "id": "Global_EntityModel_walkAnimationSpeed",
+      "declaration": "public float walkAnimationSpeed",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "weapon",
+      "id": "Global_EntityModel_weapon",
+      "declaration": "public Transform weapon",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isInitialized",
+      "id": "Global_EntityModel_isInitialized",
+      "declaration": "public bool isInitialized { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "support4Directions",
+      "id": "Global_EntityModel_support4Directions",
+      "declaration": "public bool support4Directions { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "support8Directions",
+      "id": "Global_EntityModel_support8Directions",
+      "declaration": "public bool support8Directions { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "ContainsCustomMappingKey(string)",
+      "id": "Global_EntityModel_ContainsCustomMappingKey_System_String_",
+      "declaration": "public bool ContainsCustomMappingKey(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetCustomMapping<T>(string)",
+      "id": "Global_EntityModel_GetCustomMapping__1_System_String_",
+      "declaration": "public T GetCustomMapping<T>(string key) where T : class",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetCustomMappingArray<T>(string)",
+      "id": "Global_EntityModel_GetCustomMappingArray__1_System_String_",
+      "declaration": "public T[] GetCustomMappingArray<T>(string key) where T : class",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T[]"
+    },
+    {
+      "name": "TryGetCustomMapping<T>(string, out T)",
+      "id": "Global_EntityModel_TryGetCustomMapping__1_System_String___0__",
+      "declaration": "public bool TryGetCustomMapping<T>(string key, out T target) where T : class",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

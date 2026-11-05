@@ -1,0 +1,15 @@
+{
+  "uid": "Global.FxAttachToEntity.OffsetType",
+  "name": "FxAttachToEntity.OffsetType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum FxAttachToEntity.OffsetType",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

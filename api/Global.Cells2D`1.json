@@ -1,0 +1,231 @@
+{
+  "uid": "Global.Cells2D`1",
+  "name": "Cells2D<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic class Cells2D<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "cellSize",
+      "id": "Global_Cells2D_1_cellSize",
+      "declaration": "public float cellSize",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "center",
+      "id": "Global_Cells2D_1_center",
+      "declaration": "public Vector2 center",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "data",
+      "id": "Global_Cells2D_1_data",
+      "declaration": "public T[] data",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dataHeight",
+      "id": "Global_Cells2D_1_dataHeight",
+      "declaration": "public int dataHeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dataWidth",
+      "id": "Global_Cells2D_1_dataWidth",
+      "declaration": "public int dataWidth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "max",
+      "id": "Global_Cells2D_1_max",
+      "declaration": "public Vector2 max",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "min",
+      "id": "Global_Cells2D_1_min",
+      "declaration": "public Vector2 min",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "size",
+      "id": "Global_Cells2D_1_size",
+      "declaration": "public Vector2 size",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "FloodFill((int, int), Func<(int, int), bool>)",
+      "id": "Global_Cells2D_1_FloodFill_System_ValueTuple_System_Int32_System_Int32__System_Func_System_ValueTuple_System_Int32_System_Int32__System_Boolean__",
+      "declaration": "public void FloodFill((int, int) start, Func<(int, int), bool> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "start",
+          "type": "(int,int)",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "func",
+          "type": "System.Func<T, TResult><(int,int),bool>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Get((int, int))",
+      "id": "Global_Cells2D_1_Get_System_ValueTuple_System_Int32_System_Int32__",
+      "declaration": "public T Get((int, int) indices)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "indices",
+          "type": "(int,int)",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "GetClosestCell(Vector2)",
+      "id": "Global_Cells2D_1_GetClosestCell_UnityEngine_Vector2_",
+      "declaration": "public (int, int) GetClosestCell(Vector2 worldPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "worldPos",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "(int,int)"
+    },
+    {
+      "name": "GetCropped(int, int, int, int)",
+      "id": "Global_Cells2D_1_GetCropped_System_Int32_System_Int32_System_Int32_System_Int32_",
+      "declaration": "public Cells2D<T> GetCropped(int startX, int endX, int startY, int endY)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "startX",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "endX",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "startY",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "endY",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "Cells2D<T>"
+    },
+    {
+      "name": "GetNormalizedPos(Vector2)",
+      "id": "Global_Cells2D_1_GetNormalizedPos_UnityEngine_Vector2_",
+      "declaration": "public Vector2 GetNormalizedPos(Vector2 worldPos)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "worldPos",
+          "type": "UnityEngine.Vector2",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "GetWorldPos((int, int))",
+      "id": "Global_Cells2D_1_GetWorldPos_System_ValueTuple_System_Int32_System_Int32__",
+      "declaration": "public Vector2 GetWorldPos((int, int) indices)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "indices",
+          "type": "(int,int)",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "UnityEngine.Vector2"
+    },
+    {
+      "name": "IsInBounds((int, int))",
+      "id": "Global_Cells2D_1_IsInBounds_System_ValueTuple_System_Int32_System_Int32__",
+      "declaration": "public bool IsInBounds((int, int) indices)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "indices",
+          "type": "(int,int)",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Set((int, int), T)",
+      "id": "Global_Cells2D_1_Set_System_ValueTuple_System_Int32_System_Int32___0_",
+      "declaration": "public void Set((int, int) indices, T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "indices",
+          "type": "(int,int)",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

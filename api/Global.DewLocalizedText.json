@@ -1,0 +1,47 @@
+{
+  "uid": "Global.DewLocalizedText",
+  "name": "DewLocalizedText",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewLocalizedText : MonoBehaviour, ILangaugeChangedCallback",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "ILangaugeChangedCallback",
+      "href": "Global.ILangaugeChangedCallback.html",
+      "uid": "Global.ILangaugeChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "key",
+      "id": "Global_DewLocalizedText_key",
+      "declaration": "public string key",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "OnLanguageChanged()",
+      "id": "Global_DewLocalizedText_OnLanguageChanged",
+      "declaration": "public void OnLanguageChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "UpdateText()",
+      "id": "Global_DewLocalizedText_UpdateText",
+      "declaration": "public void UpdateText()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,172 @@
+{
+  "uid": "Global.DewGraphicsSettings",
+  "name": "DewGraphicsSettings",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewGraphicsSettings : IInitializableSettings, IValidatableSettings",
+  "inheritance": [],
+  "implements": [
+    {
+      "name": "IInitializableSettings",
+      "href": "Global.IInitializableSettings.html",
+      "uid": "Global.IInitializableSettings"
+    },
+    {
+      "name": "IValidatableSettings",
+      "href": "Global.IValidatableSettings.html",
+      "uid": "Global.IValidatableSettings"
+    }
+  ],
+  "fields": [
+    {
+      "name": "displayIndex",
+      "id": "Global_DewGraphicsSettings_displayIndex",
+      "declaration": "public int displayIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fogQuality",
+      "id": "Global_DewGraphicsSettings_fogQuality",
+      "declaration": "public QualityOff3Levels fogQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fullScreenMode",
+      "id": "Global_DewGraphicsSettings_fullScreenMode",
+      "declaration": "public FullScreenMode fullScreenMode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gameFrameLimit",
+      "id": "Global_DewGraphicsSettings_gameFrameLimit",
+      "declaration": "public int gameFrameLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "menuFrameLimit",
+      "id": "Global_DewGraphicsSettings_menuFrameLimit",
+      "declaration": "public int menuFrameLimit",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "particleEffectQuality",
+      "id": "Global_DewGraphicsSettings_particleEffectQuality",
+      "declaration": "public Quality3Levels particleEffectQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerAbilityCount",
+      "id": "Global_DewGraphicsSettings_playerAbilityCount",
+      "declaration": "public Quality4Levels playerAbilityCount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "resolutionHeight",
+      "id": "Global_DewGraphicsSettings_resolutionHeight",
+      "declaration": "public int resolutionHeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "resolutionWidth",
+      "id": "Global_DewGraphicsSettings_resolutionWidth",
+      "declaration": "public int resolutionWidth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shaderQuality",
+      "id": "Global_DewGraphicsSettings_shaderQuality",
+      "declaration": "public Quality3Levels shaderQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shadowQuality",
+      "id": "Global_DewGraphicsSettings_shadowQuality",
+      "declaration": "public QualityOff4Levels shadowQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "terrainQuality",
+      "id": "Global_DewGraphicsSettings_terrainQuality",
+      "declaration": "public Quality3Levels terrainQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "textureQuality",
+      "id": "Global_DewGraphicsSettings_textureQuality",
+      "declaration": "public Quality3Levels textureQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vegetationQuality",
+      "id": "Global_DewGraphicsSettings_vegetationQuality",
+      "declaration": "public Quality3Levels vegetationQuality",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vSync",
+      "id": "Global_DewGraphicsSettings_vSync",
+      "declaration": "public bool vSync",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Clone()",
+      "id": "Global_DewGraphicsSettings_Clone",
+      "declaration": "public object Clone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "object"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewGraphicsSettings_Initialize",
+      "declaration": "public void Initialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewGraphicsSettings_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

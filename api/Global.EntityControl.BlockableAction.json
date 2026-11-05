@@ -1,0 +1,15 @@
+{
+  "uid": "Global.EntityControl.BlockableAction",
+  "name": "EntityControl.BlockableAction",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum EntityControl.BlockableAction",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

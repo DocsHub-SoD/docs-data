@@ -1,0 +1,1315 @@
+{
+  "uid": "Global.ZoneManager",
+  "name": "ZoneManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class ZoneManager : NetworkedManagerBase<ZoneManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "ZoneManager",
+      "href": "Global.ZoneManager.html",
+      "uid": "Global.ZoneManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "bannedRoomModifiersForCurrentLoop",
+      "id": "Global_ZoneManager_bannedRoomModifiersForCurrentLoop",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<string> bannedRoomModifiersForCurrentLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "bannedSidetracksForCurrentLoop",
+      "id": "Global_ZoneManager_bannedSidetracksForCurrentLoop",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<string> bannedSidetracksForCurrentLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnClearedCombatRoomsChanged",
+      "id": "Global_ZoneManager_ClientEvent_OnClearedCombatRoomsChanged",
+      "declaration": "public SafeAction ClientEvent_OnClearedCombatRoomsChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnCurrentHuntLevelChanged",
+      "id": "Global_ZoneManager_ClientEvent_OnCurrentHuntLevelChanged",
+      "declaration": "public SafeAction ClientEvent_OnCurrentHuntLevelChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnCurrentRoomIndexChanged",
+      "id": "Global_ZoneManager_ClientEvent_OnCurrentRoomIndexChanged",
+      "declaration": "public SafeAction ClientEvent_OnCurrentRoomIndexChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnIsInTransitionChanged",
+      "id": "Global_ZoneManager_ClientEvent_OnIsInTransitionChanged",
+      "declaration": "public SafeAction<bool> ClientEvent_OnIsInTransitionChanged",
+      "summary": "Called everywhere when room transition status has changed.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnLoopStarted",
+      "id": "Global_ZoneManager_ClientEvent_OnLoopStarted",
+      "declaration": "public SafeAction ClientEvent_OnLoopStarted",
+      "summary": "Called everywhere when first zone starts or a new loop has started.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnNodesChanged",
+      "id": "Global_ZoneManager_ClientEvent_OnNodesChanged",
+      "declaration": "public SafeAction ClientEvent_OnNodesChanged",
+      "summary": "Called once per frame when nodes data changes in any way. Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnRoomLoaded",
+      "id": "Global_ZoneManager_ClientEvent_OnRoomLoaded",
+      "declaration": "public SafeAction<EventInfoLoadRoom> ClientEvent_OnRoomLoaded",
+      "summary": "Called everywhere when a new room is loaded.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnRoomLoadStarted",
+      "id": "Global_ZoneManager_ClientEvent_OnRoomLoadStarted",
+      "declaration": "public SafeAction<EventInfoLoadRoom> ClientEvent_OnRoomLoadStarted",
+      "summary": "Called everywhere when the game has started loading a room and the screen has gone dark.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnVoteCanceled",
+      "id": "Global_ZoneManager_ClientEvent_OnVoteCanceled",
+      "declaration": "public SafeAction<DewPlayer> ClientEvent_OnVoteCanceled",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnVoteCompleted",
+      "id": "Global_ZoneManager_ClientEvent_OnVoteCompleted",
+      "declaration": "public SafeAction ClientEvent_OnVoteCompleted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnVoteStarted",
+      "id": "Global_ZoneManager_ClientEvent_OnVoteStarted",
+      "declaration": "public SafeAction<DewPlayer> ClientEvent_OnVoteStarted",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnZoneLoaded",
+      "id": "Global_ZoneManager_ClientEvent_OnZoneLoaded",
+      "declaration": "public SafeAction<EventInfoLoadZone> ClientEvent_OnZoneLoaded",
+      "summary": "Called everywhere when a new zone is loaded.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnZoneLoadStarted",
+      "id": "Global_ZoneManager_ClientEvent_OnZoneLoadStarted",
+      "declaration": "public SafeAction<EventInfoLoadZone> ClientEvent_OnZoneLoadStarted",
+      "summary": "Called everywhere when the game has started loading a new zone and the screen has gone dark.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "didLocallyShowHunterWarning",
+      "id": "Global_ZoneManager_didLocallyShowHunterWarning",
+      "declaration": "[NonSerialized]\npublic bool didLocallyShowHunterWarning",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "forceVoteForDebug",
+      "id": "Global_ZoneManager_forceVoteForDebug",
+      "declaration": "[NonSerialized]\npublic bool? forceVoteForDebug",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterSpreadMultiplier",
+      "id": "Global_ZoneManager_hunterSpreadMultiplier",
+      "declaration": "[NonSerialized]\npublic float hunterSpreadMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "HunterStartSkippedTurns",
+      "id": "Global_ZoneManager_HunterStartSkippedTurns",
+      "declaration": "public static int HunterStartSkippedTurns",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterStatuses",
+      "id": "Global_ZoneManager_hunterStatuses",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<HunterStatus> hunterStatuses",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modifierServerData",
+      "id": "Global_ZoneManager_modifierServerData",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Dictionary<int, ModifierServerData> modifierServerData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nextZoneOverride",
+      "id": "Global_ZoneManager_nextZoneOverride",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic AssetRef<Zone> nextZoneOverride",
+      "summary": "Available on server.Set this, and the next zone load will be overwritten to this one, and nextZoneOverride will be cleared.Instead of appending a zone, this overwrites the zone to be loaded, so a zone still gets removed from the pool, and the tier goes up if necessary.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nodeDistanceMatrix",
+      "id": "Global_ZoneManager_nodeDistanceMatrix",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<int> nodeDistanceMatrix",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "NodePlacementTries",
+      "id": "Global_ZoneManager_NodePlacementTries",
+      "declaration": "public static int NodePlacementTries",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nodes",
+      "id": "Global_ZoneManager_nodes",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic readonly SyncList<WorldNodeData> nodes",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onWorldGenerated",
+      "id": "Global_ZoneManager_onWorldGenerated",
+      "declaration": "public SafeAction onWorldGenerated",
+      "summary": "Called on server when the world is generated by GenerateWorld functions. Not called when loading from save.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "remainingZonesOfCurrentTier",
+      "id": "Global_ZoneManager_remainingZonesOfCurrentTier",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<AssetRef<Zone>> remainingZonesOfCurrentTier",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ScoreFuzziness",
+      "id": "Global_ZoneManager_ScoreFuzziness",
+      "declaration": "public static float ScoreFuzziness",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ScorePerIsolatedImportantNode",
+      "id": "Global_ZoneManager_ScorePerIsolatedImportantNode",
+      "declaration": "public static float ScorePerIsolatedImportantNode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ScorePerIsolatedNode",
+      "id": "Global_ZoneManager_ScorePerIsolatedNode",
+      "declaration": "public static float ScorePerIsolatedNode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visitedNodesSaveData",
+      "id": "Global_ZoneManager_visitedNodesSaveData",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\n[NonSerialized]\npublic List<DewPersistence.RoomData> visitedNodesSaveData",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voteType",
+      "id": "Global_ZoneManager_voteType",
+      "declaration": "public VoteType voteType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WorldGenerationIterations",
+      "id": "Global_ZoneManager_WorldGenerationIterations",
+      "declaration": "public static int WorldGenerationIterations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WorldHeight",
+      "id": "Global_ZoneManager_WorldHeight",
+      "declaration": "public static float WorldHeight",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "WorldWidth",
+      "id": "Global_ZoneManager_WorldWidth",
+      "declaration": "public static float WorldWidth",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "clearedCombatRooms",
+      "id": "Global_ZoneManager_clearedCombatRooms",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int clearedCombatRooms { get; set; }",
+      "summary": "Number of rooms cleared that are not shops nor special rooms.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentHuntLevel",
+      "id": "Global_ZoneManager_currentHuntLevel",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentHuntLevel { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentNode",
+      "id": "Global_ZoneManager_currentNode",
+      "declaration": "public WorldNodeData currentNode { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentNodeHunterStatus",
+      "id": "Global_ZoneManager_currentNodeHunterStatus",
+      "declaration": "public HunterStatus currentNodeHunterStatus { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentNodeIndex",
+      "id": "Global_ZoneManager_currentNodeIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentNodeIndex { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentRoom",
+      "id": "Global_ZoneManager_currentRoom",
+      "declaration": "public Room currentRoom { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentRoomIndex",
+      "id": "Global_ZoneManager_currentRoomIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentRoomIndex { get; set; }",
+      "summary": "Index of current room in current game session.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentTier",
+      "id": "Global_ZoneManager_currentTier",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentTier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentTurnIndex",
+      "id": "Global_ZoneManager_currentTurnIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentTurnIndex { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentZone",
+      "id": "Global_ZoneManager_currentZone",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic Zone currentZone { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentZoneClearedNodes",
+      "id": "Global_ZoneManager_currentZoneClearedNodes",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentZoneClearedNodes { get; set; }",
+      "summary": "Number of cleared nodes in current zone.Starts at 0 on a new zone, and goes up whenever players move away from a previously unvisited node.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentZoneIndex",
+      "id": "Global_ZoneManager_currentZoneIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int currentZoneIndex { get; set; }",
+      "summary": "Index of current zone in current game session.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterSkippedTurns",
+      "id": "Global_ZoneManager_hunterSkippedTurns",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int hunterSkippedTurns { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hunterStartNodeIndex",
+      "id": "Global_ZoneManager_hunterStartNodeIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int hunterStartNodeIndex { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCurrentNodeHunted",
+      "id": "Global_ZoneManager_isCurrentNodeHunted",
+      "declaration": "public bool isCurrentNodeHunted { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isHuntAdvanceDisabled",
+      "id": "Global_ZoneManager_isHuntAdvanceDisabled",
+      "declaration": "public bool isHuntAdvanceDisabled { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInAnyTransition",
+      "id": "Global_ZoneManager_isInAnyTransition",
+      "declaration": "public bool isInAnyTransition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInLocalTransition",
+      "id": "Global_ZoneManager_isInLocalTransition",
+      "declaration": "public bool isInLocalTransition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isInRoomTransition",
+      "id": "Global_ZoneManager_isInRoomTransition",
+      "declaration": "public bool isInRoomTransition { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSidetracking",
+      "id": "Global_ZoneManager_isSidetracking",
+      "declaration": "public bool isSidetracking { get; }",
+      "summary": "Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isVoting",
+      "id": "Global_ZoneManager_isVoting",
+      "declaration": "public bool isVoting { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastLoadNodeSettings",
+      "id": "Global_ZoneManager_lastLoadNodeSettings",
+      "declaration": "public LoadNodeSettings lastLoadNodeSettings { get; }",
+      "summary": "Available on server. Immediately set upon calling ZoneManager.LoadNode().",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loopIndex",
+      "id": "Global_ZoneManager_loopIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int loopIndex { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sidetrackReturnNodeIndex",
+      "id": "Global_ZoneManager_sidetrackReturnNodeIndex",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int sidetrackReturnNodeIndex { get; set; }",
+      "summary": "Node to return to after side tracking. Set to -1 if not sidetracking. Available everywhere.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voteData",
+      "id": "Global_ZoneManager_voteData",
+      "declaration": "public int voteData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "voteRemainingSeconds",
+      "id": "Global_ZoneManager_voteRemainingSeconds",
+      "declaration": "public int voteRemainingSeconds { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldSeed",
+      "id": "Global_ZoneManager_worldSeed",
+      "declaration": "public uint worldSeed { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddModifier(int, ModifierData, Action<RoomModifierBase>)",
+      "id": "Global_ZoneManager_AddModifier_System_Int32_ModifierData_System_Action_RoomModifierBase__",
+      "declaration": "public int AddModifier(int nodeIndex, ModifierData mod, Action<RoomModifierBase> beforePrepare = null)",
+      "summary": "Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "mod",
+          "type": "ModifierData",
+          "type_uid": "Global.ModifierData",
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><RoomModifierBase>",
+          "type_uid": "Global.RoomModifierBase",
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "AddModifier<T>(int, Action<T>)",
+      "id": "Global_ZoneManager_AddModifier__1_System_Int32_System_Action___0__",
+      "declaration": "public int AddModifier<T>(int nodeIndex, Action<T> beforePrepare = null) where T : RoomModifierBase",
+      "summary": "Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "AddModifier<T>(int, string, Action<T>)",
+      "id": "Global_ZoneManager_AddModifier__1_System_Int32_System_String_System_Action___0__",
+      "declaration": "public int AddModifier<T>(int nodeIndex, string clientData, Action<T> beforePrepare = null) where T : RoomModifierBase",
+      "summary": "Add modifier to a node. Note if you're trying to add another main modifier, previous one will be removed.",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "clientData",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "beforePrepare",
+          "type": "System.Action<T><T>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "AddSidetrackNode(string)",
+      "id": "Global_ZoneManager_AddSidetrackNode_System_String_",
+      "declaration": "public void AddSidetrackNode(string roomName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "roomName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool>)",
+      "id": "Global_ZoneManager_AddTravelToNodeInterrupt_System_Func_EventInfoTravelToNodeInterrupt_System_Boolean__",
+      "declaration": "public void AddTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool> func)",
+      "summary": "Add travel-to-node interruptor.Return true to interrupt travel for something cinematic and cool.Note this cannot interrupt sidetracks, zone travels or fake travels.",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Func<T, TResult><EventInfoTravelToNodeInterrupt,bool>",
+          "type_uid": "Global.EventInfoTravelToNodeInterrupt",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AdvanceHunterTurn(bool)",
+      "id": "Global_ZoneManager_AdvanceHunterTurn_System_Boolean_",
+      "declaration": "public void AdvanceHunterTurn(bool forceMove = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "forceMove",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CallOnReadyAfterTransition(Action)",
+      "id": "Global_ZoneManager_CallOnReadyAfterTransition_System_Action_",
+      "declaration": "public void CallOnReadyAfterTransition(Action action)",
+      "summary": "Called after a reasonable amount of time has passed after transition ends.Immediately called if not on a transition.",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdCancelVote(NetworkConnectionToClient)",
+      "id": "Global_ZoneManager_CmdCancelVote_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdCancelVote(NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdTravelToNextZone(NetworkConnectionToClient)",
+      "id": "Global_ZoneManager_CmdTravelToNextZone_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdTravelToNextZone(NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdTravelToNode(int, NetworkConnectionToClient)",
+      "id": "Global_ZoneManager_CmdTravelToNode_System_Int32_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdTravelToNode(int index, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DoDeadEndTravel()",
+      "id": "Global_ZoneManager_DoDeadEndTravel",
+      "declaration": "public void DoDeadEndTravel()",
+      "summary": "Do initial travel node animation and soft lock the game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GenerateWorldAuto()",
+      "id": "Global_ZoneManager_GenerateWorldAuto",
+      "declaration": "public void GenerateWorldAuto()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "GenerateWorldWithSeed(uint)",
+      "id": "Global_ZoneManager_GenerateWorldWithSeed_System_UInt32_",
+      "declaration": "public void GenerateWorldWithSeed(uint seed)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "uint",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetCannotTravelReason()",
+      "id": "Global_ZoneManager_GetCannotTravelReason",
+      "declaration": "public string GetCannotTravelReason()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetCannotTravelReasonByDroppedGem(Gem)",
+      "id": "Global_ZoneManager_GetCannotTravelReasonByDroppedGem_Gem_",
+      "declaration": "public string GetCannotTravelReasonByDroppedGem(Gem g)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "g",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetCannotTravelReasonByDroppedSkill(SkillTrigger)",
+      "id": "Global_ZoneManager_GetCannotTravelReasonByDroppedSkill_SkillTrigger_",
+      "declaration": "public string GetCannotTravelReasonByDroppedSkill(SkillTrigger st)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "st",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetHunterProgress()",
+      "id": "Global_ZoneManager_GetHunterProgress",
+      "declaration": "public float GetHunterProgress()",
+      "summary": "Get hunter progress in this world. Returns value between 0 ~ 1",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "GetNodeDistance(int, int)",
+      "id": "Global_ZoneManager_GetNodeDistance_System_Int32_System_Int32_",
+      "declaration": "public int GetNodeDistance(int a, int b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "name": "GetVoteSidetrackRift()",
+      "id": "Global_ZoneManager_GetVoteSidetrackRift",
+      "declaration": "public Rift_Sidetrack GetVoteSidetrackRift()",
+      "summary": "",
+      "parameters": [],
+      "returns": "Rift_Sidetrack"
+    },
+    {
+      "name": "GetWorldRandom(int)",
+      "id": "Global_ZoneManager_GetWorldRandom_System_Int32_",
+      "declaration": "public DewRandom GetWorldRandom(int offset)",
+      "summary": "Get a random instance for this world.",
+      "parameters": [
+        {
+          "name": "offset",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewRandom"
+    },
+    {
+      "name": "IsNodeConnected(int, int)",
+      "id": "Global_ZoneManager_IsNodeConnected_System_Int32_System_Int32_",
+      "declaration": "public bool IsNodeConnected(int a, int b)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "a",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "b",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "LoadModifierLightPrefabsOfCurrentZone()",
+      "id": "Global_ZoneManager_LoadModifierLightPrefabsOfCurrentZone",
+      "declaration": "public List<RoomModifierBase> LoadModifierLightPrefabsOfCurrentZone()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.List<T><RoomModifierBase>"
+    },
+    {
+      "name": "LoadNextZoneByContentSettings()",
+      "id": "Global_ZoneManager_LoadNextZoneByContentSettings",
+      "declaration": "public void LoadNextZoneByContentSettings()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LoadNode(LoadNodeSettings)",
+      "id": "Global_ZoneManager_LoadNode_LoadNodeSettings_",
+      "declaration": "public void LoadNode(LoadNodeSettings s)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "LoadNodeSettings",
+          "type_uid": "Global.LoadNodeSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "LoadSidetrackRoom(string)",
+      "id": "Global_ZoneManager_LoadSidetrackRoom_System_String_",
+      "declaration": "public void LoadSidetrackRoom(string roomName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "roomName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_ZoneManager_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RemoveModifier(int, int)",
+      "id": "Global_ZoneManager_RemoveModifier_System_Int32_System_Int32_",
+      "declaration": "public void RemoveModifier(int nodeIndex, int modifierId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "modifierId",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveModifier(int)",
+      "id": "Global_ZoneManager_RemoveModifier_System_Int32_",
+      "declaration": "public void RemoveModifier(int modifierId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "modifierId",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveModifier<T>(int)",
+      "id": "Global_ZoneManager_RemoveModifier__1_System_Int32_",
+      "declaration": "public bool RemoveModifier<T>(int nodeIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool>)",
+      "id": "Global_ZoneManager_RemoveTravelToNodeInterrupt_System_Func_EventInfoTravelToNodeInterrupt_System_Boolean__",
+      "declaration": "public void RemoveTravelToNodeInterrupt(Func<EventInfoTravelToNodeInterrupt, bool> func)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "func",
+          "type": "System.Func<T, TResult><EventInfoTravelToNodeInterrupt,bool>",
+          "type_uid": "Global.EventInfoTravelToNodeInterrupt",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ReturnFromSidetracking()",
+      "id": "Global_ZoneManager_ReturnFromSidetracking",
+      "declaration": "public void ReturnFromSidetracking()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RevealNodesAndAnnounce(DewPlayer, int)",
+      "id": "Global_ZoneManager_RevealNodesAndAnnounce_DewPlayer_System_Int32_",
+      "declaration": "public void RevealNodesAndAnnounce(DewPlayer revealer, int nodeCount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "revealer",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "nodeCount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RevealWorld(bool)",
+      "id": "Global_ZoneManager_RevealWorld_System_Boolean_",
+      "declaration": "public void RevealWorld(bool fully = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "fully",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetCurrentNodeIndexAndRevealAdjacent(int)",
+      "id": "Global_ZoneManager_SetCurrentNodeIndexAndRevealAdjacent_System_Int32_",
+      "declaration": "public void SetCurrentNodeIndexAndRevealAdjacent(int index)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetRoom(int, string)",
+      "id": "Global_ZoneManager_SetRoom_System_Int32_System_String_",
+      "declaration": "public void SetRoom(int nodeIndex, string room)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "room",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetRoomOverride(int, string)",
+      "id": "Global_ZoneManager_SetRoomOverride_System_Int32_System_String_",
+      "declaration": "public void SetRoomOverride(int nodeIndex, string roomOverride)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "roomOverride",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetRoomRotIndex(int, int)",
+      "id": "Global_ZoneManager_SetRoomRotIndex_System_Int32_System_Int32_",
+      "declaration": "public void SetRoomRotIndex(int nodeIndex, int roomRotIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "roomRotIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShouldVoteOnTravel()",
+      "id": "Global_ZoneManager_ShouldVoteOnTravel",
+      "declaration": "public bool ShouldVoteOnTravel()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "StartVoteNextNode(DewPlayer, int)",
+      "id": "Global_ZoneManager_StartVoteNextNode_DewPlayer_System_Int32_",
+      "declaration": "public void StartVoteNextNode(DewPlayer player, int nextNodeIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "nextNodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartVoteNextZone(DewPlayer)",
+      "id": "Global_ZoneManager_StartVoteNextZone_DewPlayer_",
+      "declaration": "public void StartVoteNextZone(DewPlayer player)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "StartVoteSidetrack(DewPlayer, Rift_Sidetrack)",
+      "id": "Global_ZoneManager_StartVoteSidetrack_DewPlayer_Rift_Sidetrack_",
+      "declaration": "public void StartVoteSidetrack(DewPlayer player, Rift_Sidetrack rift)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        },
+        {
+          "name": "rift",
+          "type": "Rift_Sidetrack",
+          "type_uid": "Global.Rift_Sidetrack",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SyncNodeChanges(int)",
+      "id": "Global_ZoneManager_SyncNodeChanges_System_Int32_",
+      "declaration": "public void SyncNodeChanges(int nodeIndex)",
+      "summary": "Force node changes to be synced across clients.",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TravelToNode(int, bool, bool, bool)",
+      "id": "Global_ZoneManager_TravelToNode_System_Int32_System_Boolean_System_Boolean_System_Boolean_",
+      "declaration": "public void TravelToNode(int to, bool advanceTurn = true, bool isSidetrackTransition = false, bool ignoreInterrupts = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "to",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "advanceTurn",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "isSidetrackTransition",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreInterrupts",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TravelToZone(Zone, bool)",
+      "id": "Global_ZoneManager_TravelToZone_Zone_System_Boolean_",
+      "declaration": "public void TravelToZone(Zone prefab, bool noAdvance = false)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "Zone",
+          "type_uid": "Global.Zone",
+          "description": ""
+        },
+        {
+          "name": "noAdvance",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TravelWithValidationAndConfirmation(Action, bool)",
+      "id": "Global_ZoneManager_TravelWithValidationAndConfirmation_System_Action_System_Boolean_",
+      "declaration": "public void TravelWithValidationAndConfirmation(Action action, bool ignoreSidetrack = false)",
+      "summary": "Check for active vote, artifact window, leftover rewards and hero souls.",
+      "parameters": [
+        {
+          "name": "action",
+          "type": "System.Action",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "ignoreSidetrack",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TryGetNodeIndexForNextGoal(GetNodeIndexSettings, out int)",
+      "id": "Global_ZoneManager_TryGetNodeIndexForNextGoal_GetNodeIndexSettings_System_Int32__",
+      "declaration": "public bool TryGetNodeIndexForNextGoal(GetNodeIndexSettings s, out int nodeIndex)",
+      "summary": "Get a good node location for next goal (revive player, quest, etc)Unvisited node in desired distance, preferably closer to boss node.",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "GetNodeIndexSettings",
+          "type_uid": "Global.GetNodeIndexSettings",
+          "description": ""
+        },
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "UpdateModifiersByHunterStatus(int)",
+      "id": "Global_ZoneManager_UpdateModifiersByHunterStatus_System_Int32_",
+      "declaration": "public void UpdateModifiersByHunterStatus(int currentTravelDestinationNode = -1)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "currentTravelDestinationNode",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

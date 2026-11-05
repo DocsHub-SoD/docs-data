@@ -1,0 +1,24 @@
+{
+  "uid": "Global.SaveVarAttribute",
+  "name": "SaveVarAttribute",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[AttributeUsage(AttributeTargets.Class|AttributeTargets.Struct|AttributeTargets.Property|AttributeTargets.Field)]\npublic class SaveVarAttribute : Attribute",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "flags",
+      "id": "Global_SaveVarAttribute_flags",
+      "declaration": "public readonly SaveVarFlags flags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

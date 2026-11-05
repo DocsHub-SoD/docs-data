@@ -1,0 +1,85 @@
+{
+  "uid": "Global.PerMonsterTypeData`1",
+  "name": "PerMonsterTypeData<T>",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[Serializable]\npublic struct PerMonsterTypeData<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "boss",
+      "id": "Global_PerMonsterTypeData_1_boss",
+      "declaration": "public T boss",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lesser",
+      "id": "Global_PerMonsterTypeData_1_lesser",
+      "declaration": "public T lesser",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "miniBoss",
+      "id": "Global_PerMonsterTypeData_1_miniBoss",
+      "declaration": "public T miniBoss",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "normal",
+      "id": "Global_PerMonsterTypeData_1_normal",
+      "declaration": "public T normal",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Get(MonsterType)",
+      "id": "Global_PerMonsterTypeData_1_Get_Monster_MonsterType_",
+      "declaration": "public T Get(Monster.MonsterType type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "Monster.MonsterType",
+          "type_uid": "Global.Monster",
+          "description": ""
+        }
+      ],
+      "returns": "T"
+    },
+    {
+      "name": "Set(MonsterType, T)",
+      "id": "Global_PerMonsterTypeData_1_Set_Monster_MonsterType__0_",
+      "declaration": "public void Set(Monster.MonsterType type, T value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "Monster.MonsterType",
+          "type_uid": "Global.Monster",
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,24 @@
+{
+  "uid": "Global.FlickerGameObject",
+  "name": "FlickerGameObject",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FlickerGameObject : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "interval",
+      "id": "Global_FlickerGameObject_interval",
+      "declaration": "public float interval",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

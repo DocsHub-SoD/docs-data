@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IEditSkillDropTargetGemSlot",
+  "name": "IEditSkillDropTargetGemSlot",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IEditSkillDropTargetGemSlot",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "location",
+      "id": "Global_IEditSkillDropTargetGemSlot_location",
+      "declaration": "GemLocation location { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

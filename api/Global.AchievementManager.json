@@ -1,0 +1,151 @@
+{
+  "uid": "Global.AchievementManager",
+  "name": "AchievementManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class AchievementManager : ManagerBase<AchievementManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "AchievementManager",
+      "href": "Global.AchievementManager.html",
+      "uid": "Global.AchievementManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "disableTrackingAchievements",
+      "id": "Global_AchievementManager_disableTrackingAchievements",
+      "declaration": "public bool disableTrackingAchievements",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastGamePlayReward",
+      "id": "Global_AchievementManager_lastGamePlayReward",
+      "declaration": "public static LastGamePlayReward lastGamePlayReward",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LocalClientEvent_OnAchievementComplete",
+      "id": "Global_AchievementManager_LocalClientEvent_OnAchievementComplete",
+      "declaration": "public SafeAction<Type> LocalClientEvent_OnAchievementComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LocalClientEvent_OnLimboDepthComplete",
+      "id": "Global_AchievementManager_LocalClientEvent_OnLimboDepthComplete",
+      "declaration": "public SafeAction<int, string> LocalClientEvent_OnLimboDepthComplete",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "trackedAchievements",
+      "id": "Global_AchievementManager_trackedAchievements",
+      "declaration": "public List<DewAchievementItem> trackedAchievements",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "isTrackingAchievements",
+      "id": "Global_AchievementManager_isTrackingAchievements",
+      "declaration": "public bool isTrackingAchievements { get; }",
+      "summary": "Is locally tracking achievement?",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CheckAndApplyLocalContinueData()",
+      "id": "Global_AchievementManager_CheckAndApplyLocalContinueData",
+      "declaration": "public void CheckAndApplyLocalContinueData()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CompleteAchievement(DewAchievementItem)",
+      "id": "Global_AchievementManager_CompleteAchievement_DewAchievementItem_",
+      "declaration": "public void CompleteAchievement(DewAchievementItem item)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "DewAchievementItem",
+          "type_uid": "Global.DewAchievementItem",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "DeleteLocalContinueData()",
+      "id": "Global_AchievementManager_DeleteLocalContinueData",
+      "declaration": "public void DeleteLocalContinueData()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SaveLocalContinueData()",
+      "id": "Global_AchievementManager_SaveLocalContinueData",
+      "declaration": "public void SaveLocalContinueData()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetPlatformStats()",
+      "id": "Global_AchievementManager_SetPlatformStats",
+      "declaration": "public void SetPlatformStats()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StartTrackingAchievements()",
+      "id": "Global_AchievementManager_StartTrackingAchievements",
+      "declaration": "public void StartTrackingAchievements()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "StopTrackingAchievements()",
+      "id": "Global_AchievementManager_StopTrackingAchievements",
+      "declaration": "public void StopTrackingAchievements()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

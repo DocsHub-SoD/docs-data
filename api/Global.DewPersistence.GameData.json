@@ -1,0 +1,129 @@
+{
+  "uid": "Global.DewPersistence.GameData",
+  "name": "DewPersistence.GameData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewPersistence.GameData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "actors",
+      "id": "Global_DewPersistence_GameData_actors",
+      "declaration": "public List<DewPersistence.GeneralData> actors",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CurrentSaveVersion",
+      "id": "Global_DewPersistence_GameData_CurrentSaveVersion",
+      "declaration": "public const int CurrentSaveVersion = 1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMultiplayer",
+      "id": "Global_DewPersistence_GameData_isMultiplayer",
+      "declaration": "public bool isMultiplayer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "loadNodeSettings",
+      "id": "Global_DewPersistence_GameData_loadNodeSettings",
+      "declaration": "public LoadNodeSettings loadNodeSettings",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyType",
+      "id": "Global_DewPersistence_GameData_lobbyType",
+      "declaration": "public DewLobbyType lobbyType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "managerPersistentData",
+      "id": "Global_DewPersistence_GameData_managerPersistentData",
+      "declaration": "public Dictionary<string, Dictionary<string, string>> managerPersistentData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "players",
+      "id": "Global_DewPersistence_GameData_players",
+      "declaration": "public List<DewPersistence.PlayerData> players",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "saveVersion",
+      "id": "Global_DewPersistence_GameData_saveVersion",
+      "declaration": "public int saveVersion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "serverActorData",
+      "id": "Global_DewPersistence_GameData_serverActorData",
+      "declaration": "public Dictionary<string, string> serverActorData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shouldShowVersionWarning",
+      "id": "Global_DewPersistence_GameData_shouldShowVersionWarning",
+      "declaration": "public bool shouldShowVersionWarning",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "GetElapsedGameTimeSeconds()",
+      "id": "Global_DewPersistence_GameData_GetElapsedGameTimeSeconds",
+      "declaration": "public int GetElapsedGameTimeSeconds()",
+      "summary": "",
+      "parameters": [],
+      "returns": "int"
+    },
+    {
+      "name": "GetReadableDescription()",
+      "id": "Global_DewPersistence_GameData_GetReadableDescription",
+      "declaration": "public string GetReadableDescription()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetReadableGameType()",
+      "id": "Global_DewPersistence_GameData_GetReadableGameType",
+      "declaration": "public string GetReadableGameType()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewPersistence_GameData_Validate",
+      "declaration": "public bool Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

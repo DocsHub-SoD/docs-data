@@ -1,0 +1,110 @@
+{
+  "uid": "Global.CastIndicatorManager",
+  "name": "CastIndicatorManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class CastIndicatorManager : ManagerBase<CastIndicatorManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "LogicBehaviour",
+      "href": "Global.LogicBehaviour.html",
+      "uid": "Global.LogicBehaviour"
+    },
+    {
+      "name": "ManagerBase",
+      "href": "Global.ManagerBase-1.html",
+      "uid": "Global.ManagerBase-1"
+    },
+    {
+      "name": "CastIndicatorManager",
+      "href": "Global.CastIndicatorManager.html",
+      "uid": "Global.CastIndicatorManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "arcRegion",
+      "id": "Global_CastIndicatorManager_arcRegion",
+      "declaration": "public ArcRegion arcRegion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "circleRegion",
+      "id": "Global_CastIndicatorManager_circleRegion",
+      "declaration": "public CircleRegion circleRegion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lineRegion",
+      "id": "Global_CastIndicatorManager_lineRegion",
+      "declaration": "public LineRegion lineRegion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerOrigin",
+      "id": "Global_CastIndicatorManager_playerOrigin",
+      "declaration": "public Transform playerOrigin",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "secondaryCircleRegion",
+      "id": "Global_CastIndicatorManager_secondaryCircleRegion",
+      "declaration": "public CircleRegion secondaryCircleRegion",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "Awake()",
+      "id": "Global_CastIndicatorManager_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "FrameUpdate()",
+      "id": "Global_CastIndicatorManager_FrameUpdate",
+      "declaration": "public override void FrameUpdate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "IndicateRangeFailure(float)",
+      "id": "Global_CastIndicatorManager_IndicateRangeFailure_System_Single_",
+      "declaration": "public void IndicateRangeFailure(float range)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "range",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

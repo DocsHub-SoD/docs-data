@@ -1,0 +1,56 @@
+{
+  "uid": "Global.DewLocalization.EntityStats",
+  "name": "DewLocalization.EntityStats",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct DewLocalization.EntityStats",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "abilityPower",
+      "id": "Global_DewLocalization_EntityStats_abilityPower",
+      "declaration": "public float abilityPower",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "addedHp",
+      "id": "Global_DewLocalization_EntityStats_addedHp",
+      "declaration": "public float addedHp",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "armor",
+      "id": "Global_DewLocalization_EntityStats_armor",
+      "declaration": "public float armor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "attackDamage",
+      "id": "Global_DewLocalization_EntityStats_attackDamage",
+      "declaration": "public float attackDamage",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "critChance",
+      "id": "Global_DewLocalization_EntityStats_critChance",
+      "declaration": "public float critChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

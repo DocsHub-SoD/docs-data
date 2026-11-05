@@ -1,0 +1,61 @@
+{
+  "uid": "Global.Room_BossArena",
+  "name": "Room_BossArena",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class Room_BossArena : SingletonBehaviour<Room_BossArena>",
+  "inheritance": [
+    {
+      "name": "SingletonBehaviour",
+      "href": "Global.SingletonBehaviour-1.html",
+      "uid": "Global.SingletonBehaviour-1"
+    },
+    {
+      "name": "Room_BossArena",
+      "href": "Global.Room_BossArena.html",
+      "uid": "Global.Room_BossArena"
+    }
+  ],
+  "implements": [],
+  "fields": [
+    {
+      "name": "radius",
+      "id": "Global_Room_BossArena_radius",
+      "declaration": "public float radius",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "center",
+      "id": "Global_Room_BossArena_center",
+      "declaration": "public Vector3 center { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetRandomPathablePosition()",
+      "id": "Global_Room_BossArena_GetRandomPathablePosition",
+      "declaration": "public Vector3 GetRandomPathablePosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    },
+    {
+      "name": "GetRandomPosition()",
+      "id": "Global_Room_BossArena_GetRandomPosition",
+      "declaration": "public Vector3 GetRandomPosition()",
+      "summary": "",
+      "parameters": [],
+      "returns": "UnityEngine.Vector3"
+    }
+  ],
+  "events": []
+}

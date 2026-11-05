@@ -1,0 +1,287 @@
+{
+  "uid": "Global.DewBuildProfile",
+  "name": "DewBuildProfile",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[CreateAssetMenu(fileName = \"New Build Profile\", menuName = \"Build Profile\")]\npublic class DewBuildProfile : ScriptableObject",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "bonusMemoryHaste",
+      "id": "Global_DewBuildProfile_bonusMemoryHaste",
+      "declaration": "public float bonusMemoryHaste",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "buildType",
+      "id": "Global_DewBuildProfile_buildType",
+      "declaration": "[HideLabel]\n[EnumToggleButtons]\npublic BuildType buildType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "codenameSuffix",
+      "id": "Global_DewBuildProfile_codenameSuffix",
+      "declaration": "public string codenameSuffix",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "content",
+      "id": "Global_DewBuildProfile_content",
+      "declaration": "[Title(\"Game\", null, TitleAlignments.Left, true, true)]\npublic DewGameContentSettings content",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CurrentBuildProfileAssetPath",
+      "id": "Global_DewBuildProfile_CurrentBuildProfileAssetPath",
+      "declaration": "public static string CurrentBuildProfileAssetPath",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customRewardFlow",
+      "id": "Global_DewBuildProfile_customRewardFlow",
+      "declaration": "public RoomRewardFlowItemType[] customRewardFlow",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "customRewardFlowFirstTime",
+      "id": "Global_DewBuildProfile_customRewardFlowFirstTime",
+      "declaration": "public RoomRewardFlowItemType[] customRewardFlowFirstTime",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "defaultStardustAmount",
+      "id": "Global_DewBuildProfile_defaultStardustAmount",
+      "declaration": "public int defaultStardustAmount",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableAnalytics",
+      "id": "Global_DewBuildProfile_disableAnalytics",
+      "declaration": "public bool disableAnalytics",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleDreamDustMultiplier",
+      "id": "Global_DewBuildProfile_dismantleDreamDustMultiplier",
+      "declaration": "public float dismantleDreamDustMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EditorBuildProfileDefault",
+      "id": "Global_DewBuildProfile_EditorBuildProfileDefault",
+      "declaration": "public static string EditorBuildProfileDefault",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "featureTags",
+      "id": "Global_DewBuildProfile_featureTags",
+      "declaration": "public BuildFeatureTag[] featureTags",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includeCheatCommands",
+      "id": "Global_DewBuildProfile_includeCheatCommands",
+      "declaration": "public bool includeCheatCommands",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDevelopmentBuild",
+      "id": "Global_DewBuildProfile_isDevelopmentBuild",
+      "declaration": "public bool isDevelopmentBuild",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "killGoldMultiplier",
+      "id": "Global_DewBuildProfile_killGoldMultiplier",
+      "declaration": "public float killGoldMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "luckShrineInPoolChance",
+      "id": "Global_DewBuildProfile_luckShrineInPoolChance",
+      "declaration": "public float luckShrineInPoolChance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "luckShrineMinZoneIndex",
+      "id": "Global_DewBuildProfile_luckShrineMinZoneIndex",
+      "declaration": "public int luckShrineMinZoneIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "platform",
+      "id": "Global_DewBuildProfile_platform",
+      "declaration": "[HideLabel]\n[EnumToggleButtons]\npublic PlatformType platform",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "savePrefix",
+      "id": "Global_DewBuildProfile_savePrefix",
+      "declaration": "[Title(\"System\", null, TitleAlignments.Left, true, true)]\npublic string savePrefix",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "stardustGainMultiplier",
+      "id": "Global_DewBuildProfile_stardustGainMultiplier",
+      "declaration": "public float stardustGainMultiplier",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startDreamDust",
+      "id": "Global_DewBuildProfile_startDreamDust",
+      "declaration": "public int startDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "startGold",
+      "id": "Global_DewBuildProfile_startGold",
+      "declaration": "public int startGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "useSteamLobbyAndRelay",
+      "id": "Global_DewBuildProfile_useSteamLobbyAndRelay",
+      "declaration": "[ShowIf(\"@platform == PlatformType.STEAM\", true)]\npublic bool useSteamLobbyAndRelay",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldNodeCountOffset",
+      "id": "Global_DewBuildProfile_worldNodeCountOffset",
+      "declaration": "public int worldNodeCountOffset",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "current",
+      "id": "Global_DewBuildProfile_current",
+      "declaration": "public static DewBuildProfile current { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetBundleVersion(string)",
+      "id": "Global_DewBuildProfile_GetBundleVersion_System_String_",
+      "declaration": "public string GetBundleVersion(string codename)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "codename",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetExtraScriptingDefines()",
+      "id": "Global_DewBuildProfile_GetExtraScriptingDefines",
+      "declaration": "public string[] GetExtraScriptingDefines()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string[]"
+    },
+    {
+      "name": "GetFolderName(string)",
+      "id": "Global_DewBuildProfile_GetFolderName_System_String_",
+      "declaration": "public string GetFolderName(string codename)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "codename",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "HasFeature(BuildFeatureTag)",
+      "id": "Global_DewBuildProfile_HasFeature_BuildFeatureTag_",
+      "declaration": "public bool HasFeature(BuildFeatureTag tag)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "tag",
+          "type": "BuildFeatureTag",
+          "type_uid": "Global.BuildFeatureTag",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Init()",
+      "id": "Global_DewBuildProfile_Init",
+      "declaration": "public void Init()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Validate()",
+      "id": "Global_DewBuildProfile_Validate",
+      "declaration": "public void Validate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

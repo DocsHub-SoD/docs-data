@@ -1,0 +1,1430 @@
+{
+  "uid": "Global.DewPlayer",
+  "name": "DewPlayer",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[DewResourceLink(ResourceLinkBy.Type)]\npublic class DewPlayer : DewNetworkBehaviour, ILogicUpdate, ISettingsChangedCallback",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ISettingsChangedCallback",
+      "href": "Global.ISettingsChangedCallback.html",
+      "uid": "Global.ISettingsChangedCallback"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allHumanPlayers",
+      "id": "Global_DewPlayer_allHumanPlayers",
+      "declaration": "public static List<DewPlayer> allHumanPlayers",
+      "summary": "All human players that are connected to the server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "allies",
+      "id": "Global_DewPlayer_allies",
+      "declaration": "public readonly SyncList<DewPlayer> allies",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "availableLucidDreams",
+      "id": "Global_DewPlayer_availableLucidDreams",
+      "declaration": "[NonSerialized]\npublic List<string> availableLucidDreams",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnDreamDustChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnDreamDustChanged",
+      "declaration": "public SafeAction<int, int> ClientEvent_OnDreamDustChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEarnDreamDust",
+      "id": "Global_DewPlayer_ClientEvent_OnEarnDreamDust",
+      "declaration": "public SafeAction<int> ClientEvent_OnEarnDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEarnGold",
+      "id": "Global_DewPlayer_ClientEvent_OnEarnGold",
+      "declaration": "public SafeAction<int> ClientEvent_OnEarnGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEarnStardust",
+      "id": "Global_DewPlayer_ClientEvent_OnEarnStardust",
+      "declaration": "public SafeAction<int> ClientEvent_OnEarnStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnEquippedNametagChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnEquippedNametagChanged",
+      "declaration": "public SafeAction<string, string> ClientEvent_OnEquippedNametagChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnGiveCurrency",
+      "id": "Global_DewPlayer_ClientEvent_OnGiveCurrency",
+      "declaration": "public SafeAction<int, int, DewPlayer> ClientEvent_OnGiveCurrency",
+      "summary": "Arguments are as follows: Gold, DreamDust, Target",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnGoldChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnGoldChanged",
+      "declaration": "public SafeAction<int, int> ClientEvent_OnGoldChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnHeroChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnHeroChanged",
+      "declaration": "public SafeAction<Hero, Hero> ClientEvent_OnHeroChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnIsReadyChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnIsReadyChanged",
+      "declaration": "public SafeAction<bool> ClientEvent_OnIsReadyChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnPlatinumCoinChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnPlatinumCoinChanged",
+      "declaration": "public SafeAction<int, int> ClientEvent_OnPlatinumCoinChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSelectedAccessoriesChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnSelectedAccessoriesChanged",
+      "declaration": "public SafeAction ClientEvent_OnSelectedAccessoriesChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSelectedDejavuItemChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnSelectedDejavuItemChanged",
+      "declaration": "public SafeAction<string> ClientEvent_OnSelectedDejavuItemChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSelectedHeroTypeChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnSelectedHeroTypeChanged",
+      "declaration": "public SafeAction<string> ClientEvent_OnSelectedHeroTypeChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSelectedLoadoutChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnSelectedLoadoutChanged",
+      "declaration": "public SafeAction<HeroLoadoutData> ClientEvent_OnSelectedLoadoutChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSelectedSkinChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnSelectedSkinChanged",
+      "declaration": "public SafeAction<string> ClientEvent_OnSelectedSkinChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSpendDreamDust",
+      "id": "Global_DewPlayer_ClientEvent_OnSpendDreamDust",
+      "declaration": "public SafeAction<int> ClientEvent_OnSpendDreamDust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSpendGold",
+      "id": "Global_DewPlayer_ClientEvent_OnSpendGold",
+      "declaration": "public SafeAction<int> ClientEvent_OnSpendGold",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnSpendStardust",
+      "id": "Global_DewPlayer_ClientEvent_OnSpendStardust",
+      "declaration": "public SafeAction<int> ClientEvent_OnSpendStardust",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ClientEvent_OnStateChanged",
+      "id": "Global_DewPlayer_ClientEvent_OnStateChanged",
+      "declaration": "public SafeAction ClientEvent_OnStateChanged",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enemies",
+      "id": "Global_DewPlayer_enemies",
+      "declaration": "public readonly SyncList<DewPlayer> enemies",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "friendSteamIds",
+      "id": "Global_DewPlayer_friendSteamIds",
+      "declaration": "[NonSerialized]\npublic List<string> friendSteamIds",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gamePlayers",
+      "id": "Global_DewPlayer_gamePlayers",
+      "declaration": "public static List<DewPlayer> gamePlayers",
+      "summary": "Human players that are playing the game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lobbyPlayers",
+      "id": "Global_DewPlayer_lobbyPlayers",
+      "declaration": "public static List<DewPlayer> lobbyPlayers",
+      "summary": "Human players that are in the lobby. Note: players can be in the lobby even after the game has been started, if they joined mid-game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "neutrals",
+      "id": "Global_DewPlayer_neutrals",
+      "declaration": "public readonly SyncList<DewPlayer> neutrals",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onGamePlayerAdded",
+      "id": "Global_DewPlayer_onGamePlayerAdded",
+      "declaration": "public static SafeAction<DewPlayer> onGamePlayerAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onGamePlayerRemoved",
+      "id": "Global_DewPlayer_onGamePlayerRemoved",
+      "declaration": "public static SafeAction<DewPlayer> onGamePlayerRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onHumanPlayerAdded",
+      "id": "Global_DewPlayer_onHumanPlayerAdded",
+      "declaration": "public static SafeAction<DewPlayer> onHumanPlayerAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onHumanPlayerRemoved",
+      "id": "Global_DewPlayer_onHumanPlayerRemoved",
+      "declaration": "public static SafeAction<DewPlayer> onHumanPlayerRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onLobbyPlayerAdded",
+      "id": "Global_DewPlayer_onLobbyPlayerAdded",
+      "declaration": "public static SafeAction<DewPlayer> onLobbyPlayerAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onLobbyPlayerRemoved",
+      "id": "Global_DewPlayer_onLobbyPlayerRemoved",
+      "declaration": "public static SafeAction<DewPlayer> onLobbyPlayerRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSpectatorAdded",
+      "id": "Global_DewPlayer_onSpectatorAdded",
+      "declaration": "public static SafeAction<DewPlayer> onSpectatorAdded",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "onSpectatorRemoved",
+      "id": "Global_DewPlayer_onSpectatorRemoved",
+      "declaration": "public static SafeAction<DewPlayer> onSpectatorRemoved",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ownedItems",
+      "id": "Global_DewPlayer_ownedItems",
+      "declaration": "[NonSerialized]\npublic List<string> ownedItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ownershipKeys",
+      "id": "Global_DewPlayer_ownershipKeys",
+      "declaration": "public readonly SyncList<string> ownershipKeys",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedAccessories",
+      "id": "Global_DewPlayer_selectedAccessories",
+      "declaration": "public readonly SyncList<string> selectedAccessories",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spectators",
+      "id": "Global_DewPlayer_spectators",
+      "declaration": "public static List<DewPlayer> spectators",
+      "summary": "Human players that are in the game spectating. Note: this does not include game players with dead heroes.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "steamId",
+      "id": "Global_DewPlayer_steamId",
+      "declaration": "public CSteamID steamId",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "unlockedGameItems",
+      "id": "Global_DewPlayer_unlockedGameItems",
+      "declaration": "public readonly SyncList<string> unlockedGameItems",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "avatar",
+      "id": "Global_DewPlayer_avatar",
+      "declaration": "public Texture2D avatar { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "buyPriceMultiplier",
+      "id": "Global_DewPlayer_buyPriceMultiplier",
+      "declaration": "public float buyPriceMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cleanseRefundMultiplier",
+      "id": "Global_DewPlayer_cleanseRefundMultiplier",
+      "declaration": "public float cleanseRefundMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "controllingEntity",
+      "id": "Global_DewPlayer_controllingEntity",
+      "declaration": "public Entity controllingEntity { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "creep",
+      "id": "Global_DewPlayer_creep",
+      "declaration": "public static DewPlayer creep { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "cursorWorldPos",
+      "id": "Global_DewPlayer_cursorWorldPos",
+      "declaration": "public Vector3 cursorWorldPos { get; }",
+      "summary": "Cursor world position of this player. Available on server and local client in-game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleDreamDustMultiplier",
+      "id": "Global_DewPlayer_dismantleDreamDustMultiplier",
+      "declaration": "public float dismantleDreamDustMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleGemDreamDustMultiplier",
+      "id": "Global_DewPlayer_dismantleGemDreamDustMultiplier",
+      "declaration": "public float dismantleGemDreamDustMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dismantleSkillDreamDustMultiplier",
+      "id": "Global_DewPlayer_dismantleSkillDreamDustMultiplier",
+      "declaration": "public float dismantleSkillDreamDustMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "doubleChaosChance",
+      "id": "Global_DewPlayer_doubleChaosChance",
+      "declaration": "public float doubleChaosChance { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "dreamDust",
+      "id": "Global_DewPlayer_dreamDust",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int dreamDust { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "environment",
+      "id": "Global_DewPlayer_environment",
+      "declaration": "public static DewPlayer environment { get; }",
+      "summary": "Environment player. Owner of server entities will default to this.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "equippedNametag",
+      "id": "Global_DewPlayer_equippedNametag",
+      "declaration": "public string equippedNametag { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gamepadTargetEnemy",
+      "id": "Global_DewPlayer_gamepadTargetEnemy",
+      "declaration": "public Entity gamepadTargetEnemy { get; }",
+      "summary": "Available on server and local client in-game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "gold",
+      "id": "Global_DewPlayer_gold",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int gold { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "guid",
+      "id": "Global_DewPlayer_guid",
+      "declaration": "public string guid { get; set; }",
+      "summary": "This is given for each profile.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hero",
+      "id": "Global_DewPlayer_hero",
+      "declaration": "public Hero hero { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "inputMode",
+      "id": "Global_DewPlayer_inputMode",
+      "declaration": "public InputMode inputMode { get; }",
+      "summary": "Available on server and local client in-game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isCreepPlayer",
+      "id": "Global_DewPlayer_isCreepPlayer",
+      "declaration": "public bool isCreepPlayer { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isEnvironmentPlayer",
+      "id": "Global_DewPlayer_isEnvironmentPlayer",
+      "declaration": "public bool isEnvironmentPlayer { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isEveryInfoSet",
+      "id": "Global_DewPlayer_isEveryInfoSet",
+      "declaration": "public bool isEveryInfoSet { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isGamepadExplicitAim",
+      "id": "Global_DewPlayer_isGamepadExplicitAim",
+      "declaration": "public bool isGamepadExplicitAim { get; }",
+      "summary": "Available on server and local client in-game.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isHostPlayer",
+      "id": "Global_DewPlayer_isHostPlayer",
+      "declaration": "public bool isHostPlayer { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isHumanPlayer",
+      "id": "Global_DewPlayer_isHumanPlayer",
+      "declaration": "public bool isHumanPlayer { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isKicked",
+      "id": "Global_DewPlayer_isKicked",
+      "declaration": "public bool isKicked { get; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isLoadingForMidJoin",
+      "id": "Global_DewPlayer_isLoadingForMidJoin",
+      "declaration": "public bool isLoadingForMidJoin { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isPlayingCutscene",
+      "id": "Global_DewPlayer_isPlayingCutscene",
+      "declaration": "public bool isPlayingCutscene { get; }",
+      "summary": "Is this player in a cutscene? Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isReadingArtifactStory",
+      "id": "Global_DewPlayer_isReadingArtifactStory",
+      "declaration": "public bool isReadingArtifactStory { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isReady",
+      "id": "Global_DewPlayer_isReady",
+      "declaration": "public bool isReady { get; set; }",
+      "summary": "Is ready to start the game (lobby) / travel to next node (ingame) / end the game (end result screen) ?",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isSamplingCastInfo",
+      "id": "Global_DewPlayer_isSamplingCastInfo",
+      "declaration": "public bool isSamplingCastInfo { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isWaitingForContinueMidJoin",
+      "id": "Global_DewPlayer_isWaitingForContinueMidJoin",
+      "declaration": "public bool isWaitingForContinueMidJoin { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "local",
+      "id": "Global_DewPlayer_local",
+      "declaration": "public static DewPlayer local { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "monsterKillGoldMultiplier",
+      "id": "Global_DewPlayer_monsterKillGoldMultiplier",
+      "declaration": "public float monsterKillGoldMultiplier { get; set; }",
+      "summary": "Available on server.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "platinumCoin",
+      "id": "Global_DewPlayer_platinumCoin",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int platinumCoin { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerName",
+      "id": "Global_DewPlayer_playerName",
+      "declaration": "public string playerName { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "playerNameRaw",
+      "id": "Global_DewPlayer_playerNameRaw",
+      "declaration": "public string playerNameRaw { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "potionDropChanceMultiplier",
+      "id": "Global_DewPlayer_potionDropChanceMultiplier",
+      "declaration": "public float potionDropChanceMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "profileStats",
+      "id": "Global_DewPlayer_profileStats",
+      "declaration": "public DewProfileStats profileStats { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedDejavuItem",
+      "id": "Global_DewPlayer_selectedDejavuItem",
+      "declaration": "public string selectedDejavuItem { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedHeroType",
+      "id": "Global_DewPlayer_selectedHeroType",
+      "declaration": "public string selectedHeroType { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedLoadout",
+      "id": "Global_DewPlayer_selectedLoadout",
+      "declaration": "public HeroLoadoutData selectedLoadout { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "selectedSkin",
+      "id": "Global_DewPlayer_selectedSkin",
+      "declaration": "public string selectedSkin { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sellPriceMultiplier",
+      "id": "Global_DewPlayer_sellPriceMultiplier",
+      "declaration": "public float sellPriceMultiplier { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "shopAddedItems",
+      "id": "Global_DewPlayer_shopAddedItems",
+      "declaration": "public int shopAddedItems { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_DewPlayer_state",
+      "declaration": "[ShowInInspector]\n[ReadOnly]\npublic PlayerState state { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "totalMasteryLevel",
+      "id": "Global_DewPlayer_totalMasteryLevel",
+      "declaration": "public int totalMasteryLevel { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddDreamDust(int)",
+      "id": "Global_DewPlayer_AddDreamDust_System_Int32_",
+      "declaration": "public void AddDreamDust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "AddGold(int)",
+      "id": "Global_DewPlayer_AddGold_System_Int32_",
+      "declaration": "public void AddGold(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Awake()",
+      "id": "Global_DewPlayer_Awake",
+      "declaration": "protected override void Awake()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CheckEnemyOrNeutral(Entity)",
+      "id": "Global_DewPlayer_CheckEnemyOrNeutral_Entity_",
+      "declaration": "public bool CheckEnemyOrNeutral(Entity target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "target",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "CmdAuthorizeForUse(string)",
+      "id": "Global_DewPlayer_CmdAuthorizeForUse_System_String_",
+      "declaration": "public void CmdAuthorizeForUse(string ownershipKey)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ownershipKey",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdGiveCurrency(int, int, DewPlayer)",
+      "id": "Global_DewPlayer_CmdGiveCurrency_System_Int32_System_Int32_DewPlayer_",
+      "declaration": "public void CmdGiveCurrency(int goldAmount, int dreamDustAmount, DewPlayer target)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "goldAmount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "dreamDustAmount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "target",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdNotifyEveryInfoSet()",
+      "id": "Global_DewPlayer_CmdNotifyEveryInfoSet",
+      "declaration": "public void CmdNotifyEveryInfoSet()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdNotifyMidJoinReady(string)",
+      "id": "Global_DewPlayer_CmdNotifyMidJoinReady_System_String_",
+      "declaration": "public void CmdNotifyMidJoinReady(string sceneName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "sceneName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdPing()",
+      "id": "Global_DewPlayer_CmdPing",
+      "declaration": "public void CmdPing()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdRequestMidJoin()",
+      "id": "Global_DewPlayer_CmdRequestMidJoin",
+      "declaration": "public void CmdRequestMidJoin()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdRequestOverrides()",
+      "id": "Global_DewPlayer_CmdRequestOverrides",
+      "declaration": "public void CmdRequestOverrides()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdRequestStardust(int)",
+      "id": "Global_DewPlayer_CmdRequestStardust_System_Int32_",
+      "declaration": "public void CmdRequestStardust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdRequestToJoinCurrentLobby()",
+      "id": "Global_DewPlayer_CmdRequestToJoinCurrentLobby",
+      "declaration": "public void CmdRequestToJoinCurrentLobby()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetAccessories(List<string>)",
+      "id": "Global_DewPlayer_CmdSetAccessories_System_Collections_Generic_List_System_String__",
+      "declaration": "public void CmdSetAccessories(List<string> accessories)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "accessories",
+          "type": "System.Collections.Generic.List<T><string>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetDejavuItem(string)",
+      "id": "Global_DewPlayer_CmdSetDejavuItem_System_String_",
+      "declaration": "public void CmdSetDejavuItem(string item)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetHeroLoadoutData(HeroLoadoutData)",
+      "id": "Global_DewPlayer_CmdSetHeroLoadoutData_HeroLoadoutData_",
+      "declaration": "public void CmdSetHeroLoadoutData(HeroLoadoutData newData)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newData",
+          "type": "HeroLoadoutData",
+          "type_uid": "Global.HeroLoadoutData",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetHeroType(string)",
+      "id": "Global_DewPlayer_CmdSetHeroType_System_String_",
+      "declaration": "public void CmdSetHeroType(string newType)",
+      "summary": "Set local player's hero type. Can only be called in local machine of this DewPlayer.",
+      "parameters": [
+        {
+          "name": "newType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetIsReady(bool)",
+      "id": "Global_DewPlayer_CmdSetIsReady_System_Boolean_",
+      "declaration": "public void CmdSetIsReady(bool newReady)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "newReady",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetNametag(string)",
+      "id": "Global_DewPlayer_CmdSetNametag_System_String_",
+      "declaration": "public void CmdSetNametag(string ntName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ntName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetProfileStats(DewProfileStats)",
+      "id": "Global_DewPlayer_CmdSetProfileStats_DewProfileStats_",
+      "declaration": "public void CmdSetProfileStats(DewProfileStats stats)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "stats",
+          "type": "DewProfileStats",
+          "type_uid": "Global.DewProfileStats",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetSkin(string)",
+      "id": "Global_DewPlayer_CmdSetSkin_System_String_",
+      "declaration": "public void CmdSetSkin(string skin)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skin",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSetUnlockedGameItems()",
+      "id": "Global_DewPlayer_CmdSetUnlockedGameItems",
+      "declaration": "public void CmdSetUnlockedGameItems()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EarnDreamDust(int)",
+      "id": "Global_DewPlayer_EarnDreamDust_System_Int32_",
+      "declaration": "public void EarnDreamDust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "EarnGold(int)",
+      "id": "Global_DewPlayer_EarnGold_System_Int32_",
+      "declaration": "public void EarnGold(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetLocalUnlockedGameItems()",
+      "id": "Global_DewPlayer_GetLocalUnlockedGameItems",
+      "declaration": "public static string[] GetLocalUnlockedGameItems()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string[]"
+    },
+    {
+      "name": "GetTeamRelation(DewPlayer)",
+      "id": "Global_DewPlayer_GetTeamRelation_DewPlayer_",
+      "declaration": "public TeamRelation GetTeamRelation(DewPlayer other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DewPlayer",
+          "type_uid": "Global.DewPlayer",
+          "description": ""
+        }
+      ],
+      "returns": "TeamRelation"
+    },
+    {
+      "name": "GetTeamRelation(Entity)",
+      "id": "Global_DewPlayer_GetTeamRelation_Entity_",
+      "declaration": "public TeamRelation GetTeamRelation(Entity other)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "Entity",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": "TeamRelation"
+    },
+    {
+      "name": "GiveStardust(int)",
+      "id": "Global_DewPlayer_GiveStardust_System_Int32_",
+      "declaration": "public void GiveStardust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "HideOnScreenTimer(NetworkedOnScreenTimerHandle)",
+      "id": "Global_DewPlayer_HideOnScreenTimer_NetworkedOnScreenTimerHandle_",
+      "declaration": "public void HideOnScreenTimer(NetworkedOnScreenTimerHandle handle)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "NetworkedOnScreenTimerHandle",
+          "type_uid": "Global.NetworkedOnScreenTimerHandle",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "IsAllowedToUseItem(string)",
+      "id": "Global_DewPlayer_IsAllowedToUseItem_System_String_",
+      "declaration": "public bool IsAllowedToUseItem(string itemName)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "itemName",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "Kick()",
+      "id": "Global_DewPlayer_Kick",
+      "declaration": "public void Kick()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "LogicUpdate(float)",
+      "id": "Global_DewPlayer_LogicUpdate_System_Single_",
+      "declaration": "public override void LogicUpdate(float dt)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "dt",
+          "type": "float",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroy()",
+      "id": "Global_DewPlayer_OnDestroy",
+      "declaration": "protected override void OnDestroy()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnSettingsChanged()",
+      "id": "Global_DewPlayer_OnSettingsChanged",
+      "declaration": "public void OnSettingsChanged()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_DewPlayer_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartClient()",
+      "id": "Global_DewPlayer_OnStartClient",
+      "declaration": "public override void OnStartClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStop()",
+      "id": "Global_DewPlayer_OnStop",
+      "declaration": "public override void OnStop()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopServer()",
+      "id": "Global_DewPlayer_OnStopServer",
+      "declaration": "public override void OnStopServer()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PurgeRelationsList()",
+      "id": "Global_DewPlayer_PurgeRelationsList",
+      "declaration": "public void PurgeRelationsList()",
+      "summary": "Purge any despawned / null entries in player relation lists.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RevalidateAllItems()",
+      "id": "Global_DewPlayer_RevalidateAllItems",
+      "declaration": "public void RevalidateAllItems()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "RpcInvokeOnSpendStardust(int)",
+      "id": "Global_DewPlayer_RpcInvokeOnSpendStardust_System_Int32_",
+      "declaration": "public void RpcInvokeOnSpendStardust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SendLog(string)",
+      "id": "Global_DewPlayer_SendLog_System_String_",
+      "declaration": "public void SendLog(string message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SendLogError(string)",
+      "id": "Global_DewPlayer_SendLogError_System_String_",
+      "declaration": "public void SendLogError(string message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SendLogWarning(string)",
+      "id": "Global_DewPlayer_SendLogWarning_System_String_",
+      "declaration": "public void SendLogWarning(string message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ShowOnScreenTimer(NetworkedOnScreenTimerHandle)",
+      "id": "Global_DewPlayer_ShowOnScreenTimer_NetworkedOnScreenTimerHandle_",
+      "declaration": "public void ShowOnScreenTimer(NetworkedOnScreenTimerHandle handle)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "handle",
+          "type": "NetworkedOnScreenTimerHandle",
+          "type_uid": "Global.NetworkedOnScreenTimerHandle",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "Spend(Cost)",
+      "id": "Global_DewPlayer_Spend_Cost_",
+      "declaration": "public void Spend(Cost cost)",
+      "summary": "Note this will not work for stardusts.",
+      "parameters": [
+        {
+          "name": "cost",
+          "type": "Cost",
+          "type_uid": "Global.Cost",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpendDreamDust(int)",
+      "id": "Global_DewPlayer_SpendDreamDust_System_Int32_",
+      "declaration": "public void SpendDreamDust(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SpendGold(int)",
+      "id": "Global_DewPlayer_SpendGold_System_Int32_",
+      "declaration": "public void SpendGold(int amount)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TpcMakePlayerChangeLobby(string)",
+      "id": "Global_DewPlayer_TpcMakePlayerChangeLobby_System_String_",
+      "declaration": "public void TpcMakePlayerChangeLobby(string lobbyId)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "lobbyId",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TpcNotifyDejavuUse()",
+      "id": "Global_DewPlayer_TpcNotifyDejavuUse",
+      "declaration": "public void TpcNotifyDejavuUse()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "TpcShowCenterMessage(CenterMessageType, string, string[])",
+      "id": "Global_DewPlayer_TpcShowCenterMessage_CenterMessageType_System_String_System_String___",
+      "declaration": "public void TpcShowCenterMessage(CenterMessageType type, string key, string[] localizedFormatArgs)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "CenterMessageType",
+          "type_uid": "Global.CenterMessageType",
+          "description": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "localizedFormatArgs",
+          "type": "string[]",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TpcShowCenterMessage(CenterMessageType, string)",
+      "id": "Global_DewPlayer_TpcShowCenterMessage_CenterMessageType_System_String_",
+      "declaration": "public void TpcShowCenterMessage(CenterMessageType type, string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "CenterMessageType",
+          "type_uid": "Global.CenterMessageType",
+          "description": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "TpcShowWorldPopMessage(WorldMessageSetting)",
+      "id": "Global_DewPlayer_TpcShowWorldPopMessage_WorldMessageSetting_",
+      "declaration": "public void TpcShowWorldPopMessage(WorldMessageSetting message)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "WorldMessageSetting",
+          "type_uid": "Global.WorldMessageSetting",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

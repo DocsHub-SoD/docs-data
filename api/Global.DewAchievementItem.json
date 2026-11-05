@@ -1,0 +1,60 @@
+{
+  "uid": "Global.DewAchievementItem",
+  "name": "DewAchievementItem",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewAchievementItem : DewGameObserverWithProgress",
+  "inheritance": [
+    {
+      "name": "DewPersistentGameObserver",
+      "href": "Global.DewPersistentGameObserver.html",
+      "uid": "Global.DewPersistentGameObserver"
+    },
+    {
+      "name": "DewGameObserverWithProgress",
+      "href": "Global.DewGameObserverWithProgress.html",
+      "uid": "Global.DewGameObserverWithProgress"
+    }
+  ],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "grantedStardust",
+      "id": "Global_DewAchievementItem_grantedStardust",
+      "declaration": "public virtual int grantedStardust { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "OnComplete()",
+      "id": "Global_DewAchievementItem_OnComplete",
+      "declaration": "public override void OnComplete()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStartLocalClient()",
+      "id": "Global_DewAchievementItem_OnStartLocalClient",
+      "declaration": "public override void OnStartLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStopLocalClient()",
+      "id": "Global_DewAchievementItem_OnStopLocalClient",
+      "declaration": "public override void OnStopLocalClient()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

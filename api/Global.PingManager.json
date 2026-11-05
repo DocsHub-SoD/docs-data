@@ -1,0 +1,152 @@
+{
+  "uid": "Global.PingManager",
+  "name": "PingManager",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class PingManager : NetworkedManagerBase<PingManager>, ILogicUpdate",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "NetworkedManagerBase",
+      "href": "Global.NetworkedManagerBase-1.html",
+      "uid": "Global.NetworkedManagerBase-1"
+    },
+    {
+      "name": "PingManager",
+      "href": "Global.PingManager.html",
+      "uid": "Global.PingManager"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    }
+  ],
+  "fields": [
+    {
+      "name": "enemy",
+      "id": "Global_PingManager_enemy",
+      "declaration": "public PingManager.PingPrefabBindings enemy",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "interest",
+      "id": "Global_PingManager_interest",
+      "declaration": "public PingManager.PingPrefabBindings interest",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "move",
+      "id": "Global_PingManager_move",
+      "declaration": "public PingManager.PingPrefabBindings move",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pingIndicatorAlwaysOnTopParent",
+      "id": "Global_PingManager_pingIndicatorAlwaysOnTopParent",
+      "declaration": "public Transform pingIndicatorAlwaysOnTopParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pingIndicatorParent",
+      "id": "Global_PingManager_pingIndicatorParent",
+      "declaration": "public Transform pingIndicatorParent",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "worldNode",
+      "id": "Global_PingManager_worldNode",
+      "declaration": "public PingManager.PingPrefabBindings worldNode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [
+    {
+      "name": "BroadcastPing(Ping)",
+      "id": "Global_PingManager_BroadcastPing_PingManager_Ping_",
+      "declaration": "public void BroadcastPing(PingManager.Ping ping)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ping",
+          "type": "PingManager.Ping",
+          "type_uid": "Global.PingManager",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CmdSendPing(Ping, NetworkConnectionToClient)",
+      "id": "Global_PingManager_CmdSendPing_PingManager_Ping_Mirror_NetworkConnectionToClient_",
+      "declaration": "public void CmdSendPing(PingManager.Ping ping, NetworkConnectionToClient sender = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "ping",
+          "type": "PingManager.Ping",
+          "type_uid": "Global.PingManager",
+          "description": ""
+        },
+        {
+          "name": "sender",
+          "type": "Mirror.NetworkConnectionToClient",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetPingUIValue(string, string)",
+      "id": "Global_PingManager_GetPingUIValue_System_String_System_String_",
+      "declaration": "public static string GetPingUIValue(string key, string accentColor = \"#63e3ff\")",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "accentColor",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_PingManager_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

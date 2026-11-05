@@ -1,0 +1,57 @@
+{
+  "uid": "Global.FlatTupleListWrapper`1",
+  "name": "FlatTupleListWrapper<T>",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class FlatTupleListWrapper<T>",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "list",
+      "id": "Global_FlatTupleListWrapper_1_list",
+      "declaration": "public IList<T> list",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "Count",
+      "id": "Global_FlatTupleListWrapper_1_Count",
+      "declaration": "public int Count { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "this[int]",
+      "id": "Global_FlatTupleListWrapper_1_Item_System_Int32_",
+      "declaration": "public (T, T) this[int index] { get; }",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "GetEnumerator()",
+      "id": "Global_FlatTupleListWrapper_1_GetEnumerator",
+      "declaration": "public IEnumerator<(T, T)> GetEnumerator()",
+      "summary": "",
+      "parameters": [],
+      "returns": "System.Collections.Generic.IEnumerator<T><(T, T)>"
+    }
+  ],
+  "events": []
+}

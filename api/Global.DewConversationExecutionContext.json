@@ -1,0 +1,64 @@
+{
+  "uid": "Global.DewConversationExecutionContext",
+  "name": "DewConversationExecutionContext",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewConversationExecutionContext",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "coroutine",
+      "id": "Global_DewConversationExecutionContext_coroutine",
+      "declaration": "public Coroutine coroutine",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentData",
+      "id": "Global_DewConversationExecutionContext_currentData",
+      "declaration": "public ConversationData currentData",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentKey",
+      "id": "Global_DewConversationExecutionContext_currentKey",
+      "declaration": "public string currentKey",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "currentLineIndex",
+      "id": "Global_DewConversationExecutionContext_currentLineIndex",
+      "declaration": "public int currentLineIndex",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "userInput",
+      "id": "Global_DewConversationExecutionContext_userInput",
+      "declaration": "public int userInput",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "waitingForUserInput",
+      "id": "Global_DewConversationExecutionContext_waitingForUserInput",
+      "declaration": "public bool waitingForUserInput",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

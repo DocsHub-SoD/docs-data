@@ -1,0 +1,24 @@
+{
+  "uid": "Global.IPingableUIElement",
+  "name": "IPingableUIElement",
+  "kind": "Interface",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public interface IPingableUIElement",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "pingTarget",
+      "id": "Global_IPingableUIElement_pingTarget",
+      "declaration": "Object pingTarget { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

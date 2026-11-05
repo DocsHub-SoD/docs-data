@@ -1,0 +1,291 @@
+{
+  "uid": "Global.DewQuest",
+  "name": "DewQuest",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public abstract class DewQuest : GameEffect, ILogicUpdate, ICleanup, ICustomDestroyRoutine",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "GameEffect",
+      "href": "Global.GameEffect.html",
+      "uid": "Global.GameEffect"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ClientQuestEvent_OnQuestUpdated",
+      "id": "Global_DewQuest_ClientQuestEvent_OnQuestUpdated",
+      "declaration": "public SafeAction ClientQuestEvent_OnQuestUpdated",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DefaultStep",
+      "id": "Global_DewQuest_DefaultStep",
+      "declaration": "public const string DefaultStep = \"Default\"",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "type",
+      "id": "Global_DewQuest_type",
+      "declaration": "[BoxGroup(\"Quest Settings\", true, false, 0)]\npublic QuestType type",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "currentProgress",
+      "id": "Global_DewQuest_currentProgress",
+      "declaration": "public string currentProgress { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "failReason",
+      "id": "Global_DewQuest_failReason",
+      "declaration": "public FailReason failReason { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "progressType",
+      "id": "Global_DewQuest_progressType",
+      "declaration": "public QuestProgressType progressType { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "questDetailedDescriptionRaw",
+      "id": "Global_DewQuest_questDetailedDescriptionRaw",
+      "declaration": "public string questDetailedDescriptionRaw { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "questShortDescriptionRaw",
+      "id": "Global_DewQuest_questShortDescriptionRaw",
+      "declaration": "public string questShortDescriptionRaw { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "questTitleRaw",
+      "id": "Global_DewQuest_questTitleRaw",
+      "declaration": "public string questTitleRaw { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "state",
+      "id": "Global_DewQuest_state",
+      "declaration": "public QuestState state { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "step",
+      "id": "Global_DewQuest_step",
+      "declaration": "[SaveVar(SaveVarFlags.ApplyAfterCreation)]\npublic string step { get; set; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "AddStepGoal_ReachNode(NextGoalSettings)",
+      "id": "Global_DewQuest_AddStepGoal_ReachNode_NextGoalSettings_",
+      "declaration": "public void AddStepGoal_ReachNode(NextGoalSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "NextGoalSettings",
+          "type_uid": "Global.NextGoalSettings",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "CompleteQuest()",
+      "id": "Global_DewQuest_CompleteQuest",
+      "declaration": "public void CompleteQuest()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "EndStep(string)",
+      "id": "Global_DewQuest_EndStep_System_String_",
+      "declaration": "public void EndStep(string nextStep = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nextStep",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "FailQuest(FailReason)",
+      "id": "Global_DewQuest_FailQuest_FailReason_",
+      "declaration": "public void FailQuest(FailReason reason)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "reason",
+          "type": "FailReason",
+          "type_uid": "Global.FailReason",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "GetInitialStep()",
+      "id": "Global_DewQuest_GetInitialStep",
+      "declaration": "public virtual string GetInitialStep()",
+      "summary": "Called on server.",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "IsVisibleLocally()",
+      "id": "Global_DewQuest_IsVisibleLocally",
+      "declaration": "public virtual bool IsVisibleLocally()",
+      "summary": "Is this quest visible locally? This is checked everywhere when this quest is added.",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_DewQuest_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_DewQuest_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStepEnded(string)",
+      "id": "Global_DewQuest_OnStepEnded_System_String_",
+      "declaration": "protected virtual void OnStepEnded(string formerStep)",
+      "summary": "Called everywhere when a step of this quest has ended.",
+      "parameters": [
+        {
+          "name": "formerStep",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnStepStarted(bool)",
+      "id": "Global_DewQuest_OnStepStarted_System_Boolean_",
+      "declaration": "protected virtual void OnStepStarted(bool isLoadedFromSave)",
+      "summary": "Called everywhere when a new step starts.",
+      "parameters": [
+        {
+          "name": "isLoadedFromSave",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RpcInvokeQuestUpdated()",
+      "id": "Global_DewQuest_RpcInvokeQuestUpdated",
+      "declaration": "public void RpcInvokeQuestUpdated()",
+      "summary": "Invoke UI update across clients. You usually don't need to call this yourself.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "SetLocalizedDescription(string)",
+      "id": "Global_DewQuest_SetLocalizedDescription_System_String_",
+      "declaration": "public void SetLocalizedDescription(string key)",
+      "summary": "Provide null for default desc.",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "SetLocalizedTitle(string)",
+      "id": "Global_DewQuest_SetLocalizedTitle_System_String_",
+      "declaration": "public void SetLocalizedTitle(string key)",
+      "summary": "Provide null for default title.",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    }
+  ],
+  "events": []
+}

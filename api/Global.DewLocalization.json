@@ -1,0 +1,952 @@
+{
+  "uid": "Global.DewLocalization",
+  "name": "DewLocalization",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public static class DewLocalization",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [
+    {
+      "name": "buildData",
+      "id": "Global_DewLocalization_buildData",
+      "declaration": "public static DewLocalizationBuildData buildData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "data",
+      "id": "Global_DewLocalization_data",
+      "declaration": "public static PerLanguageLocalizationData data { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CaptureDescriptionExpressions(IReadOnlyList<LocaleNode>, Dictionary<string, string>, DescriptionSettings)",
+      "id": "Global_DewLocalization_CaptureDescriptionExpressions_System_Collections_Generic_IReadOnlyList_DewInternal_LocaleNode__System_Collections_Generic_Dictionary_System_String_System_String__DewLocalization_DescriptionSettings_",
+      "declaration": "public static void CaptureDescriptionExpressions(IReadOnlyList<LocaleNode> nodes, Dictionary<string, string> data, DewLocalization.DescriptionSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodes",
+          "type": "System.Collections.Generic.IReadOnlyList<T><LocaleNode>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "data",
+          "type": "System.Collections.Generic.Dictionary<TKey, TValue><string,string>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "DewLocalization.DescriptionSettings",
+          "type_uid": "Global.DewLocalization",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode>, DescriptionSettings)",
+      "id": "Global_DewLocalization_ConvertDescriptionNodesToText_System_Collections_Generic_IReadOnlyList_DewInternal_LocaleNode__DewLocalization_DescriptionSettings_",
+      "declaration": "public static string ConvertDescriptionNodesToText(IReadOnlyList<LocaleNode> nodes, DewLocalization.DescriptionSettings settings)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "nodes",
+          "type": "System.Collections.Generic.IReadOnlyList<T><LocaleNode>",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "DewLocalization.DescriptionSettings",
+          "type_uid": "Global.DewLocalization",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "EvaluateAndRenderExpression(ExpressionData, DescriptionSettings, bool)",
+      "id": "Global_DewLocalization_EvaluateAndRenderExpression_DewInternal_ExpressionData_DewLocalization_DescriptionSettings_System_Boolean_",
+      "declaration": "public static string EvaluateAndRenderExpression(ExpressionData exp, DewLocalization.DescriptionSettings settings, bool shouldShowDetail)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "exp",
+          "type": "DewInternal.ExpressionData",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "settings",
+          "type": "DewLocalization.DescriptionSettings",
+          "type_uid": "Global.DewLocalization",
+          "description": ""
+        },
+        {
+          "name": "shouldShowDetail",
+          "type": "bool",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetAchievementDescription(string)",
+      "id": "Global_DewLocalization_GetAchievementDescription_System_String_",
+      "declaration": "public static string GetAchievementDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetAchievementName(string)",
+      "id": "Global_DewLocalization_GetAchievementName_System_String_",
+      "declaration": "public static string GetAchievementName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetArtifactKey(string)",
+      "id": "Global_DewLocalization_GetArtifactKey_System_String_",
+      "declaration": "public static string GetArtifactKey(string artifactType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "artifactType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetArtifactKey(Type)",
+      "id": "Global_DewLocalization_GetArtifactKey_System_Type_",
+      "declaration": "public static string GetArtifactKey(Type artifactType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "artifactType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetArtifactName(string)",
+      "id": "Global_DewLocalization_GetArtifactName_System_String_",
+      "declaration": "public static string GetArtifactName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetArtifactShortStory(string)",
+      "id": "Global_DewLocalization_GetArtifactShortStory_System_String_",
+      "declaration": "public static string[] GetArtifactShortStory(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string[]"
+    },
+    {
+      "name": "GetArtifactStory(string)",
+      "id": "Global_DewLocalization_GetArtifactStory_System_String_",
+      "declaration": "public static string GetArtifactStory(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetConversationData(string)",
+      "id": "Global_DewLocalization_GetConversationData_System_String_",
+      "declaration": "public static ConversationData GetConversationData(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "DewInternal.ConversationData"
+    },
+    {
+      "name": "GetCurseDescription(string)",
+      "id": "Global_DewLocalization_GetCurseDescription_System_String_",
+      "declaration": "public static List<LocaleNode> GetCurseDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><LocaleNode>"
+    },
+    {
+      "name": "GetCurseKey(string)",
+      "id": "Global_DewLocalization_GetCurseKey_System_String_",
+      "declaration": "public static string GetCurseKey(string name)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetCurseName(string)",
+      "id": "Global_DewLocalization_GetCurseName_System_String_",
+      "declaration": "public static string GetCurseName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetCurseShortDescription(string)",
+      "id": "Global_DewLocalization_GetCurseShortDescription_System_String_",
+      "declaration": "public static List<LocaleNode> GetCurseShortDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><LocaleNode>"
+    },
+    {
+      "name": "GetFormat(string, string)",
+      "id": "Global_DewLocalization_GetFormat_System_String_System_String_",
+      "declaration": "public static string GetFormat(string formatString, string lang = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "formatString",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "lang",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemDescription(string)",
+      "id": "Global_DewLocalization_GetGemDescription_System_String_",
+      "declaration": "public static IReadOnlyList<LocaleNode> GetGemDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IReadOnlyList<T><LocaleNode>"
+    },
+    {
+      "name": "GetGemDescriptionKey(Gem)",
+      "id": "Global_DewLocalization_GetGemDescriptionKey_Gem_",
+      "declaration": "public static string GetGemDescriptionKey(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemKey(string)",
+      "id": "Global_DewLocalization_GetGemKey_System_String_",
+      "declaration": "public static string GetGemKey(string gemType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gemType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemKey(Type)",
+      "id": "Global_DewLocalization_GetGemKey_System_Type_",
+      "declaration": "public static string GetGemKey(Type gemType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gemType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemMemory(string)",
+      "id": "Global_DewLocalization_GetGemMemory_System_String_",
+      "declaration": "public static string GetGemMemory(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemName(Gem)",
+      "id": "Global_DewLocalization_GetGemName_Gem_",
+      "declaration": "public static string GetGemName(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemName(string)",
+      "id": "Global_DewLocalization_GetGemName_System_String_",
+      "declaration": "public static string GetGemName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemNameKey(Gem)",
+      "id": "Global_DewLocalization_GetGemNameKey_Gem_",
+      "declaration": "public static string GetGemNameKey(Gem gem)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "gem",
+          "type": "Gem",
+          "type_uid": "Global.Gem",
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemShortDescription(string)",
+      "id": "Global_DewLocalization_GetGemShortDescription_System_String_",
+      "declaration": "public static string GetGemShortDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetGemTemplate(string)",
+      "id": "Global_DewLocalization_GetGemTemplate_System_String_",
+      "declaration": "public static string GetGemTemplate(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetRecommendedSupportedLanguage()",
+      "id": "Global_DewLocalization_GetRecommendedSupportedLanguage",
+      "declaration": "public static string GetRecommendedSupportedLanguage()",
+      "summary": "",
+      "parameters": [],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillDescription(string, int)",
+      "id": "Global_DewLocalization_GetSkillDescription_System_String_System_Int32_",
+      "declaration": "public static List<LocaleNode> GetSkillDescription(string key, int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><LocaleNode>"
+    },
+    {
+      "name": "GetSkillDescriptionKey(SkillTrigger, int)",
+      "id": "Global_DewLocalization_GetSkillDescriptionKey_SkillTrigger_System_Int32_",
+      "declaration": "public static string GetSkillDescriptionKey(SkillTrigger skill, int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillKey(string)",
+      "id": "Global_DewLocalization_GetSkillKey_System_String_",
+      "declaration": "public static string GetSkillKey(string skillType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillKey(Type)",
+      "id": "Global_DewLocalization_GetSkillKey_System_Type_",
+      "declaration": "public static string GetSkillKey(Type skillType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skillType",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillLevelKey(int)",
+      "id": "Global_DewLocalization_GetSkillLevelKey_System_Int32_",
+      "declaration": "public static string GetSkillLevelKey(int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillLevelSuffix(int)",
+      "id": "Global_DewLocalization_GetSkillLevelSuffix_System_Int32_",
+      "declaration": "public static string GetSkillLevelSuffix(int level)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillLevelTemplate(int, int?)",
+      "id": "Global_DewLocalization_GetSkillLevelTemplate_System_Int32_System_Nullable_System_Int32__",
+      "declaration": "public static string GetSkillLevelTemplate(int level, int? toLevel = null)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "level",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "toLevel",
+          "type": "int?",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillMemory(string)",
+      "id": "Global_DewLocalization_GetSkillMemory_System_String_",
+      "declaration": "public static string GetSkillMemory(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillName(SkillTrigger, int)",
+      "id": "Global_DewLocalization_GetSkillName_SkillTrigger_System_Int32_",
+      "declaration": "public static string GetSkillName(SkillTrigger skill, int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillName(string, int)",
+      "id": "Global_DewLocalization_GetSkillName_System_String_System_Int32_",
+      "declaration": "public static string GetSkillName(string key, int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillNameKey(SkillTrigger, int)",
+      "id": "Global_DewLocalization_GetSkillNameKey_SkillTrigger_System_Int32_",
+      "declaration": "public static string GetSkillNameKey(SkillTrigger skill, int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "skill",
+          "type": "SkillTrigger",
+          "type_uid": "Global.SkillTrigger",
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetSkillShortDesc(string, int)",
+      "id": "Global_DewLocalization_GetSkillShortDesc_System_String_System_Int32_",
+      "declaration": "public static string GetSkillShortDesc(string key, int configIndex)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "configIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetStarDescription(string)",
+      "id": "Global_DewLocalization_GetStarDescription_System_String_",
+      "declaration": "public static List<LocaleNode> GetStarDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><LocaleNode>"
+    },
+    {
+      "name": "GetStarDescription(Type)",
+      "id": "Global_DewLocalization_GetStarDescription_System_Type_",
+      "declaration": "public static List<LocaleNode> GetStarDescription(Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><LocaleNode>"
+    },
+    {
+      "name": "GetStarLore(string)",
+      "id": "Global_DewLocalization_GetStarLore_System_String_",
+      "declaration": "public static string GetStarLore(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetStarName(string)",
+      "id": "Global_DewLocalization_GetStarName_System_String_",
+      "declaration": "public static string GetStarName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetStarName(Type)",
+      "id": "Global_DewLocalization_GetStarName_System_Type_",
+      "declaration": "public static string GetStarName(Type type)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "type",
+          "type": "System.Type",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetTreasureDescription(string)",
+      "id": "Global_DewLocalization_GetTreasureDescription_System_String_",
+      "declaration": "public static IReadOnlyList<LocaleNode> GetTreasureDescription(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.IReadOnlyList<T><LocaleNode>"
+    },
+    {
+      "name": "GetTreasureKey(string)",
+      "id": "Global_DewLocalization_GetTreasureKey_System_String_",
+      "declaration": "public static string GetTreasureKey(string treasureType)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "treasureType",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetTreasureLore(string)",
+      "id": "Global_DewLocalization_GetTreasureLore_System_String_",
+      "declaration": "public static string GetTreasureLore(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetTreasureName(string)",
+      "id": "Global_DewLocalization_GetTreasureName_System_String_",
+      "declaration": "public static string GetTreasureName(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "GetUIValue(string)",
+      "id": "Global_DewLocalization_GetUIValue_System_String_",
+      "declaration": "public static string GetUIValue(string key)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "HighlightKeywords(string)",
+      "id": "Global_DewLocalization_HighlightKeywords_System_String_",
+      "declaration": "public static string HighlightKeywords(string input)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "Initialize()",
+      "id": "Global_DewLocalization_Initialize",
+      "declaration": "public static void Initialize()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ProcessGenericBacktickedString(string, object, string)",
+      "id": "Global_DewLocalization_ProcessGenericBacktickedString_System_String_System_Object_System_String_",
+      "declaration": "public static string ProcessGenericBacktickedString(string text, object refObject, string lang = null)",
+      "summary": "refObject can be any object including System.Type.Supported Field Types: Field/const value in refObject, Field/const value in refType instance of DewResources Database.",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "refObject",
+          "type": "object",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "lang",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "RenderChangedValue(string, string)",
+      "id": "Global_DewLocalization_RenderChangedValue_System_String_System_String_",
+      "declaration": "public static string RenderChangedValue(string prev, string after)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prev",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "RenderWeakenedValue(string, string)",
+      "id": "Global_DewLocalization_RenderWeakenedValue_System_String_System_String_",
+      "declaration": "public static string RenderWeakenedValue(string prev, string after)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "prev",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "after",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "string"
+    },
+    {
+      "name": "TryGetUIValue(string, out string)",
+      "id": "Global_DewLocalization_TryGetUIValue_System_String_System_String__",
+      "declaration": "public static bool TryGetUIValue(string key, out string value)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

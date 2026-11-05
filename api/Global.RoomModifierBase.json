@@ -1,0 +1,405 @@
+{
+  "uid": "Global.RoomModifierBase",
+  "name": "RoomModifierBase",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class RoomModifierBase : Actor, ILogicUpdate, ICleanup, ICustomDestroyRoutine, IExcludeFromPool",
+  "inheritance": [
+    {
+      "name": "DewNetworkBehaviour",
+      "href": "Global.DewNetworkBehaviour.html",
+      "uid": "Global.DewNetworkBehaviour"
+    },
+    {
+      "name": "Actor",
+      "href": "Global.Actor.html",
+      "uid": "Global.Actor"
+    },
+    {
+      "name": "SpecialEntityRoomModifier",
+      "href": "Global.SpecialEntityRoomModifier.html",
+      "uid": "Global.SpecialEntityRoomModifier"
+    }
+  ],
+  "implements": [
+    {
+      "name": "ILogicUpdate",
+      "href": "Global.ILogicUpdate.html",
+      "uid": "Global.ILogicUpdate"
+    },
+    {
+      "name": "ICleanup",
+      "href": "Global.ICleanup.html",
+      "uid": "Global.ICleanup"
+    },
+    {
+      "name": "ICustomDestroyRoutine",
+      "href": "Global.ICustomDestroyRoutine.html",
+      "uid": "Global.ICustomDestroyRoutine"
+    },
+    {
+      "name": "IExcludeFromPool",
+      "href": "Global.IExcludeFromPool.html",
+      "uid": "Global.IExcludeFromPool"
+    }
+  ],
+  "fields": [
+    {
+      "name": "allowedZones",
+      "id": "Global_RoomModifierBase_allowedZones",
+      "declaration": "[ShowIf(\"@chance > 0.000001f\", true)]\n[InfoBox(\"All zones will be allowed to have this modifier\", InfoMessageType.Info, \"@allowedZones == null || allowedZones.Length == 0\")]\n[InfoBox(\"@GetZoneValidationMessage(allowedZones)\", InfoMessageType.Error, \"@GetZoneValidationMessage(allowedZones) != null\")]\npublic string[] allowedZones",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "chance",
+      "id": "Global_RoomModifierBase_chance",
+      "declaration": "[LabelText(\"@spawnType.ToString()\")]\npublic float chance",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "difficultyScaling",
+      "id": "Global_RoomModifierBase_difficultyScaling",
+      "declaration": "[ShowIf(\"@chance > 0.000001f\", true)]\npublic ScaleWithDifficultyMode difficultyScaling",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disableOtherEnvParticles",
+      "id": "Global_RoomModifierBase_disableOtherEnvParticles",
+      "declaration": "[ToggleLeft]\npublic bool disableOtherEnvParticles",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "disallowOtherModifiers",
+      "id": "Global_RoomModifierBase_disallowOtherModifiers",
+      "declaration": "[ShowIf(\"@chance > 0.000001f\", true)]\n[ToggleLeft]\npublic bool disallowOtherModifiers",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableInnerDecorations",
+      "id": "Global_RoomModifierBase_enableInnerDecorations",
+      "declaration": "[Title(\"Decorations\", null, TitleAlignments.Left, true, true)]\n[ToggleLeft]\npublic bool enableInnerDecorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "enableOuterDecorations",
+      "id": "Global_RoomModifierBase_enableOuterDecorations",
+      "declaration": "[ToggleLeft]\npublic bool enableOuterDecorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "excludeFromPool",
+      "id": "Global_RoomModifierBase_excludeFromPool",
+      "declaration": "public bool excludeFromPool",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "fxLoop",
+      "id": "Global_RoomModifierBase_fxLoop",
+      "declaration": "[Title(\"Effects\", null, TitleAlignments.Left, true, true)]\npublic GameObject fxLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "hiddenOnVisitedNode",
+      "id": "Global_RoomModifierBase_hiddenOnVisitedNode",
+      "declaration": "[ShowIf(\"@isMain || visibilityOnWorld != NodeModifierVisibility.Hidden\", true)]\npublic bool hiddenOnVisitedNode",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "innerDecorations",
+      "id": "Global_RoomModifierBase_innerDecorations",
+      "declaration": "[BoxGroup(\"Inner Decorations\", true, false, 0)]\n[InlineProperty]\n[HideLabel]\n[ShowIf(\"enableInnerDecorations\", true)]\npublic DecorationSettings innerDecorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isMain",
+      "id": "Global_RoomModifierBase_isMain",
+      "declaration": "[Title(\"General\", null, TitleAlignments.Left, true, true)]\n[FormerlySerializedAs(\"showOnTopRight\")]\npublic bool isMain",
+      "summary": "Main modifiers will print notification when user enters the node.A node can only have a single main modifier.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mainColor",
+      "id": "Global_RoomModifierBase_mainColor",
+      "declaration": "[ShowIf(\"@isMain || visibilityOnWorld != NodeModifierVisibility.Hidden\", true)]\npublic Color mainColor",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mapSprite",
+      "id": "Global_RoomModifierBase_mapSprite",
+      "declaration": "[ShowIf(\"@isMain || visibilityOnWorld != NodeModifierVisibility.Hidden\", true)]\npublic Sprite mapSprite",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "mapSpriteScale",
+      "id": "Global_RoomModifierBase_mapSpriteScale",
+      "declaration": "[ShowIf(\"@isMain || visibilityOnWorld != NodeModifierVisibility.Hidden\", true)]\npublic float mapSpriteScale",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modifiesRewards",
+      "id": "Global_RoomModifierBase_modifiesRewards",
+      "declaration": "[ShowIf(\"@chance > 0.000001f\", true)]\n[ToggleLeft]\npublic bool modifiesRewards",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "outerDecorations",
+      "id": "Global_RoomModifierBase_outerDecorations",
+      "declaration": "[BoxGroup(\"Outer Decorations\", true, false, 0)]\n[InlineProperty]\n[HideLabel]\n[ShowIf(\"enableOuterDecorations\", true)]\npublic DecorationSettings outerDecorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "removeModifierWhenOverrideOverwritten",
+      "id": "Global_RoomModifierBase_removeModifierWhenOverrideOverwritten",
+      "declaration": "[ToggleLeft]\n[ShowIf(\"@!string.IsNullOrEmpty(roomOverride)\", true)]\npublic bool removeModifierWhenOverrideOverwritten",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "roomOverride",
+      "id": "Global_RoomModifierBase_roomOverride",
+      "declaration": "public string roomOverride",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnedDecorations",
+      "id": "Global_RoomModifierBase_spawnedDecorations",
+      "declaration": "public readonly List<GameObject> spawnedDecorations",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnOncePerLoop",
+      "id": "Global_RoomModifierBase_spawnOncePerLoop",
+      "declaration": "[ShowIf(\"@chance > 0.000001f\", true)]\n[ToggleLeft]\npublic bool spawnOncePerLoop",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "spawnType",
+      "id": "Global_RoomModifierBase_spawnType",
+      "declaration": "[Title(\"Natural Spawn Settings\", null, TitleAlignments.Left, true, true)]\npublic ModifierSpawnType spawnType",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "visibilityOnWorld",
+      "id": "Global_RoomModifierBase_visibilityOnWorld",
+      "declaration": "public NodeModifierVisibility visibilityOnWorld",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "zoneIndexRange",
+      "id": "Global_RoomModifierBase_zoneIndexRange",
+      "declaration": "[ShowIf(\"@chance > 0.000001f\", true)]\npublic Vector2Int zoneIndexRange",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [
+    {
+      "name": "id",
+      "id": "Global_RoomModifierBase_id",
+      "declaration": "[SaveVar(SaveVarFlags.Default)]\npublic int id { get; }",
+      "summary": "Modifier id of this modifier instance.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "isDestroyedOnRoomChange",
+      "id": "Global_RoomModifierBase_isDestroyedOnRoomChange",
+      "declaration": "public override bool isDestroyedOnRoomChange { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "modData",
+      "id": "Global_RoomModifierBase_modData",
+      "declaration": "public ModifierData modData { get; }",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "CanSpawnAtNode(int)",
+      "id": "Global_RoomModifierBase_CanSpawnAtNode_System_Int32_",
+      "declaration": "public virtual bool CanSpawnAtNode(int nodeIndex)",
+      "summary": "Checked on server, on the modifier prefab, when generating the world.It will be called in the middle of generating the world, but essential things like basic node positions and distances will be provided.",
+      "parameters": [
+        {
+          "name": "nodeIndex",
+          "type": "int",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "GetScaledChance()",
+      "id": "Global_RoomModifierBase_GetScaledChance",
+      "declaration": "public float GetScaledChance()",
+      "summary": "",
+      "parameters": [],
+      "returns": "float"
+    },
+    {
+      "name": "IsAvailableInGame()",
+      "id": "Global_RoomModifierBase_IsAvailableInGame",
+      "declaration": "public virtual bool IsAvailableInGame()",
+      "summary": "Is this modifier available in game? If false, this modifier will not be applied to nodes.Checked on server everytime when generating world.NOTE that in-game constellation registration happens AFTER first world generation!!!!",
+      "parameters": [],
+      "returns": "bool"
+    },
+    {
+      "name": "ModifyEntities(Action<Entity>, Action<Entity>)",
+      "id": "Global_RoomModifierBase_ModifyEntities_System_Action_Entity__System_Action_Entity__",
+      "declaration": "public void ModifyEntities(Action<Entity> onStart, Action<Entity> onStop)",
+      "summary": "Modify all entities.onStart is called on all existing entities and entities spawned in the future.onStop is called on all existing entities when modifier stops.",
+      "parameters": [
+        {
+          "name": "onStart",
+          "type": "System.Action<T><Entity>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        },
+        {
+          "name": "onStop",
+          "type": "System.Action<T><Entity>",
+          "type_uid": "Global.Entity",
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "OnCreate()",
+      "id": "Global_RoomModifierBase_OnCreate",
+      "declaration": "protected override void OnCreate()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnDestroyActor()",
+      "id": "Global_RoomModifierBase_OnDestroyActor",
+      "declaration": "protected override void OnDestroyActor()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "OnStart()",
+      "id": "Global_RoomModifierBase_OnStart",
+      "declaration": "public override void OnStart()",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "PlaceDecorations(DecorationSettings, IReadOnlyList<(int, int)>)",
+      "id": "Global_RoomModifierBase_PlaceDecorations_DecorationSettings_System_Collections_Generic_IReadOnlyList_System_ValueTuple_System_Int32_System_Int32___",
+      "declaration": "public static List<GameObject> PlaceDecorations(DecorationSettings s, IReadOnlyList<(int, int)> indices)",
+      "summary": "",
+      "parameters": [
+        {
+          "name": "s",
+          "type": "DecorationSettings",
+          "type_uid": "Global.DecorationSettings",
+          "description": ""
+        },
+        {
+          "name": "indices",
+          "type": "System.Collections.Generic.IReadOnlyList<T><(int,int)>",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": "System.Collections.Generic.List<T><UnityEngine.GameObject>"
+    },
+    {
+      "name": "PlaceShrine<T>(PlaceShrineSettings)",
+      "id": "Global_RoomModifierBase_PlaceShrine__1_PlaceShrineSettings_",
+      "declaration": "public void PlaceShrine<T>(PlaceShrineSettings settings) where T : Shrine",
+      "summary": "Places a shrine on random position.This function properly handles revisits.Warning: does not support multiple shrines of same type",
+      "parameters": [
+        {
+          "name": "settings",
+          "type": "PlaceShrineSettings",
+          "type_uid": "Global.PlaceShrineSettings",
+          "description": ""
+        },
+        {
+          "name": "",
+          "type": "T",
+          "type_uid": null,
+          "description": ""
+        }
+      ],
+      "returns": ""
+    },
+    {
+      "name": "RemoveModifier()",
+      "id": "Global_RoomModifierBase_RemoveModifier",
+      "declaration": "public void RemoveModifier()",
+      "summary": "Remove and destroy this modifier.",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "ShouldBeSavedWithRoom()",
+      "id": "Global_RoomModifierBase_ShouldBeSavedWithRoom",
+      "declaration": "public override bool ShouldBeSavedWithRoom()",
+      "summary": "",
+      "parameters": [],
+      "returns": "bool"
+    }
+  ],
+  "events": []
+}

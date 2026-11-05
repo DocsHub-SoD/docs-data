@@ -1,0 +1,15 @@
+{
+  "uid": "Global.Monster.MonsterType",
+  "name": "Monster.MonsterType",
+  "kind": "Enum",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public enum Monster.MonsterType : byte",
+  "inheritance": [],
+  "implements": [],
+  "fields": [],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

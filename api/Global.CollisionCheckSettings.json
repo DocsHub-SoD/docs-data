@@ -1,0 +1,72 @@
+{
+  "uid": "Global.CollisionCheckSettings",
+  "name": "CollisionCheckSettings",
+  "kind": "Struct",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public struct CollisionCheckSettings",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "DistanceFromCenter",
+      "id": "Global_CollisionCheckSettings_DistanceFromCenter",
+      "declaration": "public static readonly Comparer<Entity> DistanceFromCenter",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "DistanceFromPivot",
+      "id": "Global_CollisionCheckSettings_DistanceFromPivot",
+      "declaration": "public static readonly Comparer<Entity> DistanceFromPivot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "includeUncollidable",
+      "id": "Global_CollisionCheckSettings_includeUncollidable",
+      "declaration": "public bool includeUncollidable",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "None",
+      "id": "Global_CollisionCheckSettings_None",
+      "declaration": "public static readonly Comparer<Entity> None",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "pivot",
+      "id": "Global_CollisionCheckSettings_pivot",
+      "declaration": "public static Vector3 pivot",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "Random",
+      "id": "Global_CollisionCheckSettings_Random",
+      "declaration": "public static readonly Comparer<Entity> Random",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "sortComparer",
+      "id": "Global_CollisionCheckSettings_sortComparer",
+      "declaration": "public IComparer<Entity> sortComparer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

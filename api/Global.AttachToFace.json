@@ -1,0 +1,88 @@
+{
+  "uid": "Global.AttachToFace",
+  "name": "AttachToFace",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "[ExecuteAlways]\npublic class AttachToFace : MonoBehaviour",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "globalCache",
+      "id": "Global_AttachToFace_globalCache",
+      "declaration": "public static Dictionary<Renderer, AttachToFace.CacheItem> globalCache",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastSetupPosition",
+      "id": "Global_AttachToFace_lastSetupPosition",
+      "declaration": "public Vector3 lastSetupPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "lastSetupRotation",
+      "id": "Global_AttachToFace_lastSetupRotation",
+      "declaration": "public Quaternion lastSetupRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "relPosition",
+      "id": "Global_AttachToFace_relPosition",
+      "declaration": "public Vector3 relPosition",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "relRotation",
+      "id": "Global_AttachToFace_relRotation",
+      "declaration": "public Quaternion relRotation",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "targetRenderer",
+      "id": "Global_AttachToFace_targetRenderer",
+      "declaration": "public SkinnedMeshRenderer targetRenderer",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vertexIndex0",
+      "id": "Global_AttachToFace_vertexIndex0",
+      "declaration": "public int vertexIndex0",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vertexIndex1",
+      "id": "Global_AttachToFace_vertexIndex1",
+      "declaration": "public int vertexIndex1",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "vertexIndex2",
+      "id": "Global_AttachToFace_vertexIndex2",
+      "declaration": "public int vertexIndex2",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}

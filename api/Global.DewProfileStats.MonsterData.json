@@ -1,0 +1,40 @@
+{
+  "uid": "Global.DewProfileStats.MonsterData",
+  "name": "DewProfileStats.MonsterData",
+  "kind": "Class",
+  "namespace": "Global",
+  "assembly": "Dew.Core.dll",
+  "summary": "",
+  "syntax": "public class DewProfileStats.MonsterData",
+  "inheritance": [],
+  "implements": [],
+  "fields": [
+    {
+      "name": "deaths",
+      "id": "Global_DewProfileStats_MonsterData_deaths",
+      "declaration": "public long deaths",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "kills",
+      "id": "Global_DewProfileStats_MonsterData_kills",
+      "declaration": "public long kills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    },
+    {
+      "name": "nightmareKills",
+      "id": "Global_DewProfileStats_MonsterData_nightmareKills",
+      "declaration": "public long nightmareKills",
+      "summary": "",
+      "parameters": [],
+      "returns": ""
+    }
+  ],
+  "properties": [],
+  "methods": [],
+  "events": []
+}
