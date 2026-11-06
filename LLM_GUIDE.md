@@ -90,11 +90,65 @@ WHERE m.declaration LIKE '%[Server]%' AND t.name = 'Hero';
 
 ---
 
-## 3. Shape of Dreams Mod Framework (`DewMod`) Rules
+## 3. Shape of Dreams Native Mod Framework (`DewMod`) Rules
 
 When creating or fixing a mod:
 1. **Mod Location**: Mods reside in `Shape of Dreams\Mods\<ModFolderName>\`.
-2. **Manifest (`about/metadata.json`)**: Every mod must contain `about/metadata.json` with `id`, `name`, `version`, `author`, `entryDll`.
-3. **Activation Key**: New mods are **NOT** enabled by default. To activate a mod, its `id` must be listed in:
-   `%USERPROFILE%\AppData\LocalLow\Lizard Smoothie\Shape of Dreams\QuickSave\r_platform.json` under `"activeMods": [ "com.yourname.modid", ... ]`.
-4. **Main Entry**: Entry class inherits from `ModBehaviour` (from `Dew.Core.dll`) and implements `OnLoaded()` or lifecycle methods.
+2. **Manifest (`about/metadata.json`)**: Every mod must contain `about/metadata.json`. The game engine reads `ModMetadata` which strictly checks the following fields:
+   * **`modVer`** (string) — **NOT** `version`!
+   * **`assemblies`** (string array) — **NOT** `entryDll`!
+   * `id` (string), `name` (string), `author` (string).
+   ```json
+   {
+     "id": "com.author.modname",
+     "name": "My Mod Name",
+     "modVer": "1.0.0",
+     "author": "AuthorName",
+     "assemblies": [
+       "MyMod.dll"
+     ]
+   }
+   ```
+   *(Warning: Using `version` or `entryDll` causes the loader to ignore the assembly, preventing the mod from starting).*
+
+3. **Activation Key**: New mods are **NOT** enabled automatically. To activate a mod, its `id` must be listed in:
+   `%USERPROFILE%\AppData\LocalLow\Lizard Smoothie\Shape of Dreams\QuickSave\r_platform.json` under `"activeMods": [ "com.author.modname", ... ]`.
+
+4. **Main Entry Class (`ModBehaviour`)**:
+   * The entry class inherits from `ModBehaviour` (`Dew.Core.dll`, namespace `Dew`), which derives directly from `UnityEngine.MonoBehaviour`.
+   * **There is NO `OnLoaded()` method.** Modders and agents must use standard Unity lifecycle methods: `Awake()`, `Start()`, `Update()`, `OnDestroy()`, plus the virtual method `OnConfigChanged()`.
+   * Useful built-in methods provided by `ModBehaviour`:
+     * `CallOnManager<T>(Action<T> action)`
+     * `CallOnNetworkedManager<T>(Action<T> action)`
+     * `RegisterConsoleCommand(...)`
+
+   ```csharp
+   using UnityEngine;
+   using Dew;
+
+   namespace MyCoolMod
+   {
+       public class ModEntry : ModBehaviour
+       {
+           private void Awake()
+           {
+               // Initialize patches, Harmony, hooks
+           }
+
+           private void Start()
+           {
+               // Post-initialization
+           }
+
+           public override void OnConfigChanged()
+           {
+               // Called when mod settings or config values update
+           }
+
+           private void OnDestroy()
+           {
+               // Cleanup
+           }
+       }
+   }
+   ```
