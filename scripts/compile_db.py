@@ -184,13 +184,17 @@ def build_databases():
         meta_methods = {m["name"]: m for m in meta.get("methods", [])}
         for m in data.get("methods", []):
             m_name = m.get("name")
-            m_meta = meta_methods.get(m_name, {})
-            m_attrs = " ".join(m_meta.get("attributes", []))
+            clean_name = m_name.split("(")[0]
+            m_meta = meta_methods.get(clean_name) or meta_methods.get(m_name, {})
+            m_attrs_list = [a for a in m_meta.get("attributes", []) if not a.startswith("[CompilerGenerated") and not a.startswith("[Debugger")]
+            m_attrs = " ".join(m_attrs_list)
+            raw_decl = m.get("declaration") or ""
+            decl = f"{m_attrs} {raw_decl}".strip() if m_attrs and not raw_decl.startswith(m_attrs) else raw_decl
 
             cur.execute("""
             INSERT INTO members (type_uid, member_type, name, attributes, declaration, summary, returns)
             VALUES (?, 'method', ?, ?, ?, ?, ?)
-            """, (uid, m_name, m_attrs, m.get("declaration"), m.get("summary"), m.get("returns")))
+            """, (uid, m_name, m_attrs, decl, m.get("summary"), m.get("returns")))
             m_id = cur.lastrowid
 
             for p in m.get("parameters", []):
@@ -204,12 +208,15 @@ def build_databases():
         for f in data.get("fields", []):
             f_name = f.get("name")
             f_meta = meta_fields.get(f_name, {})
-            f_attrs = " ".join(f_meta.get("attributes", []))
+            f_attrs_list = [a for a in f_meta.get("attributes", []) if not a.startswith("[CompilerGenerated") and not a.startswith("[Debugger")]
+            f_attrs = " ".join(f_attrs_list)
+            raw_decl = f.get("declaration") or ""
+            decl = f"{f_attrs} {raw_decl}".strip() if f_attrs and not raw_decl.startswith(f_attrs) else raw_decl
 
             cur.execute("""
             INSERT INTO members (type_uid, member_type, name, attributes, declaration, summary, returns)
             VALUES (?, 'field', ?, ?, ?, ?, ?)
-            """, (uid, f_name, f_attrs, f.get("declaration"), f.get("summary"), None))
+            """, (uid, f_name, f_attrs, decl, f.get("summary"), None))
 
         # Map properties with Cecil attributes
         meta_props = {p["name"]: p for p in meta.get("properties", [])}
