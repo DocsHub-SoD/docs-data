@@ -1,0 +1,4109 @@
+{
+  "Global.LimboDepthState": {
+    "uid": "Global.LimboDepthState",
+    "name": "LimboDepthState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Available",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Completed",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Locked",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.MerchandiseType": {
+    "uid": "Global.MerchandiseType",
+    "name": "MerchandiseType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Empty",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Skill",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Gem",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Souvenir",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Treasure",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.CorruptedChaosRewardType": {
+    "uid": "Global.CorruptedChaosRewardType",
+    "name": "CorruptedChaosRewardType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "AddedEssenceSlot",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "EveryFourAttackBonus",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "DodgeCooldown",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "DodgeCharge",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "AttackRange",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "CritChance",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "FireAmp",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "DarkMaxStack",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "LightMaxStack",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "ColdAmp",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "MaxLevel",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "MovSpdSkillHaste",
+        "value": 11,
+        "hexValue": "0xB"
+      }
+    ]
+  },
+  "Global.ChaosRewardType": {
+    "uid": "Global.ChaosRewardType",
+    "name": "ChaosRewardType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "MaxHealth",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "AttackDamage",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "AttackSpeed",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "AbilityPower",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "AbilityHaste",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "UpgradeGem",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "UpgradeSkill",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "Armor",
+        "value": 7,
+        "hexValue": "0x7"
+      }
+    ]
+  },
+  "Global.PlayerState": {
+    "uid": "Global.PlayerState",
+    "name": "PlayerState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "InLobby",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Playing",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Spectating",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.BuildType": {
+    "uid": "Global.BuildType",
+    "name": "BuildType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Indev",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "DemoLite",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "DemoPrivate",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Release",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.PlatformType": {
+    "uid": "Global.PlatformType",
+    "name": "PlatformType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "DRMFREE",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "STEAM",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "STOVE",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.BuildFeatureTag": {
+    "uid": "Global.BuildFeatureTag",
+    "name": "BuildFeatureTag",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Booth",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Prologue",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "UnlockEverything",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "TravelerStory",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.DevelopmentBuildMode": {
+    "uid": "Global.DevelopmentBuildMode",
+    "name": "DevelopmentBuildMode",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Full",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "LeanProfiling",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.MonsterSpawnConditionType": {
+    "uid": "Global.MonsterSpawnConditionType",
+    "name": "MonsterSpawnConditionType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "CurrentZoneClearedNodes",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "GlobalRoomIndex",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "ActivatedCombatAreas",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.OverpopulationBehavior": {
+    "uid": "Global.OverpopulationBehavior",
+    "name": "OverpopulationBehavior",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Stall",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Cancel",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Ignore",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.DewTransportPreference": {
+    "uid": "Global.DewTransportPreference",
+    "name": "DewTransportPreference",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Auto",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "ForceEOS",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "ForceSteam",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.DewEase": {
+    "uid": "Global.DewEase",
+    "name": "DewEase",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Linear",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "EaseInQuad",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "EaseOutQuad",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "EaseInOutQuad",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "EaseInCubic",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "EaseOutCubic",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "EaseInOutCubic",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "EaseInQuart",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "EaseOutQuart",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "EaseInOutQuart",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "EaseInQuint",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "EaseOutQuint",
+        "value": 11,
+        "hexValue": "0xB"
+      },
+      {
+        "name": "EaseInOutQuint",
+        "value": 12,
+        "hexValue": "0xC"
+      },
+      {
+        "name": "EaseInSine",
+        "value": 13,
+        "hexValue": "0xD"
+      },
+      {
+        "name": "EaseOutSine",
+        "value": 14,
+        "hexValue": "0xE"
+      },
+      {
+        "name": "EaseInOutSine",
+        "value": 15,
+        "hexValue": "0xF"
+      },
+      {
+        "name": "EaseInExpo",
+        "value": 16,
+        "hexValue": "0x10"
+      },
+      {
+        "name": "EaseOutExpo",
+        "value": 17,
+        "hexValue": "0x11"
+      },
+      {
+        "name": "EaseInOutExpo",
+        "value": 18,
+        "hexValue": "0x12"
+      },
+      {
+        "name": "EaseInCirc",
+        "value": 19,
+        "hexValue": "0x13"
+      },
+      {
+        "name": "EaseOutCirc",
+        "value": 20,
+        "hexValue": "0x14"
+      },
+      {
+        "name": "EaseInOutCirc",
+        "value": 21,
+        "hexValue": "0x15"
+      },
+      {
+        "name": "Spring",
+        "value": 22,
+        "hexValue": "0x16"
+      },
+      {
+        "name": "EaseInBounce",
+        "value": 23,
+        "hexValue": "0x17"
+      },
+      {
+        "name": "EaseOutBounce",
+        "value": 24,
+        "hexValue": "0x18"
+      },
+      {
+        "name": "EaseInOutBounce",
+        "value": 25,
+        "hexValue": "0x19"
+      },
+      {
+        "name": "EaseInBack",
+        "value": 26,
+        "hexValue": "0x1A"
+      },
+      {
+        "name": "EaseOutBack",
+        "value": 27,
+        "hexValue": "0x1B"
+      },
+      {
+        "name": "EaseInOutBack",
+        "value": 28,
+        "hexValue": "0x1C"
+      },
+      {
+        "name": "EaseInElastic",
+        "value": 29,
+        "hexValue": "0x1D"
+      },
+      {
+        "name": "EaseOutElastic",
+        "value": 30,
+        "hexValue": "0x1E"
+      },
+      {
+        "name": "EaseInOutElastic",
+        "value": 31,
+        "hexValue": "0x1F"
+      }
+    ]
+  },
+  "Global.GamepadButtonEx": {
+    "uid": "Global.GamepadButtonEx",
+    "name": "GamepadButtonEx",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "DpadUp",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "DpadDown",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "DpadLeft",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "DpadRight",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "North",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Triangle",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Y",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "B",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "Circle",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "East",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "A",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "Cross",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "South",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "Square",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "West",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "X",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "LeftStick",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "RightStick",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "LeftShoulder",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "RightShoulder",
+        "value": 11,
+        "hexValue": "0xB"
+      },
+      {
+        "name": "Start",
+        "value": 12,
+        "hexValue": "0xC"
+      },
+      {
+        "name": "Select",
+        "value": 13,
+        "hexValue": "0xD"
+      },
+      {
+        "name": "LeftTrigger",
+        "value": 32,
+        "hexValue": "0x20"
+      },
+      {
+        "name": "RightTrigger",
+        "value": 33,
+        "hexValue": "0x21"
+      },
+      {
+        "name": "LeftStickUp",
+        "value": 1000,
+        "hexValue": "0x3E8"
+      },
+      {
+        "name": "LeftStickDown",
+        "value": 1001,
+        "hexValue": "0x3E9"
+      },
+      {
+        "name": "LeftStickLeft",
+        "value": 1002,
+        "hexValue": "0x3EA"
+      },
+      {
+        "name": "LeftStickRight",
+        "value": 1003,
+        "hexValue": "0x3EB"
+      },
+      {
+        "name": "RightStickUp",
+        "value": 1010,
+        "hexValue": "0x3F2"
+      },
+      {
+        "name": "RightStickDown",
+        "value": 1011,
+        "hexValue": "0x3F3"
+      },
+      {
+        "name": "RightStickLeft",
+        "value": 1012,
+        "hexValue": "0x3F4"
+      },
+      {
+        "name": "RightStickRight",
+        "value": 1013,
+        "hexValue": "0x3F5"
+      }
+    ]
+  },
+  "Global.StarType": {
+    "uid": "Global.StarType",
+    "name": "StarType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Destruction",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Life",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Imagination",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Flexible",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.BackgroundAudioBehavior": {
+    "uid": "Global.BackgroundAudioBehavior",
+    "name": "BackgroundAudioBehavior",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Mute",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "MuteMusic",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Full",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.CastConfirmType": {
+    "uid": "Global.CastConfirmType",
+    "name": "CastConfirmType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Normal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Immediately",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "OnRelease",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.AimAssistType": {
+    "uid": "Global.AimAssistType",
+    "name": "AimAssistType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Medium",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "High",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "VeryHigh",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.DashDirection": {
+    "uid": "Global.DashDirection",
+    "name": "DashDirection",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "CurrentMovement",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "CurrentMovementOnlyDodge",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "AllTowardsCursor",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.JoystickClickAction": {
+    "uid": "Global.JoystickClickAction",
+    "name": "JoystickClickAction",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Dodge",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "PingAndEmotes",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.ControllerButtonType": {
+    "uid": "Global.ControllerButtonType",
+    "name": "ControllerButtonType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Xbox",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "PlayStation",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Generic",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.DamageNumberVisibility": {
+    "uid": "Global.DamageNumberVisibility",
+    "name": "DamageNumberVisibility",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Off",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "MineOnly",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "All",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.ReduceOtherPlayerEffectsStrength": {
+    "uid": "Global.ReduceOtherPlayerEffectsStrength",
+    "name": "ReduceOtherPlayerEffectsStrength",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Low",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Medium",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "High",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "VeryHigh",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Hide",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.ConfirmMemoryEditBehavior": {
+    "uid": "Global.ConfirmMemoryEditBehavior",
+    "name": "ConfirmMemoryEditBehavior",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "All",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "SellOnly",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Off",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.EffectBindEntityType": {
+    "uid": "Global.EffectBindEntityType",
+    "name": "EffectBindEntityType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "FindType",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "LocalHero",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.EffectVisibility": {
+    "uid": "Global.EffectVisibility",
+    "name": "EffectVisibility",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Everyone",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Caster",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Target",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Victim",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Owner",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.EffectOwnerContext": {
+    "uid": "Global.EffectOwnerContext",
+    "name": "EffectOwnerContext",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Self",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Boss",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "OtherPlayers",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Others",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.SyncTransformChannel": {
+    "uid": "Global.SyncTransformChannel",
+    "name": "SyncTransformChannel",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Position",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Rotation",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Scale",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.CastMethodType": {
+    "uid": "Global.CastMethodType",
+    "name": "CastMethodType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Cone",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Arrow",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Target",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Point",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.HatredStrengthType": {
+    "uid": "Global.HatredStrengthType",
+    "name": "HatredStrengthType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Mild",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Potent",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Powerful",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.SkillType": {
+    "uid": "Global.SkillType",
+    "name": "SkillType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Normal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Ultimate",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.DescriptionTags": {
+    "uid": "Global.DescriptionTags",
+    "name": "DescriptionTags",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Fire",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Cold",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Dark",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Light",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "Melee",
+        "value": 16,
+        "hexValue": "0x10"
+      },
+      {
+        "name": "HardCC",
+        "value": 32,
+        "hexValue": "0x20"
+      },
+      {
+        "name": "Heal",
+        "value": 64,
+        "hexValue": "0x40"
+      },
+      {
+        "name": "Shield",
+        "value": 128,
+        "hexValue": "0x80"
+      },
+      {
+        "name": "Attack",
+        "value": 256,
+        "hexValue": "0x100"
+      },
+      {
+        "name": "Mobility",
+        "value": 512,
+        "hexValue": "0x200"
+      },
+      {
+        "name": "Summon",
+        "value": 1024,
+        "hexValue": "0x400"
+      }
+    ]
+  },
+  "Global.BasicEffectMask": {
+    "uid": "Global.BasicEffectMask",
+    "name": "BasicEffectMask",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "Slow",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Speed",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Haste",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Cripple",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "Root",
+        "value": 16,
+        "hexValue": "0x10"
+      },
+      {
+        "name": "Silence",
+        "value": 32,
+        "hexValue": "0x20"
+      },
+      {
+        "name": "Stun",
+        "value": 64,
+        "hexValue": "0x40"
+      },
+      {
+        "name": "Blind",
+        "value": 128,
+        "hexValue": "0x80"
+      },
+      {
+        "name": "AttackCritical",
+        "value": 256,
+        "hexValue": "0x100"
+      },
+      {
+        "name": "AttackOverride",
+        "value": 512,
+        "hexValue": "0x200"
+      },
+      {
+        "name": "AttackEmpower",
+        "value": 1024,
+        "hexValue": "0x400"
+      },
+      {
+        "name": "Invulnerable",
+        "value": 2048,
+        "hexValue": "0x800"
+      },
+      {
+        "name": "Unstoppable",
+        "value": 4096,
+        "hexValue": "0x1000"
+      },
+      {
+        "name": "Protected",
+        "value": 8192,
+        "hexValue": "0x2000"
+      },
+      {
+        "name": "Uncollidable",
+        "value": 16384,
+        "hexValue": "0x4000"
+      },
+      {
+        "name": "Untargetable",
+        "value": 32768,
+        "hexValue": "0x8000"
+      },
+      {
+        "name": "ArmorBoost",
+        "value": 65536,
+        "hexValue": "0x10000"
+      },
+      {
+        "name": "ArmorReduction",
+        "value": 131072,
+        "hexValue": "0x20000"
+      },
+      {
+        "name": "DeathInterrupt",
+        "value": 262144,
+        "hexValue": "0x40000"
+      },
+      {
+        "name": "Shield",
+        "value": 524288,
+        "hexValue": "0x80000"
+      },
+      {
+        "name": "HealReduction",
+        "value": 1048576,
+        "hexValue": "0x100000"
+      },
+      {
+        "name": "FakeMaxHealth",
+        "value": 2097152,
+        "hexValue": "0x200000"
+      },
+      {
+        "name": "Invisible",
+        "value": 4194304,
+        "hexValue": "0x400000"
+      },
+      {
+        "name": "Reveal",
+        "value": 8388608,
+        "hexValue": "0x800000"
+      }
+    ]
+  },
+  "Global.AccType": {
+    "uid": "Global.AccType",
+    "name": "AccType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Hat",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Hip",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.AccAttachPointType": {
+    "uid": "Global.AccAttachPointType",
+    "name": "AccAttachPointType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "HatGlasses",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "HatCigar",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "HatTopper",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "HatAliveTopper",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "HatHeadCover",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "HatHalo",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "HatCustom",
+        "value": 100,
+        "hexValue": "0x64"
+      },
+      {
+        "name": "HipSideBelt",
+        "value": 200,
+        "hexValue": "0xC8"
+      },
+      {
+        "name": "HipCustom",
+        "value": 300,
+        "hexValue": "0x12C"
+      }
+    ]
+  },
+  "Global.DuplicateEffectBehavior": {
+    "uid": "Global.DuplicateEffectBehavior",
+    "name": "DuplicateEffectBehavior",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "UsePrevious",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "ReplacePrevious",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "DoNothing",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.AttackEffectType": {
+    "uid": "Global.AttackEffectType",
+    "name": "AttackEffectType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "BasicAttackMain",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "BasicAttackSub",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Others",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.BoxTelegraphAnimType": {
+    "uid": "Global.BoxTelegraphAnimType",
+    "name": "BoxTelegraphAnimType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Center",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "FromStart",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "FromEnd",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.AudioSpaceType": {
+    "uid": "Global.AudioSpaceType",
+    "name": "AudioSpaceType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Normal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Global",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.AudioType": {
+    "uid": "Global.AudioType",
+    "name": "AudioType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "UI",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Music",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "SFX",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "GameBoss",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "GameSelf",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "GameOtherPlayers",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "GameOthers",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "GameEnvironment",
+        "value": 6,
+        "hexValue": "0x6"
+      }
+    ]
+  },
+  "Global.DewAudioRollOffType": {
+    "uid": "Global.DewAudioRollOffType",
+    "name": "DewAudioRollOffType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Default",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Loud",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Unity",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.EntityVisualPointType": {
+    "uid": "Global.EntityVisualPointType",
+    "name": "EntityVisualPointType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Head",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "LeftHand",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "RightHand",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "LeftFoot",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "RightFoot",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "Weapon",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "Muzzle",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "Center",
+        "value": 10,
+        "hexValue": "0xA"
+      }
+    ]
+  },
+  "Global.DamageAttribute": {
+    "uid": "Global.DamageAttribute",
+    "name": "DamageAttribute",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "IsCrit",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "IgnoreArmor",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "IgnoreShield",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "IgnoreDamageImmunity",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "AreaOfEffect",
+        "value": 16,
+        "hexValue": "0x10"
+      },
+      {
+        "name": "DamageOverTime",
+        "value": 32,
+        "hexValue": "0x20"
+      },
+      {
+        "name": "ForceMergeNumber",
+        "value": 64,
+        "hexValue": "0x40"
+      },
+      {
+        "name": "DamageShieldOnly",
+        "value": 128,
+        "hexValue": "0x80"
+      },
+      {
+        "name": "NoTracking",
+        "value": 256,
+        "hexValue": "0x100"
+      }
+    ]
+  },
+  "Global.TeamRelation": {
+    "uid": "Global.TeamRelation",
+    "name": "TeamRelation",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "Own",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Neutral",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Enemy",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Ally",
+        "value": 8,
+        "hexValue": "0x8"
+      }
+    ]
+  },
+  "Global.EntityRelation": {
+    "uid": "Global.EntityRelation",
+    "name": "EntityRelation",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "Self",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Neutral",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Enemy",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Ally",
+        "value": 8,
+        "hexValue": "0x8"
+      }
+    ]
+  },
+  "Global.Rarity": {
+    "uid": "Global.Rarity",
+    "name": "Rarity",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Common",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Rare",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Epic",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Legendary",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Character",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Identity",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "Unique",
+        "value": 10,
+        "hexValue": "0xA"
+      }
+    ]
+  },
+  "Global.CurrencyType": {
+    "uid": "Global.CurrencyType",
+    "name": "CurrencyType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Gold",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "DreamDust",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Stardust",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Health",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "PlatinumCoin",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.ElementalType": {
+    "uid": "Global.ElementalType",
+    "name": "ElementalType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Fire",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Cold",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Light",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Dark",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.DewExceptionType": {
+    "uid": "Global.DewExceptionType",
+    "name": "DewExceptionType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "GameAlreadyStarted",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "VersionMismatch",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "LobbyTimeout",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "UnknownLobby",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Disconnected",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "LobbyNotFound",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "TooLateToMidJoin",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "TooManyRequests",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "Timeout",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "CannotResolveDestinationHost",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "NoInternetConnection",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "SaveLoadFailed_SaveCorrupt",
+        "value": 11,
+        "hexValue": "0xB"
+      },
+      {
+        "name": "SaveLoadFailed_NewSaveFailed",
+        "value": 12,
+        "hexValue": "0xC"
+      },
+      {
+        "name": "SteamAuthGetTicketFailed",
+        "value": 13,
+        "hexValue": "0xD"
+      },
+      {
+        "name": "SteamAuthFailed",
+        "value": 14,
+        "hexValue": "0xE"
+      },
+      {
+        "name": "SteamNotAvailable",
+        "value": 15,
+        "hexValue": "0xF"
+      },
+      {
+        "name": "UnknownItem",
+        "value": 16,
+        "hexValue": "0x10"
+      },
+      {
+        "name": "InvalidResponseFromItemServer",
+        "value": 17,
+        "hexValue": "0x11"
+      },
+      {
+        "name": "FailedToGetItemGeneric",
+        "value": 18,
+        "hexValue": "0x12"
+      },
+      {
+        "name": "ItemNotEligible",
+        "value": 19,
+        "hexValue": "0x13"
+      },
+      {
+        "name": "InvalidGiftCode",
+        "value": 20,
+        "hexValue": "0x14"
+      },
+      {
+        "name": "UsedCode",
+        "value": 21,
+        "hexValue": "0x15"
+      },
+      {
+        "name": "AlreadyHaveThisGift",
+        "value": 22,
+        "hexValue": "0x16"
+      },
+      {
+        "name": "CorruptGameFiles",
+        "value": 23,
+        "hexValue": "0x17"
+      },
+      {
+        "name": "MidJoinBlockedBeforeBossFight",
+        "value": 24,
+        "hexValue": "0x18"
+      },
+      {
+        "name": "MidJoinBlockedFightingBoss",
+        "value": 25,
+        "hexValue": "0x19"
+      },
+      {
+        "name": "MidJoinBlockedAfterBossFight",
+        "value": 26,
+        "hexValue": "0x1A"
+      },
+      {
+        "name": "GameHasEnded",
+        "value": 27,
+        "hexValue": "0x1B"
+      },
+      {
+        "name": "UnknownError",
+        "value": 28,
+        "hexValue": "0x1C"
+      },
+      {
+        "name": "DuplicatePlayerInGame",
+        "value": 29,
+        "hexValue": "0x1D"
+      },
+      {
+        "name": "MidJoinOnlyRejoinAllowed",
+        "value": 30,
+        "hexValue": "0x1E"
+      },
+      {
+        "name": "CrossPlayMismatch",
+        "value": 31,
+        "hexValue": "0x1F"
+      },
+      {
+        "name": "LobbyFull",
+        "value": 32,
+        "hexValue": "0x20"
+      },
+      {
+        "name": "LobbyConnectionFailed",
+        "value": 33,
+        "hexValue": "0x21"
+      },
+      {
+        "name": "ModdedLobbyBlocked",
+        "value": 34,
+        "hexValue": "0x22"
+      },
+      {
+        "name": "AccountLinkNotAvailable",
+        "value": 35,
+        "hexValue": "0x23"
+      },
+      {
+        "name": "AccountLinkInvalidIdToken",
+        "value": 36,
+        "hexValue": "0x24"
+      },
+      {
+        "name": "AccountLinkCodeInvalid",
+        "value": 37,
+        "hexValue": "0x25"
+      },
+      {
+        "name": "AccountLinkFailed",
+        "value": 38,
+        "hexValue": "0x26"
+      },
+      {
+        "name": "CloudSaveUnavailable",
+        "value": 39,
+        "hexValue": "0x27"
+      },
+      {
+        "name": "CloudSaveFailed",
+        "value": 40,
+        "hexValue": "0x28"
+      },
+      {
+        "name": "CloudSaveVersionUnsupported",
+        "value": 41,
+        "hexValue": "0x29"
+      },
+      {
+        "name": "CloudSaveFileNotFound",
+        "value": 42,
+        "hexValue": "0x2A"
+      },
+      {
+        "name": "CloudSaveOwnedElsewhere",
+        "value": 43,
+        "hexValue": "0x2B"
+      }
+    ]
+  },
+  "Global.DoCommandType": {
+    "uid": "Global.DoCommandType",
+    "name": "DoCommandType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Default",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "PostponeBasicCommand",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.KnockUpStrength": {
+    "uid": "Global.KnockUpStrength",
+    "name": "KnockUpStrength",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Small",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Normal",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Big",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.HeroSkillLocation": {
+    "uid": "Global.HeroSkillLocation",
+    "name": "HeroSkillLocation",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Q",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "W",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "E",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "R",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Identity",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Movement",
+        "value": 5,
+        "hexValue": "0x5"
+      }
+    ]
+  },
+  "Global.InteractableStatus": {
+    "uid": "Global.InteractableStatus",
+    "name": "InteractableStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "No",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Yes",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "YesWithAlt",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "YesWithHoldAlt",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.LucidDreamType": {
+    "uid": "Global.LucidDreamType",
+    "name": "LucidDreamType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Good",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Evil",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Chaotic",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.ClientTransportChoice": {
+    "uid": "Global.ClientTransportChoice",
+    "name": "ClientTransportChoice",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Eos",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Steam",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.DewLobbyType": {
+    "uid": "Global.DewLobbyType",
+    "name": "DewLobbyType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Public",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "InviteOnly",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.DewNetworkMode": {
+    "uid": "Global.DewNetworkMode",
+    "name": "DewNetworkMode",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Singleplayer",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "MultiplayerHost",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "MultiplayerJoinLobby",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "MultiplayerHostRestart",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "MultiplayerJoinRestart",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.ConsoleBindItemType": {
+    "uid": "Global.ConsoleBindItemType",
+    "name": "ConsoleBindItemType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Down",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Up",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.ConversationVisibility": {
+    "uid": "Global.ConversationVisibility",
+    "name": "ConversationVisibility",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Everyone",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "OnlyToPlayer",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.GameState": {
+    "uid": "Global.GameState",
+    "name": "GameState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "InLobby",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Starting",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "InGame",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.MidJoinWaitType": {
+    "uid": "Global.MidJoinWaitType",
+    "name": "MidJoinWaitType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "BeforeBossFight",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "FightingBoss",
+        "value": 11,
+        "hexValue": "0xB"
+      },
+      {
+        "name": "AfterBossFight",
+        "value": 12,
+        "hexValue": "0xC"
+      },
+      {
+        "name": "HostLoadingGame",
+        "value": 20,
+        "hexValue": "0x14"
+      }
+    ]
+  },
+  "Global.MidJoinBanType": {
+    "uid": "Global.MidJoinBanType",
+    "name": "MidJoinBanType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "GameHasEnded",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "TooLateToJoin",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.AllowMidJoinType": {
+    "uid": "Global.AllowMidJoinType",
+    "name": "AllowMidJoinType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "AllowAll",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "RejoinOnly",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Disallow",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.VoteType": {
+    "uid": "Global.VoteType",
+    "name": "VoteType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "NextNode",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "NextZone",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Sidetrack",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "TheDream",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.HunterStatus": {
+    "uid": "Global.HunterStatus",
+    "name": "HunterStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "AboutToBeTaken",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Level1",
+        "value": 100,
+        "hexValue": "0x64"
+      },
+      {
+        "name": "Level2",
+        "value": 101,
+        "hexValue": "0x65"
+      },
+      {
+        "name": "Level3",
+        "value": 102,
+        "hexValue": "0x66"
+      }
+    ]
+  },
+  "Global.WorldNodeType": {
+    "uid": "Global.WorldNodeType",
+    "name": "WorldNodeType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Start",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Combat",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Event",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Merchant",
+        "value": 100,
+        "hexValue": "0x64"
+      },
+      {
+        "name": "Quest",
+        "value": 101,
+        "hexValue": "0x65"
+      },
+      {
+        "name": "Special",
+        "value": 200,
+        "hexValue": "0xC8"
+      },
+      {
+        "name": "ExitBoss",
+        "value": 1000,
+        "hexValue": "0x3E8"
+      }
+    ]
+  },
+  "Global.WorldNodeStatus": {
+    "uid": "Global.WorldNodeStatus",
+    "name": "WorldNodeStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Unexplored",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Revealed",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "RevealedFull",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "HasVisited",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.CenterMessageType": {
+    "uid": "Global.CenterMessageType",
+    "name": "CenterMessageType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "General",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Error",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.WorldDisplayStatus": {
+    "uid": "Global.WorldDisplayStatus",
+    "name": "WorldDisplayStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "ShownNoMove",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Shown",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.CosmeticPurchasePrerequisite": {
+    "uid": "Global.CosmeticPurchasePrerequisite",
+    "name": "CosmeticPurchasePrerequisite",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "NightmareKillCount",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "ReachZone",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "HeroMastery",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "NightmareWin",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "LimboMaxDepth",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "WayOfStars",
+        "value": 6,
+        "hexValue": "0x6"
+      }
+    ]
+  },
+  "Global.SaveVarFlags": {
+    "uid": "Global.SaveVarFlags",
+    "name": "SaveVarFlags",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "Default",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "ApplyAfterCreation",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "ApplyAfterFrameDelay",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.FailReason": {
+    "uid": "Global.FailReason",
+    "name": "FailReason",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "NotSpecified",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "HunterOccupied",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "MissedDestination",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.QuestType": {
+    "uid": "Global.QuestType",
+    "name": "QuestType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Goal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Curse",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Tutorial",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Quest",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.QuestState": {
+    "uid": "Global.QuestState",
+    "name": "QuestState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Ongoing",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Completed",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Failed",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.QuestProgressType": {
+    "uid": "Global.QuestProgressType",
+    "name": "QuestProgressType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Hidden",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Kills",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Travel",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Collect",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "TravelZone",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.MapItemVisibility": {
+    "uid": "Global.MapItemVisibility",
+    "name": "MapItemVisibility",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Always",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "NeedsToBeDiscovered",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "NeedsToBeVisible",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Hidden",
+        "value": 10,
+        "hexValue": "0xA"
+      }
+    ]
+  },
+  "Global.MapCellType": {
+    "uid": "Global.MapCellType",
+    "name": "MapCellType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Playable",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Wall",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.RoomRewardFlowItemType": {
+    "uid": "Global.RoomRewardFlowItemType",
+    "name": "RoomRewardFlowItemType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Skill",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Gem",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Any",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Luck",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.SectionCombatAreaType": {
+    "uid": "Global.SectionCombatAreaType",
+    "name": "SectionCombatAreaType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Random",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Yes",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "No",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.CombatAreaActivateCondition": {
+    "uid": "Global.CombatAreaActivateCondition",
+    "name": "CombatAreaActivateCondition",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "OnEnterFirstTime",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "OnEveryonePresent",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.NodeModifierVisibility": {
+    "uid": "Global.NodeModifierVisibility",
+    "name": "NodeModifierVisibility",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "OnRevealed",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "OnRevealedFull",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Hidden",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Always",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.ScaleWithDifficultyMode": {
+    "uid": "Global.ScaleWithDifficultyMode",
+    "name": "ScaleWithDifficultyMode",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Beneficial",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Harmful",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.ModifierSpawnType": {
+    "uid": "Global.ModifierSpawnType",
+    "name": "ModifierSpawnType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Chance",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Ratio",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Count",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.LevelScaling": {
+    "uid": "Global.LevelScaling",
+    "name": "LevelScaling",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "NoScaling",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "SkillDefault",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "GemDefault",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.EditSkillTargetType": {
+    "uid": "Global.EditSkillTargetType",
+    "name": "EditSkillTargetType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Skill",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "SkillEmptySlot",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Gem",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "GemEmptySlot",
+        "value": 8,
+        "hexValue": "0x8"
+      }
+    ]
+  },
+  "Global.AffordType": {
+    "uid": "Global.AffordType",
+    "name": "AffordType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Yes",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "NoGold",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "NoDreamDust",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "NoStardust",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "NoHealth",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "NoPlatinumCoin",
+        "value": 5,
+        "hexValue": "0x5"
+      }
+    ]
+  },
+  "Global.SkinRarity": {
+    "uid": "Global.SkinRarity",
+    "name": "SkinRarity",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Default",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Rare",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Epic",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Legendary",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.ArrowFollowMode": {
+    "uid": "Global.ArrowFollowMode",
+    "name": "ArrowFollowMode",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "World",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Screen",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.BoxPlacementMode": {
+    "uid": "Global.BoxPlacementMode",
+    "name": "BoxPlacementMode",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "TowardsCenter",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "AwayFromCenter",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Below",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.InputMode": {
+    "uid": "Global.InputMode",
+    "name": "InputMode",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "KeyboardAndMouse",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Gamepad",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.BindingType": {
+    "uid": "Global.BindingType",
+    "name": "BindingType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": true,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Keyboard",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Mouse",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Gamepad",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.MouseButton": {
+    "uid": "Global.MouseButton",
+    "name": "MouseButton",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Left",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Right",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Middle",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Forward",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "Back",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "ScrollUp",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "ScrollDown",
+        "value": 7,
+        "hexValue": "0x7"
+      }
+    ]
+  },
+  "Global.TutorialHighlightTextPlacement": {
+    "uid": "Global.TutorialHighlightTextPlacement",
+    "name": "TutorialHighlightTextPlacement",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Left",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Right",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Top",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Bottom",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.FocusableBehavior": {
+    "uid": "Global.FocusableBehavior",
+    "name": "FocusableBehavior",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Normal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "BottomBar",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.SelectionDisplayType": {
+    "uid": "Global.SelectionDisplayType",
+    "name": "SelectionDisplayType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Dont",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Box",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Circle",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.LobbyConnectionQuality": {
+    "uid": "Global.LobbyConnectionQuality",
+    "name": "LobbyConnectionQuality",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Unknown",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Bad",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Okay",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Good",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Best",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.LobbyMessageType": {
+    "uid": "Global.LobbyMessageType",
+    "name": "LobbyMessageType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "GameServerAddress",
+        "value": 0,
+        "hexValue": "0x0"
+      }
+    ]
+  },
+  "Global.LoadingStatus": {
+    "uid": "Global.LoadingStatus",
+    "name": "LoadingStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Empty",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "WaitingForService",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "CheckingLobbyStatus",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "CleaningUpPreviousLobby",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "LeavingPreviousLobby",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "CreatingLobby",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "PreparingLobby",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "PreparingLobbyClient",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "WaitingForHostPlayer",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "ConnectingToGame",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "ConnectingToLobby",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "CreatingGame",
+        "value": 11,
+        "hexValue": "0xB"
+      },
+      {
+        "name": "GettingLobbyInformation",
+        "value": 12,
+        "hexValue": "0xC"
+      },
+      {
+        "name": "WaitingForSteam",
+        "value": 13,
+        "hexValue": "0xD"
+      },
+      {
+        "name": "WaitingForOtherPlayers",
+        "value": 14,
+        "hexValue": "0xE"
+      },
+      {
+        "name": "RequestingItemFromServer",
+        "value": 15,
+        "hexValue": "0xF"
+      }
+    ]
+  },
+  "Global.ServiceStatus": {
+    "uid": "Global.ServiceStatus",
+    "name": "ServiceStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Loading",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Ready",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Error",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.ModItemState": {
+    "uid": "Global.ModItemState",
+    "name": "ModItemState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Ok",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "InvalidMetadata",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "IdConflict",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.ModSourceType": {
+    "uid": "Global.ModSourceType",
+    "name": "ModSourceType",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Local",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Steam",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.ResourceLinkBy": {
+    "uid": "Global.ResourceLinkBy",
+    "name": "ResourceLinkBy",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "None",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Type",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Guid",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "Name",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.QualityOff3Levels": {
+    "uid": "Global.QualityOff3Levels",
+    "name": "QualityOff3Levels",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Off",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Low",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Medium",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "High",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.QualityOff4Levels": {
+    "uid": "Global.QualityOff4Levels",
+    "name": "QualityOff4Levels",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Off",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Low",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Medium",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "High",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Ultra",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.Quality3Levels": {
+    "uid": "Global.Quality3Levels",
+    "name": "Quality3Levels",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Low",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Medium",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "High",
+        "value": 3,
+        "hexValue": "0x3"
+      }
+    ]
+  },
+  "Global.Quality4Levels": {
+    "uid": "Global.Quality4Levels",
+    "name": "Quality4Levels",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Low",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Medium",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "High",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Ultra",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.UnlockStatus": {
+    "uid": "Global.UnlockStatus",
+    "name": "UnlockStatus",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Locked",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "NotDiscovered",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Complete",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.DewProfileState": {
+    "uid": "Global.DewProfileState",
+    "name": "DewProfileState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Normal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Convertible",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "UnsupportedEdition",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "UnsupportedVersion",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "Corrupted",
+        "value": 4,
+        "hexValue": "0x4"
+      }
+    ]
+  },
+  "Global.DewSubProfileState": {
+    "uid": "Global.DewSubProfileState",
+    "name": "DewSubProfileState",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Normal",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Corrupted",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "NonExistent",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.EnterGroupBehavior": {
+    "uid": "Global.EnterGroupBehavior",
+    "name": "EnterGroupBehavior",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "UseDistanceFromPrevious",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "PrioritizeLT",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "PrioritizeRT",
+        "value": 2,
+        "hexValue": "0x2"
+      },
+      {
+        "name": "PrioritizeLB",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "PrioritizeRB",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "PrioritizeTop",
+        "value": 5,
+        "hexValue": "0x5"
+      },
+      {
+        "name": "PrioritizeLeft",
+        "value": 6,
+        "hexValue": "0x6"
+      },
+      {
+        "name": "PrioritizeRight",
+        "value": 7,
+        "hexValue": "0x7"
+      },
+      {
+        "name": "PrioritizeBottom",
+        "value": 8,
+        "hexValue": "0x8"
+      },
+      {
+        "name": "UseEnterDirection",
+        "value": 9,
+        "hexValue": "0x9"
+      },
+      {
+        "name": "Custom",
+        "value": 20,
+        "hexValue": "0x14"
+      }
+    ]
+  },
+  "Global.GamepadNavigation": {
+    "uid": "Global.GamepadNavigation",
+    "name": "GamepadNavigation",
+    "namespace": "Global",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Generic",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Grid",
+        "value": 10,
+        "hexValue": "0xA"
+      },
+      {
+        "name": "GridWrapAround",
+        "value": 11,
+        "hexValue": "0xB"
+      },
+      {
+        "name": "GridLong",
+        "value": 12,
+        "hexValue": "0xC"
+      },
+      {
+        "name": "Wide",
+        "value": 20,
+        "hexValue": "0x14"
+      },
+      {
+        "name": "HeroInfoBar",
+        "value": 100,
+        "hexValue": "0x64"
+      },
+      {
+        "name": "Custom",
+        "value": 255,
+        "hexValue": "0xFF"
+      }
+    ]
+  },
+  "DewInternal.LocaleNodeType": {
+    "uid": "DewInternal.LocaleNodeType",
+    "name": "LocaleNodeType",
+    "namespace": "DewInternal",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Text",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Expression",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Tag",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "DewInternal.ExpressionChildNodeType": {
+    "uid": "DewInternal.ExpressionChildNodeType",
+    "name": "ExpressionChildNodeType",
+    "namespace": "DewInternal",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "FieldName",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Expression",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "DewInternal.LineType": {
+    "uid": "DewInternal.LineType",
+    "name": "LineType",
+    "namespace": "DewInternal",
+    "assembly": "Dew.Core.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Say",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Choice",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Action",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.TooltipPositionMode": {
+    "uid": "Global.TooltipPositionMode",
+    "name": "TooltipPositionMode",
+    "namespace": "Global",
+    "assembly": "Dew.UI.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "RawValue",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Getter",
+        "value": 1,
+        "hexValue": "0x1"
+      }
+    ]
+  },
+  "Global.MapItemOrder": {
+    "uid": "Global.MapItemOrder",
+    "name": "MapItemOrder",
+    "namespace": "Global",
+    "assembly": "Dew.UI.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Default",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Shrines",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "Waypoints",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "NonImportantEntities",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "HeroicAllies",
+        "value": 3,
+        "hexValue": "0x3"
+      },
+      {
+        "name": "HeroicEnemies",
+        "value": 4,
+        "hexValue": "0x4"
+      },
+      {
+        "name": "LocalHero",
+        "value": 5,
+        "hexValue": "0x5"
+      }
+    ]
+  },
+  "Global.StoryNodeState": {
+    "uid": "Global.StoryNodeState",
+    "name": "StoryNodeState",
+    "namespace": "Global",
+    "assembly": "Dew.UI.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Locked",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "ReadyToUnlock",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Unlocked",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  },
+  "Global.StoryChunkState": {
+    "uid": "Global.StoryChunkState",
+    "name": "StoryChunkState",
+    "namespace": "Global",
+    "assembly": "Dew.UI.dll",
+    "isFlags": false,
+    "members": [
+      {
+        "name": "Locked",
+        "value": 0,
+        "hexValue": "0x0"
+      },
+      {
+        "name": "ReadyToUnlock",
+        "value": 1,
+        "hexValue": "0x1"
+      },
+      {
+        "name": "Unlocked",
+        "value": 2,
+        "hexValue": "0x2"
+      }
+    ]
+  }
+}
